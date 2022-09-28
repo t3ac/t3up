@@ -1,0 +1,7 @@
+#jumpto {                                         margin: 0; padding: 0; list-style: none;
+                                                  position: absolute; z-index: 1001;
+  a                                               {position: absolute; left: -10000px; top: auto; width: 0; height: 0; overflow: hidden;  }
+  a:focus,
+  a:active                                        {left: auto; width: auto; white-space: nowrap; top: 0; height: 2em; overflow: visible;
+                                                  display: block; color: #333; padding: 2px ($spacer * 2) 0; background-color: white; font-weight: 600; }
+}

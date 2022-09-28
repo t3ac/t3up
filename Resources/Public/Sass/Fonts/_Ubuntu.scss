@@ -1,0 +1,83 @@
+@font-face{
+  font-weight:300;
+  font-style:normal;
+  font-variant:normal;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  font-family:'Ubuntu';
+  font-display: swap;
+  src:  url('#{$fontpath}Ubuntu/UbuntuLight.eot');
+  src:  url('#{$fontpath}Ubuntu/UbuntuLight.woff2') format('woff2'),
+        url('#{$fontpath}Ubuntu/UbuntuLight.woff') format('woff');}
+        
+@font-face{
+  font-weight:400;
+  font-style:normal;
+  font-variant:normal;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  font-family:'Ubuntu';
+  font-display: swap;
+  src:  url('#{$fontpath}Ubuntu/UbuntuRegular.eot');
+  src:  url('#{$fontpath}Ubuntu/UbuntuRegular.woff2') format('woff2'),
+        url('#{$fontpath}Ubuntu/UbuntuRegular.woff') format('woff');}
+    
+@font-face{
+  font-weight:500;
+  font-style:normal;
+  font-variant:normal;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  font-family:'Ubuntu';
+  font-display: swap;
+  src:  url('#{$fontpath}Ubuntu/UbuntuMedium.eot');
+  src:  url('#{$fontpath}Ubuntu/UbuntuMedium.woff2') format('woff2'),
+        url('#{$fontpath}Ubuntu/UbuntuMedium.woff') format('woff');}
+    
+@font-face{
+  font-weight:600;
+  font-style:normal;
+  font-variant:normal;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  font-family:'Ubuntu';
+  font-display: swap;
+  src:  url('#{$fontpath}Ubuntu/UbuntuBold.eot');
+  src:  url('#{$fontpath}Ubuntu/UbuntuBold.woff2') format('woff2'),
+        url('#{$fontpath}Ubuntu/UbuntuBold.woff') format('woff');}
+    
+@font-face{
+  font-weight:400;
+  font-style:italic;font-variant:normal;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  font-family:'Ubuntu';
+  font-display: swap;
+  src:  url('#{$fontpath}Ubuntu/UbuntuItalic.eot');
+  src:  url('#{$fontpath}Ubuntu/UbuntuItalic.woff2') format('woff2'),
+        url('#{$fontpath}Ubuntu/UbuntuItalic.woff') format('woff');}
+    
+@font-face{
+  font-weight:500;
+  font-style:italic;font-variant:normal;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  font-family:'Ubuntu';
+  font-display: swap;
+  src:  url('#{$fontpath}Ubuntu/UbuntuMediumItalic.eot');
+  src:  url('#{$fontpath}Ubuntu/UbuntuMediumItalic.woff2') format('woff2'),
+        url('#{$fontpath}Ubuntu/UbuntuMediumItalic.woff') format('woff');}
+    
+@font-face{
+  font-weight:600;
+  font-style:italic;font-variant:normal;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  font-family:'Ubuntu';
+  font-display: swap;
+  src:  url('#{$fontpath}Ubuntu/UbuntuBoldItalic.eot');
+  src:  url('#{$fontpath}Ubuntu/UbuntuBoldItalic.woff2') format('woff2'),
+        url('#{$fontpath}Ubuntu/UbuntuBoldItalic.woff') format('woff');}
+    
+
+    

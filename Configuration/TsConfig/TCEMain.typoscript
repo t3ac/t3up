@@ -1,0 +1,44 @@
+#################
+#### TCEMAIN ####
+#################
+TCEMAIN {
+	permissions {
+		groupid = 1
+		user = show, editcontent, edit, new, delete
+		group = show, editcontent, edit, new, delete
+		everybody =
+	}
+	translateToHidden = 1
+}
+
+ 
+ # tx_news is an identifier, don't change it after links have been created
+TCEMAIN.linkHandler.tx_news {
+   handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+   # A translatable label can be used with LLL:EXT:theme/locallang.xml:label
+   label = LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:NewsLinkhandler
+   configuration {
+      table = tx_news_domain_model_news
+      # Default storage pid
+      storagePid = 1
+      # Hide the page tree by setting it to 1
+      hidePageTree = 0
+   }
+   scanAfter = page
+}
+
+
+ # tt_address is an identifier, don't change it after links have been created
+TCEMAIN.linkHandler.tt_address {
+   handler = TYPO3\CMS\Recordlist\LinkHandler\RecordLinkHandler
+   # A translatable label can be used with LLL:EXT:theme/locallang.xml:label
+   label = LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:tt_addressLinkhandler
+   configuration {
+      table = tt_address
+      # Default storage pid
+      storagePid = 1
+      # Hide the page tree by setting it to 1
+      hidePageTree = 0
+   }
+   scanAfter = page
+}

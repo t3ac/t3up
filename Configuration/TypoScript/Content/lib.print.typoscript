@@ -1,0 +1,74 @@
+printPage = PAGE
+printPage {
+    meta {
+      robots = NOINDEX,NOFOLLOW 
+    }
+    typeNum = 97
+    config.no_cache = 1
+    config.index_enable = 0
+    config.doctype = xhtml_strict
+    includeCSS >
+    includeCSS.file1 = EXT:t3up/Resources/Public/Css/print.css
+    includeCSS.file2 = EXT:t3up/Resources/Public/Sass/Basic/_fsc.scss
+    
+    10 = IMAGE
+    10  {
+        file = {$page.header.logo}
+        altText = {$page.rss.copyright}
+        titleText = {$page.rss.copyright}
+        wrap = <div class="logo">|</div>
+    }
+
+
+    20 = COA
+    20.10 = TEXT
+    20.10.field = subtitle // title
+    20.10.wrap = <h1 class="h1">|</h1>
+    20.20 = COA
+    20.20.10 < styles.content.get
+    20.30 = COA
+
+    20.30.10 < styles.content.get
+    20.30.10.select.where = colPos = 2
+        
+    20.30.wrap = <div class="print_inhalt_rechts">|</div>
+    20.wrap = <div class="print_inhalt">|</div>
+    30 = COA
+
+    
+    30.10 = COA
+    30.10.10 = TEXT
+    30.10.10.data = date:Y
+    30.10.10.wrap = ©&nbsp;|&nbsp;
+    
+    30.10.20 = TEXT
+    30.10.20.value = {$page.meta.copyright}
+    
+    30.10.wrap =<div>|</div>
+  
+        30.20 = COA
+        30.20.10 = TEXT
+        30.20.10.value = Source: {$page.rss.webadresse}
+        30.20.10.lang.de = Quelle: {$page.rss.webadresse}
+        30.20.10.wrap = <li>|</li>
+        30.20.20 = HMENU
+        30.20.20 {
+            special = rootline
+            special.range = 1 | -2
+            1 = TMENU
+            1.target = _self
+            1.NO.doNotLinkIt = 1
+            1.NO.linkWrap ( 
+                    <li>|/|*|
+                    <li>|/|*|
+                    <li>| |*|
+            ) 
+         }
+        30.20.wrap = <ul class="ort">|</ul>
+        30.wrap = <div class="unten">|</div>
+ 
+       includeJSFooter >
+
+}
+      
+

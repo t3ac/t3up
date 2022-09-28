@@ -1,0 +1,73 @@
+html[color-mode$=contrast] {
+
+
+    $TextColor:                 #151515;
+    $Bgbody:                    #fff;
+
+    $LinkColor:                 rgb(30, 30, 30);  
+    $LinkHoverColor:            rgb(0, 0, 0);     
+    
+    $footerTextColor:           #222222;     
+    $footerTexthoverColor:      #000000;         
+    $footer1BgColor:            #fafafa; 
+    
+    $totopLinkColor:            #efefef;
+    $subnavLinkHoverColor:      #fff;
+
+
+    body{                                                         background-color: $Bgbody !important; color: $TextColor !important;
+         .tab-pane,
+         .dropdown-menu                                           {background-color: $Bgbody !important; color: $TextColor !important;}
+         .tab-pane a,
+         .dropdown-menu a                                         {color: $LinkColor !important;}    
+         .tab-pane a:hover, 
+         .dropdown-menu a:hover                                   {color: $LinkHoverColor !important;}    
+         
+         .dropdown-item:hover, 
+         .dropdown-item:focus                                     {background: transparent !important; }
+
+    } 
+    header {                                                      background-color: $Bgbody !important; color: $TextColor !important;
+        .toparea                                                  {background-color: rgba($Bgbody,$topBgColorTrans);}
+        a                                                         {color: #151515 !important;}  
+        a:hover                                                   {color: #000 !important;}
+        
+        
+        nav#menu ul li ul                                         {background-color: $Bgbody !important; } 
+        nav#menu ul li ul *                                       {color: $TextColor !important;} 
+        nav#menu a                                                {color: $LinkColor !important;}  
+        nav#menu a:hover                                          {color: $LinkHoverColor !important; background: transparent !important;}
+        
+        .box                                                      {background-color: $Bgbody !important;}
+    }
+
+    
+    
+    footer {                                                       color: $footerTextColor; background: $footer1BgColor; border-top: 2px solid #000; 
+        .footer1                                                  {color: $footerTextColor !important;}       
+        .footer1 a                                                {color: $footerTextColor !important;}
+        .footer1 a:hover                                          {color: $footerTexthoverColor !important; text-decoration: underline;}
+        .iconall                                                  {color: $footerTextColor !important;background: $footer1BgColor; }  
+        .iconall a                                                {color: $footerTextColor !important;}
+        .iconall a:hover                                          {color: $footerTexthoverColor !important; text-decoration: underline;} 
+        .footer3                                                  {color: $footerTextColor !important;background: $footer1BgColor; }  
+        .footer3 a                                                {color: $footerTextColor !important;}
+        .footer3 a:hover                                          {color: $footerTexthoverColor !important;  text-decoration: underline;}   
+        h3                                                        {color: $footerTextColor !important;} 
+        .frame-type-menu_pages li a                               {padding: 0 !important; margin: 0 !important;}
+    }
+    
+    .socialsideright ul.social li                                 {background-color: $footer1BgColor !important; color: $LinkColor !important; }
+    .socialsideright ul.social li a                               {color: $LinkColor !important; }
+    .socialsideright ul.social li a:hover                         {color: $LinkHoverColor !important; }   
+    .socialsideleft ul.social li                                  {background-color: $footer1BgColor !important; color: $LinkColor !important; }
+    .socialsideleft ul.social li a                                {color: $LinkColor !important; }
+    .socialsideleft ul.social li a:hover                          {color: $LinkHoverColor !important; }    
+    .toTop                                                        {background-color: $footer1BgColor !important; color: $LinkColor !important; }
+    .toTop a                                                      {color: $LinkColor !important; }
+    .toTop a:hover                                                {color: $LinkHoverColor !important; }  
+    
+
+
+}
+

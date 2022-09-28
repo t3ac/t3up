@@ -1,0 +1,5 @@
+page.includeJSFooterlibs {      
+        subnavigation                = EXT:t3up/Resources/Public/JavaScript/subnavigation.js 
+        subnavigation.if.isTrue      = {$page.files.subnavigation}   
+        subnavigation.async          = 1
+}

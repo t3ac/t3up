@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up">
+        <header/>
+        <body>
+            
+            /* -- Cms Components ------------------------- */
+            <trans-unit id="container">
+                 <source>Max-width of the containers (default 1440px)</source>
+            </trans-unit>
+            <trans-unit id="access">
+                 <source>Show the access-links</source>
+            </trans-unit>
+            <trans-unit id="totopfunction">
+                 <source>Including the totop-function</source>
+            </trans-unit> 
+            <trans-unit id="themes">
+                 <source>Stylesheet sets</source>
+            </trans-unit> 
+            <trans-unit id="mobil">
+                 <source>Mobilstyles: 0 - none, 1 - meanmenu , 2 - mmenu, 3 - simplemenu </source>
+            </trans-unit> 
+            <trans-unit id="mediaslide">
+                 <source>Sliding of the col "media"</source>
+            </trans-unit>           
+            <trans-unit id="printbutton">
+                 <source>Shows/hide a printbutton</source>
+            </trans-unit>           
+            <trans-unit id="breadcrumbwrap">
+                 <source>Css-classes for the breadcrumb</source>
+            </trans-unit>         
+
+             <trans-unit id="bootstrapaccordion" xml:space="preserve">
+                <source>Designs for the booststrap accordions</source>
+            </trans-unit>    
+            <trans-unit id="bootstraptabs" xml:space="preserve">
+                <source>Designs for the booststrap tabs</source>
+            </trans-unit>    
+             <trans-unit id="bootstrapslider" xml:space="preserve">
+                <source>Designs for the booststrap slider</source>
+            </trans-unit>    
+
+            
+            /* -- Color ------------------------- */
+            /* base */ 
+            <trans-unit id="basecolors">
+                 <source>Basecolors</source>
+            </trans-unit>
+            <trans-unit id="baseColor">
+                 <source>Basecolor</source>
+            </trans-unit>
+            <trans-unit id="baseTextColor">
+                 <source>Basecolor of the content-text</source>
+            </trans-unit>    
+            <trans-unit id="baseLinkColor">
+                 <source>Basecolor of the links in the content</source>
+            </trans-unit>    
+            <trans-unit id="baseLinkHoverColor">
+                 <source>Basecolor of the links hover in the content</source>
+            </trans-unit>     
+            <trans-unit id="bodyBgColor">
+                 <source>Background-color</source>
+            </trans-unit>
+            <trans-unit id="baseContainerBgColor">
+                 <source>Background-color main container</source>
+            </trans-unit>
+            <trans-unit id="shadow">
+                 <source>The box-shadow basic value</source>
+            </trans-unit>
+            <trans-unit id="pictureoverlayfunction">
+                 <source>Switch the overlay for images on/off (default off)</source>
+            </trans-unit>           
+            <trans-unit id="pictureoverlay">
+                 <source>The overlaycolor for images (default rgb 65 65 65, 0.15)</source>
+            </trans-unit>
+            <trans-unit id="pictureoverlaytext">
+                 <source>The overlaytextcolor - alttext - for images (default rgb 0 0 0, 1)</source>
+            </trans-unit>      
+           
+            /* headerarea */     
+            <trans-unit id="header">
+                 <source>Colors in the Header-/Toparea</source>
+            </trans-unit>  
+            <trans-unit id="headerBgColor">
+                 <source>Header - background color (default transparent)</source>
+            </trans-unit>  
+            <trans-unit id="headerColor">
+                 <source>Header - text color (default inherit)</source>
+            </trans-unit>  
+            <trans-unit id="headerLinkColor">
+                 <source>Header - link color (default inherit)</source>
+            </trans-unit>      
+            <trans-unit id="headerLinkHoverColor">
+                 <source>Header - hover color (default inherit)</source>
+            </trans-unit>           
+            <trans-unit id="topBgColor">
+                 <source>Top-area - background color (default transparent)</source>
+            </trans-unit>  
+            <trans-unit id="topBgColorTrans">
+                 <source>Top-area - background color translucency from 0.0 - 1 (default 1)</source>
+            </trans-unit>              
+            <trans-unit id="topLinkColor">
+                 <source>Linkcolor in the top-area 1)</source>
+            </trans-unit>              
+            <trans-unit id="topLinkHoverColor">
+                 <source>Hover linkcolor in the top-area 1)</source>
+            </trans-unit>  
+
+
+            /* Headercolor */
+            <trans-unit id="headercolor">
+                 <source>Header colors</source>
+            </trans-unit>              
+            <trans-unit id="h1-color">
+                 <source>H1 color (default inherit)</source>
+            </trans-unit>                      
+            <trans-unit id="h2-color">
+                 <source>H2 color (default inherit)</source>
+            </trans-unit>             
+            <trans-unit id="h3-color">
+                 <source>H3 color (default inherit)</source>
+            </trans-unit>                       
+            <trans-unit id="h4-color">
+                 <source>H4 color (default inherit)</source>
+            </trans-unit>           
+                            
+            /* footer */
+            <trans-unit id="footer">
+                 <source>Colors in the Footerarea</source>
+            </trans-unit>   
+            <trans-unit id="footer1BGColor">
+                 <source>Footer - backgroundcolor</source>
+            </trans-unit>       
+            <trans-unit id="footer1TextColor">
+                 <source>Footer - text color</source>
+            </trans-unit>       
+            <trans-unit id="footer1LinkColor">
+                 <source>Footer - link color</source>
+            </trans-unit>  
+            <trans-unit id="footer1LinkHoverColor">
+                 <source>Footer - hover color</source>
+            </trans-unit>   
+            <trans-unit id="footer2BGColor">
+                 <source>Icons background color (Icon Area)</source>
+            </trans-unit>
+            <trans-unit id="footer3BGColor">
+                 <source>Footerbase - background color</source>
+            </trans-unit>
+            <trans-unit id="footer3TextColor">
+                 <source>Footerbase - text color</source>
+            </trans-unit>       
+            <trans-unit id="footer3LinkColor">
+                 <source>Footerbase - link color</source>
+            </trans-unit>       
+            <trans-unit id="footer3LinkHoverColor">
+                 <source>Footerbase - hover color</source>
+            </trans-unit>   
+            
+             /* totop */
+            <trans-unit id="totop">
+                 <source>Colors of the totop-function</source>
+            </trans-unit>   
+            <trans-unit id="totopBgColor">
+                 <source>Totop backgroundcolor</source>
+            </trans-unit>       
+            <trans-unit id="totopLinkColor">
+                 <source>Totop - link color</source>
+            </trans-unit>       
+            <trans-unit id="totopLinkHoverColor">
+                 <source>Totop - hover color</source>
+            </trans-unit>   
+            <trans-unit id="totopPosBottom">
+                 <source>Totop - bottom-position</source>
+            </trans-unit>   
+            <trans-unit id="totopPosRight">
+                 <source>Totop - right-position</source>
+            </trans-unit>   
+    
+            /* Page */  
+            <trans-unit id="pagecolor">
+                 <source>Pagecolors</source>
+            </trans-unit>       
+            <trans-unit id="blue">
+                 <source>Pagecolor for navigation and mark up: blue</source>
+            </trans-unit>
+            <trans-unit id="green">
+                 <source>Pagecolor for navigation and mark up: green</source>
+            </trans-unit>
+            <trans-unit id="grey">
+                 <source>Pagecolor for navigation and mark up: grey</source>
+            </trans-unit>
+            <trans-unit id="orange">
+                 <source>Pagecolor for navigation and mark up: orange</source>
+            </trans-unit>
+            <trans-unit id="red">
+                 <source>Pagecolor for navigation and mark up: red</source>
+            </trans-unit>
+            <trans-unit id="turquoise">
+                 <source>Pagecolor for navigation and mark up: turquoise</source>
+            </trans-unit>
+            <trans-unit id="violett">
+                 <source>Pagecolor for navigation and mark up: violett</source>
+            </trans-unit>
+            <trans-unit id="yellow">
+                 <source>Pagecolor for navigation and mark up: yellow</source>
+            </trans-unit>  
+            <trans-unit id="darkblue">
+                 <source>Pagecolor for navigation and mark up: darkblue</source>
+            </trans-unit>           
+            <trans-unit id="darkgrey">
+                 <source>Pagecolor for navigation and mark up: darkgrey</source>
+            </trans-unit>           
+                                        
+            /* navigation */
+            <trans-unit id="navigationcolor">
+                 <source>Navigation Colors</source>
+            </trans-unit>              
+            <trans-unit id="navLinkColor">
+                 <source>Linkcolor in first level (default #333)</source>
+            </trans-unit>              
+            <trans-unit id="navLinkHoverColor">
+                 <source>Hover-Linkcolor in first level (default #000)</source>
+            </trans-unit>       
+            <trans-unit id="navLinkHoverBGColor">
+                 <source>Hover-Backgroundcolor in first level (default rgba(255,255,1))</source>
+            </trans-unit>                
+            <trans-unit id="subnavLinkColor">
+                 <source>Linkcolor in the next levels (default #333)</source>
+            </trans-unit>              
+            <trans-unit id="subnavLinkHoverColor">
+                 <source>Hover-Linkcolor in the next levels (default #000)</source>
+            </trans-unit>       
+            <trans-unit id="subnavigationLinkColor">
+                 <source>Linkcolor in the subnavigation (default #333)</source>
+            </trans-unit>              
+            <trans-unit id="subnavigationLinkHoverColor">
+                 <source>Hover-Linkcolor in the subnavigation default #000)</source>
+            </trans-unit>       
+            <trans-unit id="subNavBG">
+                 <source>backgroundcolor of the subnavigation-area</source>
+            </trans-unit>       
+            <trans-unit id="overlay">
+                 <source>backgroundcolor of the overlay (default rgba(0, 0, 0, 0.5))</source>
+            </trans-unit>              
+            
+            /* bootstrap */
+            <trans-unit id="bootstrap">
+                 <source>Bootstrap Basiccolors</source>
+            </trans-unit>
+            <trans-unit id="bootstrapcolor.danger">
+                 <source>Bootstrapcolor danger color</source>
+            </trans-unit>
+            <trans-unit id="bootstrapcolor.warning">
+                 <source>Bootstrapcolor warning color</source>
+            </trans-unit>
+            <trans-unit id="bootstrapcolor.success">
+                 <source>Bootstrapcolor success color</source>
+            </trans-unit>
+            <trans-unit id="bootstrapcolor.primary">
+                 <source>Bootstrapcolor primary color</source>
+            </trans-unit>
+            <trans-unit id="bootstrapcolor.success">
+                 <source>Bootstrapcolor success color</source>
+            </trans-unit>
+            <trans-unit id="bootstrapcolor.secondary">
+                 <source>Bootstrapcolor secondary color</source>
+            </trans-unit>
+            <trans-unit id="bootstrapcolor.info">
+                 <source>Bootstrapcolor info color</source>
+            </trans-unit>
+            <trans-unit id="bootstrapcolor.light">
+                 <source>Bootstrapcolor light color</source>
+            </trans-unit>
+            <trans-unit id="bootstrapcolor.dark">
+                 <source>Bootstrapcolor dark color</source>
+            </trans-unit>
+            <trans-unit id="bootstrapcolor.link">
+                 <source>Bootstrapcolor link color</source>
+            </trans-unit>
+            <trans-unit id="bootstrapcolor.plus">
+                 <source>Plus-symbol for the accordions</source>
+            </trans-unit>            
+            <trans-unit id="bootstrapcolor.minus">
+                 <source>Minus-symbol for the accordions</source>
+            </trans-unit>    
+            
+            /* table */
+            <trans-unit id="tableConstants">
+                 <source>Table basiccolors</source>
+            </trans-unit>    
+    
+            <trans-unit id="tableHeader">
+                 <source>Background of a table-header (th)</source>
+            </trans-unit>
+             <trans-unit id="tableHeaderColor">
+                 <source>Textcolor of a table-header (th)</source>
+            </trans-unit>
+             <trans-unit id="tableHeaderLineColor">
+                 <source>Bordercolor of a table-header (th)</source>
+            </trans-unit>
+             <trans-unit id="tableLineColor">
+                 <source>Bordercolor of a table-cell (td)</source>
+            </trans-unit>
+
+            
+            /* -- Config ------------------------ */
+            <trans-unit id="compressfiles">
+                 <source>Compress and Contenate the Css- and Js-Files</source>
+            </trans-unit>
+            
+                
+            
+            /* -- Files ------------------------- */
+            <trans-unit id="contentElement">
+                 <source>Fluid-Style-Content Templates</source>
+            </trans-unit> 
+            <trans-unit id="contentElement.layoutpath">
+                 <source>The layoutpath for the extend Fluid-Style-Content</source>
+            </trans-unit>    
+            <trans-unit id="contentElement.partialpath">
+                 <source>The partialpath for the extend Fluid-Style-Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.templatepath">
+                 <source>The templatepath for the extend Fluid-Style-Content</source>
+            </trans-unit> 
+            <trans-unit id="fluidtemplates">
+                 <source>Fluid-Templates</source>
+            </trans-unit> 
+            <trans-unit id="fluidtemplates.layoutpath">
+                 <source>The layoutpath for the Templates</source>
+            </trans-unit>    
+            <trans-unit id="fluidtemplates.partialpath">
+                 <source>The partialpath for the Templates</source>
+            </trans-unit>
+            <trans-unit id="fluidtemplates.templatepath">
+                 <source>The templatepath for the Templates</source>
+            </trans-unit> 
+            <trans-unit id="javascript">
+                 <source>JavaScripts</source>
+            </trans-unit> 
+            <trans-unit id="jquery">
+                 <source>Include jquery 3.6 (default on, recommended)</source>
+            </trans-unit>     
+            <trans-unit id="basic">
+                 <source>Including the Basic JavaScript (default on, recommended)</source>
+            </trans-unit> 
+            <trans-unit id="modernizer">
+                 <source>Including the Moderizer JavaScript (default on, recommended)</source>
+            </trans-unit> 
+            <trans-unit id="bootstrapCarouselscript">
+                 <source>Including the JavaScript bootstrap Carousel</source>
+            </trans-unit>    
+            <trans-unit id="subnavigation">
+                 <source>Including the Subnavigation JavaScript</source>
+            </trans-unit>     
+            <trans-unit id="logintemplate">
+                 <source>The templatepath for the Top-Login</source>
+            </trans-unit>              
+
+            
+            /* -- Fonts ------------------------- */
+
+            <trans-unit id="font">
+                 <source>Primary font-face, [Open-Sans, PT-Sans, Roboto, Source-Sans-Pro, Ubuntu, Aria, Verdana] are as a complete set possible</source>
+            </trans-unit>   
+            <trans-unit id="font2">
+                 <source>Secondary fontface (e.g. Courier)</source>
+            </trans-unit>   
+            <trans-unit id="fontpath">
+                 <source>Path of the font-files (default typo3conf/ext/t3up/Resources/Public/Fonts/)</source>
+            </trans-unit>    
+            <trans-unit id="fontdef">
+                 <source>Path of the font-definitions (default typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
+            </trans-unit>    
+            <trans-unit id="font2path">
+                 <source>Path of the second font-files (default typo3conf/ext/t3up/Resources/Public/Fonts/)</source>
+            </trans-unit>    
+            <trans-unit id="font2def">
+                 <source>Path of the second font-definitions (default typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
+            </trans-unit>    
+            <trans-unit id="symbol">
+                 <source>The Symbol fontface</source>
+            </trans-unit>
+            <trans-unit id="symbol2">
+                 <source>The Symbol fontface scss file</source>
+            </trans-unit> 
+            <trans-unit id="symbolpath">
+                 <source>Path of the symbol font-files (default typo3conf/ext/t3up/Resources/Public/Fonts/)</source>
+            </trans-unit>    
+            <trans-unit id="symboldef">
+                 <source>Path of the symbol font-definitions (default typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
+            </trans-unit>  
+               
+            
+            /* -- Footer ------------------------- */   
+            <trans-unit id="bg1">
+                 <source>Informationarea and wraps in the Footer</source>
+            </trans-unit> 
+            <trans-unit id="footer1">
+                 <source>Show the footer (default = 1)</source>
+            </trans-unit>
+            <trans-unit id="address">
+                 <source>ID of the postaladdress</source>
+            </trans-unit>
+            <trans-unit id="addressWrap">
+                 <source>Address css-wrap</source>
+            </trans-unit>
+            <trans-unit id="service1">
+                 <source>ID of the Content-Element Service 1</source>
+            </trans-unit>
+            <trans-unit id="service1Wrap">
+                 <source>Service1 css-wrap</source>
+            </trans-unit>
+            <trans-unit id="service2">
+                 <source>ID of the Content-Element Service 2</source>
+            </trans-unit>
+            <trans-unit id="service2Wrap">
+                 <source>Service2 css-wrap</source>
+            </trans-unit>
+            <trans-unit id="service3">
+                 <source>ID of the Content-Element Service 3</source>
+            </trans-unit>  
+            <trans-unit id="service3Wrap">
+                 <source>Service3 css-wrap</source>
+            </trans-unit>
+            <trans-unit id="footer1Wrap">
+                 <source>Footer1 css-wrap</source>
+            </trans-unit>
+            
+            <trans-unit id="bg2">
+                 <source>Links and wraps in the footerline</source>
+            </trans-unit>
+            <trans-unit id="base">
+                 <source>Show the basearea in the footer</source>
+            </trans-unit>
+            <trans-unit id="copyright">
+                 <source>Copyright</source>
+            </trans-unit>
+            <trans-unit id="link">
+                 <source>Link Adress for the copyright</source>
+            </trans-unit>           
+            <trans-unit id="contactpage">
+                 <source>Page-ID with the address</source>
+            </trans-unit>  
+            <trans-unit id="dataprotection">
+                 <source>Page with the data protection informations</source>
+            </trans-unit>    
+            <trans-unit id="disabilityaccess">
+                 <source>Page with the disability access informations</source>
+            </trans-unit>    
+            <trans-unit id="impress">
+                 <source>Impress</source>
+            </trans-unit>   
+            <trans-unit id="lastchange">
+                 <source>Show lastchange</source>
+            </trans-unit>       
+            <trans-unit id="pid">
+                 <source>Show the PID</source>
+            </trans-unit>       
+            <trans-unit id="owner">
+                 <source>Show the owner of the page, only locked in</source>
+            </trans-unit>       
+            <trans-unit id="footerBaseWrap">
+                 <source>Footerbase css-wrap</source>
+            </trans-unit>
+
+            
+            /* -- HEADER ------------------------- */   
+            <trans-unit id="logos">
+                 <source>Logos in the Header</source>
+            </trans-unit>           
+            <trans-unit id="logo">
+                 <source>Location of the logo-file (recommended SVG), with leading "/". Logo german</source>
+            </trans-unit>      
+            <trans-unit id="logo.1">
+                 <source>Location of the english logo-file</source>
+            </trans-unit>   
+            <trans-unit id="logo.2">
+                 <source>Location of the french logo-file</source>
+            </trans-unit>   
+            <trans-unit id="logo.3">
+                 <source>Location of the italian logo-file</source>
+            </trans-unit>     
+            <trans-unit id="logo.4">
+                 <source>Location of the polish logo-file</source>
+            </trans-unit>   
+            <trans-unit id="logo.5">
+                 <source>Location of the turkey logo-file</source>
+            </trans-unit> 
+            <trans-unit id="logo.6">
+                 <source>Location of the spanish logo-file</source>
+            </trans-unit>    
+            <trans-unit id="logo.7">
+                 <source>Location of the portuguese logo-file</source>
+            </trans-unit>   
+            <trans-unit id="logo.8">
+                 <source>Location of the romanian logo-file</source>
+            </trans-unit> 
+            <trans-unit id="logo.9">
+                 <source>Location of the chinese logo-file</source>
+            </trans-unit>   
+            
+            <trans-unit id="alttext">
+                 <source>Alttext of the logo in the header</source>
+            </trans-unit> 
+            <trans-unit id="logomaxwidth">
+                 <source>Max. width of the logo in the headerarea</source>
+            </trans-unit>             
+            <trans-unit id="logowrap">
+                 <source>Div wrap of the logo</source>
+            </trans-unit> 
+            <trans-unit id="notlogowrap">
+                 <source>Wrap of the part after the logo. Default "d-flex col-10 flex-wrap vertical-align-stretch"</source>
+            </trans-unit>               
+            <trans-unit id="logostickymaxwidth">
+                 <source>Max. width of the logo in the headerarea (compressed)</source>
+            </trans-unit>   
+                            
+            
+             <trans-unit id="logoII">
+                 <source>Location of the second logo-file (recommended SVG), with leading "/".</source>
+            </trans-unit>   
+            <trans-unit id="alttextII">
+                 <source>Alttext of the 2. logo in the header</source>
+            </trans-unit>       
+            <trans-unit id="linklogoII">
+                 <source>Link of the 2. logo</source>
+            </trans-unit>    
+            <trans-unit id="logoIImaxwidth">
+                 <source>Max. width of the 2. logo in the headerarea</source>
+            </trans-unit>    
+            <trans-unit id="logoIIwrap">         
+                 <source>Div wrap of the 2. logo</source>
+            </trans-unit>               
+       
+            
+            <trans-unit id="moillogo">
+                 <source>Shows a small logo in the toparea for mobil devices.</source>
+            </trans-unit>       
+            <trans-unit id="mobillogowrap">
+                 <source>Div wrap of the mobillogo</source>
+            </trans-unit>               
+               
+      
+                      
+            <trans-unit id="logins">
+                 <source>Loginhandling</source>
+            </trans-unit>
+            <trans-unit id="loginpage">
+                 <source>Shows the button. ID of the loginpage</source>
+            </trans-unit>               
+            <trans-unit id="loginbutton">
+                 <source>Shows the loginform. Important, fill the feuser-constants!</source>
+            </trans-unit>       
+                    
+            <trans-unit id="homes">
+                 <source>Homebutton and target</source>
+            </trans-unit>           
+            <trans-unit id="home">
+                 <source>ID of the page "Home" for the home-button and the logo</source>
+            </trans-unit>   
+            <trans-unit id="homebutton">
+                 <source>If it's true, shows the home-button in the top-area</source>
+            </trans-unit>           
+            
+                
+            <trans-unit id="functions">
+                 <source>Functions</source>
+            </trans-unit>
+            <trans-unit id="searchbutton">
+                 <source>Shows the indexedsearch form (modal).</source>
+            </trans-unit>
+            <trans-unit id="searchpage">
+                 <source>ID of the page with the indexedsearch form, shows a button in the top-area</source>
+            </trans-unit>       
+            <trans-unit id="solrbutton">
+                 <source>Shows the solrsearch form (modal).</source>
+            </trans-unit>
+            <trans-unit id="solrpage">
+                 <source>ID of the page with the solrsearch form, shows a button in the top-area</source>
+            </trans-unit>       
+            
+            <trans-unit id="languagemenu">
+                 <source>Show the languagemenu</source>
+            </trans-unit>                   
+            <trans-unit id="print">
+                 <source>If it's true, shows a print-button</source>
+            </trans-unit>  
+            <trans-unit id="quicklinks">
+                 <source>ID of the content element with the "quicklinks", empty = no quicklinks in the header</source>
+            </trans-unit>                           
+            
+            <trans-unit id="support">
+                 <source>Support</source>
+            </trans-unit>
+            <trans-unit id="contrast">
+                 <source>If it's true, shows a button for the contrast-version</source>
+            </trans-unit>   
+            <trans-unit id="fontsize">
+                 <source>If it's true, shows the range for the Fontsize. Disable dyntop!</source>
+            </trans-unit> 
+              
+            <trans-unit id="darkmode">
+                 <source>Available: Standard, Dark mode and Light.</source>
+            </trans-unit>     
+            
+            <trans-unit id="dyntop">
+                 <source>Dynamic toparea position by mouse-scrolling, has a own javascript.</source>
+            </trans-unit>     
+            
+            <trans-unit id="dynheader">
+                 <source>Dynamic headerscale and -position by mouse-scrolling, has a own javascript.</source>
+            </trans-unit>        
+              
+            <trans-unit id="showtitle">
+                 <source>If it's true, shows the title with the icons in the toparea</source>
+            </trans-unit>   
+    
+            /* -- META ------------------------- */     
+            <trans-unit id="meta.author">
+                 <source>Author of the website</source>
+            </trans-unit>                               
+            <trans-unit id="meta.compatible">
+                 <source>IE Compatibility</source>
+            </trans-unit>   
+            <trans-unit id="meta.content-language">
+                 <source>Language of the content</source>
+            </trans-unit>                           
+            <trans-unit id="meta.copyright">
+                 <source>Copyright of the website</source>
+            </trans-unit>            
+            <trans-unit id="meta.description">
+                 <source>Basic description of the website</source>
+            </trans-unit>                       
+            <trans-unit id="meta.google">
+                 <source>Google translation</source>
+            </trans-unit>   
+            <trans-unit id="meta.google-site-verification">
+                 <source>Google google-site-verification</source>
+            </trans-unit>               
+            <trans-unit id="meta.keywords">
+                 <source>Basic keywords for the website</source>
+            </trans-unit>                       
+            <trans-unit id="meta.language">
+                 <source>Basic language of the website</source>
+            </trans-unit>       
+            <trans-unit id="meta.page-topic">
+                 <source>generic terms</source>
+            </trans-unit>                   
+            <trans-unit id="meta.publisher">
+                 <source>Who is the publisher of the content</source>
+            </trans-unit>       
+                <trans-unit id="meta.robots">
+                 <source>Standard robots values</source>
+            </trans-unit>               
+            <trans-unit id="meta.viewport">
+                 <source>Viewport value for mobil devices</source>
+            </trans-unit>     
+            <trans-unit id="meta.og-url">
+                 <source>Open Graph URL </source>
+            </trans-unit>
+            <trans-unit id="meta.og-description">
+                 <source>Open Graph description </source>
+            </trans-unit>           
+            <trans-unit id="meta.og-title">
+                 <source>Open Graph title</source>
+            </trans-unit>           
+            <trans-unit id="meta.og-type">
+                 <source>Open Graph type</source>
+            </trans-unit>       
+            <trans-unit id="meta.og-image">
+                 <source>Open Graph image</source>
+            </trans-unit>   
+            <trans-unit id="meta.og-site_name">
+                 <source>Open Graph site name</source>
+            </trans-unit>   
+                  
+            /* -- Navigation ------------------------- */
+            <trans-unit id="navstyle">
+                 <source>Navigationstyles: 0 - None, 1 - Standard, 2 - with media, 3 - Block, 4 - First Level + Anker Navigation, 5 - only Anker Navigation, 6 - No menu</source>
+            </trans-unit>  
+            <trans-unit id="navigation">
+                 <source>Including the navigation javascript. navigation1 - First level with content (default navigation1, recommended)</source>
+            </trans-unit> 
+            <trans-unit id="navdir">
+                 <source>Direction of the navigation</source>
+            </trans-unit>              
+            <trans-unit id="navwrap">
+                 <source>Wrap of the navigation margin-top/margin-bottom</source>
+            </trans-unit>        
+            <trans-unit id="navplus">
+                 <source>First level navigation with/without dropdown.</source>
+            </trans-unit>                    
+            <trans-unit id="navcontainer">
+                 <source>Additional Classes in the header-area: (default: container)</source>
+            </trans-unit>                    
+                                          
+            
+            <trans-unit id="entryLevel">
+                 <source>Entrylevel of the main-menu</source>
+            </trans-unit>          
+            <trans-unit id="maxitems">
+                 <source>Max. Items for each navigation-level (default 10, max. 100)</source>
+            </trans-unit> 
+            <trans-unit id="subnav.level">
+                 <source>Entrylevel for the submenu (default = 2)</source>
+            </trans-unit> 
+            <trans-unit id="maxlevels">
+                 <source>Max. levels for the navigation (1-10)</source>
+            </trans-unit>
+                     
+            <trans-unit id="logopos">
+                 <source>Logo position: 1 - Left inside, 2 - Right inside, 3 - Top  left, 4 - Top right</source>
+            </trans-unit>   
+            <trans-unit id="topposition">
+                 <source>Position of the top area in the header. Active means absolute on the top.</source>
+            </trans-unit>   
+            <trans-unit id="topwrap">
+                 <source>Wrap around the top-area.</source>
+            </trans-unit>   
+            <trans-unit id="leveltitle">
+                 <source>Shows the leveltitle on top of the subnavigation.</source>
+            </trans-unit>
+            <trans-unit id="sideAnker">
+                 <source>Shows ankers as a listpoint-navigation.</source>
+            </trans-unit>
+             <trans-unit id="navcolor">
+                 <source>Shows the pagecolors in the mainmenue.</source>
+            </trans-unit> 
+             <trans-unit id="navcolor">
+                 <source>Shows the pagecolors in the mainmenue.</source>
+            </trans-unit> 
+             <trans-unit id="breadcrumbstyle">
+                 <source>Breadcrumb style, 0 - none, 1 - standard, 2 - extended.</source>
+            </trans-unit>      
+             <trans-unit id="breadcrumbulwrap">
+                 <source>Wrap around the breacrumb: px-0 py-2 align-items-center list-unstyled navbar-nav me-auto</source>
+            </trans-unit>                         
+             <trans-unit id="chars">
+                 <source>Include a small js with the variables for the navigtion.</source>
+            </trans-unit>             
+                                            
+            
+            /* -- SCSS ------------------------- */ 
+                
+            
+            <trans-unit id="scssmain">
+                 <source>Basic Scss (default active, recommended)</source>
+            </trans-unit> 
+            <trans-unit id="scssaccess">
+                 <source>Including the scsss for the metanavigation (default active, recommended)</source>
+            </trans-unit> 
+            <trans-unit id="scsstable">
+                 <source>Including the scss for tables (default active, recommended)</source>
+            </trans-unit>
+            <trans-unit id="scsslinks">
+                 <source>Including the scss for the link-styles (default active, recommended)</source>
+            </trans-unit>           
+            <trans-unit id="scssfsc">
+                 <source>Including the scss for the Fluid-Style-Content (default active, recommended)</source>
+            </trans-unit>      
+
+            <trans-unit id="scssheader">
+                 <source>Including the scss for the header-area (default active, recommended)</source>
+            </trans-unit>         
+            <trans-unit id="scsscontent">
+                 <source>Including the scss for the content-area (default active, recommended)</source>
+            </trans-unit> 
+            <trans-unit id="scssfooter">
+                 <source>Including the scss for the footer-area (default active, recommended)</source>
+            </trans-unit>  
+            <trans-unit id="scssnavigation">
+                 <source>Including the scsss for the navigation (default active, recommended)</source>
+            </trans-unit> 
+            <trans-unit id="scssbreadcrumb">
+                 <source>Including the scsss for the breadcrumb (default active, recommended)</source>
+            </trans-unit> 
+            <trans-unit id="scsssubnavigation">
+                 <source>Including the scsss for the subnavigation (default active, recommended)</source>
+            </trans-unit>       
+            <trans-unit id="scssquicklinks">
+                 <source>Including the scsss for the quicklinks (default active, recommended)</source>
+            </trans-unit>       
+            <trans-unit id="scsssocialmedia">
+                 <source>Including the scsss for the socialmedia icons (default active, recommended)</source>
+            </trans-unit>       
+            <trans-unit id="scssbootstrapstyles">
+                 <source>Including the scsss for the bootstrap styles (default active, recommended)</source>
+            </trans-unit>       
+
+            <trans-unit id="scssextensions">
+                 <source>Extension Scss</source>
+            </trans-unit>   
+            <trans-unit id="scsslightbox">
+                 <source>Including the scss for lightbox-effects (recommended)</source>
+            </trans-unit> 
+            <trans-unit id="scssnews">
+                 <source>Including the news-scss (default active, recommended)</source>
+            </trans-unit>     
+            <trans-unit id="scsseventnews">
+                 <source>Including the eventnews-scss (default active, recommended)</source>
+            </trans-unit>     
+                        
+            <trans-unit id="scsspowermail">
+                 <source>T3UP-Powermail</source>
+            </trans-unit>    
+            <trans-unit id="scssindexedsearch">
+                 <source>T3UP-Indexsearch</source>
+            </trans-unit>   
+            <trans-unit id="scssjpfaq">
+                 <source>T3UP-Jpfaq</source>
+            </trans-unit>     
+            
+            /* -- socialmedia ------------------------- */  
+            <trans-unit id="socialmediaposition">
+                 <source>Position of the Socialmediabuttons</source>
+            </trans-unit>   
+            <trans-unit id="facebook">
+                 <source>Address of the facebook-website</source>
+            </trans-unit>               
+            <trans-unit id="youtube">
+                 <source>Address of the youtube-channel</source>
+            </trans-unit>   
+            <trans-unit id="twitter">
+                 <source>Address of the twitter-channel</source>
+            </trans-unit>  
+            <trans-unit id="instagram">
+                 <source>Address of the instagram-channel</source>
+            </trans-unit>      
+            <trans-unit id="email">
+                 <source>E-Mail address</source>
+            </trans-unit>                 
+            <trans-unit id="xing">
+                 <source>xing address</source>
+            </trans-unit>   
+            <trans-unit id="linkedin">
+                 <source>Linkedin address</source>
+            </trans-unit>   
+            <trans-unit id="login">
+                 <source>Loginpage</source>
+            </trans-unit> 
+            <trans-unit id="location">
+                 <source>Location/Contact</source>
+            </trans-unit>   
+            <trans-unit id="search">
+                 <source>Result of the search</source>
+            </trans-unit>
+            <trans-unit id="hidelabel">
+                 <source>Hide the labels</source>
+            </trans-unit>
+            
+            
+             /* -- Typography ------------------------- */ 
+             
+             <trans-unit id="headers">
+                 <source>Size, lineheight and weight for h1 - h4</source>
+            </trans-unit>            
+             <trans-unit id="bread">
+                 <source>Size, lineheight and weight for p, li, td, th</source>
+            </trans-unit>   
+             <trans-unit id="symbolsize">
+                 <source>Fontsize for the symbols (Default 15px)</source>
+            </trans-unit>
+             <trans-unit id="h1">
+                 <source>Fontsize of the h1 headline</source>
+            </trans-unit>    
+             <trans-unit id="h1.md">
+                 <source>Fontsize of the h1 headline, tablet</source>
+            </trans-unit>    
+             <trans-unit id="h1.lg">
+                 <source>Fontsize of the h1 headline, desktop</source>
+            </trans-unit>    
+             <trans-unit id="h1.direction">
+                 <source>Direction of the h1 headline</source>
+            </trans-unit>    
+             <trans-unit id="h2">
+                 <source>Fontsize of the h2 headline</source>
+            </trans-unit>    
+             <trans-unit id="h2.md">
+                 <source>Fontsize of the h2 headline, tablet</source>
+            </trans-unit>    
+             <trans-unit id="h2.lg">
+                 <source>Fontsize of the h2 headline, desktop</source>
+            </trans-unit>    
+             <trans-unit id="h3">
+                 <source>Fontsize of the h3 headline</source>
+            </trans-unit>    
+             <trans-unit id="h3.md">
+                 <source>Fontsize of the h3 headline, tablet</source>
+            </trans-unit>    
+             <trans-unit id="h3.lg">
+                 <source>Fontsize of the h3 headline, desktop</source>
+            </trans-unit>    
+             <trans-unit id="h4">
+                 <source>Fontsize of the h4 headline</source>
+            </trans-unit>    
+             <trans-unit id="h4.md">
+                 <source>Fontsize of the h4 headline, tablet</source>
+            </trans-unit>  
+             <trans-unit id="h4.lg">
+                 <source>Fontsize of the h4 headline, dektop</source>
+            </trans-unit>     
+             <trans-unit id="h1.fontweight">
+                 <source>Fontweight of the h1 headline (default 600)</source>
+            </trans-unit>               
+             <trans-unit id="h2.fontweight">
+                 <source>Fontweight of the h2 headline (default 600)</source>
+            </trans-unit>           
+             <trans-unit id="h3.fontweight">
+                 <source>Fontweight of the h3 headline (default 600)</source>
+            </trans-unit>           
+             <trans-unit id="h4.fontweight">
+                 <source>Fontweight of the h4 headline (default 600)</source>
+            </trans-unit>  
+             <trans-unit id="boldweight">
+                 <source>Fontweight b and strong html-tags (default 600)</source>
+            </trans-unit>         
+             <trans-unit id="h1.lineheight">
+                 <source>Lineheight of the h1 headline (default 115%)</source>
+            </trans-unit>               
+             <trans-unit id="h2.lineheight">
+                 <source>Lineheight of the h2 headline (default 115%)</source>
+            </trans-unit>           
+             <trans-unit id="h3.lineheight">
+                 <source>Lineheight of the h3 headline (default 115%)</source>
+            </trans-unit>           
+             <trans-unit id="h4.lineheight">
+                 <source>Lineheight of the h4 headline (default 115%)</source>
+            </trans-unit>  
+            
+             <trans-unit id="h1.margin">
+                 <source>Margin of the h1 headline (default 0 0 1rem)</source>
+            </trans-unit>      
+             <trans-unit id="h1.padding">
+                 <source>Padding left/right of the h1 headline (calc(var(--bs-gutter-x) / 1) !important)</source>
+            </trans-unit>           
+             <trans-unit id="h2.margin">
+                 <source>Margin of the h2 headline (default 0 0 1rem)</source>
+            </trans-unit>  
+             <trans-unit id="h3.margin">
+                 <source>Margin of the h3 headline (default 0 0 1rem)</source>
+            </trans-unit>               
+             <trans-unit id="h4.margin">
+                 <source>Margin of the h4 headline (default 0 0 0)</source>
+            </trans-unit>        
+            
+             <trans-unit id="p">
+                 <source>Fontsize for p and li, (Default 1.05rem)</source>
+            </trans-unit>  
+             <trans-unit id="p.md">
+                 <source>Fontsize for p and li, tablet-size (default 1.10rem)</source>
+            </trans-unit> 
+             <trans-unit id="p.lg">
+                 <source>Fontsize for p and li, desktop-size (default 1.15rem)</source>
+            </trans-unit>     
+             <trans-unit id="lineheight">
+                 <source>lineheight/line spacing p-tag and li-tag (default 1.5rem)</source>
+            </trans-unit>     
+                    
+                    
+             <trans-unit id="footers">
+                 <source>Fontsize, fontweights in the footerarea</source>
+            </trans-unit>                      
+             <trans-unit id="footer1.h3">
+                 <source>Fontsize of the h3 in footer1-area</source>
+            </trans-unit>           
+             <trans-unit id="footer1.fontsize">
+                 <source>Fontsize in footer1-area</source>
+            </trans-unit>       
+             <trans-unit id="footer1.fontweight">
+                 <source>Fontweight of the links in the footer1-area</source>
+            </trans-unit>                   
+             <trans-unit id="footer1.lineheight">
+                 <source>Lineheight in the footer1-area</source>
+            </trans-unit>                   
+             <trans-unit id="footer3.fontsize">
+                 <source>Fontsize in footerbase-area</source>
+            </trans-unit>                           
+             <trans-unit id="footer3.fontweight">
+                 <source>Fontweight in footerbase-area</source>
+            </trans-unit>                           
+                                                
+                        
+                        
+            
+                    
+        </body>
+    </file>
+</xliff>

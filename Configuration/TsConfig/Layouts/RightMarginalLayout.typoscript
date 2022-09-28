@@ -1,0 +1,35 @@
+######################################################
+#### BACKENDLAYOUT: RightMarginalLayout ##############
+######################################################
+mod {
+    web_layout {
+        BackendLayouts {
+            RightMarginalLayout {
+                title = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:RightMarginalLayout
+                icon = EXT:t3up/Resources/Public/Icons/BackendLayouts/RightMarginalLayout.svg
+                 config {
+                    backend_layout {
+                        colCount = 3
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+								   1 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos0
+                                        colspan = 2
+                                        colPos = 0
+                                    }
+                                    2 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos2
+                                        colPos = 2
+                                        colspan = 1
+                                    }
+                                }
+                            }  
+                        }
+                    }
+                }
+            } 
+        } // BackendLayouts
+    } //web_layout
+} //mod

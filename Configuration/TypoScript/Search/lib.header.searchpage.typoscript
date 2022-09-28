@@ -1,0 +1,18 @@
+lib.header.searchpage                 = TEXT
+lib.header.searchpage {
+    if.isTrue                         = {$page.header.searchpage}
+    value                             = <span class="small funcItemTitle">Suche</span>
+        typolink {
+            parameter                 = {$page.header.searchpage}
+            parameter.insertData      = 1
+            useCacheHash              = 1
+            title                     = Suche
+            ATagParams                = class="search navitem" data-show-sub="false"
+            
+       }
+     wrap                             = <li class="search align-items-center">|</li> 
+}
+
+[siteLanguage("languageId") == "1"]
+lib.header.searchpage.value       = <span class="small funcItemTitle">Search</span> 
+[END]

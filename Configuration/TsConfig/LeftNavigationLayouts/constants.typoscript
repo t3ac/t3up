@@ -1,0 +1,14 @@
+page{
+    files {
+        # cat =t3up: files/javascript/07;  type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:subnavigation
+        subnavigation               = active       
+    }
+    scss {
+        scsssubnavigation           = active       
+    }
+    navigation {
+        leveltitle                  = active
+    }
+
+}
+

@@ -1,0 +1,99 @@
+lib.level2 = HMENU 
+lib.level2 {
+  entryLevel = 2
+  1 = TMENU
+  1.wrap = <ul class="dropdown-menu" aria-labelledby="dropdown01">|</ul>
+  1.NO.wrapItemAndSub = <li>|</li>
+  1.NO.ATagParams = class="dropdown-item"
+  1.expAll = 1
+  1.wrap = <a class="nav-link extend p-0 ps-2" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level 1"></a><ul class="dropdown-menu" aria-labelledby="dropdown01">|</ul>
+}
+
+lib.level3 < .lib.level2 
+lib.level3 {
+  entryLevel = 3
+  1.wrap = <a class="nav-link extend p-0 ps-2" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level 2"></a><ul class="dropdown-menu" aria-labelledby="dropdown02">|</ul>
+}
+
+lib.level4 < .lib.level2 
+lib.level4 {
+  entryLevel = 4
+  1.wrap = <a class="nav-link extend p-0 ps-2" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level 3"></a><ul class="dropdown-menu" aria-labelledby="dropdown03">|</ul>
+
+}
+
+lib.level5 < .lib.level2 
+lib.level5 {
+  entryLevel = 5
+  1.wrap = <a class="nav-link extend p-0 ps-2" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level 4"></a><ul class="dropdown-menu" aria-labelledby="dropdown04">|</ul>
+
+}
+
+lib.level6 < .lib.level2 
+lib.level6 {
+  entryLevel = 6
+  1.wrap = <a class="nav-link extend p-0 ps-2" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level 5"></a><ul class="dropdown-menu" aria-labelledby="dropdown05">|</ul>
+
+}
+  
+
+lib.navigation.breadcrumbxl =  COA
+lib.navigation.breadcrumbxl {
+
+    10 = TEXT
+    10.value = Navigation:    
+    10.wrap = <span class="pe-2">|</span>
+    
+    20 = COA
+    20 {
+
+        20 < lib.home
+        
+        30 = TEXT
+        30.data = leveltitle : 1
+        30.wrap = <li class="capital ps-2">|</li>
+        
+        40 = COA
+        40.10 = TEXT
+        40.10.data = leveltitle : 2  
+        40.10.typolink.parameter.data = leveluid : 2
+        40.20 < lib.level2
+        40.wrap = <li class="nav-item d-flex dropdown ps-2">|</li>
+        
+        50 = COA
+        50.if.isTrue.data = leveluid : 3  
+        50.10 = TEXT
+        50.10.data = leveltitle : 3  
+        50.10.typolink.parameter.data = leveluid : 3     
+        50.20 < lib.level3
+        50.wrap = <li class="nav-item d-flex dropdown ps-2">|</li>
+         
+        60 = COA
+        60.if.isTrue.data = leveluid : 4  
+        60.10 = TEXT
+        60.10.data = leveltitle : 4 
+        60.10.typolink.parameter.data = leveluid : 4 
+        60.20 < lib.level4    
+        60.wrap = <li class="nav-item d-flex dropdown ps-2">|</li>   
+        
+        70 = COA
+        70.if.isTrue.data = leveluid : 5 
+        70.10 = TEXT
+        70.10.data = leveltitle : 5 
+        70.10.typolink.parameter.data = leveluid : 5      
+        70.20 < lib.level5    
+        70.wrap = <li class="nav-item d-flex dropdown ps-2">|</li>   
+        
+        80 = COA
+        80.if.isTrue.data = leveluid : 6
+        80.10 = TEXT
+        80.10.data = leveltitle : 6
+        80.10.typolink.parameter.data = leveluid : 6     
+        80.20 < lib.level6   
+        80.wrap = <li class="nav-item d-flex dropdown ps-2">|</li>   
+        
+        wrap = <ul class="{$page.navigation.breadcrumbulwrap}">|</ul>
+    }
+    wrap = <nav class="{$page.navigation.breadcrumbwrap}">|</nav>
+    
+}

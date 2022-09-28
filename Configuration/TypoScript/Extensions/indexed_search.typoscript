@@ -1,0 +1,33 @@
+plugin.tx_indexedsearch._LOCAL_LANG.de.displayResults.page = 
+plugin.tx_indexedsearch._LOCAL_LANG.de.result.page =
+plugin.tx_indexedsearch._LOCAL_LANG.de.displayResults.next = »
+plugin.tx_indexedsearch._LOCAL_LANG.de.displayResults.previous = «
+
+plugin.tx_indexedsearch.displayResults.page = 
+plugin.tx_indexedsearch.result.page = 
+plugin.tx_indexedsearch.displayResults.next = »
+plugin.tx_indexedsearch.displayResults.previous = «
+
+
+
+
+
+plugin.tx_indexedsearch.view.layoutRootPaths.10 = EXT:t3up/Resources/Private/Templates/IndexedSearch/Layouts/
+plugin.tx_indexedsearch.view.partialRootPaths.10 = EXT:t3up/Resources/Private/Templates/IndexedSearch/Partials/
+plugin.tx_indexedsearch.view.templateRootPaths.10 = EXT:t3up/Resources/Private/Templates/IndexedSearch/Templates/
+plugin.tx_indexedsearch.settings {
+			displayRules 					= 0
+			displayAdvancedSearchLink 		= 0
+}
+
+plugin.tx_indexedsearch.view {
+    templateRootPaths {
+        0 = EXT:indexed_search/Resources/Private/Templates/
+        10 = {$plugin.tx_indexedsearch.view.templateRootPath}
+    }
+
+    partialRootPaths {
+        0 = EXT:indexed_search/Resources/Private/Partials/
+        10 = {$plugin.tx_indexedsearch.view.partialRootPath}
+    }
+}

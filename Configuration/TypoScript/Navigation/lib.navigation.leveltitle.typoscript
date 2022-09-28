@@ -1,0 +1,7 @@
+lib.navigation.leveltitle = COA
+lib.navigation.leveltitle.if.isTrue = {$page.navigation.leveltitle}
+lib.navigation.leveltitle.10 = TEXT
+lib.navigation.leveltitle.10.data = leveltitle : {$page.navigation.subnavlevel} , slide
+lib.navigation.leveltitle.wrap = <div class="levelTitle">|</div>
+
+

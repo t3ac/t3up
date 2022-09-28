@@ -1,0 +1,17 @@
+/* Top ***********************************************************************************************************************************************/
+.toTop {							   display: none;
+                                       text-decoration: none !important; position:fixed; transition: background-color  ease .5s;
+                                       z-index: 80; width: 3rem; height: 3rem; background-color: rgba($totopBgColor,.7); bottom: $totopPosBottom; right: $totopPosRight; 
+      a                                {color: $totopLinkColor; text-decoration: none !important;}
+      a:before                         {content:'\f077'; font-family: $symbol; font-size: 1.5rem;}
+      
+      
+      a:hover                          {color: rgba($totopLinkHoverColor,1)}  
+      span                             {display: none;}
+}
+                                                
+.toTop.fixed                          {display: flex !important; justify-content: center; align-items: center;}
+.toTop.fixed:hover                    {background-color: rgba($totopBgColor,1)}  
+
+
+   

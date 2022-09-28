@@ -1,0 +1,177 @@
+#################################################################################################
+
+lib.anker = COA
+lib.anker {
+	10 = COA 
+	10 {
+	    10 = HMENU
+	    10 {
+	        
+	        entryLevel = 0
+	        1 = TMENU
+	        1 {
+	            expAll = 1
+	            NO = 1
+	            NO.wrapItemAndSub   = <li class="navitem" role="menuitem">|</li>
+	            NO.ATagParams       = class="navlink" role="menuitem"
+	
+	            NO.after.stdWrap.cObject = CONTENT
+	            NO.after.stdWrap.cObject {
+	                table = tt_content
+	                    wrap = <ul class="subnav" role="menu" aria-label="SubMenu" aria-hidden="true" aria-expanded="false">|</ul>
+	                    select {
+	                        pidInList.field = uid
+	                        orderBy = sorting
+	                        where = sectionIndex=0
+	                        languageField=sys_language_uid
+	                    }
+	                    renderObj = TEXT
+	                    renderObj {
+	                        wrap = <li class="navitem" role="menuitem">|</li>
+	                        field = header
+	                        typolink.parameter.field = pid
+	                        typolink.parameter.dataWrap = |#{field:uid}
+	                        typolink.ATagParams = class="navlink"
+	                        if.isTrue.field=header
+	                    }
+	            }   
+	            ACT = 1
+	            ACT.wrapItemAndSub  = <li class="navitem cur" role="menuitem">|</li>
+	            ACT.ATagParams      = class="navlink" role="menuitem"
+	            ACT.after.stdWrap.cObject = CONTENT
+	            ACT.after.stdWrap.cObject {
+	                table = tt_content
+	                    wrap = <ul class="subnav" role="menu" aria-label="SubMenu" aria-hidden="true" aria-expanded="false">|</ul>
+	                    select {
+	                        pidInList.field = uid
+	                        orderBy = sorting
+	                        where = sectionIndex=0
+	                        languageField=sys_language_uid
+	                    }
+	                    renderObj = TEXT
+	                    renderObj {
+	                        wrap = <li class="navitem" role="menuitem">|</li>
+	                        field = header
+	                        typolink.parameter.field = pid
+	                        typolink.parameter.dataWrap = |#{field:uid}
+	                        typolink.ATagParams = class="navlink"
+	                        if.isTrue.field=header
+	                    }
+	            } 
+	            
+	    
+	            
+	        }    
+	            
+	         wrap = |<li class="closeNav"><img src="/typo3conf/ext/t3up/Resources/Public/Icons/x1.svg" alt="close Menu" /></li>
+	     }
+	     
+	  wrap = <ul class="nav" role="menu" aria-label="Menu">|</ul   
+	     
+    }   
+    wrap = <nav id="menu" class="simpleDropNav pr-6">|</nav>
+}
+
+################################################################
+
+
+lib.navigation.anker =< lib.contentElement
+lib.navigation.anker {
+	variables {
+		navwrap      		< lib.navigationwrap
+	}
+    templateName = OnePager
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        10 {
+            special = list
+            special {
+                value {
+                    field = pages
+                    override {
+                        data = page:uid
+                        if {
+                            isFalse.field = pages
+                        }
+                    }
+                }
+            }
+            dataProcessing {
+
+                10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+                10 {
+                    table = tt_content
+                    pidInList.field = uid
+                    as = content
+                    // where = sectionIndex = 1 AND colPos = 0
+                    where = sectionIndex = 1
+                    orderBy = sorting
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
+                }
+            }
+        }
+    }
+    stdWrap {
+        editIcons = tt_content: header [header_layout], pages
+        editIcons {
+            iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
+        }
+    }
+}
+
+################################################################
+
+lib.navigation.sideAnker = COA
+lib.navigation.sideAnker.if.isTrue = {$page.navigation.sideAnker} 
+
+lib.navigation.sideAnker.10 =< lib.contentElement
+lib.navigation.sideAnker.10 {
+    templateName = SideAnker
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        10 {
+            special = list
+            special {
+                value {
+                    field = pages
+                    override {
+                        data = page:uid
+                        if {
+                            isFalse.field = pages
+                        }
+                    }
+                }
+            }
+            dataProcessing {
+
+                10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+                10 {
+                    table = tt_content
+                    pidInList.field = uid
+                    as = content
+                    // where = sectionIndex = 1 AND colPos = 0
+                    where = sectionIndex = 1
+                    orderBy = sorting
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
+                }
+            }
+        }
+    }
+    stdWrap {
+        editIcons = tt_content: header [header_layout], pages
+        editIcons {
+            iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
+        }
+    }
+}
+

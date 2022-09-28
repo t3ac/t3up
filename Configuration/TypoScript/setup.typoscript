@@ -1,0 +1,46 @@
+###########################
+#### PAGE #################
+###########################
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Basic/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Main/" extensions="typoscript">
+#<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Extensions/" extensions="typoscript">
+
+###########################
+#  <BR> fuer mehrzeilige CONTENT-Titel
+lib.stdheader.10.setCurrent.br = 1
+
+page = PAGE
+page {
+	typeNum 						  = 0
+	
+	shortcutIcon 					  = {$page.files.favicon}
+	
+	meta {
+		viewport                      = {$page.meta.viewport}
+		robots                        = {$page.meta.robots}
+		author                        = {$page.meta.author}
+		author.override.field         = author
+		description.field             = description
+		description.ifEmpty           = {$page.meta.description}
+		keywords.field                = keywords
+		keywords.ifEmpty              = {$page.meta.keywords}
+		language                      = {$page.meta.language}
+		copyright                     = {$page.meta.copyright}
+        X-UA-Compatible               = {$page.meta.compatible}
+        google                        = {$page.meta.google}
+        google-site-verification      = {$page.meta.google-site-verification}
+        publisher                     = {$page.meta.publisher}
+        page-topic                    = {$page.meta.page-topic}
+        og:image                      = {$page.meta.og-image}   
+        og:title                      = {$page.meta.og-title}   
+        og:description                = {$page.meta.og-description}   
+        og:url                        = {$page.meta.og-url}   
+        og:site_name                  = {$page.meta.og-site_name}    
+                            
+	}
+
+    10 < lib.main
+
+}
+

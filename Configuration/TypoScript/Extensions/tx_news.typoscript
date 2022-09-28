@@ -1,0 +1,73 @@
+plugin.tx_news.settings.cssFile >
+
+    
+config.recordLinks {
+ tx_news {
+	 typolink {
+		 parameter = {$plugin.tx_news.settings.detailPid}
+		 additionalParams.data = field:uid
+		 additionalParams.wrap = &tx_news_pi1[controller]=News&tx_news_pi1[action]=detail&tx_news_pi1[news]=|
+		 useCacheHash = 1
+		 ATagParams.data = parameters:allParams
+		 target.data = parameters:target
+		 title.data = parameters:title
+		 extTarget = _blank
+		 extTarget.override.data = parameters:target
+	 }
+	 forceLink = 1
+ }
+}
+
+## RSS FEED EINSTELLUNGEN
+
+[getTSFE().type == 9818]
+config {
+    contentObjectExceptionHandler = 0
+    absRefPrefix = /
+    disableAllHeaderCode = 1
+    xhtml_cleaning = none
+    admPanel = 0
+    debug = 0
+    metaCharset = utf-8
+    additionalHeaders.10.header = Content-Type:application/rss+xml;charset=utf-8
+    disablePrefixComment = 1
+    linkVars >
+}
+
+pageNewsRSS = PAGE
+pageNewsRSS {
+    typeNum = 9818
+    10 < tt_content.list.20.news_pi1
+    10 {
+            switchableControllerActions {
+                    News {
+                            1 = list
+                    }
+            }
+            settings < plugin.tx_news.settings
+            settings {
+                    cropMaxCharacters = 300
+                    limit = {$page.rss.limit}
+                    detailPid = {$page.rss.detail}
+                    startingpoint = {$page.rss.start}
+                    format = xml
+                    recursive =  {$page.rss.recursive}
+                    categories =  {$page.rss.categories}
+                    archiveRestriction = {page.rss.archiverestriction}
+                    categoryConjunction =  {$page.rss.categoryConjunction}
+                    list.rss.channel {
+                        title = {$page.rss.title}
+                        description = {$page.rss.description}
+                        link = {$page.rss.webadresse}
+                        language = de
+                        copyright = {$page.rss.copyright}
+                        category = {$page.rss.category}
+                    }
+            }
+    }
+}
+    # set the format
+    plugin.tx_news.settings.format = xml
+    
+[END]
+

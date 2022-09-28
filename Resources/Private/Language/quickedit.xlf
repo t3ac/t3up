@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:quickedit/Resources/Private/Language//Backend.xlf" date="2020-03-19T16:16:45Z" product-name="quickedit">
+		<header/>
+		<body>
+            <trans-unit id="usersettings.quickeditTab" xml:space="preserve">
+				<source>Quickedit</source>
+			</trans-unit>
+			<trans-unit id="usersettings.disableQuickeditInPageModule" xml:space="preserve">
+				<source>Disable Quickedit toolbar in page module</source>
+			</trans-unit>
+            <trans-unit id="usersettings.quickeditDefaultHidden" xml:space="preserve">
+				<source>Quickedit toolbar is hidden by default</source>
+			</trans-unit>
+
+			<trans-unit id="setting.disableToolbar" xml:space="preserve">
+                <source>Disable Toolbar</source>
+            </trans-unit>
+
+			<trans-unit id="toggleButton" xml:space="preserve">
+				<source>Show/Hide Quickedit toolbar</source>
+			</trans-unit>
+			<trans-unit id="headerLabel" xml:space="preserve">
+				<source>Quickedit</source>
+			</trans-unit>
+			<trans-unit id="currentValues" xml:space="preserve">
+				<source>Current values</source>
+			</trans-unit>
+
+			<trans-unit id="defaultPageType.group.general" xml:space="preserve">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="defaultPageType.group.metadata" xml:space="preserve">
+				<source>Metadata</source>
+			</trans-unit>
+			<trans-unit id="defaultPageType.group.access" xml:space="preserve">
+				<source>Access</source>
+			</trans-unit>
+			<trans-unit id="defaultPageType.group.shortcut" xml:space="preserve">
+				<source>Shortcut</source>
+			</trans-unit>
+			<trans-unit id="defaultPageType.group.seo" xml:space="preserve">
+                <source>SEO</source>
+            </trans-unit>
+            <trans-unit id="defaultPageType.group.twitter" xml:space="preserve">
+                <source>Twitter</source>
+            </trans-unit>
+            <trans-unit id="defaultPageType.group.facebook" xml:space="preserve">
+                <source>Facebook</source>
+            </trans-unit>
+            <trans-unit id="defaultPageType.group.mountpoint" xml:space="preserve">
+                <source>Mount Point</source>
+            </trans-unit>
+            <trans-unit id="defaultPageType.group.external" xml:space="preserve">
+                <source>External Url</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

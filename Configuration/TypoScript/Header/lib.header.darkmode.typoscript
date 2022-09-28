@@ -1,0 +1,38 @@
+page.includeJS.dark                         = EXT:t3up/Resources/Public/JavaScript/dark.js
+
+lib.header.darkmode = COA
+lib.header.darkmode.if.isTrue               = {$page.header.darkmode} 
+
+lib.header.darkmode.10 = TEXT
+lib.header.darkmode.10.value (
+    <li>
+        <a class="colormode navitem d-block" data-show-sub="false" title="Color mode">
+            <span class="ps-2 small funcItemTitle lang_en">Color mode</span>
+            <span class="ps-2 small funcItemTitle lang_de">Farbmodus</span>
+            <span class="ps-2 small funcItemTitle lang_fr">Mode couleur</span>
+            <span class="ps-2 small funcItemTitle lang_it">Modo colore</span>  
+            <span class="ps-2 small funcItemTitle lang_es">Modo de color</span>  
+            <span class="ps-2 small funcItemTitle lang_pl">Tryb kolorowy</span>              
+        </a>     
+    )    
+ 
+lib.header.darkmode.20 = TEXT
+lib.header.darkmode.20.value (
+    <div class="tab-content">
+        <div class="tab-pane fade popover" id="tab-colormode-mobile">
+            <h4 class="pb-2 lang_de">Hell-/Dunkelmodus</h4>
+            <h4 class="pb-2 lang_en">Light-/darkmodus</h4>
+            <h4 class="pb-2 lang_fr">Mode couleur</h4>
+            <h4 class="pb-2 lang_it">Modo colore</h4>  
+            <h4 class="pb-2 lang_es">Modo de color</h4> 
+            <h4 class="pb-2 lang_pl">Tryb kolorowy</h4>       
+            
+            <div id="colormode-wrap" class="tab-content d-flex flex-wrap">
+                <a class="color-mode__btn system w-100"><span></span><b class="lang_de">Systemstandard</b><b class="lang_en">Standard</b><b class="lang_fr">Système standard</b><b class="lang_it">Sistema standard</b><b class="lang_es">Estándar del sistema</b><b class="lang_pl">Norma systemowa</b></a>
+                <a class="color-mode__btn light w-100"><span></span><b class="lang_de">Hell</b><b class="lang_en">Light</b><b class="lang_fr">Lumineux</b><b class="lang_it">Luminoso</b><b class="lang_es">Brillante</b><b class="lang_pl">Piekło</b></a>
+                <a class="color-mode__btn dark w-100"><span></span><b class="lang_de">Dunkel</b><b class="lang_en">Dark</b><b class="lang_fr">Sombre</b><b class="lang_it">Scuro</b><b class="lang_es">Oscura</b><b class="lang_pl">Ciemne</b></a>
+            </div>
+            <span class="btn-close" title="close popup"></span>
+        </div>
+    )
+lib.header.darkmode.20.wrap = |</li>

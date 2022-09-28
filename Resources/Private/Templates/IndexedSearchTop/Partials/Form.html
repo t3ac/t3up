@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="tx-indexedsearch-searchbox mt-auto d-none d-lg-block">
+	<f:form action="search" method="post" id="tx_indexedsearch" pageUid="{settings.targetPid}">
+		
+			<div class="tx-indexedsearch-form row">
+				<div class="col-12 d-flex mb-1">
+					<f:form.textfield name="search[sword]" value="{sword}" placeholder="" id="tx-indexedsearch-searchbox-sword" class="form-control topSearch" />
+					<f:form.submit name="search[submitButton]" value="{f:translate(key: 'form.submit')}" id="tx-indexedsearch-searchbox-button-submit" class="btn btn-secondary" />
+				</div>
+			</div>
+	
+
+	</f:form>
+</div>
+
+
+</html>

@@ -1,0 +1,156 @@
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  externalPlugins:
+    softhyphen:
+      resource: "EXT:rte_ckeditor/Resources/Public/JavaScript/Plugins/softhyphen/plugin.js"  
+      enableShortcut: true
+      
+    justify:
+        resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/justify/plugin.js" 
+
+    textselection:
+        resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/textselection/plugin.js"    
+
+    codeTag:
+        resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/codeTag/plugin.js"    
+        
+    showbrokenlinks:
+        resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/showbrokenlinks/plugin.js"   
+        
+  config:
+    contentsCss: ["EXT:t3up/Resources/Public/Css/rte.css"]
+    width: "680px"
+    resize_enabled: true
+    resize_dir: 'both'
+    resize_maxWidth: 1000
+    resize_minWidth: 400
+    uiColor: "#F8F8F8"
+    
+    extraAllowedContent:
+        - p span
+        
+    removeButtons:
+        - Underline
+        - Strike   
+        - Table
+        
+    allowTags:
+        - span   
+        
+    extraPlugins:
+      - specialchar
+      - showblocks
+
+    format_tags: "p;h2;h3;h4;h5;div"
+
+    stylesSet:
+      
+      - { name: "align-left", element: ['p', 'td', 'th'], attributes: { 'class': 'align-left' }}
+      - { name: "align-center", element: ['p', 'td', 'th'], attributes: { 'class': 'align-center' }}
+      - { name: "align-right", element: ['p', 'td', 'th'], attributes: { 'class': 'align-right' }}
+
+      - { name: "Link intern", element: ['a'], attributes: { class: "link-internal"} }
+      - { name: "Anker", element: ['a'], attributes: { class: "smooth"} }           
+      - { name: "Link extern", element: ['a'], attributes: { class: "link-external"} }
+      - { name: "Phone", element: ['a'], attributes: { class: "link-phone"} }
+      - { name: "Fax", element: ['a'], attributes: { class: "link-fax"} }      
+      - { name: "E-Mail", element: ['a'], attributes: { class: "link-mail"} }
+      - { name: "Download", element: ['a'], attributes: { class: "link-download"} }
+      - { name: "Button light", element: ['a'], attributes: { class: "btn btn-light"} }
+      - { name: "Button secondary", element: ['a'], attributes: { class: "btn btn-secondary"} }
+      - { name: "Info", element: ['a'], attributes: { class: "link-info"} }
+      - { name: "Web", element: ['a'], attributes: { class: "link-web"} }
+      
+      - { name: "UL ohne Aufzählungspunkte", element: ['ul'], attributes: { class: "ohne"} }
+      - { name: "UL mit Strich", element: ['ul'], attributes: { class: "dash"} }
+      - { name: "UL mit Quadrat", element: ['ul'], attributes: { class: "square"} }
+      - { name: "UL für Symbole", element: ['ul'], attributes: { class: "symbols"} }
+      
+      - { name: "Ol decimal", element: ['ol'], attributes: { class: "decimal"} }
+      - { name: "Ol roman", element: ['ol'], attributes: { class: "roman"} }
+      - { name: "Ol griech.", element: ['ol'], attributes: { class: "lower-greek"} }
+      - { name: "Ol abc", element: ['ol'], attributes: { class: "lower-alpha"} }    
+      
+      - { name: "Monospace", element: "span", attributes: { class: "mono"} }
+      
+    toolbarGroups:
+      - { name: styles, groups: [ styles, format ] }
+      - { name: basicstyles, groups: [ basicstyles ] }
+      - { name: paragraph, groups: [ list, indent, blocks ] }
+      - { name: links, groups: [ links ] }
+      - "/"
+      - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
+      - { name: insert, groups: [ insert ] }
+      - { name: tools, groups: [ specialchar ] }
+      - { name: document, groups: [ mode ] }
+      
+    justifyClasses:
+      - align-left
+      - align-center
+      - align-right
+
+    removePlugins:
+      - image
+
+#Button config and defaults
+buttons:
+  link:
+    relAttribute:
+      enabled: true
+    properties:
+      class:
+        allowedClasses: 'link-web,link-internal,link-internal-blank,link-download,link-folder,link-external,link-external-blank,link-mail,link-info,smooth'
+    page:
+      properties:
+        class:
+          default: 'link-internal,smooth,link-internal-smooth'
+    file:
+      properties:
+        class:
+          default: 'link-download'
+    folder:
+      properties:
+        class:
+          default: 'link-folder'
+    url:
+      properties:
+        class:
+          default: 'link-external-blank,link-web'
+    mail:
+      properties:
+        class:
+          default: 'link-mail'
+
+#Classes config
+classesAnchor:
+  linkInternal:
+    class: 'link-internal'
+    type: 'page'
+  linkInternalBlank:
+    class: 'link-internal-blank'
+    type: 'page'
+    target: '_blank'
+  linkDownload:
+    class: 'link-download'
+    type: 'file'
+  linkFolder:
+    class: 'link-folder'
+    type: 'folder'
+  linkExternal:
+    class: 'link-external'
+    type: 'url'
+  linkExternalBlank:
+    class: 'link-external-blank'
+    type: 'url'
+    target: '_blank'
+  linkMail:
+    class: 'link-mail'
+    type: 'mail'
+    

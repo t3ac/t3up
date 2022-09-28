@@ -1,0 +1,214 @@
+@media screen and (min-width: 992px){
+
+
+
+    li.dropmenue > span                      {cursor: pointer; display: inline-block; }
+    
+    /* Navigation 1: standard **************/
+    .standardNav{                           
+      nav#menu  {                                 
+        > ul                                {list-style: none; margin: 0; display: flex;}
+        > ul > li                           {position: relative; order: 2;}
+        > ul > li > a                       {font-size: $navigationfontsize; font-weight: 500; letter-spacing: .01em; transition: color ease .3s; text-transform: uppercase; padding: 0  .66rem .66rem; 
+                                            border-bottom-width: 0.33rem; border-bottom-style: solid; border-bottom-color: transparent; display: block; color: $navLinkColor; display: inline-block;}                        
+        > ul > li.cur > a,
+        > ul > li > a:hover                 {color: $navLinkHoverColor; border-bottom-color: $navLinkHoverColor;}
+        > ul > li.act > a,
+        > ul > li > a.closelink             {border-bottom-color: $navLinkHoverColor; border-bottom-color: $navBorderBottomColor;}
+        
+        > ul > li .subnav                   {background-color: $subNavBG; width: 18rem; box-shadow: $shadow;
+                                            position: absolute; white-space: nowrap; z-index: 1002; transition: all ease .3s;} 
+        > ul > li .subnav > li              {display: flex; justify-content: space-between; border-bottom: 0.0625rem solid #efefef}
+        > ul > li .subnav li:hover, 
+        .subnav .activated                  {background-color: rgba($subnavLinkColor,.075);}  
+        > ul > li .subnav > li > a          {font-size: $navigationfontsize; display: inline-block; padding: 0.3125rem 0.625rem; transition: all ease .3s; text-align: inherit; 
+                                            width: 100%; white-space: normal; color: $subnavLinkColor;}
+        > ul > li .subnav .activated > a,    
+        > ul > li .subnav a:focus,
+        > ul > li .subnav a:hover           {color: $subnavLinkHoverColor;} 
+        > ul > li .subnav .subnav           {position: absolute; left: 18rem; top: 0; }
+        > ul > li .subnav span              {align-self: stretch; cursor: pointer; padding: 0.3125rem 0 0.3125rem 0; display: block; text-align: center; width: 2.5rem;
+                                            font-family: $symbol; line-height: 100%; color: $subnavLinkColor;}    
+        > ul > li .subnav li:hover > span   {background-color: rgba($navLinkColor,.075);}            
+        > ul > li .subnav .subnav           {top: auto;}     
+                                                                                                                                            
+      }
+    }
+   
+
+    /* Navigation 2: with Captital-Image ***/
+    .mediaNav{
+      .container > nav > ul                 {display: flex;}
+        
+      .capital                              {display: none; width: 100%; height: auto;}  
+      span.im                               {display: block;}  
+      .im img.capital                       {display: block !important; width: 100%; height: auto;} 
+     
+
+      nav#menu {                                 
+        > ul                                {list-style: none; margin: 0; display: flex}
+        > ul > li                           {border-top: 0.0625rem solid transparent; display: inline-block; }
+        > ul > li > a                       {font-size: $navigationfontsize +px; font-weight: 500; letter-spacing: .01em; border-bottom-width: 0.33rem; border-bottom-style: solid; border-bottom-color: transparent;
+                                            display: inline-block; transition: color ease .3s; text-transform: uppercase; padding: 0 .66rem  .66rem;  color: $navLinkColor;}
+        > ul > li.cur > a                   {color: $navLinkHoverColor; border-bottom-color: $navLinkHoverColor;}
+        > ul > li > a:hover                 {color: $navLinkHoverColor; border-bottom-color: rgba($navLinkHoverColor, .33);}
+        > ul > li.act > a                   {border-bottom-color: rgba($navLinkHoverColor, .66);}
+        > ul > li > a.closelink             {border-bottom-color: $navLinkHoverColor;}
+          
+        .submenulevel                       {display: none;}
+      }
+      
+        .row > .subnav                      {position: relative !important; list-style: none;  } 
+        .row > .subnav li                   {height: 2.5*$navigationfontsize +px;  display: flex; align-items: center; justify-content: space-between; width: 33.33%; border-bottom: 0.0625rem solid #ececec;}
+        .row > .subnav li:last-of-type      {border-bottom: 0}
+        .row > .subnav li a                 {font-size: $navigationfontsize +px; line-height: 2+$navigationfontsize +px; display: block; width: 100%; padding-left: 0.625rem; transition: all ease .3s; color: $subnavLinkColor;}      
+        .row > .subnav li:hover,          
+        .row > .subnav .activated           {background-color: rgba($subnavLinkColor,.075);} 
+
+        .row > .subnav .activated > a,    
+        .row > .subnav a:focus,
+        .row > li .subnav a:hover           {color: $subnavLinkHoverColor;} 
+       
+        .row > .subnav > li span            {align-self: stretch; cursor: pointer; padding: 0.625rem 0 0.625rem 0; display: block; text-align: center; width: 2.5rem;
+                                            transition: all ease .3s; line-height: 100%; color: $subnavLinkColor; font-size: $navigationfontsize +px; }
+        .row > .subnav  li:hover > span     {background-color: rgba($subnavLinkColor,.075); color: $subnavLinkHoverColor;} 
+        .subnav .activated                  {background-color: rgba($subnavLinkColor,.075);}                      
+        .row > .subnav .subnav              {position: absolute; left: 33.66%; top: 0; list-style: none; }
+        .row > .subnav .subnav li           {width: 50%;}
+        .row > .subnav .subnav .subnav      {left: 50%;}    
+        .row > .subnav .subnav .subnav  li  {width: 100%;}
+
+      .box                                  {padding-top: 1rem; padding-bottom: 1rem; z-index: 1002; width: 100%; position: absolute; left: 0;display: none; 
+                                            border-top: 0.0625rem solid #cacaca; box-shadow: $shadow;  background-color: $subNavBG; }
+                                                    
+        .closemenu                          {transition: all ease 0.3s; text-align: center; display: block; cursor: pointer; position: absolute; top: 1rem; right: 1rem; 
+                                            padding: 5px 7.5px; background: none; border: 1px solid; border-color: #aaa; color: #666; line-height: 100%;  font-size: 150%;}
+    }
+
+    /* Navigation 3: Navigation on the right, full size */
+    .blockNav{ 
+      
+      nav#menu  {   
+                           
+        > ul                                {list-style: none; margin: 0; display: flex;}
+        > ul > li                           {order: 2;}       
+        > ul > li > a                       {font-size: $navigationfontsize; transition: all ease .3s; text-transform: uppercase; padding: 1rem; display: block; width: 100%; text-align: inherit; white-space: nowrap; border-bottom-width: .25rem; border-bottom-style: solid; border-bottom-color: transparent;} 
+        > ul > li.act > a,
+        > ul > li > a.closelink             {border-bottom-color: $navLinkHoverColor;}
+            
+        
+        
+        > ul > li > ul                      {width: 100%; list-style: none;  position: absolute; left: 0; background-color: $subNavBG; list-style: none; z-index: 1002; padding: 1rem; margin: 0; box-shadow: 0 .125rem .25rem .125rem rgba(0,0,0,.1);}
+        > ul > li > ul[aria-hidden=false]   {display: flex !important; opacity: 1 !important; }          
+        > ul > li > ul > li                 {width: auto; flex: 1 1 auto!important; display: inline-block; margin: 0 0 0 -0.1875rem; padding: 0; vertical-align: top; }
+        > ul > li > ul > li.drittel         {width: 33.333%;}     
+        > ul > li > ul > li.viertel         {width: 25%;}    
+        > ul > li > ul > li.fuenftel        {width: 20%;}     
+        > ul > li > ul > li.sechstel        {width: 16.666%;}            
+        > ul > li > ul > li.siebtel         {width: 14.28%;}     
+        > ul > li > ul > li.achtel          {width: 12.5%;}             
+        > ul > li > ul > li.neuntel         {width: 11.11%;}     
+        > ul > li > ul > li.zehntel         {width: 10%;}             
+       
+        > ul > li > ul li                   {position: relative;} 
+        > ul > li > ul li a                 {margin-left: 1rem; display: block; color: $subnavLinkColor; }
+        > ul > li > ul > li > a             {font-weight: $boldweight; letter-spacing: .01em; padding-bottom: 1rem; }  
+        > ul > li > ul li a:hover           {color: $baseColor}    
+        
+        > ul > li > ul li a:before          {position: absolute; top: 0; left: 0; content:'\F0DA'; font-family: $symbol; width: 0.75rem; text-align: center; display: inline-block; opacity: 0; height: 100%;}
+        > ul > li > ul li:hover > a:before  {opacity: 1;}  
+
+        > ul > li > ul > li > ul            {list-style: none;}  
+        > ul > li > ul > li > ul > li       {line-height: 150%;}  
+        > ul > li > ul > li > ul > li a     {padding: 0 0 0.625rem 0;}                               
+      }  
+    }
+    
+    /* Navigation 5: Onepager  ***************************/
+    .ankerNav{
+      .logo                                  {padding-top: 1rem;}
+
+      nav {                                  
+        ul                                   {list-style: none; margin: 0; display: flex}
+        li a                                 {transition: color ease .3s; display: block; font-weight: $boldweight; letter-spacing: .01em; text-transform: uppercase; padding: 1rem .66rem 0;}
+        li a:hover                           {color: $baseColor;}
+      }
+    }
+    
+    
+}
+
+
+
+/* Anker-Nav ********************************************************************************************************************************************************/
+
+@media screen and (min-width: 768px){
+
+    /* Anker-Nav */
+    nav#sideanker{                             position: fixed; left: auto; top: 50%; z-index:3;
+      ul                                       {display: block; list-style-type: none;}  
+      ul li                                    {display: block; padding: 0 0 0 2rem; margin-bottom: .5rem;}  
+      ul a                                     {font-size: 1.25rem; padding: .5rem; border-radius: 0.5rem; color: transparent; transition: all ease .3s; background: rgba(255,255,255,0) }   
+      ul li:hover a                            {box-shadow: $shadow; font-weight: bold; color: #333;  background: rgba(255,255,255,1) }  
+      ul li:before                             {border: 0.0625rem solid rgba($baseColor,.3);  background: rgba($baseColor,.51); width: 1rem; height: 1rem; border-radius: 50%; content: ''; 
+                                               margin-left: -1.5rem; transition: all ease .5s; margin-top: .5rem; float: left; }
+      ul li:hover:before                       {background: rgba($baseColor,.8);}
+    }
+}
+
+
+
+/* All Mobil-Nav ********************************************************************************************************************************************************/
+
+@media screen and (max-width: 991px){
+	header ul.nav                                     {display: none;}         
+}
+
+
+
+
+/* ** COLORS **********************************************************************************************************************************************************/
+nav {
+    li.orange a                                            {color: $orange !important}
+    li.orange.activated > a,    
+    li.orange > a:hover                                    {border-bottom-color: $orange !important}
+
+    li.blue a                                              {color: $blue !important}
+    li.blue.activated > a,    
+    li.blue > a:hover                                      {border-bottom-color: $blue !important}  
+
+    li.green a                                             {color: $green !important}
+    li.green.activated > a,    
+    li.green > a:hover                                     {border-bottom-color: $green !important}  
+    
+    li.grey a                                              {color: darken($grey,10%) !important}
+    li.grey.activated > a,    
+    li.grey > a:hover                                      {border-bottom-color: $grey !important}  
+    
+    li.red a                                               {color: $red !important}
+    li.red.activated > a,    
+    li.red > a:hover                                       {border-bottom-color: $red !important}  
+    
+    li.darkgrey a                                          {color: $darkgrey !important}
+    li.darkgrey.activated > a,    
+    li.darkgrey > a:hover                                  {border-bottom-color: $darkgrey !important}   
+    
+    li.darkblue a                                          {color: $darkblue !important}
+    li.darkblue.activated > a,    
+    li.darkblue > a:hover                                  {border-bottom-color: $darkblue !important}   
+    
+    li.violett a                                           {color: $violett !important}
+    li.violett.activated > a,    
+    li.violett > a:hover                                   {border-bottom-color: $violett !important}   
+    
+    li.yellow a                                            {color: $yellow !important}
+    li.yellow.activated > a,    
+    li.yellow > a:hover                                    {border-bottom-color: $yellow !important}   
+    
+    li.turquoise a                                         {color: $turquoise !important}
+    li.turquoise.activated > a,    
+    li.turquoise > a:hover                                 {border-bottom-color: $turquoise !important}   
+
+
+}
+

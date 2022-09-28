@@ -1,0 +1,93 @@
+.mean-container a.meanmenu-reveal span:after                {background-color: $headerLinkColor; }      
+.mean-container a.meanmenu-reveal span:before               {border-bottom: 0.15rem solid $headerLinkColor; border-top: 0.15rem solid $headerLinkColor; }         
+.mean-container a.meanmenu-reveal.meanclose span:before     {background-color: $headerLinkColor; }    
+
+header {                                  background-color: $headerBgColor; color: $headerColor; z-index: 1002;
+
+
+    &.sticky                              {box-shadow: $shadow;}
+    &.sticky .logo img                    {width: auto; max-width: $logostickymaxwidth;}
+    &.sticky .toparea                     {display: none !important;}
+    
+    a                                     {color: $headerLinkColor; transition: color ease .3s;}
+    a:hover                               {color: $headerLinkHoverColor;}  
+  
+    .logo img                             {width: 100%; height: auto; max-width: $logomaxwidth +px}
+    .logoII img                           {width: 100%; height: auto; max-width: $logoIImaxwidth; float: right;}
+
+    .insideleft                           {display: flex; align-self: stretch; position: relative; padding: 0;}
+    .insidecenter                         {display: block; position: relative; padding: 0;}
+    .insideright                          {flex-direction: row-reverse; display: flex; position: relative; padding: 0;}
+    .topleft                              {display: flex;}
+    .topright                             {display: flex;}
+  
+  .weblogo img                            {max-height:  3rem; min-height: 2rem; width: auto;}
+  
+  /* top *******************************/
+
+    .toparea                               {display: flex; width: 100%; background-color: rgba($topBgColor,$topBgColorTrans); top: 0; z-index: 998;}
+ 
+    .toparea.active                        {box-shadow: $shadow;}
+     .funcItemTitle                        {display: none;}
+    
+    .top{                                   padding: 0;
+        a                                   {color: $topLinkColor; padding: 0.35rem 1rem; transition: color ease .3s;}  
+        a:hover                             {color: $topLinkHoverColor;}
+        
+        /* a.extras                            {font-family: $symbol;font-size: $symbolfontsize; font-weight: normal;}       */
+        a:before                            {font-family: $symbol;font-size: $symbolfontsize;}
+        a.fontmode > span.symb              {font-size: $symbolfontsize; font-weight: bold;}        
+        a.loginmode:before                  {content:'\f204';}              
+        a.colormode:before                  {content:'\f042';} 
+        a.languagemode:before               {content:'\f0AC';}                 
+        a.logout:before                     {content:'\f205';color: $success;}            
+        a.search:before                     {content:'\f002';}  
+        a.home:before                       {content:'\f015';}      
+    } 
+
+  .languagemenu {                           
+        a                                   {border-bottom: 2px solid transparent; padding: 0 0 0 0; font-weight: bold; }
+
+        .active a                           {border-bottom: 2px solid $headerLinkHoverColor;} 
+
+        .text-muted                         {color: rgba($topLinkColor,.65) !important; padding-left: 0rem; padding-right: 0rem;  display: flex; align-items: center !important;}
+        .inactive > *                       {display: block; }  
+    }
+ 
+  
+  
+   .nav-service{                            position: relative;
+       > li                                 {display: block;} 
+       > li > a                             {display: block; cursor: pointer; text-transform: none; }
+       
+      .tab-content{
+        .tab-pane{                          width: 100vH; padding: 1rem ; background-color: #f2f2f2; z-index: 997; box-shadow: 0 0 4px rgb(0 0 0 / 40%); top: auto; left: auto; right: auto; transform: none; position: absolute;
+            h4                              {font-weight: bold;}
+            a.color-mode__btn               {display: block; padding: .25rem ; text-align: left; position: relative; border-width: 0; border-radius: 0; border: 1px solid transparent;}
+            a.color-mode__btn:hover         {cursor: pointer;}    
+            a.color-mode__btn > span        {display: inline-block; height: 1.125rem; width: 2rem; border: 1px solid #808080; position: relative;top: 0.3rem;margin-right: 0.5rem;background: #fff; overflow: hidden;}
+            a.color-mode__btn.dark > span   {background: #000; }
+            a.color-mode__btn.system > span:before {content: ""; position: absolute; bottom: -1rem; right: -9px; width: 2.5rem; height: 1.5rem; transform: rotate(-28deg); z-index: 1; background-color: #000;}
+            .fsrange                        {font-size: 125%; cursor: pointer; }
+
+          }
+       }
+   }
+            
+    
+  .fsrange                                  {cursor: pointer;  align-self: stretch;}
+  .fsrange label                            {display: block; cursor: pointer; margin-bottom: 0;}       
+}
+
+.top-searchbox > div                        {position: relative;}                            
+.top-searchbox .form-control                {width: 75%;} 
+
+
+
+
+@media screen and (min-width: 992px){
+    header {                                  
+        .funcItemTitle                     {display: inline-block;}
+        .notitle .funcItemTitle            {display: none;}
+    }
+}

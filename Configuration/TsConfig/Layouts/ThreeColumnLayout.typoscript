@@ -1,0 +1,50 @@
+###########################################
+#### BACKENDLAYOUT: Standard ##############
+###########################################
+mod {
+    web_layout {
+        BackendLayouts {
+            ThreeColumnLayout {
+                title = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:ThreeColumnLayout
+                icon = EXT:t3up/Resources/Public/Icons/BackendLayouts/ThreeColumnLayout.svg
+                 config {
+                    backend_layout {
+                        colCount = 3
+                        rowCount = 2
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos3
+                                        colspan = 3
+                                        colPos = 3
+                                    }
+                                }
+                            }
+                            2 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos1
+                                        colPos = 1
+                                        colspan = 1
+                                    }
+                                    
+                                    2 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos0
+                                        colspan = 1
+                                        colPos = 0
+                                    }
+                                    3 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos2
+                                        colPos = 2
+                                        colspan = 1
+                                    }
+                                }
+                            }  
+                        }
+                    }
+                }
+            } 
+        } // BackendLayouts
+    } //web_layout
+} //mod

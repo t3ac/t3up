@@ -1,0 +1,84 @@
+solr.10.view.templateRootPaths.30 = EXT:t3up/Resources/Private/Templates/SolrTop/Templates/
+solr.10.view.partialRootPaths.30 = EXT:t3up/Resources/Private/Templates/SolrTop/Partials/
+solr.10.view.layoutRootPaths.30 = EXT:t3up/Resources/Private/Templates/SolrTop/Layouts/
+
+
+page.includeCSS {
+    bootstrap >
+    bootstrap-theme > 
+}
+
+page.includeJSFooterlibs {
+    bootstrap-js > 
+}
+
+
+page.includeJSFooterlibs.solr-jquery =
+
+plugin.tx_solr.statistics = 0
+
+
+plugin.tx_solr {
+    search {
+        faceting {
+            facets {
+                type {
+                    renderingInstruction = CASE
+                    renderingInstruction {
+                        key.field = optionValue
+
+                        pages = TEXT
+                        pages.value = Pages
+                        pages.lang.de = Seiten
+
+                        tx_solr_file = TEXT
+                        tx_solr_file.value = Files
+                        tx_solr_file.lang.de = Dateien
+
+                        tx_news_domain_model_news = TEXT
+                        tx_news_domain_model_news.value = News
+                        tx_news_domain_model_news.lang.de = Nachrichten
+                    }
+                }
+                age {
+                	label = age
+                	renderingInstruction = CASE
+                    renderingInstruction {
+                        key.field = optionValue
+
+                        halfYear = TEXT
+                        halfYear.value = 1 to 6 months
+                        halfYear.lang.de = 1. Halbjahr
+
+                        month = TEXT
+                        month.value = 1 week to 1 month 
+                        month.lang.de = Eine Woche bis zu einem Monat
+                        
+                        old = TEXT
+                        old.value = over a year
+                        old.lang.de = älter als ein Jahr  
+                        
+                        week = TEXT
+                        week.value = Less than one week
+                        week.lang.de = laufende Woche      
+                        
+                        year = TEXT
+                        year.value = 6 months to 1 year
+                        year.lang.de = 6 Monate, oder älter     
+
+                    }
+                }
+                
+                
+                
+                site {
+	                field = site
+	                label = Domain
+	             }  
+ 
+            }
+        }
+    }
+}
+
+

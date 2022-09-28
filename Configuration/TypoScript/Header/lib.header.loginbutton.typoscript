@@ -1,0 +1,27 @@
+lib.toplogin < plugin.tx_felogin_pi1 
+lib.toplogin.templateFile = EXT:t3up/Resources/Private/Templates/Login/Login.html
+
+lib.header.loginbutton = COA
+lib.header.loginbutton {
+    if.isTrue                      = {$page.header.loginbutton}
+    10 = TEXT
+    10.value                       = <span class="ps-2 small funcItemTitle">Login</span>
+    10.wrap                        = <li><a class="loginmode navitem" data-show-sub="false" title="Login">|</a>
+    20 < lib.toplogin 
+    20.wrap                        = |</li> 
+}
+
+[loginUser('*')]
+lib.header.loginbutton = TEXT
+lib.header.loginbutton {
+    value                          = <span class="ps-2 small funcItemTitle">Logout</span>
+    typolink {
+        parameter                  = {page:uid}
+        parameter.insertData       = 1
+        additionalParams           = &logintype=logout
+        ATagParams                 = class="logout navitem" data-show-sub="false" title="Logout"
+        
+   }
+    wrap = <li>|</li> 
+}
+[END]

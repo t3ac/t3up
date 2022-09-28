@@ -1,0 +1,306 @@
+/* Bootstrap */
+@import "Bootstrap/bootstrap.scss";
+
+/* Colormode */
+@import "Colormode/_dark.scss";
+@import "Colormode/_contrast.scss";
+
+/* Fonts */
+@import $fontdef   + '/Fonts/' + $font + ".scss";
+@import $font2def  + '/Fonts/' + $font2 + ".scss";
+@import $symboldef + '/Fonts/' + $symbolfiles  + ".scss";
+
+/* Fonts */
+@import $fontdef   + '/Fonts/' + $font + ".scss";
+@import $font2def  + '/Fonts/' + $font2 + ".scss";
+@import $symboldef + '/Fonts/' + $symbolfiles  + ".scss";
+
+/* Basics */
+@import  "Basic/_" + $access  + ".scss";
+@import  "Basic/_" + $fsc     + ".scss";
+@import  "Basic/_" + $links   + ".scss";
+@import  "Basic/_" + $totop   + ".scss";
+@import  "Basic/_" + $table   + ".scss";
+@import  "Basic/_" + $social  + ".scss";
+
+/* Content */
+@import  "Content/_" + $breadcrumb      + ".scss";
+@import  "Content/_" + $content         + ".scss";
+@import  "Content/_" + $footer          + ".scss";
+@import  "Content/_" + $navigation      + ".scss";
+@import  "Content/_" + $header          + ".scss";
+@import  "Content/_" + $quicklinks      + ".scss";
+@import  "Content/_" + $subnavigation   + ".scss";
+@import  "Content/_" + $bootstrapstyles + ".scss";
+
+
+/* Extensions */
+@import  "Extensions/_" + $lightbox        + ".scss";
+@import  "Extensions/_" + $indexedsearch   + ".scss";
+@import  "Extensions/_" + $powermail       + ".scss";
+@import  "Extensions/_" + $mobilmenu       + ".scss";
+@import  "Extensions/_" + $jpfaq           + ".scss";
+
+
+html                                                     {height: 100%; scroll-behavior: smooth;}
+
+html[lang=de-DE] .lang_en,
+html[lang=de-DE] .lang_fr,
+html[lang=de-DE] .lang_it,
+html[lang=de-DE] .lang_pl,
+html[lang=de-DE] .lang_es                               {display: none;}   
+
+
+html[lang=en-GB] .lang_de,
+html[lang=en-GB] .lang_fr,
+html[lang=en-GB] .lang_it,
+html[lang=en-GB] .lang_pl,
+html[lang=en-GB] .lang_es                              {display: none;}       
+
+
+html[lang=en-US] .lang_de,
+html[lang=en-US] .lang_fr,
+html[lang=en-US] .lang_it,
+html[lang=en-US] .lang_pl,
+html[lang=en-US] .lang_es                              {display: none;}       
+
+
+html[lang=it-IT] .lang_en,
+html[lang=it-IT] .lang_fr,
+html[lang=it-IT] .lang_de,
+html[lang=it-IT] .lang_pl,
+html[lang=it-IT] .lang_es                              {display: none;}  
+
+
+html[lang=pl-PL] .lang_en,
+html[lang=pl-PL] .lang_fr, 
+html[lang=pl-PL] .lang_it, 
+html[lang=pl-PL] .lang_de, 
+html[lang=pl-PL] .lang_es                              {display: none;}   
+
+
+html[lang=fr-FR] .lang_en,
+html[lang=fr-FR] .lang_de,
+html[lang=fr-FR] .lang_it,
+html[lang=fr-FR] .lang_pl,
+html[lang=fr-FR] .lang_es                               {display: none;} 
+
+html[lang=es-ES] .lang_en, 
+html[lang=es-ES] .lang_fr, 
+html[lang=es-ES] .lang_it,
+html[lang=es-ES] .lang_pl,
+html[lang=es-ES] .lang_de                               {display: none;} 
+
+
+    
+
+
+// Common informations
+
+body                                                      {font-size: inherit; height: 100.01%; color: $baseTextColor;
+                                                          -webkit-font-smoothing: antialiased; font-family: $font, Arial, sans-serif; background-color: $bodyBgColor;} 
+                                                                        
+                                                          
+.overlay                                                  {left: 0; position: absolute; width: 100%; height: 100vH;z-index: 999;display: none; background-color: $overlay; }                                                       
+                                                                                             
+*, 
+ul                                                        {margin: 0; padding: 0;}              
+                                          
+a                                                         {text-decoration: none; color: $baseColor;}                                                 
+a:hover                                                   {text-decoration: none; color: $baseLinkHoverColor;}
+
+
+main *:focus                                              {border-color: $baseColor;}
+
+
+/* Figure Beginn */
+main figure.image                                         {position: relative;}
+main figure.image span                                    {text-align: center; transition: all ease .3s; color: $pictureoverlaytext; position: absolute; width: 100%; height: 100%; top: -200%; display: flex; padding: 1rem; align-items: center; justify-content: center;  background-color: $pictureoverlay;} 
+main figure.image a:focus span,
+main figure.image a:hover span                            {top: 0;} 
+main figure.image a                                       {font-size: $pictureoverlaytextsize; width: 100%; height: 100%; display: block; border: 0 !important;}                                                      
+/* Figure Ende */
+
+main                                                      {hyphens: auto; -webkit-hyphens: auto; hyphenate-limit-chars: auto 5; -webkit-hyphenate-limit-chars: auto 5; -ms-hyphens: auto; -ms-hyphenate-limit-chars: auto 5;}
+.h1, h1                                                	  {font-size: $h1; font-weight: $h1-fontweight; color: $h1-color; margin: $h1-margin; line-height: $h1-lineheight; text-align: $h1-dir; padding-left: $h1-padding; padding-right: $h1-padding; } 
+.h2, h2                                                   {font-size: $h2; font-weight: $h2-fontweight; color: $h2-color; margin: $h2-margin; line-height: $h2-lineheight;} 
+.h3, h3                                                   {font-size: $h3; font-weight: $h3-fontweight; color: $h3-color; margin: $h3-margin; line-height: $h3-lineheight;} 
+.ha, h4                                                   {font-size: $h4; font-weight: $h4-fontweight; color: $h4-color; margin: $h4-margin; line-height: $h4-lineheight;}
+  
+b, strong                                              	  {font-weight: $boldweight;}
+p, li                                                     {line-height: $lineheight; font-size: $p;}
+
+.align-center                                             {text-align: center;}
+.align-right                                              {text-align: right;} 
+
+figure a:focus,
+figure a                                                  {border: 0 !important;}  
+
+main td,
+main th                                                   {font-size: $p;}
+main .content a                                           {font-weight: $boldweight;}
+
+main ul                                                   {padding: 0 0 1rem 1.1rem; list-style-type: square; }
+main ul ul                                                {padding: 0 0 0 2rem; list-style-type: square; }
+main ul ul ul                                             {padding: 0 0 0  2.66rem; list-style-type: square; }
+main ol                                                   {padding: 0 0 1rem 1.66rem;}
+ 
+.page                                                     {transition: all ease .5s; overflow: hidden; position: relative; min-height: 100%; width: 100%;}
+.container                                                {max-width: 100%;}
+.mono													  {font-family: Courier New, Courier, monospace;}
+.symbol                                                   {font-family: $symbol; font-weight: normal;}
+
+/* Bootstrap Korrektur */
+a.btn-secondary                                           {color: #fff !important;}
+
+/* Adminpanel */
+.icon-markup svg                                          {max-width: 2rem; opacity: .5; transition: all ease .3s;}
+.icon-markup svg:hover                                    {max-width: 2rem; opacity: 1}
+.typo3-editPanel                                          {border-bottom: 5px solid $baseColor; font-style: italic; color: $baseColor; opacity: .5;  transition: all ease .3s; padding: .25rem; background-color: rgba($baseColor,.75); margin-top: .5rem;  margin-bottom: .5rem; }
+.icon-markup .icon-markup svg                             {opacity: 1;}
+.typo3-editPanel:hover                                    {opacity: 1; color: #fff; }
+.typo3-editPanel .icon-markup svg:hover                   {filter: invert(100%);}
+.typo3-editPanel-label:before                             {content:'Inhaltselement: '}
+.icon-actions-edit-unhide .icon-markup svg                {background: rgb(150,50,50);} 
+.typo3-editPanel a                                        {display: inline-block !important;}
+
+
+.btn-close                                                {font-size: 125%; font-weight: bold; cursor: pointer; position: absolute; top: .5rem; right: .5rem; border: 1px solid #808080;}
+
+
+/* input: range*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: auto;
+      height: 1.5rem;
+      -webkit-appearance: none;
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 1.5rem;
+      -webkit-appearance: none;
+      color: #fff;
+      margin-top: 0px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: .66rem;
+      -webkit-appearance: none;
+      height: 1.5rem;
+      cursor: ew-resize;
+      background: #434343;
+      box-shadow: -3rem 0 0 3rem #fff;
+    }
+
+}
+
+/* Allgemeines Pagination */
+  .f3-widget-paginator                                    {display: flex; padding-left: 0; list-style: none; border-radius: .25rem;}
+  .f3-widget-paginator a                                  {position: relative; display: block; padding: .25rem .5rem; font-size: 0.875em;
+                                                          margin-left: -1px; line-height: 1rem; color: $baseColor; background-color: #fff; border: 1px solid #ddd;}    
+  .f3-widget-paginator a:hover                            {background-color: #F3F4F4; color: $baseLinkHoverColor}                                                    
+  .f3-widget-paginator .current                           {position: relative; display: block; padding: .25rem .5rem; font-size: 0.875em;
+                                                          margin-left: -1px; line-height: 1rem; color: #fff !important; background-color: $baseColor;}
+  
+  .page-item a.page-link                                  {color: $baseColor; border-color: #ddd;}  
+  .page-item.active .page-link                            {color: #fff; background-color: $baseColor; border-color: $baseColor;}               
+  .page-navigation p                                      {margin: 0;}
+  
+  .page-link.disabled                                     {display: none;}
+  .page-link                                              {color: $baseLinkColor;}
+  .page-link:hover                                        {color: $baseLinkHoverColor;} 
+
+.orange{
+  main h1,
+  main a:not(.navlink)                                    {color: $orange;}
+}
+
+.blue{
+  main h1,
+  main a:not(.navlink)                                    {color: $blue;}
+}
+
+.green{
+  main h1,
+  main a:not(.navlink)                                    {color: $green;}
+}
+.grey{
+  main h1,
+  main a:not(.navlink)                                    {color: $grey;}
+}
+
+.red{
+  main h1,
+  main a:not(.navlink)                                    {color: $red;}
+}
+
+.turquoise{
+  main h1,
+  main a:not(.navlink)                                    {color: $turquoise}
+}
+
+.violett{
+  main h1,
+  main a:not(.navlink)                                    {color: $violett;}
+}
+
+.yellow{
+  main h1,
+  main a:not(.navlink)                                    {color: $yellow;}
+}
+
+/* Layouts */
+
+
+@media screen and (min-width: 240px) {
+    html                                                  {font-size: .9375rem;}
+}
+
+@media screen and (min-width: 576px) {
+  
+}
+
+@media screen and (min-width: 768px) {
+  main h1                                                 {font-size: $h1-md;} 
+  main h2                                                 {font-size: $h2-md;}
+  main h3                                                 {font-size: $h3-md;}
+  main h4                                                 {font-size: $h4-md;}  
+  main p,
+  main li                                                 {font-size: $p-md;}
+  main td,
+  main th                                                 {font-size: $p-md;}
+}
+
+@media screen and (min-width: 992px) {
+	[aria-hidden=true]                                        {display: none;}
+	[aria-hidden=false]                                       {display: block !important; opacity: 1 !important; } 
+}
+
+@media screen and (min-width: 1200px) {
+   html                                                   {font-size: 1rem;}
+   main h1                                                {font-size: $h1-lg;} 
+   main h2                                                {font-size: $h2-lg;} 
+   main h3                                                {font-size: $h3-lg;} 
+   main h4                                                {font-size: $h4-lg;} 
+   main p,
+   main li                                                {font-size: $p-lg;}
+   main td,
+   main th                                                {font-size: $p-lg;} 
+
+   .container                                             {max-width: 1140px;}
+   
+}
+  
+@media screen and (min-width: 1360px) {
+   .container                                             {max-width: 1300px;}
+}
+  
+@media screen and (min-width: 1480px) {
+   .container                                             {max-width: 1420px;}
+}
+
+.container                                                {max-width: $container;}
+
+

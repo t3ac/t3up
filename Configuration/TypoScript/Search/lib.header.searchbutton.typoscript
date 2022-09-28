@@ -1,0 +1,25 @@
+lib.header.searchbutton              = TEXT
+lib.header.searchbutton {
+    if.isTrue                        = {$page.header.searchbutton}
+    value                            = <span class="small funcItemTitle">Suche</span>
+        typolink {
+            # link to the current page id with type 912
+            parameter                = {page:uid},912
+            parameter.insertData     = 1
+            useCacheHash             = 1
+            # add all get parameters from the current URL
+            addQueryString           = 1
+            addQueryString.method    = GET
+            # remove the page id from the parameters so it is not inserted twice
+            addQueryString.exclude  = id
+            ATagParams              = id="SE" class="searchmode navitem symbol" data-show-sub="false" 
+            title                   = Search
+            
+       }
+        wrap = <li class="d-flex search align-items-center">|</li> 
+}
+
+
+[siteLanguage("languageId") == "1"]
+	lib.header.searchbutton.value             = <span class="small funcItemTitle">Search</span>
+[END]

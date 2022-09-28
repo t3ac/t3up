@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'AtlasTypewriter,Courier, Menlo,Monaco,Consolas,"Courier New",monospace';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  text-rendering:optimizeLegibility;
+  src:url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-Regular-Web.eot');
+  src:url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-Regular-Web.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-Regular-Web.woff') format('woff'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-Regular-Web.ttf') format('truetype'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-Regular-Web.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'AtlasTypewriter,Courier, Menlo,Monaco,Consolas,"Courier New",monospace';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  text-rendering:optimizeLegibility;
+  src:url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-RegularItalic-Web.eot');
+  src:url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-RegularItalic-Web.woff') format('woff'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-RegularItalic-Web.ttf') format('truetype'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-RegularItalic-Web.svg') format('svg');
+}
+
+
+
+@font-face {
+  font-family: 'AtlasTypewriter,Courier, Menlo,Monaco,Consolas,"Courier New",monospace';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  text-rendering:optimizeLegibility;
+  src:url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-Bold-Web.eot');
+  src:url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-Bold-Web.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-Bold-Web.woff') format('woff'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-Bold-Web.ttf') format('truetype'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-Bold-Web.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'AtlasTypewriter,Courier, Menlo,Monaco,Consolas,"Courier New",monospace';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  text-rendering:optimizeLegibility;
+  src:url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-BoldItalic-Web.eot');
+  src:url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-BoldItalic-Web.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-BoldItalic-Web.woff') format('woff'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-BoldItalic-Web.ttf') format('truetype'),
+  url('#{$fontpath}AtlasTypewriter/AtlasTypewriter-BoldItalic-Web.svg') format('svg');
+}
+
+
+

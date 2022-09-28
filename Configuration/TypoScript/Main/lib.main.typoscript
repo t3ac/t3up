@@ -1,0 +1,127 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Content/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Header/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Navigation/" extensions="typoscript">
+
+# BackendLayoutHelper #
+lib.backendLayout = TEXT
+lib.backendLayout {
+  data = pagelayout
+  split {
+    token = pagets__
+  }
+}
+
+lib.social 				                    = COA
+lib.social.10 								< lib.socialmedia
+lib.social.10.if.value                      = {$page.socialmedia.pos}   
+lib.social.10.if.equals                     = right
+lib.social.10.wrap                          = <div class="socialsideright">|</div>     
+
+lib.social.20 								< lib.socialmedia
+lib.social.20.if.value                      = {$page.socialmedia.pos}   
+lib.social.20.if.equals                     = left
+lib.social.20.wrap                          = <div class="socialsideleft">|</div>     
+
+###################################################################
+
+lib.navigation.breadcrumb                   = TEXT
+lib.navigation.breadcrumb.data              = field:breadcrumb 
+lib.navigation.breadcrumb.insertData        = 1
+
+lib.breadcrumbstyle                         = TEXT
+lib.breadcrumbstyle.value                   = {$page.navigation.breadcrumbstyle}
+
+lib.bootstrapaccordion                      = TEXT
+lib.bootstrapaccordion.value                = {$page.components.bootstrapaccordion}
+
+lib.bootstraptabs                           = TEXT
+lib.bootstraptabs.value                     = {$page.components.bootstraptabs}
+
+lib.colornav                                = TEXT
+lib.colornav.value                          = {$page.navigation.color}  
+
+lib.pictureoverlayfunction                  = TEXT
+lib.pictureoverlayfunction.value            = {$page.color.pictureoverlayfunction}
+
+lib.navigationplus                          = TEXT
+lib.navigationplus.value                    = {$page.navigation.navplus}
+
+lib.notlogowrap                             = TEXT
+lib.notlogowrap.value                       = {$page.header.notlogowrap}
+
+# Fluid_styled_content Elements ###########################################################
+lib.contentElement {
+    layoutRootPaths.10         				= EXT:t3up/Resources/Private/Templates/ContentElement/Layouts/
+    partialRootPaths.10        				= EXT:t3up/Resources/Private/Templates/ContentElement/Partials/    
+    templateRootPaths.10       				= EXT:t3up/Resources/Private/Templates/ContentElement/Templates/
+    variables {
+        pictureoverlayfunction 				< lib.pictureoverlayfunction
+        bootstrapaccordion      			< lib.bootstrapaccordion
+        bootstraptabs                       < lib.bootstraptabs
+    }
+}
+# Build the Contentelements ###########################################################
+lib.main = FLUIDTEMPLATE
+lib.main {
+    
+    templateName < lib.backendLayout
+ 
+    layoutRootPaths.10     = {$page.files.fluidtemplates.layoutRootPaths}
+    partialRootPaths.10    = {$page.files.fluidtemplates.partialRootPaths}
+    templateRootPaths.10   = {$page.files.fluidtemplates.templateRootPaths}
+      
+    dataProcessing < lib.navigation
+	variables {
+	
+		bootstrapaccordion  	< lib.bootstrapaccordion
+		bootstraptabs       	< lib.bootstraptabs
+        breadcrumb          	< lib.navigation.breadcrumb
+		breadcrumbstyle     	< lib.breadcrumbstyle
+		inside              	< lib.navigation.inside		
+        logopos             	< lib.navigation.logopos
+        login               	< lib.login
+		mobil               	< lib.header.mobilbutton   
+		moreinformation     	< lib.navigation.moreinformation  
+		navdir              	< lib.navigation.navdir
+		navstyle     			< lib.navigation.navstyle
+		navcontainer          	< lib.navigation.container 
+		navcolor                < lib.colornav   
+		navwrap      			< lib.navigationwrap
+		notlogowrap             < lib.notlogowrap
+        pagecolor    			< lib.content.pagecolor
+        pictureoverlayfunction  < lib.pictureoverlayfunction
+		plus                	< lib.navigationplus
+        showtitle               < lib.header.showtitle
+        title        			< lib.content.title	
+        toppos       			< lib.header.toppos
+        topwrap       			< lib.header.topwrap
+		
+        # ColPols 0 - 3
+        
+        content < styles.content.get
+        content.select.where       = colPos = 0
+        content.wrap               = |
+        
+        left < styles.content.get
+        left.select.where          = colPos = 1
+        left.wrap                  = |
+        
+        right < styles.content.get
+        right.select.where         = colPos = 2
+        right.wrap                 = |
+          
+        media < styles.content.get
+        media.select.where         = colPos = 3
+        media.slide                = {$page.components.mediaslide}
+        media.wrap                 = |
+        
+        person < styles.content.get      
+        person.select.where 		= colPos = 4
+        person.slide 				= -1
+        person.wrap 				= | 
+        
+	  }
+	  
+}
+
+

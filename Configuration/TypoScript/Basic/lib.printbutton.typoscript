@@ -1,0 +1,25 @@
+lib.printbutton                  	            = COA
+lib.printbutton {
+	if.isTrue        							= {$page.components.printbutton}
+	10               							= TEXT
+	10 {
+    	value                        			= &#xf02f;
+    	typolink {
+	        # link to the current page id with type 97
+	        parameter            				= {page:uid},97
+	        parameter.insertData 				= 1
+	        ATagParams =class="symbol"
+	        useCacheHash         				= 1
+	        # add all get parameters from the current URL
+	        addQueryString        				= 1
+	        addQueryString.method 				= GET
+	        # remove the page id from the parameters so it is not inserted twice
+	        addQueryString.exclude 				= id
+	        target               				= _blank
+	        title                				= Drucken
+     	}
+ 	}
+
+    wrap                         				= <li class="print d-none d-lg-inline-block">|</li>
+}     
+

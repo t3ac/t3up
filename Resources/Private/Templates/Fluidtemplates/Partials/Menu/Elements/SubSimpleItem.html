@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<f:if condition="{item.children}">
+		<f:then>
+            <f:if condition="{item.current}">
+                <f:then>
+                    <li class="{f:if(condition:item.children, then:'navitem')} {f:if(condition:item.current, then:'cur')}" data-show-sub="false">
+                        <f:render partial="Menu/Elements/Link" arguments="{item: item}"/>
+                </f:then> 
+                <f:else if="{item.active}">
+                    <li class="{f:if(condition:item.children, then:'navitem')} {f:if(condition:item.current, then:'act')}" data-show-sub="false">
+                        <f:render partial="Menu/Elements/Link" arguments="{item: item}"/>
+                </f:else>
+                <f:else>
+                    <li class="navitem" data-show-sub="false">
+                        <f:render partial="Menu/Elements/Link" arguments="{item: item}"/>
+                </f:else>
+            </f:if>   
+		</f:then>	
+		
+		<f:else>	
+			<f:if condition="{item.current}">
+				<f:then>
+					<li class="{f:if(condition:item.current, then:'navitem cur')}">
+						<f:render partial="Menu/Elements/Link" arguments="{item: item}"/>
+				</f:then>
+				<f:else if="{item.active}">
+					<li class="{f:if(condition:item.active, then:'navitem act')}">
+						<f:render partial="Menu/Elements/Link" arguments="{item: item}"/>
+				</f:else>
+				<f:else>
+					<li class="navitem">
+						<f:render partial="Menu/Elements/Link" arguments="{item: item}"/>
+				</f:else>			
+			</f:if>	
+		</f:else>		
+	</f:if>
+
+</html>

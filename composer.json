@@ -1,0 +1,33 @@
+{
+  "name": "t3ac/t3up",
+  "type": "typo3-cms-extension",
+  "description": "T3UP - Basic Installation",
+  "authors": [
+    {
+      "name": "Michael Lang",
+      "role": "Developer",
+      "email": "michael.lang@h-da.de"
+    }
+  ],
+  "license": ["GPL-2.0-or-later"],
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "t3up"
+  ],
+  "autoload": {
+      "psr-4": {
+          "T3ac\\T3up\\": "Classes/"
+      }
+  },
+  "require": {
+    "typo3/cms-core": "^10.4 || ^11.5",
+    "ichhabrecht/content-defender": "^3.1",
+    "WapplerSystems/ws-scss": "^11"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "t3up"
+    }
+  }
+}

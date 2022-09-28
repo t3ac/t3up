@@ -1,0 +1,47 @@
+###################################################
+# Include all TypoScript files
+###################################################
+
+options {
+	file_list{
+		filesPerPage                     = 100
+		enableDisplayBigControlPanel	 = activated
+		enableDisplayThumbnails	         = selectable
+		enableClipBoard	                 = selectable
+		thumbnail.width                  = 240
+		thumbnail.height                 = 160
+	}
+	
+	pageTree.showPageIdWithTitle = 1
+	clearCache.pages = 0
+	clipboardNumberPads = 3	
+	saveClipboard = 0	
+	contextMenu.table.pages.disableItems = mountAsTreeRoot
+}
+
+
+admPanel.enable {
+
+  preview = 1
+  cache = 1
+  publish = 1
+  edit = 1
+  info = 1
+  hide = 1
+  override {
+    edit.displayFieldIcons = 1
+    edit.displayIcons = 1
+    preview.showHiddenPages = 1
+    preview.showHiddenRecords = 1
+  }
+}
+
+admPanel.hide = 0
+
+# show new pages hidden or not
+TCAdefaults.pages.hidden = 0
+
+# Activate the thumnails
+setup.override.thumbnailsByDefault = 1
+
+

@@ -1,0 +1,86 @@
+.subnavigation {                        left: auto; position: relative;  width: 100%; 
+  ul                                    {list-style: none; padding: 0;}
+  > ul                                  {margin-bottom: 2rem; border-top: 1px solid rgba(0, 0, 0, 0.2);}  
+  .cur > a                              {font-weight: 600; text-transform: uppercase; color: $baseColor;}
+  .act > a                              {font-weight: 600;}
+  .levelTitle                           {background: rgba($baseColor,.85); font-weight: 600; padding: 0.5rem 1rem;  color: #fff !important;  text-transform: uppercase;  margin: 0;}
+  li                                    {position: relative; display: block; line-height: 130%; padding-left: 0; border-bottom: 1px solid rgba(0, 0, 0, 0.2);}   
+  li:last-of-type                       {border-bottom: 0;}  
+  span                                  {font-weight: 400; background: rgba($baseColor,.05);}  
+  ul li                                 {background: #fff; line-height: 120%;}
+  ul li a                               {padding-top: .75rem; padding-bottom: .75rem; padding-left: 1rem; padding-right: 3rem; display: block; color: $baseLinkColor;}
+  ul li a:hover                         {color: rgba(30,30,30,1)}
+  ul li > span                          {height: auto; display: block; cursor: pointer; font-size: 150%; padding-top: .75rem; padding-bottom: .75rem; position: absolute; right: 0; top: 0; width: 2rem; text-align: center; }
+  ul ul                                 {border-top: 1px solid rgba(0, 0, 0, 0.2);}
+  ul ul li                              {background: rgba(0,0,0,.025); }
+  ul ul li a                            {padding-left: 1.6666rem; }  
+  ul ul ul li a                         {padding-left: 2.3333rem; } 
+  ul ul ul ul li a                      {padding-left: 3rem }  
+  ul ul ul ul ul li a                   {padding-left: 3.6666; } 
+  
+  > ul > li                             {border-left: 1px solid rgba(0, 0, 0, 0.2); border-right: 1px solid rgba(0, 0, 0, 0.2);}
+  > ul > li:last-of-type                {border-bottom: 1px solid rgba(0, 0, 0, 0.2);}
+}
+
+@media screen and (min-width: 1200px){
+  .LeftNavigation .breadcrumbrow        {padding-left: calc(25% + 15px);}
+}
+
+.LeftNavigation {
+  .subnavigation { 
+    li.cur                               {background: $baseColor; color: #FFFFFF;}   
+    li.cur:hover > a                     {color: #FFFFFF;}   
+    li                                   {background: #fff; color: #333333;}                     
+  } 
+}
+
+.page.orange{
+    .levelTitle                          {background: rgba($orange, .85); border: 1px solid rgba($orange, .85);}
+    .subnavigation a:hover,
+    .subnavigation .navitem.cur > a      {color: $orange;}
+}
+
+.page.blue{
+    .levelTitle                          {background: rgba($blue, .85); border: 1px solid rgba($blue, .85);}
+    .subnavigation a:hover,
+    .subnavigation .navitem.cur > a      {color: $blue;}
+}
+
+.page.green{
+    .levelTitle                          {background: rgba($green, .85); border: 1px solid rgba($green, .85);}
+    .subnavigation a:hover,
+    .subnavigation .navitem.cur > a      {color: $green;}
+}
+
+.page.grey{
+    .levelTitle                          {background: rgba($grey, .85); border: 1px solid rgba($grey, .85);}
+    .subnavigation a:hover,
+    .subnavigation .navitem.cur > a      {color: $grey;}
+}
+
+.page.red{
+    .levelTitle                          {background: rgba($red, .85); border: 1px solid rgba($red, .85); }
+    .subnavigation a:hover,
+    .subnavigation .navitem.cur > a      {color: $red;}
+}
+
+.page.turquoise{
+    .levelTitle                          {background: rgba($turquoise, .85); border: 1px solid rgba($turquoise, .85); }
+    .subnavigation a:hover,
+    .subnavigation .navitem.cur > a      {color: $turquoise;}
+}
+
+.page.violett{
+    .levelTitle                          {background: rgba($violett, .85); border: 1px solid rgba($violett, .85); }
+    .subnavigation a:hover,
+    .subnavigation .navitem.cur > a      {color: $violett;}
+}
+.page.yellow{
+    .levelTitle                          {background: rgba($yellow, .85); border: 1px solid rgba($yellow, .85); }
+    .subnavigation a:hover,
+    .subnavigation .navitem.cur > a      {color: $yellow;}
+}
+
+
+
+

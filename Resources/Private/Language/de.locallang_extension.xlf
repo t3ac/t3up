@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" product-name="t3up">
+		<header/>
+		<body>
+			<trans-unit id="StandardLayout">
+			     <source>Standard backendlayout (off/on)</source>
+			     <target state="translated">Standard Backendlayout</target>
+		    </trans-unit>
+			<trans-unit id="ThreeColumnLayout">
+			     <source>ThreeColum backendlayout (off/on)</source>
+			     <target state="translated">Drei-Spaltenlayout</target>
+		    </trans-unit>	
+			<trans-unit id="OneTwoColumnLayout">
+			     <source>Small marginals, big center backendlayout (off/on)</source>
+			     <target state="translated">Kleine Marginalspalte, große Hauptspalte</target>
+		    </trans-unit>	 	 
+			<trans-unit id="OneColumnLayout">
+			     <source>OneColum backendlayout (off/on)</source>
+			     <target state="translated">Einspaltenlayout mit großem Media</target>
+		    </trans-unit>	
+			<trans-unit id="OneColumnContainerLayout">
+			     <source>OneColum backendlayout, media inside container (off/on)</source>
+			     <target state="translated">Einspaltenlayout mit Media im Container</target>
+		    </trans-unit>			    
+			<trans-unit id="LeftNavigationLayout">
+			     <source>Layout with left sub-navigation (off/on)</source>
+			     <target state="translated">Layout mit linkem Subnavigation</target>
+		    </trans-unit>
+			<trans-unit id="RightNavigationLayout">
+			     <source>Layout with right sub-navigation (off/on)</source>
+			     <target state="translated">Layout mit rechtem Subnavigation und Media</target>
+		    </trans-unit>
+			<trans-unit id="RightMarginalLayout">
+			     <source>Layout with right marginal (off/on)</source>
+			     <target state="translated">Layout mit rechter Marginalspalte</target>
+		    </trans-unit>
+		    
+			<trans-unit id="TCEMain">
+			     <source>Main Usergroup permission configuration (off/on)</source>
+			     <target state="translated">Hauptbenutzergruppen Erlaubnis-Konfiguration</target>
+		    </trans-unit>
+			<trans-unit id="TCEForm">
+			     <source>Backend Forms configuration (off/on)</source>
+			     <target state="translated">Backend Konfiguration</target>
+		    </trans-unit>
+			<trans-unit id="TCEFrames">
+			     <source>Shows div. Frames to select</source>
+			     <target state="translated">Vorgefertigte Frames</target>
+		    </trans-unit>		    
+			<trans-unit id="RTE">
+			     <source>Rich-text-editor configuration (off/on)</source>
+			     <target state="translated">RTE Konfiguration</target>
+		    </trans-unit>
+			<trans-unit id="UserTs">
+			     <source>User configuration (off/on)</source>
+			     <target state="translated">Benutzergruppen Konfiguration</target>
+		    </trans-unit>
+			<trans-unit id="News">
+			     <source>Newslayouts</source>
+			     <target state="translated">Nachrichtenlayouts</target>
+		    </trans-unit>
+			<trans-unit id="NewsLinkhandler">
+				<source>News</source>
+			     <target state="translated">Nachrichten</target>
+			</trans-unit>
+
+			<trans-unit id="tt_addressLinkhandler">
+				<source>Addresses</source>
+			     <target state="translated">Adressen</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

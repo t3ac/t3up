@@ -1,0 +1,26 @@
+lib.header.homebutton = TEXT
+lib.header.homebutton {
+    if.isTrue                       = {$page.header.homebutton}
+    value (
+            <span class="ps-2 small funcItemTitle lang_en">Home</span>
+            <span class="ps-2 small funcItemTitle lang_de">Startseite</span>
+            <span class="ps-2 small funcItemTitle lang_fr">Page d'accueil</span>
+            <span class="ps-2 small funcItemTitle lang_it">Homepage</span>  
+            <span class="ps-2 small funcItemTitle lang_es">Página web</span>  
+            <span class="ps-2 small funcItemTitle lang_pl">Strona główna</span>     
+    )
+    typolink {
+        parameter                   = {$page.header.home}
+        ATagParams                  = class="home navitem d-block" data-show-sub="false" title="Start" aria-label="link start"
+    }
+    wrap = <li>|</li> 
+}
+
+lib.home = TEXT
+lib.home {
+        value                      = &#xf015;
+        typolink.parameter         = {$page.header.home}
+        typolink.ATagParams        = class="symbol navitem d-inline-block" data-show-sub="false" title="Start" aria-label="link start"
+
+        wrap = <li>|</li> 
+}

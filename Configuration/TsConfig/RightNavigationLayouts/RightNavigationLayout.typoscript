@@ -1,0 +1,46 @@
+#########################################################
+#### BACKENDLAYOUT: Right navigation ####################
+#########################################################
+mod {
+    web_layout {
+        BackendLayouts {
+            RightNavigationLayout {
+                title = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:RightNavigationLayout
+                icon = EXT:t3up/Resources/Public/Icons/BackendLayouts/RightNavigationLayout.svg
+                config {
+                    backend_layout {
+                        colCount = 3
+                        rowCount = 2
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos3
+                                        colPos = 3
+                                        allowed.CType = list,headerimage_content,carousel,slideshow,shortcut,youtubevideo_pi1
+                                        allowed.list_type = news_pi1
+                                        colspan = 3
+                                    }
+                                }
+                            } 
+                            2 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos0
+                                        colspan = 2
+                                        colPos = 0
+                                    }
+                                  	2 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos2
+                                        colPos = 2
+                                        colspan = 1 
+                                    }
+                                }
+                            }  
+                        }
+                    }
+                }
+            } 
+        } // BackendLayouts
+    } //web_layout
+} //mod

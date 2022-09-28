@@ -1,0 +1,58 @@
+###################################################
+#### BACKENDLAYOUT: LeftNavigationMarginalLayout ##
+###################################################
+mod {
+    web_layout {
+        BackendLayouts {
+            LeftNavigationMarginalLayout {
+                title = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:LeftNavigationMarginalLayout
+                icon = EXT:t3up/Resources/Public/Icons/BackendLayouts/LeftNavigationMarginalLayout.svg
+                 config {
+                    backend_layout {
+                        colCount = 5
+                        rowCount = 2
+                        rows {
+                            1 {
+                                columns {
+                                   1 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos1
+                                        colspan = 1
+                                        colPos = 1 
+                                        rowspan = 2   
+                                        disallowed.CType = headerimage_content    
+                                    }
+                                    
+                                    2{
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos3
+                                        colPos = 3
+                                        colspan = 4   
+                                        allowed.CType = list,headerimage_content,carousel,slideshow,shortcut,youtubevideo_pi1
+                                        allowed.list_type = news_pi1                                                         
+                                    }
+
+                              	}
+                              }
+                              2 {      
+                              	columns {
+                                    1 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos0
+                                        colPos = 0
+                                        colspan = 3
+                                        disallowed.CType = headerimage_content
+                                    }
+                                    2 {
+                                        name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos2
+                                        colPos = 2
+                                        colspan = 1
+                                        disallowed.CType = headerimage_content,slider
+                                    }
+ 
+                                 }
+                             }  
+                        } // rows
+                    } //backend_layout
+                } // config
+            } 
+        } // BackendLayouts
+    } //web_layout
+} //mod

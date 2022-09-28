@@ -1,0 +1,6 @@
+plugin.tx_min.tinysource.body.protectCode {
+            30 = /(<script.*?>.*?<\/script>)/is
+}
+
+
+

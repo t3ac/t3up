@@ -1,0 +1,18 @@
+lib.header.solrpage                       = TEXT
+lib.header.solrpage {
+    if.isTrue                             = {$page.header.solrpage}
+    value                                 = <span class="small funcItemTitle">Suche</span>
+        typolink {
+            parameter                     = {$page.header.solrpage}
+            parameter.insertData          = 1
+            useCacheHash                  = 1
+            title                         = Suche
+            ATagParams                    = class="search navitem" data-show-sub="false"
+       }
+     wrap                                 = <li class="d-flex search align-items-center">|</li> 
+}
+
+[siteLanguage("languageId") == "1"]
+lib.header.solrpage.value                 = <span class="small funcItemTitle">Search</span> 
+[END]
+

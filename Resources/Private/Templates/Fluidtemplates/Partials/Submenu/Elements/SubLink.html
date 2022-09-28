@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+    
+    <f:if condition="{item.data.url}">
+        <f:then>
+           <a class="navlink link-external" title="{item.title}" href="{item.link}"  target="{item.data.target}">
+        </f:then>
+        <f:else if="{item.target}">
+            <a class="navlink" title="{item.title}" href="{item.link}" target="{item.target}">
+        </f:else>
+        <f:else>
+            <a class="navlink" title="{item.title}" href="{item.link}">
+        </f:else>
+    </f:if><f:format.htmlentitiesDecode>{item.title}</f:format.htmlentitiesDecode></a>
+</html>

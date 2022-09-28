@@ -1,0 +1,20 @@
+lib.header.quicklinks = COA
+lib.header.quicklinks.if.isTrue = {$page.header.quicklinks} 
+lib.header.quicklinks {
+    10 = RECORDS
+    10.tables= tt_content
+    10.source = {$page.header.quicklinks}
+    10.if.isTrue.data = header
+    10.conf.tt_content = TEXT
+    10.conf.tt_content.field = header
+    10.wrap = <a class="quickstart" href="#" role="button" aria-haspopup="true" aria-expanded="false">|</a>
+    
+    20 = COA
+    20{
+        10 = RECORDS
+        10.tables= tt_content
+        10.source = {$page.header.quicklinks}
+    }
+    wrap =  <div id="quicklinks" role="toolbar" class="quicklinks d-none d-md-block" >|</div>
+
+}

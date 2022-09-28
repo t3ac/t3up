@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up">
+ 	<header/>
+		<body> 
+		    <trans-unit id="here">
+			     <source>You are here</source>
+		    </trans-unit>
+		    <trans-unit id="prev">
+			     <source>Previous</source>
+		    </trans-unit>
+		    <trans-unit id="next">
+			     <source>Next</source>
+		    </trans-unit>		
+		    <trans-unit id="monthview">
+			     <source>Month</source>
+		    </trans-unit>			
+		    <trans-unit id="listview">
+			     <source>List view</source>
+		    </trans-unit>			   
+		</body>
+	</file>
+</xliff>

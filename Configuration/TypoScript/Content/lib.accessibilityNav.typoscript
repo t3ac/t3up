@@ -1,0 +1,27 @@
+lib.access = COA
+lib.access.if.value = {$page.components.access}
+lib.access.if.equals = access
+lib.access.10 = TEXT
+lib.access.10 {
+	value = Content
+	lang.de = Zum Inhalt
+	wrap = <li><a href="#content" aria-labelledby="menu">|</a></li>
+}
+
+lib.access.20 = TEXT
+lib.access.20 {
+	value = Navigation
+	lang.de = Zur Navigation
+	wrap = <li><a href="#menu" aria-labelledby="menu">|</a></li>
+}
+
+
+
+lib.access.wrap (
+	<nav aria-label="Schnellzugriff">
+        <ul id="jumpto">
+			|
+        </ul>
+   </nav>
+) 
+

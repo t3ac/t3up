@@ -1,0 +1,83 @@
+page.includeJSFooterlibs {
+
+        jQuery          	         = EXT:t3up/Resources/Public/JavaScript/jquery-3.6.0.min.js
+        jQuery.if.isTrue       		 = {$page.files.jquery}
+        jQuery.forceOnTop            = 1       
+        
+        bootstrap          	         = EXT:t3up/Resources/Public/Bootstrap/bootstrap.min.js
+        bootstrap.if.isTrue          = {$page.components.bootstrap}
+        bootstrap.async              = 1
+         
+        basic          				 = EXT:t3up/Resources/Public/JavaScript/basic.js
+        basic.if.isTrue       		 = {$page.files.basic}        
+        basic.async 				 = 1
+
+        modernizer      			 = EXT:t3up/Resources/Public/JavaScript/modernizr-custom.js
+        modernizer.if.isTrue   		 = {$page.files.modernizer}
+        modernizer.async 			 = 1
+        
+        chars                        = EXT:t3up/Resources/Public/JavaScript/chars{$page.navigation.chars}.js 
+        chars.async                  = 3
+
+        navigation                   = EXT:t3up/Resources/Public/JavaScript/navigation.js 
+        navigation.if.value          = {$page.navigation.navigation}   
+        navigation.if.equals         = navigation 
+        navigation.async             = 1
+        
+        navigation1                  = EXT:t3up/Resources/Public/JavaScript/navigation1.js 
+        navigation1.if.value         = {$page.navigation.navigation}   
+        navigation1.if.equals        = navigation1 
+        navigation1.async            = 1
+        
+        subnavigation                = EXT:t3up/Resources/Public/JavaScript/subnavigation.js 
+        subnavigation.if.isTrue      = {$page.files.subnavigation}   
+        subnavigation.async          = 1
+        
+        quicklinks                   = EXT:t3up/Resources/Public/JavaScript/quicklinks.js 
+        quicklinks.if.isTrue         = {$page.header.quicklinks} 
+        quicklinks.async             = 1        
+        
+        totop                        = EXT:t3up/Resources/Public/JavaScript/jquery.totop.js
+        totop.if.isTrue              = {$page.files.totop}
+        totop.async                  = 1
+                
+        search                       = EXT:t3up/Resources/Public/JavaScript/jquery.search.js
+        search.if.isTrue             = {$page.header.searchbutton}
+        search.async                 = 1
+        
+        solrsearch                   = EXT:t3up/Resources/Public/JavaScript/jquery.solrsearch.js
+        solrsearch.if.isTrue         = {$page.header.solrbutton}
+        solrsearch.async             = 1  
+         
+        dynheader                    = EXT:t3up/Resources/Public/JavaScript/jquery.dynheader.js
+        dynheader.if.value          = {$page.header.dynheader}
+        dynheader.if.equals          = header
+        dynheader.async              = 1
+        
+
+        # mobil ********************************************************************************
+
+        mobilmenu                     = EXT:t3up/Resources/Public/JavaScript/jquery.meanmenu.js
+        mobilmenu.if.value            = {$page.components.mobilmenu}        
+        mobilmenu.if.equals           = meanmenu      
+        mobilmenu.async               = 1
+
+        mmenupoly                     = EXT:t3up/Resources/Public/JavaScript/mmenu.polyfills.js
+        mmenupoly.if.value            = {$page.components.mobilmenu}        
+        mmenupoly.if.equals           = mmenu    
+
+        mmenu                         = EXT:t3up/Resources/Public/JavaScript/mmenu.js
+        mmenu.if.value                = {$page.components.mobilmenu}        
+        mmenu.if.equals               = mmenu    
+        
+        mmenustart                    = EXT:t3up/Resources/Public/JavaScript/mmenu.start.js
+        mmenustart.if.value           = {$page.components.mobilmenu}        
+        mmenustart.if.equals          = mmenu    
+
+        simplemenu                    = EXT:t3up/Resources/Public/JavaScript/jquery.simplemenu.js
+        simplemenu.if.value           = {$page.components.mobilmenu}        
+        simplemenu.if.equals          = simplemenu     
+        simplemenu.async              = 1
+
+}
+

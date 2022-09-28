@@ -1,0 +1,33 @@
+lib.header.fontsize = COA
+lib.header.fontsize.if.isTrue = {$page.header.fontsize} 
+
+lib.header.fontsize.10 = TEXT
+lib.header.fontsize.10.value (
+    <li>
+        <a class="fontmode navitem d-block" data-show-sub="false" title="Dynamisch Font Size"><span class="symb">A+</span>
+            <span class="ps-2 small funcItemTitle lang_en">Font size</span>
+            <span class="ps-2 small funcItemTitle lang_de">Schriftgr&ouml;&szlig;e</span>
+            <span class="ps-2 small funcItemTitle lang_fr">Taille de la police</span>
+            <span class="ps-2 small funcItemTitle lang_it">Dimensione del carattere</span>
+            <span class="ps-2 small funcItemTitle lang_es">Tamaño de la letra</span>     
+            <span class="ps-2 small funcItemTitle lang_pl">Rozmiar czcionki</span>                        
+        </a>     
+    )    
+ 
+lib.header.fontsize.20 = TEXT
+lib.header.fontsize.20.value (
+    <div class="tab-content">
+        <div class="tab-pane fade popover" id="tab-fontsize-mobile">
+            <h4 class="lang_de mb-3">Schriftgr&ouml;&szlig;e</h4>
+            <h4 class="lang_en mb-3">Fontsize</h4>
+            <h4 class="lang_fr mb-3">Taille de la police</h4>
+            <h4 class="lang_it mb-3">Dimensione del carattere</h4>
+            <h4 class="lang_es mb-3">Tamaño de la letra</h4>  
+            <h4 class="lang_pl mb-3">Rozmiar czcionki</h4>              
+            <div id="fontsizemode-wrap" class="tab-content d-flex ">
+                <div class="range d-flex item-align-center"><input name="font-size" type="range" min="5" max="20" value="10" id="size"></span><span title="Reset" class="ms-3 fsrange symbol">&#xF021;</span></div>
+            </div>
+            <span class="btn-close" title="close popup"></span>
+        </div>
+    )
+lib.header.fontsize.20.wrap = |</li>

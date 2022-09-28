@@ -1,0 +1,31 @@
+solr = PAGE
+solr {
+    typeNum = 913
+    config.disableAllHeaderCode = 1 
+    additionalHeaders = Content-type:application/json
+    xhtml_cleaning = 0
+    admPanel = 0
+
+	10 = USER
+	10 {
+		userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+		vendorName = ApacheSolrForTypo3
+		extensionName = Solr
+		pluginName = pi_search
+		switchableControllerActions {
+			Search {
+				1 = form
+			}
+		}
+	    features.requireCHashArgumentForActionArguments = 0
+
+
+
+		settings {
+
+	
+		}
+	}
+
+}
+

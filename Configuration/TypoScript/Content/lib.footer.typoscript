@@ -1,0 +1,203 @@
+lib.address = COA
+lib.address.if.isTrue = {$page.footer.address} 
+lib.address {
+    10 = RECORDS
+    10.tables= tt_content
+    10.source = {$page.footer.address}
+    10.if.isTrue.data = header
+    10.conf.tt_content = TEXT
+    10.conf.tt_content.field = header
+    10.wrap = <h3 class="trigger" data-toggle="collapse" aria-expanded="false">|</h3>
+    20 = COA
+    20{
+        10 = RECORDS
+        10.tables= tt_content
+        10.source = {$page.footer.address}
+        10.wrap = <div class="toggle">|</div>
+    }
+}
+
+
+lib.service1 < lib.address
+lib.service1.if.isTrue = {$page.footer.service1} 
+lib.service1 {
+    10.source = {$page.footer.service1}
+    20.10.source = {$page.footer.service1}    
+}
+
+lib.service2 < lib.address
+lib.service2.if.isTrue = {$page.footer.service2} 
+lib.service2 {
+    10.source = {$page.footer.service2}
+    20.10.source = {$page.footer.service2}
+}
+
+lib.service3 < lib.address
+lib.service3.if.isTrue = {$page.footer.service3} 
+lib.service3 {
+    10.source = {$page.footer.service3}
+    20.10.source = {$page.footer.service3} 
+}
+
+
+
+#--------------------------------------------------------------------------
+
+lib.extras1 = COA
+lib.extras1.if.isTrue               = {$page.footer.copyright} 
+lib.extras1{
+    10                              = TEXT
+    10.data                         = U
+    10.strftime                     = %Y
+    10.wrap                         = |&nbsp;
+    20                              = TEXT
+    20.value                        = {$page.footer.copyright} 
+    20.typolink.parameter           = {$page.footer.link}
+    20.typolink.title               = Website -{$page.footer.copyright} 
+    20.typolink.target              = _blank 
+
+    wrap = <li class="d-inline-block">©&nbsp;|</li>
+}
+
+lib.extras2 = COA
+lib.extras2.if.isTrue = {$page.footer.lastchange} 
+lib.extras2 {
+    10 = TEXT
+    10.data = page:SYS_LASTCHANGED
+    10.strftime = %d.%m.%Y
+    10.wrap = <li class="d-none d-lg-inline-block">aktualisiert:&nbsp;|</li>
+}
+
+lib.pid = COA
+lib.pid.if.isTrue = {$page.footer.pid} 
+lib.pid {
+    10 = COA
+    10 {
+        10 = TEXT
+        10.data = page:uid    
+        10.wrap =  <a href="/index.php?id=|">PID:&nbsp;
+        20 = TEXT
+        20.data = page:uid    
+        30 = TEXT     
+        30.wrap = |</a>
+    }
+    10.wrap = <li class="pid d-none d-lg-inline-block">|</li>
+}
+
+#--------------------------------------------------------------------------
+
+lib.owner = COA
+lib.owner {
+    10 = TEXT
+    10.if.isTrue.data = FIELD:author_email
+    10.insertData = 1
+    10.data = FIELD:author
+    10.wrap = | 
+
+    20 = TEXT
+    20.if.isTrue.data = FIELD:author_email
+    20.insertData = 1 
+    20.data = FIELD:author_email
+    20.wrap = <a class="link-mail pl-2" href="mailto:|">E-Mail</a> 
+}
+
+
+[loginUser('*')]
+    lib.extras3 = COA
+    lib.extras3.if.isTrue = {$page.footer.owner}
+    lib.extras3.10 < lib.owner
+    lib.extras3.10.wrap = <li>|</li>
+[END]
+
+lib.infos = COA
+lib.infos {
+    10 = TEXT
+    10.if.isTrue = {$page.footer.contactpage}
+    10.value = Contact
+    10.lang.de = Kontakt
+    10.wrap = <span><a href="index.php?id={$page.footer.contactpage}" taget = "self">|</a></span>
+    20 = TEXT
+    20.if.isTrue = {$page.footer.dataprotection}
+    20.value = Dataprotection
+    20.lang.de = Datenschutz
+    20.wrap = <span><a href="index.php?id={$page.footer.dataprotection}" taget = "self">|</a></span>
+    30 = TEXT
+    30.if.isTrue = {$page.footer.disabilityaccess}
+    30.value = Disability access
+    30.lang.de = Barrierefreiheit
+    30.wrap = <span><a href="index.php?id={$page.footer.disabilityaccess}" taget = "self">|</a></span>
+    40 = TEXT
+    40.if.isTrue = {$page.footer.impress}
+    40.value = Legal Notice
+    40.lang.de = Impressum
+    40.wrap = <span><a href="index.php?id={$page.footer.impress}" taget = "self">|</a></span>   
+    wrap = <div class="w-auto infs">|</div> 
+}
+
+
+#################################################################################
+### FOOTER - put together   #######################################################
+lib.footer = COA
+lib.footer {
+    10 = COA
+    10.10 = COA
+    10.10 {
+    	10 = COA
+        10.10 < lib.address
+        10.wrap = {$page.footer.addressWrap}     
+        20 = COA 
+        20.10 < lib.service1
+        20.wrap = {$page.footer.service1Wrap}  
+        30 = COA       
+        30.10 < lib.service2
+        30.wrap = {$page.footer.service2Wrap}
+		40 = COA  
+        40.10 < lib.service3
+        40.wrap = {$page.footer.service3Wrap}   
+        
+        wrap = {$page.footer.footer1Wrap} 
+    }
+    
+
+    10.30 = COA
+    10.30.if.isTrue = {$page.footer.base}
+    10.30 {
+        10 = COA
+        10 {
+            10 < lib.extras1
+            20 < lib.extras2
+            30 < lib.extras3
+            40 < lib.printbutton
+            50 < lib.rss
+            
+            100 < lib.pid    
+            wrap = <ul class="inf w-auto">|</ul>
+        }
+        20 < lib.infos      
+        40 < lib.socialmedia
+        40.if.value            = {$page.socialmedia.pos}   
+        40.if.equals           = bottom
+        wrap                   = {$page.footer.footerBaseWrap}
+    }
+}
+
+
+lib.footer.10.30.10.50{
+    if.value                                    = {$page.printbutton.pos}        
+    if.equals                                   = 2
+}
+
+lib.footer.10.30.10.50{
+    if.value                                    = {$page.rss.pos}        
+    if.equals                                   = 2
+}
+
+lib.footer.10.30.40{
+    if.value                                    = {$page.socialmedia.pos}        
+    if.equals                                   = bottom
+}
+
+
+
+
+

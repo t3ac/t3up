@@ -1,0 +1,6 @@
+lib.content.pagecolor = TEXT
+lib.content.pagecolor.data = levelfield : -1 , basecolor, slide 
+lib.content.pagecolor.insertData = 1
+
+
+

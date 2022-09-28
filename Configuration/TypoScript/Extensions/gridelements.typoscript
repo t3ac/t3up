@@ -1,0 +1,12 @@
+tt_content.gridelements_pi1 {
+    dataProcessing {
+        10 {
+            default {
+                options {
+                    resolveFlexFormData = 1
+                    resolveChildFlexFormData = 0
+                }
+            }
+        }
+    }
+}

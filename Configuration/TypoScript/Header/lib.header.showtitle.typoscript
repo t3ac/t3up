@@ -1,0 +1,3 @@
+lib.header.showtitle            = TEXT
+lib.header.showtitle.value      = notitle
+lib.header.showtitle.if.isFalse = {$page.header.showtitle} 

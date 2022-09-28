@@ -1,0 +1,105 @@
+# Add items from imageorient of textpic elements
+TCEFORM.tt_content.imageorient {
+    addItems {
+        50 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:header-below
+        50.icon = EXT:t3up/Resources/Public/Icons/header-below.svg
+        51 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:header-below-right
+        51.icon = EXT:t3up/Resources/Public/Icons/header-below-right.svg
+        52 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:header-below-left
+        52.icon = EXT:t3up/Resources/Public/Icons/header-below-left.svg  
+    }    
+}
+
+# Link to top disable ***
+TCEFORM.tt_content.linkToTop.disabled = 1   
+
+TCEFORM.tt_content.CType {
+    removeItems = bullets, mailform, search, script, splash, image
+}
+
+# Remove all standard-layouts *******************************
+TCEFORM {
+    tt_content {
+        layout {
+            removeItems = 1,2,3
+            disableNoMatchingValueElement = 1
+            types {
+  
+            } 
+        }               
+    }
+}
+
+# Header definitions *******************
+# removing 0, so "Standard" is hidden
+TCEFORM {
+    tt_content {
+        header_layout {
+            removeItems = 0,1,5,6
+            disableNoMatchingValueElement = 1
+            altLabels {
+                1 = H1
+                2 = H2
+                3 = H3
+                4 = H4
+                5 = H5
+                6 = H6          
+                }
+        }               
+    }
+}
+
+# CONTENT ****************************************************************************************************************************
+
+# "no-frame" for Group Redakteure disabled **
+[like(","~backend.user.userGroupList~",", "*,1,2,*")]
+    TCEFORM.tt_content.frame_class.removeItems = no-frame
+[end]
+
+TCEFORM.tt_content.padding_before_class.label  = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:paddingBeforeClass
+TCEFORM.tt_content.padding_after_class.label   = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:paddingAfterClass
+
+
+TCEFORM {
+    tt_content {
+        space_before_class {
+            removeItems = extra-small,small, medium, large, extra-large
+            addItems {
+                    5px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5
+                    15px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15 
+                    30px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30
+                    45px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_45
+                    60px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_60          
+            }
+        }
+    }
+}   
+
+TCEFORM {
+    tt_content {
+        space_after_class {
+            removeItems = extra-small,small, medium, large, extra-large
+            addItems {
+                    5px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5
+                    15px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15 
+                    30px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30
+                    45px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_45
+                    60px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_60      
+                }
+        }
+    }
+}     
+
+
+
+
+
+
+
+
+
+
+
+
+
+

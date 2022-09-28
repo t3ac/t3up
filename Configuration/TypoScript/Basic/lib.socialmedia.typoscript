@@ -1,0 +1,174 @@
+lib.socialmedia = COA
+lib.socialmedia.10 = COA
+lib.socialmedia.10 {
+        10                            = COA
+        10.if.isTrue                  = {$page.socialmedia.facebook}
+        10.10                         = TEXT
+        10.10.value                   = &#xf09a; 
+        10.10.typolink.parameter      = {$page.socialmedia.facebook} _blank
+        10.10.typolink.title          = facebook        
+        10.10.wrap                    = <span class="symbol fb">|</span>
+        10.20                         = TEXT
+        10.20.value                   = facebook        
+        10.20.typolink.parameter      = {$page.socialmedia.facebook} _blank
+        10.20.typolink.title          = facebook 
+        10.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
+        10.wrap                       = <li role="menuitem">|</li>
+
+        ## Wird nur angezeigt, wenn Konstante ein String ist
+        20                            = COA
+        20.if.isTrue                  = {$page.socialmedia.youtube}
+        20.10                         = TEXT
+        20.10.value                   = &#xf167; 
+        20.10.typolink.parameter      = {$page.socialmedia.youtube} _blank
+        20.10.typolink.title          = youtube        
+        20.10.wrap                    = <span class="symbol yt">|</span>
+        20.20                         = TEXT
+        20.20.value                   = youtube        
+        20.20.typolink.parameter      = {$page.socialmedia.youtube} _blank
+        20.20.typolink.title          = facebook 
+        20.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
+        20.wrap                       = <li role="menuitem">|</li>
+       
+        ## Wird nur angezeigt, wenn Konstante ein String ist
+        30                            = COA
+        30.if.isTrue                  = {$page.socialmedia.twitter}
+        30.10                         = TEXT
+        30.10.value                   = &#xf099; 
+        30.10.typolink.parameter      = {$page.socialmedia.twitter} _blank
+        30.10.typolink.title          = twitter        
+        30.10.wrap                    = <span class="symbol tw">|</span>
+        30.20                         = TEXT
+        30.20.value                   = twitter        
+        30.20.typolink.parameter      = {$page.socialmedia.twitter} _blank
+        30.20.typolink.title          = twitter 
+        30.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
+        30.wrap                       = <li role="menuitem">|</li> 
+
+        ## Wird nur angezeigt, wenn Konstante ein String ist    
+        40                            = COA
+        40.if.isTrue                  = {$page.socialmedia.instagram}
+        40.10                         = TEXT
+        40.10.value                   = &#xf16d; 
+        40.10.typolink.parameter      = {$page.socialmedia.instagram} _blank
+        40.10.typolink.title          = instagram        
+        40.10.wrap                    = <span class="symbol in">|</span>
+        40.20                         = TEXT
+        40.20.value                   = instagram        
+        40.20.typolink.parameter      = {$page.socialmedia.instagram} _blank
+        40.20.typolink.title          = instagram 
+        40.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
+        40.wrap                       = <li role="menuitem">|</li>     
+
+        ## Wird nur angezeigt, wenn Konstante ein String ist
+        50                            = COA
+        50.if.isTrue                  = {$page.socialmedia.xing}
+        50.10                         = TEXT
+        50.10.value                   = &#xf168; 
+        50.10.typolink.parameter      = {$page.socialmedia.xing} _blank
+        50.10.typolink.title          = xing        
+        50.10.wrap                    = <span class="symbol xn">|</span>
+        50.20                         = TEXT
+        50.20.value                   = xing        
+        50.20.typolink.parameter      = {$page.socialmedia.xing} _blank
+        50.20.typolink.title          = xing 
+        50.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
+        50.wrap                       = <li role="menuitem">|</li>     
+        
+        ## Wird nur angezeigt, wenn Konstante ein String ist
+        60                            = COA
+        60.if.isTrue                  = {$page.socialmedia.linkedin}
+        60.10                         = TEXT
+        60.10.value                   = &#xf0e1; 
+        60.10.typolink.parameter      = {$page.socialmedia.linkedin} _blank
+        60.10.typolink.title          = linkedin        
+        60.10.wrap                    = <span class="symbol ln">|</span>
+        60.20                         = TEXT
+        60.20.value                   = linkedin        
+        60.20.typolink.parameter      = {$page.socialmedia.linkedin} _blank
+        60.20.typolink.title          = linkedin 
+        60.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
+        60.wrap                       = <li role="menuitem">|</li>   
+        
+        ## Wird nur angezeigt, wenn Konstante ein String ist
+        70                            = COA
+        70.if.isTrue                  = {$page.socialmedia.email}
+        70.10                         = TEXT
+        70.10.value                   = &#xf003; 
+        70.10.typolink.parameter      = {$page.socialmedia.email} 
+        70.10.typolink.title          = email        
+        70.10.wrap                    = <span class="symbol mail">|</span>
+        70.20                         = TEXT
+        70.20.value                   = E-Mail        
+        70.20.typolink.parameter      = {$page.socialmedia.email}
+        70.20.typolink.title          = email 
+        70.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
+        70.wrap                       = <li role="menuitem">|</li>   
+        
+        ## Wird nur angezeigt, wenn Konstante ein String ist
+        80                            = COA
+        80.if.isTrue                  = {$page.socialmedia.location}
+        80.10                         = TEXT
+        80.10.value                   = &#xf041; 
+        80.10.typolink.parameter      = {$page.socialmedia.location} _blank
+        80.10.typolink.title          = location        
+        80.10.wrap                    = <span class="symbol lc">|</span>
+        80.20                         = TEXT
+        80.20.value                   = location        
+        80.20.typolink.parameter      = {$page.socialmedia.location} _blank
+        80.20.typolink.title          = location 
+        80.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
+        80.wrap                       = <li role="menuitem">|</li>   
+         
+        ## Wird nur angezeigt, wenn Konstante ein String ist
+        90                            = COA
+        90.if.value                   = {$page.rss.pos}
+        90.if.equals                  = 3
+        90.10.value                   = &#xf09e;        
+        90.10.typolink {
+            parameter                 = {page:uid},{$page.rss.typenumber}
+            parameter.insertData      = 1
+            useCacheHash              = 1
+            ATagParams                = class="symbol rs"               
+            target                    = _blank
+            title                     = RSS-Feed abbonieren
+        }
+        90.20                         = TEXT
+        90.20.value                   = RSS-Feed     
+        90.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span> 
+        90.wrap                       = <li role="menuitem">|</li>       
+         
+        ## Wird nur angezeigt, wenn Konstante ein String ist
+        100                            = COA
+        100.if.isTrue                  = {$page.socialmedia.search}
+        100.10                         = TEXT
+        100.10.value                   = &#xf102; 
+        100.10.typolink.parameter      = {$page.socialmedia.search} 
+        100.10.typolink.title          = Search        
+        100.10.wrap                    = <span class="symbol se">|</span>
+        100.20                         = TEXT
+        100.20.value                   = Search        
+        100.20.typolink.parameter      = {$page.socialmedia.search} 
+        100.20.typolink.title          = Search 
+        100.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
+        100.wrap                       = <li role="menuitem">|</li>   
+                 
+        ## Wird nur angezeigt, wenn Konstante ein String ist
+        110                            = COA
+        110.if.isTrue                  = {$page.socialmedia.login}
+        110.10                         = TEXT
+        110.10.value                   = &#xf204; 
+        110.10.typolink.parameter      = {$page.socialmedia.login} 
+        110.10.typolink.title          = login        
+        110.10.wrap                    = <span class="symbol lg">|</login>
+        110.20                         = TEXT
+        110.20.value                   = Login        
+        110.20.typolink.parameter      = {$page.socialmedia.login} 
+        110.20.typolink.title          = Login 
+        110.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
+        110.wrap                       = <li role="menuitem">|</li>   
+                       
+        wrap = <ul class="social w-auto"  role="menu">|</ul>     
+}
+
+

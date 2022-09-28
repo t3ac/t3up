@@ -1,0 +1,16 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Search/" extensions="typoscript">
+
+lib.header.top = COA  
+lib.header.top { 
+    10                          < lib.header.homebutton
+    20                          < lib.header.loginbutton
+    30                          < lib.header.loginpage
+    
+    210                         < lib.header.fontsize  
+    220                         < lib.header.darkmode
+    
+    300                         < lib.header.searchpage
+    310                         < lib.header.solrpage
+    320                         < lib.header.searchbutton
+    330                         < lib.header.solrbutton    
+}

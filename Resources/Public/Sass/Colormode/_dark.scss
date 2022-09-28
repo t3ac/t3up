@@ -1,0 +1,184 @@
+
+html[color-mode$=dark] {
+	
+	/* Variablen */
+	
+	$baseColor: #fff;
+	$bodyBgColor: #222;
+	$baseTextColor: #fff;
+	$baseLinkColor: #C1E1FB; 
+	$baseLinkHoverColor:  #4F9AE1;
+	$baseContainerBgColor: transparent; 
+	
+	/* Header */
+	$topBgColor:#000;
+	$topLinkColor: #eee;
+	$topLinkHoverColor: #fff;
+	
+	/* Navigation */
+	$subNavBG: #333;
+	$subnavLinkColor: #eee;
+	$subnavLinkHoverColor:  #fff;
+	
+	/* Main */
+	$h1-color: #fff;
+	$h2-color: #fff;
+	$h3-color: #fff;  
+	$h4-color: #fff; 
+	
+	
+	/* footer */
+	$footer1BgColor: #151515;  
+	$footer1TextColor: #eee;
+	$footer1LinkColor: #eee;
+	$footer1LinkHoverColor: #fff;
+	$footer3BgColor: #000;
+	$footer3TextColor: #eee;
+	$footer3LinkColor: #eee;
+	$footer3LinkHoverColor: #fff;
+
+	
+    body{														  background-color: $bodyBgColor !important; color: $baseTextColor !important;
+    	 .tab-pane,
+    	 .dropdown-menu 										  {background-color: $bodyBgColor !important; color: $baseTextColor !important;}
+    	 .tab-pane a,
+    	 .dropdown-menu a 										  {color: $topLinkColor !important;}    
+    	 .tab-pane a:hover, 
+     	 .dropdown-menu a:hover                                   {color: $topLinkHoverColor !important;} 
+     	 .btn-close                                               {filter: invert(100%);}	 
+     	 
+     	 .dropdown-item:hover, 
+     	 .dropdown-item:focus 							          {background: transparent !important; }
+
+    } 
+    
+
+    header {                                                      background-color: $subNavBG !important; color: $baseTextColor !important;
+        .toparea                                                  {background-color: rgba($topBgColor,$topBgColorTrans);}
+        .logoII img,
+        .logo img                                                 {filter: invert(100%) grayscale(100%) contrast(400%)}
+        a                                                         {color: $topLinkColor !important;}  
+        a:hover                                                   {color: $topLinkHoverColor !important;}
+        
+        nav#menu ul li ul                                         {background-color: $subNavBG !important; } 
+        nav#menu ul li ul *                                       {color: $baseTextColor !important;} 
+        nav#menu a                                                {color: $topLinkColor !important;}  
+        nav#menu a:hover                                          {color: $topLinkHoverColor !important; background: transparent !important;}
+        .quicklinks ul                                            {background-color: $topBgColor; color: $topLinkColor !important;} 
+        .quicklinks ul li a                                       {color: $topLinkColor !important;} 
+        .quicklinks ul li a:before                                {color: $topLinkColor !important;}
+        .quicklinks ul li a:hover                                 {background-color: transparent !important;}
+        
+        .box                                                      {background-color: $subNavBG !important;}
+    }
+    
+    main {
+	
+        h1                                                        {color: $h1-color !important;} 
+        h2                                                        {color: $h2-color !important;}  
+        h3                                                        {color: $h3-color !important;} 
+        h4                                                        {color: $h4-color !important;}         
+        a                                                         {transition: all ease .3s; color: $baseLinkColor !important;}
+        p a:focus,                                                  
+        p a:hover                                                 {color: $baseLinkHoverColor !important; text-decoration: underline !important;} 
+        a::before                                                 {color: $baseLinkColor !important;}
+        a::before:hover                                           {color: $baseLinkHoverColor !important;}   
+        > .container                                              {background-color: $baseContainerBgColor !important;}   
+        hr                                                        {background-color: #fff; opacity: #fff;}
+        .content > div                                            {background-color: transparent !important; $baseTextColor: #fff;}   
+        .contentRight > div                                       {background-color: transparent !important; $baseTextColor: #fff;}   
+        .contentRight > div > div                                 {background-color: transparent !important; $baseTextColor: #fff;}           
+        
+         
+    	/* Subnavigation *************************************/       
+    	
+    	.subnavigation {
+			ul                                                    {border-top: 1px solid rgba(255,255,255,.2)  !important }
+			ul li                                                 {border-bottom: 1px solid rgba(255,255,255,.2) !important;}
+    		> ul > li                                  		      {background: transparent !important; color: $baseTextColor !important; border-left: 1px solid rgba(255,255,255,.2) !important;  border-right: 1px solid rgba(255,255,255,.2) !important;}
+    		> ul > li:last-of-type 								  {border-bottom: 1px solid rgba(255,255,255,.2) !important;}
+    	}
+        
+    	/* Breadcrumb ****************************************/
+    	.breadcrumbrow {                        			       color: rgba($footer1TextColor, .85) !important; 
+	        .navbar-nav a                            	          {color: $baseLinkColor !important; text-decoration: none;} 
+	    	.navbar-nav a.extend:after                            {color: $baseLinkColor !important;  border: 1px solid $footer1TextColor; text-decoration: none;} 
+	   	 	.navbar-nav a.extend.show:after                       {background: transparent !important;  text-decoration: none;}         
+        }
+        
+        /* Pagebrowser ***************************************/
+        
+	  .page-link 												  {background: transparent !important; color: $baseTextColor !important; }
+      .f3-widget-paginator a                                      {background: transparent !important; color: $baseTextColor !important; }
+
+        
+        
+        
+        /* News **********************************************/
+        .news{
+            .article                                              {background: transparent !important; $baseTextColor: #fff;}
+            .article:hover                                        {background: transparent !important;}               
+            .article a                                            {transition: all ease .3s; color: $baseLinkColor !important;} 
+            .article a:hover                                      {color: $topLinkHoverColor !important;}    
+            .article-inner                                        {background: transparent !important; $baseTextColor: #fff;}
+            .article-inner:hover                                  {background: transparent !important;}               
+            .article-inner a                                      {transition: all ease .3s; color: $baseLinkColor !important;} 
+            .article-inner a:hover                                {color: $topLinkHoverColor !important;}             
+            a.moreNews:after                                      {background: transparent !important;}   
+ 
+        }  
+
+        
+        /* Bootstrap ***************************************/
+        .t3up_accordion .accordion-item .accordion-header>a      {background-color: transparent !important; $baseTextColor: #fff; border: 1px solid rgba(255,255,255,.2) !important;} 
+        .t3up_accordion .accordion-item .accordion-body          {background-color: transparent !important; $baseTextColor: #fff; border-right: 1px solid rgba(255,255,255,.2) !important; border-left: 1px solid rgba(255,255,255,.2) !important;}
+        
+        .frame-type-2cols > .row > div > div > *                 {background: transparent !important; color: $baseTextColor !important; }
+        .frame-type-3cols > .row > div > div > *                 {background: transparent !important; color: $baseTextColor !important; }
+        .frame-type-4cols > .row > div > div > *                 {background: transparent !important; color: $baseTextColor !important; }     
+        
+        .t3up_tabulator .tab-content                             {background: transparent !important; color: $baseTextColor !important;   border: 1px solid rgba(255,255,255,.2) !important; } 
+        .t3up_tabulator ul li                                    {background: transparent !important; color: $baseTextColor !important; }
+        .t3up_tabulator ul li .nav-link                          {background: transparent !important; color: $baseLinkColor !important;  border: 1px solid rgba(255,255,255,.2) !important;} 
+        .t3up_tabulator > .tab-content > div > div > *           {background: transparent !important; color: $baseTextColor !important; } 
+    }
+
+    footer {                                                       color: $footer1TextColor !important; background: $footer1BgColor !important;
+        .footer1 > *                                              {color: $footer1TextColor !important;}       
+        .footer1 a                                                {color: $footer1LinkColor !important;}
+        .footer1 a:hover                                          {color: $footer1LinkHoverColor !important;}
+        .footer1 a:before                                         {color: $footer1LinkColor !important;}
+        .footer1 a:before:hover                                   {color: $footer1LinkHoverColor !important;}        
+        
+        .iconall                                                  {color: $footer3TextColor !important;}  
+        .iconall a                                                {color: $footer3LinkColor !important;}
+        .iconall a:hover                                          {color: $footer3LinkHoverColor !important;} 
+        
+        .footer3                                                  {color: $footer3TextColor !important;}  
+        .footer3 a                                                {color: $footer3LinkColor !important;}
+        .footer3 a:hover                                          {color: $footer3LinkHoverColor !important;} 
+        .footer3 a:before                                         {color: $footer1LinkColor !important;}
+        .footer3 a:before:hover                                   {color: $footer1LinkHoverColor !important;}         
+          
+    }
+    
+    .socialsideright ul.social li 								  {background-color: $footer1BgColor !important; color: $totopLinkColor !important; }
+    .socialsideright ul.social li a                               {color: $totopLinkColor !important; }
+    .socialsideright ul.social li a:hover                         {color: $subnavLinkHoverColor !important; }   
+    .socialsideleft ul.social li 								  {background-color: $footer1BgColor !important; color: $totopLinkColor !important; }
+    .socialsideleft ul.social li a                                {color: $totopLinkColor !important; }
+    .socialsideleft ul.social li a:hover                          {color: $subnavLinkHoverColor !important; }    
+    .toTop 								                          {background-color: $footer1BgColor !important; color: $totopLinkColor !important; }
+    .toTop a                                                      {color: #fff !important; }
+    .toTop a:hover                                                {color: $subnavLinkHoverColor !important; }      
+        
+    
+}
+
+
+
+
+
+
+
+

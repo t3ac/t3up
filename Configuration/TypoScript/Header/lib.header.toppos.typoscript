@@ -1,0 +1,5 @@
+lib.header.toppos = TEXT
+lib.header.toppos.value = {$page.navigation.topposition}
+lib.header.toppos.insertData = 1
+
+

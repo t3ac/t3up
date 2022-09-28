@@ -1,0 +1,58 @@
+lib.navigation = dataProcessing 
+lib.navigation {
+    ### Menu
+    10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    10 {
+       entryLevel = {$page.navigation.entryLevel}
+       expandAll = 1 
+       levels = {$page.navigation.maxlevels}
+       as = mainMenu
+       maxItems = {$page.navigation.maxitems}
+    }
+    
+    ### Submenu
+    20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    20 {
+      levels = 5
+      entryLevel = {$page.navigation.subnavlevel}
+      expandAll = 1
+      as = SubMenu
+      maxItems = {$page.navigation.maxitems}
+    }
+    
+    ### Breadcrumb - Menu 
+    30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    30 {
+      special = rootline
+      special.range = 1|-1
+      includeNotInMenu = 1
+      as = BreadcrumbMenu
+    }
+    
+    ### Menue with Images 
+    40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    40 {
+       entryLevel= {$page.navigation.entryLevel}
+       expandAll = 1 
+       levels = {$page.navigation.maxlevels}
+       as = mediaMenu
+       maxItems = {$page.navigation.maxitems}
+       includeSpacer = 0
+       titleField = nav_title // title
+       dataProcessing {
+          10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+          10 {
+             references.fieldName = media
+             as = capitalimageMenu
+          } 
+       }
+    }
+    
+    ### Language - Menue
+    50 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+    50 {
+        languages = auto
+        as = menuLanguage
+        if.isTrue = {$page.header.languagemenu}
+    }
+}

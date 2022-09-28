@@ -1,0 +1,237 @@
+#######################################
+#### logo #############################
+#######################################
+
+lib.header.logo = COA
+
+lib.header.logo1 = COA
+lib.header.logo1.10 = IMAGE
+lib.header.logo1.10 {
+    file                                = {$page.header.logo}
+    altText                             = Link: {$page.header.alttext}
+    titleText                           = {$page.header.alttext}
+    params                              = type="logo" 
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.home}    
+}
+lib.header.logo1.wrap                   = {$page.header.logowrap}
+
+lib.header.logo2 =< lib.header.logo1
+lib.header.logo2.10.if.isFalse          = {$page.header.logo.1}  
+lib.header.logo2.10.file                = {$page.header.logo}
+lib.header.logo2.20 = IMAGE
+lib.header.logo2.20 {
+    if.isTrue                           = {$page.header.logo.1}
+    file                                = {$page.header.logo.1}
+    altText                             = Link: {$page.header.alttext}
+    titleText                           = {$page.header.alttext}
+    params                              = type="logo" 
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.home}    
+}
+
+
+lib.header.logo3 =< lib.header.logo1
+lib.header.logo3.10.if.isFalse          = {$page.header.logo.2}  
+lib.header.logo3.10.file                = {$page.header.logo}
+lib.header.logo3.20 = IMAGE
+lib.header.logo3.20 {
+    if.isTrue                           = {$page.header.logo.2}
+    file                                = {$page.header.logo.2}
+    altText                             = Link: {$page.header.alttext}
+    titleText                           = {$page.header.alttext}
+    params                              = type="logo" 
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.home}    
+}
+
+
+lib.header.logo4 =< lib.header.logo1
+lib.header.logo4.10.if.isFalse          = {$page.header.logo.3}  
+lib.header.logo4.10.file                = {$page.header.logo}
+lib.header.logo4.20 = IMAGE
+lib.header.logo4.20 {
+    if.isTrue                           = {$page.header.logo.3}
+    file                                = {$page.header.logo.3}
+    altText                             = Link: {$page.header.alttext}
+    titleText                           = {$page.header.alttext}
+    params                              = type="logo" 
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.home}    
+}
+
+lib.header.logo5 =< lib.header.logo1
+lib.header.logo5.10.if.isFalse          = {$page.header.logo.4}  
+lib.header.logo5.10.file                = {$page.header.logo}
+lib.header.logo5.20 = IMAGE
+lib.header.logo5.20 {
+    if.isTrue                           = {$page.header.logo.4}
+    file                                = {$page.header.logo.4}
+    altText                             = Link: {$page.header.alttext}
+    titleText                           = {$page.header.alttext}
+    params                              = type="logo" 
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.home}    
+}
+
+lib.header.logo6 =< lib.header.logo1
+lib.header.logo6.10.if.isFalse          = {$page.header.logo.5}  
+lib.header.logo6.10.file                = {$page.header.logo}
+lib.header.logo6.20 = IMAGE
+lib.header.logo6.20 {
+    if.isTrue                           = {$page.header.logo.5}
+    file                                = {$page.header.logo.5}
+    altText                             = Link: {$page.header.alttext}
+    titleText                           = {$page.header.alttext}
+    params                              = type="logo" 
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.home}    
+}
+
+
+lib.header.logo7 =< lib.header.logo1
+lib.header.logo7.10.if.isFalse          = {$page.header.logo.6}  
+lib.header.logo7.10.file                = {$page.header.logo}
+lib.header.logo7.20 = IMAGE
+lib.header.logo7.20 {
+    if.isTrue                           = {$page.header.logo.6}
+    file                                = {$page.header.logo.6}
+    altText                             = Link: {$page.header.alttext}
+    titleText                           = {$page.header.alttext}
+    params                              = type="logo" 
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.home}    
+}
+
+
+lib.header.logo8 =< lib.header.logo1
+lib.header.logo8.10.if.isFalse          = {$page.header.logo.7}  
+lib.header.logo8.10.file                = {$page.header.logo}
+lib.header.logo8.20 = IMAGE
+lib.header.logo8.20 {
+    if.isTrue                           = {$page.header.logo.7}
+    file                                = {$page.header.logo.7}
+    altText                             = Link: {$page.header.alttext}
+    titleText                           = {$page.header.alttext}
+    params                              = type="logo" 
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.home}    
+}
+
+lib.header.logo9 =< lib.header.logo1
+lib.header.logo9.10.if.isFalse          = {$page.header.logo.8}  
+lib.header.logo9.10.file                = {$page.header.logo}
+lib.header.logo9.20 = IMAGE
+lib.header.logo9.20 {
+    if.isTrue                           = {$page.header.logo.8}
+    file                                = {$page.header.logo.8}
+    altText                             = Link: {$page.header.alttext}
+    titleText                           = {$page.header.alttext}
+    params                              = type="logo" 
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.home}    
+}
+
+lib.header.logo10 =< lib.header.logo1
+lib.header.logo10.10.if.isFalse          = {$page.header.logo.9}  
+lib.header.logo10.10.file                = {$page.header.logo}
+lib.header.logo10.20 = IMAGE
+lib.header.logo10.20 {
+    if.isTrue                           = {$page.header.logo.9}
+    file                                = {$page.header.logo.9}
+    altText                             = Link: {$page.header.alttext}
+    titleText                           = {$page.header.alttext}
+    params                              = type="logo" 
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.home}    
+}
+
+
+
+
+
+// German
+[siteLanguage("locale") matches "^de_DE^"]
+lib.header.logo.10 < lib.header.logo1
+[global]
+
+// English
+[siteLanguage("locale") matches "^en_US^"]
+lib.header.logo.10 < lib.header.logo2
+[global]
+
+// French
+[siteLanguage("locale") matches "^fr_FR^"]
+lib.header.logo.10 < lib.header.logo3
+[global]
+
+// Italian
+[siteLanguage("locale") matches "^it_IT^"]
+lib.header.logo.10 < lib.header.logo4
+[global]
+
+// Polish
+[siteLanguage("locale") matches "^pl_PL^"]
+lib.header.logo.10 < lib.header.logo5
+[global]
+
+// Turkey
+[siteLanguage("locale") matches "^tr_TR^"]
+lib.header.logo.10 < lib.header.logo6
+[global]
+
+// Spanish
+[siteLanguage("locale") matches "^es_ES^"]
+lib.header.logo.10 < lib.header.logo7
+[global]
+
+// Portuguese
+[siteLanguage("locale") matches "^pt_PT^"]
+lib.header.logo.10 < lib.header.logo8
+[global]
+
+// Romanian
+[siteLanguage("locale") matches "^ro_RO^"]
+lib.header.logo.10 < lib.header.logo9
+[global]
+
+// Chinese
+[siteLanguage("locale") matches "^cn_CN^"]
+lib.header.logo.10 < lib.header.logo10
+[global]
+
+##################################################################################
+
+lib.header.logo.100 =< lib.header.logo1.10
+lib.header.logo.100 {
+    file                                = {$page.header.mobillogo}
+    wrap                                = {$page.header.mobillogowrap} 
+}
+
+
+##################################################################################
+
+
+lib.header.logoII  = COA
+lib.header.logoII.10 = IMAGE
+lib.header.logoII.10 {
+    file                                = {$page.header.logoII}
+    altText                             = Link: {$page.header.alttextII}
+    titleText                           = {$page.header.alttextII}
+    params                              = type="logo" 
+    imageLinkWrap                       = 1
+    imageLinkWrap.enable                = 1 
+    imageLinkWrap.typolink.parameter    = {$page.header.linklogoII} _blank
+    wrap                                = {$page.header.logoIIwrap}
+}
+

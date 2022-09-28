@@ -1,0 +1,48 @@
+################
+#### CONFIG ####
+################
+
+config {
+
+	absRelPath                             = /    
+ 	admPanel                               = {$page.config.admPanel}   
+	cache_period                           = 86400
+	
+    # Compression and Concatenation of CSS and JS Files
+    compressJs                             = {$page.config.compressJs}
+    compressCss                            = {$page.config.compressCss}
+    concatenateJs                          = {$page.config.concatenateJs}
+    concatenateCss                         = {$page.config.concatenateCss}
+
+    # TYPO3-Fehlermeldung einschalten. 0 ist alter Standard
+	contentObjectExceptionHandler          = {$page.config.ExceptionHandler}
+
+    debug                                  = {$page.config.debug}
+    
+    disablePrefixComment                   = 1
+    doctype                                = html5
+    
+    extTarget                              =
+    intTarget                              =
+
+    index_enable                           = 1
+    index_externals                        = 1
+    
+    headerComment                          = {$page.config.headerComment}
+	linkVars                               = {$page.config.linkVars}  
+    metaCharset                            = utf-8
+	no_cache                               = {$page.config.no_cache}	
+	pageTitleSeparator                     = {$page.config.pageTitleSeparator}
+    pageTitleSeparator.noTrimWrap          = | | |
+	pageTitleFirst                         = 1
+	prefixLocalAnchors                     = all
+    removeDefaultCss                       = 1
+    removeDefaultJS                        = {$page.config.removeDefaultJS}
+
+    htmlTag.attributes.class               = no-js
+
+# Spamschutz
+    spamProtectEmailAddresses              = 2
+    spamProtectEmailAddresses_atSubst      = &#64;
+    spamProtectEmailAddresses_lastDotSubst = <span>.</span>
+}

@@ -1,0 +1,68 @@
+footer {
+                                            position: absolute; width: 100%; z-index: 2; transition: all ease .3s; bottom: 0; font-size: $footer1fontsize;
+                                            overflow: hidden; color: $footer1TextColor; background: $footer1BgColor;  
+                                                                              
+  *                                         {text-decoration: none; list-style: none; font-size: 1rem;}                          
+  .trigger                                  {line-height: 1rem; cursor: pointer; text-transform: uppercase; font-size: 1rem; padding: 1rem 0; font-weight: 600; margin: 0;}          
+  .trigger:empty                            {display: none;} 
+  .trigger::after                           {content: '+'; font-weight: normal; float: right; padding: 0 0 5px; font-size: 2rem;}
+  .trigger.active::after                    {content: '–';}
+  .toggle,
+  .toggle:empty                             {display: none;} 
+  .toggle ul:not(.symbols)                  {padding: 0;}
+  .toggle > div > h2, .toggle > div > h3    {display: none;}
+
+
+  /* Main Footer  */
+  .footer1 > .container > .row .col-12      {border-bottom: 1px solid #aaa;}
+  .footer1 a                                {color: $footer1LinkColor; font-weight: $footer3fontweight; }
+  .footer1 a:hover                          {color: $footer1LinkHoverColor;}  
+  .footer1 p,
+  .footer1 li                               {line-height: $footer1lineheight;}
+  
+  /* Baseline Footer */
+  .footer3                                  {font-size: $footer3fontsize; min-height: 3rem; overflow: hidden; color: $footer3TextColor; background: $footer3BgColor; padding-top: 0.6666rem; padding-bottom: 0.6666rem;}  
+  .footer3 a                                {color: $footer3LinkColor; transition: all ease .3s; font-weight: $footer3fontweight;}  
+  .footer3 a:hover                          {color: $footer3LinkHoverColor;}  
+  .footer3 img                              {-webkit-filter: invert(1); filter: invert(1); opacity: .7; transition: ease .3s all}
+  .footer3 img:hover                        {-webkit-filter: invert(1); filter: invert(1); opacity: 1;} 
+  .footer3 ul                               {padding-bottom: 10px;}
+  .footer3 ul li                            {display: inline-block;}    
+  .footer3 ul.inf li:after                  {content:'|'; padding: 0 10px;}     
+  .footer3 ul.inf li:last-of-type:after     {content:''; padding: 0;}      
+      
+  .footer3 .infs a                          {font-weight: normal;   }  
+  .footer3 .infs a:after                    {content:'|'; color: $footer3LinkColor;  padding-right: .5rem; padding-left: .5rem}  
+  .footer3 .infs span:last-of-type  a:after        {padding: 0; content:'';  padding-right: 0;}
+  
+  .footer3 .social                          {display: flex; padding-right: 2rem; margin-top: .5rem;}
+  .footer3 .social li                       {line-height: 1rem;}
+  .footer3 .social a                        {font-weight: normal; font-size: 1.5rem;  padding-right: .5rem; padding-left: .5rem; }
+  .footer3 .socialtext                      {}
+  .footer3 span.socialtext:after            {content:'|'; color: $footer3LinkColor; }  
+  .footer3 .social li:last-of-type  span.socialtext:after        {padding: 0; content:'';}    
+  .footer3 span.socialtext a               {font-weight: normal; font-size: 1rem;  padding-right: .5rem; padding-left: 0rem;}                      
+}
+
+@media screen and (min-width: 576px) {
+ footer {                                   
+    .footer1 {                              
+        .toggle                             {display: block;}
+        .trigger::after                     {content: '';}
+        h3                                  {border-bottom: 0;}
+      }  
+      .footer3                              {padding-right: 3rem;}
+  }
+}
+
+
+
+@media screen and (min-width: 992px) {
+  footer {                                  
+    .footer1 > .container > .row .col-12    {border-bottom: 0;}
+    .footer3{                               padding-top: 10px; padding-bottom: 10px; padding-right: 0;
+      ul                                    {padding: 0; margin: 0;}
+    }
+  }
+}
+    

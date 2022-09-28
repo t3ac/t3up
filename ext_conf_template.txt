@@ -1,0 +1,37 @@
+
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:TCEForm
+TCEForm 						= 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:TCEMain
+TCEMain 						= 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:TCEFrames
+TCEFrames 						= 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RTE
+RTE 							= 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:UserTs
+UserTs 							= 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:StandardLayout
+StandardLayout 					= 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:OneColumnLayout
+OneColumnLayout                 = 0
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:OneColumnContainerLayout
+OneColumnContainerLayout        = 0
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:ThreeColumnLayout
+ThreeColumnLayout 				= 0
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:LeftNavigationLayout
+LeftNavigationLayout   			= 0
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightNavigationLayout
+RightNavigationLayout 	        = 0
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightMarginalLayout
+RightMarginalLayout 	        = 0

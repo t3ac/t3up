@@ -1,0 +1,4 @@
+lib.navigation.moreinformation = TEXT
+lib.navigation.moreinformation.value = Additional Information
+lib.navigation.moreinformation.lang.de = Weitere Informationen
+lib.navigation.moreinformation.wrap = <div class="subInfo d-lg-none"><h2>|</h2></div>

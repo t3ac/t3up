@@ -1,0 +1,36 @@
+
+search = PAGE
+search {
+    typeNum = 912
+    config.disableAllHeaderCode = 1 
+    additionalHeaders = Content-type:application/json
+    xhtml_cleaning = 0
+    admPanel = 0
+
+	10 = USER
+	10 {
+		userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+		vendorName = TYPO3\CMS
+		extensionName = IndexedSearch
+		pluginName = Pi2
+		switchableControllerActions {
+			Search {
+				1 = form
+				2 = search
+			}
+		}
+	    features.requireCHashArgumentForActionArguments = 0
+
+
+
+		settings {
+			displayRules 					= 0
+			displayAdvancedSearchLink 		= 0
+			targetPid 						= {$plugin.tx_indexedsearch.settings.targetPid} 
+			headerOnly 						= 1
+	
+		}
+	}
+
+}
+

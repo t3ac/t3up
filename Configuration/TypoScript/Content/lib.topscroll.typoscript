@@ -1,0 +1,18 @@
+# jQuery topscrolling
+lib.topscroll                           = TEXT
+lib.topscroll.if.value                  = {$page.components.totop} 
+lib.topscroll.if.equals                 = totop 
+lib.topscroll.value                     = <span>zum Seitenanfang</span>
+lib.topscroll.typolink {
+    parameter.data                      = page:uid
+    ATagParams                          = tabindex="-1"
+    section                             = top   
+    returnLast                          = 1
+    title                               = Link top
+}
+
+lib.topscroll.wrap                      = <div class="toTop scrollup">|</div>
+
+[siteLanguage("languageId") == "1"]
+lib.topscroll.value                     = <span>Link to top</span>
+[END]

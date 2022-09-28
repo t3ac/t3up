@@ -1,0 +1,14 @@
+lib.login = COA
+lib.login {
+  if.isTrue                         = {$page.header.loginbutton}
+  10 < plugin.tx_felogin_pi1 
+  10 { 
+    templateFile                    = {$page.files.logintemplate}
+  	storagePid                      = {$styles.content.loginform.pid}
+  	recursive                       = {$styles.content.loginform.recursive}   
+    redirectPageLoginError          = {$styles.content.loginform.redirectPageLoginError}   
+    redirectPageLogout              = {$styles.content.loginform.redirectPageLogout}
+    redirectMode                    = {$styles.content.loginform.redirectMode}
+    redirectFirstMethod             = {$styles.content.loginform.redirectFirstMethod}     
+  } 
+}

@@ -1,0 +1,731 @@
+##############
+### PAGE ###
+##############
+styles.content.loginform.recursive = 4
+styles.content.loginform.redirectFirstMethod  = 1
+
+
+page {
+    components {
+        # customsubcategory=appearance=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:appearance
+        # cat =t3up: components/appearance/101; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:container
+        container                     =1440
+        # cat =t3up: components/appearance/102; type =options[,-1]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:mediaslide
+        mediaslide                    =
+        # cat =t3up: components/appearance/103; type =options[empty,access]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:access
+        access                        =access
+        # cat =t3up: components/appearance/104; type =options[empty,meanmenu,mmenu,simplemenu]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:mobil
+        mobilmenu                     = mmenu                  
+        # cat =t3up: components/appearance/105; type =options[empty,totop]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopfunction
+        totop                         = totop 
+        # cat =t3up: components/appearance/106; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:printbutton
+        printbutton                   =
+        # cat =t3up: components/appearance/108; type =options[1,2,3,4,5,6]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapaccordion
+        bootstrapaccordion            = 1     
+        # cat =t3up: components/appearance/109; type =options[1,2,3,4]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstraptabs
+        bootstraptabs                 = 1    
+    }
+    
+    color {
+        # customsubcategory=base=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:basecolors
+        # cat =t3up: color/base/01; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseColor
+        baseColor                     =#333333
+        # cat =t3up: color/base/02; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseTextColor
+        baseTextColor                 =#333333
+        # cat =t3up: color/base/03; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseLinkColor
+        baseLinkColor                 =#333333
+        # cat =t3up: color/base/04; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseLinkHoverColor
+        baseLinkHoverColor            =#000000
+        # cat =t3up: color/base/05; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bodyBgColor
+        bodyBgColor                   =transparent
+        # cat =t3up: color/base/06; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseContainerBgColor
+        baseContainerBgColor          =transparent
+        # cat =t3up: color/base/07; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:shadow        
+        shadow                        =0 2px 10px 0px rgba(0,0,0,.2)
+        # cat =t3up: color/base/09; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pictureoverlayfunction  
+        pictureoverlayfunction         =         
+        # cat =t3up: color/base/10; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pictureoverlay  
+        pictureoverlay                 = rgba(255,255,255, 0.333)
+        # cat =t3up: color/base/11; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pictureoverlaytext  
+        pictureoverlaytext             = rgba(0,0,0,1)
+        # cat =t3up: color/base/12; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pictureoverlaytextsize  
+        pictureoverlaytextsize          = 1rem
+        
+        # customsubcategory=header=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:header
+        # cat =t3up: color/header/01; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headerBgColor
+        headerBgColor                 =inherit
+        # cat =t3up: color/header/02; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headerColor
+        headerColor                   =#666
+        # cat =t3up: color/header/03; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headerLinkColor
+        headerLinkColor               = #666
+        # cat =t3up: color/header/04; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headerLinkHoverColor
+        headerLinkHoverColor          = #333
+        # cat =t3up: color/header/05; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:topBgColor
+        topBgColor                    = #ccc
+        # cat =t3up: color/header/06; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:topBgColorTrans
+        topBgColorTrans               =1
+        # cat =t3up: color/header/07; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:topLinkColor
+        topLinkColor                  =inherit
+        # cat =t3up: color/header/08; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:topLinkHoverColor
+        topLinkHoverColor             =inherit
+       
+
+        # customsubcategory=navcolor=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navigationcolor
+        # cat =t3up: color/navcolor/01; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navLinkColor
+        navLinkColor                  = #333       
+        # cat =t3up: color/navcolor/02; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navLinkHoverColor
+        navLinkHoverColor             = #000    
+        # cat =t3up: color/navcolor/03; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:subnavLinkColor
+        subnavLinkColor               = #333       
+        # cat =t3up: color/navcolor/04; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:subnavLinkHoverColor
+        subnavLinkHoverColor          = #000  
+        # cat =t3up: color/navcolor/05; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:subNavBG
+        subNavBG                      = rgba(255, 255, 255, .98)   
+        # cat =t3up: color/navcolor/06; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navLinkHoverBGColor
+        navLinkHoverBGColor           = rgba(255, 255, 255, 0)   
+        # cat =t3up: color/navcolor/07; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navBorderBottomColor
+        navBorderBottomColor          = rgba(100, 100, 100, 1)  
+        # cat =t3up: color/navcolor/08; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:overlay
+        overlay                       = rgba(0, 0, 0, 0.5)          
+
+        # customsubcategory=headercolor=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headercolor
+        # cat =t3up: color/headercolor/01; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1-color
+        h1-color                    =inherit
+        # cat =t3up: color/headercolor/02; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2-color
+        h2-color                    =inherit  
+        # cat =t3up: color/headercolor/03; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3-color
+        h3-color                    =inherit
+        # cat =t3up: color/headercolor/04; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4-color
+        h4-color                    =inherit
+        
+        # customsubcategory=pagecolor=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pagecolor
+        # cat =t3up: color/pagecolor/01; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:blue
+        blue                          =#346097
+        # cat =t3up: color/pagecolor/02; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:green
+        green                         =#406C03
+        # cat =t3up: color/pagecolor/03; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:grey
+        grey                          =#787878
+        # cat =t3up: color/pagecolor/04; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:orange
+        orange                        =#A94611
+        # cat =t3up: color/pagecolor/05; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:red
+        red                           =#A50F19
+        # cat =t3up: color/pagecolor/06; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:turquoise
+        turquoise                     =#1D725F
+        # cat =t3up: color/pagecolor/07; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:violett
+        violett                       =#863177
+        # cat =t3up: color/pagecolor/08; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:yellow
+        yellow                        =#F5F507
+        # cat =t3up: color/pagecolor/09; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:darkblue
+        darkblue                      =#2D4F9A
+        # cat =t3up: color/pagecolor/10; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:darkgrey
+        darkgrey                      =#454545
+        
+        # customsubcategory=footer=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer
+        # cat =t3up: color/footer/01; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1BGColor 
+        footer1BgColor                =inherit
+        # cat =t3up: color/footer/02; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1TextColor
+        footer1TextColor              =inherit
+        # cat =t3up: color/footer/03; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1LinkColor
+        footer1LinkColor              =inherit
+        # cat =t3up: color/footer/04; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1LinkHoverColor
+        footer1LinkHoverColor         =inherit
+        # cat =t3up: color/footer/06; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer3BGColor 
+        footer3BgColor                =inherit  
+        # cat =t3up: color/footer/07; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer3TextColor
+        footer3TextColor              =inherit
+        # cat =t3up: color/footer/08; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer3LinkColor
+        footer3LinkColor              =inherit
+        # cat =t3up: color/footer/09; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer3LinkHoverColor
+        footer3LinkHoverColor         =inherit
+
+        # customsubcategory=totop=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totop
+        # cat =t3up: color/totop/01; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopBgColor 
+        totopBgColor                  =inherit
+        # cat =t3up: color/totop/02; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopLinkColor
+        totopLinkColor                =inherit
+        # cat =t3up: color/totop/03; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopLinkHoverColor
+        totopLinkHoverColor           =inherit
+        # cat =t3up: color/totop/04; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopPosBottom
+        totopPosBottom                = 0
+        # cat =t3up: color/totop/05; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopPosRight
+        totopPosRight                 = 0
+        
+        # customsubcategory=bootstrap=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrap
+        # cat =t3up: color/bootstrap/01; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.danger
+        danger                        =#dc3545
+        # cat =t3up: color/bootstrap/02; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.warning
+        warning                       =#ffc107
+        # cat =t3up: color/bootstrap/03; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.success
+        success                       =#28a745
+        # cat =t3up: color/bootstrap/04; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.primary
+        primary                       =#007bff
+        # cat =t3up: color/bootstrap/05; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.secondary
+        secondary                     =#6c757d
+        # cat =t3up: color/bootstrap/06; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.info
+        info                          =#17A2B8
+        # cat =t3up: color/bootstrap/08; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.light
+        light                        =#f8f9fa
+        # cat =t3up: color/bootstrap/09; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.dark
+        dark                          =#343a40
+        # cat =t3up: color/bootstrap/10; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.link
+        link                          =#0056b3
+        # cat =t3up: color/bootstrap/11; type =options[,'+','\f107','\f078','\f13a','\f0ab','\f063']; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.plus
+        plus                          = '+'
+        # cat =t3up: color/bootstrap/11; type =options[,'–','\f107','\f078','\f13a','\f0ab','\f063']; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.minus
+        minus                         = '–'
+        
+        # customsubcategory=table=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:tableConstants
+        # cat = t3up: color/table/01; type = color; label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:tableHeader
+        tableHeader                   =  #999999
+        # cat = t3up: color/table/02; type = color; label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:tableHeaderColor
+        tableHeaderColor              = #ffffff
+        # cat = t3up: color/table/03; type = color; label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:tableHeaderLineColor
+        tableHeaderLineColor          = #dadada
+        # cat = t3up: color/table/04; type = color; label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:tableLineColor
+        tableLineColor                = #dadada
+    }    
+    
+    config {
+        # cat =t3up: config/appearance/; type =string; label =Header Comment
+        headerComment                 =TYPO3 Package by Michael Lang - https://h-da.de                         =
+        # cat =t3up: config/admin/01; type =boolean; label =No Cache (for Development)
+        no_cache                      =0
+        # cat =t3up: config/admin/01; type =options[Do not remove  =0,Remove  =1,Move to external file  =external]; label =Remove default JavaScript
+        removeDefaultJS               =0
+        # cat =t3up: config/admin/03; type =boolean; label =Admin Panel
+        admPanel                      =1
+        # cat =t3up: config/admin/04; type =boolean; label =Show errors, 0 =Old version, 1 =Show: occured ...
+        ExceptionHandler              =1
+        # cat =t3up: config/admin/05; type =boolean; label =Index on/off
+        index_enable                  =1
+        # cat =t3up: config/admin/06; type =boolean; label =External index on/off
+        index_externals               =1
+        # cat =t3up: config/admin/08; type =boolean;  label =Debug activation
+        debug                         =0
+        # cat =t3up: config/admin/07; type =string; label = Separator of the website-title
+        pageTitleSeparator            = – 
+
+        # customsubcategory=compressfiles=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:compressfiles
+        # cat =t3up: config/compressfiles/01; type =boolean; label =Compress JavaScript
+        compressJs                    =0
+        # cat =t3up: config/compressfiles/02; type =boolean; label =Compress Css
+        compressCss                   =0
+        # cat =t3up: config/compressfiles/03; type =boolean; label =Concatenate JavaScript
+        concatenateJs                 =0
+        # cat =t3up: config/compressfiles/04; type =boolean; label =Concatenate Css
+        concatenateCss                =0 
+                
+    }
+    
+    design {
+        # cat =t3up: fluid_style_content//; type =string; label =Imageborder
+        borderWidth                   =0px
+        # cat =t3up: fluid_style_content//; type =string; label =Border spacing
+        borderPadding                 =1rem
+        # cat =t3up: fluid_style_content//; type =string; label =Bordercolor
+        borderColor                   =#000
+        # cat =t3up: fluid_style_content//; type =string; label =Text-margin
+        textMargin                    =1rem
+        # cat =t3up: fluid_style_content//; type =string; label =Distance between columns
+        columnSpacing                 =2rem
+        # cat =t3up: fluid_style_content//; type =string; label =Distance between rows
+        rowSpacing                    =1rem
+        # cat =t3up: fluid_style_content//; type =string; label =Standard distance
+        base                          =1rem
+    }  
+    
+    files{
+        # cat =t3up: files//100; type =string; label =Favicon
+        favicon                                =EXT:t3up/Resources/Public/Design/favicon.ico
+
+        # cat =t3up: files//101; type =type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logintemplate
+        logintemplate                          =EXT:t3up/Resources/Private/Templates/Login/Login.html   
+        
+        # customsubcategory=contentElement=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:contentElement
+        # cat =t3up: files/contentElement/01;  type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:contentElement.layoutpath
+        contentElement.layoutRootPaths         =EXT:t3up/Resources/Private/Templates/ContentElement/Layouts/
+        # cat =t3up: files/contentElement/02;  type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:contentElement.partialpath
+        contentElement.partialRootPaths        =EXT:t3up/Resources/Private/Templates/ContentElement/Partials/
+        # cat =t3up: files/contentElement/03;  type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:contentElement.templatepath
+        contentElement.templateRootPaths       =EXT:t3up/Resources/Private/Templates/ContentElement/Templates/
+        # customsubcategory=contentElement=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:contentElement
+
+        # customsubcategory=fluidtemplates=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fluidtemplates
+        # cat =t3up: files/fluidtemplates/01;  type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fluidtemplates.layoutpath
+        fluidtemplates.layoutRootPaths         =EXT:t3up/Resources/Private/Templates/Fluidtemplates/Layouts/
+        # cat =t3up: files/fluidtemplates/02;  type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fluidtemplates.partialpath
+        fluidtemplates.partialRootPaths        =EXT:t3up/Resources/Private/Templates/Fluidtemplates/Partials/
+        # cat =t3up: files/fluidtemplates/03;  type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fluidtemplates.templatepath
+        fluidtemplates.templateRootPaths       =EXT:t3up/Resources/Private/Templates/Fluidtemplates/Templates/
+        
+        # customsubcategory=javascript=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:javascript
+        # cat =t3up: files/javascript/01; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:basic 
+        basic                                  =active
+        # cat =t3up: files/javascript/02; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:subnavigation
+        subnavigation                           =
+        # cat =t3up: files/javascript/04; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:jquery
+        jquery                                 =active
+        # cat =t3up: files/javascript/05; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:modernizer
+        modernizer                             =
+        
+
+    }     
+     
+    fonts{    
+        
+        # cat =t3up: fonts//01;  type =options[Arial,Open Sans,PT Sans,Roboto,Source Sans Pro,Ubuntu,Verdana,Ropa Sans]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font
+        font                                   =Arial
+        # cat =t3up: fonts//02;  type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontdef
+        fontdef                                =typo3conf/ext/t3up/Resources/Public/Sass/
+        # cat =t3up: fonts//03;  type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontpath
+        fontpath                               =typo3conf/ext/t3up/Resources/Public/Fonts/      
+ 
+        # cat =t3up: fonts//04;  type =options[Courier,AtlasTypewriter,Times]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font2
+        font2                                  =Courier
+        # cat =t3up: fonts//05;  type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font2def
+        font2def                               =typo3conf/ext/t3up/Resources/Public/Sass/
+        # cat =t3up: fonts//06;  type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font2path
+        font2path                              =typo3conf/ext/t3up/Resources/Public/Fonts/      
+        
+        // Bereich der Symbolschrift
+        # cat =t3up: fonts//07;  type =options[empty,'FontAwesome']; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbol       
+        symbol                                 ='FontAwesome'
+        symbolfiles                            =FontAwesome   
+        symboldef                              =typo3conf/ext/t3up/Resources/Public/Sass/   
+        symbolpath                             =typo3conf/ext/t3up/Resources/Public/Fonts/         
+    }   
+
+    footer{ 
+        # customsubcategory=bg1=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bg1   
+        # cat =t3up: footer/bg1/01; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:address
+        address                        =
+        # cat =t3up: footer/bg1/02; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:addressWrap
+        addressWrap                    =<div id="contact" class="col-12 col-lg-3 col-sm-6">|</div>
+        # cat =t3up: footer/bg1/03; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service1
+        service1                       =
+        # cat =t3up: footer/bg1/04; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service1Wrap
+        service1Wrap                   =<div class="col-12 col-lg-3 col-sm-6">|</div>
+        # cat =t3up: footer/bg1/05; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service2
+        service2                       =
+        # cat =t3up: footer/bg1/06; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service2Wrap
+        service2Wrap                   =<div class="col-12 col-lg-3 col-sm-6">|</div> 
+        # cat =t3up: footer/bg1/07; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service3
+        service3                       =
+        # cat =t3up: footer/bg1/08; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service3Wrap
+        service3Wrap                   =<div class="col-12 col-lg-3 col-sm-6">|</div>   
+        # cat =t3up: footer/bg1/09; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1Wrap
+        footer1Wrap                    =<div class="footer1"><div class="container"><div class="row">|</div></div></div> 
+
+        # customsubcategory=bg2=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bg2   
+        # cat =t3up: footer/bg2/00; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:base
+        base                           =
+        # cat =t3up: footer/bg2/01; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:copyright
+        copyright                      =
+        # cat =t3up: footer/bg2/02; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:lastchange
+        lastchange                     =
+        # cat =t3up: footer/bg2/03; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pid
+        pid                            =                  =
+        # cat =t3up: footer/bg2/05; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:link
+        link                           =
+        # cat =t3up: footer/bg2/10; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:contactpage
+        contactpage                    =
+        # cat =t3up: footer/bg2/11; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:dataprotection
+        dataprotection                 =
+        # cat =t3up: footer/bg2/12; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:disabilityaccess
+        disabilityaccess               =
+        # cat =t3up: footer/bg2/13; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:impress
+        impress                        =
+        # cat =t3up: footer/bg2/14; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:owner
+        owner                        =        
+        # cat =t3up: footer/bg2/20; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footerBaseWrap
+        footerBaseWrap                 =<div class="footer3"><div class="container"><div class="row justify-content-between mx-0 mr-md-5 me-md-5">|</div></div></div>
+
+    }   
+    
+    header{  
+        # customsubcategory=logo=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logos   
+        # cat =t3up: header/logo/001; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo 
+        logo                          =typo3conf/ext/t3up/Resources/Public/Design/Logo.svg 
+        # cat =t3up: header/logo/002; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo.1 
+        logo.1                          =
+        # cat =t3up: header/logo/003; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo.2 
+        logo.2                          =
+        # cat =t3up: header/logo/004; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo.3
+        logo.3                          =
+        # cat =t3up: header/logo/005; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo.4 
+        logo.4                          =
+        # cat =t3up: header/logo/006; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo.5
+        logo.5                          =
+        # cat =t3up: header/logo/007; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo.6
+        logo.6                          =
+        # cat =t3up: header/logo/008; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo.7
+        logo.7                          =
+        # cat =t3up: header/logo/009; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo.8
+        logo.8                          =
+        # cat =t3up: header/logo/010; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo.9
+        logo.9                          =
+                    
+        
+
+        # cat =t3up: header/logo/101; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:alttext  
+        alttext                       =Home            
+        # cat =t3up: header/logo/102; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logomaxwidth
+        logomaxwidth                  = 50%     
+        # cat =t3up: header/logo/103; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logostickymaxwidth
+        logostickymaxwidth           = 33.33%       
+        # cat =t3up: header/logo/104; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logowrap
+        logowrap                      =<div class="logo d-none d-lg-block col-3 my-auto py-3">|</div> 
+        # cat =t3up: header/logo/105; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:notlogowrap
+        notlogowrap                   = d-flex col-10 flex-wrap vertical-align-stretch
+       
+        
+        # cat =t3up: header/logo/200; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logoII 
+        logoII                        =
+        # cat =t3up: header/logo/201; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:alttextII  
+        alttextII                     =Partner   
+        # cat =t3up: header/logo/202; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:linklogoII 
+        linklogoII                    = https://typo3.org
+        # cat =t3up: header/logo/203; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logoIImaxwidth
+        logoIImaxwidth               = 66.66%    
+        # cat =t3up: header/logo/204; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logoIIwrap
+        logoIIwrap                   =<div class="logoII d-none d-lg-block col-2 my-auto pe-3">|</div>                
+
+        # cat =t3up: header/logo/300; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:moillogo
+        mobillogo                     =typo3conf/ext/t3up/Resources/Public/Design/MobilLogo.svg
+        # cat =t3up: header/logo/301; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:mobillogowrap
+        mobillogowrap                 =<div class="col-6 d-lg-none weblogo py-3 px-3">|</div>
+
+
+        # customsubcategory=homes=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:homes   
+        # cat =t3up: header/homes/01; type =int+;  label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:home
+        home                          =1
+        # cat =t3up: header/homes/02; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:homebutton 
+        homebutton                    =
+        
+        # customsubcategory=logins=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logins   
+        # cat =t3up: header/logins/01; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:loginpage
+        loginpage                     =
+        # cat =t3up: header/logins/02; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:loginbutton
+        loginbutton                   =
+        
+        
+        # customsubcategory=functions=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:functions  
+        # cat =t3up: header/functions/01; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:searchbutton
+        searchbutton                  =
+        # cat =t3up: header/functions/02; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:searchpage
+        searchpage                    =
+        # cat =t3up: header/functions/03; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:solrbutton
+        solrbutton                    =
+        # cat =t3up: header/functions/04; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:solrpage
+        solrpage                      =
+        
+         
+        # cat =t3up: header/functions/05; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:languagemenu
+        languagemenu                  =
+        # cat =t3up: header/functions/06; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:quicklinks
+        quicklinks                    =
+   
+        # customsubcategory=support=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:support  
+        # cat =t3up: header/support/01; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontsize
+        fontsize                     =
+       
+        # cat =t3up: header/support/02; type =options[,active];     label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:darkmode
+        darkmode                      =
+                
+        # cat =t3up: header/support/03; type =options[,header]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:dynheader
+        dynheader                     =
+        
+        # cat =t3up: header/support/04; type =options[0,1]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:showtitle
+        showtitle                     =0
+
+    }        
+    
+   
+    meta {
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.author
+        author                    =
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.compatible
+        compatible                =IE  =edge     
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.copyright
+        copyright                 =T3AC           
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.description
+        description               =
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.google
+        google                    =notranslate
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.google-site-verification
+        google-site-verification  =
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.keywords
+        keywords                  =
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.language
+        language                  =de   
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.publisher
+        publisher                 =
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.page-topic
+        page-topic                =
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.robots
+        robots                    =index, follow        
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.viewport
+        viewport                  =width  =device-width, initial-scale  =1.0
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.og-image
+        og-image                  =
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.og-title
+        og-title                  =
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.og-description
+        og-description            =
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.og-type
+        og-type                   =
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.og-url
+        og-url                    =
+        # cat =t3up: meta//; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:meta.og-site_name
+        og-site_name              =
+    } 
+    
+    navigation {
+        # cat =t3up: navigation//01; type =options[0,1,2,3,4,5,6]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navstyle
+        style                           = 1
+        
+        # cat =t3up: navigation//02; type =options[,navigation,navigation1]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navigation
+        navigation                      = navigation1 
+        
+        # cat =t3up: navigation//03; type =options[justify-content-start,justify-content-end,justify-content-center,justify-content-between]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navdir
+        navdir                           = justify-content-start     
+        # cat =t3up: navigation//04; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navwrap     
+        navwrap                         = mt-auto w-100
+        # cat =t3up: navigation//05; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navcontainer     
+        container                       = container d-flex justify-content-between   
+        # cat =t3up: navigation//06; type =options[,dropmenue]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navplus
+        navplus                         =        
+        # cat =t3up: navigation//07; type =int [1-10]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:maxlevels
+        maxlevels                       = 4     
+        # cat =t3up: navigation//08; type =int [1-100]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:maxitems  
+        maxitems                        = 10
+        # cat =t3up: navigation//09; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:entryLevel  
+        entryLevel                      = 0           
+        # cat =t3up: navigation//10; type =options[0,1]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navcolor
+        color                           = 0          
+        # cat =t3up: navigation//11; type =options[1,2,3,4]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:chars
+        chars                           = 1
+        # cat =t3up: navigation//12; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:topwrap
+        topwrap                         = align-items-center mb-auto 
+
+        # cat =t3up: navigation//101; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:topposition
+        topposition                    = active
+        # cat =t3up: navigation//102; type =options[1,2,3,4,5]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logopos
+        logopos                        = 1
+        # cat =t3up: navigation//201; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:subnav.level
+        subnavlevel                     = 1
+        # cat =t3up: navigation//2002; type =options[0,1]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:leveltitle
+        leveltitle                     = 0
+          
+        # cat =t3up: navigation//301; type =options[0,1]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:sideAnker
+        sideAnker                      = 0   
+
+        # cat =t3up: navigation//401; type =options[0,1,2]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:breadcrumbstyle
+        breadcrumbstyle                = 1  
+        
+        # cat =t3up: navigation//402; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:breadcrumbwrap
+        breadcrumbwrap                 = d-none d-lg-flex breadcrumbrow navbar navbar-expand-lg
+        
+        # cat =t3up: navigation//403; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:breadcrumbulwrap
+        breadcrumbulwrap               = px-0 py-2 align-items-center list-unstyled navbar-nav me-auto       
+        
+        
+    }
+        
+    scss {
+
+        # Basic _____________________________________________        
+        # customsubcategory=basic=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbasic 
+                
+        # cat =t3up: scss/basic/10;  type =options[access,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssaccess
+        scssaccess                    =access 
+        # cat =t3up: scss/basic/11;  type =options[links,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsslinks
+        scsslinks                     =links
+        # cat =t3up: scss/basic/12;  type =options[fsc,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssfsc
+        scssfsc                       =fsc
+        # cat =t3up: scss/basic/13;  type =options[social,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsssocialmedia
+        scsssocialmedia               =social     
+
+        # Parts ____________________________________________      
+        # cat =t3up: scss/basic/20;  type =options[header,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssheader
+        scssheader                    =header 
+        # cat =t3up: scss/basic/21;  type =options[content,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsscontent
+        scsscontent                   =content
+        # cat =t3up: scss/basic/22;  type =options[footer ,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssfooter
+        scssfooter                    =footer
+        # cat =t3up: scss/basic/23;  type =options[navigation,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssnavigation
+        scssnavigation                =navigation
+        # cat =t3up: scss/basic/24;  type =options[breadcrumb,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbreadcrumb
+        scssbreadcrumb                =breadcrumb
+        # cat =t3up: scss/basic/25; type = options[subnavigation,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsssubnavigation
+        scsssubnavigation             =empty
+        # cat =t3up: scss/basic/26; type = options[quicklinks,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssquicklinks
+        scssquicklinks                =quicklinks   
+        # cat =t3up: scss/basic/27; type = options[table,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsstable
+        scsstable                     =table   
+        # cat =t3up: scss/basic/28; type = options[bootstrapstyles ,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbootstrapstyles 
+        scssbootstrapstyles           =bootstrapstyles   
+        
+        
+        # Extensions ____________________________________________      
+        # customsubcategory=extensions=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssextensions
+
+        # cat =t3up: scss/extensions/101;  type =options[lightbox,empty]; label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsslightbox
+        scsslightbox                  =lightbox
+        
+        # cat =t3up: scss/extensions/301;  type =options[powermail,empty];  label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsspowermail
+        scsspowermail                 =empty
+    
+        # cat =t3up: scss/extensions/302;  type =options[indexedsearch,empty];  label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssindexedsearch
+        scssindexedsearch              =empty
+        
+        # cat =t3up: scss/extensions/303;  type =options[jpfaq ,empty];  label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssjpfaq
+        scssjpfaq                     =empty   
+        
+    }
+    
+    socialmedia {
+        # customsubcategory=socialmedia=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:socialmedia  
+        # cat =t3up: socialmedia//01; type =options[,bottom,right,left]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:socialmediaposition
+        pos                           = 
+        # cat =t3up: socialmedia//02; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:facebook
+        facebook                      =
+        # cat =t3up: socialmedia//03; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:youtube
+        youtube                       =
+        # cat =t3up: socialmedia//04; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:instagram
+        instagram                     =
+        # cat =t3up: socialmedia//05; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:twitter
+        twitter                       =
+        # cat =t3up: socialmedia//06; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:email
+        email                         =
+        # cat =t3up: socialmedia//07; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:xing
+        xing                          =
+        # cat =t3up: socialmedia//08; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:linkedin
+        linkedin                      =
+        # cat =t3up: socialmedia//09; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:location
+        location                      =
+        # cat =t3up: socialmedia//10; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:search
+        search                        =    
+        # cat =t3up: socialmedia//11; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:login
+        login                         =     
+        # cat =t3up: socialmedia//12; type =options[,d-none]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:hidelabel
+        hidelabel                     = d-none            
+               
+    }
+     
+    typography {
+        # customsubcategory=headers=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headers  
+        # cat =t3up: typography/headers/01; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1
+        h1                                 =1.75rem
+        # cat =t3up: typography/headers/02; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.md
+        h1.md                              =2rem
+        # cat =t3up: typography/headers/03; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.lg
+        h1.lg                              =2.5rem
+        # cat =t3up: typography/headers/04; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.fontweight
+        h1.fontweight                      =600
+        # cat =t3up: typography/headers/05; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.lineheight
+        h1.lineheight                      =1.35em
+        # cat =t3up: typography/headers/06; type =options[left,center,right]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.direction
+        h1.direction                       =left
+        # cat =t3up: typography/headers/07; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.margin
+        h1.margin                          = 0 0 1rem
+        # cat =t3up: typography/headers/07; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.padding
+        h1.padding                         = calc(var(--bs-gutter-x) / 2) !important
+   
+        
+        # cat =t3up: typography/headers/10; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2
+        h2                                 =1.35rem
+        # cat =t3up: typography/headers/11; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.md
+        h2.md                              =1.5rem
+        # cat =t3up: typography/headers/12; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.lg
+        h2.lg                              =1.75rem
+        # cat =t3up: typography/headers/13; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.fontweight
+        h2.fontweight                      =600
+        # cat =t3up: typography/headers/14; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.margin
+        h2.margin                          = 0 0 1rem
+        # cat =t3up: typography/headers/15; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.lineheight
+        h2.lineheight                      =1.35em
+
+        # cat =t3up: typography/headers/20; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3   
+        h3                                 =1.1rem
+        # cat =t3up: typography/headers/21; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.md
+        h3.md                              =1.25rem
+        # cat =t3up: typography/headers/22; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.lg
+        h3.lg                              =1.35rem
+        # cat =t3up: typography/headers/23; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.fontweight
+        h3.fontweight                      =600
+        # cat =t3up: typography/headers/24; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.margin
+        h3.margin                          = 0 0 1rem
+        # cat =t3up: typography/headers/25; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.lineheight
+        h3.lineheight                      =1.35em
+        
+        # cat =t3up: typography/headers/30; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4
+        h4                                 =1rem
+        # cat =t3up: typography/headers/31; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4.md
+        h4.md                              =1.05rem
+        # cat =t3up: typography/headers/32; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4.lg
+        h4.lg                              =1.10rem
+        # cat =t3up: typography/headers/33; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4.fontweight
+        h4.fontweight                      =600              
+        # cat =t3up: typography/headers/34; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4.margin
+        h4.margin                          = 0          
+        # cat =t3up: typography/headers/35; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4.lineheight
+        h4.lineheight                      =1.35em     
+        
+
+        
+        # customsubcategory=footers=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footers   
+        # cat =t3up: typography/footers/01; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1.h3
+        footer1.h3                          =1.2rem
+        # cat =t3up: typography/footers/02; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1.fontsize
+        footer1.fontsize                    =1rem
+        # cat =t3up: typography/footers/03; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1.fontweight
+        footer1.fontweight                  =600
+        # cat =t3up: typography/footers/04; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1.lineheight
+        footer1.lineheight                  =1.35em  
+        # cat =t3up: typography/footers/05; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer3.fontsize
+        footer3.fontsize                    =1rem
+        # cat =t3up: typography/footers/06; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer3.fontweight
+        footer3.fontweight                  =600 
+        
+        
+        
+        
+        # customsubcategory=bread=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bread  
+        # cat =t3up: typography/bread/01; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:p
+        p                                 =1.00rem 
+        # cat =t3up: typography/bread/02; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:p.md
+        p.md                              =1.05rem 
+        # cat =t3up: typography/bread/03; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:p.lg
+        p.lg                              =1.10rem 
+        
+        # cat =t3up: typography/bread/04; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:boldweight
+        boldweight                        =600
+  
+        # cat =t3up: typography/bread/05; type = string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:lineheight
+        lineheight                        =1.45em
+
+        # cat =t3up: typography/extra/01; type = string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navigationfontsize
+        navigationfontsize                 =1rem
+        
+        # cat =t3up: typography/extra/02; type = string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbolfontsize
+        symbolfontsize                     =1rem
+    }
+}
+
+## Extension
+plugin.tx_powermail.view.templateRootPath = EXT:t3up/Resources/Private/Templates/Powermail/Templates/
+plugin.tx_powermail.view.partialRootPath  = EXT:t3up/Resources/Private/Templates/Powermail/Partials/
+
+
+######################
+### Standardvalues ###
+######################
+styles.content.textmedia {
+    maxW                        =2560
+    maxWInText                  =1200
+    linkWrap.width              =2560m
+    linkWrap.height             =1200m
+    linkWrap.lightboxEnabled    =1
+}
+

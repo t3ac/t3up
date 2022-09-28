@@ -1,0 +1,2 @@
+lib.navigationwrap                          = TEXT
+lib.navigationwrap.value                    = {$page.navigation.navwrap}

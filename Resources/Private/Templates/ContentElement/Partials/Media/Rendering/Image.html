@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <picture>
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1920')}" media="(min-width: 1601px)" type="image/webp">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1920')}" media="(min-width: 1601px)" type="image/jpeg">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1600')}" media="(min-width: 1334px)" type="image/webp">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1600')}" media="(min-width: 1334px)" type="image/jpeg">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1333')}" media="(min-width: 1001px)" type="image/webp">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1333')}" media="(min-width: 1001px)" type="image/jpeg">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1000')}" media="(min-width: 801px)"  type="image/webp">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '1000')}" media="(min-width: 801px)"  type="image/jpeg">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '800')}" media="(min-width: 601px)"  type="image/webp">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '800')}" media="(min-width: 601px)"  type="image/jpeg">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '600')}" media="(min-width: 401px)"  type="image/webp">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '600')}" media="(min-width: 401px)"  type="image/jpeg">    
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '400')}" media="(min-width: 321px)"  type="image/webp">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '400')}" media="(min-width: 321px)"  type="image/jpeg">         
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '320')}" media="(min-width: 200px)"  type="image/webp">
+        <source srcset="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', width: '{dimensions.width}', maxWidth: '320')}" media="(min-width: 200px)"  type="image/jpeg">
+       
+        <img  class="image-embed-item" src="{f:uri.image(src:'{file.uid}', treatIdAsReference:'1', cropVariant: 'default', maxHeight: '{data.imageheight}', maxWidth: '{data.imagewidth}')}"
+        	  {f:if(condition: '{file.title}', then: 'title="{file.title}"')}  {f:if(condition: '{file.alternative}', then: 'alt="{file.alternative}"')} loading="lazy" />
+
+        <f:if condition="{pictureoverlayfunction}">
+           <span>{file.alternative}</span>        
+        </f:if>     </picture>
+</html>
