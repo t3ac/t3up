@@ -23,7 +23,7 @@
   "require": {
     "typo3/cms-core": "^10.4 || ^11.5",
     "ichhabrecht/content-defender": "^3.1",
-    "WapplerSystems/ws-scss": "^11"
+    "wapplersystems/ws-scss": "^11"
   },
   "extra": {
     "typo3/cms": {
