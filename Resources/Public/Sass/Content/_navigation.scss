@@ -36,55 +36,29 @@
     }
    
 
-    /* Navigation 2: with Captital-Image ***/
-    .mediaNav{
-      .container > nav > ul                 {display: flex;}
+    /* Navigation 2  ***/
+    .mediaNav{    
+                         
+        nav > .nav                          {position: relative; min-height: 1rem;}
+        nav > .nav > li                     {padding: 0; }
+        nav > .nav > li > a                 {padding: .5rem 2rem; display: inline-block; }        
+        ul.subnav                           {position: absolute; z-index: 1004; background: #fff; width: 33.333%; list-style: none; left: 0rem; top: 0rem;}
         
-      .capital                              {display: none; width: 100%; height: auto;}  
-      span.im                               {display: block;}  
-      .im img.capital                       {display: block !important; width: 100%; height: auto;} 
-     
+        ul.subnav ul.subnav                 {left: 100%; z-index: 1005; position: absolute; top: 0rem; width: 100%;}
+        ul.subnav ul.subnav  ul.subnav      {z-index: 1006; position: absolute; top: 0rem;}
+        ul.subnav li                        {display: flex; justify-content: space-between; }
+        ul.subnav li span                   {padding: .5rem 1rem;}        
+        ul.subnav li a                      {padding: .5rem 1rem;}
+        ul.subnav li.act,        
+        ul.subnav li.cur,  
+        ul.subnav li.activated              {background: #aaa;}             
+        ul.subnav li > a:hover              {font-weight: bold;}
+        
+        .box                                {min-height: calc(50vh - 100px); max-height: calc(60vh - 10px);  z-index: 1002;  width: 100%; position: absolute;
+                                            left: 0; display: none; border-top: 1px solid #cacaca; box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%); background-color: rgba(255,255,255,1); overflow-x: hidden;}
 
-      nav#menu {                                 
-        > ul                                {list-style: none; margin: 0; display: flex}
-        > ul > li                           {border-top: 0.0625rem solid transparent; display: inline-block; }
-        > ul > li > a                       {font-size: $navigationfontsize +px; font-weight: 500; letter-spacing: .01em; border-bottom-width: 0.33rem; border-bottom-style: solid; border-bottom-color: transparent;
-                                            display: inline-block; transition: color ease .3s; text-transform: uppercase; padding: 0 .66rem  .66rem;  color: $navLinkColor;}
-        > ul > li.cur > a                   {color: $navLinkHoverColor; border-bottom-color: $navLinkHoverColor;}
-        > ul > li > a:hover                 {color: $navLinkHoverColor; border-bottom-color: rgba($navLinkHoverColor, .33);}
-        > ul > li.act > a                   {border-bottom-color: rgba($navLinkHoverColor, .66);}
-        > ul > li > a.closelink             {border-bottom-color: $navLinkHoverColor;}
-          
-        .submenulevel                       {display: none;}
-      }
-      
-        .row > .subnav                      {position: relative !important; list-style: none;  } 
-        .row > .subnav li                   {height: 2.5*$navigationfontsize +px;  display: flex; align-items: center; justify-content: space-between; width: 33.33%; border-bottom: 0.0625rem solid #ececec;}
-        .row > .subnav li:last-of-type      {border-bottom: 0}
-        .row > .subnav li a                 {font-size: $navigationfontsize +px; line-height: 2+$navigationfontsize +px; display: block; width: 100%; padding-left: 0.625rem; transition: all ease .3s; color: $subnavLinkColor;}      
-        .row > .subnav li:hover,          
-        .row > .subnav .activated           {background-color: rgba($subnavLinkColor,.075);} 
-
-        .row > .subnav .activated > a,    
-        .row > .subnav a:focus,
-        .row > li .subnav a:hover           {color: $subnavLinkHoverColor;} 
-       
-        .row > .subnav > li span            {align-self: stretch; cursor: pointer; padding: 0.625rem 0 0.625rem 0; display: block; text-align: center; width: 2.5rem;
-                                            transition: all ease .3s; line-height: 100%; color: $subnavLinkColor; font-size: $navigationfontsize +px; }
-        .row > .subnav  li:hover > span     {background-color: rgba($subnavLinkColor,.075); color: $subnavLinkHoverColor;} 
-        .subnav .activated                  {background-color: rgba($subnavLinkColor,.075);}                      
-        .row > .subnav .subnav              {position: absolute; left: 33.66%; top: 0; list-style: none; }
-        .row > .subnav .subnav li           {width: 50%;}
-        .row > .subnav .subnav .subnav      {left: 50%;}    
-        .row > .subnav .subnav .subnav  li  {width: 100%;}
-
-      .box                                  {padding-top: 1rem; padding-bottom: 1rem; z-index: 1002; width: 100%; position: absolute; left: 0;display: none; 
-                                            border-top: 0.0625rem solid #cacaca; box-shadow: $shadow;  background-color: $subNavBG; }
-                                                    
-        .closemenu                          {transition: all ease 0.3s; text-align: center; display: block; cursor: pointer; position: absolute; top: 1rem; right: 1rem; 
-                                            padding: 5px 7.5px; background: none; border: 1px solid; border-color: #aaa; color: #666; line-height: 100%;  font-size: 150%;}
     }
-
+    
     /* Navigation 3: Navigation on the right, full size */
     .blockNav{ 
       
