@@ -12,7 +12,7 @@ $(document).ready(function() {
         $('#menu ul ul li').has( ".subnav" ).find('span').text($plu);  
         $('.nav li').last().addClass('lastitem');    
         $('.nav li.dropmenue > span').text($pluTop);    
-        $('.mediaNav #menu > .nav > li > .row').wrap('<div class="box"><div class="container px-0 px-lg-3"></div><span class="btn-close"></span></div>');
+        $('.activeNav #menu > .nav > li > .row').wrap('<div class="box"><div class="container px-0 px-lg-3"></div><span class="btn-close"></span></div>');
             
         $('#menu ul ul').each(function() {    
             if ($(this).children().length > navblock1) {
@@ -36,7 +36,7 @@ $(document).ready(function() {
         liheight = $('.subnav > li').height();
         li2height= (parseInt($('html').css('font-size')));
         blockNavHeight = liheight * navblock; 
-        $('.box').css('height', (navblock + 1) * 50); 
+        // $('.box').css('height', (navblock + 1) * 50); 
             
     /* Inits end *********************************************************************************/
     
@@ -115,6 +115,7 @@ $(document).ready(function() {
                 $p.find('> span').text($minTop);
                 $p.attr({'data-show-sub': 'true'});  
                 $p.find(' > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
+                
                 $this.toggleClass('navlink').toggleClass('closelink');
             } else {
                 /* Reset */
@@ -127,14 +128,11 @@ $(document).ready(function() {
 
         
         
-        /* Media */
+        /* Active dynamic */
 
-        $body.on('ontouchend click', '.mediaNav .navlink', function(event) {
+        $body.on('ontouchend click', '.activeNav .navlink', function(event) {
             var $this   = $(this),
-                $p      = $(this).parent(),
-                $clone  = '',
-                $elem   = $p.find('>.capital'),
-                $clone  = $elem.clone(true);  
+                $p      = $(this).parent();  
                 
                 /* Reset */ 
                 $p.siblings().find('.subnav').attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});
@@ -152,16 +150,18 @@ $(document).ready(function() {
                     $p.addClass('activated');   
                     $p.find('> span').text($minTop); 
                     $p.attr({'data-show-sub': 'true'});  
-                    $p.find(' > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
+                    $p.find('.box > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
                     $p.find('.box').fadeIn('fast',function(){
                         $p.siblings().find('.box').hide();
                     });
                     
-                    $p.find('.submenulevel').css('display','flex');
-                    $p.find('.row > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
-                    $p.find('.im img').replaceWith($clone);   // Replace the Capitalimage
-                    $p.find('.im .capital').fadeIn('slow');
-                    $this.toggleClass('navlink').toggleClass('closelink');
+                  $p.find('li.act').parent().attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
+                  $p.find('li.act > span').text($min);                  
+                  $p.find('li.cur').parent().attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
+                  $p.find('li.cur > span').text($min);                  
+                   // $p.find('.submenulevel').css('display','flex');
+                 //   $p.find('.subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
+                //    $this.toggleClass('navlink').toggleClass('closelink');
    
                 }
                 
@@ -271,7 +271,7 @@ $(document).ready(function() {
             }
         })  
 
-        $body.on('click', '.mediaNav .dropmenue > span', function(event) {
+        $body.on('click', '.activeNav .dropmenue > span', function(event) {
             var $span = $(this).text(),
                 $this   = $(this).parent(),
                 $clone  = '',
@@ -355,7 +355,7 @@ $(document).ready(function() {
                            $navitem.find('> span').text($min);
                     }
    
-                    /* Do Media*/
+                    /* Do active*/
                     $navitem.find('.box').show();
                     $navitem.find('.submenulevel').css('display','flex');
                     $navitem.find('.row > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});

@@ -324,7 +324,7 @@ page {
         # cat =t3up: footer/bg2/02; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:lastchange
         lastchange                     =
         # cat =t3up: footer/bg2/03; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pid
-        pid                            =                  =
+        pid                            =                  
         # cat =t3up: footer/bg2/05; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:link
         link                           =
         # cat =t3up: footer/bg2/10; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:contactpage
@@ -484,8 +484,8 @@ page {
         # cat =t3up: navigation//01; type =options[0,1,2,3,4,5,6]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navstyle
         style                           = 1
         
-        # cat =t3up: navigation//02; type =options[,navigation,navigation1]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navigation
-        navigation                      = navigation1 
+        # cat =t3up: navigation//02; type =options[,navigation]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navigation
+        navigation                      = navigation
         
         # cat =t3up: navigation//03; type =options[justify-content-start,justify-content-end,justify-content-center,justify-content-between]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navdir
         navdir                           = justify-content-start     

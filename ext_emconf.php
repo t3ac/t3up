@@ -6,7 +6,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title'            => 'T3UP - Basic Installation',
     'description'      => 'T3UP - Distribution.',
-    'version'          => '1.0.1',
+    'version'          => '1.0.2',
     'state'            => 'stable',
     'category'         => 'templates',
     'author'           => 'Michael Lang',
@@ -17,8 +17,7 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => false,
     'constraints'      => [
         'depends'   => [
-            'typo3'            => '10.4.1-1.5.99',
-            'ws_scss'          => '11.0.0-',
+            'typo3'            => '10.4.0-11.5.99'
         ],
         'conflicts' => [],
         'suggests'  => [],
