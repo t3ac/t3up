@@ -10,7 +10,7 @@ defined('TYPO3_MODE') or die();
 use TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor;
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor::class] = [
-   'className' => T3UP\T3up\Xclass\GalleryProcessor::class
+  // 'className' => T3UP\T3up\Xclass\GalleryProcessor::class
 ];
 
 
