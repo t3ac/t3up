@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace T3UP\T3up\Xclass;
+namespace T3ac\T3up\Xclass;
 
 /*
  * This file is part of the TYPO3 CMS project.

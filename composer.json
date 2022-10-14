@@ -17,7 +17,7 @@
   ],
   "autoload": {
       "psr-4": {
-          "T3ac\\T3up\\": "Classes/"
+          "T3ac\\T3up\\": "Classes"
       }
   },
   "require": {
