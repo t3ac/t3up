@@ -196,4 +196,5 @@ page.includeCSS{
    	main                                =  EXT:t3up/Resources/Public/Sass/_index.scss
     main.linenumber                     =  true    
     main.forceOnTop                     =  1
+	main.outputStyle                    =  compressed 
 }

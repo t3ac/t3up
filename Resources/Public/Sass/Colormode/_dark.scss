@@ -56,7 +56,9 @@ html[color-mode$=dark] {
     header {                                                      background-color: $subNavBG !important; color: $baseTextColor !important;
         .toparea                                                  {background-color: rgba($topBgColor,$topBgColorTrans);}
         .logoII img,
-        .logo img                                                 {filter: invert(100%) grayscale(100%) contrast(400%)}
+        .logo img,
+        .weblogo img                                              {filter: invert(100%) grayscale(100%) contrast(400%)}
+        
         a                                                         {color: $topLinkColor !important;}  
         a:hover                                                   {color: $topLinkHoverColor !important;}
         
