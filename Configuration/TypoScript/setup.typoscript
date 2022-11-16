@@ -4,7 +4,6 @@
 
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Basic/" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Main/" extensions="typoscript">
-#<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Extensions/" extensions="typoscript">
 
 ###########################
 #  <BR> fuer mehrzeilige CONTENT-Titel
@@ -41,6 +40,7 @@ page {
 	}
 
     10 < lib.main
+
 
 }
 

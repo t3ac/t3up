@@ -9,10 +9,10 @@ jQuery(document).ready(function($) {
            /* Navigation ausblenden und fixen******************/
         		win.scroll(function() {
         		    if (offset < win.scrollTop()) {
-        		        header.addClass("sticky");
+        		        header.addClass("sticky w-100");
         		        header.css('position','fixed');
         		    } else {
-        		        header.removeClass("sticky");
+        		        header.removeClass("sticky w-100");
         		        header.css('position','relative')
                }     
            });

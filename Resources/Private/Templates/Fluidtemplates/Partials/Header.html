@@ -1,701 +1,1 @@
- <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    data-namespace-typo3-fluid="true">   
-        <f:section name="list">
-
-           <f:if condition="{navstyle} == 0"><!-- No--> 
-                <header id="header" class="noNav">
-                        <f:render section="top" arguments="{_all}"/>  
-                </header>   
-            </f:if>  
-
-            <f:if condition="{navstyle} == 1">
-                <header id="header" class="standardNav">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                           <f:render section="top" arguments="{_all}"/>  
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navdir} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                   </div>
-                               </f:case>
-   
-                              <f:defaultCase>
-                                    <div class="{navcontainer} {logopos}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                    </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch> 
-                        </f:then>
-                        
-                        <f:else>
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="{notlogowrap}">
-                                            <f:render section="top" arguments="{_all}"/>
-                                            <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                        </div>
-                                   </div>
-                               </f:case>
-
-                              <f:defaultCase>
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="d-flex flex-wrap vertical-align-stretch">
-                                            <f:render section="top" arguments="{_all}"/>
-                                        </div>
-                                   </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch>   
-                        </f:else>
-                    </f:if>
-                </header>       
-            </f:if>
-                        
-            <f:if condition="{navstyle} == 2">
-                <header id="header" class="activeNav">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                           <f:render section="top" arguments="{_all}"/>  
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navdir} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:render partial="Menu/ActiveNavigation" arguments="{_all}"/>
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                   </div>
-                               </f:case>
-   
-                              <f:defaultCase>
-                                    <div class="{navcontainer} {logopos}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                    </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/ActiveNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch> 
-                        </f:then>
-                        
-                        <f:else>
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="{notlogowrap}">
-                                            <f:render section="top" arguments="{_all}"/>
-                                            <f:render partial="Menu/ActiveNavigation" arguments="{_all}"/>
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                        </div>
-                                   </div>
-                               </f:case>
-
-                              <f:defaultCase>
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="d-flex flex-wrap vertical-align-stretch">
-                                            <f:render section="top" arguments="{_all}"/>
-                                        </div>
-                                   </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/ActiveNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch>   
-                        </f:else>
-                    </f:if>
-                </header>  
-            </f:if>
-                        
-            <f:if condition="{navstyle} == 3">
-                <header id="header" class="blockNav {logopos}">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                           <f:render section="top" arguments="{_all}"/>  
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navdir} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                   </div>
-                               </f:case>
-   
-                              <f:defaultCase>
-                                    <div class="{navcontainer} {logopos} ">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                    </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch> 
-                        </f:then>
-                        
-                        <f:else>
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="{notlogowrap}">
-                                            <f:render section="top" arguments="{_all}"/>
-                                            <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                        </div>
-                                   </div>
-                               </f:case>
-   
-                              <f:defaultCase>
-                              
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="d-flex flex-wrap vertical-align-stretch">
-                                            <f:render section="top" arguments="{_all}"/>
-                                        </div>
-                                   </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch>   
-                        </f:else>
-                        
-                    </f:if>
-                </header>   
-            </f:if>  
-                   
-            <f:if condition="{navstyle} == 4"><!-- Simple Nav--> 
-                <header id="header" class="standardNav">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                        
-                           <f:render section="top" arguments="{_all}"/>  
-                           
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navdir} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                   </div>
-                               </f:case>
-   
-                              <f:defaultCase>
-                                    <div class="{navcontainer} {logopos}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                    </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch> 
-                        </f:then>
-                        
-                        <f:else>
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="{notlogowrap}">
-                                            <f:render section="top" arguments="{_all}"/>
-                                            <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                        </div>
-                                   </div>
-                               </f:case>
-
-                              <f:defaultCase>
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="d-flex flex-wrap vertical-align-stretch">
-                                            <f:render section="top" arguments="{_all}"/>
-                                        </div>
-                                   </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch>   
-                        </f:else>
-                    </f:if>
-                </header>       
-            </f:if>                
-               
-           <f:if condition="{navstyle} == 5"> <!-- Anker --> 
-                <header id="header" class="standardNav ankerNav">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                             <div class="toparea top"> 
-                                <div class="{navcontainer} d-flex justify-content-md-between"> 
-                                	<ul id="service_nav" class="{showtitle} nav-service d-flex list-unstyled  {topwrap}">
-						                <f:cObject typoscriptObjectPath="lib.header.top" />
-						                <f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>
-						           </ul>
-                                </div> 
-                             </div>
-                             <div class="{logopos} {navdir} {navcontainer} ">
-                                <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                <f:cObject typoscriptObjectPath="lib.navigation.anker" />
-                            </div>
-                        </f:then>
-                         <f:else>
-                            <div class="{logopos} {navdir}">
-                               <f:switch expression="{inside}">
-                                    <f:case value="inside">
-                                        <div class="{navcontainer} d-flex align-items-stretch topinside ">   
-                                            <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                            <div class="d-flex align-items-stretch flex-wrap">
-                                                 <f:cObject typoscriptObjectPath="lib.header.top" />
-
-                                                 <f:cObject typoscriptObjectPath="lib.navigation.anker" />      
-                                            </div>  
-                                       </div>
-                                   </f:case>
-                                   <f:defaultCase>
-                                       <div class="{navcontainer} d-flex topinside">    
-                                            <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />  
-                                            <div class="top d-flex justify-content-md-between "> 
-                                            	<f:cObject typoscriptObjectPath="lib.header.top" /> 
-                                             	<f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>
-                                            </div>
-                                       </div>
-                                       <div class="{navcontainer} "><f:cObject typoscriptObjectPath="lib.navigation.anker" /></div> 
-                                   </f:defaultCase>
-                               </f:switch> 
-                           </div>
-                        </f:else>
-                    </f:if>      
-                </header>      
-            </f:if>       
-
-           <f:if condition="{navstyle} == 6"><!-- No Nav--> 
-                <header id="header" class="noNav ">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                            <div class="toparea top justify-content-lg-between">
-                               <div class="{navcontainer}">
-                                   <div class="row">
-                                       <f:cObject typoscriptObjectPath="lib.header.top" />   
-                                   </div>
-                               </div>
-                            </div>
-                           <div class="{navcontainer}">                  
-                                <div class="row align-items-center navigation">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                </div>
-                            </div>  
-                        </f:then>
-                        
-                         <f:else>
-                            <div class="{navcontainer} pl-0 pr-0">   
-                                <div class="row">
-                                    <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                    <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                    <div class="d-flex flex-column">
-                                         <div class="ml-auto d-flex top"><f:cObject typoscriptObjectPath="lib.header.top" /></div>
-                                    </div>   
-                                </div>
-                            </div>  
-                        </f:else>
-                    </f:if>         
-                </header>   
-            </f:if>       
-               
-       </f:section>
- 
-    <f:section name="top">
-        <f:if condition="{toppos}">
-            <f:then>
-	            <div class="top {f:if(condition: '{toppos}',then: 'toparea' )}"> 
-	                <div class="{navcontainer}">
-	                    <ul id="service_nav" class="{showtitle}  nav-service d-flex list-unstyled {topwrap}">  
-	                        <f:cObject typoscriptObjectPath="lib.header.top" />
-	                         <f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>
-	                    </ul>
-	                    <f:cObject typoscriptObjectPath="lib.header.quicklinks" />
-	                </div>
-	            </div>
-            </f:then>
-            <f:else>         
-		       <div class="top {topwrap}"> 
-		           <ul id="service_nav" class="{showtitle} {topwrap}">
-		                <f:cObject typoscriptObjectPath="lib.header.top" />
-		                <f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>
-		           </ul>
-		           <f:cObject typoscriptObjectPath="lib.header.quicklinks" />
-		        </div>
-             </f:else>
-        </f:if>         
-    </f:section>
-</html>
-
-
-=======
- <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    data-namespace-typo3-fluid="true">   
-        <f:section name="list">
-
-           <f:if condition="{navstyle} == 0"><!-- No--> 
-                <header id="header" class="noNav">
-                        <f:render section="top" arguments="{_all}"/>  
-                </header>   
-            </f:if>  
-
-            <f:if condition="{navstyle} == 1">
-                <header id="header" class="standardNav">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                           <f:render section="top" arguments="{_all}"/>  
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navdir} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                   </div>
-                               </f:case>
-   
-                              <f:defaultCase>
-                                    <div class="{navcontainer} {logopos}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                    </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch> 
-                        </f:then>
-                        
-                        <f:else>
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="{notlogowrap}">
-                                            <f:render section="top" arguments="{_all}"/>
-                                            <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                        </div>
-                                   </div>
-                               </f:case>
-
-                              <f:defaultCase>
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="d-flex flex-wrap vertical-align-stretch">
-                                            <f:render section="top" arguments="{_all}"/>
-                                        </div>
-                                   </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch>   
-                        </f:else>
-                    </f:if>
-                </header>       
-            </f:if>
-                        
-            <f:if condition="{navstyle} == 2">
-                <header id="header" class="mediaNav">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                           <f:render section="top" arguments="{_all}"/>  
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navdir} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:render partial="Menu/StandardNavigation2" arguments="{_all}"/>
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                   </div>
-                               </f:case>
-   
-                              <f:defaultCase>
-                                    <div class="{navcontainer} {logopos}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                    </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/StandardNavigation2" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch> 
-                        </f:then>
-                        
-                        <f:else>
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="{notlogowrap}">
-                                            <f:render section="top" arguments="{_all}"/>
-                                            <f:render partial="Menu/StandardNavigation2" arguments="{_all}"/>
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                        </div>
-                                   </div>
-                               </f:case>
-
-                              <f:defaultCase>
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="d-flex flex-wrap vertical-align-stretch">
-                                            <f:render section="top" arguments="{_all}"/>
-                                        </div>
-                                   </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/StandardNavigation2" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch>   
-                        </f:else>
-                    </f:if>
-                </header>  
-            </f:if>
-                        
-            <f:if condition="{navstyle} == 3">
-                <header id="header" class="blockNav {logopos}">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                           <f:render section="top" arguments="{_all}"/>  
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navdir} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                   </div>
-                               </f:case>
-   
-                              <f:defaultCase>
-                                    <div class="{navcontainer} {logopos} ">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                    </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch> 
-                        </f:then>
-                        
-                        <f:else>
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="{notlogowrap}">
-                                            <f:render section="top" arguments="{_all}"/>
-                                            <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                        </div>
-                                   </div>
-                               </f:case>
-   
-                              <f:defaultCase>
-                              
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="d-flex flex-wrap vertical-align-stretch">
-                                            <f:render section="top" arguments="{_all}"/>
-                                        </div>
-                                   </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch>   
-                        </f:else>
-                        
-                    </f:if>
-                </header>   
-            </f:if>  
-                   
-            <f:if condition="{navstyle} == 4"><!-- Simple Nav--> 
-                <header id="header" class="standardNav">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                        
-                           <f:render section="top" arguments="{_all}"/>  
-                           
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navdir} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                   </div>
-                               </f:case>
-   
-                              <f:defaultCase>
-                                    <div class="{navcontainer} {logopos}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                    </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch> 
-                        </f:then>
-                        
-                        <f:else>
-                           <f:switch expression="{inside}">
-                                <f:case value="inside">
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="{notlogowrap}">
-                                            <f:render section="top" arguments="{_all}"/>
-                                            <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                        </div>
-                                   </div>
-                               </f:case>
-
-                              <f:defaultCase>
-                                   <div class="{logopos} {navcontainer}">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <div class="d-flex flex-wrap vertical-align-stretch">
-                                            <f:render section="top" arguments="{_all}"/>
-                                        </div>
-                                   </div>
-                                    <div class="{navcontainer} {navdir}">
-                                        <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>
-                                   </div>
-                               </f:defaultCase>
-                            </f:switch>   
-                        </f:else>
-                    </f:if>
-                </header>       
-            </f:if>                
-               
-           <f:if condition="{navstyle} == 5"> <!-- Anker --> 
-                <header id="header" class="standardNav ankerNav">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                             <div class="toparea top"> 
-                                <div class="{navcontainer} d-flex justify-content-md-between"> 
-                                	<ul id="service_nav" class="{showtitle} nav-service d-flex list-unstyled  {topwrap}">
-						                <f:cObject typoscriptObjectPath="lib.header.top" />
-						                <f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>
-						           </ul>
-                                </div> 
-                             </div>
-                             <div class="{logopos} {navdir} {navcontainer} ">
-                                <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                <f:cObject typoscriptObjectPath="lib.navigation.anker" />
-                            </div>
-                        </f:then>
-                         <f:else>
-                            <div class="{logopos} {navdir}">
-                               <f:switch expression="{inside}">
-                                    <f:case value="inside">
-                                        <div class="{navcontainer} d-flex align-items-stretch topinside ">   
-                                            <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                            <div class="d-flex align-items-stretch flex-wrap">
-                                                 <f:cObject typoscriptObjectPath="lib.header.top" />
-
-                                                 <f:cObject typoscriptObjectPath="lib.navigation.anker" />      
-                                            </div>  
-                                       </div>
-                                   </f:case>
-                                   <f:defaultCase>
-                                       <div class="{navcontainer} d-flex topinside">    
-                                            <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />  
-                                            <div class="top d-flex justify-content-md-between "> 
-                                            	<f:cObject typoscriptObjectPath="lib.header.top" /> 
-                                             	<f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>
-                                            </div>
-                                       </div>
-                                       <div class="{navcontainer} "><f:cObject typoscriptObjectPath="lib.navigation.anker" /></div> 
-                                   </f:defaultCase>
-                               </f:switch> 
-                           </div>
-                        </f:else>
-                    </f:if>      
-                </header>      
-            </f:if>       
-
-           <f:if condition="{navstyle} == 6"><!-- No Nav--> 
-                <header id="header" class="noNav ">
-                    <f:if condition="{toppos}">
-                        <f:then>
-                            <div class="toparea top justify-content-lg-between">
-                               <div class="{navcontainer}">
-                                   <div class="row">
-                                       <f:cObject typoscriptObjectPath="lib.header.top" />   
-                                   </div>
-                               </div>
-                            </div>
-                           <div class="{navcontainer}">                  
-                                <div class="row align-items-center navigation">
-                                        <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                </div>
-                            </div>  
-                        </f:then>
-                        
-                         <f:else>
-                            <div class="{navcontainer} pl-0 pr-0">   
-                                <div class="row">
-                                    <f:cObject typoscriptObjectPath="lib.header.logo" />
-                                    <f:cObject typoscriptObjectPath="lib.header.logoII" />
-                                    <div class="d-flex flex-column">
-                                         <div class="ml-auto d-flex top"><f:cObject typoscriptObjectPath="lib.header.top" /></div>
-                                    </div>   
-                                </div>
-                            </div>  
-                        </f:else>
-                    </f:if>         
-                </header>   
-            </f:if>       
-               
-       </f:section>
- 
-    <f:section name="top">
-        <f:if condition="{toppos}">
-            <f:then>
-	            <div class="top {f:if(condition: '{toppos}',then: 'toparea' )}"> 
-	                <div class="{navcontainer}">
-	                    <ul id="service_nav" class="{showtitle}  nav-service d-flex list-unstyled {topwrap}">  
-	                        <f:cObject typoscriptObjectPath="lib.header.top" />
-	                         <f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>
-	                    </ul>
-	                    <f:cObject typoscriptObjectPath="lib.header.quicklinks" />
-	                </div>
-	            </div>
-            </f:then>
-            <f:else>         
-		       <div class="top {topwrap}"> 
-		           <ul id="service_nav" class="{showtitle} {topwrap}">
-		                <f:cObject typoscriptObjectPath="lib.header.top" />
-		                <f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>
-		           </ul>
-		           <f:cObject typoscriptObjectPath="lib.header.quicklinks" />
-		        </div>
-             </f:else>
-        </f:if>         
-    </f:section>
-</html>
+ <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"    data-namespace-typo3-fluid="true">           <f:section name="list">           <f:if condition="{navstyle} == 0"><!-- No-->                 <header id="header" class="noNav">                        <f:render section="top" arguments="{_all}"/>                  </header>               </f:if>              <f:if condition="{navstyle} == 1">                <header id="header" class="standardNav">                    <f:if condition="{toppos}">                        <f:then>                           <f:render section="top" arguments="{_all}"/>                             <f:switch expression="{inside}">                                <f:case value="inside">                                   <div class="{logopos} {navdir} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />                                   </div>                               </f:case>                                 <f:defaultCase>                                    <div class="{navcontainer} {logopos}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />                                    </div>                                    <div class="{navcontainer} {navdir}">                                        <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>                                   </div>                               </f:defaultCase>                            </f:switch>                         </f:then>                                                <f:else>                           <f:switch expression="{inside}">                                <f:case value="inside">                                   <div class="{logopos} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <div class="{notlogowrap}">                                            <f:render section="top" arguments="{_all}"/>                                            <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />                                        </div>                                   </div>                               </f:case>                              <f:defaultCase>                                   <div class="{logopos} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <div class="d-flex flex-wrap vertical-align-stretch">                                            <f:render section="top" arguments="{_all}"/>                                        </div>                                   </div>                                    <div class="{navcontainer} {navdir}">                                        <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>                                   </div>                               </f:defaultCase>                            </f:switch>                           </f:else>                    </f:if>                	<f:render section="breadcrumb" arguments="{_all}"/>                </header>                   </f:if>                                    <f:if condition="{navstyle} == 2">                <header id="header" class="activeNav">                    <f:if condition="{toppos}">                        <f:then>                           <f:render section="top" arguments="{_all}"/>                             <f:switch expression="{inside}">                                <f:case value="inside">                                   <div class="{logopos} {navdir} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <f:render partial="Menu/ActiveNavigation" arguments="{_all}"/>                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />                                   </div>                               </f:case>                                 <f:defaultCase>                                    <div class="{navcontainer} {logopos}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />                                    </div>                                    <div class="{navcontainer} {navdir}">                                        <f:render partial="Menu/ActiveNavigation" arguments="{_all}"/>                                   </div>                               </f:defaultCase>                            </f:switch>                         </f:then>                                                <f:else>                           <f:switch expression="{inside}">                                <f:case value="inside">                                   <div class="{logopos} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <div class="{notlogowrap}">                                            <f:render section="top" arguments="{_all}"/>                                            <f:render partial="Menu/ActiveNavigation" arguments="{_all}"/>                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />                                        </div>                                   </div>                               </f:case>                              <f:defaultCase>                                   <div class="{logopos} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <div class="d-flex flex-wrap vertical-align-stretch">                                            <f:render section="top" arguments="{_all}"/>                                        </div>                                   </div>                                    <div class="{navcontainer} {navdir}">                                        <f:render partial="Menu/ActiveNavigation" arguments="{_all}"/>                                   </div>                               </f:defaultCase>                            </f:switch>                           </f:else>                    </f:if>                    <f:render section="breadcrumb" arguments="{_all}"/>                </header>              </f:if>                                    <f:if condition="{navstyle} == 3">                <header id="header" class="blockNav {logopos}">                    <f:if condition="{toppos}">                        <f:then>                           <f:render section="top" arguments="{_all}"/>                             <f:switch expression="{inside}">                                <f:case value="inside">                                   <div class="{logopos} {navdir} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />                                   </div>                               </f:case>                                 <f:defaultCase>                                    <div class="{navcontainer} {logopos} ">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />                                    </div>                                    <div class="{navcontainer} {navdir}">                                        <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>                                   </div>                               </f:defaultCase>                            </f:switch>                         </f:then>                                                <f:else>                           <f:switch expression="{inside}">                                <f:case value="inside">                                   <div class="{logopos} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <div class="{notlogowrap}">                                            <f:render section="top" arguments="{_all}"/>                                            <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />                                        </div>                                   </div>                               </f:case>                                 <f:defaultCase>                                   <div class="{logopos} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <div class="d-flex flex-wrap vertical-align-stretch">                                            <f:render section="top" arguments="{_all}"/>                                        </div>                                   </div>                                    <div class="{navcontainer} {navdir}">                                        <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>                                   </div>                               </f:defaultCase>                            </f:switch>                           </f:else>                    </f:if>                    <f:render section="breadcrumb" arguments="{_all}"/>                </header>               </f:if>                                 <f:if condition="{navstyle} == 4"><!-- Simple Nav-->                 <header id="header" class="standardNav">                    <f:if condition="{toppos}">                        <f:then>                                                   <f:render section="top" arguments="{_all}"/>                                                        <f:switch expression="{inside}">                                <f:case value="inside">                                   <div class="{logopos} {navdir} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />                                   </div>                               </f:case>                                 <f:defaultCase>                                    <div class="{navcontainer} {logopos}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />                                    </div>                                    <div class="{navcontainer} {navdir}">                                        <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>                                   </div>                               </f:defaultCase>                            </f:switch>                         </f:then>                                                <f:else>                           <f:switch expression="{inside}">                                <f:case value="inside">                                   <div class="{logopos} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <div class="{notlogowrap}">                                            <f:render section="top" arguments="{_all}"/>                                            <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />                                        </div>                                   </div>                               </f:case>                              <f:defaultCase>                                   <div class="{logopos} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <div class="d-flex flex-wrap vertical-align-stretch">                                            <f:render section="top" arguments="{_all}"/>                                        </div>                                   </div>                                    <div class="{navcontainer} {navdir}">                                        <f:render partial="Menu/SimpleNavigation" arguments="{_all}"/>                                   </div>                               </f:defaultCase>                            </f:switch>                           </f:else>                    </f:if>                    <f:render section="breadcrumb" arguments="{_all}"/>                </header>                   </f:if>                                          <f:if condition="{navstyle} == 5"> <!-- Anker -->                 <header id="header" class="standardNav ankerNav">                    <f:if condition="{toppos}">                        <f:then>                             <div class="toparea top">                                 <div class="{navcontainer} d-flex justify-content-md-between">                                 	<ul id="service_nav" class="{showtitle} nav-service d-flex list-unstyled  {topwrap}">						                <f:cObject typoscriptObjectPath="lib.header.top" />						                <f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>						           </ul>                                </div>                              </div>                             <div class="{logopos} {navdir} {navcontainer} ">                                <f:cObject typoscriptObjectPath="lib.header.logo" />                                <f:cObject typoscriptObjectPath="lib.header.logoII" />                                <f:cObject typoscriptObjectPath="lib.navigation.anker" />                            </div>                        </f:then>                         <f:else>                            <div class="{logopos} {navdir}">                               <f:switch expression="{inside}">                                    <f:case value="inside">                                        <div class="{navcontainer} d-flex align-items-stretch topinside ">                                               <f:cObject typoscriptObjectPath="lib.header.logo" />                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />                                            <div class="d-flex align-items-stretch flex-wrap">                                                 <f:cObject typoscriptObjectPath="lib.header.top" />                                                 <f:cObject typoscriptObjectPath="lib.navigation.anker" />                                                  </div>                                         </div>                                   </f:case>                                   <f:defaultCase>                                       <div class="{navcontainer} d-flex topinside">                                                <f:cObject typoscriptObjectPath="lib.header.logo" />                                            <f:cObject typoscriptObjectPath="lib.header.logoII" />                                              <div class="top d-flex justify-content-md-between ">                                             	<f:cObject typoscriptObjectPath="lib.header.top" />                                              	<f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>                                            </div>                                       </div>                                       <div class="{navcontainer} "><f:cObject typoscriptObjectPath="lib.navigation.anker" /></div>                                    </f:defaultCase>                               </f:switch>                            </div>                        </f:else>                    </f:if>                      </header>                  </f:if>                  <f:if condition="{navstyle} == 6"><!-- No Nav-->                 <header id="header" class="noNav ">					<f:if condition="{toppos}">                        <f:then>                           <f:render section="top" arguments="{_all}"/>                              <f:switch expression="{inside}">                                <f:case value="inside">                                   <div class="{logopos} {navdir} {navcontainer}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />                                   </div>                               </f:case>                                 <f:defaultCase>                                    <div class="{navcontainer} {logopos}">                                        <f:cObject typoscriptObjectPath="lib.header.logo" />                                        <f:cObject typoscriptObjectPath="lib.header.logoII" />                                    </div>                               </f:defaultCase>                            </f:switch>                         </f:then>                                                <f:else>                            <div class="{navcontainer}">                                   <div class="row">                                    <f:cObject typoscriptObjectPath="lib.header.logo" />                                    <f:cObject typoscriptObjectPath="lib.header.logoII" />                                    <div class="d-flex flex-column">                                         <div class="ml-auto d-flex top"><f:cObject typoscriptObjectPath="lib.header.top" /></div>                                    </div>                                   </div>                            </div                          </f:else>                    </f:if>                        </header>               </f:if>                             </f:section>     <f:section name="top">        <f:if condition="{toppos}">            <f:then>	            <div class="top {f:if(condition: '{toppos}',then: 'toparea' )}"> 	                <div class="{navcontainer}">	                    <ul id="service_nav" class="{showtitle}  nav-service d-flex list-unstyled {topwrap}">  	                        <f:cObject typoscriptObjectPath="lib.header.top" />	                         <f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>	                    </ul>	                    <f:cObject typoscriptObjectPath="lib.header.quicklinks" />	                </div>	            </div>            </f:then>            <f:else>         		       <div class="top {topwrap}"> 		           <ul id="service_nav" class="{showtitle} {topwrap}">		                <f:cObject typoscriptObjectPath="lib.header.top" />		                <f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{menuLanguage: menuLanguage}"/></f:if>		           </ul>		           <f:cObject typoscriptObjectPath="lib.header.quicklinks" />		        </div>             </f:else>        </f:if>             </f:section>        <f:section name="breadcrumb">	    <div class="breadcrumheader">	    	<div class="container">		         <f:if condition="{breadcrumb} != '1'">		              <f:if condition="{breadcrumbstyle} == 0"></f:if> 		              <f:if condition="{breadcrumbstyle} == 1">          		                 <f:render partial="SpecialMenu/BreadcrumbMenu" arguments="{_all}"/>                    		              </f:if>  		              <f:if condition="{breadcrumbstyle} == 2">   		                  <f:cObject typoscriptObjectPath="lib.navigation.breadcrumbxl" />  		              </f:if>                      		         </f:if>	         </div>	     </div>        </f:section>    </html>

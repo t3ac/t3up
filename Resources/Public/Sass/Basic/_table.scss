@@ -2,7 +2,7 @@
 
 .ce-table  {                                                      width: 100%; max-width: 100%; 
     td,
-    th                                                            {padding:  ($spacer * 0.25)  ($spacer * 0.25)  ($spacer * 0.25)  $spacer; vertical-align: top; border-top: 1px solid $tableLineColor; } 
+    th                                                            {padding:  0.25rem  0.25rem 0.25rem 1rem; vertical-align: top; border-top: 1px solid $tableLineColor; } 
     th                                                            {background-color: $tableHeader; color: $tableHeaderColor; }          
     thead th                                                      {border-bottom: 2px solid $tableHeaderLineColor;}
     label                                                         {margin-bottom: 0;}

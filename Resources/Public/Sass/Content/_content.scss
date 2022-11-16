@@ -1,24 +1,21 @@
 main{                                                       
   
-  	.breadcrumbrow                                             {padding-right: calc(var(--bs-gutter-x) / 2); padding-left: calc(var(--bs-gutter-x) / 2);}
-  	.breadcrumbrow nav                                         {padding-right: calc(var(--bs-gutter-x) / 2); padding-left: calc(var(--bs-gutter-x) / 2);}    
+  	.breadcrumbrow                                             {padding-right: .75rem; padding-left: .75rem;}
+  	.breadcrumbrow nav                                         {padding-right: .75rem; padding-left: .75rem;}    
   
   	> .container                                               {background-color: $baseContainerBgColor;}   
   	.container .container                                      {padding-right: 0; padding-left: 0;}  
 
-  
   	/* Area Content */
   	.content a,
   	.contentRight a                                            {color: $baseLinkColor;}
   	.content a:hover,
   	.contentRight a:hover                                      {color: $baseLinkHoverColor;}  
-  
-
 
 	/* Area Right */
   	.right {                                                  
     	h2                                                     {font-size: 1.15em;}
-    	.subInfo                                               {padding: .66rem 1rem; background: #9ea2a2; margin-bottom: $spacer; color: #fff;}
+    	.subInfo                                               {padding: .66rem 1rem; background: #9ea2a2; margin-bottom: 1rem; color: #fff;}
     	.subInfo h2                                            {color: #fff !important; background: none !important; border: 0 !important; margin: 0; padding: 0 !important; text-transform: uppercase;  letter-spacing: 0.01rem; font-weight: normal;}   
     	.contentRight                                          {column-gap: 2rem;}
     	.contentRight > div                                    {break-inside: avoid;}
@@ -28,125 +25,51 @@ main{
   	.left {
     	h2                                                     {font-size: 1.15em;}  
   	}
-  
   .frame-type-menu_subpages ul                                 {padding-left: 0rem; list-style-type: none;}
 }
 
-
-
 /* Designs *************************************************/
 
-main{
   
   .frame-default                                             {transition: all ease .5s; background: none;}
+  .right > .frame-default:not(.frame-youtubevideo_pi1,.frame-shortcut)       
+  	{padding-left: .75rem; padding-right: .75rem;}
   
-  .frame-line                                                {background: none; transition: all ease .5s; border-bottom: 2px dotted rgba($baseColor, 0.5); }   
-      
+  .frame-line:not(.frame-list){                              background: none; transition: all ease .5s; border-bottom: 2px solid rgba($baseColor, 0.5); 
+   }   
+   
    /* colored */
-   .frame-colored  {                                         background: desaturate(lighten($baseColor, 50%),15%); transition: all ease .5s; 
-     h2,
-     h3,   
-     h4, 
-     a                                                       {color: $baseColor; margin: 0;}    
-  	> h2:first-of-type,
-  	> h3:first-of-type,  
-  	> h4:first-of-type                        				 {padding: calc(var(--bs-gutter-x) / 2); margin: 0; background: rgba($baseColor,1) !important; color: #fff !important; text-transform: uppercase;}
-  	> h2:first-of-type > a,
-  	> h3:first-of-type > a,  
-  	> h4:first-of-type > a                        		     {color: #fff !important;}
-  	
-     .ce-text                                                {padding: calc(var(--bs-gutter-x) / 2);}
-     p:last-of-type                                          {margin-bottom: 0;} 
+   .frame-text.frame-colored,
+   .frame-textmedia.frame-colored{                           background: desaturate(lighten($baseColor, 50%),33.33%); transition: all ease .5s; transition: all ease .5s; 
+    	h2,h3,h4, a                                          {color: $baseColor; margin: 0;}   
+        > h2:first-of-type,> h3:first-of-type,> h4:first-of-type  {background: rgba($baseColor,1) !important; color: #fff !important; text-transform: uppercase; margin-bottom: .75rem; padding: .75rem;}
+        > .ce-text,
+        > .ce-textpic                                        {padding-left: .75rem;padding-right: .75rem;}
    }
-   
-  .frame-type-header.frame-colored                           {padding-bottom: 0;}
-  .frame-type-header.frame-colored > *                       {margin: 0; background: rgba($baseColor,1) !important; color: #fff !important; }
-  
-  .frame-type-table.frame-colored{                           background: none; color: inherit; padding: 0; 
-     table                                                   {background: desaturate(lighten($baseColor, 50%),20%);}    
-   }               
+   .frame-2cols.frame-colored,
+   .frame-3cols.frame-colored,
+   .frame-4cols.frame-colored{                               background: desaturate(lighten($baseColor, 50%),33.33%); transition: all ease .5s; transition: all ease .5s; padding: .75rem; }
 
-  /* contact */
-  .frame-contact {                                           transition: all ease .3s;
-    > div                                                    {margin-left: 0; margin-right: 0; background: white; padding: calc(var(--bs-gutter-x) / 2); transition: all ease .5s; }
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                       {font-size: 100%; padding: calc(var(--bs-gutter-x) / 2); line-height: 1.25rem;  text-transform: uppercase; letter-spacing: 0.01rem; margin: 0; color: #fff !important; background: rgba(50, 50, 50, 0.85); }
-
-    > h2:first-of-type a,
-    > h3:first-of-type a, 
-    > h4:first-of-type a                                     {color: #fff  !important;}
-
-    p:last-of-type                                           {margin-bottom: 0;} 
-  }
-  .t3upbootstrap.frame-contact                               {margin-right: calc(var(--bs-gutter-x) / -2); margin-left: calc(var(--bs-gutter-x) / -2);}
-  .frame-type-header.frame-contact > *                       {margin: 0;}
-
-  /* dark-grey */
-  .frame-darkgrey{                                           background: $darkgrey; color: #fff; padding: calc(var(--bs-gutter-x) / 2); transition: all ease .5s; 
-    
-     > h2:first-of-type,
-     > h3:first-of-type,  
-     > h4:first-of-type                                      {margin: 0; font-size: 100%; padding: calc(var(--bs-gutter-x) / 2) ; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2); }  
-      
-     a,
-     a:hover                                                 {color: #fff;}  
-     p:last-of-type                                          {margin-bottom: 0;} 
-  }
-  
-  .frame-type-table.frame-darkgrey{                          background: none; color: inherit; padding: 0; 
-    table                                                    {background: $darkgrey; color: #fff;}
-    table th                                                 {background: darken($darkgrey,10%); }
-    }  
-    
-  /* grey */
-  .frame-grey{                                               background: $light; padding: calc(var(--bs-gutter-x) / 2); transition: all ease .5s; 
-    
-     > h2:first-of-type,
-     > h3:first-of-type,  
-     > h4:first-of-type                                      {margin: 0; font-size: 100%; padding: calc(var(--bs-gutter-x) / 2) ; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2); }  
-      
-     p:last-of-type                                          {margin-bottom: 0;} 
-  }
-  
-  .frame-type-table.frame-grey{                              background: none; color: inherit; padding: 0; 
-    table                                                    {background: $grey; color: #fff;}
-    table th                                                 {background: darken($grey,10%); }
-   }  
-
-  /* important */
-  .frame-important {                                         transition: all ease .3s;
-    > div                                                    {margin-left: 0; margin-right: 0; background: white; padding: calc(var(--bs-gutter-x) / 2);  transition: all ease .5s; }
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                       {margin: 0; font-size: 100%; padding: calc(var(--bs-gutter-x) / 2); line-height: 1.25rem;  text-transform: uppercase; letter-spacing: 0.01rem; margin: 0; color: #fff !important; background: rgba($baseColor,0.85) !important; }
-
-    > h2:first-of-type a,
-    > h3:first-of-type a, 
-    > h4:first-of-type a                                     {color: #fff;}
-
-    p:last-of-type                                           {margin-bottom: 0;} 
-  }
-  
-   .t3upbootstrap.frame-important                            {margin-right: calc(var(--bs-gutter-x) / -2); margin-left: calc(var(--bs-gutter-x) / -2);}
-   
    /* white */
-  .frame-white{                                              background: white; padding: calc(var(--bs-gutter-x) / 2); transition: all ease .5s; 
+  .frame-white:not(.frame-list){                             background: white; padding: .75rem; transition: all ease .5s; 
      > h2:first-of-type,
      > h3:first-of-type,  
-     > h4:first-of-type                                      {margin: 0; padding: 0 calc(var(--bs-gutter-x) / 2) calc(var(--bs-gutter-x) / 2) ; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2); }  
+     > h4:first-of-type                                      {margin: 0; padding: 0 .75rem .75rem ; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2); }  
 
      p:last-of-type                                          {margin-bottom: 0;} 
+     
+     .t3up_textmedia {									 	 margin-left: -.75rem; margin-right: -.75rem;  margin-top: -.75rem; 
+     	> *:not(.ce-gallery)                                 {padding-left: 0.75rem; padding-right: .75rem;}
+     }
   }
-  .t3upbootstrap.frame-white                                 {margin-right: calc(var(--bs-gutter-x) / -2); margin-left: calc(var(--bs-gutter-x) / -2);}
- 
-  .frame-type-table.frame-white{                             background: none; color: inherit; padding: 0; 
+      
+  .frame-table.frame-white{                                  background: none; color: inherit; padding: 0; 
     table                                                    {background: #fff;}
     }  
     
    /* classical Bootstrap -------------------------------- */
   
-   .frame-danger  {                                          border-radius: .25rem; border: 1px solid #f5c6cb; background: #f8d7da; padding: calc(var(--bs-gutter-x) / 2);  transition: all ease .5s; 
+   .frame-danger  {                                          border-radius: .25rem; border: 1px solid #f5c6cb; background: #f8d7da; padding: .75rem;  transition: all ease .5s; 
      > h2,
      > h3,   
      > h4, 
@@ -154,12 +77,12 @@ main{
      
      > h2:first-of-type,
      > h3:first-of-type,  
-     > h4:first-of-type                                      {padding: ($spacer * 0.75) $spacer; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
+     > h4:first-of-type                                      {padding: .75rem 1rem; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
      
      p:last-of-type                                          {margin-bottom: 0;} 
    }
    
-   .frame-info    {                                          border-radius: .25rem; border: 1px solid #bee5eb; background: #d1ecf1; padding: calc(var(--bs-gutter-x) / 2);  transition: all ease .5s; 
+   .frame-info    {                                          border-radius: .25rem; border: 1px solid #bee5eb; background: #d1ecf1; padding: .75rem;  transition: all ease .5s; 
      > h2,
      > h3,   
      > h4, 
@@ -167,12 +90,12 @@ main{
      
      > h2:first-of-type,
      > h3:first-of-type,  
-     > h4:first-of-type                                      {padding: ($spacer * 0.75) $spacer; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
+     > h4:first-of-type                                      {padding: .75rem 1rem; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
      
      p:last-of-type                                          {margin-bottom: 0;} 
    }
    
-   .frame-success {                                          border-radius: .25rem; border: 1px solid #c3e6cb; background: #d4edda; padding: calc(var(--bs-gutter-x) / 2);  transition: all ease .5s; 
+   .frame-success {                                          border-radius: .25rem; border: 1px solid #c3e6cb; background: #d4edda; padding: .75rem;  transition: all ease .5s; 
      > h2,
      > h3,   
      > h4, 
@@ -180,12 +103,12 @@ main{
      
      > h2:first-of-type,
      > h3:first-of-type,  
-     > h4:first-of-type                                      {padding: calc(var(--bs-gutter-x) / 2); line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
+     > h4:first-of-type                                      {padding: .75rem; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
      
      p:last-of-type                                          {margin-bottom: 0;} 
    }
     
-   .frame-warning {                                          border-radius: .25rem; border: 1px solid #ffeeba; background: #fff3cd; padding: calc(var(--bs-gutter-x) / 2);  transition: all ease .5s; 
+   .frame-warning {                                          border-radius: .25rem; border: 1px solid #ffeeba; background: #fff3cd; padding: .75rem;  transition: all ease .5s; 
      > h2,
      > h3,   
      > h4, 
@@ -193,12 +116,11 @@ main{
      
      > h2:first-of-type,
      > h3:first-of-type,  
-     > h4:first-of-type                                      {padding: calc(var(--bs-gutter-x) / 2); line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
+     > h4:first-of-type                                      {padding: .75rem; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
      
      p:last-of-type                                          {margin-bottom: 0;} 
    }
-    
-   
+       
   /*
   .frame-info:hover,
   .frame-sucsess:hover,
@@ -211,24 +133,21 @@ main{
   .frame-black:hover,
   .frame-colored:hover                                       {box-shadow: $shadow}
   */
-  
-  
+
   /* Table */
   .frame-type-table h4,
   .frame-type-table h3,
-  .frame-type-table h2                                     {padding-left: calc(var(--bs-gutter-x) / 2); padding-bottom: 0.6666rem; }
+  .frame-type-table h2                                     {padding-left: .75rem; padding-bottom: 0.6666rem; }
   
   /* hr */
   .frame-thick  hr                                         {border-top: 4px solid  rgba($baseColor, 0.1);}
   .frame-medium  hr                                        {border-top: 2px solid  rgba($baseColor, 0.1);}
   .frame-thin  hr                                          {border-top: 1px solid  rgba($baseColor, 0.1);}
-  .frame-dotted  hr                                        {border-top: 2px dotted rgba($baseColor, 0.2);}
-}
+
 
 /* Colors ++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .orange{
-  main {
   .frame-colored                                           {background: desaturate(lighten($orange, 50%),15%);}
   .frame-colored h2,
   .frame-colored h3,  
@@ -238,22 +157,14 @@ main{
   .frame-colored > h3:first-of-type,  
   .frame-colored > h4:first-of-type                        {background: rgba($orange,1) !important; color: #fff !important; }
   
-  .frame-important{
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                     {background: rgba($orange,1) !important; }
-   }
-   
   .frame-line                                              {border-bottom: 2px dotted rgba($orange, 0.5);}   
   
   .ce-table-colorstripe th,
   .ce-table-normalplus th                                  {background-color: $orange !important;} 
   .ce-table-colorstripe tr:nth-child(2n) td                {background-color: rgba($orange,.2) !important;}     
-  }
 }
 
 .blue{
-  main {
   .frame-colored                                           {background: desaturate(lighten($blue, 50%),15%);}
   .frame-colored h2,
   .frame-colored h3,  
@@ -262,23 +173,15 @@ main{
   .frame-colored > h2:first-of-type,
   .frame-colored > h3:first-of-type,  
   .frame-colored > h4:first-of-type                        {background: rgba($blue,1) !important; color: #fff !important; }
-  
-  .frame-important {
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                     {background: rgba($blue,1) !important; }
-   }
 
   .frame-line                                              {border-bottom: 2px dotted rgba($blue, 0.5);}  
   
   .ce-table-colorstripe th,
   .ce-table-normalplus th                                  {background-color: $blue !important;} 
   .ce-table-colorstripe tr:nth-child(2n) td                {background-color: rgba($blue,.2) !important;}  
-  } 
 }
 
 .green{
-  main {
   .frame-colored                                           {background: desaturate(lighten($green, 50%),15%);}
   .frame-colored h2,
   .frame-colored h3,  
@@ -288,22 +191,14 @@ main{
   .frame-colored > h3:first-of-type,  
   .frame-colored > h4:first-of-type                        {background: rgba($green,1) !important; color: #fff !important; }
 
-  .frame-important {
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                     {background: rgba($green,1) !important; }
-   }
-
   .frame-line                                              {border-bottom: 2px dotted rgba($green, 0.5);}  
    
   .ce-table-colorstripe th,
   .ce-table-normalplus th                                  {background-color: $green !important;} 
   .ce-table-colorstripe tr:nth-child(2n) td                {background-color: rgba($green,.2) !important;}  
-  } 
 }
 
 .grey{
-  main {
   .frame-grey                                              {background: desaturate(lighten($grey, 50%),15%);}
   .frame-colored h2,
   .frame-colored h3,  
@@ -313,22 +208,14 @@ main{
   .frame-colored > h3:first-of-type,  
   .frame-colored > h4:first-of-type                        {background: rgba($grey,1) !important; color: #fff !important; }
   
-  .frame-important {
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                     {background: rgba($grey,1) !important; }
-   }
-
   .frame-line                                              {border-bottom: 2px dotted rgba($grey, 0.5);} 
     
   .ce-table-colorstripe th,
   .ce-table-normalplus th                                   {background-color: $grey !important;} 
   .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($grey,.2) !important;} 
-  } 
 }
 
 .red{
-  main {
   .frame-colored                                           {background: desaturate(lighten($red, 50%),15%);}
   .frame-colored h2,
   .frame-colored h3,  
@@ -337,23 +224,15 @@ main{
   .frame-colored > h2:first-of-type,
   .frame-colored > h3:first-of-type,  
   .frame-colored > h4:first-of-type                        {background: rgba($red,1) !important; color: #fff !important; }
-  
-  .frame-important {
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                     {background: rgba($red,1) !important; }
-   }
-   
+
   .frame-line                                              {border-bottom: 2px dotted rgba($red, 0.5);} 
    
   .ce-table-colorstripe th,
   .ce-table-normalplus th                                   {background-color: $red !important;} 
   .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($red,.2) !important;} 
-  }
 }
 
 .turquoise{
-  main {
   .frame-colored                                           {background: desaturate(lighten($turquoise, 50%),15%);}
   .frame-colored h2,
   .frame-colored h3,  
@@ -362,23 +241,15 @@ main{
   .frame-colored > h2:first-of-type,
   .frame-colored > h3:first-of-type,  
   .frame-colored > h4:first-of-type                        {background: rgba($turquoise,1) !important; color: #fff !important; }
-   
-  .frame-important {
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                     {background: rgba($turquoise,1) !important; }
-   }
-   
+
   .frame-line                                              {border-bottom: 2px dotted rgba($turquoise, 0.5);} 
   
   .ce-table-colorstripe th,
   .ce-table-normalplus th                                  {background-color: $turquoise !important;} 
   .ce-table-colorstripe tr:nth-child(2n) td                {background-color: rgba($turquoise,.2) !important;} 
-  }
 }
 
 .violett{
-  main {
   .frame-colored                                           {background: desaturate(lighten($violett, 50%),15%);}
   .frame-colored h2,
   .frame-colored h3,  
@@ -387,23 +258,15 @@ main{
   .frame-colored > h2:first-of-type,
   .frame-colored > h3:first-of-type,  
   .frame-colored > h4:first-of-type                        {background: rgba($violett,1) !important; color: #fff !important; }
-    
-  .frame-important {
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                     {background: rgba($violett,1) !important; }
-   }
-   
+
   .frame-line                                              {border-bottom: 2px dotted rgba($violett, 0.5);} 
    
   .ce-table-colorstripe th,
   .ce-table-normalplus th                                   {background-color: $violett !important;} 
   .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($violett,.2) !important;} 
-  }
 }
 
 .yellow{
-  main {
   .frame-colored                                            {background: desaturate(darken($yellow, 50%),15%);}
   .frame-colored h2,
   .frame-colored h3,  
@@ -412,23 +275,15 @@ main{
   .frame-colored > h2:first-of-type,
   .frame-colored > h3:first-of-type,  
   .frame-colored > h4:first-of-type                        {background: rgba($yellow,1) !important; color: #fff !important; }
-    
-  .frame-important {
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                     {background: rgba($yellow,1) !important; }
-   }
-   
+
   .frame-line                                              {border-bottom: 2px dotted rgba($yellow, 0.5);} 
   
   .ce-table-colorstripe th,
   .ce-table-normalplus th                                   {background-color: $yellow !important;} 
   .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($yellow,.2) !important;} 
-  }
 }
   
 .darkblue{
-  main {
   .frame-colored                                            {background: desaturate(darken($darkblue, 50%),15%);}
   .frame-colored h2,
   .frame-colored h3,  
@@ -437,23 +292,15 @@ main{
   .frame-colored > h2:first-of-type,
   .frame-colored > h3:first-of-type,  
   .frame-colored > h4:first-of-type                        {background: rgba($darkblue,1) !important; color: #fff !important; }
-   
-  .frame-important {
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                     {background: rgba($darkblue,0.85) !important; }
-   }
-   
+
   .frame-line                                              {border-bottom: 2px dotted rgba($darkblue, 0.5);} 
    
   .ce-table-colorstripe th,
   .ce-table-normalplus th                                   {background-color: $darkblue !important;} 
   .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($darkblue,.2) !important;} 
-  }
 }    
   
 .darkgrey{
-  main {
   .frame-colored                                            {background: desaturate(darken($darkgrey, 50%),15%);}
   .frame-colored h2,
   .frame-colored h3,  
@@ -462,19 +309,12 @@ main{
   .frame-colored > h2:first-of-type,
   .frame-colored > h3:first-of-type,  
   .frame-colored > h4:first-of-type                        {background: rgba($darkgrey,1) !important; color: #fff !important; }
-  
-  .frame-important {
-    > h2:first-of-type,
-    > h3:first-of-type, 
-    > h4:first-of-type                                     {background: rgba($darkgrey,0.85) !important; }
-   }
-   
+
   .frame-line                                              {border-bottom: 2px dotted rgba($darkgrey, 0.5);}
    
   .ce-table-colorstripe th,
   .ce-table-normalplus th                                   {background-color: $darkgrey !important;} 
   .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($darkgrey,.2) !important;} 
-  }
 }
 
 /* MEDIAQUERIES ***********************************************************************/  
@@ -488,21 +328,20 @@ main{
 
 @media screen and (min-width: 992px) {
   main{
-    > .container                                              {padding-bottom: ($spacer * 3);}
     .right {                                                  
       .contentRight                                           {column-count: 1;}
-      h2                                                      {font-size: $spacer;}
-      h3                                                      {font-size: $spacer;}
+      h2                                                      {font-size: 1rem;}
+      h3                                                      {font-size: 1rem;}
     }
     
     .left {
-       h2                                                     {font-size: $spacer;}   
-       h2                                                     {font-size: $spacer;}
+       h2                                                     {font-size: 1rem;}   
+       h2                                                     {font-size: 1rem;}
     }  
     
   .frame-type-table h4,
   .frame-type-table h3,
-  .frame-type-table h2                                        {padding-left: $spacer; padding-bottom: ($spacer * .66); }
+  .frame-type-table h2                                        {padding-left: .75rem; padding-bottom: .66rem; }
  
   }
 }

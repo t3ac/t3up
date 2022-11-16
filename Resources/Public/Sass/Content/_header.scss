@@ -59,6 +59,7 @@ header {                                  background-color: $headerBgColor; colo
    .nav-service{                            position: relative;
        > li                                 {display: block;} 
        > li > a                             {display: block; cursor: pointer; text-transform: none; }
+       .text-small                          {font-size: 66%; font-weight: 500;}
        
       .tab-content{
         .tab-pane{                          width: 100vH; padding: 1rem ; background-color: #f2f2f2; z-index: 997; box-shadow: 0 0 4px rgb(0 0 0 / 40%); top: auto; left: auto; right: auto; transform: none; position: absolute;

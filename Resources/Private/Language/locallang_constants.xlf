@@ -38,8 +38,8 @@
             </trans-unit>    
              <trans-unit id="bootstrapslider" xml:space="preserve">
                 <source>Designs for the booststrap slider</source>
-            </trans-unit>    
-
+            </trans-unit>       
+      
             
             /* -- Color ------------------------- */
             /* base */ 
@@ -210,7 +210,7 @@
             <trans-unit id="darkgrey">
                  <source>Pagecolor for navigation and mark up: darkgrey</source>
             </trans-unit>           
-                                        
+           
             /* navigation */
             <trans-unit id="navigationcolor">
                  <source>Navigation Colors</source>

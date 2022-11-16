@@ -5,7 +5,18 @@
 config {
 
 	absRelPath                             = /    
- 	admPanel                               = {$page.config.admPanel}   
+ 	admPanel                               = {$page.config.admPanel}  
+ 	
+	additionalHeaders {
+	  10.header = strict-transport-security:max-age=31536000
+	  20.header = X-Frame-Options:SAMEORIGIN
+	  30.header = X-Xss-Protection: 1; mode=block
+	  40.header = X-Content-Type-Options: nosniff
+	  50.header = Referrer-Policy:strict-origin
+	  
+	  70.header = Permissions-Policy: geolocation=(self), microphone=()
+	}
+
 	cache_period                           = 86400
 	
     # Compression and Concatenation of CSS and JS Files
@@ -41,7 +52,7 @@ config {
 
     htmlTag.attributes.class               = no-js
 
-# Spamschutz
+    # Spamschutz
     spamProtectEmailAddresses              = 2
     spamProtectEmailAddresses_atSubst      = &#64;
     spamProtectEmailAddresses_lastDotSubst = <span>.</span>

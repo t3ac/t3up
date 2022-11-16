@@ -1049,8 +1049,8 @@
                  <target state="translated">Schriftgröße der Symbole (Vorgabe 15px)</target>
             </trans-unit>                           
              <trans-unit id="navigationfontsize">
-                 <source>Fontsize for the symbols (Default 16px)</source>
-                 <target state="translated">Schriftgröße der Hauptnavigation (Vorgabe 16px)</target>
+                 <source>Fontsize for the symbols (Default 1rem)</source>
+                 <target state="translated">Schriftgröße der Hauptnavigation (Vorgabe 1rem)</target>
             </trans-unit>   
              <trans-unit id="h1">
                  <source>Fontsize of the h1 headline</source>

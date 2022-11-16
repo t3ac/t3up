@@ -42,11 +42,6 @@ $boot = function () {
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/TCEImagePreDefinitions.typoscript">');
     }
     
-    # Enable/dissable the TCEFrames -> addPageTSConfig  
-    if ($Configuration['TCEFrames']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/TCEFrames.typoscript">');    
-    }
-
     # Enable/dissable the TCEMain -> addPageTSConfig
     if ($Configuration['TCEMain']) {
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/TCEMain.typoscript">');

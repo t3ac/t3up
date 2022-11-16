@@ -1,5 +1,8 @@
 /* Bootstrap */
 @import "Bootstrap/bootstrap.scss";
+@import "Content/bootstrapgutter.scss";
+@import "Content/_" + $bootstrapstyles  + ".scss";
+
 
 /* Colormode */
 @import "Colormode/_dark.scss";
@@ -31,15 +34,11 @@
 @import  "Content/_" + $header          + ".scss";
 @import  "Content/_" + $quicklinks      + ".scss";
 @import  "Content/_" + $subnavigation   + ".scss";
-@import  "Content/_" + $bootstrapstyles + ".scss";
 
 
 /* Extensions */
 @import  "Extensions/_" + $lightbox        + ".scss";
-@import  "Extensions/_" + $indexedsearch   + ".scss";
-@import  "Extensions/_" + $powermail       + ".scss";
 @import  "Extensions/_" + $mobilmenu       + ".scss";
-@import  "Extensions/_" + $jpfaq           + ".scss";
 
 
 html                                                     {height: 100%; scroll-behavior: smooth;}
@@ -293,13 +292,6 @@ a.btn-secondary                                           {color: #fff !importan
    
 }
   
-@media screen and (min-width: 1360px) {
-   .container                                             {max-width: 1300px;}
-}
-  
-@media screen and (min-width: 1480px) {
-   .container                                             {max-width: 1420px;}
-}
 
 .container                                                {max-width: $container;}
 

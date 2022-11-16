@@ -11,15 +11,15 @@ $padding = [
             'items'      => [
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_none', ''],
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_0', '0px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5', '5px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_10', '10px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15', '15px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_20', '20px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30', '30px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_45', '45px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_60', '60px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_75', '75px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_90', '90px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5', '4px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_10', '8px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15', '12px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_20', '16px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30', '24px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_45', '36px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_60', '48px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_75', '60px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_90', '72px'],
             ],
             'default'    => '',
         ],
@@ -33,15 +33,15 @@ $padding = [
             'items'      => [
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_none', ''],
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_0', '0px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5', '5px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_10', '10px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15', '15px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_20', '20px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30', '30px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_45', '45px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_60', '60px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_75', '75px'],
-                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_90', '90px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5', '4px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_10', '8px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15', '12px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_20', '16px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30', '24px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_45', '36px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_60', '48px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_75', '60px'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_90', '72px'],
             ],
             'default'    => '',
         ],
@@ -72,6 +72,11 @@ $padding = [
 // --palette--;LLL:EXT:t3up/Resources/Private/Language/locallang_be.xlf:padding_class;padding_fields,container // wenn Fullpage aktiviert ist, also t3up_onepager
 
 
-// Palette hinzufügen, nach Layout - dadurch Anzeige im Backend
+// Palette hinzufuegen, nach Layout - dadurch Anzeige im Backend
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
 'tt_content','--palette--;LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class;padding_fields', '', 'after:layout');
+
+/*********************************************************************************************************/
+
+// $GLOBALS['TCA']['tt_content']['columns']['layout']['config']['itemsProcFunc'] = \T3ac\T3up\Tca\TtContentLayoutOptions::class . '->addOptions';
+$GLOBALS['TCA']['tt_content']['columns']['frame_class']['config']['itemsProcFunc'] = \T3ac\T3up\Tca\TtContentLayoutOptions::class . '->addOptions';

@@ -2,6 +2,7 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Header/" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Navigation/" extensions="typoscript">
 
+
 # BackendLayoutHelper #
 lib.backendLayout = TEXT
 lib.backendLayout {

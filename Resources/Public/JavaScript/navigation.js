@@ -67,6 +67,10 @@ $(document).ready(function() {
             meineFunktion();
         })  
         
+        $body.on('focus mouseenter click', '.logo', function(event) {
+            meineFunktion();
+        })  
+        
         $body.on('click ontouchend', '.overlay', function(event) {
             meineFunktion();
         })  
@@ -143,31 +147,33 @@ $(document).ready(function() {
                 $p.siblings().find('> span').text($pluTop);
                 $p.siblings().find(' > a').addClass('navlink').removeClass('closelink');
                 
-                
-                if (($this.next().length) & ($this.parent().parent().is('.nav'))){
-                    event.preventDefault();         
-                    $('.overlay').fadeIn();  
-                    $p.addClass('activated');   
-                    $p.find('> span').text($minTop); 
-                    $p.attr({'data-show-sub': 'true'});  
-                    $p.find('.box > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
-                    $p.find('.box').fadeIn('fast',function(){
-                        $p.siblings().find('.box').hide();
-                    });
-                    
-                  $p.find('li.act').parent().attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
-                  $p.find('li.act > span').text($min);                  
-                  $p.find('li.cur').parent().attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
-                  $p.find('li.cur > span').text($min);                  
-                   // $p.find('.submenulevel').css('display','flex');
-                 //   $p.find('.subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
-                //    $this.toggleClass('navlink').toggleClass('closelink');
-   
-                }
-                
-                    
+                if ($this.hasClass('show')){
+					meineFunktion();
+					event.preventDefault();  
+	                    
+				} else {
+	                
+	                if (($this.next().length) & ($this.parent().parent().is('.nav'))){
+	                    event.preventDefault();         
+	                    $('.overlay').fadeIn();  
+	                    $p.addClass('activated');   
+	                    $p.find('> span').text($minTop); 
+	                    $p.attr({'data-show-sub': 'true'});  
+	                    $p.find('.box > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
+	                    $p.find('.box').fadeIn('fast',function(){
+	                        $p.siblings().find('.box').hide();
+	                    });
+	                     $p.siblings().find(' > a').removeClass('show');
+	                     
+	                  $p.find('li.act').parent().attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
+	                  $p.find('li.act > span').text($min);                  
+	                  $p.find('li.cur').parent().attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
+	                  $p.find('li.cur > span').text($min);                  
+	                }
+	            }
+	            
+	            $this.toggleClass('show');
         })
-        
         
         
         /* Block */
@@ -184,14 +190,12 @@ $(document).ready(function() {
                 event.preventDefault();
             }
             
-            
            /* Do */
             $this.addClass('activated');
             $(this).toggleClass('navlink').toggleClass('closelink')
             $this.attr({'data-show-sub': 'true'});  
             $this.find(' > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'})
             $('.overlay').fadeIn();
-
         })
         
         /* Ankernav */
@@ -240,8 +244,6 @@ $(document).ready(function() {
                 // return text === "+" ? "–" : "+";
                 return text === $pluTop ? $minTop : $pluTop;
             })
-            
-
                 
             if ($span == $minTop) {
 	
@@ -273,10 +275,7 @@ $(document).ready(function() {
 
         $body.on('click', '.activeNav .dropmenue > span', function(event) {
             var $span = $(this).text(),
-                $this   = $(this).parent(),
-                $clone  = '',
-                $elem   = $this.find('>.capital'),
-                $clone  = $elem.clone(true);  
+                $this   = $(this).parent();  
                 
 				$('.dropmenue .subnav span').text($plu);
 				
@@ -298,10 +297,7 @@ $(document).ready(function() {
                 });
                 
                 $this.find('.submenulevel').css('display','flex');
-                $this.find('.row > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
-                $this.find('.im img').replaceWith($clone);   // Replace the Capitalimage
-                $this.find('.im .capital').fadeIn('slow');
-                
+                $this.find('.row > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});                
                 
                 $('.overlay').fadeIn();
             }
@@ -322,10 +318,7 @@ $(document).ready(function() {
             var $this       = $(this),
                 $parentitem = $this.parents('.navitem'),
             	$parent     = $this.parents('.nav'),
-                $navitem    = $this.parent(),
-                $clone      = '',
-                $elem       = $navitem.find('>.capital'),
-                $clone      = $elem.clone(true); ;
+                $navitem    = $this.parent();
    
             // TAB  ************************************************************************************
             if (event.keyCode == 9) {
@@ -344,24 +337,16 @@ $(document).ready(function() {
                     $navitem.addClass('activated');
                     $navitem.find('> span').text($minTop);
                     $navitem.attr({'data-show-sub': 'true'}); 
-                    $navitem.find(' > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
                     $('.overlay').fadeIn();
-                   
-                   
+
                     if($navitem.parent().is('.nav')){
-        
+	                     /* Do active*/
+	                    $navitem.find('.box').show();
+	                    $navitem.find('.box > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});;       
                     } else {
-        
-                           $navitem.find('> span').text($min);
-                    }
-   
-                    /* Do active*/
-                    $navitem.find('.box').show();
-                    $navitem.find('.submenulevel').css('display','flex');
-                    $navitem.find('.row > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
-                    $navitem.find('.im img').replaceWith($clone);   // Replace the Capitalimage
-                    $navitem.find('.im .capital').fadeIn('slow');
-                    
+        				$navitem.find('> .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});; 
+                        $navitem.find('> span').text($min);
+                    }  
                 }
      
              }
@@ -379,9 +364,8 @@ $(document).ready(function() {
                 }
                   
              }
-
                 
-                // Key left
+            // Key left
             if (event.keyCode == 37) {
                 if($navitem.parent().is('.nav')){
                     if ($parentitem.is(".nav > .navitem:first-child")) {
@@ -393,23 +377,22 @@ $(document).ready(function() {
                         $parentitem.children('span').text($pluTop);
                     }
                    /* Do */ 
-                   $(".nav > li > .subnav").attr({'aria-hidden': 'true'}).attr({'aria-expanded':'hidden'});
+                   $(".nav > li > .subnav").attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});
 
                 } else {
                      if ($parentitem.find(".subnav").length > 1) {
                         if ($navitem.is(":first-child")) {
                             /* Do */
                              $navitem.parent().parent().children(".navlink").focus();
-                             $navitem.parent().parent().find(' > .subnav').attr({'aria-hidden': 'true'}).attr({'aria-expanded':'hidden'});
+                             $navitem.parent().parent().find(' > .subnav').attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});
                              $navitem.parent().parent().find(' > span').text($plu);
                         }
                      }
                 }
                 event.preventDefault();
             } 
-            
 
-                // Key right
+            // Key right
             if (event.keyCode == 39) {
                 if($navitem.parent().is('.nav')){
                     if ($parentitem.is(".nav > .navitem:last-child")) {
@@ -421,12 +404,14 @@ $(document).ready(function() {
                         $parentitem.children('span').text($pluTop)
                     }
                     /* Do */
-                    $(".nav > li > .subnav").attr({'aria-hidden': 'true'}).attr({'aria-expanded':'hidden'});
+                    $(".nav > li > .subnav").attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});
 					//$(".nav > li > span").text($pluTop);
 
                 } else {
                    /* Do */
+                   $navitem.find('> .subnav').attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});                   
                    $navitem.find('> .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
+
                    $navitem.find('> span').text($min);
                    $navitem.find('> .subnav > .navitem:first-child').children('.navlink').focus();
                 }
@@ -437,22 +422,24 @@ $(document).ready(function() {
             if (event.keyCode == 40) {  
                 if($navitem.parent().is('.nav')) {
                     /* Do */  
-                    $navitem.siblings().find('.subnav').attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});
-                    $navitem.find(' > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});
-                    $navitem.find('> ul > .navitem:first-child').children(".navlink").focus();
-                    $navitem.siblings().find('.box').hide();
+                    $navitem.siblings().find('.box').hide();  
+                    $navitem.siblings().find(".subnav").attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});
+                    $navitem.find('.box').show();         
+                    $navitem.find(".box > .subnav").attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'});  
+                    $navitem.find(".box > .subnav > li.navitem:first-child > a").focus();
                     $('.overlay').fadeIn();
                     
                 } else {
                     if ($navitem.is(".navitem:last-child")){
-                        $this.parent().parent().closest('li').children('.navlink').focus();
+                       $this.parent().parent().closest('li').children('.navlink').focus();
                     } else {
-                        $navitem.next().children(".navlink").focus();       
+                       $navitem.next().children(".navlink").focus();       
                     }
+
+
                 }
                 event.preventDefault();
             } 
-            
             
             // Key top *****************************************************************************
             if (event.keyCode == 38) {
@@ -464,13 +451,7 @@ $(document).ready(function() {
                      }
                 }
                 event.preventDefault();
-            }  
-                                
-    
+            }                                   
         })
-
-        
-        
-        
     }    
 });

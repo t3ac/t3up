@@ -15,7 +15,9 @@ footer {
 
   /* Main Footer  */
   .footer1 > .container > .row .col-12      {border-bottom: 1px solid #aaa;}
+  .footer1 a:before,
   .footer1 a                                {color: $footer1LinkColor; font-weight: $footer3fontweight; }
+  .footer1 a:before:hover,
   .footer1 a:hover                          {color: $footer1LinkHoverColor;}  
   .footer1 p,
   .footer1 li                               {line-height: $footer1lineheight;}

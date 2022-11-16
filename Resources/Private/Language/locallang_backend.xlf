@@ -97,19 +97,14 @@
             </trans-unit>   
             <trans-unit id="paddingAfterClass">
                 <source>Padding After</source>
-            </trans-unit>    
-            <trans-unit id="paddingLeftClass">
-                <source>Padding Left</source>
-            </trans-unit>   
-            <trans-unit id="paddingRightClass">
-                <source>Padding Right</source>
-            </trans-unit>     
+            </trans-unit>        
             <trans-unit id="padding_class">
                 <source>Inner Padding</source>
             </trans-unit>    
             <trans-unit id="padding_class_none">
                 <source>Standard</source>
-            </trans-unit>               
+            </trans-unit>        
+                   
             <trans-unit id="padding_class_0">
                 <source>0</source>
             </trans-unit>        
@@ -123,23 +118,25 @@
                 <source>normal</source>
             </trans-unit>
             <trans-unit id="padding_class_20">
-                <source>large</source>
+                <source>normalplus</source>
             </trans-unit>  
             <trans-unit id="padding_class_30">
-                <source>extra-large</source>
-            </trans-unit>       
+                <source>double</source>
+            </trans-unit>             
             <trans-unit id="padding_class_45">
-                <source>triple</source>
-            </trans-unit>      
+                <source>trippe</source>
+            </trans-unit>  
             <trans-unit id="padding_class_60">
-                <source>fourfold</source>
-            </trans-unit>  
+                <source>four-fold</source>
+            </trans-unit>    
             <trans-unit id="padding_class_75">
-                <source>fivefold</source>
-            </trans-unit>      
+                <source>five-fold</source>
+            </trans-unit>    
             <trans-unit id="padding_class_90">
-                <source>sixfold</source>
-            </trans-unit>  
+                <source>six-fold</source>
+            </trans-unit>    
+              
+              
 	         /* -- Colors ----------- */
 			<trans-unit id="basecolor">
 			     <source>Pagecolor</source>
@@ -179,47 +176,40 @@
 		    </trans-unit>	
 		    
 		   /* -- Designs ----------- */
-			<trans-unit id="padding">
-			     <source>Only padding left and right</source>
-		    </trans-unit>   
-			<trans-unit id="white">
-			     <source>White background</source>
-		    </trans-unit>		
-			<trans-unit id="whiteHead">
-			     <source>White background, lightgrey Header</source>
-		    </trans-unit>	
-			<trans-unit id="grey">
-			     <source>Grey background</source>
-		    </trans-unit>    
-            <trans-unit id="darkgrey">
-                 <source>Darkgrey background</source>
-            </trans-unit>   
-            <trans-unit id="black">
-                 <source>Black background</source>
-            </trans-unit>	    		    
+		   
+ 			<trans-unit id="none">
+			     <source>None</source>
+		    </trans-unit>  			   
+ 			<trans-unit id="default">
+			     <source>Default</source>
+		    </trans-unit>  			   
+ 			<trans-unit id="standard">
+			     <source>Standard</source>
+		    </trans-unit>  		
+  
+ 			<trans-unit id="black">
+			     <source>Black background</source>
+		    </trans-unit>  	
 			<trans-unit id="colored">
 			     <source>Colored background</source>
-		    </trans-unit>   		    		    		    
-			<trans-unit id="accordion">
-			     <source>Simple Accordion</source>
-		    </trans-unit>   	
-			<trans-unit id="contact">
-			     <source>Contact</source>
-		    </trans-unit> 
-			<trans-unit id="important">
-			     <source>Important</source>
-		    </trans-unit> 
-            <trans-unit id="line">
+		    </trans-unit>  
+			<trans-unit id="darkgrey">
+			     <source>Darkgrey background</source>
+		    </trans-unit>			
+            <trans-unit id="grey">
+			     <source>Grey background</source>
+            </trans-unit> 		              
+            <trans-unit id="lightgrey">
+			     <source>Lightgrey background</source>
+            </trans-unit>  
+			<trans-unit id="white">
+			     <source>White background</source>
+		    </trans-unit>	
+		    <trans-unit id="line">
                  <source>With a line</source>
-            </trans-unit>
-			<trans-unit id="lineIn">
-			     <source>indent with line</source>
-		    </trans-unit> 
-    
-			<trans-unit id="capital">
-			     <source>capital</source>
-		    </trans-unit> 
-
+            </trans-unit>  
+     
+            
 			<trans-unit id="thin">
 			     <source>Thin line</source>
 		    </trans-unit> 
@@ -229,22 +219,8 @@
 			<trans-unit id="thick">
 			     <source>Thick line</source>
 		    </trans-unit>     
-			<trans-unit id="dotted">
-			     <source>Dotted line</source>
-		    </trans-unit>     
+  
 
-			<trans-unit id="display">
-			     <source>Display variations</source>
-		    </trans-unit>	   	    
-			<trans-unit id="standard">
-			     <source>Standard or wide</source>
-		    </trans-unit>	    
-			<trans-unit id="color">
-			     <source>Flexslider with background-color</source>
-		    </trans-unit>	     
-			<trans-unit id="container">
-			     <source>Flexslider with container</source>
-		    </trans-unit>
 			<trans-unit id="containerhandle">
 			     <source>Handle as a container</source>
 		    </trans-unit>

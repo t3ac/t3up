@@ -23,7 +23,9 @@ page {
         # cat =t3up: components/appearance/108; type =options[1,2,3,4,5,6]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapaccordion
         bootstrapaccordion            = 1     
         # cat =t3up: components/appearance/109; type =options[1,2,3,4]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstraptabs
-        bootstraptabs                 = 1    
+        bootstraptabs                 = 1
+        # cat =t3up: components/appearance/110; type =options[1,2,3,4,5]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapslider
+        bootstrapslider              =  1    
     }
     
     color {
@@ -86,7 +88,7 @@ page {
         # cat =t3up: color/navcolor/07; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navBorderBottomColor
         navBorderBottomColor          = rgba(100, 100, 100, 1)  
         # cat =t3up: color/navcolor/08; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:overlay
-        overlay                       = rgba(0, 0, 0, 0.5)          
+        overlay                       = rgba(33, 33, 33, 0.35)          
 
         # customsubcategory=headercolor=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headercolor
         # cat =t3up: color/headercolor/01; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1-color
@@ -129,6 +131,8 @@ page {
         footer1LinkColor              =inherit
         # cat =t3up: color/footer/04; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1LinkHoverColor
         footer1LinkHoverColor         =inherit
+        # cat =t3up: color/footer/06; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer2BGColor 
+        footer2BgColor                =inherit        
         # cat =t3up: color/footer/06; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer3BGColor 
         footer3BgColor                =inherit  
         # cat =t3up: color/footer/07; type =color; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer3TextColor
@@ -268,7 +272,6 @@ page {
         # cat =t3up: files/javascript/05; type =options[,active]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:modernizer
         modernizer                             =
         
-
     }     
      
     fonts{    
@@ -365,7 +368,6 @@ page {
         # cat =t3up: header/logo/010; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo.9
         logo.9                          =
                     
-        
 
         # cat =t3up: header/logo/101; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:alttext  
         alttext                       =Home            
@@ -388,7 +390,7 @@ page {
         # cat =t3up: header/logo/203; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logoIImaxwidth
         logoIImaxwidth               = 66.66%    
         # cat =t3up: header/logo/204; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logoIIwrap
-        logoIIwrap                   =<div class="logoII d-none d-lg-block col-2 my-auto pe-3">|</div>                
+        logoIIwrap                   =<div class="logoII d-inline-block col-2  ms-auto my-auto pe-3">|</div>                
 
         # cat =t3up: header/logo/300; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:moillogo
         mobillogo                     =typo3conf/ext/t3up/Resources/Public/Design/MobilLogo.svg
@@ -563,9 +565,9 @@ page {
         scssquicklinks                =quicklinks   
         # cat =t3up: scss/basic/27; type = options[table,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsstable
         scsstable                     =table   
-        # cat =t3up: scss/basic/28; type = options[bootstrapstyles ,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbootstrapstyles 
-        scssbootstrapstyles           =bootstrapstyles   
         
+        # cat =t3up: scss/basic/28; type = options[bootstrapstyles,empty]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbootstrapstyles
+        scssbootstrapstyles             =bootstrapstyles
         
         # Extensions ____________________________________________      
         # customsubcategory=extensions=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssextensions
@@ -573,14 +575,12 @@ page {
         # cat =t3up: scss/extensions/101;  type =options[lightbox,empty]; label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsslightbox
         scsslightbox                  =lightbox
         
-        # cat =t3up: scss/extensions/301;  type =options[powermail,empty];  label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsspowermail
-        scsspowermail                 =empty
+        # cat =t3up: scss/extensions/102; type =string;  label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsspowermail
+        scsspowermail                 = EXT:t3up/Resources/Public/Sass/Extensions/_powermail.scss
     
-        # cat =t3up: scss/extensions/302;  type =options[indexedsearch,empty];  label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssindexedsearch
-        scssindexedsearch              =empty
-        
-        # cat =t3up: scss/extensions/303;  type =options[jpfaq ,empty];  label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssjpfaq
-        scssjpfaq                     =empty   
+        # cat =t3up: scss/extensions/103; type =string; label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssindexedsearch
+        scssindexedsearch             = EXT:t3up/Resources/Public/Sass/Extensions/_indexedsearch.scss
+
         
     }
     
@@ -616,13 +616,13 @@ page {
     typography {
         # customsubcategory=headers=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headers  
         # cat =t3up: typography/headers/01; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1
-        h1                                 =1.75rem
+        h1                                 =1.7rem
         # cat =t3up: typography/headers/02; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.md
-        h1.md                              =2rem
+        h1.md                              =1.85rem
         # cat =t3up: typography/headers/03; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.lg
-        h1.lg                              =2.5rem
+        h1.lg                              =2rem
         # cat =t3up: typography/headers/04; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.fontweight
-        h1.fontweight                      =600
+        h1.fontweight                      =400
         # cat =t3up: typography/headers/05; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.lineheight
         h1.lineheight                      =1.35em
         # cat =t3up: typography/headers/06; type =options[left,center,right]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.direction
@@ -630,30 +630,30 @@ page {
         # cat =t3up: typography/headers/07; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.margin
         h1.margin                          = 0 0 1rem
         # cat =t3up: typography/headers/07; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.padding
-        h1.padding                         = calc(var(--bs-gutter-x) / 2) !important
+        h1.padding                         = 
    
         
         # cat =t3up: typography/headers/10; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2
-        h2                                 =1.35rem
+        h2                                 =1.3rem
         # cat =t3up: typography/headers/11; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.md
-        h2.md                              =1.5rem
+        h2.md                              =1.4rem
         # cat =t3up: typography/headers/12; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.lg
-        h2.lg                              =1.75rem
+        h2.lg                              =1.5rem
         # cat =t3up: typography/headers/13; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.fontweight
-        h2.fontweight                      =600
+        h2.fontweight                      =500
         # cat =t3up: typography/headers/14; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.margin
         h2.margin                          = 0 0 1rem
         # cat =t3up: typography/headers/15; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.lineheight
         h2.lineheight                      =1.35em
 
         # cat =t3up: typography/headers/20; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3   
-        h3                                 =1.1rem
+        h3                                 =1.15rem
         # cat =t3up: typography/headers/21; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.md
-        h3.md                              =1.25rem
+        h3.md                              =1.225rem
         # cat =t3up: typography/headers/22; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.lg
-        h3.lg                              =1.35rem
+        h3.lg                              =1.3rem
         # cat =t3up: typography/headers/23; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.fontweight
-        h3.fontweight                      =600
+        h3.fontweight                      =500
         # cat =t3up: typography/headers/24; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.margin
         h3.margin                          = 0 0 1rem
         # cat =t3up: typography/headers/25; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.lineheight
@@ -662,11 +662,11 @@ page {
         # cat =t3up: typography/headers/30; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4
         h4                                 =1rem
         # cat =t3up: typography/headers/31; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4.md
-        h4.md                              =1.05rem
+        h4.md                              =1.025rem
         # cat =t3up: typography/headers/32; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4.lg
-        h4.lg                              =1.10rem
+        h4.lg                              =1.05rem
         # cat =t3up: typography/headers/33; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4.fontweight
-        h4.fontweight                      =600              
+        h4.fontweight                      =500              
         # cat =t3up: typography/headers/34; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4.margin
         h4.margin                          = 0          
         # cat =t3up: typography/headers/35; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h4.lineheight
@@ -676,17 +676,17 @@ page {
         
         # customsubcategory=footers=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footers   
         # cat =t3up: typography/footers/01; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1.h3
-        footer1.h3                          =1.2rem
+        footer1.h3                          =1rem
         # cat =t3up: typography/footers/02; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1.fontsize
         footer1.fontsize                    =1rem
         # cat =t3up: typography/footers/03; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1.fontweight
-        footer1.fontweight                  =600
+        footer1.fontweight                  =500
         # cat =t3up: typography/footers/04; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1.lineheight
         footer1.lineheight                  =1.35em  
         # cat =t3up: typography/footers/05; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer3.fontsize
         footer3.fontsize                    =1rem
         # cat =t3up: typography/footers/06; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer3.fontweight
-        footer3.fontweight                  =600 
+        footer3.fontweight                  =500 
         
         
         
@@ -695,12 +695,12 @@ page {
         # cat =t3up: typography/bread/01; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:p
         p                                 =1.00rem 
         # cat =t3up: typography/bread/02; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:p.md
-        p.md                              =1.05rem 
+        p.md                              =1.00rem 
         # cat =t3up: typography/bread/03; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:p.lg
-        p.lg                              =1.10rem 
+        p.lg                              =1.00rem 
         
         # cat =t3up: typography/bread/04; type =int+; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:boldweight
-        boldweight                        =600
+        boldweight                        =500
   
         # cat =t3up: typography/bread/05; type = string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:lineheight
         lineheight                        =1.45em

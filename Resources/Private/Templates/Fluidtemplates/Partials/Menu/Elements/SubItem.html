@@ -9,7 +9,7 @@
                         <f:render partial="Menu/Elements/Link" arguments="{item: item}"/><span class="d-none d-lg-block">&nbsp;</span>
                 </f:then> 
                 <f:else if="{item.active}">
-                    <li class="{f:if(condition:item.children, then:'navitem')} {f:if(condition:item.current, then:'act')}" data-show-sub="false">
+                    <li class="{f:if(condition:item.children, then:'navitem')} {f:if(condition:item.active, then:'act')}" data-show-sub="false">
                         <f:render partial="Menu/Elements/Link" arguments="{item: item}"/><span class="d-none d-lg-block">&nbsp;</span>
                 </f:else>
                 <f:else>

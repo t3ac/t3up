@@ -9,8 +9,13 @@
 
 a 													{color: #0000AA; text-decoration: none; font-weight: bold;}
 
-body                                                {font-family: Arial, sans-serif; color: #000; font-size: 14px; line-height: 140%;}
-p                                                   {margin-bottom: 10px;}
+body                                                {font-family: Arial, sans-serif; color: #000; font-size: 1rem; line-height: 140%;}
+p                                                   {margin-bottom: .6rem;}
+
+
+
+h3                                                  {color: #000; font-size: 1.25rem; margin-bottom: 1rem; font-weight: bold;}
+h4                                                  {color: #000; font-size: 1rem; font-weight: bold; margin-bottom: 0rem; }
 
 .align-center									    {text-align: center;}
 .align-right										{text-align: right;}
@@ -58,11 +63,6 @@ a.btn												{display: inline-block;text-align: center;  vertical-align: mid
 
 a.btn-light 										{background-color: #fafafa; color: #212529;}
 a.btn-secondary 									{background-color: #545b62; color: #fff;}
-
-
-h3                                                  {color: #000; font-size: 16px;}
-h4                                                  {color: #000; font-size: 14px;}
-h5                                                  {color: #000; font-size: 12px; font-weight: bold;}
 
 span.mono	         				                {font-family: Courier New, Courier, monospace; }									
 

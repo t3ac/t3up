@@ -1,3 +1,0 @@
-plugin.tx_powermail.view.templateRootPath   = EXT:t3up/Resources/Private/Templates/Powermail/Templates/
-plugin.tx_powermail.view.partialRootPath    = EXT:t3up/Resources/Private/Templates/Powermail/Partials/
-plugin.tx_powermail.view.layoutRootPath     = EXT:t3up/Resources/Private/Templates/Powermail/Layouts/

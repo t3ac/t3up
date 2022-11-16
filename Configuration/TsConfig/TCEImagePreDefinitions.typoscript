@@ -4,81 +4,43 @@ TCEFORM.sys_file_reference.crop.config.cropVariants {
     title = Default 
     selectedRatio = default
     allowedAspectRatios {
-        
-      default {
-        title = Frei
-        value = 0.0
-      }
-      
-      1:1 {
-        title = Quadrat (1:1)
-        value = 1.0
-      }
-      
-      6:5 {
-        title = Querformat (6:5)
-        value = 1.2
-      }      
-      
-      4:3 {
-        title = klassisches Querformat (4:3)
-        value = 1.3333333333
-      }
-      
-      3:2 {
-        title = gängiges Querformat (3:2)
-        value = 1.5
-      }
-      
-      16:9 {
-        title = TV-Format (16:9)
-        value = 1.7777777778
-      }
-      
-      21:9 {
-        title = Cinemascope-Format (21:9)
-        value = 2.333333333333333333333333333333
-      }
-      2:1 {
-        title =  Slider, Kopfbild (2:1)
-        value = 2
-      }
-      3:1 {
-        title =  Top-Slider (3:1)
-        value = 3
-      }
-      4:1 {
-        title =  Extrawide (4:1)
-        value = 4
-      }
-      2:3 {
-        title = schmales Hochformat (2:3)
-        value = 0.6666666667
-      }
-      
-      4:5 {
-        title = klassisches Portraitformat (4:5)
-        value = 0.8
-      }
-      
-      3:4 {
-        title = Hochformat (3:4)
-        value = 0.75
-      }
-      
-      1:2 {
-        title = Hochformat (1:2)
-        value = 0.5
-      }
-      
-      1:3 {
-        title = Hochformat (1:3)
-        value = 0.3333
-      }
-          }
-  }  
-  
+	        
+	      default {
+	        title = Frei
+	        value = 0.0
+	      }
+	      16:9 {
+	        title = TV-Format (16:9)
+	        value = 1.7777777778
+	      }
+	      21:9 {
+	        title = Cinemascope-Format (21:9)
+	        value = 2.333333333333333333333333333333
+	      }
+	      2:1 {
+	        title =  Slider, Kopfbild (2:1)
+	        value = 2
+	      }
+	      3:1 {
+	        title =  Top-Slider, sehr breit(3:1)
+	        value = 3
+	      }
+	      1:1 {
+	        title = Quadrat  (1:1)
+	        value = 1
+	      } 
+	      4:5 {
+	        title = klassisches Portraitformat (4:5)
+	        value = 0.8
+	      }	      
+	      2:3 {
+	        title = schmales Hochformat (2:3)
+	        value = 0.6666666667
+	      }
+	      1:2 {
+	        title = sehr schmales Hochformat (1:2)
+	        value = 0.5
+	      }
+		}
+	}  
 }
-
-# Predefinitions *********************************************************************************************************************
-

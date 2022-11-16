@@ -10,6 +10,8 @@ TCEFORM.tt_content.imageorient {
     }    
 }
 
+mod.SHARED.colPos_list = 0,1,2,3,4,101
+
 # Link to top disable ***
 TCEFORM.tt_content.linkToTop.disabled = 1   
 
@@ -17,15 +19,14 @@ TCEFORM.tt_content.CType {
     removeItems = bullets, mailform, search, script, splash, image
 }
 
+
+
 # Remove all standard-layouts *******************************
 TCEFORM {
     tt_content {
         layout {
-            removeItems = 1,2,3
-            disableNoMatchingValueElement = 1
-            types {
-  
-            } 
+           disableNoMatchingValueElement = 1
+           removeItems = 1,2,3
         }               
     }
 }
@@ -65,11 +66,13 @@ TCEFORM {
         space_before_class {
             removeItems = extra-small,small, medium, large, extra-large
             addItems {
-                    5px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5
-                    15px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15 
-                    30px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30
-                    45px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_45
-                    60px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_60          
+                    4px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5
+                    8px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_10 
+                    12px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15 
+                    16px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_20
+                    24px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30
+                    36px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_40 
+                    48px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_50          
             }
         }
     }
@@ -80,11 +83,13 @@ TCEFORM {
         space_after_class {
             removeItems = extra-small,small, medium, large, extra-large
             addItems {
-                    5px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5
-                    15px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15 
-                    30px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30
-                    45px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_45
-                    60px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_60      
+                    4px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5
+                    8px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_10 
+                    12px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15 
+                    16px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_20
+                    24px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30
+                    36px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_40 
+                    48px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_50            
                 }
         }
     }

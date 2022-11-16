@@ -78,7 +78,7 @@ lib.navigation.breadcrumbxl {
         20.20.typolink.parameter.data = leveluid : 1
         20.20.wrap = |</span>
         20.30 < lib.level1
-        20.wrap = <li class="nav-item d-flex dropdown ps-2">|</li>
+        20.wrap = <li class="nav-item d-flex p-1 dropdown ps-2">|</li>
         
         30 = COA
         30.10 = TEXT
@@ -89,7 +89,7 @@ lib.navigation.breadcrumbxl {
         30.20.typolink.parameter.data = leveluid : 2
         30.20.wrap = |</span>
         30.30 < lib.level2
-        30.wrap = <li class="nav-item d-flex dropdown ps-2">|</li>
+        30.wrap = <li class="nav-item d-flex p-1 dropdown ps-2">|</li>
         
         40 = COA
         40.10 = TEXT
@@ -100,7 +100,7 @@ lib.navigation.breadcrumbxl {
         40.20.typolink.parameter.data = leveluid : 3
         40.20.wrap = |</span>
         40.30 < lib.level3
-        40.wrap = <li class="nav-item d-flex dropdown ps-2">|</li>
+        40.wrap = <li class="nav-item d-flex p-1 dropdown ps-2">|</li>
          
         50 = COA
         50.10 = TEXT
@@ -111,7 +111,7 @@ lib.navigation.breadcrumbxl {
         50.20.typolink.parameter.data = leveluid : 4
         50.20.wrap = |</span>
         50.30 < lib.level4
-        50.wrap = <li class="nav-item d-flex dropdown ps-2">|</li> 
+        50.wrap = <li class="nav-item d-flex p-1 dropdown ps-2">|</li> 
         
         60 = COA
         60.10 = TEXT
@@ -122,7 +122,7 @@ lib.navigation.breadcrumbxl {
         60.20.typolink.parameter.data = leveluid : 5
         60.20.wrap = |</span>
         60.30 < lib.level5
-        60.wrap = <li class="nav-item d-flex dropdown ps-2">|</li> 
+        60.wrap = <li class="nav-item d-flex p-1 dropdown ps-2">|</li> 
         
         70 = COA
         70.10 = TEXT
@@ -133,7 +133,7 @@ lib.navigation.breadcrumbxl {
         70.20.typolink.parameter.data = leveluid : 6
         70.20.wrap = |</span>
         70.30 < lib.level6
-        70.wrap = <li class="nav-item d-flex dropdown ps-2">|</li>  
+        70.wrap = <li class="nav-item d-flex p-1 dropdown ps-2">|</li>  
         
         80 = COA
         80.10 = TEXT
@@ -144,7 +144,7 @@ lib.navigation.breadcrumbxl {
         80.20.typolink.parameter.data = leveluid : 7
         80.20.wrap = |</span>
         80.30 < lib.level7
-        80.wrap = <li class="nav-item d-flex dropdown ps-2">|</li> 
+        80.wrap = <li class="nav-item d-flex p-1 dropdown ps-2">|</li> 
         
         90 = COA
         90.10 = TEXT
@@ -155,7 +155,7 @@ lib.navigation.breadcrumbxl {
         90.20.typolink.parameter.data = leveluid : 8
         90.20.wrap = |</span>
         90.30 < lib.level8
-        90.wrap = <li class="nav-item d-flex dropdown ps-2">|</li>  
+        90.wrap = <li class="nav-item d-flex p-1 dropdown ps-2">|</li>  
         
         wrap = <ul class="{$page.navigation.breadcrumbulwrap}">|</ul>
     }

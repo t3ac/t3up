@@ -55,17 +55,17 @@
    /* SITEMAP */
   .frame-type-menu_sitemap                                        {}
   .frame-type-menu_sitemap > ul                                   {list-style: none; margin: 0; padding: 0;  }          
-  .frame-type-menu_sitemap > ul > li                              {padding: $spacer;background: #fff; border-bottom: 5px solid #f3f3f3;}
+  .frame-type-menu_sitemap > ul > li                              {padding: 1rem;background: #fff; border-bottom: 5px solid #f3f3f3;}
   .frame-type-menu_sitemap > ul > li > a                          {font-size: 130%}
   
-  .frame-type-menu_sitemap > ul > li> ul > li                     {margin-bottom: $spacer;}
+  .frame-type-menu_sitemap > ul > li> ul > li                     {margin-bottom: 1rem;}
   .frame-type-menu_sitemap > ul ul                                {padding-left: 20px; list-style: none; }
   .frame-type-menu_sitemap > ul ul > li > a:before                {content:'–'; padding-right: 5px;}                         
 
    /* menu_section */ 
    .frame-type-menu_section {
       > ul                                                        {list-style: none; margin: 0; padding: 0;  }      
-      > ul > li  > ul                                             {padding-left: ($spacer * 0.25); list-style-type: disc; }
+      > ul > li  > ul                                             {padding-left: 0.25rem; list-style-type: disc; }
    }
 
 
@@ -104,80 +104,63 @@
   .frame-space-after-extra-large                             {margin-bottom: 5rem;}
   
   
-  .frame-space-before-5px                                    {margin-top: ($spacer * 0.25) !important;}
-  .frame-space-before-10px                                   {margin-top: ($spacer * 0.5) !important;}
-  .frame-space-before-15px                                   {margin-top: ($spacer * 1) !important;}
-  .frame-space-before-20px                                   {margin-top: ($spacer * 1.5) !important;}
-  .frame-space-before-30px                                   {margin-top: ($spacer * 2) !important;}
-  .frame-space-before-45px                                   {margin-top: ($spacer * 3) !important;}
-  .frame-space-before-60px                                   {margin-top: ($spacer * 4) !important;}
+  .frame-space-before-4px                                    {margin-top: .25rem !important;}
+  .frame-space-before-8px                                    {margin-top: .5rem !important;}
+  .frame-space-before-12px                                   {margin-top: .75rem !important;}
+  .frame-space-before-16px                                   {margin-top: 1rem !important;}
+  .frame-space-before-24px                                   {margin-top: 1.5rem !important;}
+  .frame-space-before-36px                                   {margin-top: 2.25rem !important;}
+  .frame-space-before-48px                                   {margin-top: 3rem !important;}
   
-  .frame-space-after-5px                                     {margin-bottom: ($spacer * 0.25) !important;}
-  .frame-space-after-10px                                    {margin-bottom: ($spacer * 0.5) !important;}
-  .frame-space-after-15px                                    {margin-bottom: ($spacer * 1) !important;}
-  .frame-space-after-20px                                    {margin-bottom: ($spacer * 1.5) !important;}
-  .frame-space-after-30px                                    {margin-bottom: ($spacer * 2) !important;}
-  .frame-space-after-45px                                    {margin-bottom: ($spacer * 3) !important;}
-  .frame-space-after-60px                                    {margin-bottom: ($spacer * 4) !important;}
+  .frame-space-after-4px                                     {margin-bottom: .25rem !important;}
+  .frame-space-after-8px                                     {margin-bottom: .5rem !important;}
+  .frame-space-after-12px                                    {margin-bottom: .75rem !important;}
+  .frame-space-after-16px                                    {margin-bottom: 1rem !important;}
+  .frame-space-after-24px                                    {margin-bottom: 1.5rem !important;}
+  .frame-space-after-36px                                    {margin-bottom: 2.25rem !important;}
+  .frame-space-after-48px                                    {margin-bottom: 3rem !important;}
   
     /* Padding */
   .frame-padding-before-0px                                  {padding-top: 0 !important;}
-  .frame-padding-before-5px                                  {padding-top: ($spacer * 0.25) !important;}
-  .frame-padding-before-10px                                 {padding-top: ($spacer * 0.5) !important;}
-  .frame-padding-before-15px                                 {padding-top: ($spacer * 1) !important;}
-  .frame-padding-before-20px                                 {padding-top: ($spacer * 1.5) !important;}
-  .frame-padding-before-30px                                 {padding-top: ($spacer * 2) !important;}
-  .frame-padding-before-45px                                 {padding-top: ($spacer * 3) !important;}
-  .frame-padding-before-60px                                 {padding-top: ($spacer * 4) !important;}
-  .frame-padding-before-75px                                 {padding-top: ($spacer * 5) !important;}
-  .frame-padding-before-90px                                 {padding-top: ($spacer * 6) !important;}
+  .frame-padding-before-4px                                  {padding-top: .25rem !important;}
+  .frame-padding-before-8px                                  {padding-top: .5rem !important;}
+  .frame-padding-before-12px                                 {padding-top: 1rem !important;}
+  .frame-padding-before-16px                                 {padding-top: 1.5rem !important;}
+  .frame-padding-before-24px                                 {padding-top: 2rem !important;}
+  .frame-padding-before-36px                                 {padding-top: 3rem !important;}
+  .frame-padding-before-48px                                 {padding-top: 4rem !important;}
+  .frame-padding-before-60px                                 {padding-top: (5rem * 5) !important;}
+  .frame-padding-before-72px                                 {padding-top: 6rem !important;}
 
   .frame-padding-after-0px                                   {padding-bottom: 0 !important;}
-  .frame-padding-after-5px                                   {padding-bottom: ($spacer * 0.25) !important;}
-  .frame-padding-after-10px                                  {padding-bottom: ($spacer * 0.5) !important;}
-  .frame-padding-after-15px                                  {padding-bottom: ($spacer * 1) !important;}
-  .frame-padding-after-20px                                  {padding-bottom: ($spacer * 1.5) !important;}
-  .frame-padding-after-30px                                  {padding-bottom: ($spacer * 2) !important;}
-  .frame-padding-after-45px                                  {padding-bottom: ($spacer * 3) !important;}
-  .frame-padding-after-60px                                  {padding-bottom: ($spacer * 4) !important;}
-  .frame-padding-after-75px                                  {padding-bottom: ($spacer * 5) !important;}
-  .frame-padding-after-90px                                  {padding-bottom: ($spacer * 6) !important;}
+  .frame-padding-after-4px                                   {padding-bottom: .25rem !important;}
+  .frame-padding-after-8px                                   {padding-bottom: .5rem !important;}
+  .frame-padding-after-12px                                  {padding-bottom: 1rem !important;}
+  .frame-padding-after-16px                                  {padding-bottom: 1.5rem !important;}
+  .frame-padding-after-24px                                  {padding-bottom: 2rem !important;}
+  .frame-padding-after-36px                                  {padding-bottom: 3rem !important;}
+  .frame-padding-after-48px                                  {padding-bottom: 4rem !important;}
+  .frame-padding-after-60px                                  {padding-bottom: 5rem !important;}
+  .frame-padding-after-72px                                  {padding-bottom: 6rem !important;}
     
-  .frame-padding-left-0px                                    {padding-left: 0 !important;}
-  .frame-padding-left-5px                                    {padding-left: ($spacer * 0.25) !important;}
-  .frame-padding-left-10px                                   {padding-left: ($spacer * 0.5) !important;}
-  .frame-padding-left-15px                                   {padding-left: ($spacer * 1) !important;}
-  .frame-padding-left-20px                                   {padding-left: ($spacer * 1.5) !important;}
-  .frame-padding-left-30px                                   {padding-left: ($spacer * 2) !important;}
-  .frame-padding-left-45px                                   {padding-left: ($spacer * 3) !important;}
-  .frame-padding-left-60px                                   {padding-left: ($spacer * 4) !important;}
-
-  .frame-padding-right-0px                                   {padding-right: 0 !important;}
-  .frame-padding-right-5px                                   {padding-right: ($spacer * 0.25) !important;}
-  .frame-padding-right-10px                                  {padding-right: ($spacer * 0.5) !important;}
-  .frame-padding-right-15px                                  {padding-right: ($spacer * 1) !important;}
-  .frame-padding-right-20px                                  {padding-right: ($spacer * 1.5) !important;}
-  .frame-padding-right-30px                                  {padding-right: ($spacer * 2) !important;}
-  .frame-padding-right-45px                                  {padding-right: ($spacer * 3) !important;}
-  .frame-padding-right-60px                                  {padding-right: ($spacer * 4) !important;}    
     
      /* SITEMAP */
   .frame-type-menu_sitemap > ul                              {list-style: none; margin: 0; padding: 0; }          
-  .frame-type-menu_sitemap > ul > li                         {padding: $spacer; background: #fff; border-bottom: 5px solid #f3f3f3;}
+  .frame-type-menu_sitemap > ul > li                         {padding: 1rem; background: #fff; border-bottom: 5px solid #f3f3f3;}
   .frame-type-menu_sitemap > ul > li > a                     {font-size: 130%}
   
-  .frame-type-menu_sitemap > ul > li> ul > li                {margin-bottom: $spacer;}
-  .frame-type-menu_sitemap > ul ul                           {padding-left: ($spacer * 0.25); list-style: none; }
+  .frame-type-menu_sitemap > ul > li> ul > li                {margin-bottom: 1rem;}
+  .frame-type-menu_sitemap > ul ul                           {padding-left: .25rem; list-style: none; }
   .frame-type-menu_sitemap > ul ul > li > a:before           {content:'–'; padding-right: 5px;}                         
 
   
   /* Uploads */
   .frame-type-uploads {
      .ce-uploads{                                            margin: 0; padding: 0;
-        .uploadIcon                                          {padding: 0 $spacer 0 0; flex: 0 0 5%;   max-width: 5%;}
+        .uploadIcon                                          {padding: 0 1rem 0 0; flex: 0 0 5%;   max-width: 5%;}
         .uploadContent                                       {flex: 0 0 80%;  max-width: 80%; padding: 0;}
         .uploadImage                                         {flex: 0 0 20%;  max-width: 20%;}
-          li                                                 {list-style: none ; margin: $spacer 0;}
+          li                                                 {list-style: none ; margin: 1rem 0;}
           img                                                {width: 100%; height: auto;}
           span                                               {display: block;}
      }

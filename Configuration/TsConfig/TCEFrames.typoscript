@@ -1,103 +1,24 @@
-TCEFORM {
-    tt_content {
-        frame_class {
-            removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
-            disableNoMatchingValueElement = 1
-            types {
-                text {
-                    addItems { 
-                        white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
-                        line            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:line
-                        grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey                        
-                        colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored       
-                    }
-                }
-                
-                textmedia {
-                    addItems { 
-                        white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
-                        line            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:line 
-                        grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey 
-                        colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored    
-                    }
-                }
-
-                list {
-                    addItems {
-                    }
-                }    
-                div {
-                    addItems {
-                        thin            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:thin  
-                        medium          = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:medium               
-                        thick           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:thick    
-                    }
-                } 
-                header{
-                    addItems {
-                        colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored       
-                    }
-                }         
-            }          
-        }
-    }
-} 
-
-[usergroup("2")]
+[usergroup("3")]
     TCEFORM {
         tt_content {
             frame_class {
                 types {
-                    shortcut {
-                        addItems {
-                            important        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:important
-                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey 
-                            white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
-                            line            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:line      
-                            grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey 
-                            colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored                                                                         
-                        }
-                    }
                     text {
                         addItems {  
-                            important        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:important
-                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey 
                             danger          = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.danger 
                             info            = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.info 
                             success         = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.success 
                             warning         = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.warning                                                                         
                         }
                     }     
-                    
                     textmedia {
                         addItems { 
-                            important        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:important
-                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey 
                             danger          = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.danger 
                             info            = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.info 
                             success         = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.success 
                             warning         = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.warning                                                                         
                         }
                     }    
-                    table {
-                        addItems {  
-                            darkgrey        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:darkgrey  
-                            important        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:important  
-                        }
-                    }
-                    list {
-                        addItems {
-                            important        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:important
-                            white           = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white 
-                            line            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:line      
-                            grey            = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:grey 
-                            colored         = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored  
-                            danger          = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.danger 
-                            info            = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.info 
-                            success         = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.success 
-                            warning         = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.warning                                                                     
-                        }
-                    }  
                 }
             }
        }   

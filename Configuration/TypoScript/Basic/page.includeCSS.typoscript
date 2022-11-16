@@ -178,13 +178,12 @@ plugin.tx_wsscss.variables {
     navigation                          = {$page.scss.scssnavigation}  
     subnavigation                       = {$page.scss.scsssubnavigation}  
     quicklinks                          = {$page.scss.scssquicklinks}
-    bootstrapstyles                     = {$page.scss.scssbootstrapstyles}
+    
+	# Boostrap Scss
+    bootstrapstyles                     = {$page.scss.scssbootstrapstyles}  
     
     # Extensions
     lightbox                            = {$page.scss.scsslightbox}
-    indexedsearch                       = {$page.scss.scssindexedsearch}
-    powermail                           = {$page.scss.scsspowermail}
-    jpfaq                               = {$page.scss.scssjpfaq}
     
     # Mobil
     mobilmenu                           = {$page.components.mobilmenu}
@@ -197,4 +196,14 @@ page.includeCSS{
     main.linenumber                     =  true    
     main.forceOnTop                     =  1
 	main.outputStyle                    =  compressed 
+
+   	scsspowermail                       = {$page.scss.scsspowermail}
+   	scsspowermail.if.isTrue             = {$page.scss.scsspowermail}   	
+    scsspowermail.linenumber            = true   
+	scsspowermail.outputStyle           = compressed   
+
+   	scssindexedsearch                   = {$page.scss.scssindexedsearch}
+   	scssindexedsearch.if.isTrue         = {$page.scss.scssindexedsearch}   	
+    scssindexedsearch.linenumber        = true   
+	scssindexedsearch.outputStyle       =  compressed   
 }

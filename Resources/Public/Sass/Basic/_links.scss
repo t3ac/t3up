@@ -1,14 +1,14 @@
 ul.ohne                                             {padding-left: 0rem; list-style-type: none;}
 ul.dash                                             {list-style-type: none;}
 ul.square                                           {list-style-type: square;}
-ul.symbols                                          {list-style-type: none; padding-left: ($spacer * 2);}
-ul.dash                                             {padding-left: ($spacer * 1.5);}
+ul.symbols                                          {list-style-type: none; padding-left: 2rem;}
+ul.dash                                             {padding-left: 1.5rem;}
 
 ul.square li,
 ul.symbols li,
 ul.dash li                                          {padding-bottom: 5px;}
 
-ul.dash li:before                                   {margin-left: ($spacer * -1.5); width: ($spacer * 1.5); content: '\2014'; display: inline-block;} 
+ul.dash li:before                                   {margin-left: -1.5rem; width: 1.5rem; content: '\2014'; display: inline-block;} 
 
 
 ol.decimal                                          {list-style-type:decimal;}
@@ -41,7 +41,7 @@ ul.symbols a.link-web::before,
 ul.symbols a.link-fax::before,                                  
 ul.symbols a.link-phone::before,                                
 ul.symbols a.link-mobil::before,              
-ul.symbols a.link-download::before                 {margin-left:  ($spacer * -2); padding: 0; padding-left: 3px; width: ($spacer * 2); }
+ul.symbols a.link-download::before                 {margin-left:  -2rem; padding: 0; padding-left: 3px; width: 2rem; }
 
 .frame-type-menu_subpages li a::before,
 .frame-type-menu_pages li a::before                {color: rgba(0,0,0,.5);content:'\F0A9'; font-family: $symbol; text-indent: 0; font-size: 90%; display: inline-block; padding-left: 3px; padding-right: 5px}

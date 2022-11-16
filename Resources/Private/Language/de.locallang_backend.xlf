@@ -107,15 +107,7 @@
             <trans-unit id="paddingAfterClass">
                 <source>Padding After</source>
                 <target state="translated">Innenabstand danach</target>  
-            </trans-unit>    
-            <trans-unit id="paddingLeftClass">
-                <source>Padding Left</source>
-                <target state="translated">Innenabstand links</target>
-            </trans-unit>   
-            <trans-unit id="paddingRightClass">
-                <source>Padding Right</source>
-                <target state="translated">Innenabstand rechts</target>
-            </trans-unit>     
+            </trans-unit>       
             <trans-unit id="padding_class">
                 <source>Inner Padding</source>
                 <target state="translated">Innenabstand</target>            
@@ -123,14 +115,16 @@
             <trans-unit id="padding_class_none">
                 <source>none</source>
                 <target state="translated">Standard</target>
-            </trans-unit>                 
+            </trans-unit>  
+            
+            
             <trans-unit id="padding_class_0">
-                <source>none</source>
+                <source>0</source>
                 <target state="translated">kein Innenabstand</target>
-            </trans-unit>        
+            </trans-unit>>        
             <trans-unit id="padding_class_5">
                 <source>extra-small</source>
-                <target state="translated">Extraklein</target> 
+                <target state="translated">sehr klein</target> 
             </trans-unit> 
             <trans-unit id="padding_class_10">
                 <source>small</source>
@@ -138,32 +132,34 @@
             </trans-unit>     
             <trans-unit id="padding_class_15">
                 <source>normal</source>
-                <target state="translated">Mittel</target> 
+                <target state="translated">Standard</target> 
             </trans-unit>
             <trans-unit id="padding_class_20">
-                <source>large</source>
-                <target state="translated">Groß</target> 
+                <source>normalplus</source>
+                <target state="translated">Größer</target> 
             </trans-unit>  
             <trans-unit id="padding_class_30">
-                <source>extra-large</source>
-                <target state="translated">Extragroß</target>
-            </trans-unit>       
+                <source>double</source>
+                <target state="translated">Doppelt</target> 
+            </trans-unit>             
             <trans-unit id="padding_class_45">
-                <source>triple</source>
-                <target state="translated">Dreifach</target>
-            </trans-unit>      
+                <source>trippe</source>
+            <target state="translated">Dreifach</target>          
+            </trans-unit>  
             <trans-unit id="padding_class_60">
-                <source>fourfold</source>
-                <target state="translated">Vierfach</target>
-            </trans-unit>  
+                <source>four-fold</source>
+                <target state="translated">Vierfach</target>                
+            </trans-unit>    
             <trans-unit id="padding_class_75">
-                <source>fivefold</source>
-                <target state="translated">Fünffach</target>
-            </trans-unit>      
+                <source>five-fold</source>
+               <target state="translated">Fünffach</target>                 
+            </trans-unit>    
             <trans-unit id="padding_class_90">
-                <source>sixfold</source>
-                <target state="translated">Sechsfach</target>
+                <source>six-fold</source>
+               <target state="translated">Sechsfach</target>                 
             </trans-unit>  
+        
+            
 	         /* -- Colors ----------- */
 			<trans-unit id="basecolor">
 			     <source>Pagecolor</source>
@@ -215,55 +211,36 @@
 		    </trans-unit>	
 		    
 		   /* -- Designs ----------- */
-			<trans-unit id="padding">
-			     <source>Only padding left and right</source>
-			     <target state="translated">Nur Einrückung</target>
-		    </trans-unit>   
-			<trans-unit id="white">
-			     <source>White background</source>
-			     <target state="translated">Weißer Hintergrund</target>
-		    </trans-unit>		
-			<trans-unit id="whiteHead">
-			     <source>White background, lightgrey Header</source>
-			     <target state="translated">Weißer Hintergrund, hellgrauer Kopf</target>
-		    </trans-unit>	
-			<trans-unit id="grey">
-			     <source>Grey background</source>
-			      <target state="translated">Hellgrauer Hintergrund</target>
-		    </trans-unit>    
-            <trans-unit id="darkgrey">
-                 <source>Darkgrey background</source>
-                 <target state="translated">Dunkelgrauer Hintergrund</target>
-            </trans-unit>   
-            <trans-unit id="black">
-                 <source>Black background</source>
-                 <target state="translated">Schwarzer Hintergrund</target>
-            </trans-unit>	    		    
+
+ 			<trans-unit id="black">
+			     <source>Black background</source>
+			     <target state="translated">Schwarzer Hintergrund</target>
+		    </trans-unit>  	
 			<trans-unit id="colored">
 			     <source>Colored background</source>
 			     <target state="translated">Farbiger Hintergrund</target>
-		    </trans-unit>   		    		    		    
-			<trans-unit id="accordion">
-			     <source>Simple Accordion</source>
-			     <target state="translated">Einfaches Accordion</target>
-		    </trans-unit>   	
-			<trans-unit id="contact">
-			     <source>Contact</source>
-			     <target state="translated">Kontakt, schwarzer Header</target>
-		    </trans-unit> 
-			<trans-unit id="important">
-			     <source>Important</source>
-			     <target state="translated">Wichtig, farbiger Header</target>
-		    </trans-unit> 
-            <trans-unit id="line">
+		    </trans-unit>  
+			<trans-unit id="darkgrey">
+			     <source>Darkgrey background</source>
+			     <target state="translated">Dunkelgrauer Hintergrund</target>
+		    </trans-unit>			
+            <trans-unit id="grey">
+			     <source>Grey background</source>
+			     <target state="translated">Grauer Hintergrund</target>
+            </trans-unit> 		              
+            <trans-unit id="lightgrey">
+			     <source>Lightgrey background</source>
+			     <target state="translated">Hellgrauer Hintergrund</target>
+            </trans-unit>  
+			<trans-unit id="white">
+			     <source>White background</source>
+			     <target state="translated">Weißer Hintergrund</target>
+		    </trans-unit>	
+		    <trans-unit id="line">
                  <source>With a line</source>
-                 <target state="translated">Mit Linie darunter</target>
-            </trans-unit>
-    
-			<trans-unit id="capital">
-			     <source>capital</source>
-			     <target state="translated">In Großbuchstaben</target>
-		    </trans-unit> 
+                 <target state="translated">Mit Linie</target>
+            </trans-unit>  
+  
 
 			<trans-unit id="thin">
 			     <source>Thin line</source>
@@ -277,27 +254,8 @@
 			     <source>Thick line</source>
 			     <target state="translated">Dicke Linie</target>
 		    </trans-unit>     
-			<trans-unit id="dotted">
-			     <source>Dotted line</source>
-			     <target state="translated">Gepunktete Linie</target>
-		    </trans-unit>     
+  
 
-			<trans-unit id="display">
-			     <source>Display variations</source>
-			     <target state="translated">Anzeigevarianten</target>
-		    </trans-unit>	   	    
-			<trans-unit id="standard">
-			     <source>Standard or wide</source>
-			     <target state="translated">Standard, oder breit</target>
-		    </trans-unit>	    
-			<trans-unit id="color">
-			     <source>Flexslider with background-color</source>
-			     <target state="translated">Flexslider mit Hintergrundfarbe</target>
-		    </trans-unit>	     
-			<trans-unit id="container">
-			     <source>Flexslider with container</source>
-			     <target state="translated">Flexslider mit Container</target>
-		    </trans-unit>
 			<trans-unit id="containerhandle">
 			     <source>Handle as a container</source>
 			     <target state="translated">Verhält sich wie ein Container</target>

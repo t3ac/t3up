@@ -48,7 +48,7 @@ editor:
       - specialchar
       - showblocks
 
-    format_tags: "p;h2;h3;h4;h5;div"
+    format_tags: "p;h3;h4;div"
 
     stylesSet:
       

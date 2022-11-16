@@ -1,4 +1,6 @@
-.breadcrumbrow {                        			font-size: 1rem !important; line-height: 1rem; color: rgba($baseTextColor, .85); padding-top: 0; padding-right: 0;
+.breadcrumheader                                   {}
+
+.breadcrumbrow {                        			border-top: 1px solid #333;font-size: 1rem !important; line-height: 1rem; color: rgba($baseTextColor, .85); padding-top: 0; padding-right: 0;
   ol                                    			{list-style: none; padding: 0; margin: 0}
   ol li                                 			{display: inline-block; padding: 0 0 0 5px; font-size: 1rem !important; line-height: 1rem; }
   ol li a                               			{color: rgba($baseTextColor, .85); transition: all ease .3s; font-size: 1rem !important; line-height: 1rem; }
@@ -6,13 +8,24 @@
   ol li::after                          			{content:'|'; padding: 0 0 0 3px;} 
   ol li:last-of-type::after             			{content:'';}  
 
+
+
+ 
  .navbar-nav > li > ul                   			{box-shadow: $shadow;}
- .navbar-nav > li > a                               {font-size: 1rem !important; color: rgba($baseTextColor, .85) !important; } 
+ .navbar-nav > li > a                               {font-size: 1rem !important; color: rgba($baseTextColor, .85) !important;  } 
  .navbar-nav > li > span > a                        {font-size: 1rem !important; color: rgba($baseTextColor, .85) !important; }
+
+
+ .navbar-nav > li.act                               {background: rgba($baseColor,.5);}
+ .navbar-nav > li.act > span > a                    {color: #fff !important;}
 
  .navbar-nav a.extend:after              			{color: #333; text-align: center; padding: .10rem .20rem; border: 1px solid #666; content:'+'; font-family: $symbol;} /*\F0D7*/
  .navbar-nav a.extend.show:after         			{content:'–';} /*\F0D8*/
  .navbar-nav > li:not(.dropdown)::after             {content: '|';padding: 0 0 0 0.5rem !important;}
  .navbar-nav > li:last-of-type::after               {content: '';padding: 0 !important;}
  .navbar-nav > span.capital::after                  {content: '|';padding: 0 0 0 0.5rem !important;}  
+ 
+ .navbar-nav > li.act  a.extend:after              	{color: #fff; border: 1px solid #fff; } 
+ 
+ .breadcrmubtitle                                   {display: none;}
 }

@@ -6,27 +6,31 @@
     a.accordion-button::before                            {font-family: $symbol; font-weight: normal !important;  transition: all ease .3s; font-size: 175%;}
     a.accordion-button:not(.collapsed)::after             {font-family: $symbol; transform: rotate(-180deg);}
   
-    .accordion-item .accordion-header > a                 {border-top: 0; padding-right: calc(var(--bs-gutter-x) / 2);  padding-left: calc(var(--bs-gutter-x) / 2); background-color: #fff; border: 1px solid rgba(0,0,0,.2); border-bottom: 0;}
+    .accordion-item .accordion-header > a                 {border-top: 0; padding-right: .75rem;  padding-left: .75rem; background-color: #fff; border: 1px solid rgba(0,0,0,.2); border-bottom: 0;}
     .accordion-item:first-of-type .accordion-header  > a  {border-radius: 5px 5px 0 0;}  
     .accordion-item:last-of-type .accordion-header > a.collapsed    {border-radius: 0 0 5px 5px;  border-bottom: 1px solid rgba(0,0,0,.2);}  
   
-    .accordion-item .accordion-body                       {background-color: #fff;  border-left: 1px solid rgba(0,0,0,.2); border-right: 1px solid rgba(0,0,0,.2); padding-right: calc(var(--bs-gutter-x) / 2);  padding-left: calc(var(--bs-gutter-x) / 2);}
-    .accordion-item .accordion-body > *                   {padding-top: calc(var(--bs-gutter-x) / 2); padding-bottom: calc(var(--bs-gutter-x) / 2); }
+    .accordion-item .accordion-body                       {background-color: #fff;  border-left: 1px solid rgba(0,0,0,.2); border-right: 1px solid rgba(0,0,0,.2); padding-right: .75rem;  padding-left: .75rem;}
+    .accordion-item .accordion-body > *                   {padding-top: .75rem; padding-bottom: .75rem; background: none !important;}
     .accordion-item .accordion-body > * > *:last-of-type  {margin-bottom: 0;; } 
     .accordion-item:last-of-type .accordion-body          {border-bottom: 1px solid rgba(0,0,0,.2); border-radius: 0 0 5px 5px;}
+
+    .accordion-item .accordion-body > * > h2,
+    .accordion-item .accordion-body > * > h3,
+    .accordion-item .accordion-body > * > h4              {display: none !important;}
 }  
  
 
 .t3up_accordion.accordionstyle-1 { 
-       a.accordion-button::after                            {content:$plus; min-width: 2.8rem; background: rgba(0,0,0,.2);  padding-right: calc(var(--bs-gutter-x) / 2);  padding-left: calc(var(--bs-gutter-x) / 2); color: #fff; }
-       a.accordion-button:not(.collapsed)::after            {content:$minus;}
-      .accordion-item .accordion-header > a                 {padding-right: 0;}
-      .accordion-item:first-of-type .accordion-header  > a  {border-radius: 0;}
-      .accordion-item .accordion-header > a                 {background-color: #efefef; }  
-      .accordion-item .accordion-header > a.collapsed       {background-color: #fff; }  
+       a.accordion-button::after                          {content:$plus; background: rgba(0,0,0,.2);  padding-right: .75rem;  padding-left: .75rem; color: #fff; }
+       a.accordion-button:not(.collapsed)::after          {content:$minus;}
+      .accordion-item .accordion-header > a               {padding-right: 0;}
+      .accordion-item:first-of-type .accordion-header  > a{border-radius: 0;}
+      .accordion-item .accordion-header > a               {background-color: #efefef; }  
+      .accordion-item .accordion-header > a.collapsed     {background-color: #fff; }  
 
       .accordion-item:last-of-type .accordion-header > a.collapsed    {border-radius: 0;}  
-      .accordion-item:last-of-type .accordion-body          {border-radius: 0;} 
+      .accordion-item:last-of-type .accordion-body        {border-radius: 0;} 
 }
 
 .t3up_accordion.accordionstyle-2 { 
@@ -43,11 +47,11 @@
 }
 
 .t3up_accordion.accordionstyle-3{ 
-      a.accordion-button::after                          {content:$plus;  color: #333;;}
-       a.accordion-button:not(.collapsed)::after            {content:$minus;}
-      .accordion-item .accordion-header > a              {background: #efefef; border-radius: 0; border: 0;}
-      .accordion-item .accordion-header > a.collapsed    {background: none; border-bottom: 1px solid rgba(0,0,0,.2)}
-      .accordion-item .accordion-body                    {background-color: #fff;  border: 0;}
+     a.accordion-button::after                            {content:$plus;  color: #333;;}
+     a.accordion-button:not(.collapsed)::after            {content:$minus;}
+     .accordion-item .accordion-header > a                {background: #efefef; border-radius: 0; border: 0;}
+     .accordion-item .accordion-header > a.collapsed      {background: none; border-bottom: 1px solid rgba(0,0,0,.2)}
+     .accordion-item .accordion-body                      {background-color: #fff;  border: 0;}
 
 } 
 
@@ -64,8 +68,8 @@
 
 .t3up_accordion.accordionstyle-5{ 
     a.accordion-button                                    {justify-content: start;}
-    a.accordion-button::before                            {content:$plus; color: #333; padding-left: calc(var(--bs-gutter-x) / 2); padding-right: calc(var(--bs-gutter-x)); }
-    a.accordion-button:not(.collapsed)::before            {content:$minus; transform: rotate(-180deg); padding-left: calc(var(--bs-gutter-x) ); padding-right: calc(var(--bs-gutter-x) / 2); }
+    a.accordion-button::before                            {content:$plus; color: #333; padding-left: .75rem; padding-right: calc(var(--bs-gutter-x)); }
+    a.accordion-button:not(.collapsed)::before            {content:$minus; transform: rotate(-180deg); padding-left: calc(var(--bs-gutter-x) ); padding-right: .75rem; }
     .accordion-item:first-of-type .accordion-header  > a  {border-radius: 0;}
     .accordion-item .accordion-header > a                 {background-color: #fff; padding-left: 0; padding-right: 0; background-color: #fff; border-radius: 0; font-weight: normal; border-color: #ebebeb; border-left: 0; border-right: 0; transition: background 0.2s, color 0.2s;}
     .accordion-item:last-of-type .accordion-header > a.collapsed    {border-radius: 0;  border-color: #ebebeb;} 
@@ -74,8 +78,8 @@
 
 .t3up_accordion.accordionstyle-6{ 
     a.accordion-button                                    {justify-content: start;}
-    a.accordion-button::before                            {content:$plus; color: #333; padding-left: calc(var(--bs-gutter-x) / 2); padding-right: calc(var(--bs-gutter-x)); }
-    a.accordion-button:not(.collapsed)::before            {content:$minus; transform: rotate(-180deg); padding-left: calc(var(--bs-gutter-x) ); padding-right: calc(var(--bs-gutter-x) / 2); }
+    a.accordion-button::before                            {content:$plus; color: #333; padding-left: .75rem; padding-right: calc(var(--bs-gutter-x)); }
+    a.accordion-button:not(.collapsed)::before            {content:$minus; transform: rotate(-180deg); padding-left: calc(var(--bs-gutter-x) ); padding-right: .75rem; }
     .accordion-item:first-of-type .accordion-header  > a  {border-radius: 0;}
     .accordion-item .accordion-header > a                 {padding-left: 0; padding-right: 0; background-color: #fff; border-radius: 0; font-weight: normal; border-color: #ebebeb; border-left: 0; border-right: 0; transition: background 0.2s, color 0.2s;}
     .accordion-item .accordion-header > a:hover           {background-color: rgb(245,245,245); }
@@ -85,42 +89,49 @@
 }
 
 
-
-
 /* Tabs * ************************************** */  
+.t3up_tabulator  {
+	.tab-content .tab-pane > *                           {background: none;}
+    .tab-content .tab-pane > * > h2,
+    .tab-content .tab-pane > * > h3,
+    .tab-content .tab-pane > * > h4                      {display: none !important;}
+}
   
-.t3up_tabulator.tabssstyle-1{
-  .nav-item                                             {margin-bottom: -1px; cursor: pointer; }
-  .nav-link.active                                      {border-color: rgba(0,0,0,.2) rgba(0,0,0,.2) #fff rgba(0,0,0,.2);}
-  .tab-content                                          {padding-top: calc(var(--bs-gutter-x) / 2); padding-right: calc(var(--bs-gutter-x) / 2);  padding-left: calc(var(--bs-gutter-x) / 2); background-color: #fff; border-radius: 0 0 5px 5px;  border: 1px solid rgba(0,0,0,.2);}
+  
+.tabssstyle-1{
+  .nav-item                                              {margin-bottom: -1px; cursor: pointer; }
+  .nav-link.active                                       {border-color: rgba(0,0,0,.2) rgba(0,0,0,.2) #fff rgba(0,0,0,.2);}
+  .tab-content                                           {padding-top: .75rem; padding-right: .75rem;  padding-left: .75rem; background-color: #fff; border-radius: 0 0 5px 5px;  border: 1px solid rgba(0,0,0,.2);}
 }
 
 .t3up_tabulator.tabssstyle-2{
-      .nav-item                                         {border-color:  rgba(0,0,0,.215) rgba(0,0,0,.2) transparent transparent; background-color: #fff; box-shadow: inset 0px -3px 2px 0 rgb(0 0 0 / 15%)}
-      .nav-item.active                                  {box-shadow: none; border-color:  rgba(0,0,0,.2) rgba(0,0,0,.25) #fff;}
+      .nav-item                                          {border-color:  rgba(0,0,0,.215) rgba(0,0,0,.2) transparent transparent; background-color: #fff; box-shadow: inset 0px -3px 2px 0 rgb(0 0 0 / 15%)}
+      .nav-item.active                                   {box-shadow: none; border-color:  rgba(0,0,0,.2) rgba(0,0,0,.25) #fff;}
 }
  
 .t3up_tabulator.tabssstyle-3{
-      .nav-item                                         {box-shadow: none; border-color:  rgba(0,0,0,.2) rgba(0,0,0,.2) transparent transparent; background-color: rgba(0, 0, 0, 0.03); color: #252525;}
-      .nav-item.active                                  {border-color:  rgba(0,0,0,.2) rgba(0,0,0,.2) #fff; background-color: #fff;}
+      .nav-item                                          {box-shadow: none; border-color:  rgba(0,0,0,.2) rgba(0,0,0,.2) transparent transparent; background-color: rgba(0, 0, 0, 0.03); color: #252525;}
+      .nav-item.active                                   {border-color:  rgba(0,0,0,.2) rgba(0,0,0,.2) #fff; background-color: #fff;}
 }
 
 .t3up_tabulator.tabssstyle-4{
-      .nav-item                                         {box-shadow: none; border-color:  rgba(0,0,0,.2) rgba(0,0,0,.2) transparent transparent; background-color: rgba(0, 0, 0, 0.050); color: #666;}
-      .nav-item.active                                  {border-color:  rgba(0,0,0,.2) rgba(0,0,0,.2) #fff; background-color: #fff; color: #252525;}
+      .nav-item                                          {box-shadow: none; border-color:  rgba(0,0,0,.2) rgba(0,0,0,.2) transparent transparent; background-color: rgba(0, 0, 0, 0.050); color: #666;}
+      .nav-item.active                                   {border-color:  rgba(0,0,0,.2) rgba(0,0,0,.2) #fff; background-color: #fff; color: #252525;}
 }
 
 .t3up_tabulator.tabssstyle-5{
-      .nav-item                                         {box-shadow: none; border-color:  rgba(0,0,0,1) rgba(0,0,0,1) transparent transparent; background-color: rgba(0, 0, 0, .33); color: #fff;}
-      .nav-item.active                                  {border-color:  rgba(0,0,0,1) rgba(0,0,0,1) rgba(0,0,0,1); background-color: #000;}
+      .nav-item                                          {box-shadow: none; border-color:  rgba(0,0,0,1) rgba(0,0,0,1) transparent transparent; background-color: rgba(0, 0, 0, .33); color: #fff;}
+      .nav-item.active                                   {border-color:  rgba(0,0,0,1) rgba(0,0,0,1) rgba(0,0,0,1); background-color: #000;}
 }
 
 
 /* Slider **********************************************/
 
-.t3up_slider{
-    img                                                 {height: auto;}
-    p                                                   {margin-bottom: 0;}
+.t3up_slider{										    overflow: hidden; margin-left: -0.75rem; margin-right: -0.75rem;
+   &.carousel                                           {overflow: visible; margin-left: 0rem; margin-right: 0rem;}
+   &.carousel .carousel-inner > div					    {height: 100%;  transition: 1s ease-in-out;}
+   
+   p                                                    {margin-bottom: 0;}
   .carousel-control-prev,
   .carousel-control-next                                {transition: all ease .3s; z-index: 5; }
   .carousel-control-prev:hover, 
@@ -132,26 +143,57 @@
   .carousel-control-prev:hover .prev, 
   .carousel-control-next:hover .next                    {opacity: 1;}
   .carousel-indicators li                               {cursor: pointer;}
-  
+   
   .carousel-indicators                                  {top: 1rem; bottom: auto; z-index: 4;}
   
-  .carousel-indicators.bottom_outside                   {position: absolute; top: auto; bottom: -2rem; margin-right: auto; margin-left: auto; left: auto; right: auto; width: 100%; opacity: 1;}
+  .carousel-indicators.bottom_outside                   {position: absolute; top: auto; bottom: -3rem; margin-right: auto; margin-left: auto; left: auto; right: auto; width: 100%; opacity: 1;}
   .carousel-indicators.top_inside                       {bottom: auto; top: 1rem; margin-right: auto; margin-left: auto; left: auto; right: auto; width: 100%; opacity: 1;}
-  .carousel-indicators.top_outside                      {bottom: auto; top: -2rem; margin-right: auto; margin-left: auto; left: auto; right: auto; width: 100%; opacity: 1;}
+  .carousel-indicators.top_outside                      {bottom: auto; top: -3rem; margin-right: auto; margin-left: auto; left: auto; right: auto; width: 100%; opacity: 1;}
   .carousel-indicators.right_inside                     {bottom: auto; top: 1rem; margin-right: 1rem; margin-left: auto; left: auto; opacity: 1;}  
-  .carousel-indicators.right_outside                    {bottom: auto; top: -2rem; margin-right: 1rem; margin-left: auto; left: auto; opacity: 1;}  
+  .carousel-indicators.right_outside                    {bottom: auto; top: -3rem; margin-right: 1rem; margin-left: auto; left: auto; opacity: 1;}  
   
-  .carousel-caption                                     {right: 0; left: 0; bottom: 0; z-index: 3;}
+  .carousel-caption                                     {right: 0; left: 0; bottom: 0; z-index: 3; padding-top: 0;  padding-bottom: 0;}
+
+  .carousel-inner picture img                           {width: 100%; height: 100%; object-fit: cover; object-position: center 0;} 
   
-  .overlayslider {position: absolute; z-index: 2; opacity: .5;}
-  
+  .overlayslider                                        {position: absolute; z-index: 2; opacity: .5;}
 }
 
+  /* SliderStyles */
+
+  .sliderstyle-1{
+      .carousel-caption                                 {bottom: 0; top: auto; left: 0; right: 0;} 
+  }   
+  
+  .sliderstyle-4{
+      .carousel-caption                                 {bottom: 50%; top: 50%; left: 0; right: 0;} 
+  }   
+  
+  .sliderstyle-5{
+      .carousel-caption{                                bottom: 10%; top: auto; left: 0; right: 0;
+      	.h1a                                            {font-weight: 500; font-size: 1.5rem;}
+      	.h3a                                            {font-weight: 400; font-size: 1.15rem;}      	
+      } 
+  }   
 
 @media screen and (min-width: 768px) {
-    
+  .sliderstyle-5{
+      .carousel-caption{ 
+      	.h1a                                            {font-size: 2.25rem;}
+      	.h3a                                            {font-size: 1.5rem;}      	
+      } 
+     } 
+  }       
     
 
+@media screen and (min-width: 992px) {
+  .sliderstyle-5{
+      .carousel-caption{ 
+      	.h1a                                            {font-size: 3rem;}
+      	.h3a                                            {font-size: 2rem;}      	
+      } 
+      
+  }      
 }
 
 
