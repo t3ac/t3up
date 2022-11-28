@@ -55,6 +55,10 @@ editor:
       - { name: "align-left", element: ['p', 'td', 'th'], attributes: { 'class': 'align-left' }}
       - { name: "align-center", element: ['p', 'td', 'th'], attributes: { 'class': 'align-center' }}
       - { name: "align-right", element: ['p', 'td', 'th'], attributes: { 'class': 'align-right' }}
+      
+      - { name: "h2", element: ['p'], attributes: { 'class': 'h2' }}
+      - { name: "h3", element: ['p'], attributes: { 'class': 'h3' }}
+      - { name: "h4", element: ['p'], attributes: { 'class': 'h4' }} 
 
       - { name: "Link intern", element: ['a'], attributes: { class: "link-internal"} }
       - { name: "Anker", element: ['a'], attributes: { class: "smooth"} }           

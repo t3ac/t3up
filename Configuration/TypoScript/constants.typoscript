@@ -378,7 +378,7 @@ page {
         # cat =t3up: header/logo/104; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logowrap
         logowrap                      =<div class="logo d-none d-lg-block col-3 my-auto py-3">|</div> 
         # cat =t3up: header/logo/105; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:notlogowrap
-        notlogowrap                   = d-flex col-10 flex-wrap vertical-align-stretch
+        notlogowrap                   = d-flex col-6  col-lg-9 flex-wrap vertical-align-stretch
        
         
         # cat =t3up: header/logo/200; type =string; label   =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logoII 
@@ -494,9 +494,7 @@ page {
         # cat =t3up: navigation//04; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navwrap     
         navwrap                         = mt-auto w-100
         # cat =t3up: navigation//05; type =string; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navcontainer     
-        container                       = container d-flex justify-content-between   
-        # cat =t3up: navigation//06; type =options[,dropmenue]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navplus
-        navplus                         =        
+        container                       = container d-flex justify-content-between                           =        
         # cat =t3up: navigation//07; type =int [1-10]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:maxlevels
         maxlevels                       = 4     
         # cat =t3up: navigation//08; type =int [1-100]; label =LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:maxitems  

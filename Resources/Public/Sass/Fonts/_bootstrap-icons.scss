@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src:    url('#{$symbolpath}Bootstrapicons/bootstrap-icons.woff2') format('woff2'),
+  src:    url('#{$symbolpath}Bootstrapicons/bootstrap-icons.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}

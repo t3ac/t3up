@@ -2,7 +2,7 @@
       data-namespace-typo3-fluid="true">  
 
     <f:if condition="{SubMenu}">
-        <nav id="subnavigation" class="subnavigation">
+        <nav id="subnavigation" class="d-none d-lg-block subnav">
             <f:cObject typoscriptObjectPath="lib.navigation.leveltitle" />
             <ul class="submenu">
                 <f:for each="{SubMenu}" as="subItem">

@@ -38,11 +38,8 @@ lib.bootstrapaccordion.value                = {$page.components.bootstrapaccordi
 lib.bootstraptabs                           = TEXT
 lib.bootstraptabs.value                     = {$page.components.bootstraptabs}
 
-lib.colornav                                = TEXT
-lib.colornav.value                          = {$page.navigation.color}  
-
-lib.pictureoverlayfunction                  = TEXT
-lib.pictureoverlayfunction.value            = {$page.color.pictureoverlayfunction}
+lib.navcolor                                = TEXT
+lib.navcolor.value                          = {$page.navigation.color}  
 
 lib.navigationplus                          = TEXT
 lib.navigationplus.value                    = {$page.navigation.navplus}
@@ -86,12 +83,11 @@ lib.main {
 		navdir              	< lib.navigation.navdir
 		navstyle     			< lib.navigation.navstyle
 		navcontainer          	< lib.navigation.container 
-		navcolor                < lib.colornav   
+		navcolor                < lib.navcolor   
 		navwrap      			< lib.navigationwrap
 		notlogowrap             < lib.notlogowrap
         pagecolor    			< lib.content.pagecolor
         pictureoverlayfunction  < lib.pictureoverlayfunction
-		plus                	< lib.navigationplus
         showtitle               < lib.header.showtitle
         title        			< lib.content.title	
         toppos       			< lib.header.toppos

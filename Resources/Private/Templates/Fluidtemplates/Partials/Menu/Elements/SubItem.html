@@ -6,15 +6,15 @@
             <f:if condition="{item.current}">
                 <f:then>
                     <li class="{f:if(condition:item.children, then:'navitem')} {f:if(condition:item.current, then:'cur')}" data-show-sub="false">
-                        <f:render partial="Menu/Elements/Link" arguments="{item: item}"/><span class="d-none d-lg-block">&nbsp;</span>
+                        <f:render partial="Menu/Elements/Link" arguments="{item: item}"/><span class="nextlevel d-none d-lg-block">&nbsp;</span>
                 </f:then> 
                 <f:else if="{item.active}">
                     <li class="{f:if(condition:item.children, then:'navitem')} {f:if(condition:item.active, then:'act')}" data-show-sub="false">
-                        <f:render partial="Menu/Elements/Link" arguments="{item: item}"/><span class="d-none d-lg-block">&nbsp;</span>
+                        <f:render partial="Menu/Elements/Link" arguments="{item: item}"/><span class="nextlevel d-none d-lg-block">&nbsp;</span>
                 </f:else>
                 <f:else>
                     <li class="navitem" data-show-sub="false">
-                        <f:render partial="Menu/Elements/Link" arguments="{item: item}"/><span class="d-none d-lg-block">&nbsp;</span>
+                        <f:render partial="Menu/Elements/Link" arguments="{item: item}"/><span class="nextlevel d-none d-lg-block">&nbsp;</span>
                 </f:else>
             </f:if>   
 		</f:then>	

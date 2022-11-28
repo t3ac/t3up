@@ -148,15 +148,15 @@
             </trans-unit>  
             <trans-unit id="padding_class_60">
                 <source>four-fold</source>
-                <target state="translated">Vierfach</target>                
+                <target state="translated">vierfach</target>                
             </trans-unit>    
             <trans-unit id="padding_class_75">
                 <source>five-fold</source>
-               <target state="translated">Fünffach</target>                 
+               <target state="translated">fünffach</target>                 
             </trans-unit>    
             <trans-unit id="padding_class_90">
                 <source>six-fold</source>
-               <target state="translated">Sechsfach</target>                 
+               <target state="translated">sechsfach</target>                 
             </trans-unit>  
         
             
@@ -212,35 +212,19 @@
 		    
 		   /* -- Designs ----------- */
 
- 			<trans-unit id="black">
-			     <source>Black background</source>
-			     <target state="translated">Schwarzer Hintergrund</target>
-		    </trans-unit>  	
-			<trans-unit id="colored">
-			     <source>Colored background</source>
-			     <target state="translated">Farbiger Hintergrund</target>
-		    </trans-unit>  
-			<trans-unit id="darkgrey">
-			     <source>Darkgrey background</source>
-			     <target state="translated">Dunkelgrauer Hintergrund</target>
-		    </trans-unit>			
-            <trans-unit id="grey">
-			     <source>Grey background</source>
-			     <target state="translated">Grauer Hintergrund</target>
-            </trans-unit> 		              
-            <trans-unit id="lightgrey">
-			     <source>Lightgrey background</source>
-			     <target state="translated">Hellgrauer Hintergrund</target>
-            </trans-unit>  
 			<trans-unit id="white">
 			     <source>White background</source>
 			     <target state="translated">Weißer Hintergrund</target>
-		    </trans-unit>	
-		    <trans-unit id="line">
+		    </trans-unit>			
+			<trans-unit id="colored">
+			     <source>Colored background</source>
+			     <target state="translated">Farbiger Hintergrund</target>
+		    </trans-unit>   		    		    		    
+            <trans-unit id="line">
                  <source>With a line</source>
                  <target state="translated">Mit Linie</target>
-            </trans-unit>  
-  
+            </trans-unit>
+
 
 			<trans-unit id="thin">
 			     <source>Thin line</source>

@@ -37,6 +37,12 @@ jQuery(document).ready(function($) {
             event.preventDefault();
    });
    
+
+   $body.on('ontouchend click', '.breadcrumbrow  a.nonav1', function(event) {
+            event.preventDefault();
+   });
+   
+   
    $body.on('ontouchend click', '.breadcrumbrow a.extend ', function(event) {
 	       $(this).parent().siblings().removeClass('act');  
            $(this).parent().toggleClass('act');

@@ -52,7 +52,7 @@ config {
 
     htmlTag.attributes.class               = no-js
 
-    # Spamschutz
+# Spamschutz
     spamProtectEmailAddresses              = 2
     spamProtectEmailAddresses_atSubst      = &#64;
     spamProtectEmailAddresses_lastDotSubst = <span>.</span>

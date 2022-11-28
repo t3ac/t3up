@@ -1,13 +1,14 @@
 @media screen and (min-width: 992px){
 
     li.dropmenue > span                      {cursor: pointer; display: inline-block; }
+    span.nonav1 > a                          {cursor: default;}              
     
     /* Navigation 1: standard **************/
     .standardNav{                           
       nav#menu  {                                 
         > ul                                {list-style: none; margin: 0; display: flex;}
         > ul > li                           {position: relative; order: 2;}
-        > ul > li > p, 
+        > ul > li > span, 
         > ul > li > a                       {cursor: pointer; margin: 0;font-size: $navigationfontsize; font-weight: 500; letter-spacing: .01em; transition: color ease .3s; text-transform: uppercase; padding: 0  .66rem .66rem; 
                                             border-bottom-width: 0.33rem; border-bottom-style: solid; border-bottom-color: transparent; display: block; color: $navLinkColor; display: inline-block;}                        
         > ul > li.cur > a,
@@ -40,7 +41,7 @@
     /* Navigation 2  ***/
     .activeNav{    
                          
-        nav > .nav                          {position: relative; min-height: 1rem;}
+        nav > .nav                          {min-height: 1rem;}
         nav > .nav > li                     {padding: 0; }
         nav > .nav > li > a                 {padding: .5rem 1.5rem; display: inline-block; cursor: pointer; margin: 0; font-size: $navigationfontsize; font-weight: 600;  transition: color ease .3s; text-transform: uppercase;
                                             border-bottom-width: 0.25rem; border-bottom-style: solid; border-bottom-color: transparent; display: block; color: $navLinkColor; display: inline-block;}                        
@@ -77,8 +78,9 @@
       nav#menu  {   
                            
         > ul                                {list-style: none; margin: 0; display: flex;}
-        > ul > li                           {order: 2;}       
-        > ul > li > a                       {font-size: $navigationfontsize; transition: all ease .3s; text-transform: uppercase; padding: 1rem; display: block; width: 100%; text-align: inherit; white-space: nowrap; border-bottom-width: .25rem; border-bottom-style: solid; border-bottom-color: transparent;} 
+        > ul > li                           {order: 2;}     
+        > ul > li > span,   
+        > ul > li > a                       {cursor: pointer; font-size: $navigationfontsize; transition: all ease .3s; text-transform: uppercase; padding: 1rem; display: block; width: 100%; text-align: inherit; white-space: nowrap; border-bottom-width: .25rem; border-bottom-style: solid; border-bottom-color: transparent;} 
         > ul > li.act > a,
         > ul > li > a.closelink             {border-bottom-color: $navLinkHoverColor;}
             

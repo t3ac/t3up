@@ -74,7 +74,8 @@ header {                                  background-color: $headerBgColor; colo
           }
        }
    }
-            
+   
+   .justify-content-end .nav-service .tab-content .tab-pane {right: .66rem;}         
     
   .fsrange                                  {cursor: pointer;  align-self: stretch;}
   .fsrange label                            {display: block; cursor: pointer; margin-bottom: 0;}       

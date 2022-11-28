@@ -10,6 +10,7 @@ $padding = [
             'renderType' => 'selectSingle',
             'items'      => [
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_none', ''],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_0', '0px'],
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5', '4px'],
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_10', '8px'],
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15', '12px'],
@@ -31,6 +32,7 @@ $padding = [
             'renderType' => 'selectSingle',
             'items'      => [
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_none', ''],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_0', '0px'],
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_5', '4px'],
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_10', '8px'],
                 ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15', '12px'],

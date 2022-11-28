@@ -77,6 +77,10 @@ class TtContentLayoutOptions
                     [
                         'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:none',
                         'none'
+                    ],
+                    [
+                        'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white',
+                        'white'
                     ]
                 ]
             ],
@@ -125,6 +129,10 @@ class TtContentLayoutOptions
                     [
                         'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored',
                         'colored'
+                    ],
+                    [
+                        'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:2columns',
+                        '2columns'
                     ],
                 ]
             ],

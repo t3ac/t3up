@@ -28,19 +28,16 @@ TCEFORM.sys_file_reference.crop.config.cropVariants {
 	      1:1 {
 	        title = Quadrat  (1:1)
 	        value = 1
-	      } 
-	      4:5 {
-	        title = klassisches Portraitformat (4:5)
-	        value = 0.8
-	      }	      
+	      }
 	      2:3 {
 	        title = schmales Hochformat (2:3)
 	        value = 0.6666666667
 	      }
-	      1:2 {
-	        title = sehr schmales Hochformat (1:2)
-	        value = 0.5
+	      4:5 {
+	        title = klassisches Portraitformat (4:5)
+	        value = 0.8
 	      }
+
 		}
 	}  
 }
