@@ -104,10 +104,7 @@
             <trans-unit id="padding_class_none">
                 <source>Standard</source>
             </trans-unit>        
-                   
-            <trans-unit id="padding_class_0">
-                <source>0</source>
-            </trans-unit>        
+                        
             <trans-unit id="padding_class_5">
                 <source>extra-small</source>
             </trans-unit> 

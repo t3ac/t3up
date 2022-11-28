@@ -71,8 +71,8 @@ TCEFORM {
                     12px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15 
                     16px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_20
                     24px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30
-                    36px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_40 
-                    48px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_50          
+                    36px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_45 
+                    48px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_60          
             }
         }
     }
@@ -88,8 +88,8 @@ TCEFORM {
                     12px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_15 
                     16px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_20
                     24px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_30
-                    36px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_40 
-                    48px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_50            
+                    36px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_45 
+                    48px = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class_60            
                 }
         }
     }
