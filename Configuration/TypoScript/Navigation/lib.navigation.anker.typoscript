@@ -12,7 +12,6 @@ lib.anker {
 	        1 {
 	            expAll = 1
 	            NO = 1
-	            NO.wrapItemAndSub   = <li class="navitem" role="menuitem">|</li>
 	            NO.ATagParams       = class="navlink" role="menuitem"
 	
 	            NO.after.stdWrap.cObject = CONTENT
@@ -74,11 +73,19 @@ lib.anker {
 
 ################################################################
 
+lib.navigation.wrap = TEXT
+lib.navigation.wrap.value                    = {$page.navigation.navwrap}
+
+lib.navigation.navdir                        =  TEXT
+lib.navigation.navdir.value         	     =  {$page.navigation.navdir}  
+lib.navigation.navdir.insertData             = 1
+
 
 lib.navigation.anker =< lib.contentElement
 lib.navigation.anker {
 	variables {
-		navwrap      		< lib.navigationwrap
+		navwrap      		< lib.navigation.wrap
+		navdir       		< lib.navigation.navdir
 	}
     templateName = OnePager
     dataProcessing {
@@ -126,12 +133,21 @@ lib.navigation.anker {
 
 ################################################################
 
-lib.navigation.sideAnker = COA
-lib.navigation.sideAnker.if.isTrue = {$page.navigation.sideAnker} 
 
-lib.navigation.sideAnker.10 =< lib.contentElement
+lib.sideankerstylefunction                  = TEXT
+lib.sideankerstylefunction.value            = {$page.navigation.sideankerstylefunction}
+
+
+lib.navigation.sideAnker = COA
+lib.navigation.sideAnker.if.isTrue          = {$page.navigation.sideAnker} 
+
+lib.navigation.sideAnker.10                 =< lib.contentElement
 lib.navigation.sideAnker.10 {
-    templateName = SideAnker
+    templateName                            = SideAnker
+    variables {
+        sideankerstyle                      < lib.sideankerstylefunction      
+	 }
+	  
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
         10 {
@@ -174,4 +190,11 @@ lib.navigation.sideAnker.10 {
         }
     }
 }
+
+
+
+
+
+
+
 

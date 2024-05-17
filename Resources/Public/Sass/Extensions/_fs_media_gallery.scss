@@ -1,0 +1,38 @@
+@import 'typo3conf/ext/t3up/Resources/Public/Sass/_grid.scss';
+
+.fs-media-gallery{
+	.Album{	align-items:stretch;flex-wrap:wrap;
+			&.items1>.thumb{width:100%;flex:0 0 auto}
+			&.items2>.thumb{width:50%;flex:0 0 auto}
+			&.items3>.thumb{width:33.33%;flex:0 0 auto}
+			&.items4>.thumb{width:25%;flex:0 0 auto}
+			&.items5>.thumb{width:20%;flex:0 0 auto}
+			&.items6>.thumb{width:16.6666666667%;flex:0 0 auto}
+			&.items7>.thumb{width:14.25%;flex:0 0 auto}
+			&.items8>.thumb{width:12.5%;flex:0 0 auto}
+			&.space0>.thumb{padding-right:0;padding-left:0}
+			
+			&.space1{margin-right:calc(calc(clamp(12px, 2.8vw, 24px) * .25) * -1);margin-left:calc(calc(clamp(12px, 2.8vw, 24px) * .25) * -1)}
+			&.space1>.thumb{padding-right:calc(clamp(12px, 2.8vw, 24px) * .25);padding-left:calc(clamp(12px, 2.8vw, 24px) * .25);padding-bottom:calc(clamp(12px, 2.8vw, 24px) * .5)}
+			&.space2{margin-right:calc(calc(clamp(12px, 2.8vw, 24px) * .5) * -1);margin-left:calc(calc(clamp(12px, 2.8vw, 24px) * .5) * -1)}
+			&.space2>.thumb{padding-right:calc(clamp(12px, 2.8vw, 24px) * .5);padding-left:calc(clamp(12px, 2.8vw, 24px) * .5);padding-bottom:calc(clamp(12px, 2.8vw, 24px) * .5)}
+			&.space3{margin-right:calc(calc(clamp(12px, 2.8vw, 24px) * .75) * -1);margin-left:calc(calc(clamp(12px, 2.8vw, 24px) * .75) * -1)}
+			&.space3>.thumb{padding-right:calc(clamp(12px, 2.8vw, 24px) * .75);padding-left:calc(clamp(12px, 2.8vw, 24px) * .75);padding-bottom:calc(clamp(12px, 2.8vw, 24px) * 1.5)}
+			&.space4{margin-right:calc(calc(clamp(12px, 2.8vw, 24px) *  1) * -1);margin-left:calc(calc(clamp(12px, 2.8vw, 24px) *  1) * -1)}
+			&.space4>.thumb{padding-right:calc(clamp(12px, 2.8vw, 24px) *  1);padding-left:calc(clamp(12px, 2.8vw, 24px) *  1);padding-bottom:calc(clamp(12px, 2.8vw, 24px) *  2)}
+			&.space5{margin-right:calc(calc(clamp(12px, 2.8vw, 24px) * 1.5) * -1);margin-left:calc(calc(clamp(12px, 2.8vw, 24px) * 1.5) * -1)}
+			&.space5>.thumb{padding-right:calc(clamp(12px, 2.8vw, 24px) * 1.5);padding-left:calc(clamp(12px, 2.8vw, 24px) * 1.5);padding-bottom:calc(clamp(12px, 2.8vw, 24px) *  3)}
+
+			.thumb.Partials-Mediaalbum .description{background:#fff;border-left:1px solid #dadada;border-right:1px solid #dadada;border-bottom:1px solid #dadada}
+			
+			.image{overflow:hidden;display:flex;justify-content:center;align-items:center}
+			.image img{width:100%;height:auto;object-fit:cover;min-height:100%;opacity:0.9;transition:all ease 0.3s}
+			.image img:hover{opacity:1}
+			.image.format-wide{aspect-ratio:1.7777777778}
+			.image.format-normal{aspect-ratio:1.3333333333}
+			.image.format-portrait{aspect-ratio:0.8}
+			.image.format-portrait img{width:auto;height:100%;min-width:100%;max-width:inherit}
+			.image.format-square{aspect-ratio:1}
+			.image.format-square img{width:auto;height:100%;min-width:100%;max-width:inherit}
+	}
+}

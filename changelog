@@ -1,0 +1,8 @@
+*** 29.09.2023
+_header.scss 				erweitert
+ext_localconf.php 			um a11y Abfrage erweitert
+*** 24.10.2023
+Sideanker Farben erstellt, Konstanten eingefügt für Farbe des Listenpunkts des Sideankers, xlf Dateien erweitert
+Sass Dateien geändert
+a11y Feste Werte für Seite und News 1010 und 1002
+Layout RightMarginalLayout angepasst, ohne subnavigation

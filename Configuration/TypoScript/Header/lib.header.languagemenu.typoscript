@@ -1,3 +1,0 @@
-lib.header.languagemenu = TEXT
-lib.header.languagemenu.value = {$page.header.languagemenu}
-lib.header.languagemenu.insertData = 1

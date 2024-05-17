@@ -1,0 +1,40 @@
+
+/* g Constante from constant.typoscript default: clamp(12px, 2.8vw, 24px)*/ 
+$v1:  calc(#{$g} * .25); /* .25rem ~ 4px */
+$v15: calc(#{$g} * (.75 / 2)); /* .375rem ~ 6px */
+$v2:  calc(#{$g} * .5); /* .5rem ~ 8px */
+$v3:  calc(#{$g} * .75); /* .75rem ~ 12px */
+$v4:  calc(#{$g} *  1); /* 1rem ~ 16px */
+$v45: calc(#{$g} *  1.25); /* 1rem ~ 16px */
+$v5:  calc(#{$g} * 1.5); /* 1.5rem ~ 24px */
+$v6:  calc(#{$g} *  2); /* 2rem ~ 32px */
+$v7:  calc(#{$g} *  3); /* 3rem ~ 48px */
+
+
+$-v1:  calc(#{$v1} * -1); /* .25rem */
+$-v15: calc(#{$g} * (.75 / 2) * -1); /* -.375rem */
+$-v2:  calc(#{$v2} * -1); /* .5rem */
+$-v3:  calc(#{$v3} * -1); /* .75rem */
+$-v4:  calc(#{$v4} * -1); /* 1rem */
+$-v45: calc(#{$v45} * -1); /* 1rem */
+$-v5:  calc(#{$v5} * -1); /* 1.5rem */
+$-v6:  calc(#{$v6} * -1); /* 2rem */
+$-v7:  calc(#{$v7} * -1); /* 3rem */
+
+$50: calc(50% - #{$v15});
+$33: calc(33.33% - #{$v2});
+$34: calc(33.33% - #{$v3});
+$25: calc(25% - #{$v3});
+$20: calc(20% - #{$v1});
+
+$white: #fff;
+$black: #000;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;

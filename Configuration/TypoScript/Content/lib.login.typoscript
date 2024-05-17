@@ -1,6 +1,6 @@
-lib.login = COA
-lib.login {
-  if.isTrue                         = {$page.header.loginbutton}
+lib.toplogin = COA
+lib.toplogin {
+  if.isTrue                         = {$page.top.loginbutton}
   10 < plugin.tx_felogin_pi1 
   10 { 
     templateFile                    = {$page.files.logintemplate}

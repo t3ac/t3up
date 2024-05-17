@@ -1,51 +1,66 @@
 jQuery(document).ready(function($) {
+	
     
    var $body = $('body');
+
 	
    container = parseInt($('.container').css('max-width'));
-	
+   
+
    $(window).bind('scroll', function () {
        if ($(window).scrollTop() > 45) {
-            $('#modal').remove();
             $('.page').removeClass('trans');
             $('.page').unbind('click');
       }
 	});
 	
+    /* Smooth sideanker *********************************************************************************************************/	
+   
+   $body.on('ontouchend click', '#sideanker  a', function(event) {
+       $('#sideanker *').removeClass('act');    
+   })
+	
 	$('a[href*=\\#].smooth').on('click', function (e) {		
-		 	e.preventDefault();
-		 	var target = this.hash;
-		 	var $target = $(target);
-		 	var $target = $target.offset().top;
-		 	 $target = $target -100;
-		 	$('html, body').stop().animate({
-		  		'scrollTop': $target
-		 	}, 900, 'swing', function () {
-		  	window.location.hash = target;
-		 	});
-		});		
+	 	e.preventDefault();
+	 	var target = this.hash;
+	 	var $target = $(target);
+	 	var $target = $target.offset().top;
+	 	 $target = $target -100;
+	 	$('html, body').stop().animate({
+	  		'scrollTop': $target
+	 	}, 900, 'swing', function () {
+	  	window.location.hash = target;
+	 	});
+	});		
+	
+    
+    /* sideanker *********************************************************************************************************/  
 
-    $(".panel-heading a").click(function() {
-        $('#tx-solr-search-functions').addClass('hg');
-        $(window).scrollTop(0);
-    });
-    
-    
+   $body.on('ontouchend click', '.main-nav__burger', function(event) {
+       $(this).toggleClass('act');
+       $(this).siblings().toggleClass('act');
+       $('.overlay').fadeToggle();
+	});
+   
+   $body.on('ontouchend click', '#sideanker div.act a', function(event) {
+      $(".overlay").fadeOut();  ;
+ 	});
+ 	
     /* Nonav *********************************************************************************************************/  
 
    $body.on('ontouchend click', '.breadcrumbrow  .nonav1 > a', function(event) {
-            event.preventDefault();
+        event.preventDefault();
    });
    
 
    $body.on('ontouchend click', '.breadcrumbrow  a.nonav1', function(event) {
-            event.preventDefault();
+        event.preventDefault();
    });
    
    
    $body.on('ontouchend click', '.breadcrumbrow a.extend ', function(event) {
-	       $(this).parent().siblings().removeClass('act');  
-           $(this).parent().toggleClass('act');
+       $(this).parent().siblings().removeClass('act');  
+       $(this).parent().toggleClass('act');
    });  
 
     /* Fontsize *********************************************************************************************************/
@@ -82,14 +97,6 @@ jQuery(document).ready(function($) {
             checkDarkMode();
          }
      });
-     
-    $body.on('click', '#modal .btn-close', function(event) {  
-
-       $('#modal').remove();
-
-       $('.page').unbind('click');
-
-     });
 
     /* Service Area *********************************************************************************************/
      $("#service_nav > li > a").click(function(){
@@ -97,11 +104,14 @@ jQuery(document).ready(function($) {
         $(this).parent().find('.tab-pane').toggleClass('active show');
     });
 
+     $(".pageAllInfo > span").click(function(){
+        $(this).siblings().find('li').addClass('active show');
+    });     
      
-    $body.on('click', '#service_nav .btn-close', function(event) {  
-       $('#service_nav .tab-pane').removeClass('active show');
+     
+    $body.on('click', '.btn-close', function(event) {  
+       $(this).parent().removeClass('active show');
     });
-	
 
 	/* Main ************************************************************************************************************/
 	$('main').css('padding-bottom',$('footer').height()); 
@@ -110,8 +120,12 @@ jQuery(document).ready(function($) {
 		$('main').css('padding-bottom',$('footer').height()); 	
 	});
    		
+   
+   $('main').css('padding-bottom', footer + 'px');
    		
 	/* Footer **********************************************************************************************************/
+	footer = $('footer').height();
+	
 	if ( $(window).width() < 576 ) {
 	   	$('.footer1 .trigger').click(function(){
 			$(this).next().slideToggle( "slow" );
@@ -121,12 +135,6 @@ jQuery(document).ready(function($) {
 			} else {
 				$(this).attr({'aria-expanded': 'true'});
 			}
-		})
-   	} 
-   	
-	if ( $(window).width() > 576 ) {
-	   	$('#tx-solr-search-functions h3 > a').click(function(){
-			$(this).parent().parent().siblings().toggleClass('collapse');
 		})
    	} 
    	

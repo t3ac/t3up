@@ -1,102 +1,161 @@
 <?php
 
-/*
- * For the full copyright and license information, please read the
- * LICENSE file that was distributed with this source code.
- */
+defined('TYPO3') || die('Access denied.');
 
-defined('TYPO3_MODE') or die();
-
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor;
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor::class] = [
-  'className' => T3ac\T3up\Xclass\GalleryProcessor::class
+    'className' => T3ac\T3up\Xclass\GalleryProcessor::class
 ];
 
 
-
-
-$boot = function () {
+call_user_func(static function () {
     
-    #####################################################################################################
-        
-    # Abfrage, ob es im Backend unter Extensions eine Configurationsdatei gibt, wenn ja dann soll diese ausgeführt werden.    
+    
+    # Abfrage, ob es im Backend unter Extensions eine Configurationsdatei gibt, wenn ja dann soll diese ausgeführt werden.
     # die Konfiguration für das Backend ist in der Datei ext_conf_template.txt
     # The extension configuration -----------------------------------------------------------------------#
+   
     
     if (class_exists('TYPO3\CMS\Core\Configuration\ExtensionConfiguration')) {
         $extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
             \TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class
-        );
+            );
         $Configuration = $extensionConfiguration->get('t3up');
     } else {
-		$Configuration = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get('t3up');
+        $Configuration = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get('t3up');
         if (!is_array($Configuration)) {
             $Configuration = unserialize($Configuration);
         }
     }
 
-    # Enable/dissable the TCEForm/ImagePredefinitions -> addPageTSConfig  
     if ($Configuration['TCEForm']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/TCEForm.typoscript">');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/TCEImagePreDefinitions.typoscript">');
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/TCEForm.tsconfig'");
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/TCEImagePreDefinitions.tsconfig'");
     }
     
-
     # Enable/dissable the TCEMain -> addPageTSConfig
     if ($Configuration['TCEMain']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/TCEMain.typoscript">');
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/TCEMain.tsconfig'");
+    }
+    
+    # Enable/dissable the TCEMain -> addPageTSConfig
+    if ($Configuration['TCEFrames']) {
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Design.tsconfig'");
     }
     
     # Enable/dissable the RTE -> addPageTSConfig
     if ($Configuration['RTE']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/Rte.typoscript">');
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Rte.tsconfig'");
     }
     
     # Enable/dissable the UserTS -> addUserTSConfig
     if ($Configuration['UserTs']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/User.typoscript">');
-    } 
-        
+        ExtensionManagementUtility::addUserTSConfig("@import 'EXT:t3up/Configuration/TsConfig/User.tsconfig'");
+    }
+    
+    # Layouts #####################################
+    
     # Enable/dissable the Standard-Layout -> addPageTSConfig
     if ($Configuration['StandardLayout']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/Layouts/StandardLayout.typoscript">');
-    }  
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/StandardLayout.tsconfig'");
+    }
     
     # Enable/dissable the OneColumn-Layout -> addPageTSConfig
     if ($Configuration['OneColumnLayout']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/Layouts/OneColumnLayout.typoscript">');
-    }  
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/OneColumnLayout.tsconfig'");
+    }
     
-    # Enable/dissable the OneColumnContainer-Layout -> addPageTSConfig
-    if ($Configuration['OneColumnContainerLayout']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/Layouts/OneColumnContainerLayout.typoscript">');
-    }  
-    
-    # Enable/dissable the 3Col-Layout -> addPageTSConfig
-    if ($Configuration['ThreeColumnLayout']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/Layouts/ThreeColumnLayout.typoscript">');
-    } 
-    
-    # Enable/dissable the Right Marginal-Layout -> addPageTSConfig
-    if ($Configuration['RightMarginalLayout']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/Layouts/RightMarginalLayout.typoscript">');
-    } 
-          
     # Enable/dissable the LeftNavigationLayout -> addPageTSConfig
     if ($Configuration['LeftNavigationLayout']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/LeftNavigationLayouts.typoscript">');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/LeftNavigationLayouts/setup.typoscript">');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptConstants('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/LeftNavigationLayouts/constants.typoscript">');
-    } 
- 
+        ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TsConfig/LeftNavigationLayouts/setup.tsconfig'");
+        ExtensionManagementUtility::addTypoScriptConstants("@import 'EXT:t3up/Configuration/TsConfig/LeftNavigationLayouts/constants.tsconfig'");
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/LeftNavigationLayout.tsconfig'");
+    }
+    
+    # Enable/dissable the LeftNavigationMarginalLayout -> addPageTSConfig
+    if ($Configuration['LeftNavigationMarginalLayout']) {
+        ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TsConfig/LeftNavigationLayouts/setup.tsconfig'");
+        ExtensionManagementUtility::addTypoScriptConstants("@import 'EXT:t3up/Configuration/TsConfig/LeftNavigationLayouts/constants.tsconfig'");
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/LeftNavigationMarginalLayout.tsconfig'");
+    }
+    
     # Enable/dissable the RightNavigationLayout -> addPageTSConfig
     if ($Configuration['RightNavigationLayout']) {
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/RightNavigationLayouts.typoscript">');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptSetup('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/RightNavigationLayouts/setup.typoscript">');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScriptConstants('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3up/Configuration/TsConfig/RightNavigationLayouts/constants.typoscript">');  
-    } 
-};
+        ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TsConfig/RightNavigationLayouts/setup.tsconfig'");
+        ExtensionManagementUtility::addTypoScriptConstants("@import 'EXT:t3up/Configuration/TsConfig/RightNavigationLayouts/constants.tsconfig'");
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/RightNavigationLayout.tsconfig'");
+    }
+    
+    # Enable/dissable the RightMarginalLayout -> addPageTSConfig
+    if ($Configuration['RightMarginalLayout']) {
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/RightMarginalLayout.tsconfig'");
+    }
+    
+    # Enable/dissable the ContentRightMarginalLayout -> addPageTSConfig
+    if ($Configuration['ContentRightMarginalLayout']) {
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/ContentRightMarginalLayout.tsconfig'");
+    }
+    
+    # Enable/dissable the ContentRightMarginalLayout -> addPageTSConfig
+    if ($Configuration['ContentLeftMarginalLayout']) {
+        ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/ContentLeftMarginalLayout.tsconfig'");
+    }
+    
 
-$boot();
-unset($boot);
+    # Extensions #####################################
+    
+
+    if (ExtensionManagementUtility::isLoaded('solr')) {
+        ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Solr/solr.typoscript'");
+    }
+
+    if (ExtensionManagementUtility::isLoaded('ke_search')) {
+        ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/KeSearch/kesearch.typoscript'");
+    }
+    
+    if (ExtensionManagementUtility::isLoaded('jpfaq')) {
+        ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Jpfaq/jpfaq.typoscript'");
+    }
+    
+    if (ExtensionManagementUtility::isLoaded('powermail')) {
+        ExtensionManagementUtility::addTypoScriptConstants("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Powermail/constants.typoscript'");
+        ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Powermail/powermail.typoscript'");
+    }
+    
+    if (ExtensionManagementUtility::isLoaded('news')) {
+        ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/News/tx_news.typoscript'");
+    }
+    
+    if (ExtensionManagementUtility::isLoaded('ods_osm')) {
+        ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Odsom/setup.typoscript'");
+    }
+    
+    if (ExtensionManagementUtility::isLoaded('fs_media_gallery')) {
+        ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/FsMediaGallery/setup.typoscript'");
+        ExtensionManagementUtility::addTypoScriptConstants("@import 'EXT:t3up/Configuration/TypoScript/Extensions/FsMediaGallery/constants.typoscript'");
+    }
+    
+    if (ExtensionManagementUtility::isLoaded('min')) {
+        ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Min/min.typoscript'");
+    }
+    
+    $icons = [
+        'apps-pagetree-folder-contains-brofix' => 'brofix.svg',
+    ];
+    
+    $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+    foreach ($icons as $identifier => $path) {
+        if (!$iconRegistry->isRegistered($identifier)) {
+            $iconRegistry->registerIcon(
+                $identifier,
+                \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+                ['source' => 'EXT:t3up/Resources/Public/Icons/' . $path]
+                );
+        }
+    }
+    
+    
+});
+    

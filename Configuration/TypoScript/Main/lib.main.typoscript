@@ -1,6 +1,6 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Content/" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Header/" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TypoScript/Navigation/" extensions="typoscript">
+@import 'EXT:t3up/Configuration/TypoScript/Content/*.typoscript'
+@import 'EXT:t3up/Configuration/TypoScript/Header/*.typoscript'
+@import 'EXT:t3up/Configuration/TypoScript/Navigation/*.typoscript'
 
 
 # BackendLayoutHelper #
@@ -11,6 +11,7 @@ lib.backendLayout {
     token = pagets__
   }
 }
+
 
 lib.social 				                    = COA
 lib.social.10 								< lib.socialmedia
@@ -25,18 +26,24 @@ lib.social.20.wrap                          = <div class="socialsideleft">|</div
 
 ###################################################################
 
-lib.navigation.breadcrumb                   = TEXT
-lib.navigation.breadcrumb.data              = field:breadcrumb 
-lib.navigation.breadcrumb.insertData        = 1
-
-lib.breadcrumbstyle                         = TEXT
-lib.breadcrumbstyle.value                   = {$page.navigation.breadcrumbstyle}
-
 lib.bootstrapaccordion                      = TEXT
 lib.bootstrapaccordion.value                = {$page.components.bootstrapaccordion}
 
 lib.bootstraptabs                           = TEXT
 lib.bootstraptabs.value                     = {$page.components.bootstraptabs}
+
+lib.breadcrumb                              = TEXT
+lib.breadcrumb.data                         = field:breadcrumb 
+lib.breadcrumb.insertData                   = 1
+
+lib.breadcrumbstyle                         = TEXT
+lib.breadcrumbstyle.value                   = {$page.breadcrumb.breadcrumbstyle}
+
+lib.breadcrumbstart                         = TEXT
+lib.breadcrumbstart.value                   = {$page.breadcrumb.breadcrumbstart}
+
+lib.languagemenu                            = TEXT
+lib.languagemenu.value                      = {$page.top.languagemenu} 
 
 lib.navcolor                                = TEXT
 lib.navcolor.value                          = {$page.navigation.color}  
@@ -44,14 +51,20 @@ lib.navcolor.value                          = {$page.navigation.color}
 lib.navigationplus                          = TEXT
 lib.navigationplus.value                    = {$page.navigation.navplus}
 
+lib.navigationwrap                          = TEXT
+lib.navigationwrap.value                    = {$page.navigation.navwrap}
+
 lib.notlogowrap                             = TEXT
 lib.notlogowrap.value                       = {$page.header.notlogowrap}
 
+lib.pictureoverlayfunction                  = TEXT
+lib.pictureoverlayfunction.value            = {$page.color.pictureoverlayfunction}
+
 # Fluid_styled_content Elements ###########################################################
 lib.contentElement {
-    layoutRootPaths.10         				= EXT:t3up/Resources/Private/Templates/ContentElement/Layouts/
-    partialRootPaths.10        				= EXT:t3up/Resources/Private/Templates/ContentElement/Partials/    
-    templateRootPaths.10       				= EXT:t3up/Resources/Private/Templates/ContentElement/Templates/
+    layoutRootPaths.10         				= {$page.files.contentElement.layoutRootPaths}
+    partialRootPaths.10        				= {$page.files.contentElement.partialRootPaths}
+    templateRootPaths.10       				= {$page.files.contentElement.templateRootPaths}
     variables {
         pictureoverlayfunction 				< lib.pictureoverlayfunction
         bootstrapaccordion      			< lib.bootstrapaccordion
@@ -63,26 +76,28 @@ lib.main = FLUIDTEMPLATE
 lib.main {
     
     templateName < lib.backendLayout
- 
-    layoutRootPaths.10     = {$page.files.fluidtemplates.layoutRootPaths}
-    partialRootPaths.10    = {$page.files.fluidtemplates.partialRootPaths}
-    templateRootPaths.10   = {$page.files.fluidtemplates.templateRootPaths}
-      
+
+    layoutRootPaths.10         				= {$page.files.fluidtemplates.layoutRootPaths}
+    partialRootPaths.10        				= {$page.files.fluidtemplates.partialRootPaths}
+    templateRootPaths.10       				= {$page.files.fluidtemplates.templateRootPaths}
+    
     dataProcessing < lib.navigation
 	variables {
 	
 		bootstrapaccordion  	< lib.bootstrapaccordion
 		bootstraptabs       	< lib.bootstraptabs
-        breadcrumb          	< lib.navigation.breadcrumb
+        breadcrumb          	< lib.breadcrumb
 		breadcrumbstyle     	< lib.breadcrumbstyle
-		inside              	< lib.navigation.inside		
-        logopos             	< lib.navigation.logopos
+		breadcrumbpos        	< lib.breadcrumbpos
+		breadcrumbstart        	< lib.breadcrumbstart	
+		inside              	< lib.header.inside		
+		languagestyle 	      	< lib.languagemenu	
+        logopos             	< lib.header.logopos
         login               	< lib.login
 		mobil               	< lib.header.mobilbutton   
-		moreinformation     	< lib.navigation.moreinformation  
 		navdir              	< lib.navigation.navdir
 		navstyle     			< lib.navigation.navstyle
-		navcontainer          	< lib.navigation.container 
+		headcontainer          	< lib.header.container 
 		navcolor                < lib.navcolor   
 		navwrap      			< lib.navigationwrap
 		notlogowrap             < lib.notlogowrap
@@ -109,13 +124,7 @@ lib.main {
           
         media < styles.content.get
         media.select.where         = colPos = 3
-        media.slide                = {$page.components.mediaslide}
         media.wrap                 = |
-        
-        person < styles.content.get      
-        person.select.where 		= colPos = 4
-        person.slide 				= -1
-        person.wrap 				= | 
         
 	  }
 	  

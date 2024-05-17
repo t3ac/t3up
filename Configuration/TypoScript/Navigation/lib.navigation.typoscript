@@ -17,7 +17,6 @@ lib.navigation {
       entryLevel = {$page.navigation.subnavlevel}
       expandAll = 1
       as = SubMenu
-      maxItems = {$page.navigation.maxitems}
     }
     
     ### Breadcrumb - Menu 
@@ -34,6 +33,7 @@ lib.navigation {
     50 {
         languages = auto
         as = menuLanguage
-        if.isTrue = {$page.header.languagemenu}
     }
+     
+    
 }

@@ -1,0 +1,3 @@
+lib.header.container                   		=  TEXT
+lib.header.container.value         			=  {$page.header.headcontainer}  
+lib.header.container.insertData               = 1

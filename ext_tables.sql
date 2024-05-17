@@ -5,10 +5,10 @@ CREATE TABLE pages (
     showtitle int(11) DEFAULT '0' NOT NULL,
     deltitle int(11) DEFAULT '0' NOT NULL,    
     breadcrumb int(11) DEFAULT '0' NOT NULL,  
-	basecolor varchar(60) DEFAULT '' NOT NULL,
     hidenav int(11) DEFAULT '0' NOT NULL,
     nonav int(11) DEFAULT '0' NOT NULL,
     previousnext int(11) DEFAULT '0' NOT NULL,
+	pagecolor varchar(60) DEFAULT '' NOT NULL,
 );
 
 

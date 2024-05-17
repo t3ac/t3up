@@ -1,0 +1,127 @@
+.tx-jpfaq{
+	ul 										{ margin: 0; padding: 0; }
+
+	.jpfaqList  li 							{list-style: none;	margin:  0;	padding: 0; background: rgba(255,255,255,.65); border: 1px solid rgba($baseTextColor,.15); border-top: 0; transition: all ease 0.3s;}
+	.jpfaqList  li:hover 					{background: rgba(255,255,255,1);}	
+	.jpfaqList  li:first-of-type 			{border-top: 1px solid rgba($baseTextColor,.15); border-radius: .5rem .5rem 0 0;; }	
+	.jpfaqList  li:last-of-type 			{border-radius: 0  0 .5rem .5rem; }	
+	.jpfaqList  li .h3   					{cursor: pointer; padding: .25rem 0 .25rem  .75rem; margin: 0; }
+	.jpfaqList  li .h3::after           	{content: '+';  font-weight: normal!important; transition: all ease 0.3s; font-size: 125%; background-color: #dadada; padding: 1rem 0.6rem; color: $baseTextColor;  margin: -.25rem 0 -.25rem .25rem;}
+	.jpfaqList  li .questionUnfolded        {background: rgba(255,255,255,1);}	
+	.jpfaqList  li .questionUnfolded::after	{content: '–'; transform: rotate(-180deg);}
+
+
+	.jpfaqList .jpfaqAnswer                 {border-top: 1px solid rgba($baseTextColor,.05); padding-left: .75rem; padding-right: .75rem; padding-top: .75rem; }																					
+
+
+
+	.jpfaqAll 								{cursor: pointer; margin-bottom: .75rem;}
+
+	.jpfaqShowAll::before,
+	.jpfaqHideAll::before 					{content: '\F055'; font-family: $symbol; color: $baseTextColor;}
+	.jpfaqHideAll::before  					{content: '\F056';}
+
+
+	#jpfaqSearch label                      {display: none}
+
+}
+
+
+.tx-jpfaq label,
+.tx-jpfaq .jpfaqHideAll,
+.tx-jpfaq .toggleTriggerContainer,
+.tx-jpfaq #jpfaq-filter-count,
+.jpfaqFinfo {
+	display: none;
+}
+
+.tx-jpfaq form label {
+	display: block;
+}
+
+.tx-jpfaq .jpfaqSpinner {
+	background-image: url('/typo3conf/ext/jpfaq/Resources/Public/Images/jpfaqSpinner.gif');
+	background-size: 32px 32px;
+	width: 32px;
+	height: 32px;
+	margin: 10% 25%;
+	display: block;
+}
+
+.jpfaqQuestionCommentContainer,
+.jpfaqCatCommentContainer {
+	position: relative;
+	max-width: 480px;
+}
+
+.jpfaqAddCommentForm {
+	display: none;
+	padding: 16px;
+	margin-bottom: 16px;
+	border: 1px solid #ccc;
+}
+
+.jpfaqAddCommentForm textarea {
+	width: 100%;
+}
+
+.jpfaqCommentFormIntroHeader,
+.jpfaqCatCommentFormIntroHeader {
+	margin: 10px 0 0;
+}
+
+.jpfaqCommentFormIntroText {
+	font-size: 90%;
+}
+
+.jpfaqQuestionComment label,
+.jpfaqCatComment label {
+	margin-top: 10px;
+}
+
+.jpfaqCommentFieldWarning {
+	border: 2px solid red !important;
+}
+
+.jpfaqQuestionHelpfulText {
+	font-size: 90%;
+}
+
+.jpfaqQuestionHelpful {
+	margin-left: 10px;
+}
+
+.jpfaqAnswerIsHelpfulThankYouText {
+	font-size: 90%;
+	font-weight: bold;
+}
+
+/* include fontawesome for the close buttons */
+.jpfaqCatCommentFormClose .fa-times,
+.jpfaqCommentFormClose .fa-times,
+.jpfaqThanks .fa-times {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	cursor: pointer;
+	font-size: 120%;
+}
+
+.jpfaqThanks {
+	padding: 16px;
+	margin-bottom: 16px;
+	border: 1px solid #ccc;
+}
+
+.jpfaqThanksText {
+	font-weight: bold;
+}
+
+.jpfaqThanksComment {
+	font-style: italic;
+}
+
+.jpfaqThanksComment,
+.jpfaqThanksNameEmail {
+	font-size: 80%;
+}

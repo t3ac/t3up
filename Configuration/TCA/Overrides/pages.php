@@ -1,6 +1,19 @@
 <?php
 defined('TYPO3_MODE') or die();
 
+
+(static function (): void {
+    
+    $GLOBALS['TCA']['pages']['columns']['module']['config']['items'][] = [
+        'Brofix',
+        'brofix',
+        'apps-pagetree-folder-contains-brofix',
+    ];
+    $GLOBALS['TCA']['pages']['ctrl']['typeicon_classes']['contains-brofix']
+    = 'apps-pagetree-folder-contains-brofix';
+    
+})();
+
 $pagesColumns = [
     'showtitle' => [
         'exclude' => true,
@@ -42,27 +55,25 @@ $pagesColumns = [
             'default' => 0
         ]
     ],   
-    'basecolor' => [
-           'exclude' => true,
-           'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor',
-           'config' => [
-               'type' => 'select',
-               'renderType' => 'selectSingle',
-               'items' => [
-                   ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor-no', ''],
-                   ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor-blue', 'blue'],
-                   ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor-orange', 'orange'],
-                   ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor-red', 'red'],
-                   ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor-green', 'green'],
-                   ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor-violett', 'violett'],
-                   ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor-yellow', 'yellow'],
-                   ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor-grey', 'grey'],          
-                   ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor-turquoise', 'turquoise'], 
-                   ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor-darkblue', 'darkblue'],        
-                   ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:basecolor-darkgrey', 'darkgrey'],                   
-                   ],
-               'default' => ''
-           ]
+    'pagecolor' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:pagecolor',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:pagecolor-no', ''],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:pagecolor-blue', 'blue'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:pagecolor-orange', 'orange'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:pagecolor-red', 'red'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:pagecolor-green', 'green'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:pagecolor-violett', 'violett'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:pagecolor-yellow', 'yellow'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:pagecolor-grey', 'grey'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:pagecolor-turquoise', 'turquoise'],
+            ],
+            'default' => ''
+        ]
     ],
     'previousnext' => [
         'exclude' => true,
@@ -77,7 +88,7 @@ $pagesColumns = [
 
 $GLOBALS['TCA']['pages']['palettes']['t3up'] = [
     'canNotCollapse' => true,
-    'showitem' => 'basecolor,--linebreak--,showtitle,deltitle,--linebreak--,breadcrumb,previousnext,--linebreak--,hidenav,nonav'
+    'showitem' => 'pagecolor,--linebreak--,showtitle,deltitle,--linebreak--,breadcrumb,previousnext,--linebreak--,hidenav,nonav'
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $pagesColumns);

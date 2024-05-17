@@ -2,24 +2,28 @@
 /**********************************************************************
  * Extension Manager/Repository config file for Sitepackage ext "t3up".
  *********************************************************************/
-/** @var string $_EXTKEY */
-$EM_CONF[$_EXTKEY] = [
+
+$EM_CONF[$_EXTKEY] = array (
     'title'            => 'T3UP - Basic Installation',
     'description'      => 'T3UP - Distribution.',
-    'version'          => '1.0.2',
+    'version'          => '12.0.01',
     'state'            => 'stable',
     'category'         => 'templates',
     'author'           => 'Michael Lang',
     'author_email'     => 'michael.lang@h-da.de',
     'author_company'   => 'h_da Hochschule Darmstadt',
-    'uploadfolder'     => false,
-    'createDirs'       => '',
-    'clearCacheOnLoad' => true,
-    'constraints'      => [
-        'depends'   => [
-            'typo3'            => '10.4.0-11.5.99'
-        ],
-        'conflicts' => [],
-        'suggests'  => [],
-    ],
-];
+    'constraints' =>
+    array (
+        'depends' =>
+        array (
+            'typo3' => '11.5.0-12.4.99',
+        ),
+        'conflicts' =>
+        array (
+        ),
+        'suggests' =>
+        array (
+        ),
+    ),
+);
+

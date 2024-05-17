@@ -1,167 +1,83 @@
-  /**/
-  .ce-gallery img                                              {display: block;  max-width: 100%;  height: auto;   width: 100%;}
+/* Gallery */
+.ce-gallery img												{display: block;	max-width: 100%;	height: auto;	width: 100%;}
 
-  .ce-border,
-  .ce-border img                                                {margin: 0 !important;}
-  
-  .ce-center .ce-outer                                          {position: relative; float: right; right: 50%;}
-  .ce-center .ce-inner                                          {position: relative; float: right; right: -50%;}
+.ce-border,
+.ce-border img												{margin: 0 !important;}
+	
+.ce-center .ce-outer										{position: relative; float: right; right: 50%;}
+.ce-center .ce-inner										{position: relative; float: right; right: -50%;}
  
-  .ce-gallery img                                               {display: block; height: auto}
-  .ce-border img                                                {border: $borderWidth solid $borderColor;
-                                                                padding: $borderPadding;}
-  .ce-align-left                                                {text-align: left;}
-  .ce-align-center                                              {text-align: center;}
-  .ce-align-right                                               {text-align: right;}
-  
-  .ce-table td, .ce-table th                                    {vertical-align: top;}
-  
-  .ce-gallery iframe                                            {border-width: 0;}
-  
-  .ce-border iframe                                             {border: $borderWidth solid $borderColor;
-                                                                padding: $borderPadding;}
-  
-  .ce-gallery figure                                            {display: block; /*margin: 0;*/}
-  .ce-gallery figcaption                                        {display: block; font-style: italic; padding: 5px 0 10px }
+.ce-gallery img												{display: block; height: auto}
+.ce-border img												{border: $borderWidth solid $borderColor; padding: $borderPadding;}
+.ce-align-left												{text-align: left;}
+.ce-align-center											{text-align: center;}
+.ce-align-right												{text-align: right;}
+	
+.ce-table td, .ce-table th									{vertical-align: top;}
+	
+.ce-gallery iframe											{border-width: 0;}
+.ce-border iframe											{border: $borderWidth solid $borderColor; padding: $borderPadding;}
+	
+.ce-gallery figure											{display: block;}
+.ce-gallery figcaption										{display: block; font-style: italic; padding: $v1 $v2 }
 
-  .ce-textpic, .ce-image, .ce-nowrap .ce-bodytext, 
-  .ce-gallery, .ce-row, .ce-uploads li, .ce-uploads div         {overflow: hidden;}
-  
-  
-  .ce-intext.ce-right .ce-gallery, .ce-intext.ce-left .ce-gallery {margin-bottom: $textMargin;}
-  .ce-above .ce-gallery                                          {margin-bottom: 0;}
+.ce-textpic, .ce-image, .ce-nowrap .ce-bodytext, 
+.ce-gallery, .ce-row, .ce-uploads li, .ce-uploads div		{overflow: hidden;}
+		
+.ce-intext.ce-right .ce-gallery, .ce-intext.ce-left .ce-gallery {margin-bottom: 0;}
+.ce-above .ce-gallery										{margin-bottom: $v3;}
 
-  .ce-intext.ce-right .ce-gallery                               {margin-left: $textMargin;}
-  .ce-intext.ce-left .ce-gallery                                {margin-right: $textMargin;}
-  .ce-below .ce-gallery                                         {margin-top: $textMargin;}
-  
-  .ce-column:last-child                                         {margin-right: 0;}
-  
-  .ce-row                                                       {margin-bottom: $rowSpacing;}
-  .ce-row:last-child                                            {margin-bottom: 0;}
-  
-  .ce-left .ce-gallery, .ce-column                              {float: left;}
-  .ce-right .ce-gallery                                         {float: right;}
-  
-  .ce-above .ce-bodytext                                        {clear: both;}
-  .ce-intext.ce-left ol, .ce-intext.ce-left ul                  {padding-left: 40px; overflow: auto;}
-  
-  .ce-textpic > *.above                                         {clear: both}     
+.ce-intext.ce-right .ce-gallery								{margin-left: $v3;}
+.ce-intext.ce-left .ce-gallery								{margin-right: $v3;}
+.ce-below .ce-gallery										{margin-top: $v3;}
+	
+.ce-column:last-child										{margin-right: 0;}
+	
+.ce-row														{margin-bottom: $v3;}
+.ce-row:last-child											{margin-bottom: 0;}
+	
+.ce-left .ce-gallery, .ce-column							{float: left;}
+.ce-right .ce-gallery										{float: right;}
+	
+.ce-above .ce-bodytext										{clear: both;}
+.ce-intext.ce-left ol, .ce-intext.ce-left ul				{padding-left: $v5; overflow: auto;}
+	
+.ce-textpic > *.above										{clear: both}		
 
+/* Text align */
+.ce-headline-center											{text-align: center;}
+.ce-headline-right											{text-align: right;}
+ 
+ 
+/* Margin & Padding */
+.frame-space-before-1										{margin-top: $v1;}
+.frame-space-before-2										{margin-top: $v2;}
+.frame-space-before-3 										{margin-top: $v3;}
+.frame-space-before-4										{margin-top: $v4;}
+.frame-space-before-5										{margin-top: $v5;}
+.frame-space-before-6										{margin-top: $v6;}
+.frame-space-before-7										{margin-top: $v7;}
 
+.frame-space-after-1										{margin-bottom: $v1;}
+.frame-space-after-2										{margin-bottom: $v2;}
+.frame-space-after-3 										{margin-bottom: $v3;}
+.frame-space-after-4										{margin-bottom: $v4;}
+.frame-space-after-5										{margin-bottom: $v5;}
+.frame-space-after-6										{margin-bottom: $v6;}
+.frame-space-after-7										{margin-bottom: $v7;}
 
-/* Menu *****************************************************************************************************************************************/
+.frame-padding-before-1										{padding-top: $v1;}
+.frame-padding-before-2										{padding-top: $v2;}
+.frame-padding-before-3 									{padding-top: $v3;}
+.frame-padding-before-4										{padding-top: $v4;}
+.frame-padding-before-5										{padding-top: $v5;}
+.frame-padding-before-6										{padding-top: $v6;}
+.frame-padding-before-7										{padding-top: $v7;}
 
-   /* SITEMAP */
-  .frame-type-menu_sitemap                                        {}
-  .frame-type-menu_sitemap > ul                                   {list-style: none; margin: 0; padding: 0;  }          
-  .frame-type-menu_sitemap > ul > li                              {padding: 1rem;background: #fff; border-bottom: 5px solid #f3f3f3;}
-  .frame-type-menu_sitemap > ul > li > a                          {font-size: 130%}
-  
-  .frame-type-menu_sitemap > ul > li> ul > li                     {margin-bottom: 1rem;}
-  .frame-type-menu_sitemap > ul ul                                {padding-left: 20px; list-style: none; }
-  .frame-type-menu_sitemap > ul ul > li > a:before                {content:'–'; padding-right: 5px;}                         
-
-   /* menu_section */ 
-   .frame-type-menu_section {
-      > ul                                                        {list-style: none; margin: 0; padding: 0;  }      
-      > ul > li  > ul                                             {padding-left: 0.25rem; list-style-type: disc; }
-   }
-
-
-  /* Frame */
-  .frame-ruler-before:before                                 {content: ''; display: block; border-top: 1px solid rgba(0,0,0,0.25); margin-bottom: 2rem;}
-  .frame-ruler-after:after                                   {content: ''; display: block; border-bottom: 1px solid rgba(0,0,0,0.25); margin-top: 2rem;}
-  .frame-indent                                              {margin-left: 15%; margin-right: 15%;}
-  .frame-indent-left                                         {margin-left: 33%;}
-  .frame-indent-right                                        {margin-right: 33%;}
-  
-  /* Headline */
-  .ce-headline-left                                          {text-align: left;}
-  .ce-headline-center                                        {text-align: center;}
-  .ce-headline-right                                         {text-align: right;}
-
-   /* menu_section */ 
-   .frame-type-menu_section {
-      > ul                                                   {list-style: none; margin: 0; padding: 0;  }      
-      > ul > li  > ul                                        {padding-left: 20px; list-style-type: disc; }
-   }
-   
-  /* Menus */
-  .frame-type-menu_pages ul                                  {list-style: none;  padding-left: 0;}      
-
-  /* Space */
-  .frame-space-before-extra-small                            {margin-top: 1rem;}
-  .frame-space-before-small                                  {margin-top: 2rem;}
-  .frame-space-before-medium                                 {margin-top: 3rem;}
-  .frame-space-before-large                                  {margin-top: 4rem;}
-  .frame-space-before-extra-large                            {margin-top: 5rem;}
-  
-  .frame-space-after-extra-small                             {margin-bottom: 1rem;}
-  .frame-space-after-small                                   {margin-bottom: 2rem;}
-  .frame-space-after-medium                                  {margin-bottom: 3rem;}
-  .frame-space-after-large                                   {margin-bottom: 4rem;}
-  .frame-space-after-extra-large                             {margin-bottom: 5rem;}
-  
-  
-  .frame-space-before-4px                                    {margin-top: .25rem !important;}
-  .frame-space-before-8px                                    {margin-top: .5rem !important;}
-  .frame-space-before-12px                                   {margin-top: .75rem !important;}
-  .frame-space-before-16px                                   {margin-top: 1rem !important;}
-  .frame-space-before-24px                                   {margin-top: 1.5rem !important;}
-  .frame-space-before-36px                                   {margin-top: 2.5rem !important;}
-  .frame-space-before-48px                                   {margin-top: 3rem !important;}
-  
-  .frame-space-after-4px                                     {margin-bottom: .25rem !important;}
-  .frame-space-after-8px                                     {margin-bottom: .5rem !important;}
-  .frame-space-after-12px                                    {margin-bottom: .75rem !important;}
-  .frame-space-after-16px                                    {margin-bottom: 1rem !important;}
-  .frame-space-after-24px                                    {margin-bottom: 1.5rem !important;}
-  .frame-space-after-36px                                    {margin-bottom: 2.5rem !important;}
-  .frame-space-after-48px                                    {margin-bottom: 3rem !important;}
-  
-    /* Padding */
-  .frame-padding-before-4px                                  {padding-top: .25rem !important;}
-  .frame-padding-before-8px                                  {padding-top: .5rem !important;}
-  .frame-padding-before-12px                                 {padding-top: .75rem !important;}
-  .frame-padding-before-16px                                 {padding-top: 1rem !important;}
-  .frame-padding-before-24px                                 {padding-top: 1.5rem !important;}
-  .frame-padding-before-36px                                 {padding-top: 2.5rem !important;}
-  .frame-padding-before-48px                                 {padding-top: 3.0rem !important;}
-  .frame-padding-before-60px                                 {padding-top: 3.75rem !important;}
-  .frame-padding-before-72px                                 {padding-top: 4.5rem !important;}
-
-  .frame-padding-after-4px                                   {padding-bottom: .25rem !important;}
-  .frame-padding-after-8px                                   {padding-bottom: .5rem !important;}
-  .frame-padding-after-12px                                  {padding-bottom: .75rem !important;}
-  .frame-padding-after-16px                                  {padding-bottom: 1rem !important;}
-  .frame-padding-after-24px                                  {padding-bottom: 1.5rem !important;}
-  .frame-padding-after-36px                                  {padding-bottom: 2.5rem !important;}
-  .frame-padding-after-48px                                  {padding-bottom: 3.0rem !important;}
-  .frame-padding-after-60px                                  {padding-bottom: 3.75rem !important;}
-  .frame-padding-after-72px                                  {padding-bottom: 4.5rem !important;}
-    
-     /* SITEMAP */
-  .frame-type-menu_sitemap > ul                              {list-style: none; margin: 0; padding: 0; }          
-  .frame-type-menu_sitemap > ul > li                         {padding: 1rem; background: #fff; border-bottom: 5px solid #f3f3f3;}
-  .frame-type-menu_sitemap > ul > li > a                     {font-size: 130%}
-  
-  .frame-type-menu_sitemap > ul > li> ul > li                {margin-bottom: 1rem;}
-  .frame-type-menu_sitemap > ul ul                           {padding-left: .25rem; list-style: none; }
-  .frame-type-menu_sitemap > ul ul > li > a:before           {content:'–'; padding-right: 5px;}                         
-
-  
-  /* Uploads */
-  .frame-type-uploads {
-     .ce-uploads{                                            margin: 0; padding: 0;
-        .uploadIcon                                          {padding: 0 1rem 0 0; flex: 0 0 5%;   max-width: 5%;}
-        .uploadContent                                       {flex: 0 0 80%;  max-width: 80%; padding: 0;}
-        .uploadImage                                         {flex: 0 0 20%;  max-width: 20%;}
-          li                                                 {list-style: none ; margin: 1rem 0;}
-          img                                                {width: 100%; height: auto;}
-          span                                               {display: block;}
-     }
-  }
-
-
-
+.frame-padding-after-1										{padding-bottom: $v1;}
+.frame-padding-after-2										{padding-bottom: $v2;}
+.frame-padding-after-3 										{padding-bottom: $v3;}
+.frame-padding-after-4 										{padding-bottom: $v4;}
+.frame-padding-after-5										{padding-bottom: $v5;}
+.frame-padding-after-6										{padding-bottom: $v6;}
+.frame-padding-after-7										{padding-bottom: $v7;}

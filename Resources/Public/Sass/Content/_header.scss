@@ -1,95 +1,102 @@
-.mean-container a.meanmenu-reveal span:after                {background-color: $headerLinkColor; }      
-.mean-container a.meanmenu-reveal span:before               {border-bottom: 0.15rem solid $headerLinkColor; border-top: 0.15rem solid $headerLinkColor; }         
-.mean-container a.meanmenu-reveal.meanclose span:before     {background-color: $headerLinkColor; }    
+header {										background-color: $headerBgColor; color: $headerColor; z-index: 1002;
 
-header {                                  background-color: $headerBgColor; color: $headerColor; z-index: 1002;
+    &.sticky									{box-shadow: $shadow;}
+    &.sticky .logo img							{width: auto; max-width: $logostickywidth;}
+    &.sticky .toparea							{display: none !important;}
 
+	a											{color: $headerLinkColor; transition: color ease .3s; text-decoration: none;}
+	a:hover										{color: $headerLinkHoverColor;}
+	.logo										{transition: color ease 0.3s; }
+	.logo img									{width: $logowidth; height: auto; transition: color ease 0.3s; }
+	.logoII										{} 
+	.logoII img									{width: $logoIIwidth; height: auto; float: right; }
 
-    &.sticky                              {box-shadow: $shadow;}
-    &.sticky .logo img                    {width: auto; max-width: $logostickymaxwidth;}
-    &.sticky .toparea                     {display: none !important;}
-    
-    a                                     {color: $headerLinkColor; transition: color ease .3s;}
-    a:hover                               {color: $headerLinkHoverColor;}  
-  
-    .logo img                             {width: 100%; height: auto; max-width: $logomaxwidth +px}
-    .logoII img                           {width: 100%; height: auto; max-width: $logoIImaxwidth; float: right;}
+	.insideleft									{display: flex; align-self: stretch; position: relative; padding: 0;}
+	.insidecenter								{display: block; position: relative; padding: 0;}
+	.insideright								{flex-direction: row-reverse; display: flex; position: relative; padding: 0;}
+	.topleft									{display: flex;}
+	.topright									{display: flex;}
+	
+	.weblogo img								{width: $mobillogowidth; height: auto; transition: color ease 0.3s; }
 
-    .insideleft                           {display: flex; align-self: stretch; position: relative; padding: 0;}
-    .insidecenter                         {display: block; position: relative; padding: 0;}
-    .insideright                          {flex-direction: row-reverse; display: flex; position: relative; padding: 0;}
-    .topleft                              {display: flex;}
-    .topright                             {display: flex;}
-  
-  .weblogo img                            {max-height:  3rem; min-height: 2rem; width: auto;}
-  
-  /* top *******************************/
+/* top *******************************/
 
-    .toparea                               {display: flex; width: 100%; background-color: rgba($topBgColor,$topBgColorTrans); top: 0; z-index: 998;}
- 
-    .toparea.active                        {box-shadow: $shadow;}
-     .funcItemTitle                        {display: none;}
-    
-    .top{                                   padding: 0;
-        a                                   {color: $topLinkColor; padding: 0.35rem 1rem; transition: color ease .3s;}  
-        a:hover                             {color: $topLinkHoverColor;}
-        
-        /* a.extras                            {font-family: $symbol;font-size: $symbolfontsize; font-weight: normal;}       */
-        a:before                            {font-family: $symbol;font-size: $symbolfontsize;}
-        a.fontmode > span.symb              {font-size: $symbolfontsize; font-weight: bold;}        
-        a.loginmode:before                  {content:'\f204';}              
-        a.colormode:before                  {content:'\f042';} 
-        a.languagemode:before               {content:'\f0AC';}                 
-        a.logout:before                     {content:'\f205';color: $success;}            
-        a.search:before                     {content:'\f002';}  
-        a.home:before                       {content:'\f015';}      
-    } 
+	.toparea									{display: flex; width: 100%; background-color: rgba($topBgColor,$topBgColorTrans); top: 0; z-index: 998;}
+	.toparea.active								{box-shadow: $shadow;}
 
-  .languagemenu {                           
-        a                                   {border-bottom: 2px solid transparent; padding: 0 0 0 0; font-weight: bold; }
+	.funcItemTitle								{display: none; font-size: 85%;}
 
-        .active a                           {border-bottom: 2px solid $headerLinkHoverColor;} 
+	.top{										padding: 0; font-size: 1rem;
+		a										{color: $topLinkColor; transition: color ease .3s;}
+		a:before								{font-family: $symbol;font-size: $symbolfontsize;}		
+		a:hover									{color: $topLinkHoverColor;}
+		
+		a.fontmode > span.symb					{font-size: $symbolfontsize; font-weight: bold;}
+		a.loginmode:before						{content:'\f204';}
+		a.colormode:before						{content:'\f042';}
+		a.languagemode:before					{content:'\f0AC';}
+		a.login:before							{content:'\f204';}
+		a.logout:before							{content:'\f205';color: $success;}
+		a.search:before							{content:'\f002';} 
+		a.searchmode:before						{content:'\f002';}
+		a.home:before							{content:'\f015';}
+		a.info:before							{content:'\f05a';}
+		a.preferences:before					{content:'\f007';}
+		a.quicklinksmode:before					{content:'\f005';}
+			
+	 
+		a.main-nav__burger			 	   		{width: 2.5rem; height: 2rem; cursor: pointer;  position: relative; display: inline-block; vertical-align: middle;}
+		a.main-nav__burger::before		   		{content: ''; position: absolute; border-bottom: .125rem solid rgb($topLinkColor);  border-top: .125rem solid rgb($topLinkColor); transition: transform .3s; margin: auto; bottom: .5rem; top: .5rem; right: .25rem; left: .25rem;}
+		a.main-nav__burger.act:before 			{transform: rotate(45deg); bottom: 0; display: block; top: 0;  height: 2px;  background-color: rgb($topLinkColor); border: none;} 
+					 
+		a.main-nav__burger::after 				{content: ''; position: absolute; display: block; transition: transform .3s; height: .125rem; background-color: $topLinkColor; margin: auto; bottom: 0; right: .25rem; left: .25rem; top: 0rem; }		
+		a.main-nav__burger.act:after 			{transform: rotate(315deg); } 	
+							
+	}
 
-        .text-muted                         {color: rgba($topLinkColor,.65) !important; padding-left: 0rem; padding-right: 0rem;  display: flex; align-items: center !important;}
-        .inactive > *                       {display: block; }  
-    }
- 
-  
-  
-   .nav-service{                            position: relative;
-       > li                                 {display: block;} 
-       > li > a                             {display: block; cursor: pointer; text-transform: none; }
-       .text-small                          {font-size: 66%; font-weight: 500;}
-       
-      .tab-content{
-        .tab-pane{                          width: 100vH; padding: 1rem ; background-color: #f2f2f2; z-index: 997; box-shadow: 0 0 4px rgb(0 0 0 / 40%); top: auto; left: auto; right: auto; transform: none; position: absolute;
-            h4                              {font-weight: bold;}
-            a.color-mode__btn               {display: block; padding: .25rem ; text-align: left; position: relative; border-width: 0; border-radius: 0; border: 1px solid transparent;}
-            a.color-mode__btn:hover         {cursor: pointer;}    
-            a.color-mode__btn > span        {display: inline-block; height: 1.125rem; width: 2rem; border: 1px solid #808080; position: relative;top: 0.3rem;margin-right: 0.5rem;background: #fff; overflow: hidden;}
-            a.color-mode__btn.dark > span   {background: #000; }
-            a.color-mode__btn.system > span:before {content: ""; position: absolute; bottom: -1rem; right: -9px; width: 2.5rem; height: 1.5rem; transform: rotate(-28deg); z-index: 1; background-color: #000;}
-            .fsrange                        {font-size: 125%; cursor: pointer; }
+	li.languagemenu {							display: block;
+		a										{font-weight: bold; transition: color ease 0.3s; padding: 0; border-bottom: 2px solid transparent;}
+		span									{text-transform: uppercase; display: block; }
+		> &.active a							{border-bottom: 2px solid $topLinkColor;} 
+		
 
-          }
-       }
-   }
-   
-   .justify-content-end .nav-service .tab-content .tab-pane {right: .66rem;}         
-    
-  .fsrange                                  {cursor: pointer;  align-self: stretch;}
-  .fsrange label                            {display: block; cursor: pointer; margin-bottom: 0;}       
+		&:before								{content:"|"; padding-right: $v2;}
+	 }
+	
+	.burgeranker > ul + div						{border-top: 1px solid rgba($topLinkColor,.5);}
+	.burgeranker > ul div ul						{margin-top: $v2; padding-top: $v2; }	 
+
+	.nav-service{
+		> li									{position: relative;}
+		> li > a								{cursor: pointer; text-transform: none; }
+
+		.tab-content{
+			.tab-pane{							min-width: 15rem; width: auto; padding: $v4; background-color: #fff; z-index: 997; box-shadow: $shadow; top: auto; left: auto; right: 0; transform: none; position: absolute;
+				h2,
+				h3,
+				h4								{font-weight: bold; margin: 0; padding-bottom:$v2 !important; color: $baseTextColor; font-size: 100%;}		 
+				a.color-mode__btn				{display: block; padding: $v1; text-align: left; position: relative; border-width: 0; border-radius: 0; border: 1px solid transparent;}
+				a.color-mode__btn:hover			{cursor: pointer;}	 
+				a.color-mode__btn > span		{display: inline-block; height: $v4; width: $v6; border: 1px solid #808080; position: relative;top: $v1; margin-right :$v2; background: #fff; overflow: hidden;}
+				a.color-mode__btn.dark > span	{background: #000; }
+				a.color-mode__btn.system > span:before {content: ""; position: absolute; bottom: calc(clamp(12px, 2.8vw, 24px) * -1.4); right: calc(#{$v4} * -1); width: $v7; height: $v6; transform: rotate(-28deg); z-index: 1; background-color: #000;}
+				a.color-mode__btn b				{color: $baseTextColor;}
+				.fsrange						{font-size: 125%; cursor: pointer; }
+				ul								{list-style-type: none;}
+				ul li							{display: block; padding-bottom:$v1; padding-top:$v1;}
+				ul li a							{padding: 0; color: $baseTextColor; }
+				ul li a:focus,
+				ul li a:hover					{border-bottom: 1px solid $baseTextColor;; font-weight: bold;} 
+			 }
+		 }
+	}
+
 }
 
-.top-searchbox > div                        {position: relative;}                            
-.top-searchbox .form-control                {width: 75%;} 
-
-
-
-
-@media screen and (min-width: 992px){
-    header {                                  
-        .funcItemTitle                     {display: inline-block;}
-        .notitle .funcItemTitle            {display: none;}
-    }
+@media screen and (min-width: 992px) {
+	header {	
+		.funcItemTitle							{display: inline-block;}
+		.notitle .funcItemTitle					{display: none;}
+		.container								{position: relative;}
+	}
 }

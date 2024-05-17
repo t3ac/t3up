@@ -1,0 +1,3 @@
+lib.header.mobilbutton = TEXT
+lib.header.mobilbutton.value = Show Navigation
+lib.header.mobilbutton.wrap = <li class="d-lg-none mobilButton"><a href="#menu" title="|" class="main-nav__burger meanmenu-reveal">&nbsp;</a></li>

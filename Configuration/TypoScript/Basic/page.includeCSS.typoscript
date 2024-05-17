@@ -3,7 +3,9 @@
 plugin.tx_wsscss.variables {
 
     # Basic
-
+    
+    p                              		= {$page.typography.fontsize}
+    g                              		= {$page.components.gutter}
     font                                = {$page.fonts.font}  
     fontdef                             = {$page.fonts.fontdef}
     fontpath                            = ../../../{$page.fonts.fontpath}   
@@ -23,6 +25,7 @@ plugin.tx_wsscss.variables {
     pictureoverlaytextsize              = {$page.color.pictureoverlaytextsize}
     
     container                           = {$page.components.container}px
+    mainpadding                         = {$page.components.mainpadding}
    
     baseColor                           = {$page.color.baseColor}  
     bodyBgColor                         = {$page.color.bodyBgColor}
@@ -40,10 +43,10 @@ plugin.tx_wsscss.variables {
     topBgColorTrans                     = {$page.color.topBgColorTrans}
     topLinkColor                        = {$page.color.topLinkColor}
     topLinkHoverColor                   = {$page.color.topLinkHoverColor}
-    logomaxheight                       = {$page.header.logomaxheight}px
-    logomaxwidth                        = {$page.header.logomaxwidth}
-    logoIImaxwidth                      = {$page.header.logoIImaxwidth} 
-    logostickymaxwidth                  = {$page.header.logostickymaxwidth}   
+    logowidth                        	= {$page.header.logowidth}
+    logoIIwidth                      	= {$page.header.logoIIwidth} 
+    logostickywidth                  	= {$page.header.logostickywidth}   
+    mobillogowidth                   	= {$page.header.mobillogowidth}   
      
     # Navigation 
     navLinkColor                        = {$page.color.navLinkColor}  
@@ -72,13 +75,6 @@ plugin.tx_wsscss.variables {
     footer3TextColor                    = {$page.color.footer3TextColor}
     footer3LinkColor                    = {$page.color.footer3LinkColor}
     footer3LinkHoverColor               = {$page.color.footer3LinkHoverColor}
-    
-    # Totop
-    totopBgColor                        = {$page.color.totopBgColor}
-    totopLinkColor                      = {$page.color.totopLinkColor}
-    totopLinkHoverColor                 = {$page.color.totopLinkHoverColor}
-    totopPosBottom                      = {$page.color.totopPosBottom}
-    totopPosRight                       = {$page.color.totopPosRight}
     
     # Bootstrap variablen 
     warning                             = {$page.color.warning}
@@ -118,10 +114,15 @@ plugin.tx_wsscss.variables {
     tableHeaderColor                    = {$page.color.tableHeaderColor}
     tableHeaderLineColor                = {$page.color.tableHeaderLineColor}
     tableLineColor                      = {$page.color.tableLineColor}
+
+    # Totop
+    totopBgColor                        = {$page.totop.totopBgColor}
+    totopLinkColor                      = {$page.totop.totopLinkColor}
+    totopLinkHoverColor                 = {$page.totop.totopLinkHoverColor}
+    totopPosBottom                      = {$page.totop.totopPosBottom}
+    totopPosRight                       = {$page.totop.totopPosRight}
     
     # Typography
-    navigationfontsize                  = {$page.typography.navigationfontsize}
-    symbolfontsize                      = {$page.typography.symbolfontsize}
     h1                                  = {$page.typography.h1}
     h1-md                               = {$page.typography.h1.md}  
     h1-lg                               = {$page.typography.h1.lg}  
@@ -135,7 +136,6 @@ plugin.tx_wsscss.variables {
     h4                                  = {$page.typography.h4} 
     h4-md                               = {$page.typography.h4.md}  
     h4-lg                               = {$page.typography.h4.lg}  
-    p                                   = {$page.typography.p}
     p-md                                = {$page.typography.p.md}
     p-lg                                = {$page.typography.p.lg}
     p-footer                            = {$page.typography.p.footer}
@@ -160,11 +160,16 @@ plugin.tx_wsscss.variables {
     footer1lineheight                   = {$page.typography.footer1.lineheight}
     footer3fontsize                     = {$page.typography.footer3.fontsize}
     footer3fontweight                   = {$page.typography.footer3.fontweight}
-
+    
+    navigationfontsize                  = {$page.typography.navigationfontsize}
+    symbolfontsize                      = {$page.typography.symbolfontsize}
+    navFontWeight                       = {$page.typography.navFontWeight} 
+    breadcrumbtextsize					= {$page.breadcrumb.breadcrumbtextsize}
+    linkweight							= {$page.typography.linkweight}
     
     # Files                            
     access                              = {$page.components.access}
-    totop                               = {$page.components.totop}
+    totop                               = {$page.totop.totop}
     fsc                                 = {$page.scss.scssfsc}
     links                               = {$page.scss.scsslinks}  
     table                               = {$page.scss.scsstable}  
@@ -177,7 +182,6 @@ plugin.tx_wsscss.variables {
     footer                              = {$page.scss.scssfooter}  
     navigation                          = {$page.scss.scssnavigation}  
     subnavigation                       = {$page.scss.scsssubnavigation}  
-    quicklinks                          = {$page.scss.scssquicklinks}
     
 	# Boostrap Scss
     bootstrapstyles                     = {$page.scss.scssbootstrapstyles}  
@@ -188,26 +192,60 @@ plugin.tx_wsscss.variables {
     # Mobil
     mobilmenu                           = {$page.components.mobilmenu}
     
+    # Sideanker                         
+    sideankercolorBg                    = {$page.color.sideankercolorBg} 
+    sideankerlicolor                    = {$page.color.sideankerlicolor} 
+    
+	    
+	/* g Constante from constant.typoscript default: clamp(12px, 2.8vw, 24px)*/ 
+	v1 =  calc({$page.components.gutter} * .25) 
+	v2 =  calc({$page.components.gutter} * .5)
+	v15=  calc({$page.components.gutter} * (.75 / 2))
+	v2 =  calc({$page.components.gutter} * .5)
+	v3 =  calc({$page.components.gutter} * .75)
+	v4 =  calc({$page.components.gutter} *  1)
+	v45=  calc({$page.components.gutter} *  1.25)	
+	v5 =  calc({$page.components.gutter} * 1.5)
+	v6 =  calc({$page.components.gutter} *  2)
+	v7 =  calc({$page.components.gutter} *  3)
+	
+	-v1 = calc(#{$v1} * -1); /* .25rem */
+	-v15= calc({$page.components.gutter} * (.75 / 2) * -1); /* -.375rem */
+	-v2 = calc(#{$v2} * -1); /* .5rem */
+	-v3 = calc(#{$v3} * -1); /* .75rem */
+	-v4 = calc(#{$v4} * -1); /* 1rem */
+	-v45= calc(#{$v45} * -1); /* 1.25rem */
+	-v5 = calc(#{$v5} * -1); /* 1.5rem */
+	-v6 = calc(#{$v6} * -1); /* 2rem */
+	-v7 = calc(#{$v7} * -1); /* 3rem */
+	
+	v50 = calc(50% - #{$v15})
+	v33 = calc(33.33% - #{$v2})
+	v34 = calc(33.33% - #{$v3})
+	v25 = calc(25% - #{$v3})
+	v20 = calc(20% - #{$v1})
+	
 }
 
 page.includeCSS    = COA
 page.includeCSS{
-   	main                                =  EXT:t3up/Resources/Public/Sass/_index.scss
-    main.linenumber                     =  true    
-    main.forceOnTop                     =  1
-	main.outputStyle                    =  compressed 
 
-   	scsspowermail                       = {$page.scss.scsspowermail}
-   	scsspowermail.if.isTrue             = {$page.scss.scsspowermail}   	
-    scsspowermail.linenumber            = true   
-	scsspowermail.outputStyle           = compressed   
-
-   	scssindexedsearch                   = {$page.scss.scssindexedsearch}
-   	scssindexedsearch.if.isTrue         = {$page.scss.scssindexedsearch}   	
-    scssindexedsearch.linenumber        = true   
-	scssindexedsearch.outputStyle       =  compressed   
+   	main                                = EXT:t3up/Resources/Public/Sass/_index.scss
+    main.linenumber                     = true    
+    main.forceOnTop                     = 0
+	main.outputStyle                    = compressed 
+	
+   	scssfelogin                         = {$page.scss.scssfelogin}
+   	scssfelogin.if.isTrue               = {$page.scss.scssfelogin}   	
+    scssfelogin.linenumber              = true   
+	scssfelogin.outputStyle             = compressed   
+	
 }
 
+
+plugin.tx_kesearch_pi1.cssFile = EXT:t3up/Resources/Public/Sass/Extensions/_kesearch.scss
+plugin.tx_kesearch_pi2.cssFile < plugin.tx_kesearch_pi1.cssFile
+plugin.tx_kesearch_pi3.cssFile < plugin.tx_kesearch_pi1.cssFile
 
 
 

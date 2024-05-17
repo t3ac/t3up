@@ -9,7 +9,7 @@
                         <f:render partial="Submenu/Elements/SubLink" arguments="{item: item}"/>
                 </f:then> 
                 <f:else if="{item.active}">
-                    <li class="act {f:if(condition:item.children, then:'navitem')} {f:if(condition:item.active, then:'act')}" data-show-sub="false">
+                    <li class="{f:if(condition:item.children, then:'navitem')} {f:if(condition:item.active, then:'act')}" data-show-sub="false">
                         <f:render partial="Submenu/Elements/SubLink" arguments="{item: item}"/>
                 </f:else>
                 <f:else>

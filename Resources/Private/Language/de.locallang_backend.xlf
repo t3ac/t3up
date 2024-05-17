@@ -23,27 +23,16 @@
 			     <target state="translated">Media/Kopfbereich</target>
 		    </trans-unit>
 
+
 		    /* -- */
 			<trans-unit id="StandardLayout">
 			     <source>Standardlayout</source>
-			     <target state="translated">Standardlayout</target>
+			     <target state="translated">Standardlayout</target>    
 		    </trans-unit>
 			<trans-unit id="OneColumnLayout">
 			     <source>OneColumn Layout</source>
 			     <target state="translated">Einspalten Layout mit Media</target>
 		    </trans-unit>
-			<trans-unit id="OneColumnInMediaLayout">
-			     <source>OneColumn Layout, media inside the container</source>
-			     <target state="translated">Einspalten Layout mit Media im Container</target>
-		    </trans-unit>	
-			<trans-unit id="OneColumnNoMediaLayout">	
-			     <source>OneColumn Layout, with out media</source>
-			     <target state="translated">Einspalten Layout</target>
-		    </trans-unit>	
-			<trans-unit id="ThreeColumnLayout">
-			     <source>Layout with three equal columns</source>
-			     <target state="translated">Dreispalten Layout</target>
-		    </trans-unit>	  
 			<trans-unit id="LeftNavigationLayout">
 			     <source>Layout with left navigation</source>
 			     <target state="translated">Layout mit linker Unternavigation</target>
@@ -55,20 +44,21 @@
 			<trans-unit id="RightNavigationLayout">
 			     <source>Layout with right navigation</source>
 			     <target state="translated">Layout mit rechter Unternavigation</target>
-		    </trans-unit>	    
-			<trans-unit id="RightNavigationInMediaLayout">
-			     <source>Layout with right navigation, Media integrated</source>
-			     <target state="translated">Layout mit rechter Unternavigation, Media integriert</target>
-		    </trans-unit>	
-			<trans-unit id="OneTwoColumnLayout">
-			     <source>Big main column, right marginal</source>
-			     <target state="translated">Große Hauptspalte, kleine rechte Marginalspalte</target>
-		    </trans-unit>			    
+		    </trans-unit>	    		    
 			<trans-unit id="RightMarginalLayout">
 			     <source>Layout with right marginal (off/on)</source>
 			     <target state="translated">Layout mit rechter Marginalspalte</target>
 		    </trans-unit>
-		    
+			<trans-unit id="ContentRightMarginalLayout">
+			     <source>Layout with a bigger right marginal (off/on)</source>
+			     <target state="translated">Layout mit breiter rechter Marginalspalte</target>
+		    </trans-unit>
+			<trans-unit id="ContentLeftMarginalLayout">
+			     <source>Layout with a bigger left marginal (off/on)</source>
+			     <target state="translated">Layout mit breiter linker Marginalspalte</target>
+		    </trans-unit>	    	        		    
+
+
 			/* -- PAGE ------------------------- */
 		    <trans-unit id="fullpage">
 			     <source>Pagelayout without a container</source>
@@ -99,6 +89,20 @@
 			     <target state="translated">Vor-/Zurück-Button unterhalb des Inhalts</target>  
 		    </trans-unit>
 
+	         /* -- TT-CONTENT IMAGE ORIENT----------- */	
+		    <trans-unit id="header-below">
+			     <source>Header below the image (center)</source>
+               <target state="translated">Überschrift unter dem Bild (zentriert)</target>					     
+		    </trans-unit>
+		    <trans-unit id="header-below-left">
+			     <source>Header below the image (left)</source>
+               <target state="translated">Überschrift unter dem Bild (links)</target>					     
+		    </trans-unit>
+			<trans-unit id="header-below-right">
+			     <source>Header below the image (right)</source>
+                <target state="translated">Überschrift unter dem Bild (rechts)</target>			     
+		    </trans-unit>
+		    		     
 	         /* -- TT-CONTENT PADDING----------- */
             <trans-unit id="paddingBeforeClass">
                 <source>Padding Before</source>
@@ -108,104 +112,95 @@
                 <source>Padding After</source>
                 <target state="translated">Innenabstand danach</target>  
             </trans-unit>       
-            <trans-unit id="padding_class">
+            <trans-unit id="space_class">
                 <source>Inner Padding</source>
                 <target state="translated">Innenabstand</target>            
             </trans-unit>          
-            <trans-unit id="padding_class_none">
+            <trans-unit id="space_class_none">
                 <source>none</source>
                 <target state="translated">Standard</target>
             </trans-unit>  
             
-            
-            <trans-unit id="padding_class_0">
-                <source>0</source>
-                <target state="translated">kein Innenabstand</target>
-            </trans-unit>>        
-            <trans-unit id="padding_class_5">
-                <source>extra-small</source>
-                <target state="translated">sehr klein</target> 
+            <trans-unit id="space_class_none">
+                <source>none</source>
+                <target state="translated">ohne</target>
+            </trans-unit>        
+            <trans-unit id="space_class_1">
+                <source>0,25 unit</source>
+               <target state="translated">0,25 Abstand</target>
             </trans-unit> 
-            <trans-unit id="padding_class_10">
-                <source>small</source>
-                <target state="translated">Klein</target> 
+            <trans-unit id="space_class_2">
+               <source>0,5 unit</source>
+               <target state="translated">0,5 Abstand</target>
             </trans-unit>     
-            <trans-unit id="padding_class_15">
-                <source>normal</source>
-                <target state="translated">Standard</target> 
+            <trans-unit id="space_class_3">
+                <source>0,75 unit</source>
+                <target state="translated">0,75 Abstand</target>               
             </trans-unit>
-            <trans-unit id="padding_class_20">
-                <source>normalplus</source>
-                <target state="translated">Größer</target> 
+            <trans-unit id="space_class_4">
+                <source>1 unit</source>
+                <target state="translated">ganzer Abstand</target>                   
             </trans-unit>  
-            <trans-unit id="padding_class_30">
-                <source>double</source>
-                <target state="translated">Doppelt</target> 
+            <trans-unit id="space_class_5">
+                <source>1,5 unit</source>
+                <target state="translated">1,5 Abstand</target>            
             </trans-unit>             
-            <trans-unit id="padding_class_45">
-                <source>trippe</source>
-            <target state="translated">Dreifach</target>          
+            <trans-unit id="space_class_6">
+                <source>2 unit</source>
+                <target state="translated">Doppelter Abstand</target>      
             </trans-unit>  
-            <trans-unit id="padding_class_60">
-                <source>four-fold</source>
-                <target state="translated">vierfach</target>                
+            <trans-unit id="space_class_7">
+                <source>3 unit</source>
+                <target state="translated">Dreifacher Abstand</target>     
             </trans-unit>    
-            <trans-unit id="padding_class_75">
-                <source>five-fold</source>
-               <target state="translated">fünffach</target>                 
-            </trans-unit>    
-            <trans-unit id="padding_class_90">
-                <source>six-fold</source>
-               <target state="translated">sechsfach</target>                 
-            </trans-unit>  
-        
+              
             
 	         /* -- Colors ----------- */
-			<trans-unit id="basecolor">
+			<trans-unit id="pagecolor">
 			     <source>Pagecolor</source>
                 <target state="translated">Seiten-Hauptfarbe</target> 
 		    </trans-unit>	
-			<trans-unit id="basecolor-no">
+			<trans-unit id="pagecolor-no">
 			     <source>No Color</source>
                 <target state="translated">keine</target> 			     
 		    </trans-unit>	
-			<trans-unit id="basecolor-blue">
+			<trans-unit id="pagecolor-blue">
 			     <source>Blue</source>
                 <target state="translated">Blau</target> 
 		    </trans-unit>	
-			<trans-unit id="basecolor-red">
+			<trans-unit id="pagecolor-red">
 			     <source>Red</source>
 			     <target state="translated">Rot</target> 
 		    </trans-unit>	
-			<trans-unit id="basecolor-green">
+			<trans-unit id="pagecolor-green">
 			     <source>Green</source>
 			     <target state="translated">Grün</target> 
 		    </trans-unit>
-			<trans-unit id="basecolor-orange">
+			<trans-unit id="pagecolor-orange">
 			     <source>Orange</source>
 			     <target state="translated">Orange</target> 
 		    </trans-unit>	
-			<trans-unit id="basecolor-violett">
+			<trans-unit id="pagecolor-violett">
 			     <source>Violett</source>
 			     <target state="translated">Violett</target>
 		    </trans-unit>	
-			<trans-unit id="basecolor-yellow">
+			<trans-unit id="pagecolor-yellow">
 			     <source>Yellow</source>
 			     <target state="translated">Gelb</target> 
 		    </trans-unit>	  
-			<trans-unit id="basecolor-grey">
+			<trans-unit id="pagecolor-grey">
 			     <source>Grey</source>
 			     <target state="translated">Grau</target>
 		    </trans-unit>	
-			<trans-unit id="basecolor-turquoise">
+			<trans-unit id="pagecolor-turquoise">
 			     <source>Turquoise</source>
 			     <target state="translated">Türkis</target>
 		    </trans-unit>	
-			<trans-unit id="basecolor-darkblue">
+			<trans-unit id="pagecolor-darkblue">
 			     <source>Dark blue</source>
 			     <target state="translated">Dunkelblau</target>
 		    </trans-unit>	
-			<trans-unit id="basecolor-darkgrey">
+			<trans-unit id="pagecolor-darkgrey">
 			     <source>Dark grey</source>
 			     <target state="translated">Dunkelgrau</target>
 		    </trans-unit>	
@@ -224,21 +219,10 @@
                  <source>With a line</source>
                  <target state="translated">Mit Linie</target>
             </trans-unit>
-
-
-			<trans-unit id="thin">
-			     <source>Thin line</source>
-			     <target state="translated">Dünne Linie</target>
-		    </trans-unit> 
-			<trans-unit id="medium">
-			     <source>Medium line</source>
-			     <target state="translated">Mitteldicke Linie</target>
-		    </trans-unit> 
-			<trans-unit id="thick">
-			     <source>Thick line</source>
-			     <target state="translated">Dicke Linie</target>
-		    </trans-unit>     
-  
+		    <trans-unit id="twocol">
+                 <source>Text with 2 columns</source>
+                 <target state="translated">2-spaltiger Text</target>                 
+            </trans-unit>  
 
 			<trans-unit id="containerhandle">
 			     <source>Handle as a container</source>

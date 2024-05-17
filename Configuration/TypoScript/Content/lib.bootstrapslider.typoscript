@@ -1,3 +1,0 @@
-lib.bootstrapslider = TEXT
-lib.bootstrapslider.value                    =  {$page.components.bootstrapslider}  
-lib.bootstrapslider.insertData               = 1

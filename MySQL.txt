@@ -1,0 +1,122 @@
+DELETE FROM sys_file WHERE sys_file.missing=1 AND sys_file.uid NOT IN (SELECT sys_file_reference.uid_local FROM sys_file_reference WHERE sys_file_reference.uid_local=sys_file.uid); 
+
+## Leeren der History
+DELETE FROM `sys_history` WHERE `history_data` IS NULL;
+DELETE FROM `sys_history` WHERE `userid` IS NULL;
+DELETE FROM `sys_history` WHERE `tablename` LIKE 'sys_file_reference';
+DELETE FROM `sys_history` WHERE `tablename` LIKE 'sys_template';
+
+DELETE FROM `sys_history` WHERE `tablename` LIKE 'fe_users';
+DELETE FROM `sys_history` WHERE `tablename` LIKE 'be_users';
+
+
+## Powermail
+DELETE FROM `tx_powermail_domain_model_answer` WHERE deleted = 1;
+DELETE FROM `tx_powermail_domain_model_mail` WHERE deleted = 1;
+
+
+# Flex säubern
+UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'text';
+UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'textmedia';
+UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'header';
+UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'textpic';
+UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'header';
+UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'shortcut';
+
+
+# Layouts fuer Bilder setzen
+UPDATE `tt_content` SET `layout` = '2100' WHERE `tt_content`.`layout` = 'image100' ;
+UPDATE `tt_content` SET `layout` = '2095' WHERE `tt_content`.`layout` = 'image95' ;
+UPDATE `tt_content` SET `layout` = '2090' WHERE `tt_content`.`layout` = 'image90' ;
+UPDATE `tt_content` SET `layout` = '2085' WHERE `tt_content`.`layout` = 'image85' ;
+UPDATE `tt_content` SET `layout` = '2080' WHERE `tt_content`.`layout` = 'image80' ;
+UPDATE `tt_content` SET `layout` = '2075' WHERE `tt_content`.`layout` = 'image75' ;
+UPDATE `tt_content` SET `layout` = '2070' WHERE `tt_content`.`layout` = 'image70' ;
+UPDATE `tt_content` SET `layout` = '2065' WHERE `tt_content`.`layout` = 'image65' ;
+UPDATE `tt_content` SET `layout` = '2060' WHERE `tt_content`.`layout` = 'image60' ;
+UPDATE `tt_content` SET `layout` = '2055' WHERE `tt_content`.`layout` = 'image55' ;
+UPDATE `tt_content` SET `layout` = '2050' WHERE `tt_content`.`layout` = 'image50' ;
+UPDATE `tt_content` SET `layout` = '2045' WHERE `tt_content`.`layout` = 'image45' ;
+UPDATE `tt_content` SET `layout` = '2040' WHERE `tt_content`.`layout` = 'image40' ;
+UPDATE `tt_content` SET `layout` = '2035' WHERE `tt_content`.`layout` = 'image35' ;
+UPDATE `tt_content` SET `layout` = '2030' WHERE `tt_content`.`layout` = 'image30' ;
+UPDATE `tt_content` SET `layout` = '2025' WHERE `tt_content`.`layout` = 'image25' ;
+UPDATE `tt_content` SET `layout` = '2020' WHERE `tt_content`.`layout` = 'image20' ;
+UPDATE `tt_content` SET `layout` = '2015' WHERE `tt_content`.`layout` = 'image15' ;
+UPDATE `tt_content` SET `layout` = '2010' WHERE `tt_content`.`layout` = 'image10' ;
+UPDATE `tt_content` SET `layout` = '2005' WHERE `tt_content`.`layout` = 'image5' ;
+
+
+# Abstaende Bootstrap 5
+UPDATE `tt_content` SET `space_before_class` = '1' WHERE `tt_content`.`space_before_class` = '4px';
+UPDATE `tt_content` SET `space_before_class` = '1' WHERE `tt_content`.`space_before_class` = '5px';
+UPDATE `tt_content` SET `space_before_class` = '2' WHERE `tt_content`.`space_before_class` = '8px';
+UPDATE `tt_content` SET `space_before_class` = '3' WHERE `tt_content`.`space_before_class` = '12px';
+UPDATE `tt_content` SET `space_before_class` = '3' WHERE `tt_content`.`space_before_class` = '10px';
+UPDATE `tt_content` SET `space_before_class` = '4' WHERE `tt_content`.`space_before_class` = '16px';
+UPDATE `tt_content` SET `space_before_class` = '4' WHERE `tt_content`.`space_before_class` = '20px';
+UPDATE `tt_content` SET `space_before_class` = '5' WHERE `tt_content`.`space_before_class` = '24px';
+UPDATE `tt_content` SET `space_before_class` = '6' WHERE `tt_content`.`space_before_class` = '36px';
+UPDATE `tt_content` SET `space_before_class` = '7' WHERE `tt_content`.`space_before_class` = '48px';
+
+UPDATE `tt_content` SET `padding_before_class` = '1' WHERE `tt_content`.`padding_before_class` = '4px';
+UPDATE `tt_content` SET `padding_before_class` = '1' WHERE `tt_content`.`padding_before_class` = '5px';
+UPDATE `tt_content` SET `padding_before_class` = '2' WHERE `tt_content`.`padding_before_class` = '8px';
+UPDATE `tt_content` SET `padding_before_class` = '3' WHERE `tt_content`.`padding_before_class` = '10px';
+UPDATE `tt_content` SET `padding_before_class` = '3' WHERE `tt_content`.`padding_before_class` = '12px';
+UPDATE `tt_content` SET `padding_before_class` = '4' WHERE `tt_content`.`padding_before_class` = '16px';
+UPDATE `tt_content` SET `padding_before_class` = '4' WHERE `tt_content`.`padding_before_class` = '20px';
+UPDATE `tt_content` SET `padding_before_class` = '5' WHERE `tt_content`.`padding_before_class` = '24px';
+UPDATE `tt_content` SET `padding_before_class` = '6' WHERE `tt_content`.`padding_before_class` = '36px';
+UPDATE `tt_content` SET `padding_before_class` = '7' WHERE `tt_content`.`padding_before_class` = '48px';
+
+UPDATE `tt_content` SET `space_after_class` = '1' WHERE `tt_content`.`space_after_class` = '4px';
+UPDATE `tt_content` SET `space_after_class` = '1' WHERE `tt_content`.`space_after_class` = '5px';
+UPDATE `tt_content` SET `space_after_class` = '2' WHERE `tt_content`.`space_after_class` = '8px';
+UPDATE `tt_content` SET `space_after_class` = '3' WHERE `tt_content`.`space_after_class` = '10px';
+UPDATE `tt_content` SET `space_after_class` = '3' WHERE `tt_content`.`space_after_class` = '12px';
+UPDATE `tt_content` SET `space_after_class` = '4' WHERE `tt_content`.`space_after_class` = '16px';
+UPDATE `tt_content` SET `space_after_class` = '4' WHERE `tt_content`.`space_after_class` = '20px';
+UPDATE `tt_content` SET `space_after_class` = '5' WHERE `tt_content`.`space_after_class` = '24px';
+UPDATE `tt_content` SET `space_after_class` = '6' WHERE `tt_content`.`space_after_class` = '36px';
+UPDATE `tt_content` SET `space_after_class` = '7' WHERE `tt_content`.`space_after_class` = '48px';
+
+UPDATE `tt_content` SET `padding_after_class` = '1' WHERE `tt_content`.`padding_after_class` = '4px';
+UPDATE `tt_content` SET `padding_after_class` = '1' WHERE `tt_content`.`padding_after_class` = '5px';
+UPDATE `tt_content` SET `padding_after_class` = '2' WHERE `tt_content`.`padding_after_class` = '8px';
+UPDATE `tt_content` SET `padding_after_class` = '3' WHERE `tt_content`.`padding_after_class` = '10px';
+UPDATE `tt_content` SET `padding_after_class` = '3' WHERE `tt_content`.`padding_after_class` = '12px';
+UPDATE `tt_content` SET `padding_after_class` = '4' WHERE `tt_content`.`padding_after_class` = '16px';
+UPDATE `tt_content` SET `padding_after_class` = '4' WHERE `tt_content`.`padding_after_class` = '20px';
+UPDATE `tt_content` SET `padding_after_class` = '5' WHERE `tt_content`.`padding_after_class` = '24px';
+UPDATE `tt_content` SET `padding_after_class` = '6' WHERE `tt_content`.`padding_after_class` = '36px';
+UPDATE `tt_content` SET `padding_after_class` = '7' WHERE `tt_content`.`padding_after_class` = '48px';
+
+
+#####################################################
+# Loeschen der Sysfileeintraege die nicht mehr existierenden Daten
+DELETE FROM sys_file WHERE sys_file.missing=1 AND sys_file.uid NOT IN (SELECT sys_file_reference.uid_local FROM sys_file_reference WHERE sys_file_reference.uid_local=sys_file.uid)
+
+
+# Headerimage Version 11
+UPDATE `tt_content` SET `CType` = 't3upheaderimage_content' WHERE `CType` LIKE '%headerimage%';
+
+## Personen
+UPDATE `tt_content` SET `list_type` = 'hdapersonen_person' WHERE `tt_content`.`list_type` LIKE '%hdapersonen_hdapersonen%' ;
+
+# Rücksetzen auf text, wenn textpic keine Bilder hat
+UPDATE `tt_content` SET `CType` = 'text' WHERE `CType` LIKE 'textpic' AND `image` = 0;
+
+# Rücksetzen auf text, wenn textmedia keine Bilder hat
+UPDATE `tt_content` SET `CType` = 'text' WHERE `CType` LIKE 'textmedia' AND `assets` = 0;
+
+# Textpic -> Textmedia ! VORSICHT ! Headerimage von image auf assets // slideshow von image auf assets 
+UPDATE `tt_content` SET `assets` = '1' WHERE `tt_content`.`image` = 1;
+UPDATE `tt_content` SET `CType` = 'textmedia' WHERE `tt_content`.`CType` = 'textpic';
+UPDATE `tt_content` SET `image` = '0' WHERE `tt_content`.`assets` = 1;
+UPDATE `sys_file_reference` SET `fieldname` = 'assets' WHERE `sys_file_reference`.`fieldname` = 'image';
+
+# Alle Image Cols zurücksetzen, die nicht Textmedia sind, 
+# !!!! Achtung, CTYPEs Image & Textpic dürfen nicht vorhanden sein
+UPDATE `tt_content` SET `imagecols` = '1' WHERE `tt_content`.`CType`  NOT LIKE 'textmedia';
+

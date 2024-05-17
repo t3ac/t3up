@@ -1,360 +1,225 @@
-main{                                                       
-  
-  	.breadcrumbrow                                             {padding-right: .75rem; padding-left: .75rem;}
-  	.breadcrumbrow nav                                         {padding-right: .75rem; padding-left: .75rem;}    
-  
-  	> .container                                               {background-color: $baseContainerBgColor;}   
-  	.container .container                                      {padding-right: 0; padding-left: 0;}  
+main{																		 
+	> .container												{background-color: $baseContainerBgColor;}	
+	> .container > .row											{padding: $mainpadding;}	
+		
+	/* Area Content */
+	.content a,
+	.contentRight a												{color: $baseLinkColor; font-weight: $boldweight; line-height: $lineheight; }
+	.content a:hover,
+	.contentRight a:hover										{color: $baseLinkHoverColor;}
+	.content div > p:last-of-type								{margin-bottom: 0;}
+		
+	/* frame colored */	
+	.frame-colored												{padding: $v3; background-color :rgba(lighten($baseColor, 57.5%),1);}	
+	
+	/* frame column */
+	.frame-twocol .ce-text 										{column-fill: balance; column-gap: $v3; column-count:1;}
+	
+	/* frame header */	
+	.frame-header *												{margin: 0}	
+	
+	/* frame line */
+	.frame-line													{padding-bottom: $v3; border-bottom: 2px solid rgba($baseColor, 0.25);}
+	
+	/* frame white */
+	.frame-white												{transition: all ease 0.3s; background-color: rgba(255, 255, 255, 1);
+		>h2,
+		>h3,
+		>h4														{padding: $v3 $v3 0; margin: 0 ; letter-spacing: 0.01rem;}
+		
+	.frame-table > h3 											{margin: 0 0 $v4 !important; text-transform: none;} 
+	.frame-table > h4 											{margin: $h4-margin  !important;}
+		
+	> p															{padding: 0 $v3; }
+	> ul.ce-uploads												{padding: 0 $v3 $v3; }	
+	> div	p:last-of-type										{margin-bottom: 0; }	
+	> div.table-wrapper											{padding: 0; }
+	
+	> .ce-textpic.ce-right.ce-intext > .ce-bodytext,
+	> .ce-textpic.ce-left.ce-intext > .ce-bodytext,		
+	> .ce-text													{padding: $v3;}		
+	
+	> .ce-textpic.ce-right.ce-intext.ce-nowrap > .ce-bodytext	{padding:  $v3 0 $v3 $v3;}
+	> .ce-textpic.ce-left.ce-intext.ce-nowrap > .ce-bodytext	{padding:  $v3 $v3 $v3 0;}	
+	
+	> .ce-textpic.ce-below > .ce-bodytext						{padding:  0 $v3;}	
+	
 
-  	/* Area Content */
-  	.content a,
-  	.contentRight a                                            {color: $baseLinkColor;}
-  	.content a:hover,
-  	.contentRight a:hover                                      {color: $baseLinkHoverColor;}  
+	h2 + h3														{text-transform: none;}
+	h2 + div													{padding-top: 0; }
+	h3 + div													{padding-top: 0; }	
+	h4 + div													{padding-top: 0; }		
+	 }
+	 
+ 	 .frame-list.frame-white									{background: none;}
+	 .frame-list.frame-white{
+		>h2,
+		>h3,
+		>h4														{padding: 0 $v3; margin: 0 0 $v4 !important; text-transform: none;} 			
+	 }
 
-	/* Area Right */
-  	.right {                                                  
-    	h2                                                     {font-size: 1.15em;}
-    	.subInfo                                               {padding: .66rem 1rem; background: #9ea2a2; margin-bottom: 1rem; color: #fff;}
-    	.subInfo h2                                            {color: #fff !important; background: none !important; border: 0 !important; margin: 0; padding: 0 !important; text-transform: uppercase;  letter-spacing: 0.01rem; font-weight: normal;}   
-    	.contentRight                                          {column-gap: 2rem;}
-    	.contentRight > div                                    {break-inside: avoid;}
-  	}
-  	
-  	/* Area Left */
-  	.left {
-    	h2                                                     {font-size: 1.15em;}  
-  	}
-  .frame-type-menu_subpages ul                                 {padding-left: 0rem; list-style-type: none;}
+	.smalltext													{font-size: calc(#{$p} * .8);}
+	
+
 }
 
-/* Designs *************************************************/
-
-  
-  .frame-default                                             {transition: all ease .5s; background: none;}
-  .right > .frame-default:not(.frame-youtubevideo_pi1,.frame-shortcut)       
-  	{padding-left: .75rem; padding-right: .75rem;}
-  
-  .frame-line:not(.frame-list){                              background: none; transition: all ease .5s; border-bottom: 2px solid rgba($baseColor, 0.5); 
-   }   
-   
-   /* colored */
-   .frame-text.frame-colored,
-   .frame-textmedia.frame-colored{                           background: desaturate(lighten($baseColor, 50%),33.33%); transition: all ease .5s; transition: all ease .5s; 
-    	h2,h3,h4, a                                          {color: $baseColor; margin: 0;}   
-        > h2:first-of-type,> h3:first-of-type,> h4:first-of-type  {background: rgba($baseColor,1) !important; color: #fff !important; text-transform: uppercase; margin-bottom: .75rem; padding: .75rem;}
-        > .ce-text,
-        > .ce-textpic                                        {padding-left: .75rem;padding-right: .75rem;}
-   }
-   .frame-2cols.frame-colored,
-   .frame-3cols.frame-colored,
-   .frame-4cols.frame-colored{                               background: desaturate(lighten($baseColor, 50%),33.33%); transition: all ease .5s; transition: all ease .5s; padding: .75rem; }
-
-   /* white */
-  .frame-white:not(.frame-list){                             background: white; padding: .75rem; transition: all ease .5s; 
-     > h2:first-of-type,
-     > h3:first-of-type,  
-     > h4:first-of-type                                      {margin: 0; padding: 0 .75rem .75rem ; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2); }  
-
-     p:last-of-type                                          {margin-bottom: 0;} 
-     
-     .t3up_textmedia {									 	 margin-left: -.75rem; margin-right: -.75rem;  margin-top: -.75rem; 
-     	> *:not(.ce-gallery)                                 {padding-left: 0.75rem; padding-right: .75rem;}
-     }
-  }
-  
-     /* 2column text */
-   .frame-text.frame-2columns .ce-text                       {column-count: 1; column-gap: 12px;  column-fill: balance; }
-  
-      
-  .frame-table.frame-white{                                  background: none; color: inherit; padding: 0; 
-    table                                                    {background: #fff;}
-    }  
-    
-   /* classical Bootstrap -------------------------------- */
-  
-   .frame-danger  {                                          border-radius: .25rem; border: 1px solid #f5c6cb; background: #f8d7da; padding: .75rem;  transition: all ease .5s; 
-     > h2,
-     > h3,   
-     > h4, 
-     a                                                       {color: #721c24 !important}    
-     
-     > h2:first-of-type,
-     > h3:first-of-type,  
-     > h4:first-of-type                                      {padding: .75rem 1rem; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
-     
-     p:last-of-type                                          {margin-bottom: 0;} 
-   }
-   
-   .frame-info    {                                          border-radius: .25rem; border: 1px solid #bee5eb; background: #d1ecf1; padding: .75rem;  transition: all ease .5s; 
-     > h2,
-     > h3,   
-     > h4, 
-     a                                                       {color: #0c5460 !important}    
-     
-     > h2:first-of-type,
-     > h3:first-of-type,  
-     > h4:first-of-type                                      {padding: .75rem 1rem; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
-     
-     p:last-of-type                                          {margin-bottom: 0;} 
-   }
-   
-   .frame-success {                                          border-radius: .25rem; border: 1px solid #c3e6cb; background: #d4edda; padding: .75rem;  transition: all ease .5s; 
-     > h2,
-     > h3,   
-     > h4, 
-     a                                                       {color: #155724 !important}    
-     
-     > h2:first-of-type,
-     > h3:first-of-type,  
-     > h4:first-of-type                                      {padding: .75rem; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
-     
-     p:last-of-type                                          {margin-bottom: 0;} 
-   }
-    
-   .frame-warning {                                          border-radius: .25rem; border: 1px solid #ffeeba; background: #fff3cd; padding: .75rem;  transition: all ease .5s; 
-     > h2,
-     > h3,   
-     > h4, 
-     a                                                       {color: #856404 !important}     
-     
-     > h2:first-of-type,
-     > h3:first-of-type,  
-     > h4:first-of-type                                      {padding: .75rem; line-height: 1.25em; letter-spacing: 0.01rem; margin-top: 0; margin-left: calc(var(--bs-gutter-x) / -2); margin-right: calc(var(--bs-gutter-x) / -2);} 
-     
-     p:last-of-type                                          {margin-bottom: 0;} 
-   }
-       
-  /*
-  .frame-info:hover,
-  .frame-sucsess:hover,
-  .frame-danger:hover,
-  .frame-warning:hover,  
-  .frame-contact:hover,
-  .frame-white:hover,
-  .frame-grey:hover,
-  .frame-darkgrey:hover,
-  .frame-black:hover,
-  .frame-colored:hover                                       {box-shadow: $shadow}
-  */
-
-  /* Table */
-  .frame-type-table h4,
-  .frame-type-table h3,
-  .frame-type-table h2                                     {padding-left: .75rem; padding-bottom: 0.6666rem; }
-  
-  /* hr */
-  .frame-thick  hr                                         {border-top: 4px solid  rgba($baseColor, 0.1);}
-  .frame-medium  hr                                        {border-top: 2px solid  rgba($baseColor, 0.1);}
-  .frame-thin  hr                                          {border-top: 1px solid  rgba($baseColor, 0.1);}
-
-
-/* Colors ++++++++++++++++++++++++++++++++++++++++++++++ */
-
-.orange{
-  .frame-colored                                           {background: desaturate(lighten($orange, 50%),15%);}
-  .frame-colored h2,
-  .frame-colored h3,  
-  .frame-colored h4,  
-  .frame-colored a                                         {color: $orange !important}
-  .frame-colored > h2:first-of-type,
-  .frame-colored > h3:first-of-type,  
-  .frame-colored > h4:first-of-type                        {background: rgba($orange,1) !important; color: #fff !important; }
-  
-  .frame-line                                              {border-bottom: 2px dotted rgba($orange, 0.5);}   
-  
-  .ce-table-colorstripe th,
-  .ce-table-normalplus th                                  {background-color: $orange !important;} 
-  .ce-table-colorstripe tr:nth-child(2n) td                {background-color: rgba($orange,.2) !important;}     
+@media (min-width: 768px) {
+	main{	
+		.frame-twocol .ce-text 									{column-count:2}
+	}
 }
 
-.blue{
-  .frame-colored                                           {background: desaturate(lighten($blue, 50%),15%);}
-  .frame-colored h2,
-  .frame-colored h3,  
-  .frame-colored h4, 
-  .frame-colored a                                         {color: $blue !important}
-  .frame-colored > h2:first-of-type,
-  .frame-colored > h3:first-of-type,  
-  .frame-colored > h4:first-of-type                        {background: rgba($blue,1) !important; color: #fff !important; }
+	/* Design COLOR++++++++++++++++++++++++++++++++ */
+	
+.page.orange{
+	.frame-colored												{background: rgba(lighten($orange, 57.5%),1);}
+	main h2, main h3, main a,
+	.frame-colored h2,
+	.frame-colored h3,
+	.frame-colored h4,
+	.frame-colored a											{color: $orange !important}
+				
+	.btn.btn-secondary											{background-color: $orange !important}										
+	.btn.btn-secondary a										{color: #fff !important}	
+	
+	hr															{background-color: $orange !important}
+	.frame-line													{border-bottom: 2px solid rgba($orange, 0.5);}	
+	
+	.ce-table-colorstripe th,
+	.ce-table-normalplus th										{background-color: $orange !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($orange,.2) !important;}	
+	}
+	
+.page.blue{
+	.frame-colored												{background: rgba(lighten($blue, 57.5%),1);}
+	main h2, main h3, main a,
+	.frame-colored h2,
+	.frame-colored h3,
+	.frame-colored h4, 
+	.frame-colored a											{color: $blue !important}
+	
+	.btn.btn-secondary											{background-color: $blue !important}										
+	.btn.btn-secondary a										{color: #fff !important}	
+	
+	hr															{background-color: $blue !important}
+	.frame-line													{border-bottom: 2px solid rgba($blue, 0.5);}
+	
+	.ce-table-colorstripe th,
+	.ce-table-normalplus th										{background-color: $blue !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($blue,.2) !important;}
+	}
+	
+.page.green{
+	.frame-colored												{background: rgba(lighten($green, 57.5%),1);}
+	main h2, main h3, main a,
+	.frame-colored h2,
+	.frame-colored h3,
+	.frame-colored h4, 
+	.frame-colored a											{color: $green !important; margin: 0; }
 
-  .frame-line                                              {border-bottom: 2px dotted rgba($blue, 0.5);}  
-  
-  .ce-table-colorstripe th,
-  .ce-table-normalplus th                                  {background-color: $blue !important;} 
-  .ce-table-colorstripe tr:nth-child(2n) td                {background-color: rgba($blue,.2) !important;}  
-}
+	.btn.btn-secondary											{background-color: $green !important}	
+	.btn.btn-secondary a										{color: #fff !important}	
+	
+	hr															{background-color: $green !important}
+	.frame-line													{border-bottom: 2px solid rgba($green, 0.5);}
+		
+	.ce-table-colorstripe th,
+	.ce-table-normalplus th										{background-color: $green !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($green,.2) !important;}
+	}
+	
+.page.grey{
+	.frame-grey													{background: rgba(lighten($grey, 57.5%),1);}
+	main h2, main h3, main a,
+	.frame-colored h2,
+	.frame-colored h3,
+	.frame-colored h4,
+	.frame-colored a											{color: darken($grey,10%) !important}
 
-.green{
-  .frame-colored                                           {background: desaturate(lighten($green, 50%),15%);}
-  .frame-colored h2,
-  .frame-colored h3,  
-  .frame-colored h4, 
-  .frame-colored a                                         {color: $green !important; margin: 0; }
-  .frame-colored > h2:first-of-type,
-  .frame-colored > h3:first-of-type,  
-  .frame-colored > h4:first-of-type                        {background: rgba($green,1) !important; color: #fff !important; }
+	.btn.btn-secondary											{background-color: $grey !important}	
+	.btn.btn-secondary a										{color: #fff !important}	
+			
+	hr															{background-color: $grey !important}
+	.frame-line													{border-bottom: 2px solid rgba($grey, 0.5);} 
+		 
+	.ce-table-colorstripe th,
+	.ce-table-normalplus th										{background-color: $grey !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($grey,.2) !important;} 
+	}
+	
+.page.red{
+	.frame-colored												{background: rgba(lighten($red, 57.5%),1);}
+	main h2, main h3, main a,
+	.frame-colored h2,
+	.frame-colored h3,
+	.frame-colored h4, 
+	.frame-colored a											{color: $red !important}
 
-  .frame-line                                              {border-bottom: 2px dotted rgba($green, 0.5);}  
-   
-  .ce-table-colorstripe th,
-  .ce-table-normalplus th                                  {background-color: $green !important;} 
-  .ce-table-colorstripe tr:nth-child(2n) td                {background-color: rgba($green,.2) !important;}  
-}
+	.btn.btn-secondary											{background-color: $red !important}	
+	.btn.btn-secondary a										{color: #fff !important}	
+		
+	hr															{background-color: $red !important}
+	.frame-line													{border-bottom: 2px solid rgba($red, 0.5);} 
+		
+	.ce-table-colorstripe th,
+	.ce-table-normalplus th										{background-color: $red !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($red,.2) !important;} 
+	}
+	
+.page.turquoise{
+	.frame-colored												{background: rgba(lighten($turquoise, 65%),1);}
+	main h2, main h3, main a,
+	.frame-colored h2,
+	.frame-colored h3,
+	.frame-colored h4,
+	.frame-colored a											{color: $turquoise !important}
+	
+	.btn.btn-secondary											{background-color: $turquoise !important}	
+	.btn.btn-secondary a										{color: #fff !important}	
+	
+	hr															{background-color: $turquoise !important}
+	.frame-line													{border-bottom: 2px solid rgba($turquoise, 0.5);} 
+	
+	.ce-table-colorstripe th,
+	.ce-table-normalplus th										{background-color: $turquoise !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($turquoise,.2) !important;} 
+	}
+	
+.page.violett{
+	.frame-colored												{background: lighten($violett, 60%);}
+	main h2, main h3, main a,
+	.frame-colored h2,
+	.frame-colored h3,
+	.frame-colored h4, 
+	.frame-colored a											{color: $violett !important}
 
-.grey{
-  .frame-grey                                              {background: desaturate(lighten($grey, 50%),15%);}
-  .frame-colored h2,
-  .frame-colored h3,  
-  .frame-colored h4,  
-  .frame-colored a                                         {color: darken($grey,10%) !important}
-  .frame-colored > h2:first-of-type,
-  .frame-colored > h3:first-of-type,  
-  .frame-colored > h4:first-of-type                        {background: rgba($grey,1) !important; color: #fff !important; }
-  
-  .frame-line                                              {border-bottom: 2px dotted rgba($grey, 0.5);} 
-    
-  .ce-table-colorstripe th,
-  .ce-table-normalplus th                                   {background-color: $grey !important;} 
-  .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($grey,.2) !important;} 
-}
-
-.red{
-  .frame-colored                                           {background: desaturate(lighten($red, 50%),15%);}
-  .frame-colored h2,
-  .frame-colored h3,  
-  .frame-colored h4, 
-  .frame-colored a                                         {color: $red !important}
-  .frame-colored > h2:first-of-type,
-  .frame-colored > h3:first-of-type,  
-  .frame-colored > h4:first-of-type                        {background: rgba($red,1) !important; color: #fff !important; }
-
-  .frame-line                                              {border-bottom: 2px dotted rgba($red, 0.5);} 
-   
-  .ce-table-colorstripe th,
-  .ce-table-normalplus th                                   {background-color: $red !important;} 
-  .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($red,.2) !important;} 
-}
-
-.turquoise{
-  .frame-colored                                           {background: desaturate(lighten($turquoise, 50%),15%);}
-  .frame-colored h2,
-  .frame-colored h3,  
-  .frame-colored h4,  
-  .frame-colored a                                         {color: $turquoise !important}
-  .frame-colored > h2:first-of-type,
-  .frame-colored > h3:first-of-type,  
-  .frame-colored > h4:first-of-type                        {background: rgba($turquoise,1) !important; color: #fff !important; }
-
-  .frame-line                                              {border-bottom: 2px dotted rgba($turquoise, 0.5);} 
-  
-  .ce-table-colorstripe th,
-  .ce-table-normalplus th                                  {background-color: $turquoise !important;} 
-  .ce-table-colorstripe tr:nth-child(2n) td                {background-color: rgba($turquoise,.2) !important;} 
-}
-
-.violett{
-  .frame-colored                                           {background: desaturate(lighten($violett, 50%),15%);}
-  .frame-colored h2,
-  .frame-colored h3,  
-  .frame-colored h4, 
-  .frame-colored a                                         {color: $violett !important}
-  .frame-colored > h2:first-of-type,
-  .frame-colored > h3:first-of-type,  
-  .frame-colored > h4:first-of-type                        {background: rgba($violett,1) !important; color: #fff !important; }
-
-  .frame-line                                              {border-bottom: 2px dotted rgba($violett, 0.5);} 
-   
-  .ce-table-colorstripe th,
-  .ce-table-normalplus th                                   {background-color: $violett !important;} 
-  .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($violett,.2) !important;} 
-}
-
-.yellow{
-  .frame-colored                                            {background: desaturate(darken($yellow, 50%),15%);}
-  .frame-colored h2,
-  .frame-colored h3,  
-  .frame-colored h4, 
-  .frame-colored a                                          {color: $yellow !important}
-  .frame-colored > h2:first-of-type,
-  .frame-colored > h3:first-of-type,  
-  .frame-colored > h4:first-of-type                        {background: rgba($yellow,1) !important; color: #fff !important; }
-
-  .frame-line                                              {border-bottom: 2px dotted rgba($yellow, 0.5);} 
-  
-  .ce-table-colorstripe th,
-  .ce-table-normalplus th                                   {background-color: $yellow !important;} 
-  .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($yellow,.2) !important;} 
-}
-  
-.darkblue{
-  .frame-colored                                            {background: desaturate(darken($darkblue, 50%),15%);}
-  .frame-colored h2,
-  .frame-colored h3,  
-  .frame-colored h4,  
-  .frame-colored a                                          {color: $darkblue !important}
-  .frame-colored > h2:first-of-type,
-  .frame-colored > h3:first-of-type,  
-  .frame-colored > h4:first-of-type                        {background: rgba($darkblue,1) !important; color: #fff !important; }
-
-  .frame-line                                              {border-bottom: 2px dotted rgba($darkblue, 0.5);} 
-   
-  .ce-table-colorstripe th,
-  .ce-table-normalplus th                                   {background-color: $darkblue !important;} 
-  .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($darkblue,.2) !important;} 
-}    
-  
-.darkgrey{
-  .frame-colored                                            {background: desaturate(darken($darkgrey, 50%),15%);}
-  .frame-colored h2,
-  .frame-colored h3,  
-  .frame-colored h4, 
-  .frame-colored a                                          {color: $darkgrey !important}
-  .frame-colored > h2:first-of-type,
-  .frame-colored > h3:first-of-type,  
-  .frame-colored > h4:first-of-type                        {background: rgba($darkgrey,1) !important; color: #fff !important; }
-
-  .frame-line                                              {border-bottom: 2px dotted rgba($darkgrey, 0.5);}
-   
-  .ce-table-colorstripe th,
-  .ce-table-normalplus th                                   {background-color: $darkgrey !important;} 
-  .ce-table-colorstripe tr:nth-child(2n) td                 {background-color: rgba($darkgrey,.2) !important;} 
-}
-
-/* MEDIAQUERIES ***********************************************************************/  
-@media screen and (min-width: 576px) {
-  main{
-    .right {                                                  
-      .contentRight                                           {column-count: 2;}
-    }
-  }
-}
-
-@media screen and (min-width: 992px) {
-  main{
-     .content                                                {padding-bottom: 3rem;}
-    .right {                                                  
-      .contentRight                                           {column-count: 1;}
-      h2                                                      {font-size: 1rem;}
-      h3                                                      {font-size: 1rem;}
-    }
-    
-    .left {
-       h2                                                     {font-size: 1rem;}   
-       h2                                                     {font-size: 1rem;}
-    }  
-    
-  .frame-type-table h4,
-  .frame-type-table h3,
-  .frame-type-table h2                                        {padding-left: .75rem; padding-bottom: .66rem; }
-  
-   /* 2column text */
-   .frame-text.frame-2columns .ce-text                        {column-count: 2; }
-  
- 
-  }
-}
-
-
-
-
+	.btn.btn-secondary											{background-color: $violett !important}	
+	.btn.btn-secondary a										{color: #fff !important}	
+	
+	hr															{background-color: $violett !important}
+	.frame-line													{border-bottom: 2px solid rgba($violett, 0.5);} 
+		
+	.ce-table-colorstripe th,
+	.ce-table-normalplus th										{background-color: $violett !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($violett,.2) !important;} 
+	}
+	
+.page.yellow{
+	.frame-colored												{background: darken($yellow, 50%);}
+	main h2, main h3, main a,
+	.frame-colored h2,
+	.frame-colored h3,
+	.frame-colored h4, 
+	.frame-colored a											{color: $yellow !important}
+	
+	.btn.btn-secondary											{background-color: $yellow !important}	
+	.btn.btn-secondary a										{color: #fff !important}	
+	
+	hr															{background-color: $yellow !important}
+	.frame-line													{border-bottom: 2px solid rgba($yellow, 0.5);} 
+	
+	.ce-table-colorstripe th,
+	.ce-table-normalplus th										{background-color: $yellow !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($yellow,.2) !important;} 
+	}
+	

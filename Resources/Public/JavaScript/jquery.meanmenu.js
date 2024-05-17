@@ -34,7 +34,6 @@ $(document).ready(function() {
 		$('#menu').meanmenu();    
    }
 
-	var topheight = $('.top').height();
 
 });
 
@@ -45,9 +44,9 @@ $(document).ready(function() {
 				var defaults = {
 						meanMenuTarget: jQuery(this), // Target the current HTML markup you wish to replace
 						meanMenuContainer: 'body', // Choose where meanmenu will be placed within the HTML
-						meanMenuClose: "<span></span>", // single character you want to represent the close menu button
-						meanMenuCloseSize: "18px", // set font size of close button
-						meanMenuOpen: "<span></span>", // text/markup you want when menu is closed
+						meanMenuClose: "", // single character you want to represent the close menu button
+						meanMenuCloseSize: "", // set font size of close button
+						meanMenuOpen: "", // text/markup you want when menu is closed
 						meanRevealPosition: "right", // left right or center positions
 						meanRevealPositionDistance: "0", // Tweak the position of the menu
 						meanRevealColour: "", // override CSS colours for the reveal background
@@ -87,7 +86,8 @@ $(document).ready(function() {
 						var onePage = options.onePage;
 						var meanDisplay = options.meanDisplay;
 						var removeElements = options.removeElements;
-
+						var topheight = $('.top').height();
+	
 						//detect known mobile/tablet usage
 						var isMobile = false;
 						if ( (navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/Android/i)) || (navigator.userAgent.match(/Blackberry/i)) || (navigator.userAgent.match(/Windows Phone/i)) ) {
@@ -143,7 +143,7 @@ $(document).ready(function() {
 
 						// re-instate original nav (and call this on window.width functions)
 						var meanOriginal = function() {
-							jQuery('.mean-bar,.mean-push').remove();
+							// jQuery('.mean-bar,.mean-push').remove();
 							jQuery(meanContainer).removeClass("mean-container");
 							jQuery(meanMenu).css('display', meanDisplay);
 							menuOn = false;
@@ -159,8 +159,8 @@ $(document).ready(function() {
 									meanMenuExist = true;
 									// add class to body so we don't need to worry about media queries here, all CSS is wrapped in '.mean-container'
 									jQuery(meanContainer).addClass("mean-container");
-									jQuery('.mean-container').prepend('<div class="mean-bar"><span class="meanbutton"><a href="#nav" class="meanmenu-reveal" style="'+meanStyles+'">Show Navigation</a></span><div class="container"><nav class="mean-nav"></nav></div></div>');
-
+									jQuery('.mean-container').prepend('<div class="mean-bar"><div class="container"><nav class="mean-nav"></nav></div></div>');
+                                    jQuery('.mean-bar').css('top',topheight);
 									//push meanMenu navigation into .mean-nav
 									var meanMenuContents = jQuery(meanMenu).html();
 									jQuery('.mean-nav').html(meanMenuContents);
@@ -179,8 +179,8 @@ $(document).ready(function() {
 									}
 
 									// push in a holder div (this can be used if removal of nav is causing layout issues)
-									jQuery(meanMenu).before('<div class="mean-push" />');
-									jQuery('.mean-push').css("margin-top",meanNavPush);
+								//	jQuery(meanMenu).before('<div class="mean-push" />');
+								//	jQuery('.mean-push').css("margin-top",meanNavPush);
 
 									// hide current navigation and reveal mean nav link
 									jQuery(meanMenu).hide();

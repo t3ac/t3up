@@ -76,19 +76,13 @@ $(document).ready(function() {
 	        } 
 	    })
 
-            
-            
-            
-            
-            
     /* Inits end *********************************************************************************/
-    
     
     /* Resets start ******************************************************************************/  
 
         function resMenue(){
             if ($(window).width() >= 992) {
-                $('.subnav').attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});     
+                $('#menu .subnav').attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});     
                 $('#menu li').attr({'data-show-sub': 'false'}).removeClass('activated');
                 $('#menu .subnav li > span.nextlevel').text($plu);
                 $('.box').fadeOut('fast');  
@@ -206,29 +200,43 @@ $(document).ready(function() {
             
             $this.toggleClass('show');
         })
-        
- 		
-        /* Block - menuestyle 3  */
+             
+        /* BlockNav - menuestyle 3  */
         
         $body.on('ontouchend click', '.blockNav .navlink', function(event) {
-            var $this = $(this).parent(); 
+            var $this   = $(this),
+                $p      = $(this).parent();  
             
             /* Reset */ 
-            $this.siblings().removeClass('activated');
-            $this.find('.subnav .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'})
+            $p.siblings().find('.subnav').attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});
+            $p.find('.subnav .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'})
+            $p.siblings().attr({'data-show-sub': 'false'});  
+            $p.siblings().removeClass('activated');
+            $p.siblings().find('li').removeClass('activated');
             
-            if ($this.parent().is('.nav')) { 
-                $this.siblings().find('> .subnav').attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'})
-                event.preventDefault();
+            
+            
+            if ($this.hasClass('show')){
+				resMenue();
+				event.preventDefault();  
+                    
+			} else {
+                
+                if (($this.next().length) & ($this.parent().parent().is('.nav'))){
+                    event.preventDefault();         
+                    $('.overlay').fadeIn();  
+                    $p.addClass('activated');   
+                    $p.attr({'data-show-sub': 'true'});  
+                    $p.siblings().find(' > a').removeClass('show');
+                    $p.find(' > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'})
+                }
             }
             
-           /* Do */
-            $this.addClass('activated');
-            $this.attr({'data-show-sub': 'true'});  
-            $this.find(' > .subnav').attr({'aria-hidden': 'false'}).attr({'aria-expanded':'true'})
-            $('.overlay').fadeIn();
+            $this.toggleClass('show');
         })
         
+             
+                
  	 		
      /* Submenues open and close **************************************************************************/
         $body.on('click', '#menu .subnav .navitem > span.nextlevel', function(event) {

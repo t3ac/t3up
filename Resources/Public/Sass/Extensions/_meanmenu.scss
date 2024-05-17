@@ -1,24 +1,5 @@
-
-
-
-.mean-container .mean-bar                       {position: absolute; background: none; width: 100%; padding: 0; z-index: 1998; top: 2.9rem;}
-.mean-container .mean-bar .meanbutton           {float: right; margin-top: -2rem; display: inline-block;}
-
-
-.mean-container a.meanmenu-reveal               {align-self: center; padding: 0 1rem 0 0; position: relative; cursor: pointer; 
-                                                text-decoration: none; font-size: 16px; text-indent: -9999em; line-height: 22px; font-size: 1px; display: block; 
-                                                font-family: sans-serif; font-weight: 600; float: right; color: $topLinkColor; }
-
+.mean-bar                                       {position: absolute; z-index: 2999; width: 100%;}
 .mean-bar > .container                          {padding: 0 !important;}
-
-.mean-container a.meanmenu-reveal span          {position: relative;display: block;width: 1.333rem;height: 1.333rem; vertical-align: middle;}
-.mean-container a.meanmenu-reveal span:before   {content: ''; position: absolute; border-bottom: .15rem solid $topLinkColor; border-top: .15rem solid $topLinkColor;
-                                                margin: auto; bottom: .25rem; top: .25rem;  right: 0; left: 0;}
-.mean-container a.meanmenu-reveal span:after    {content: ''; position: absolute; display: block; height: .15rem; background-color: $topLinkColor;  
-                                                margin: auto;  bottom: 0;   right: 0;   left: 0;   top: 0;}                
-.mean-container a.meanmenu-reveal.meanclose span:before { -webkit-transform: rotate(45deg);  transform: rotate(45deg);   height: 2px;   
-                                                background-color: $topLinkColor;   border: none;}
-.mean-container a.meanmenu-reveal.meanclose span:after {transform: rotate(315deg); }
          
 .mean-nav  {                                    width: 100%; box-shadow: 0 5px 5px 0px rgba(0,0,0,.3);
 

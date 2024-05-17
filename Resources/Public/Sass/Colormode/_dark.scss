@@ -1,4 +1,3 @@
-
 html[color-mode$=dark] {
 	
 	/* Variablen */
@@ -51,7 +50,6 @@ html[color-mode$=dark] {
      	 .dropdown-item:focus 							          {background: transparent !important; }
 
     } 
-    
 
     header {                                                      background-color: $subNavBG !important; color: $baseTextColor !important;
         .toparea                                                  {background-color: rgba($topBgColor,$topBgColorTrans);}
@@ -61,17 +59,30 @@ html[color-mode$=dark] {
         
         a                                                         {color: $topLinkColor !important;}  
         a:hover                                                   {color: $topLinkHoverColor !important;}
-        
+
+      .tab-content{
+        .tab-pane{                      
+            h2,
+            h3,
+            h4 													  {color: $topLinkColor !important;}  
+            }
+        }
+        .quicklinks ul,
         nav#menu ul li ul                                         {background-color: $subNavBG !important; } 
         nav#menu ul li ul *                                       {color: $baseTextColor !important;} 
         nav#menu a                                                {color: $topLinkColor !important;}  
         nav#menu a:hover                                          {color: $topLinkHoverColor !important; background: transparent !important;}
-        .quicklinks ul                                            {background-color: $topBgColor; color: $topLinkColor !important;} 
-        .quicklinks ul li a                                       {color: $topLinkColor !important;} 
-        .quicklinks ul li a:before                                {color: $topLinkColor !important;}
-        .quicklinks ul li a:hover                                 {background-color: transparent !important;}
-        
+        li.languagemenu.active a                                  {border-bottom: 2px solid #fff !important;} 
+
+
+        a.meanmenu-reveal:before                                  {border-bottom: 0.15rem solid $topLinkColor !important; border-top: 0.15rem solid $topLinkColor !important;}   
+        a.meanmenu-reveal:after                                   {background-color: $topLinkColor !important;}
         .box                                                      {background-color: $subNavBG !important;}
+        
+        &.activeNav ul.subnav li.activated                        {background-color: $subNavBG !important;}  
+        
+		.nav-service .tab-content .tab-pane a.color-mode__btn b   {color: #fff !important;}  
+    
     }
     
     main {
@@ -87,10 +98,16 @@ html[color-mode$=dark] {
         a::before:hover                                           {color: $baseLinkHoverColor !important;}   
         > .container                                              {background-color: $baseContainerBgColor !important;}   
         hr                                                        {background-color: #fff; opacity: #fff;}
-        .content > div                                            {background-color: transparent !important; $baseTextColor: #fff;}   
-        .contentRight > div                                       {background-color: transparent !important; $baseTextColor: #fff;}   
-        .contentRight > div > div                                 {background-color: transparent !important; $baseTextColor: #fff;}           
         
+        .ce-table th,
+        &.leftNavigation div,
+        .left div,       
+        .content  div,  
+        .contentRight div                                         {background-color: transparent !important; $baseTextColor: #fff;}           
+                
+        .content  img                                             {background-color: #fff;}
+        
+        .frame-table.frame-white .table-wrapper                   {background: none;}
          
     	/* Subnavigation *************************************/       
     	
@@ -108,13 +125,17 @@ html[color-mode$=dark] {
 	   	 	.navbar-nav a.extend.show:after                       {background: transparent !important;  text-decoration: none;}         
         }
         
-        /* Pagebrowser ***************************************/
+        /* Pagebrowser & EXTENSINOS **************************/
         
 	  .page-link 												  {background: transparent !important; color: $baseTextColor !important; }
       .f3-widget-paginator a                                      {background: transparent !important; color: $baseTextColor !important; }
 
+		ul.tx-indexedsearch-browsebox li a                        {background-color: transparent; border: 1px solid #333;}
+		.tx-indexedsearch-icon img                                {background-color: transparent;}
         
-        
+        .content .leaflet-control-layers                          {background-color: #fff !important; color: #000 !important;}  
+        .leaflet-container a                                      {background-color: #fff !important; color: #000 !important;}           
+        .leaflet-container img                                    {background-color: transparent;}                           
         
         /* News **********************************************/
         .news{
@@ -126,10 +147,12 @@ html[color-mode$=dark] {
             .article-inner:hover                                  {background: transparent !important;}               
             .article-inner a                                      {transition: all ease .3s; color: $baseLinkColor !important;} 
             .article-inner a:hover                                {color: $topLinkHoverColor !important;}             
-            a.moreNews:after                                      {background: transparent !important;}   
+            .article .moreNews:after                              {background: transparent !important;}   
+            
+            .f3-widget-paginator li.current    				     {background-color: transparent; color: $baseTextColor !important;}
  
         }  
-
+		.frame-contact 											 {background-color: transparent !important;}
         
         /* Bootstrap ***************************************/
         .t3up_accordion .accordion-item .accordion-header>a      {background-color: transparent !important; $baseTextColor: #fff; border: 1px solid rgba(255,255,255,.2) !important;} 

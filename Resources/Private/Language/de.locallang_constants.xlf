@@ -3,16 +3,42 @@
     <file source-language="de" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up">
         <header/>
         <body>
-            
+
+
+            /* -- Breadcrumb ------------------------- */                                     
+             <trans-unit id="breadcrumbstyle">
+                 <source>Breadcrumb style, 1 - standard, 2 - extended.</source>
+                 <target state="translated">Breadcrumb Stil, 0 - ohne, keine Breadcrumbleiste, 1 - Standard, 2 - erweitert, dann wird ein +-Symbol sichtbar und die benachbarten Seiten können direkt aufgerufen werden.</target> 
+            </trans-unit> 
+             <trans-unit id="breadcrumbulwrap">
+                 <source>Wrap around the breacrumb: px-0 py-2 align-items-center list-unstyled navbar-nav me-auto</source>
+                 <target state="translated">Breadcrumb-Wrap. Standard: px-0 py-2 align-items-center list-unstyled navbar-nav me-auto</target> 
+            </trans-unit>    
+             <trans-unit id="breadcrumbstart">
+                 <source>Show/hide the breadcrumbtitle</source>
+                  <target state="translated">Zeige/verstecke Breadcrumb Titel</target>  
+            </trans-unit>          
+             <trans-unit id="breadcrumbpos">
+                 <source>Breadcrumb in the header- or contentarea</source>
+                 <target state="translated">Breadcrumb Position - header oder content</target>  
+            </trans-unit>
+            <trans-unit id="breadcrumbwrap">
+                 <source>Css-classes for the breadcrumb</source>
+                 <target state="translated">CSS-Klasse für das Breadcrumb Menü</target>  
+            </trans-unit>   
+             <trans-unit id="breadcrumbtext">
+                 <source>Text before</source>
+                 <target state="translated">Text davor</target>  
+            </trans-unit>              
+             <trans-unit id="breadcrumbtextsize">
+                 <source>Fontsize</source>
+                 <target state="translated">Schriftgröße</target>  
+            </trans-unit>                    
 
             /* -- Cms ------------------------- */
             <trans-unit id="container">
                  <source>Max-width of the containers (default 1440px)</source>
                   <target state="translated">Hauptcontainer, maximale Breite: der Css max-width-Wert des Boostrap-Hauptcontainers (Vorgabe: 1440px)</target>
-            </trans-unit>
-            <trans-unit id="mediaslide">
-                 <source>Sliding of the col "media"</source>
-                 <target state="translated">Media-Sliding: dies aktiviert das Vererben des "Media"-Bereiches, der Kopfbereich einiger Layouts auf die darunterliegenden Seiten. Zum Beispiel ein Kopf-/Headerbild, oder ein Slider im Kopfbereich.</target>  
             </trans-unit>
             <trans-unit id="access">
                  <source>Show the access-links</source>
@@ -22,39 +48,7 @@
                  <source>Mobilstyles: 0 - none, 1 - meanmenu , 2 - mmenu, 3 - simplemenu </source>
                  <target state="translated">Mobile Navigation: 0 - es wird keine mobil Navigation aktiviert, 1 - Meanmenu, schlankes, sich von ober nach unten aufklappendes Menü, 2 - jQuery-Mmenu, sich verschiebendes, mehrstufiges jQuery-Menü, 3 - Simple menu, sehr einfaches jQuery-Menü</target>
             </trans-unit> 
-            <trans-unit id="totopfunction">
-                 <source>Including the totop-function</source>
-                 <target state="translated">Zum Seitenanfang-Funktion: inkludiert das TypoScript und JavaScript, hat zusätzlich noch ein eigenes Scss. Die Farben werden im Bereich T3UP: COLORS definert.</target>
-            </trans-unit>    
-            <trans-unit id="printbutton">
-                 <source>If it's true, shows a print-button</source>
-                 <target state="translated">Zeigt einen Printbutton. TypoScript unter Configuration/TypoScript/Content/</target>    
-            </trans-unit>  
-            <trans-unit id="breadcrumbwrap">
-                 <source>Css-classes for the breadcrumb</source>
-                 <target state="translated">CSS-Klasse für das Breadcrumb Menü</target>  
-            </trans-unit>         
-              
-             <trans-unit id="bootstrapdesign">
-                <source>Designs for the booststrap elements e.g. accordions</source>
-                <target state="translated">Zusätzliche Boostrap Designs</target>
-            </trans-unit>    
-            
-             <trans-unit id="bootstrapaccordion" xml:space="preserve">
-                <source>Designs for the booststrap accordions</source>
-                <target state="translated">Boostrap Akkordeon Designs</target>
-            </trans-unit>    
-            <trans-unit id="bootstraptabs" xml:space="preserve">
-                <source>Designs for the booststrap tabs</source>
-                <target state="translated">Boostrap Tabulatoren Designs</target>
-            </trans-unit>    
-             <trans-unit id="bootstrapslider" xml:space="preserve">
-                <source>Designs for the booststrap slider</source>
-                <target state="translated">Boostrap Slider Designs</target>
-            </trans-unit>    
-            
-            
-            
+
             /* -- Color ------------------------- */
             /* base */ 
             <trans-unit id="basecolors">
@@ -104,8 +98,52 @@
             <trans-unit id="pictureoverlaytextsize">
                  <source>The overlaytextcolor - alttext - size (1rem)</source>
                  <target state="translated">Schriftgröße für den Alttext - des Overlays bei verlinkten Bildern</target>
-            </trans-unit>       
+            </trans-unit>     
             
+            
+            /* footer */
+            <trans-unit id="footer">
+                 <source>Colors in the Footerarea</source>
+                 <target state="translated">Farben im Footerbereich</target>
+            </trans-unit>   
+            <trans-unit id="footer1BGColor">
+                 <source>Footer - backgroundcolor</source>
+                 <target state="translated">Hintergrundfarbe des Footerbereichs: keine Vorgabe</target>
+            </trans-unit>       
+            <trans-unit id="footer1TextColor">
+                 <source>Footer - text color</source>
+                 <target state="translated">Textfarbe des Footerbereichs: keine Vorgabe / Standardfarbe</target>
+            </trans-unit>       
+            <trans-unit id="footer1LinkColor">
+                 <source>Footer - link color</source>
+                 <target state="translated">Linkfarbe des Footerbereichs: keine Vorgabe / Standardfarbe</target>
+            </trans-unit>  
+            <trans-unit id="footer1LinkHoverColor">
+                 <source>Footer - hover color</source>
+                 <target state="translated">Hover der Linkfarbe des Footerbereichs: keine Vorgabe / Standardfarbe</target>
+            </trans-unit>   
+            <trans-unit id="footer2BGColor">
+                 <source>Icons background color (Icon Area)</source>
+                 <target state="translated">Icon-Hintergrundfarbe Icon Zeile</target>                 
+            </trans-unit>
+            <trans-unit id="footer3BGColor">
+                 <source>Footerbase - background color</source>
+                 <target state="translated">Hintergrundfarbe der Abschlusszeile: keine Vorgabe</target>
+            </trans-unit>
+            <trans-unit id="footer3TextColor">
+                 <source>Footerbase - text color</source>
+                 <target state="translated">Textfarbe der Abschlusszeile: keine Vorgabe / Standardfarbe</target>
+            </trans-unit>       
+            <trans-unit id="footer3LinkColor">
+                 <source>Footerbase - link color</source>
+                 <target state="translated">Linkfarbe der Abschlusszeile: keine Vorgabe / Standardfarbe</target>
+            </trans-unit>       
+            <trans-unit id="footer3LinkHoverColor">
+                 <source>Footerbase - hover color</source>
+                 <target state="translated">Hover der Linkfarbe der Abschlusszeile: keine Vorgabe / Standardfarbe</target>
+            </trans-unit>
+                
+                
             /* header */     
             <trans-unit id="header">
                  <source>Colors in the Header-/Toparea</source>
@@ -192,100 +230,32 @@
                  <source>backgroundcolor of the subnavigation-area</source>
                  <target state="translated">Hintergrund der Unternaviagtionsebene (Vorgabe rgba(255,255,255,.98))</target>
             </trans-unit> 
-            
-            <trans-unit id="subnavigationLinkColor">
-                 <source>Linkcolor in the subnavigation (default #333)</source>
-                 <target state="translated">Linkfarbe der seitlichen Navigation (Vorgabe #333)</target>
-            </trans-unit>              
-            <trans-unit id="subnavigationLinkHoverColor">
-                 <source>Hover-Linkcolor in the subnavigation default #000)</source>
-                 <target state="translated">Hover der Linkfarbe der seitlichen Navigation (Vorgabe #000)</target>                
-            </trans-unit>       
+            <trans-unit id="navLinkHoverBGColor">
+                 <source>Hover-Backgroundcolor in first level (default rgba(255,255,1))</source>
+                 <target state="translated">Hover der Hintergrundfarbe der ersten Navigationsebene (Vorgabe rgba(255,255,1))</target>   
+            </trans-unit>             
              <trans-unit id="navBorderBottomColor">
                  <source>Color for the line under a navpoint</source>
                  <target state="translated">Farbe der Linie unter der Navigation in der höchsten Ebene (Vorgabe rgba(100,100,100,1))</target> 
-            </trans-unit>       
-            
+            </trans-unit>             
             <trans-unit id="overlay">
                  <source>backgroundcolor of the overlay (default rgba(0, 0, 0, 0.5))</source>
                  <target state="translated">Hintergrundfarbe des Overlays (Vorgabe (rgba(0, 0, 0, 0.5))</target>    
             </trans-unit>              
-            
-                     
+            <trans-unit id="sideankercolorBg">
+                 <source>Color of the sideanker background</source>
+                 <target state="translated">Hintergrundfarbe der Sidenker</target>         
+            </trans-unit>                
+             <trans-unit id="sideankerlicolor">
+                 <source>Color of the list points</source>
+                 <target state="translated">Farbe der Listenpunkte der Sidenker</target>                    
+            </trans-unit>       
 
-            /* footer */
-            <trans-unit id="footer">
-                 <source>Colors in the Footerarea</source>
-                 <target state="translated">Farben im Footerbereich</target>
-            </trans-unit>   
-            <trans-unit id="footer1BGColor">
-                 <source>Footer - backgroundcolor</source>
-                 <target state="translated">Hintergrundfarbe des Footerbereichs: keine Vorgabe</target>
-            </trans-unit>       
-            <trans-unit id="footer1TextColor">
-                 <source>Footer - text color</source>
-                 <target state="translated">Textfarbe des Footerbereichs: keine Vorgabe / Standardfarbe</target>
-            </trans-unit>       
-            <trans-unit id="footer1LinkColor">
-                 <source>Footer - link color</source>
-                 <target state="translated">Linkfarbe des Footerbereichs: keine Vorgabe / Standardfarbe</target>
-            </trans-unit>  
-            <trans-unit id="footer1LinkHoverColor">
-                 <source>Footer - hover color</source>
-                 <target state="translated">Hover der Linkfarbe des Footerbereichs: keine Vorgabe / Standardfarbe</target>
-            </trans-unit>   
-            <trans-unit id="footer3BGColor">
-                 <source>Footerbase - background color</source>
-                 <target state="translated">Hintergrundfarbe der Abschlusszeile: keine Vorgabe</target>
-            </trans-unit>
-            <trans-unit id="footer3TextColor">
-                 <source>Footerbase - text color</source>
-                 <target state="translated">Textfarbe der Abschlusszeile: keine Vorgabe / Standardfarbe</target>
-            </trans-unit>       
-            <trans-unit id="footer3LinkColor">
-                 <source>Footerbase - link color</source>
-                 <target state="translated">Linkfarbe der Abschlusszeile: keine Vorgabe / Standardfarbe</target>
-            </trans-unit>       
-            <trans-unit id="footer3LinkHoverColor">
-                 <source>Footerbase - hover color</source>
-                 <target state="translated">Hover der Linkfarbe der Abschlusszeile: keine Vorgabe / Standardfarbe</target>
-            </trans-unit>
-                
-            /* totop */
-            <trans-unit id="totop">
-                 <source>Colors of the totop-function</source>
-                 <target state="translated">Farben der totop-Funktion</target>
-            </trans-unit>
-            <trans-unit id="totopBgColor">
-                 <source>Totop backgroundcolor</source>
-                 <target state="translated">Hintergrundfarbe zum Seitenanfang: keine Vorgabe / Standardfarbe</target>
-            </trans-unit>       
-            <trans-unit id="totopLinkColor">
-                 <source>Totop - link color</source>
-                 <target state="translated">Linkfarbe zum Seitenanfang: keine Vorgabe / Standardfarbe</target>
-            </trans-unit>
-            <trans-unit id="navLinkHoverBGColor">
-                 <source>Hover-Backgroundcolor in first level (default rgba(255,255,1))</source>
-                 <target state="translated">Hover der Hintergrundfarbe der ersten Navigationsebene (Vorgabe rgba(255,255,1))</target>   
-            </trans-unit>       
-            <trans-unit id="totopLinkHoverColor">
-                 <source>Totop - hover color</source>
-                 <target state="translated">Hover der Linkfarbe zum Seitenanfang: keine Vorgabe / Standardfarbe</target>   
-            </trans-unit>   
-            <trans-unit id="totopPosBottom">
-                 <source>Totop - bottom-position</source>
-                 <target state="translated">Bottom-Position des ToTop-Links</target>   
-            </trans-unit>   
-            <trans-unit id="totopPosRight">
-                 <source>Totop - right-position</source>
-                 <target state="translated">Right-Position des ToTop-Links</target> 
-            </trans-unit>   
-    
     
             /* Page */  
             <trans-unit id="pagecolor">
                  <source>Pagecolors</source>
-                 <target state="translated">Seitenfarben: diese sind als Seiteneigenschaften auf jeder Seite verfügbar. Es muss in der "LocalConfiguration.php" im Bereich "FE" 'addRootLineFields' => 'basecolor,' eingetragen sein. Diese Farbauswahl überstimmt dann den Farbwert für Basecolor.</target>
+                 <target state="translated">Seitenfarben: diese sind als Seiteneigenschaften auf jeder Seite verfügbar. Es muss in der "LocalConfiguration.php" im Bereich "FE" 'addRootLineFields' => 'pagecolor,' eingetragen sein. Diese Farbauswahl bestimmt dann Rahmen, Überschrift- und Linkfarben</target>
             </trans-unit>       
             <trans-unit id="blue">
                  <source>Pagecolor for navigation and mark up: blue</source>
@@ -328,6 +298,20 @@
                  <target state="translated">Farbwert für die Farbe: Dunkelgrau</target>
             </trans-unit> 
                                         
+             /* table */         
+            <trans-unit id="tableConstants">
+                 <source>Table basiccolors</source>
+                 <target state="translated">Basisfarben für Tabellen</target>
+            </trans-unit>           
+            <trans-unit id="tableHeader">
+                 <source>Background of a table-header (th)</source>
+                 <target state="translated">Hintergrund der Kopfzeile</target>
+            </trans-unit>
+             <trans-unit id="tableHeaderColor">
+                 <source>Textcolor of a table-header (th)</source>
+                 <target state="translated">Textfarbe Kopfzeile</target>
+            </trans-unit>
+                                       
             /* bootstrap */
             <trans-unit id="bootstrap">
                  <source>Bootstrap Basiccolors</source>
@@ -370,29 +354,13 @@
                  <target state="translated">Farbwert Link</target>
             </trans-unit>
             
-            /* table */         
-            <trans-unit id="tableConstants">
-                 <source>Table basiccolors</source>
-                 <target state="translated">Basisfarben für Tabellen</target>
-            </trans-unit>           
-            <trans-unit id="tableHeader">
-                 <source>Background of a table-header (th)</source>
-                 <target state="translated">Hintergrund der Kopfzeile</target>
-            </trans-unit>
-             <trans-unit id="tableHeaderColor">
-                 <source>Textcolor of a table-header (th)</source>
-                 <target state="translated">Textfarbe Kopfzeile</target>
-            </trans-unit>
-             <trans-unit id="tableHeaderLineColor">
-                 <source>Bordercolor of a table-header (th)</source>
-                 <target state="translated">Linienfarbe der Kopfzeile</target>
-            </trans-unit>
-             <trans-unit id="tableLineColor">
-                 <source>Bordercolor of a table-cell (td)</source>
-                 <target state="translated">Linienfarbe der Zellen</target>
-            </trans-unit>
 
-
+            /* -- Config ------------------------ */
+            <trans-unit id="compressfiles">
+                 <source>Compress and Contenate the Css- and Js-Files</source>
+                 <target state="translated">Komprimierung und zusammenführung von JS- und CSS-Dateien</target>                 
+            </trans-unit>
+            
             /* -- Files ------------------------- */
             <trans-unit id="contentElement">
                  <source>Fluid-Style-Content Templates</source>
@@ -431,29 +399,18 @@
                  <target state="translated">Javascript-Dateien</target> 
             </trans-unit> 
             <trans-unit id="jquery">
-                 <source>Include jquery 3.6 (default on, recommended)</source>
-                 <target state="translated">Javascript jquery 3.6: empfohlen und aktiviert</target> 
+                 <source>Include jquery 3.7.1 (default on, recommended)</source>
+                 <target state="translated">Javascript jquery 3.7.1: empfohlen und aktiviert</target> 
             </trans-unit>    
             <trans-unit id="basic">
                  <source>Including the Basic JavaScript (default on, recommended)</source>
                  <target state="translated">Javascript jQuery-Basis: kleine Helfer, empfohlen und aktiviert</target>              
             </trans-unit> 
-            <trans-unit id="modernizer">
-                 <source>Including the Modernizer JavaScript (default on, recommended)</source>
-                 <target state="translated">Javascript Modernizer: Ersetzungsscripte, für ältere Browser, empfohlen und aktiviert</target>                
-            </trans-unit> 
             <trans-unit id="subnavigation">
                  <source>Including the Subnavigation JavaScript</source>
                  <target state="translated">Javascript Subnavigation: jQuery-Scripte für die T3UP-Subnavigationen</target>       
             </trans-unit> 
-            <trans-unit id="bootstrapCarouselscript">
-                 <source>Including the JavaScript bootstrap Carousel</source>
-                 <target state="translated">Javascript für Boostrap Carousel</target>   
-            </trans-unit>
-             <trans-unit id="logintemplate">
-                 <source>The template for the Ajax-Login</source>
-                 <target state="translated">Template für das Ajax-Login</target>  
-            </trans-unit>     
+
 
             /* -- Fonts ------------------------- */
             <trans-unit id="symbol">
@@ -469,8 +426,8 @@
                 <target state="translated">Sass-Variable $font. Schriften [Open-Sans, PT-Sans, Roboto, Source-Sans-Pro, Ubuntu, Arial, Verdana]: zur Zeit sind diese Schriften intergriert. Sie befinden sich alle unterhalb des Verzeichnisse fontpath. Ordnername = Schriftname!</target> 
             </trans-unit>   
             <trans-unit id="font2">
-                 <source>Secondary font-face, [Courier, AltasTypewriter, Times] are as a complete set possible</source>
-                <target state="translated">Sass-Variable $font2. Zweite Schrift [Courier, AltasTypewriter, Times, Merriweather]: zur Zeit sind diese Schriften intergriert. Sie befinden sich alle unterhalb des Verzeichnisse fontpath. Ordnername = Schriftname!</target>   
+                 <source>Secondary font-face, [Courier, Times] are as a complete set possible</source>
+                <target state="translated">Sass-Variable $font2. Zweite Schrift [Courier, Times]: zur Zeit sind diese Schriften intergriert. Sie befinden sich alle unterhalb des Verzeichnisse fontpath. Ordnername = Schriftname!</target>   
             </trans-unit>   
                 
             <trans-unit id="fontpath">
@@ -575,13 +532,16 @@
             <trans-unit id="owner">
                  <source>Show the owner of the page, only locked in</source>
                  <target state="translated">Zeigt den Besitzer der Seite (nur für aktivierte User)</target>
-            </trans-unit>       
+            </trans-unit>    
+            <trans-unit id="sitemap">
+                 <source>ID of the page with the sitemap</source>
+                 <target state="translated">ID der Seite mit der Sitemap</target>
+            </trans-unit>                   
             <trans-unit id="footerBaseWrap">
                  <source>Footerbase css-wrap</source>
                  <target state="translated">Der CSS-Wrap um die Inhalte in der Abschlußzeile</target>                
             </trans-unit>
 
-            
             /* -- HEADER ------------------------- */   
             <trans-unit id="logos">
                  <source>Logos in the Header</source>
@@ -593,78 +553,64 @@
             </trans-unit>      
             <trans-unit id="logo.1">
                  <source>Location of the english logo-file</source>
-                  <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Englisch</target>
+                  <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Englisch - locale: en_US</target>
             </trans-unit>   
             <trans-unit id="logo.2">
                  <source>Location of the french logo-file</source>
-                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Französisch</target>
+                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Französisch - locale: fr_FR</target>
             </trans-unit> 
             <trans-unit id="logo.3">
                  <source>Location of the italian logo-file</source>
-                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Italienisch</target>
+                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Italienisch - locale: it_IT</target>
             </trans-unit>             
             <trans-unit id="logo.4">
                  <source>Location of the polish logo-file</source>
-                  <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Polnisch</target>
+                  <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Polnisch - locale: pl_PL</target>
             </trans-unit>   
             <trans-unit id="logo.5">
                  <source>Location of the turkey logo-file</source>
-                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Türkisch</target>
+                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Türkisch - locale: tr_TR</target>
             </trans-unit> 
             <trans-unit id="logo.6">
                  <source>Location of the spanish logo-file</source>
-                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Spanisch</target>
+                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Spanisch - locale: es_ES</target>
             </trans-unit>    
             <trans-unit id="logo.7">
                  <source>Location of the portuguese logo-file</source>
-                  <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Portugiesisch</target>
+                  <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Portugiesisch - locale: pt_PT</target>
             </trans-unit>   
             <trans-unit id="logo.8">
                  <source>Location of the romanian logo-file</source>
-                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Romanian</target>
+                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Romanian - locale: ro_RO</target>
             </trans-unit> 
             <trans-unit id="logo.9">
                  <source>Location of the chinese logo-file</source>
-                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Chinesisch</target>
+                 <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Chinesisch - locale: cn_CN</target>
             </trans-unit>    
-            
-            <trans-unit id="alttext">
+             <trans-unit id="alttext">
                  <source>Alttext for the Logo in the header</source>
                  <target state="translated">Alttext des Logos</target>
             </trans-unit>   
-
-            <trans-unit id="moillogo">
-                 <source>Shows a small logo in the toparea for mobil devices.</source>
-                 <target state="translated">Mobillogo-Datei mit Pfad: Logo, dass in der Mobilen Version angezeigt werden kann, (empfohlen SVG), mit folgendem "/".</target>  
-            </trans-unit>               
-            <trans-unit id="logomaxwidth">
-                 <source>Max. width of the logo in the headerarea</source>
-                 <target state="translated">Logo Breite: Maximale Breite des Logos im Headerbereich</target>    
-            </trans-unit>      
-            <trans-unit id="logostickymaxwidth">
-                 <source>Max. width of the logo in the headerarea (compressed)</source>
-                 <target state="translated">Logo Breite: Maximale Breite des Logos im Headerbereich wenn Header dynamisch verkleinert ist. (dynheader muss aktiv sein)</target>   
+            <trans-unit id="logowidth">
+                 <source>Width of the logo in the headerarea</source>
+                 <target state="translated">Breite des Logos im Header</target>                  
             </trans-unit>   
-                                  
-            <trans-unit id="smalllogomaxheight">
-                 <source>Max. height of the logo in the headerarea - dynheader is activated</source>
-                 <target state="translated">Logo Höhe: Maximale Höhe des Logos in Pixel im Headerbereich wenn Dynheader aktiv ist.</target>  
-            </trans-unit>      
-            <trans-unit id="logowrap">
+             <trans-unit id="logowrap">
                  <source>Div wrap for the Logo</source>
                  <target state="translated">Div wrap um das Logo</target>
-            </trans-unit>     
+            </trans-unit>            
+            <trans-unit id="logopos">
+                 <source>Logo position: 1 - Left inside, 2 - Right inside, 3 - Top  left, 4 - Top right, 5 center</source>
+                 <target state="translated">Logoposition: Das Logo kann innerhalb des Headers links 1 oder rechts 2 sitzen, dann ist die Symbolleiste oberhalb aktiv (topposition = active), oder die Symbolleiste ist im Header integriert, dann ebenfalls links 3, rechts 4, zentriert 5.</target> 
+          	</trans-unit>
             <trans-unit id="notlogowrap">
                  <source>Wrap of the part after the logo. Default "d-flex col-10 flex-wrap vertical-align-stretch"</source>
-                 <target state="translated">Div wrap um den Bereich nach dem Logo, nur bei page.navigation.topposition = 0</target> 
-            </trans-unit>
-            
-            
-            <trans-unit id="mobillogowrap">
-                 <source>Div wrap for the mobillogo</source>
-                 <target state="translated">Div wrap um das Mobillogo</target>
-            </trans-unit>   
-                    
+                  <target state="translated">Wrap Um den Headerbereich nach dem Logo. Vorgabe "d-flex col-10 flex-wrap vertical-align-stretch"</target>                   
+            </trans-unit>  
+            <trans-unit id="logostickywidth">
+                 <source>width of the logo in the headerarea (compressed)</source>
+                 <target state="translated">Sticky Logo Breite des Logos im Headerbereich wenn Header dynamisch verkleinert ist. (dynheader muss aktiv sein)</target>   
+            </trans-unit>                           
              <trans-unit id="logoII">
                  <source>Location of the second logo-file (recommended SVG), with leading "/".</source>
                  <target state="translated">2. Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/".</target>    
@@ -675,108 +621,41 @@
             </trans-unit>       
             <trans-unit id="linklogoII">
                  <source>Link of the 2. logo</source>
-                      <target state="translated">Linkadresse des 2. Logos</target>     
-            </trans-unit>    
-            <trans-unit id="logoIImaxwidth">
+                 <target state="translated">Linkadresse des 2. Logos</target>     
+            </trans-unit>   
+  			<trans-unit id="logoIImaxwidth">
                  <source>Max. width of the 2. logo in the headerarea</source>
                  <target state="translated">2. Logo Breite: Maximale Breite des Logos im Headerbereich</target>              
             </trans-unit>    
             <trans-unit id="logoIIwrap">         
                  <source>Div wrap of the 2. logo</source>
                 <target state="translated">Div wrap um das 2.Logo</target>
-            </trans-unit>           
-            <trans-unit id="logins">
-                 <source>Loginhandling</source>
-                 <target state="translated">Loginverhalten</target>
+            </trans-unit>              
+             <trans-unit id="mobillogo">
+                 <source>Shows a small logo in the toparea for mobil devices.</source>
+                 <target state="translated">Mobillogo-Datei mit Pfad: Logo, dass in der Mobilen Version angezeigt werden kann, (empfohlen SVG), mit folgendem "/".</target>  
+            </trans-unit>  
+            <trans-unit id="mobillogowrap">
+                 <source>Div wrap for the mobillogo</source>
+                 <target state="translated">Div wrap um das Mobillogo</target>
+            </trans-unit>              
+            <trans-unit id="mobillogowidth">
+                 <source>Width of the weblogo in the headerarea</source>
+                 <target state="translated">MobilLogo Breite des Logos im Headerbereich</target> 
             </trans-unit>
-            <trans-unit id="loginpage">
-                 <source>Shows the button. ID of the loginpage</source>
-                 <target state="translated">Loginpage-Button: ID der Seite mit dem Login-Anmeldefeld. Nichts eingeben, wenn 'Loginbutton-Ajax' aktiv ist</target>   
-            </trans-unit>               
-            <trans-unit id="loginbutton">
-                 <source>Shows the loginform (modal). Important, fill the feuser-constants!</source>
-                 <target state="translated">Loginbutton: Zeigt eine Eingabeformular auf jeder Seite nach einem Klick. Die Felder im Bereich 'Feuser' müssen befüllt sein. Nichts eingeben, wenn 'Loginpage_Button' aktiv ist.</target>                     
-            </trans-unit>       
-            <trans-unit id="logoutform">
-                 <source>ID of content-element with logout-form.</source>
-                 <target state="translated">Logout-Button: ID der Seite mit dem Logoutfeld</target>  
-            </trans-unit>                       
-                            
-                    
-            <trans-unit id="homes">
-                 <source>Homebutton and target</source>
-                 <target state="translated">Home-Button Einstellung</target>      
-            </trans-unit>           
             <trans-unit id="home">
                  <source>ID of the page "Home" for the home-button and the logo</source>
                  <target state="translated">Seiten-ID der Rootseite.</target>   
             </trans-unit>   
-            <trans-unit id="homebutton">
-                 <source>If it's true, shows the home-button in the top-area</source>
-                 <target state="translated">Home-Button:  Zeigt einen klickbaren Schalter im Headerbereich. 'page.header.home' darf nicht leer sein.</target>   
-            </trans-unit>           
-
-                
-            <trans-unit id="functions">
-                 <source>Functions</source>
-                 <target state="translated">Weitere Einstellungen</target>  
-            </trans-unit>
-            <trans-unit id="searchbutton">
-                 <source>Shows the indexedsearch form (modal).</source>
-                 <target state="translated">IndexedSearch-Button-Ajax: öffnet via Ajax auf jeder Seite nach einem Klick das Eingabefeld. 'Indexedsearchpage-Button' darf keinen Wert haben.</target>    
-            </trans-unit>
-            <trans-unit id="searchpage">
-                 <source>ID of the page with the indexedsearch form, shows a button in the top-area</source>
-                 <target state="translated">Indexedsearchpage-Button: Seiten-ID der Seite mit dem indexedsearch-Plugin. 'IndexedSearch-Button-Ajax' darf keinen Wert haben.</target>                     
-            </trans-unit>       
-            <trans-unit id="solrbutton">
-                 <source>Shows the solrsearch form (modal).</source>
-                 <target state="translated">Solrbutton-Ajax: öffnet via Ajax auf jeder Seite nach einem Klick das Eingabefeld. 'Solrpage-Button' darf keinen Wert haben.</target>   
-            </trans-unit>
-            <trans-unit id="solrpage">
-                 <source>ID of the page with the solrsearch form, shows a button in the top-area</source>
-                 <target state="translated">Solrpage-Button: Seiten-ID der Seite mit dem Solr-Plugin. 'Solrbutton-Ajax' darf keinen Wert haben.</target>
-            </trans-unit>       
-            
-            <trans-unit id="languagemenu">
-                 <source>Show the languagemenu</source>
-                 <target state="translated">Sprachmenü aktivieren.</target>              
-            </trans-unit>                   
-
-            <trans-unit id="quicklinks">
-                 <source>ID of the content element with the "quicklinks", empty = no quicklinks in the header</source>
-                 <target state="translated">Quicklinks: ID des Inhaltselements für den Schnellzugriff im Header. Ist ein einfaches Textelement als Liste.</target>
-            </trans-unit>                           
-            
-            <trans-unit id="support">
-                 <source>Support</source>
-                 <target state="translated">Unterstützung</target>  
-            </trans-unit>
-            <trans-unit id="contrast">
-                 <source>If it's true, shows a button for the contrast-version</source>
-                 <target state="translated">Contrast: aktiviert wird ein CSS nachgeladen, mit Linkauszeichung, Schwarzweiß-Dartsellung etc.</target>    
-            </trans-unit>   
-            <trans-unit id="fontsize">
-                 <source>If it's true, shows the range for the Fontsize. Disable dynheader!</source>
-                 <target state="translated">Fontsize: aktiviert ein Script, mit dem dynamnisch die Schriftgröße verändert werden kann. 'dynheader' sollte dektiviert sein.</target>
-            </trans-unit>   
-            <trans-unit id="darkmode">
-                 <source>Available: Standard, Dark mode and Light.</source>
-                 <target state="translated">Hell-/Dunkelmodus und Standard</target>
-            </trans-unit>     
-            
             <trans-unit id="dynheader">
                  <source>Dynamic header-height by mouse-scrolling, has a own javascript.</source>
                  <target state="translated">Dynheader: erlaubt es den den Header-Bereich via Sass und JavaScript beim Scrollen immer anzuzeigen. 'topposition' unter Navigation darf nicht aktiviert sein.</target>
-            </trans-unit>       
-            <trans-unit id="showtitle">
-                 <source>If it's true, shows the title with the icons in the toparea</source>
-                 <target state="translated">Showtitle: zeigt die Titel der Schalter neben dem jeweiligen Icon. Z.B. Menu, oder Login.</target>
-            </trans-unit>   
-            
-              
-                                
-                                
+            </trans-unit>     
+            <trans-unit id="headcontainer">
+                 <source>Additional Classes in the header-area: (default: container)</source>
+                 <target state="translated">Zusätzliche CSS-Klasse im Headerbereich</target> 
+            </trans-unit>  
+
             /* -- META ------------------------- */     
             <trans-unit id="meta.author">
                  <source>Author of the website</source>
@@ -840,99 +719,68 @@
 
             /* -- Navigation ------------------------- */
             <trans-unit id="navstyle">
-                 <source>Navigationstyles: 0 - None, 1 - Standard, 2 - with media, 3 - Block, 4 - First Level + Anker Navigation, 5 - only Anker Navigation, 6 - No menu</source>
-                 <target state="translated">Navigationstile: 0, keinen. 1, zeigt das Hauptmenü bis in die vierte Ebene.  2, zeigt das Hauptmenü ebenfalls bis in die vierte Ebene. Das Menü selber ist in einen Block eingebettet und dem jeweiligen Knoten kann unter Seite/Seiteneigenschaften ein Kapitelbild zugeordnet werden. 3, zeigt das Hauptmenü als Block bis in die dritte Ebene. 4 - zeigt ein einfaches Menü, mit 1. Ebene.  5, es werden nur die Anker dieser Seite angezeigt. 6, nur Header ohne Menü.</target>
+                 <source>Navigationstyles: 0 - None, 1 - Standard, 2 - block, 3 - block with 4 areas,5 - only Anker Navigation, 6 - No menu, 7 - Burger with anker</source>
+                 <target state="translated">Navigationstile: 0, keinen. 1, zeigt das Hauptmenü bis in die vierte Ebene.  2, zeigt das Hauptmenü ebenfalls bis in die vierte Ebene. Das Menü selber ist in einen Block eingebettet. 3, zeigt das Hauptmenü als Block bis in die dritte Ebene. 5, es werden nur die Anker dieser Seite angezeigt. 6, nur Header ohne Menü., 7, Ankernavigation als Burger</target>
             </trans-unit>  
             <trans-unit id="navigation">
                  <source>Including the Navigation JavaScript. navigation1 - First level with content (default navigation1, recommended)</source>
                  <target state="translated">Wichtige Javascript Navigation: Sammlung der jQuery-Scripte für alle T3UP-Navigationstypen. navigation - Seite der obersten Ebene ohne Inhalt, nur klickbar, navigation1 - Seite der obersten Ebene mit Inhalt (Vorgabe)</target>      
             </trans-unit> 
-            <trans-unit id="entryLevel">
-                 <source>Entrylevel of the main-menu</source>
-                 <target state="translated">Einstiegsebene des Hauptmenüs (Vorgabe = 0).</target>   
-            </trans-unit>     
-            <trans-unit id="maxitems">
-                 <source>Max. Items for each navigation-level (default 10, max. 40)</source>
-                 <target state="translated">Navigationunterpunkte: maximale Anzahl der Menüunterpunkte einer Seite, Vorgabe ist 10, maximal 100.</target>   
-            </trans-unit>   
-            <trans-unit id="navwrap">
-                 <source>Wrap of the navigation margin-top/margin-bottom</source>
-                 <target state="translated">Ummantelung der oberen Navigation, besonders margin-top/margin-bottom: Bootstap Klassen vorgegeben</target> 
-            </trans-unit>                
-            <trans-unit id="subnav">
-                 <source>Entrylevel for the submenu (default 2)</source>
-                 <target state="translated">Einstiegsebene: Einstieg ab rootlevel für die Unternavigation (Vorgabe ist 2).</target> 
-            </trans-unit>    
-            <trans-unit id="navplus">
-                 <source>First level navigation with/without dropdown.</source>
-                 <target state="translated">Erste Navigationsebene mit oder ohne Dropdown: mit dropmenue werden neben den Navigationspunkten in der obersten Ebene klickbare Symbole zum auf- und zuklappen aktiviert. Die Zeichen sind in »page.navigation.chars« unten auswählbar.</target> 
-            </trans-unit>                    
-            <trans-unit id="maxlevels">
-                 <source>Max. levels for the navigation (1-10)</source>
-                 <target state="translated">Navigationsebenen: Anzahl der Ebenen im Baum. Wirkt sich auch auf die Navigationsanzeige in den Menüs aus. (1-10)</target>  
-            </trans-unit>
             <trans-unit id="navdir">
                  <source>Direction of the navigation</source>
                  <target state="translated">Navigationsrichtung: Ausrichtung der Navigation, (Standard ist links, zentriert und rechts ist möglich).</target>   
             </trans-unit>                       
-            <trans-unit id="logopos">
-                 <source>Logo position: 1 - Left inside, 2 - Right inside, 3 - Top  left, 4 - Top right</source>
-                 <target state="translated">Logoposition: Das Logo kann innerhalb des Headers links 1 oder rechts 2 sitzen, dann ist die Symbolleiste oberhalb aktiv (topposition = active), oder die Symbolleiste ist im Header integriert, dann ebenfalls links 3 oder rechts 4.</target> 
-            </trans-unit> 
-            <trans-unit id="topposition">
-                 <source>Position of the top area in the header. Active means absolute on the top.</source>
-                 <target state="translated">Top-Area: Im Bereich Header ist die Position der Leiste mit Schaltern für Suche, Login etc. frei zu wählen, entweder als eigene Top-Zeile, oder innerhalb des Headerbereichs, dann werden die Standardfarbwerte für den Hintergrund eliminiert.</target>
-            </trans-unit> 
-            <trans-unit id="topwrap">
-                 <source>Wrap around the top-area.</source>
-                 <target state="translated">Ummantelung des Topbereichs: 1 - container d-flex justify-content-start = links ausgerichtet, 2 - container d-flex justify-content-end  = rechts ausgerichtet, 3 - container d-flex justify-content-center = zentriert ausgerichtet, 4 - container d-flex justify-content-between = gespreizt ausgerichtet, 5 - container d-flex justify-content-around  = mit gleichen Abständen</target>
-            </trans-unit>   
-           <trans-unit id="leveltitle">
-                 <source>Shows the leveltitle on top of the subnavigation.</source>
-                 <target state="translated">Zeigt den Level-Titel oberhalb der Navigation</target>  
-            </trans-unit>
-            <trans-unit id="sideAnker">
-                 <source>Shows ankers as a listpoint-navigation.</source>
-                 <target state="translated">Zeigt die Anker einer Seite als Listenpunkte. Sonderform einer Seitennavigation mit jQuery.</target>  
-            </trans-unit>
+            <trans-unit id="navwrap">
+                 <source>Wrap of the navigation margin-top/margin-bottom</source>
+                 <target state="translated">Ummantelung der oberen Navigation, besonders margin-top/margin-bottom: Bootstap Klassen vorgegeben</target> 
+            </trans-unit>                                 
+            <trans-unit id="maxlevels">
+                 <source>Max. levels for the navigation (1-10)</source>
+                 <target state="translated">Navigationsebenen: Anzahl der Ebenen im Baum. Wirkt sich auch auf die Navigationsanzeige in den Menüs aus. (1-10)</target>  
+            </trans-unit>                                        
+           <trans-unit id="maxitems">
+                 <source>Max. Items for each navigation-level (default 10, max. 40)</source>
+                 <target state="translated">Navigationunterpunkte: maximale Anzahl der Menüunterpunkte einer Seite, Vorgabe ist 10, maximal 100.</target>   
+            </trans-unit>               
+            <trans-unit id="entryLevel">
+                 <source>Entrylevel of the main-menu</source>
+                 <target state="translated">Einstiegsebene des Hauptmenüs (Vorgabe = 0).</target>   
+            </trans-unit>     
              <trans-unit id="navcolor">
                  <source>Shows the pagecolors in the mainmenue.</source>
                  <target state="translated">Zeigt farbige Menüpunkte in der Hauptnavigation, abhängig von den Seiteneigenschaften.: Die Seiteneigenschaft »pagecolor« wird weitervererbt, also eine Seite die basecolor rot hat, hat z.B. rote h1-Überschriften, die Kinderseiten ebenfalls.</target> 
-            </trans-unit>  
-             <trans-unit id="breadcrumbstyle">
-                 <source>Breadcrumb style, 1 - standard, 2 - extended.</source>
-                 <target state="translated">Breadcrumb Stil, 0 - ohne, keine Breadcrumbleiste, 1 - Standard, 2 - erweitert, dann wird ein +-Symbol sichtbar und die benachbarten Seiten können direkt aufgerufen werden.</target> 
-            </trans-unit> 
-             <trans-unit id="breadcrumbulwrap">
-                 <target state="translated">Breadcrumb-Wrap. Standard: px-0 py-2 align-items-center list-unstyled navbar-nav me-auto</target> 
-                 <source>Wrap around the breacrumb: px-0 py-2 align-items-center list-unstyled navbar-nav me-auto</source>
-            </trans-unit>    
-            
+            </trans-unit>   
              <trans-unit id="chars">
                  <source>Include a small js with the variables for the navigtion.</source>
                  <target state="translated">Kleines js beinhaltet die Zeichen für die Navigation, z.B. + und -, bzw. Pfeile. </target> 
-            </trans-unit> 
-             <trans-unit id="subnavlevel">
+            </trans-unit>               
+             <trans-unit id="subnav.level">
                  <source>Entrylevel for the submenu (default = 2)</source>
                  <target state="translated">Einstiegsebene der Unternavigation, Voreinstellung Ebene 2.</target> 
-            </trans-unit>             
-            
-            
+            </trans-unit> 
+            <trans-unit id="leveltitle">
+                 <source>Shows the leveltitle on top of the subnavigation.</source>
+                 <target state="translated">Zeigt den Level-Titel oberhalb der Navigation</target>  
+            </trans-unit>            
+             <trans-unit id="sideAnker">
+                 <source>Shows ankers as a listpoint-navigation.</source>
+                 <target state="translated">Zeigt die Anker einer Seite als Listenpunkte. Sonderform einer Seitennavigation mit jQuery.</target>  
+            </trans-unit>           
+            <trans-unit id="sideAnkerstyle">
+                 <source>Design for the sideankerstyle</source>
+                 <target state="translated">Design der Anker.</target>  
+            </trans-unit>                 
+            <trans-unit id="burgerAnkerExtra">
+                 <source>ID of the content element with extra links for the burgermenu - navigation 7</source>
+                 <target state="translated">ID des Elements um die Burgernaviagtion zu erweitern - Navigation 7</target> 
+            </trans-unit>   
             
             /* -- SCSS ------------------------- */ 
             
-            <trans-unit id="scssmain">
-                 <source>Basic Scss (default active, recommended)</source>
-                 <target state="translated">Basis Scss-Datei (aktiviert, empfohlen)</target>
-            </trans-unit> 
             <trans-unit id="scssaccess">
                  <source>Including the scsss for the metanavigation (default active, recommended)</source>
                  <target state="translated">Metanavigation (aktiviert, empfohlen)</target>
             </trans-unit> 
-            <trans-unit id="scsstable">
-                 <source>Including the scss for tables (default active, recommended)</source>
-                 <target state="translated">Tabellen (aktiviert, empfohlen)</target>
-            </trans-unit>
             <trans-unit id="scsslinks">
                  <source>Including the scss for the link-styles (default active, recommended)</source>
                  <target state="translated">Linkstile (aktiviert, empfohlen)</target>
@@ -940,11 +788,15 @@
             <trans-unit id="scssfsc">
                  <source>Including the scss for the Fluid-Style-Content (default active, recommended)</source>
                  <target state="translated">Fluid-Style-Content (aktiviert, empfohlen)</target>
-            </trans-unit>       
+            </trans-unit>      
+            <trans-unit id="scsssocialmedia">
+                 <source>Including the scsss for the socialmedia icons (default active, recommended)</source>
+                 <target state="translated">Social-Media (aktiviert, empfohlen)</target>
+            </trans-unit>   
             <trans-unit id="scssheader">
                  <source>Including the scss for the header-area (default active, recommended)</source>
                  <target state="translated">Headerbereich mit Top-Zeile  (aktiviert, empfohlen)</target>
-            </trans-unit>         
+            </trans-unit>      
             <trans-unit id="scsscontent">
                  <source>Including the scss for the content-area (default active, recommended)</source>
                  <target state="translated">Inhaltsbereich  (aktiviert, empfohlen)</target>
@@ -965,25 +817,20 @@
                  <source>Including the scsss for the subnavigation (default active, recommended)</source>
                  <target state="translated">Subnavigation (aktiviert)</target>
             </trans-unit>       
-            <trans-unit id="scssquicklinks">
-                 <source>Including the scsss for the quicklinks (default active, recommended)</source>
-                 <target state="translated">Quicklinks (aktiviert)</target>
-            </trans-unit>    
-            <trans-unit id="scssbootstrapstyles">
+            <trans-unit id="scsstable">
+                 <source>Including the scss for tables (default active, recommended)</source>
+                 <target state="translated">Tabellen (aktiviert, empfohlen)</target>
+            </trans-unit>
+             <trans-unit id="scssbootstrapstyles">
                  <source>Including the scsss for the bootstrap styles (default active, recommended)</source>
                  <target state="translated">Boostrap-Stile für Akkordeons, Tabs einbinden(aktiviert)</target>
-            </trans-unit>       
-                        
+            </trans-unit>             
             
             <trans-unit id="scssextensions">
                  <source>Extension Scss</source>
                  <target state="translated">Extension Scss</target>
             </trans-unit>       
-            <trans-unit id="scsslightbox">
-                 <source>Including the scss for lightbox-effects (recommended)</source>
-                 <target state="translated">Lightbox Effekte Scss-Datei einbinden (empfohlen)</target>
-            </trans-unit> 
-            
+
 
             /* -- socialmedia ------------------------- */  
             <trans-unit id="socialmediaposition">
@@ -998,9 +845,9 @@
                  <source>Address of the youtube-channel</source>
                  <target state="translated">Youtube Kanal</target>
             </trans-unit>   
-            <trans-unit id="twitter">
-                 <source>Address of the twitter-channel</source>
-                 <target state="translated">Twitter Kanal</target>
+            <trans-unit id="x">
+                 <source>Address of the X-channel</source>
+                 <target state="translated">X Kanal</target>
             </trans-unit>  
             <trans-unit id="instagram">
                  <source>Address of the instagram-channel</source>
@@ -1035,7 +882,145 @@
                  <target state="translated">Labels ausblenden</target>
             </trans-unit>
             
+
+             /* -- Top ------------------------- */   
+
+            <trans-unit id="homebutton">
+                 <source>If it's true, shows the home-button in the top-area</source>
+                 <target state="translated">Zeigt den Home-button, ID in den Header-Konstanten angeben!</target>
+            </trans-unit>   
+            <trans-unit id="homebuttonpos">
+                 <source>Order-number for the home button</source>
+                 <target state="translated">Reihenfolge Home-Button</target>
+            </trans-unit>  
+            <trans-unit id="fontsize">
+                 <source>If it's true, shows the range for the Fontsize. Disable dyntop!</source>
+                 <target state="translated">Zeigt einen Regler für die Schriftgrößen</target>
+            </trans-unit> 
+            <trans-unit id="fontsizepos">
+                 <source>Order-number for the fontsizebutton</source>
+                 <target state="translated">Reihenfolge Schriftgröße.</target>
+            </trans-unit>               
+            <trans-unit id="darkmode">
+                 <source>Available: Standard, Dark mode and Light.</source>
+                 <target state="translated">Farbmodi: Standard, Dunkel, Hell</target>
+            </trans-unit>     
+            <trans-unit id="darkmodepos">
+                 <source>Order-number for the darkmodebutton</source>
+                 <target state="translated">Reihenfolge Farbmodus</target>
+            </trans-unit>  
+            <trans-unit id="infobutton">
+                 <source>If it's true, shows the info-button in the top-area and linked it with this pid</source>
+                 <target state="translated">Zeigt einen Infobutton. ID der PID</target>
+            </trans-unit>
+            <trans-unit id="infobuttonpos">
+                 <source>Order-number for the infobutton</source>
+                 <target state="translated">Reihenfolge Info-Button</target>
+            </trans-unit> 
+            <trans-unit id="preferencesbutton">
+                 <source>If it's true, shows the preferencesbutton in the top-area and linked it with this pid</source>
+                 <target state="translated">Zeigt einen Preferenz-Button. ID der PID</target>
+            </trans-unit>                    
+            <trans-unit id="preferencesbuttonpos">
+                 <source>Order-number for the preferencesbutton</source>
+                 <target state="translated">Reihenfolge Preferenz-Button</target>
+            </trans-unit>   
+             <trans-unit id="quicklinks">
+                 <source>ID of the content element with the "quicklinks", empty = no quicklinks in the header</source>
+                 <target state="translated">Zeigt einen Quicklink-Button. ID des Content-Elements</target>
+            </trans-unit>  
+            <trans-unit id="quicklinksbuttonpos">
+                 <source>Order-number for the quicklinksbutton</source>
+                 <target state="translated">Reihenfolge Quicklinks</target>
+            </trans-unit>   
+            <trans-unit id="languagemenu">
+                 <source>Show the languagemenu: 1 - globe, 2 - globe and iso, 3 iso</source>
+                 <target state="translated">Zeigt das Sprachmenü: 1 - Globus, 2 - Globus und iso, 3 iso</target>
+            </trans-unit>   
+            <trans-unit id="loginpage">
+                 <source>ID of the loginpage</source>
+                 <target state="translated">Zeigt einen Login-Button. ID der PID</target>
+            </trans-unit>     
+            <trans-unit id="loginbutton">
+                 <source>Shows a login-form (loginpage must be empty)</source>
+                 <target state="translated">Zeigt ein Loginformular. Loginpage muss leer sein.</target>
+            </trans-unit>
+            <trans-unit id="loginbuttonpos">
+                 <source>Order-number for the loginbutton</source>
+                 <target state="translated">Reihenfolge Loginbutton</target>
+            </trans-unit> 
+                   
+            <trans-unit id="searchs">
+                 <source>Search</source>
+                 <target state="translated">Suche</target>
+            </trans-unit>   
+             <trans-unit id="searchpage">
+                 <source>ID of the page with the search form, shows a button in the top-area</source>
+                 <target state="translated">Zeigt einen Suche-Button. ID der PID</target>
+            </trans-unit>               
+            <trans-unit id="searchbutton">
+                 <source>Shows a button with it a dropdown element.</source>
+                 <target state="translated">Zeigt einen Suche-Button für ein Dropdown-Feld</target>
+            </trans-unit>
+              <trans-unit id="searchpos">
+                 <source>Order-number for the searchbutton</source>
+                 <target state="translated">Reihenfolge Suche-Button</target>
+            </trans-unit> 
+             <trans-unit id="searchfield">
+                 <source>ID of the searchfield.</source>
+                 <target state="translated">Zeigt ein Suchfeld</target>
+            </trans-unit>    
+
+            <trans-unit id="tops">
+				<source>Toparea</source>
+				<target state="translated">Top-Bereich</target>
+            </trans-unit>   
+            <trans-unit id="topposition">
+                 <source>Position of the top area in the header. Active means absolute on the top.</source>
+                 <target state="translated">Aktiviert ist die Topzeile am obersten Rand des Headers</target>
+            </trans-unit>   
+            <trans-unit id="topwrap">
+                 <source>Wrap around the top-area.</source>
+                 <target state="translated">Wrap um den Topbereich</target>
+            </trans-unit>   
+             <trans-unit id="showtitle">
+                 <source>If it's true, shows the title with the icons in the toparea</source>
+                 <target state="translated">Zeigt die Labels der Buttons</target>
+            </trans-unit>             
+
+             /* -- ToTop ------------------------- */ 
+             
+             <trans-unit id="totop">
+                 <source>Totop-function</source>
+                 <target state="translated">Zum Seitenanfang-Funktion</target>
+            </trans-unit>
+            <trans-unit id="totopfunction">
+                 <source>Scss of the totop-function</source>
+                 <target state="translated">Scss für zum Seitenanfang</target>
+            </trans-unit>       
+            <trans-unit id="totopBgColor">
+                 <source>Totop backgroundcolor</source>
+                 <target state="translated">Hintergrundfarbe zum Seitenanfang: keine Vorgabe / Standardfarbe</target>
+            </trans-unit>       
+            <trans-unit id="totopLinkColor">
+                 <source>Totop - link color</source>
+                 <target state="translated">Linkfarbe zum Seitenanfang: keine Vorgabe / Standardfarbe</target>
+            </trans-unit>
+            <trans-unit id="totopLinkHoverColor">
+                 <source>Totop - hover color</source>
+                 <target state="translated">Hover der Linkfarbe zum Seitenanfang: keine Vorgabe / Standardfarbe</target>   
+            </trans-unit>   
+            <trans-unit id="totopPosBottom">
+                 <source>Totop - bottom-position</source>
+                 <target state="translated">Untere Position des zum Seitenanfang-Links</target>   
+            </trans-unit>   
+            <trans-unit id="totopPosRight">
+                 <source>Totop - right-position</source>
+                 <target state="translated">Rechte Position des zum Seitenanfang-Links</target> 
+            </trans-unit>   
+    
              /* -- Typography ------------------------- */ 
+             
              <trans-unit id="headers">
                  <source>Size, lineheight and weight for h1 - h4</source>
                  <target state="translated">Schriftgröße, Zeilenabstand und Schnitt der Überschriften H1 - H4</target>
@@ -1044,25 +1029,20 @@
                  <source>Size, lineheight and weight for p, li, td, th</source>
                  <target state="translated">Schriftgröße, Zeilensbstand und Schnitt der Tags p, li, td, th</target>
             </trans-unit>          
+            
              <trans-unit id="symbolfontsize">
-                 <source>Fontsize for the symbols (Default 15px)</source>
-                 <target state="translated">Schriftgröße der Symbole (Vorgabe 15px)</target>
-            </trans-unit>                           
-             <trans-unit id="navigationfontsize">
-                 <source>Fontsize for the symbols (Default 1rem)</source>
-                 <target state="translated">Schriftgröße der Hauptnavigation (Vorgabe 1rem)</target>
+                 <source>Fontsize for the symbols (Default 100%)</source>
+                 <target state="translated">Schriftgröße der Symbole (Vorgabe 100%)</target>
             </trans-unit>   
+                                    
+             <trans-unit id="navigationfontsize">
+                 <source>Fontsize for the symbols (Default 100%)</source>
+                 <target state="translated">Schriftgröße der Hauptnavigation (Vorgabe 100%)</target>
+            </trans-unit>   
+            
              <trans-unit id="h1">
                  <source>Fontsize of the h1 headline</source>
-                 <target state="translated">Schriftgröße der h1 Überschrift</target>
-            </trans-unit>    
-             <trans-unit id="h1.md">
-                 <source>Fontsize of the h1 headline, tablets</source>
-                 <target state="translated">Schriftgröße der h1 Überschrift, Tablets</target>
-            </trans-unit>    
-             <trans-unit id="h1.lg">
-                 <source>Fontsize of the h1 headline, desktop</source>
-                 <target state="translated">Schriftgröße der h1 Überschrift, Desktop</target>
+                 <target state="translated">Schriftgrößenmultiplikator der h1 Überschrift</target>
             </trans-unit>    
              <trans-unit id="h1.direction">
                  <source>Direction of the h1 headline</source>
@@ -1070,48 +1050,24 @@
             </trans-unit> 
              <trans-unit id="h2">
                  <source>Fontsize of the h2 headline</source>
-                 <target state="translated">Schriftgröße der h2 Überschrift</target>
-            </trans-unit>    
-             <trans-unit id="h2.md">
-                 <source>Fontsize of the h2 headline, tablet</source>
-                 <target state="translated">Schriftgröße der h2 Überschrift, Tablets</target>
-            </trans-unit>    
-             <trans-unit id="h2.lg">
-                 <source>Fontsize of the h2 headline, desktop</source>
-                 <target state="translated">Schriftgröße der h2 Überschrift, Desktop</target>
+                 <target state="translated">Schriftgrößenmultiplikator der h2 Überschrift</target>
             </trans-unit>    
              <trans-unit id="h3">
                  <source>Fontsize of the h3 headline</source>
-                 <target state="translated">Schriftgröße der h3 Überschrift</target>
-            </trans-unit>    
-             <trans-unit id="h3.md">
-                 <source>Fontsize of the h3 headline, tablet</source>
-                 <target state="translated">Schriftgröße der h3 Überschrift, Tablets</target>
-            </trans-unit>    
-             <trans-unit id="h3.lg">
-                 <source>Fontsize of the h3 headline, desktop</source>
-                 <target state="translated">Schriftgröße der h3 Überschrift, Desktop</target>
+                 <target state="translated">Schriftgrößenmultiplikator der h3 Überschrift</target>
             </trans-unit>    
              <trans-unit id="h4">
                  <source>Fontsize of the h4 headline</source>
-                 <target state="translated">Schriftgröße der h4 Überschrift</target>
+                 <target state="translated">Schriftgrößenmultiplikator der h4 Überschrift</target>
             </trans-unit>    
-             <trans-unit id="h4.md">
-                 <source>Fontsize of the h4 headline, tablet</source>
-                 <target state="translated">Schriftgröße der h4 Überschrift, Tablets</target>
-            </trans-unit>  
-             <trans-unit id="h4.lg">
-                 <source>Fontsize of the h4 headline, dektop</source>
-                 <target state="translated">Schriftgröße der h4 Überschrift, Desktop</target>
-            </trans-unit>  
              
             <trans-unit id="h1.fontweight">
-                 <source>Fontweight of the h1 headline (default 600)</source>
-                 <target state="translated">Schriftschnitt der h1 Überschrift (Vorgabe 600)</target>
+                 <source>Fontweight of the h1 headline (default 400)</source>
+                 <target state="translated">Schriftschnitt der h1 Überschrift (Vorgabe 400)</target>
             </trans-unit>               
              <trans-unit id="h2.fontweight">
-                 <source>Fontweight of the h2 headline (default 600)</source>
-                 <target state="translated">Schriftschnitt der h2 Überschrift (Vorgabe 600)</target>
+                 <source>Fontweight of the h2 headline (default 400)</source>
+                 <target state="translated">Schriftschnitt der h2 Überschrift (Vorgabe 400)</target>
             </trans-unit>           
              <trans-unit id="h3.fontweight">
                  <source>Fontweight of the h3 headline (default 600)</source>
@@ -1126,91 +1082,63 @@
                  <target state="translated">Schriftschnitt für html-tags bold und strong (Vorgabe 600)</target>
             </trans-unit>         
              <trans-unit id="h1.lineheight">
-                 <source>Lineheight of the h1 headline (default 115%)</source>
-                 <target state="translated">Zeilenhöhe der h1 Überschrift (Vorgabe 115%)</target>
+                 <source>Lineheight of the h1 headline (default 135%)</source>
+                 <target state="translated">Zeilenhöhe der h1 Überschrift (Vorgabe 135%)</target>
             </trans-unit>               
              <trans-unit id="h2.lineheight">
                  <source>Lineheight of the h2 headline (default 115%)</source>
-                 <target state="translated">Zeilenhöhe der h2 Überschrift (Vorgabe 115%)</target>
+                 <target state="translated">Zeilenhöhe der h2 Überschrift (Vorgabe 135%)</target>
             </trans-unit>           
              <trans-unit id="h3.lineheight">
-                 <source>Lineheight of the h3 headline (default 115%)</source>
-                 <target state="translated">Zeilenhöhe der h3 Überschrift (Vorgabe 115%)</target>
+                 <source>Lineheight of the h3 headline (default inherit)</source>
+                 <target state="translated">Zeilenhöhe der h3 Überschrift (Vorgabe inherit)</target>
             </trans-unit>           
              <trans-unit id="h4.lineheight">
-                 <source>Lineheight of the h4 headline (default 115%)</source>
-                 <target state="translated">Zeilenhöhe der h4 Überschrift (Vorgabe 115%)</target>
+                 <source>Lineheight of the h4 headline (default inherit)</source>
+                 <target state="translated">Zeilenhöhe der h4 Überschrift (Vorgabe inherit)</target>
             </trans-unit>  
-             <trans-unit id="p">
-                 <source>Fontsize for p and li, (Default 1.05rem)</source>
-                 <target state="translated">Schriftgröße für html-tags p und li (Vorgabe 1.05rem)</target>
-            </trans-unit>  
-             <trans-unit id="p.md">
-                 <source>Fontsize for p and li, tablet-size (default 1.10rem)</source>
-                 <target state="translated">Schriftgröße für html-tags p und li - Tablets (Vorgabe 1.05rem)</target>
-             </trans-unit>    
-             <trans-unit id="p.lg">
-                 <source>Fontsize for p and li, desktop-size (default 1.15rem)</source>
-                 <target state="translated">Schriftgröße für html-tags p und li - Desktop (Vorgabe 1.10rem)</target>
-            </trans-unit>       
+             <trans-unit id="fontsize">
+                 <source>Fontsize for the website</source>
+                 <target state="translated">Schriftgröße für die Webseite</target>
+            </trans-unit>         
              <trans-unit id="lineheight">
-                 <source>lineheight/line spacing p-tag and li-tag (default 1.5rem)</source>
-                 <target state="translated">Zeilenhöhe für  html-tags p und li - Tablets (Vorgabe 1.5rem)</target>
+                 <source>lineheight/line spacing p-tag and li-tag (default 135%)</source>
+                 <target state="translated">Zeilenhöhe für  html-tags p und li - Tablets (Vorgabe 135%)</target>
             </trans-unit>       
             
              <trans-unit id="h1.margin">
-                 <source>Margin of the h1 headline (default 0 0 1rem)</source>
-                 <target state="translated">Abstand der h1 Überschrift (Vorgabe  0 0 1rem)</target>
+                 <source>Margin of the h1 headline (default 0 0 1vh)</source>
+                 <target state="translated">Abstand der h1 Überschrift (Vorgabe  0 0 1vh)</target>
             </trans-unit>     
              <trans-unit id="h1.padding">
-                 <source>Padding left/right of the h1 headline (calc(var(--bs-gutter-x) / 1) !important)</source>
-                 <target state="translated">Einrückung der h1 (calc(var(--bs-gutter-x) / 1) !important), weniger / 2</target>
+                 <source>Padding left/right of the h1 headline</source>
+                 <target state="translated">Einrückung der h1</target>
             </trans-unit>       
              <trans-unit id="h2.margin">
-                 <source>Margin of the h2 headline (default 0 0 1rem)</source>
-                 <target state="translated">Abstand der h2 Überschrift (Vorgabe 0 0 1rem)</target>
+                 <source>Margin of the h2 headline (default 0 0 .5vh)</source>
+                 <target state="translated">Abstand der h2 Überschrift (Vorgabe 0 0 .5vh)</target>
             </trans-unit>  
              <trans-unit id="h3.margin">
-                 <source>Margin of the h3 headline (default 0 0 1rem)</source>
-                 <target state="translated">Abstand der h3 Überschrift (Vorgabe 0 0 1rem)</target>
+                 <source>Margin of the h3 headline (default 0 0 .5vh)</source>
+                 <target state="translated">Abstand der h3 Überschrift (Vorgabe 0 0 .5vh)</target>
             </trans-unit>               
              <trans-unit id="h4.margin">
-                 <source>Margin of the h4 headline (default 0 0 0)</source>
-                 <target state="translated">Abstand der h4 Überschrift (Vorgabe 0 0 0)</target>
+                 <source>Margin of the h4 headline (default 0)</source>
+                 <target state="translated">Abstand der h4 Überschrift (Vorgabe 0)</target>
             </trans-unit>        
-            
- 
   
              <trans-unit id="footers">
                  <source>Fontsize, fontweights in the footerarea</source>
                  <target state="translated">Schriftgröße und -schnitte für den Footerbereich</target>
             </trans-unit>           
-             <trans-unit id="footer1.h3">
-                 <source>Fontsize of the h3 in footer1-area</source>
-                 <target state="translated">Schriftgröße der h3 Überschrift im Footer</target>
-            </trans-unit>           
              <trans-unit id="footer1.fontsize">
-                 <source>Fontsize in footer1-area</source>
-                 <target state="translated">Schriftgröße im Footer(Vorgabe 1rem)</target>
+                 <source>Fontsize in footer1-area (default 100%)</source>
+                 <target state="translated">Schriftgröße im Footer(Vorgabe 100%)</target>
             </trans-unit>       
-             <trans-unit id="footer1.fontweight">
-                 <source>Fontweight of the links in the footer1-area</source>
-                 <target state="translated">Schriftschnitt der Links im Footer (Vorgabe 600)</target>
-            </trans-unit>                   
-             <trans-unit id="footer1.lineheight">
-                 <source>Lineheight in the footer1-area</source>
-                 <target state="translated">Zeilenhöhe im Footer(Vorgabe 1.35rem)</target>
-            </trans-unit>                   
              <trans-unit id="footer3.fontsize">
-                 <source>Fontsize in footerbase-area</source>
-                 <target state="translated">Schriftgröße in der Footer-Abschlußzeile (Vorgabe 1rem)</target>
+                 <source>Fontsize in footerbase-area (default 100%)</source>
+                 <target state="translated">Schriftgröße in der Footer-Abschlußzeile (Vorgabe 100%)</target>
             </trans-unit>                           
-             <trans-unit id="footer3.fontweight">
-                 <source>Fontweight in footerbase-area</source>
-                 <target state="translated">Schriftschnitt in der Footer-Abschlußzeile (Vorgabe 600)</target>
-            </trans-unit>                           
-                                
-    
 
         </body>
 
