@@ -1,6 +1,5 @@
 <?php
-defined('TYPO3_MODE') or die();
-
+defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
 
 (static function (): void {
     
@@ -14,31 +13,31 @@ defined('TYPO3_MODE') or die();
     
 })();
 
-$pagesColumns = [
+$pagesColumns = array(
     'showtitle' => [
         'exclude' => true,
         'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:showtitle',
         'config' => [
-                'type' => 'check',
-                'default' => 0
-            ]
-        ],
+            'type' => 'check',
+            'default' => 0
+        ]
+    ],
     'deltitle' => [
         'exclude' => true,
         'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:deltitle',
         'config' => [
-                'type' => 'check',
-                'default' => 0
-            ]
-        ],
+            'type' => 'check',
+            'default' => 0
+        ]
+    ],
     'breadcrumb' => [
         'exclude' => true,
         'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:breadcrumb',
         'config' => [
-                'type' => 'check',
-                'default' => 0
-            ]
-        ],
+            'type' => 'check',
+            'default' => 0
+        ]
+    ],
     'hidenav' => [
         'exclude' => true,
         'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:hidenav',
@@ -46,7 +45,7 @@ $pagesColumns = [
             'type' => 'check',
             'default' => 0
         ]
-    ],   
+    ],
     'nonav' => [
         'exclude' => true,
         'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:nonav',
@@ -54,7 +53,7 @@ $pagesColumns = [
             'type' => 'check',
             'default' => 0
         ]
-    ],   
+    ],
     'pagecolor' => [
         'exclude' => true,
         'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:pagecolor',
@@ -79,17 +78,21 @@ $pagesColumns = [
         'exclude' => true,
         'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:previousnext ',
         'config' => [
-                'type' => 'check',
-                'default' => 0
-            ]
-        ],
-        
-];
+            'type' => 'check',
+            'default' => 0
+        ]
+    ],
+    
+);
 
-$GLOBALS['TCA']['pages']['palettes']['t3up'] = [
+
+$GLOBALS['TCA']['pages']['palettes']['t3up'] = array(
     'canNotCollapse' => true,
     'showitem' => 'pagecolor,--linebreak--,showtitle,deltitle,--linebreak--,breadcrumb,previousnext,--linebreak--,hidenav,nonav'
-];
+);
+
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $pagesColumns);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'xtrafunction,--palette--;LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:palette;t3up', '', 'after:title');
+
+

@@ -44,22 +44,29 @@ $padding = array(
     ],
 );
 
-### Felder der allgemeinen Datensatzbeschreibung hinzufuegen - noch keine Ausgabe im Backend!
+// **********************************************************************************
+
+// Felder der allgemeinen Datensatzbeschreibung hinzufuegen - noch keine Ausgabe im Backend!
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
     'tt_content',
     $padding
 );
 
-### Felder der neuen Palette hinzufügen
+// **********************************************************************************
+
+// Felder der neuen Palette hinzufügen
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
  'tt_content',
  'padding_fields',
  'padding_before_class,padding_after_class'
 );
 
-### Palette hinzufuegen, nach Layout - dadurch Anzeige im Backend
+// **********************************************************************************
+
+// Palette hinzufuegen, nach Layout - dadurch Anzeige im Backend
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
 'tt_content','--palette--;LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class;padding_fields', '', 'after:layout');
 
+// **********************************************************************************
 
 $GLOBALS['TCA']['tt_content']['columns']['subheader']['l10n_mode'] = 'prefixLangTitle';
