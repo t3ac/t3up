@@ -1,5 +1,0 @@
-editor:
-  externalPlugins:
-    automails:
-      resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/Email/plugin.js"
-      defaultClass: 'link-mail'
