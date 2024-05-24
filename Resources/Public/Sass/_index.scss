@@ -9,8 +9,8 @@
 
 /* Fonts */
 @import $fontdef	+ '/Fonts/' 		+ $font 			+ '.scss';
-@import $font2def	+ '/Fonts/' 		+ $font2 			+ '.scss';
-@import $symboldef	+ '/Fonts/' 		+ $symbolfiles 		+ '.scss';
+@import $fontdef	+ '/Fonts/' 		+ $font2 			+ '.scss';
+@import $fontdef	+ '/Fonts/' 		+ $symbolfiles 		+ '.scss';
 
 /* Basics */
 @import	'Basic/_' 						+ $access  			+ '.scss';

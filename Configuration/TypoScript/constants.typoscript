@@ -285,16 +285,10 @@ page {
  
 		# cat=t3up: fonts//04;	type=options[Courier,Times]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font2
 		font2					=Courier
-		# cat=t3up: fonts//05;	type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font2def
-		font2def				=typo3conf/ext/t3up/Resources/Public/Sass/
-		# cat=t3up: fonts//06;	type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font2path
-		font2path				=typo3conf/ext/t3up/Resources/Public/Fonts/	
 			
 		# cat=t3up: fonts//07;	type=options[empty,'FontAwesome']; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbol	 
 		symbol					='FontAwesome'
 		symbolfiles				=FontAwesome	
-		symboldef				=typo3conf/ext/t3up/Resources/Public/Sass/	
-		symbolpath				=typo3conf/ext/t3up/Resources/Public/Fonts/
 	 }	
 
 	 footer{ 
