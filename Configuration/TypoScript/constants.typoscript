@@ -279,14 +279,14 @@ page {
 		# cat=t3up: fonts//01;	type=options[Arial,Open Sans,PT Sans,Roboto,Source Sans Pro,Ubuntu,Verdana,Ropa Sans]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font
 		font					=Arial
 		# cat=t3up: fonts//02;	type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontdef
-		fontdef					=typo3conf/ext/t3up/Resources/Public/Sass/
+		fontdef					=../vendor/t3ac/t3up/Resources/Public/Sass/
 		# cat=t3up: fonts//03;	type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontpath
-		fontpath				=typo3conf/ext/t3up/Resources/Public/Fonts/	
+		fontpath				=../vendor/t3ac/t3up/Resources/Public/Fonts/	
  
 		# cat=t3up: fonts//04;	type=options[Courier,Times]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font2
 		font2					=Courier
 			
-		# cat=t3up: fonts//07;	type=options[empty,'FontAwesome']; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbol	 
+		# cat=t3up: fonts//05;	type=options[empty,'FontAwesome']; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbol	 
 		symbol					='FontAwesome'
 		symbolfiles				=FontAwesome	
 	 }	
