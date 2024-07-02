@@ -10,7 +10,7 @@
 /* Fonts */
 @import $fontdef	+ '/Fonts/' 		+ $font 			+ '.scss';
 @import $fontdef	+ '/Fonts/' 		+ $font2 			+ '.scss';
-@import $fontdef	+ '/Fonts/' 		+ $symbolfiles 		+ '.scss';
+@import $symbolfontdef	+ '/Fonts/' 	+ $symbolfiles 		+ '.scss';
 
 /* Basics */
 @import	'Basic/_' 						+ $access  			+ '.scss';
@@ -134,8 +134,8 @@ main {														hyphens: auto; -webkit-hyphens: auto; -webkit-hyphenate-limi
 	figure 													{margin: 0}
 	figure.image                                         	{position: relative;}
 	figure.image span                                    	{text-align: center; transition: all ease .3s; color: $pictureoverlaytext; position: absolute; width: 100%; height: 100%; top: -200%; display: flex; padding: 1rem; align-items: center; justify-content: center;  background-color: $pictureoverlay;} 
-	figure.image a:focus span,
-	figure.image a:hover span                            	{top: 0;} 
+	figure.image.overlayimage a:focus span,
+	figure.image.overlayimage a:hover span                  {top: 0;} 
 	figure.image a                                       	{font-size: $pictureoverlaytextsize; width: 100%; height: 100%; display: block; border: 0 !important;}                                                      
 
 }

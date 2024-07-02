@@ -59,14 +59,7 @@ page {
 		baseContainerBgColor		=transparent
 		# cat=t3up: color/base/07; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:shadow			
 		shadow						=0 2px 10px 0px rgba(0,0,0,.2)
-		# cat=t3up: color/base/08; type=options[,active]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pictureoverlayfunction	
-		pictureoverlayfunction		=
-		# cat=t3up: color/base/09; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pictureoverlay	
-		pictureoverlay				= rgba(255,255,255, 0.75)
-		# cat=t3up: color/base/10; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pictureoverlaytext	
-		pictureoverlaytext			= rgba(0,0,0,1)
-		# cat=t3up: color/base/11; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pictureoverlaytextsize	
-		pictureoverlaytextsize		= 100%
+
 			
 		#	customsubcategory=header=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:header
 		# cat=t3up: color/header/01; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headerBgColor
@@ -272,7 +265,9 @@ page {
 		# cat=t3up: files/javascript/04; type=options[,active]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:jquery
 		jquery								=	active
 		# cat=t3up: files/javascript/04; type=options[,active]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:inview	
-		inview 								= 	active	
+		inview 								= 	active
+		# cat=t3up: files/javascript/05; type=options[,active]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:wall		
+		wall 								= 	active
 	 }	
 	
 	 fonts{	 
@@ -282,13 +277,15 @@ page {
 		fontdef					=../vendor/t3ac/t3up/Resources/Public/Sass/
 		# cat=t3up: fonts//03;	type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontpath
 		fontpath				=../vendor/t3ac/t3up/Resources/Public/Fonts/	
- 
 		# cat=t3up: fonts//04;	type=options[Courier,Times]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font2
 		font2					=Courier
-			
 		# cat=t3up: fonts//05;	type=options[empty,'FontAwesome']; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbol	 
 		symbol					='FontAwesome'
-		symbolfiles				=FontAwesome	
+		symbolfiles				= FontAwesome	
+		# cat=t3up: fonts//06;	type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbolfontdef
+		symbolfontdef			=../vendor/t3ac/t3up/Resources/Public/Sass/
+		# cat=t3up: fonts//07;	type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbolfontpath
+		symbolfontpath			=../vendor/t3ac/t3up/Resources/Public/Fonts/			
 	 }	
 
 	 footer{ 
