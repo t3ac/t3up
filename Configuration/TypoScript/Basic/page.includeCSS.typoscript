@@ -1,48 +1,47 @@
 ## Die CSS-Variablen ############################################################################
 
 plugin.tx_wsscss.variables {
-
 	# Basic
 	
-	p									= {$page.typography.fontsize}
-	g									= {$page.components.gutter}
-	font								= {$page.fonts.font}	
-	fontdef								= {$page.fonts.fontdef}
-	fontpath							= ../../../{$page.fonts.fontpath}	
+	p							= {$page.typography.fontsize}
+	g							= {$page.components.gutter}
+	font							= {$page.fonts.font}	
+	fontdef							= {$page.fonts.fontdef}
+	fontpath						= ../../../{$page.fonts.fontpath}	
 	symbolfontdef						= {$page.fonts.symbolfontdef}
 	symbolfontpath						= ../../../{$page.fonts.fontpath}	
  
-	font2								= {$page.fonts.font2}
+	font2							= {$page.fonts.font2}
 	
-	symbol								= {$page.fonts.symbol}
-	symbolfiles							= {$page.fonts.symbolfiles}
+	symbol							= {$page.fonts.symbol}
+	symbolfiles						= {$page.fonts.symbolfiles}
 	
-	shadow								= {$page.color.shadow} 
+	shadow							= {$page.color.shadow} 
 	pictureoverlay						= {$page.color.pictureoverlay} 
 	pictureoverlaytext					= {$page.color.pictureoverlaytext} 
-	pictureoverlaytextsize				= {$page.color.pictureoverlaytextsize}
+	pictureoverlaytextsize					= {$page.color.pictureoverlaytextsize}
+
+	container						= {$page.components.container}px
+	mainpadding						= {$page.components.mainpadding}
 	
-	container							= {$page.components.container}px
-	mainpadding							= {$page.components.mainpadding}
-	
-	baseColor							= {$page.color.baseColor}	
-	bodyBgColor							= {$page.color.bodyBgColor}
+	baseColor						= {$page.color.baseColor}	
+	bodyBgColor						= {$page.color.bodyBgColor}
 	baseTextColor						= {$page.color.baseTextColor}
 	baseLinkColor						= {$page.color.baseLinkColor}
 	baseLinkHoverColor					= {$page.color.baseLinkHoverColor}
-	baseContainerBgColor				= {$page.color.baseContainerBgColor} 
+	baseContainerBgColor					= {$page.color.baseContainerBgColor} 
 
 	# Header
 	headerBgColor						= {$page.color.headerBgColor}
-	headerColor							= {$page.color.headerColor}
+	headerColor						= {$page.color.headerColor}
 	headerLinkColor						= {$page.color.headerLinkColor}
-	headerLinkHoverColor				= {$page.color.headerLinkHoverColor}
-	topBgColor							= {$page.color.topBgColor}
+	headerLinkHoverColor					= {$page.color.headerLinkHoverColor}
+	topBgColor						= {$page.color.topBgColor}
 	topBgColorTrans						= {$page.color.topBgColorTrans}
 	topLinkColor						= {$page.color.topLinkColor}
 	topLinkHoverColor					= {$page.color.topLinkHoverColor}
-	logowidth							= {$page.header.logowidth}
-	logoIIwidth							= {$page.header.logoIIwidth} 
+	logowidth						= {$page.header.logowidth}
+	logoIIwidth						= {$page.header.logoIIwidth} 
 	logostickywidth						= {$page.header.logostickywidth}	
 	mobillogowidth						= {$page.header.mobillogowidth}	
 	
@@ -51,66 +50,66 @@ plugin.tx_wsscss.variables {
 	navLinkHoverColor					= {$page.color.navLinkHoverColor}	
 	navLinkHoverBGColor					= {$page.color.navLinkHoverBGColor}	
 	subnavLinkColor						= {$page.color.subnavLinkColor}	
-	subnavLinkHoverColor				= {$page.color.subnavLinkHoverColor}	
-	subNavBG							= {$page.color.subNavBG}	
-	subnavigationLinkColor				= {$page.color.subnavigationLinkColor}	
-	subnavigationLinkHoverColor			= {$page.color.subnavigationLinkHoverColor}	
-	navBorderBottomColor				= {$page.color.navBorderBottomColor}		
-	overlay								= {$page.color.overlay} 
+	subnavLinkHoverColor					= {$page.color.subnavLinkHoverColor}	
+	subNavBG						= {$page.color.subNavBG}	
+	subnavigationLinkColor					= {$page.color.subnavigationLinkColor}	
+	subnavigationLinkHoverColor				= {$page.color.subnavigationLinkHoverColor}	
+	navBorderBottomColor					= {$page.color.navBorderBottomColor}		
+	overlay							= {$page.color.overlay} 
 	
 	# Content Header colors
-	h1-color							= {$page.color.h1-color}	
-	h2-color							= {$page.color.h2-color}	
-	h3-color							= {$page.color.h3-color}	
-	h4-color							= {$page.color.h4-color}				
+	h1-color						= {$page.color.h1-color}	
+	h2-color						= {$page.color.h2-color}	
+	h3-color						= {$page.color.h3-color}	
+	h4-color						= {$page.color.h4-color}				
 	
 	# Footer
 	footer1BgColor						= {$page.color.footer1BgColor}
 	footer1TextColor					= {$page.color.footer1TextColor}
 	footer1LinkColor					= {$page.color.footer1LinkColor}
-	footer1LinkHoverColor				= {$page.color.footer1LinkHoverColor}
+	footer1LinkHoverColor					= {$page.color.footer1LinkHoverColor}
 	footer3BgColor						= {$page.color.footer3BgColor}
 	footer3TextColor					= {$page.color.footer3TextColor}
 	footer3LinkColor					= {$page.color.footer3LinkColor}
-	footer3LinkHoverColor				= {$page.color.footer3LinkHoverColor}
+	footer3LinkHoverColor					= {$page.color.footer3LinkHoverColor}
 	
 	# Bootstrap variablen 
-	warning								= {$page.color.warning}
-	success								= {$page.color.success}
-	secondary							= {$page.color.secondary}
-	primary								= {$page.color.primary}
-	info								= {$page.color.info}
-	danger								= {$page.color.danger}
-	light								= {$page.color.light}
-	dark								= {$page.color.dark}
-	link								= {$page.color.link}
-	plus								= {$page.color.plus}
-	minus								= {$page.color.minus}
+	warning							= {$page.color.warning}
+	success							= {$page.color.success}
+	secondary						= {$page.color.secondary}
+	primary							= {$page.color.primary}
+	info							= {$page.color.info}
+	danger							= {$page.color.danger}
+	light							= {$page.color.light}
+	dark							= {$page.color.dark}
+	link							= {$page.color.link}
+	plus							= {$page.color.plus}
+	minus							= {$page.color.minus}
 
 	# Pagecolor
-	blue								= {$page.color.blue}
-	green								= {$page.color.green}
-	grey								= {$page.color.grey}
-	orange								= {$page.color.orange}	
-	red									= {$page.color.red}
-	turquoise							= {$page.color.turquoise}
-	violett								= {$page.color.violett}
-	yellow								= {$page.color.yellow}
-	darkblue							= {$page.color.darkblue}	
-	darkgrey							= {$page.color.darkgrey}		
+	blue							= {$page.color.blue}
+	green							= {$page.color.green}
+	grey							= {$page.color.grey}
+	orange							= {$page.color.orange}	
+	red							= {$page.color.red}
+	turquoise						= {$page.color.turquoise}
+	violett							= {$page.color.violett}
+	yellow							= {$page.color.yellow}
+	darkblue						= {$page.color.darkblue}	
+	darkgrey						= {$page.color.darkgrey}		
 
 	# Fluidstylecontent values	
-	borderWidth							= {$page.design.borderWidth}
+	borderWidth						= {$page.design.borderWidth}
 	borderPadding						= {$page.design.borderPadding}
-	borderColor							= {$page.design.borderColor}
-	textMargin							= {$page.design.textMargin}
+	borderColor						= {$page.design.borderColor}
+	textMargin						= {$page.design.textMargin}
 	columnSpacing						= {$page.design.columnSpacing}
-	rowSpacing							= {$page.design.rowSpacing}
+	rowSpacing						= {$page.design.rowSpacing}
 	
 	# Table
-	tableHeader							= {$page.color.tableHeader}
+	tableHeader						= {$page.color.tableHeader}
 	tableHeaderColor					= {$page.color.tableHeaderColor}
-	tableHeaderLineColor				= {$page.color.tableHeaderLineColor}
+	tableHeaderLineColor					= {$page.color.tableHeaderLineColor}
 	tableLineColor						= {$page.color.tableLineColor}
 
 	# Totop
@@ -121,22 +120,22 @@ plugin.tx_wsscss.variables {
 	totopPosRight						= {$page.totop.totopPosRight}
 	
 	# Typography
-	h1									= {$page.typography.h1}
-	h1-md								= {$page.typography.h1.md}	
-	h1-lg								= {$page.typography.h1.lg}	
-	h1-dir								= {$page.typography.h1.direction}	
-	h2									= {$page.typography.h2}
-	h2-md								= {$page.typography.h2.md}	
-	h2-lg								= {$page.typography.h2.lg}	
-	h3									= {$page.typography.h3}
-	h3-md								= {$page.typography.h3.md}	
-	h3-lg								= {$page.typography.h3.lg} 
-	h4									= {$page.typography.h4} 
-	h4-md								= {$page.typography.h4.md}	
-	h4-lg								= {$page.typography.h4.lg}	
-	p-md								= {$page.typography.p.md}
-	p-lg								= {$page.typography.p.lg}
-	p-footer							= {$page.typography.p.footer}
+	h1							= {$page.typography.h1}
+	h1-md							= {$page.typography.h1.md}	
+	h1-lg							= {$page.typography.h1.lg}	
+	h1-dir							= {$page.typography.h1.direction}	
+	h2							= {$page.typography.h2}
+	h2-md							= {$page.typography.h2.md}	
+	h2-lg							= {$page.typography.h2.lg}	
+	h3							= {$page.typography.h3}
+	h3-md							= {$page.typography.h3.md}	
+	h3-lg							= {$page.typography.h3.lg} 
+	h4							= {$page.typography.h4} 
+	h4-md							= {$page.typography.h4.md}	
+	h4-lg							= {$page.typography.h4.lg}	
+	p-md							= {$page.typography.p.md}
+	p-lg							= {$page.typography.p.lg}
+	p-footer						= {$page.typography.p.footer}
 	h1-fontweight						= {$page.typography.h1.fontweight}
 	h2-fontweight						= {$page.typography.h2.fontweight}
 	h3-fontweight						= {$page.typography.h3.fontweight} 
@@ -145,14 +144,14 @@ plugin.tx_wsscss.variables {
 	h2-lineheight						= {$page.typography.h2.lineheight}
 	h3-lineheight						= {$page.typography.h3.lineheight} 
 	h4-lineheight						= {$page.typography.h4.lineheight}
-	h1-margin							= {$page.typography.h1.margin}
-	h2-margin							= {$page.typography.h2.margin}
-	h3-margin							= {$page.typography.h3.margin} 
-	h4-margin							= {$page.typography.h4.margin}
-	h1-padding							= {$page.typography.h1.padding}
-	boldweight							= {$page.typography.boldweight}
-	lineheight							= {$page.typography.lineheight}
-	h3-footer							= {$page.typography.footer1.h3}
+	h1-margin						= {$page.typography.h1.margin}
+	h2-margin						= {$page.typography.h2.margin}
+	h3-margin						= {$page.typography.h3.margin} 
+	h4-margin						= {$page.typography.h4.margin}
+	h1-padding						= {$page.typography.h1.padding}
+	boldweight						= {$page.typography.boldweight}
+	lineheight						= {$page.typography.lineheight}
+	h3-footer						= {$page.typography.footer1.h3}
 	footer1fontsize						= {$page.typography.footer1.fontsize}
 	footer1fontweight					= {$page.typography.footer1.fontweight}
 	footer1lineheight					= {$page.typography.footer1.lineheight}
@@ -163,33 +162,32 @@ plugin.tx_wsscss.variables {
 	symbolfontsize						= {$page.typography.symbolfontsize}
 	navFontWeight						= {$page.typography.navFontWeight} 
 	breadcrumbtextsize					= {$page.breadcrumb.breadcrumbtextsize}
-	linkweight							= {$page.typography.linkweight}
+	linkweight						= {$page.typography.linkweight}
 	
 	# Files							
-	access								= {$page.components.access}
-	totop								= {$page.totop.totop}
-	fsc									= {$page.scss.scssfsc}
-	links								= {$page.scss.scsslinks}	
-	table								= {$page.scss.scsstable}	
-	social								= {$page.scss.scsssocialmedia} 
+	access							= {$page.components.access}
+	totop							= {$page.totop.totop}
+	fsc							= {$page.scss.scssfsc}
+	links							= {$page.scss.scsslinks}	
+	table							= {$page.scss.scsstable}	
+	social							= {$page.scss.scsssocialmedia} 
 
 	# Basic Scss
-	breadcrumb							= {$page.scss.scssbreadcrumb}	
-	header								= {$page.scss.scssheader}	
-	content								= {$page.scss.scsscontent}	
-	footer								= {$page.scss.scssfooter}	
-	navigation							= {$page.scss.scssnavigation}	
+	breadcrumb						= {$page.scss.scssbreadcrumb}	
+	header							= {$page.scss.scssheader}	
+	content							= {$page.scss.scsscontent}	
+	footer							= {$page.scss.scssfooter}	
+	navigation						= {$page.scss.scssnavigation}	
 	subnavigation						= {$page.scss.scsssubnavigation}	
 	
 	# Boostrap Scss
 	bootstrapstyles						= {$page.scss.scssbootstrapstyles}	
 	
 	# Extensions
-	lightbox							= {$page.scss.scsslightbox}
-	wall								= {$page.scss.scsswall}
+	lightbox						= {$page.scss.scsslightbox}
 	
 	# Mobil
-	mobilmenu							= {$page.components.mobilmenu}
+	mobilmenu						= {$page.components.mobilmenu}
 	
 	# Sideanker						
 	sideankercolorBg					= {$page.color.sideankercolorBg} 
@@ -229,19 +227,18 @@ plugin.tx_wsscss.variables {
 page.includeCSS	= COA
 page.includeCSS{
 
-	main							= EXT:t3up/Resources/Public/Sass/_index.scss
-	main.linenumber					= true	
-	main.forceOnTop					= 0
-	main.outputStyle				= compressed 
+	main					= EXT:t3up/Resources/Public/Sass/_index.scss
+	main.linenumber				= true	
+	main.forceOnTop				= 0
+	main.outputStyle			= compressed 
 	
-	scssfelogin						= {$page.scss.scssfelogin}
+	scssfelogin				= {$page.scss.scssfelogin}
 	scssfelogin.if.isTrue			= {$page.scss.scssfelogin}		
 	scssfelogin.linenumber			= true	
 	scssfelogin.outputStyle			= compressed	
+
+	wall                            	= EXT:t3up/Resources/Public/Sass/Extensions/_wall.scss
+    	wall.if.isTrue                     	= {$page.scss.scsswall}
+   	wall.outputStyle             		= compressed  
 	
 }
-
-
-plugin.tx_kesearch_pi1.cssFile = EXT:t3up/Resources/Public/Sass/Extensions/_kesearch.scss
-plugin.tx_kesearch_pi2.cssFile < plugin.tx_kesearch_pi1.cssFile
-plugin.tx_kesearch_pi3.cssFile < plugin.tx_kesearch_pi1.cssFile
