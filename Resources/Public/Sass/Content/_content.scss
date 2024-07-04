@@ -6,66 +6,66 @@ main{
 	.content a,
 	.contentRight a												{color: $baseLinkColor; font-weight: $boldweight; line-height: $lineheight; }
 	.content a:hover,
-	.contentRight a:hover										{color: $baseLinkHoverColor;}
-	.content div > p:last-of-type								{margin-bottom: 0;}
+	.contentRight a:hover											{color: $baseLinkHoverColor;}
+	.content div > p:last-of-type										{margin-bottom: 0;}
 		
 	/* frame colored */	
 	.frame-colored												{padding: $v3; background-color :rgba(lighten($baseColor, 57.5%),1);}	
 	
 	/* frame column */
-	.frame-twocol .ce-text 										{column-fill: balance; column-gap: $v3; column-count:1;}
+	.frame-twocol .ce-text 											{column-fill: balance; column-gap: $v3; column-count:1;}
 	
 	/* frame header */	
 	.frame-header *												{margin: 0}	
 	
 	/* frame line */
-	.frame-line													{padding-bottom: $v3; border-bottom: 2px solid rgba($baseColor, 0.25);}
+	.frame-line												{padding-bottom: $v3; border-bottom: 2px solid rgba($baseColor, 0.25);}
 	
 	/* frame white */
 	.frame-white												{transition: all ease 0.3s; background-color: rgba(255, 255, 255, 1);
 		>h2,
 		>h3,
-		>h4														{padding: $v3 $v3 0; margin: 0 ; letter-spacing: 0.01rem;}
+		>h4												{padding: $v3 $v3 0; margin: 0 ; letter-spacing: 0.01rem;}
 		
 	.frame-table > h3 											{margin: 0 0 $v4 !important; text-transform: none;} 
 	.frame-table > h4 											{margin: $h4-margin  !important;}
 		
 	> p															{padding: 0 $v3; }
 	> ul.ce-uploads												{padding: 0 $v3 $v3; }	
-	> div	p:last-of-type										{margin-bottom: 0; }	
+	> div	p:last-of-type											{margin-bottom: 0; }	
 	> div.table-wrapper											{padding: 0; }
 	
 	> .ce-textpic.ce-right.ce-intext > .ce-bodytext,
 	> .ce-textpic.ce-left.ce-intext > .ce-bodytext,		
-	> .ce-text													{padding: $v3;}		
+	> .ce-text												{padding: $v3;}		
 	
-	> .ce-textpic.ce-right.ce-intext.ce-nowrap > .ce-bodytext	{padding:  $v3 0 $v3 $v3;}
-	> .ce-textpic.ce-left.ce-intext.ce-nowrap > .ce-bodytext	{padding:  $v3 $v3 $v3 0;}	
+	> .ce-textpic.ce-right.ce-intext.ce-nowrap > .ce-bodytext						{padding:  $v3 0 $v3 $v3;}
+	> .ce-textpic.ce-left.ce-intext.ce-nowrap > .ce-bodytext						{padding:  $v3 $v3 $v3 0;}	
 	
-	> .ce-textpic.ce-below > .ce-bodytext						{padding:  0 $v3;}	
+	> .ce-textpic.ce-below > .ce-bodytext									{padding:  0 $v3;}	
 	
 
-	h2 + h3														{text-transform: none;}
-	h2 + div													{padding-top: 0; }
-	h3 + div													{padding-top: 0; }	
-	h4 + div													{padding-top: 0; }		
+	h2 + h3													{text-transform: none;}
+	h2 + div												{padding-top: 0; }
+	h3 + div												{padding-top: 0; }	
+	h4 + div												{padding-top: 0; }		
 	 }
 	 
- 	 .frame-list.frame-white									{background: none;}
+ 	 .frame-list.frame-white										{background: none;}
 	 .frame-list.frame-white{
 		>h2,
 		>h3,
-		>h4														{padding: 0 $v3; margin: 0 0 $v4 !important; text-transform: none;} 			
+		>h4												{padding: 0 $v3; margin: 0 0 $v4 !important; text-transform: none;} 			
 	 }
 
-	.smalltext													{font-size: calc(#{$p} * .8);}
+	.smalltext												{font-size: calc(#{$p} * .8);}
 	
 
 }
 
 @media (min-width: 768px) {
 	main{	
-		.frame-twocol .ce-text 									{column-count:2}
+		.frame-twocol .ce-text 										{column-count:2}
 	}
 }
 
@@ -80,14 +80,14 @@ main{
 	.frame-colored a											{color: $orange !important}
 				
 	.btn.btn-secondary											{background-color: $orange !important}										
-	.btn.btn-secondary a										{color: #fff !important}	
+	.btn.btn-secondary a											{color: #fff !important}	
 	
-	hr															{background-color: $orange !important}
-	.frame-line													{border-bottom: 2px solid rgba($orange, 0.5);}	
+	hr													{background-color: $orange !important}
+	.frame-line												{border-bottom: 2px solid rgba($orange, 0.5);}	
 	
 	.ce-table-colorstripe th,
-	.ce-table-normalplus th										{background-color: $orange !important;} 
-	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($orange,.2) !important;}	
+	.ce-table-normalplus th											{background-color: $orange !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td								{background-color: rgba($orange,.2) !important;}	
 	}
 	
 .page.blue{
@@ -99,14 +99,14 @@ main{
 	.frame-colored a											{color: $blue !important}
 	
 	.btn.btn-secondary											{background-color: $blue !important}										
-	.btn.btn-secondary a										{color: #fff !important}	
+	.btn.btn-secondary a											{color: #fff !important}	
 	
-	hr															{background-color: $blue !important}
-	.frame-line													{border-bottom: 2px solid rgba($blue, 0.5);}
+	hr													{background-color: $blue !important}
+	.frame-line												{border-bottom: 2px solid rgba($blue, 0.5);}
 	
 	.ce-table-colorstripe th,
-	.ce-table-normalplus th										{background-color: $blue !important;} 
-	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($blue,.2) !important;}
+	.ce-table-normalplus th											{background-color: $blue !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td								{background-color: rgba($blue,.2) !important;}
 	}
 	
 .page.green{
@@ -118,18 +118,18 @@ main{
 	.frame-colored a											{color: $green !important; margin: 0; }
 
 	.btn.btn-secondary											{background-color: $green !important}	
-	.btn.btn-secondary a										{color: #fff !important}	
+	.btn.btn-secondary a											{color: #fff !important}	
 	
-	hr															{background-color: $green !important}
-	.frame-line													{border-bottom: 2px solid rgba($green, 0.5);}
+	hr													{background-color: $green !important}
+	.frame-line												{border-bottom: 2px solid rgba($green, 0.5);}
 		
 	.ce-table-colorstripe th,
-	.ce-table-normalplus th										{background-color: $green !important;} 
-	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($green,.2) !important;}
+	.ce-table-normalplus th											{background-color: $green !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td								{background-color: rgba($green,.2) !important;}
 	}
 	
 .page.grey{
-	.frame-grey													{background: rgba(lighten($grey, 57.5%),1);}
+	.frame-grey												{background: rgba(lighten($grey, 57.5%),1);}
 	main h2, main h3, main a,
 	.frame-colored h2,
 	.frame-colored h3,
@@ -137,14 +137,14 @@ main{
 	.frame-colored a											{color: darken($grey,10%) !important}
 
 	.btn.btn-secondary											{background-color: $grey !important}	
-	.btn.btn-secondary a										{color: #fff !important}	
+	.btn.btn-secondary a											{color: #fff !important}	
 			
-	hr															{background-color: $grey !important}
-	.frame-line													{border-bottom: 2px solid rgba($grey, 0.5);} 
+	hr													{background-color: $grey !important}
+	.frame-line												{border-bottom: 2px solid rgba($grey, 0.5);} 
 		 
 	.ce-table-colorstripe th,
-	.ce-table-normalplus th										{background-color: $grey !important;} 
-	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($grey,.2) !important;} 
+	.ce-table-normalplus th											{background-color: $grey !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td					{			background-color: rgba($grey,.2) !important;} 
 	}
 	
 .page.red{
@@ -156,14 +156,14 @@ main{
 	.frame-colored a											{color: $red !important}
 
 	.btn.btn-secondary											{background-color: $red !important}	
-	.btn.btn-secondary a										{color: #fff !important}	
+	.btn.btn-secondary a											{color: #fff !important}	
 		
-	hr															{background-color: $red !important}
-	.frame-line													{border-bottom: 2px solid rgba($red, 0.5);} 
+	hr													{background-color: $red !important}
+	.frame-line												{border-bottom: 2px solid rgba($red, 0.5);} 
 		
 	.ce-table-colorstripe th,
-	.ce-table-normalplus th										{background-color: $red !important;} 
-	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($red,.2) !important;} 
+	.ce-table-normalplus th											{background-color: $red !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td								{background-color: rgba($red,.2) !important;} 
 	}
 	
 .page.turquoise{
@@ -175,14 +175,14 @@ main{
 	.frame-colored a											{color: $turquoise !important}
 	
 	.btn.btn-secondary											{background-color: $turquoise !important}	
-	.btn.btn-secondary a										{color: #fff !important}	
+	.btn.btn-secondary a											{color: #fff !important}	
 	
-	hr															{background-color: $turquoise !important}
-	.frame-line													{border-bottom: 2px solid rgba($turquoise, 0.5);} 
+	hr													{background-color: $turquoise !important}
+	.frame-line												{border-bottom: 2px solid rgba($turquoise, 0.5);} 
 	
 	.ce-table-colorstripe th,
-	.ce-table-normalplus th										{background-color: $turquoise !important;} 
-	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($turquoise,.2) !important;} 
+	.ce-table-normalplus th											{background-color: $turquoise !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td								{background-color: rgba($turquoise,.2) !important;} 
 	}
 	
 .page.violett{
@@ -194,14 +194,14 @@ main{
 	.frame-colored a											{color: $violett !important}
 
 	.btn.btn-secondary											{background-color: $violett !important}	
-	.btn.btn-secondary a										{color: #fff !important}	
+	.btn.btn-secondary a											{color: #fff !important}	
 	
-	hr															{background-color: $violett !important}
-	.frame-line													{border-bottom: 2px solid rgba($violett, 0.5);} 
+	hr													{background-color: $violett !important}
+	.frame-line												{border-bottom: 2px solid rgba($violett, 0.5);} 
 		
 	.ce-table-colorstripe th,
-	.ce-table-normalplus th										{background-color: $violett !important;} 
-	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($violett,.2) !important;} 
+	.ce-table-normalplus th											{background-color: $violett !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td								{background-color: rgba($violett,.2) !important;} 
 	}
 	
 .page.yellow{
@@ -213,13 +213,13 @@ main{
 	.frame-colored a											{color: $yellow !important}
 	
 	.btn.btn-secondary											{background-color: $yellow !important}	
-	.btn.btn-secondary a										{color: #fff !important}	
+	.btn.btn-secondary a											{color: #fff !important}	
 	
-	hr															{background-color: $yellow !important}
-	.frame-line													{border-bottom: 2px solid rgba($yellow, 0.5);} 
+	hr													{background-color: $yellow !important}
+	.frame-line												{border-bottom: 2px solid rgba($yellow, 0.5);} 
 	
 	.ce-table-colorstripe th,
-	.ce-table-normalplus th										{background-color: $yellow !important;} 
-	.ce-table-colorstripe tr:nth-child(2n) td					{background-color: rgba($yellow,.2) !important;} 
+	.ce-table-normalplus th											{background-color: $yellow !important;} 
+	.ce-table-colorstripe tr:nth-child(2n) td								{background-color: rgba($yellow,.2) !important;} 
 	}
 	
