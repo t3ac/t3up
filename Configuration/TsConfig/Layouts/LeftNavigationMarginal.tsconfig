@@ -1,12 +1,12 @@
 ###################################################
-#### BACKENDLAYOUT: LeftNavigationMarginalLayout ##
+#### BACKENDLAYOUT: LeftNavigationMarginal ##
 ###################################################
 mod {
     web_layout {
         BackendLayouts {
-            LeftNavigationMarginalLayout {
-                title = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:LeftNavigationMarginalLayout
-                icon = EXT:t3up/Resources/Public/Icons/BackendLayouts/LeftNavigationMarginalLayout.svg
+            LeftNavigationMarginal {
+                title = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:LeftNavigationMarginal
+                icon = EXT:t3up/Resources/Public/Icons/BackendLayouts/LeftNavigationMarginal.svg
                  config {
                     backend_layout {
                         colCount = 4
@@ -18,8 +18,7 @@ mod {
                                         name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos3
                                         colPos = 3
                                         colspan = 4   
-                                        allowed.CType = list,t3upheaderimage_content,carousel,slideshow,shortcut,youtubevideo_pi1
-                                        allowed.list_type = news_pi1                                                         
+                                        allowed.CType = t3upheaderimage_content,carousel,slideshow,youtubevideo_pi1,news_newsliststicky
                                     }
 
                               	}

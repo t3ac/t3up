@@ -1,3 +1,0 @@
-# BACKENDLAYOUTS with left navigation #
-
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3up/Configuration/TsConfig/LeftNavigationLayouts" extensions="typoscript">

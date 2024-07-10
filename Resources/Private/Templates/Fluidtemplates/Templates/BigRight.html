@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+    <f:layout name="Standard" />
+    <f:section name="Content">
+        <f:render partial="Header.html" section="list" arguments="{_all}" />
+        <main id="content" class="rightMarginal">
+            <div class="overlay"></div> 
+            <div class="container px-0 pb-5">  
+                <div class="row">
+				     <f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
+		              <f:if condition="{data.deltitle} != '1'">
+		                <f:if condition="{data.showtitle} == 0">
+		                    <f:then>
+		                      <f:format.nl2br><h1 class="col-12">{title}</h1></f:format.nl2br>
+		                     </f:then> 
+		                    <f:else>
+		                     	<h1 class="notvissible">{title}</h1>  
+		                     </f:else> 
+		                </f:if>
+		              </f:if>
+
+                    <div class="col-12 contentarea">
+                        <div class="row gutter">
+                        <!--TYPO3SEARCH_begin--> 
+                            <div class="col-12 col-md-8 content">
+                                <f:format.raw>{content}</f:format.raw>
+                            </div>
+                            <div class="col-12 col-md-4 right">
+                                <f:format.raw>{right}</f:format.raw>
+                            </div>                          
+                        <!--TYPO3SEARCH_end-->  
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <f:if condition="{data.previousnext}">
+                <f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
+            </f:if>            
+        </main>
+     </f:section>
+</html>

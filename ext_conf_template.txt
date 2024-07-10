@@ -1,40 +1,60 @@
 
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:TCEForm
-TCEForm 						= 1
+TCEForm 					= 1
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:TCEMain
-TCEMain 						= 1
+TCEMain 					= 1
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:TCEFrames
-TCEFrames 						= 1
+TCEFrames 					= 1
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RTE
-RTE 							= 1
+RTE 						= 1
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:UserTs
-UserTs 							= 1
+UserTs 						= 1
 
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:StandardLayout
-StandardLayout 					= 1
 
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:OneColumnLayout
-OneColumnLayout                 = 0
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:LeftNavigation
+LeftNavigation  			= 1
 
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:LeftNavigationLayout
-LeftNavigationLayout   			= 0
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:LeftNavigationMarginal
+LeftNavigationMarginal  	= 1
 
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:LeftNavigationMarginalLayout
-LeftNavigationMarginalLayout   	= 0
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:LeftNavigationInMedia
+LeftNavigationInMedia		= 1
 
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightNavigationLayout
-RightNavigationLayout 	        = 0
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightNavigation
+RightNavigation  			= 1
 
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightMarginalLayout
-RightMarginalLayout 	        = 0
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightNavigationInMedia
+RightNavigationInMedia		= 1
 
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:ContentLeftMarginalLayout
-ContentLeftMarginalLayout     = 0
 
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:ContentRightMarginalLayout
-ContentRightMarginalLayout     = 0
+
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:Standard
+Standard					= 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:OneColumn
+OneColumn					= 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightMarginal
+RightMarginal					= 1
+
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:BigLeft
+BigLeft						= 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:BigRight
+BigRight					= 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:SmallLeft
+SmallLeft					= 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:SmallRight
+SmallRight					= 1
+
+
+
