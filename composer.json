@@ -21,8 +21,8 @@
       }
   },
   "require": {
-    "typo3/cms-core": "^12.4",
-    "wapplersystems/ws-scss": "^12.0"
+    "typo3/cms-core": "^11.5",
+    "wapplersystems/ws-scss": "^11.0"
   },
   "extra": {
     "typo3/cms": {
