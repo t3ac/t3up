@@ -1,0 +1,8 @@
+page.includeJSFooterlibs {      
+	subnavigation					= EXT:t3up/Resources/Public/JavaScript/subnavigation.js  
+	subnavigation.async				= 1
+}
+
+plugin.tx_wsscss.variables{
+	subnavigation					= subnavigation	
+}

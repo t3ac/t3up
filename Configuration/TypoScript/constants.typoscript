@@ -463,7 +463,7 @@ page {
 		# cat=t3up: navigation//111; type=int+; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:subnav.level
 		subnavlevel					= 1
 		# cat=t3up: navigation//112; type=options[0,1]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:leveltitle
-		leveltitle					= 0
+		leveltitle					= 1
 		# cat=t3up: navigation//113; type=options[0,1]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:sideAnker
 		sideAnker					= 0	
 		# cat=t3up: navigation//114; type=options[leftround,leftsquare,rightround,rightsquare]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:sideAnkerstyle
