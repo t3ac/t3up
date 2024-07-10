@@ -3,6 +3,6 @@ page.includeJSFooterlibs {
 	subnavigation.async				= 1
 }
 
-plugin.tx_wsscss.variables{
-	subnavigation					= subnavigation	
+page.includeCSS{
+	subnavigation					= EXT:t3up/Resources/Public/Sass/Content/_subnavigation.scss
 }
