@@ -11,9 +11,9 @@
   ],
   "license": ["GPL-2.0-or-later"],
   "keywords": [
-    "TYPO3",
     "extension",
-    "t3up"
+    "t3up",
+    "t3ac",
   ],
   "autoload": {
       "psr-4": {
