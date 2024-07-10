@@ -60,26 +60,31 @@ call_user_func(static function () {
 	# Enable/dissable the LeftNavigation-Layout -> addPageTSConfig
 	if ($Configuration['LeftNavigation']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/LeftNavigation.tsconfig'");
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/subnavigation.typoscript'");
 	}
 	
 	# Enable/dissable the LeftNavigationMarginal-Layout -> addPageTSConfig
 	if ($Configuration['LeftNavigationMarginal']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/LeftNavigationMarginal.tsconfig'");
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/subnavigation.typoscript'");
 	}
 	
 	# Enable/dissable the LeftNavigationInMedia-Layout -> addPageTSConfig
 	if ($Configuration['LeftNavigationInMedia']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/LeftNavigationInMedia.tsconfig'");
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/subnavigation.typoscript'");
 	}
 
 	# Enable/dissable the RightNavigation-Layout -> addPageTSConfig
 	if ($Configuration['RightNavigation']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/RightNavigation.tsconfig'");
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/subnavigation.typoscript'");
 	}
 	
 	# Enable/dissable the RightNavigationInMedia-Layout -> addPageTSConfig
 	if ($Configuration['RightNavigationInMedia']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/RightNavigationInMedia.tsconfig'");
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/subnavigation.typoscript'");
 	}
 
 	# Enable/dissable the Standard-Layout -> addPageTSConfig
@@ -118,7 +123,7 @@ call_user_func(static function () {
 	}
 	
 	# Extensions #####################################
-	
+
 	if (ExtensionManagementUtility::isLoaded('solr')) {
 		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Solr/solr.typoscript'");
 	}
