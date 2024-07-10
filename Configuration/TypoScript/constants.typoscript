@@ -260,8 +260,6 @@ page {
 		# customsubcategory=javascript		=	LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:javascript
 		# cat=t3up: files/javascript/01; type=options[,active]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:basic 
 		basic					=	active
-		# cat=t3up: files/javascript/02; type=options[,active]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:subnavigation
-		subnavigation				=
 		# cat=t3up: files/javascript/04; type=options[,active]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:jquery
 		jquery					=	active
 		# cat=t3up: files/javascript/04; type=options[,active]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:inview	
@@ -498,11 +496,9 @@ page {
 		scssnavigation				= navigation
 		# cat=t3up: scss/basic/24;	type=options[breadcrumb,empty]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbreadcrumb
 		scssbreadcrumb				= breadcrumb
-		# cat=t3up: scss/basic/25; type= options[subnavigation,empty]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsssubnavigation
-		scsssubnavigation			= empty
-		# cat=t3up: scss/basic/27; type= options[table,empty]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsstable
+		# cat=t3up: scss/basic/25; type= options[table,empty]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsstable
 		scsstable					= table	
-		# cat=t3up: scss/basic/28; type= options[bootstrapstyles,empty]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbootstrapstyles
+		# cat=t3up: scss/basic/26; type= options[bootstrapstyles,empty]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbootstrapstyles
 		scssbootstrapstyles			= bootstrapstyles
 			
 		# Extensions ____________________________________________	
