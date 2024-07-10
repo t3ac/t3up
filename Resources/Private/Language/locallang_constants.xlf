@@ -371,10 +371,10 @@
             <trans-unit id="symbol2">
                  <source>The Symbol fontface scss file</source>
             </trans-unit> 
-            <trans-unit id="symbolpath">
+            <trans-unit id="symbolfontpath">
                  <source>Path of the symbol font-files (default typo3conf/ext/t3up/Resources/Public/Fonts/)</source>
             </trans-unit>    
-            <trans-unit id="symboldef">
+            <trans-unit id="symbolfontdef">
                  <source>Path of the symbol font-definitions (default typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
             </trans-unit>  
                
