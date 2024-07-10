@@ -178,7 +178,6 @@ plugin.tx_wsscss.variables {
 	content							= {$page.scss.scsscontent}	
 	footer							= {$page.scss.scssfooter}	
 	navigation						= {$page.scss.scssnavigation}	
-	subnavigation						= {$page.scss.scsssubnavigation}	
 	
 	# Boostrap Scss
 	bootstrapstyles						= {$page.scss.scssbootstrapstyles}	
