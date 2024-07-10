@@ -238,7 +238,7 @@ page.includeCSS{
 	scssfelogin.outputStyle			= compressed	
 
 	wall                            	= EXT:t3up/Resources/Public/Sass/Extensions/_wall.scss
-    	wall.if.isTrue                     	= {$page.scss.scsswall}
+    wall.if.isTrue                     	= {$page.scss.scsswall}
    	wall.outputStyle             		= compressed  
 	
 }
