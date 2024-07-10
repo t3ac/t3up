@@ -13,7 +13,7 @@
   "keywords": [
     "extension",
     "t3up",
-    "t3ac",
+    "t3ac"
   ],
   "autoload": {
       "psr-4": {
