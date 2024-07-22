@@ -9,7 +9,7 @@ plugin.tx_wsscss.variables {
 	fontdef							= {$page.fonts.fontdef}
 	fontpath						= ../../../{$page.fonts.fontpath}	
 	symbolfontdef						= {$page.fonts.symbolfontdef}
-	symbolfontpath						= ../../../{$page.fonts.fontpath}	
+	symbolfontpath						= ../../../{$page.fonts.symbolfontpath}	
  
 	font2							= {$page.fonts.font2}
 	
