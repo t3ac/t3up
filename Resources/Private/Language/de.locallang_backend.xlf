@@ -49,11 +49,11 @@
 			     <source>Layout with right marginal (off/on)</source>
 			     <target state="translated">Layout mit rechter Marginalspalte</target>
 		    </trans-unit>
-			<trans-unit id="ContentRightMarginal">
+			<trans-unit id="BigRight">
 			     <source>Layout with a bigger right marginal (off/on)</source>
 			     <target state="translated">Layout mit breiter rechter Marginalspalte</target>
 		    </trans-unit>
-			<trans-unit id="ContentLeftMarginal">
+			<trans-unit id="BigLeft">
 			     <source>Layout with a bigger left marginal (off/on)</source>
 			     <target state="translated">Layout mit breiter linker Marginalspalte</target>
 		    </trans-unit>	    	        		    
