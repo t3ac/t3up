@@ -25,35 +25,35 @@
 
 
 		    /* -- */
-			<trans-unit id="StandardLayout">
+			<trans-unit id="Standard">
 			     <source>Standardlayout</source>
 			     <target state="translated">Standardlayout</target>    
 		    </trans-unit>
-			<trans-unit id="OneColumnLayout">
+			<trans-unit id="OneColumn">
 			     <source>OneColumn Layout</source>
 			     <target state="translated">Einspalten Layout mit Media</target>
 		    </trans-unit>
-			<trans-unit id="LeftNavigationLayout">
+			<trans-unit id="LeftNavigation">
 			     <source>Layout with left navigation</source>
 			     <target state="translated">Layout mit linker Unternavigation</target>
 		    </trans-unit>	  
-			<trans-unit id="LeftNavigationMarginalLayout">
+			<trans-unit id="LeftNavigationMarginal">
 			     <source>Layout with left navigation, and marginalcolumn</source>
 			     <target state="translated">Layout mit linker Unternavigation und rechter Marginalspalte</target>
 		    </trans-unit>	  
-			<trans-unit id="RightNavigationLayout">
+			<trans-unit id="RightNavigation">
 			     <source>Layout with right navigation</source>
 			     <target state="translated">Layout mit rechter Unternavigation</target>
 		    </trans-unit>	    		    
-			<trans-unit id="RightMarginalLayout">
+			<trans-unit id="RightMarginal">
 			     <source>Layout with right marginal (off/on)</source>
 			     <target state="translated">Layout mit rechter Marginalspalte</target>
 		    </trans-unit>
-			<trans-unit id="ContentRightMarginalLayout">
+			<trans-unit id="ContentRightMarginal">
 			     <source>Layout with a bigger right marginal (off/on)</source>
 			     <target state="translated">Layout mit breiter rechter Marginalspalte</target>
 		    </trans-unit>
-			<trans-unit id="ContentLeftMarginalLayout">
+			<trans-unit id="ContentLeftMarginal">
 			     <source>Layout with a bigger left marginal (off/on)</source>
 			     <target state="translated">Layout mit breiter linker Marginalspalte</target>
 		    </trans-unit>	    	        		    

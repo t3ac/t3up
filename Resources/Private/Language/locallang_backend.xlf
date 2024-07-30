@@ -5,188 +5,188 @@
 		<body>
 		
 			/* -- BACKENDLAYOUTS ------------------------- */
-		    
-		    <trans-unit id="colpos0">
-			     <source>Content</source>
-		    </trans-unit>
-		    <trans-unit id="colpos1">
-			     <source>Left column</source>
-		    </trans-unit>
-		    <trans-unit id="colpos2">
-			     <source>Right column</source>
-		    </trans-unit>
-		    <trans-unit id="colpos3">
-			     <source>Media</source>
-		    </trans-unit>
+		 
+		 <trans-unit id="colpos0">
+			<source>Content</source>
+		 </trans-unit>
+		 <trans-unit id="colpos1">
+			<source>Left column</source>
+		 </trans-unit>
+		 <trans-unit id="colpos2">
+			<source>Right column</source>
+		 </trans-unit>
+		 <trans-unit id="colpos3">
+			<source>Media</source>
+		 </trans-unit>
 
-		    /* -- */
-			<trans-unit id="StandardLayout">
-			     <source>Standardlayout</source>
-		    </trans-unit>
-			<trans-unit id="OneColumnLayout">
-			     <source>OneColumn Layout</source>
-		    </trans-unit>
-			<trans-unit id="LeftNavigationLayout">
-			     <source>Layout with left navigation</source>
-		    </trans-unit>	  
-			<trans-unit id="LeftNavigationMarginalLayout">
-			     <source>Layout with left navigation, and marginalcolumn</source>
-		    </trans-unit>	  
-			<trans-unit id="RightNavigationLayout">
-			     <source>Layout with right navigation</source>
-		    </trans-unit>	    		    
-			<trans-unit id="RightMarginalLayout">
-			     <source>Layout with right marginal (off/on)</source>
-		    </trans-unit>
-			<trans-unit id="ContentRightMarginalLayout">
-			     <source>Layout with a bigger right marginal (off/on)</source>
-		    </trans-unit>
-			<trans-unit id="ContentLeftMarginalLayout">
-			     <source>Layout with a bigger left marginal (off/on)</source>
-		    </trans-unit>	    	        		    
-           
+		 /* -- */
+			<trans-unit id="Standard">
+			<source>Standardlayout</source>
+		 </trans-unit>
+			<trans-unit id="OneColumn">
+			<source>OneColumn Layout</source>
+		 </trans-unit>
+			<trans-unit id="LeftNavigation">
+			<source>Layout with left navigation</source>
+		 </trans-unit>	
+			<trans-unit id="LeftNavigationMarginal">
+			<source>Layout with left navigation, and marginalcolumn</source>
+		 </trans-unit>	
+			<trans-unit id="RightNavigation">
+			<source>Layout with right navigation</source>
+		 </trans-unit>	 		 
+			<trans-unit id="RightMarginal">
+			<source>Layout with right marginal (off/on)</source>
+		 </trans-unit>
+			<trans-unit id="ContentRightMarginal">
+			<source>Layout with a bigger right marginal (off/on)</source>
+		 </trans-unit>
+			<trans-unit id="ContentLeftMarginal">
+			<source>Layout with a bigger left marginal (off/on)</source>
+		 </trans-unit>	 			 
+
 			/* -- PAGE ------------------------- */
-		    <trans-unit id="fullpage">
-			     <source>Pagelayout without a container</source>
-		    </trans-unit>			
-		    <trans-unit id="showtitle">
-			     <source>Don't show the title</source>
-		    </trans-unit>
-		    <trans-unit id="deltitle">
-			     <source>Delete the title (h1), for plugins eg. news</source>
-		    </trans-unit>
-		    <trans-unit id="breadcrumb">
-				<source>Hide the breadcrumb</source>
-		    </trans-unit> 
-            <trans-unit id="hidenav">
-                 <source>Hides the subnavigation</source>
-            </trans-unit>
-            <trans-unit id="nonav">
-                 <source>This page has no link in the navigation</source>
-            </trans-unit>
-		    <trans-unit id="previousnext">
-			     <source>Shows previous/next buttons</source>
-		    </trans-unit>
-		    
-		    
-	         /* -- TT-CONTENT IMAGE ORIENT----------- */	
-		    <trans-unit id="header-below">
-			     <source>Header below the image (center)</source>
-		    </trans-unit>
-		    <trans-unit id="header-below-left">
-			     <source>Header below the image (left)</source>
-		    </trans-unit>
-			    <trans-unit id="header-below-right">
-			     <source>Header below the image (right)</source>
-		    </trans-unit>
-		    		        
+		 <trans-unit id="fullpage">
+			<source>Pagelayout without a container</source>
+		 </trans-unit>			
+		 <trans-unit id="showtitle">
+			<source>Don't show the title</source>
+		 </trans-unit>
+		 <trans-unit id="deltitle">
+			<source>Delete the title (h1), for plugins eg. news</source>
+		 </trans-unit>
+		 <trans-unit id="breadcrumb">
+			<source>Hide the breadcrumb</source>
+		 </trans-unit> 
+		<trans-unit id="hidenav">
+			<source>Hides the subnavigation</source>
+		</trans-unit>
+		<trans-unit id="nonav">
+			<source>This page has no link in the navigation</source>
+		</trans-unit>
+		 <trans-unit id="previousnext">
+			<source>Shows previous/next buttons</source>
+		 </trans-unit>
+		 
+		 
+	/* -- TT-CONTENT IMAGE ORIENT----------- */	
+		 <trans-unit id="header-below">
+			<source>Header below the image (center)</source>
+		 </trans-unit>
+		 <trans-unit id="header-below-left">
+			<source>Header below the image (left)</source>
+		 </trans-unit>
+			 <trans-unit id="header-below-right">
+			<source>Header below the image (right)</source>
+		 </trans-unit>
+		 		
 
-	         /* -- TT-CONTENT PADDING----------- */
-            <trans-unit id="paddingBeforeClass">
-                <source>Padding Before</source>
-            </trans-unit>   
-            <trans-unit id="paddingAfterClass">
-                <source>Padding After</source>
-            </trans-unit>        
-            <trans-unit id="space_class">
-                <source>Inner Padding</source>
-            </trans-unit>    
-            
-            <trans-unit id="space_class_none">
-                <source>none</source>
-            </trans-unit>        
-            <trans-unit id="space_class_1">
-                <source>0,25 unit</source>
-            </trans-unit> 
-            <trans-unit id="space_class_2">
-                <source>0,5 unit</source>
-            </trans-unit>     
-            <trans-unit id="space_class_3">
-                <source>0,75 unit</source>
-            </trans-unit>
-            <trans-unit id="space_class_4">
-                <source>1 unit</source>
-            </trans-unit>  
-            <trans-unit id="space_class_5">
-                <source>1,5 unit</source>
-            </trans-unit>             
-            <trans-unit id="space_class_6">
-                <source>2 unit</source>
-            </trans-unit>  
-            <trans-unit id="space_class_7">
-                <source>3 unit</source>
-            </trans-unit>    
-              
-	         /* -- Colors ----------- */
+	/* -- TT-CONTENT PADDING----------- */
+	<trans-unit id="paddingBeforeClass">
+		<source>Padding Before</source>
+	</trans-unit>
+		<trans-unit id="paddingAfterClass">
+	<source>Padding After</source>
+	</trans-unit>
+	<trans-unit id="space_class">
+		<source>Inner Padding</source>
+	</trans-unit> 
+
+	<trans-unit id="space_class_none">
+		<source>none</source>
+	</trans-unit>
+	<trans-unit id="space_class_1">
+		<source>0,25 unit</source>
+	</trans-unit> 
+	<trans-unit id="space_class_2">
+		<source>0,5 unit</source>
+	</trans-unit>
+	<trans-unit id="space_class_3">
+		<source>0,75 unit</source>
+	</trans-unit>
+	<trans-unit id="space_class_4">
+		<source>1 unit</source>
+	</trans-unit>
+	<trans-unit id="space_class_5">
+		<source>1,5 unit</source>
+	</trans-unit> 
+	<trans-unit id="space_class_6">
+		<source>2 unit</source>
+	</trans-unit>
+	<trans-unit id="space_class_7">
+		<source>3 unit</source>
+	</trans-unit> 
+
+	/* -- Colors ----------- */
 			<trans-unit id="pagecolor">
-			     <source>Pagecolor</source>
-		    </trans-unit>	
+			<source>Pagecolor</source>
+		 </trans-unit>	
 			<trans-unit id="pagecolor-no">
-			     <source>No Color</source>
-		    </trans-unit>	
+			<source>No Color</source>
+		 </trans-unit>	
 			<trans-unit id="pagecolor-blue">
-			     <source>Blue</source>
-		    </trans-unit>	
+			<source>Blue</source>
+		 </trans-unit>	
 			<trans-unit id="pagecolor-red">
-			     <source>Red</source>
-		    </trans-unit>	
+			<source>Red</source>
+		 </trans-unit>	
 			<trans-unit id="pagecolor-green">
-			     <source>Green</source>
-		    </trans-unit>
+			<source>Green</source>
+		 </trans-unit>
 			<trans-unit id="pagecolor-orange">
-			     <source>Orange</source>
-		    </trans-unit>	
+			<source>Orange</source>
+		 </trans-unit>	
 			<trans-unit id="pagecolor-violett">
-			     <source>Violett</source>
-		    </trans-unit>	
+			<source>Violett</source>
+		 </trans-unit>	
 			<trans-unit id="pagecolor-yellow">
-			     <source>Yellow</source>
-		    </trans-unit>	  
+			<source>Yellow</source>
+		 </trans-unit>	
 			<trans-unit id="pagecolor-grey">
-			     <source>Grey</source>
-		    </trans-unit>	
+			<source>Grey</source>
+		 </trans-unit>	
 			<trans-unit id="pagecolor-turquoise">
-			     <source>Turquoise</source>
-		    </trans-unit>	
+			<source>Turquoise</source>
+		 </trans-unit>	
 			<trans-unit id="pagecolor-darkblue">
-			     <source>Dark blue</source>
-		    </trans-unit>	
+			<source>Dark blue</source>
+		 </trans-unit>	
 			<trans-unit id="pagecolor-darkgrey">
-			     <source>Dark grey</source>
-		    </trans-unit>	
-		    
-		   /* -- Designs ----------- */
-		   
+			<source>Dark grey</source>
+		 </trans-unit>	
+		 
+		/* -- Designs ----------- */
+		
  			<trans-unit id="none">
-			     <source>None</source>
-		    </trans-unit>  			   
+			<source>None</source>
+		 </trans-unit>			
  			<trans-unit id="default">
-			     <source>Default</source>
-		    </trans-unit>  			   
+			<source>Default</source>
+		 </trans-unit>			
  			<trans-unit id="standard">
-			     <source>Standard</source>
-		    </trans-unit>  		
-  
+			<source>Standard</source>
+		 </trans-unit>		
+
 	
 			<trans-unit id="colored">
-			     <source>Colored background</source>
-		    </trans-unit>  	   
+			<source>Colored background</source>
+		 </trans-unit>	
 			<trans-unit id="white">
-			     <source>White background</source>
-		    </trans-unit>	
+			<source>White background</source>
+		 </trans-unit>	
 			<trans-unit id="lightgrey">
-			     <source>Lightgrey background</source>
-		    </trans-unit>			    
-		    <trans-unit id="line">
-                 <source>With a line</source>
-            </trans-unit>  
-		    <trans-unit id="twocol">
-                 <source>Text with 2 columns</source>
-            </trans-unit>  
+			<source>Lightgrey background</source>
+		 </trans-unit>			 
+		 <trans-unit id="line">
+<source>With a line</source>
+</trans-unit>
+		 <trans-unit id="twocol">
+<source>Text with 2 columns</source>
+</trans-unit>
 
 			<trans-unit id="containerhandle">
-			     <source>Handle as a container</source>
-		    </trans-unit>
+			<source>Handle as a container</source>
+		 </trans-unit>
 		</body>
 	</file>
 </xliff>
