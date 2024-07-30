@@ -20,7 +20,7 @@
 		 </trans-unit>
 
 		 /* -- */
-			<trans-unit id="Standard">
+		<trans-unit id="Standard">
 			<source>Standardlayout</source>
 		 </trans-unit>
 			<trans-unit id="OneColumn">
