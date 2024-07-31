@@ -37,6 +37,10 @@
 			     <source>Layout with left navigation</source>
 			     <target state="translated">Layout mit linker Unternavigation</target>
 		    </trans-unit>	  
+			<trans-unit id="LeftNavigationInMedia">
+				<source>Layout with left navigation and media</source>
+			    <target state="translated">Layout mit linker Unternavigation und Media</target>				
+		 	</trans-unit>	
 			<trans-unit id="LeftNavigationMarginal">
 			     <source>Layout with left navigation, and marginalcolumn</source>
 			     <target state="translated">Layout mit linker Unternavigation und rechter Marginalspalte</target>
@@ -49,6 +53,10 @@
 			     <source>Layout with right marginal (off/on)</source>
 			     <target state="translated">Layout mit rechter Marginalspalte</target>
 		    </trans-unit>
+			<trans-unit id="RightNavigationInMedia">
+				<source>Layout with right navigation and media</source>
+			    <target state="translated">Layout mit rechter Unternavigation und Media</target>				
+		 	</trans-unit>	
 			<trans-unit id="BigRight">
 			     <source>Layout with a bigger right marginal (off/on)</source>
 			     <target state="translated">Layout mit breiter rechter Marginalspalte</target>
@@ -56,8 +64,15 @@
 			<trans-unit id="BigLeft">
 			     <source>Layout with a bigger left marginal (off/on)</source>
 			     <target state="translated">Layout mit breiter linker Marginalspalte</target>
-		    </trans-unit>	    	        		    
-
+		    </trans-unit>	  
+			<trans-unit id="SmallRight">
+			     <source>Layout with a small right marginal (off/on)</source>
+			     <target state="translated">Layout mit schmaler rechter Marginalspalte</target>
+		    </trans-unit>
+			<trans-unit id="SmallLeft">
+			     <source>Layout with a small left marginal (off/on)</source>
+			     <target state="translated">Layout mit schmaler linker Marginalspalte</target>
+		    </trans-unit>	  
 
 			/* -- PAGE ------------------------- */
 		    <trans-unit id="fullpage">
