@@ -2,7 +2,7 @@
 
 defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
 
-# $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['cs_presets'] = 'EXT:t3up/Configuration/Rte/CsPresets.yaml';
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['cs_presets'] = 'EXT:t3up/Configuration/Rte/CsPresets.yaml';
 
 $GLOBALS['TCA']['pages']['columns']['title']['config']['max'] = 80;
 $GLOBALS['TCA']['pages']['columns']['title']['config']['size'] = 30;

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
 <file source-language="en" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up">
-	<header/>
+	<header/>	
 	 <body>
-		
+	 
+
+
 		/* -- Breadcrumb ------------------------- */ 
 		 <trans-unit id="breadcrumbwrapconstants">
 			<source>Css-Breadcrumb</source>
@@ -27,7 +29,6 @@
 			<source>Fontsize</source>
 		</trans-unit>
 
-			
 		/* -- Cms Components ------------------------- */
 		<trans-unit id="container">
 			<source>Max-width of the containers (default 1440px)</source>
@@ -57,16 +58,18 @@
 			<source>Padding of the whole content</source>
 		</trans-unit> 
 	 
+	 
 		/* -- Color ------------------------- */
 		/* base */ 
+		
 		<trans-unit id="basecolors">
-			 source>Basecolors</source>
+			<source>Basecolors</source>
 		</trans-unit>
 		<trans-unit id="baseColor">
 			<source>Basecolor</source>
 		</trans-unit>
 		<trans-unit id="baseTextColor">
-			<source>Basecolor of the content-text</source>
+			<source>Basecolor of the content-text, links</source>
 		</trans-unit>
 		<trans-unit id="baseLinkColor">
 			<source>Basecolor of the links in the content</source>
@@ -92,6 +95,8 @@
 		<trans-unit id="pictureoverlaytext">
 			<source>The overlaytextcolor - alttext - for images (default rgb 0 0 0, 1)</source>
 		</trans-unit> 
+		
+
 		
 		/* footer */
 		<trans-unit id="footer">
@@ -124,8 +129,8 @@
 		<trans-unit id="footer3LinkHoverColor">
 			<source>Footerbase - hover color</source>
 		</trans-unit> 
-		
- 
+
+
 		/* header */ 
 		<trans-unit id="header">
 			<source>Colors in the Header-/Toparea</source>
@@ -306,7 +311,8 @@
 		</trans-unit>
 		
 			 
-		
+		 
+ 
 		/* -- Files ------------------------- */
 		<trans-unit id="contentElement">
 			<source>Fluid-Style-Content Templates</source>
@@ -348,117 +354,9 @@
 			<source>Including the jquery.wheninview.js</source>
 		</trans-unit> 
 		
-		/* -- Fonts ------------------------- */
-
-<<<<<<< HEAD
-		<trans-unit id="font">
-			<source>Primary font-face, [Open-Sans, PT-Sans, Roboto, Source-Sans-Pro, Ubuntu, Aria, Verdana] are as a complete set possible</source>
-		</trans-unit> 
-		<trans-unit id="font2">
-			<source>Secondary font-face, [Courier, Times] are as a complete set possible</source>
-		</trans-unit> 
-		<trans-unit id="fontpath">
-			<source>Path of the font-files (default typo3conf/ext/t3up/Resources/Public/Fonts/)</source>
-		</trans-unit>
-		<trans-unit id="fontdef">
-			<source>Path of the font-definitions (default typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
-		</trans-unit>
-		<trans-unit id="font2path">
-			<source>Path of the second font-files (default typo3conf/ext/t3up/Resources/Public/Fonts/)</source>
-		</trans-unit>
-		<trans-unit id="font2def">
-			<source>Path of the second font-definitions (default typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
-		</trans-unit>
-		<trans-unit id="symbol">
-			<source>The Symbol fontface</source>
-		</trans-unit>
-		<trans-unit id="symbol2">
-			<source>The Symbol fontface scss file</source>
-		</trans-unit> 
-		<trans-unit id="symbolpath">
-			<source>Path of the symbol font-files (default typo3conf/ext/t3up/Resources/Public/Fonts/)</source>
-		</trans-unit>
-		<trans-unit id="symboldef">
-			<source>Path of the symbol font-definitions (default typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
-		</trans-unit>
-			
-		
-		/* -- Footer ------------------------- */ 
-		<trans-unit id="bg1">
-			<source>Informationarea and wraps in the Footer</source>
-		</trans-unit> 
-		<trans-unit id="footer1">
-			<source>Show the footer (default = 1)</source>
-		</trans-unit>
-		<trans-unit id="address">
-			<source>ID of the postaladdress</source>
-		</trans-unit>
-		<trans-unit id="addressWrap">
-			<source>Address css-wrap</source>
-		</trans-unit>
-		<trans-unit id="service1">
-			<source>ID of the Content-Element Service 1</source>
-		</trans-unit>
-		<trans-unit id="service1Wrap">
-			<source>Service1 css-wrap</source>
-		</trans-unit>
-		<trans-unit id="service2">
-			<source>ID of the Content-Element Service 2</source>
-		</trans-unit>
-		<trans-unit id="service2Wrap">
-			<source>Service2 css-wrap</source>
-		</trans-unit>
-		<trans-unit id="service3">
-			<source>ID of the Content-Element Service 3</source>
-		</trans-unit>
-		<trans-unit id="service3Wrap">
-			<source>Service3 css-wrap</source>
-		</trans-unit>
-		<trans-unit id="footer1Wrap">
-			<source>Footer1 css-wrap</source>
-		</trans-unit>
-		
-		<trans-unit id="bg2">
-			<source>Links and wraps in the footerline</source>
-		</trans-unit>
-		<trans-unit id="base">
-			<source>Show the basearea in the footer</source>
-		</trans-unit>
-		<trans-unit id="copyright">
-			<source>Copyright</source>
-		</trans-unit>
-		<trans-unit id="link">
-			<source>Link Adress for the copyright</source>
-		</trans-unit> 
-		<trans-unit id="contactpage">
-			<source>Page-ID with the address</source>
-		</trans-unit>
-		<trans-unit id="dataprotection">
-			<source>Page with the data protection informations</source>
-		</trans-unit>
-		<trans-unit id="disabilityaccess">
-			<source>Page with the disability access informations</source>
-		</trans-unit>
-		<trans-unit id="impress">
-			<source>Impress</source>
-		</trans-unit> 
-		<trans-unit id="lastchange">
-			<source>Show lastchange</source>
-		</trans-unit> 
-		<trans-unit id="pid">
-			<source>Show the PID</source>
-		</trans-unit> 
-		<trans-unit id="owner">
-			<source>Show the owner of the page, only locked in</source>
-		</trans-unit> 
-		<trans-unit id="sitemap">
-			<source>ID of the page with the sitemap</source>
-		</trans-unit> 
-		
-		<trans-unit id="footerBaseWrap">
-			<source>Footerbase css-wrap</source>
-		</trans-unit>
-=======
+	 
+               
+	        /* -- Fonts ------------------------- */  		
             <trans-unit id="font">
                  <source>Primary font-face, [Open-Sans, PT-Sans, Roboto, Source-Sans-Pro, Ubuntu, Aria, Verdana] are as a complete set possible</source>
             </trans-unit>   
@@ -480,17 +378,13 @@
             <trans-unit id="symbol">
                  <source>The Symbol fontface</source>
             </trans-unit>
-            <trans-unit id="symbol2">
-                 <source>The Symbol fontface scss file</source>
-            </trans-unit> 
             <trans-unit id="symbolfontpath">
                  <source>Path of the symbol font-files (default typo3conf/ext/t3up/Resources/Public/Fonts/)</source>
             </trans-unit>    
             <trans-unit id="symbolfontdef">
                  <source>Path of the symbol font-definitions (default typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
             </trans-unit>  
-               
-            
+			
             /* -- Footer ------------------------- */   
             <trans-unit id="bg1">
                  <source>Informationarea and wraps in the Footer</source>
@@ -566,8 +460,6 @@
             <trans-unit id="footerBaseWrap">
                  <source>Footerbase css-wrap</source>
             </trans-unit>
->>>>>>> c52fed21f772f5fc3cbd71570e9362921ca8b207
-
 		
 		/* -- HEADER ------------------------- */
 		<trans-unit id="logos">
@@ -686,7 +578,7 @@
 		<trans-unit id="meta.publisher">
 			<source>Who is the publisher of the content</source>
 		</trans-unit> 
-			 <trans-unit id="meta.robots">
+		 <trans-unit id="meta.robots">
 			<source>Standard robots values</source>
 		</trans-unit> 
 		<trans-unit id="meta.viewport">
@@ -710,7 +602,9 @@
 		<trans-unit id="meta.og-site_name">
 			<source>Open Graph site name</source>
 		</trans-unit> 
-			 
+
+	 
+ 
 			 
 		/* -- Navigation ------------------------- */
 		<trans-unit id="navstyle">
@@ -843,8 +737,6 @@
 		
 		
 		 /* -- Top ------------------------- */ 
-
-
 		<trans-unit id="homebutton">
 			<source>If it's true, shows the home-button in the top-area</source>
 		</trans-unit> 
@@ -949,6 +841,8 @@
 		</trans-unit> 
 
 		 
+
+
 		 /* -- Typography ------------------------- */ 
 		 
 		 <trans-unit id="h1">

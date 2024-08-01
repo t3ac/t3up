@@ -3,7 +3,7 @@
 										text-decoration: none !important; position:fixed; transition: background-color  ease .5s;
 										z-index: 80; width: 3*$spacer; height: 3*$spacer; background-color: rgba($totopBgColor,.7); bottom: $totopPosBottom; right: $totopPosRight; 
 		a								{color: $totopLinkColor; text-decoration: none !important;}
-		a:before						{content:'\f077'; font-family: $symbol; font-size: 150%;}
+		a:before						{content:'\f106'; font-family: $symbol; font-size: 175%;}
 		a:hover							{color: rgba($totopLinkHoverColor,1)}  
 		span							{display: none;}
 }
