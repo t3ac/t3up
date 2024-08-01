@@ -1,17 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.1"
-	 id="Ebene_1" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" image-rendering="optimizeQuality"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="80mm" y="60mm" viewBox="0 0 226.8 170.1"
-	 style="enable-background:new 0 0 226.8 170.1;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#646478;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#787878;}
-	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#647864;}
-</style>
-<g id="Ebene_x0020_1">
-	<rect y="0" class="st0" width="226.8" height="57"/>
-	<rect y="61.8" class="st1" width="166.5" height="108.3"/>
-	<rect x="171.5" y="61.8" class="st2" width="55.3" height="108.3"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="80mm" height="60mm" version="1.0" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 8000 6000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="Ebene_x0020_1">
+  <rect fill="#646478" x="0" y="0" width="8000" height="2000"/>
+  <rect fill="#787878" x="0" y="2200" width="5900" height="3800"/>
+  <rect fill="#647864" x="6100" y="2200" width="1900" height="3800"/>
+ </g>
 </svg>
