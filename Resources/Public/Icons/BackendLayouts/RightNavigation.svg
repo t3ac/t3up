@@ -1,26 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1"
-	 id="Ebene_1" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" image-rendering="optimizeQuality"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 226.8 170.1"
-	 style="enable-background:new 0 0 226.8 170.1;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#646478;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#787878;}
-	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#647864;}
-	.st3{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:22.9256;}
-</style>
-<g id="Ebene_x0020_1">
-	<rect y="0" class="st0" width="226.8" height="57"/>
-	<rect y="61.8" class="st1" width="166.5" height="108.3"/>
-	<rect x="171.5" y="61.8" class="st2" width="55.3" height="108.3"/>
-</g>
-<g>
-	<line class="st3" x1="220.5" y1="73.5" x2="177.8" y2="73.5"/>
-	<line class="st3" x1="220.5" y1="85.9" x2="177.8" y2="85.9"/>
-	<line class="st3" x1="220.5" y1="98.3" x2="177.8" y2="98.3"/>
-	<line class="st3" x1="220.5" y1="110.7" x2="177.8" y2="110.7"/>
-	<line class="st3" x1="220.5" y1="123.1" x2="177.8" y2="123.1"/>
-	<line class="st3" x1="220.5" y1="135.5" x2="177.8" y2="135.5"/>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="80mm" height="60mm" version="1.0" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 8000 6000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g id="Ebene_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect fill="#9D9E9E" stroke="#2B2A29" stroke-width="20" stroke-miterlimit="22.9256" x="6050" y="2225.8" width="1950" height="3800"/>
+  <rect fill="#9D9E9E" stroke="#2B2A29" stroke-width="20" stroke-miterlimit="22.9256" x="0" y="-0" width="8000" height="2000"/>
+  <rect fill="#9D9E9E" stroke="#2B2A29" stroke-width="20" stroke-miterlimit="22.9256" x="0" y="2225.8" width="5850" height="3800"/>
+ </g>
 </svg>
