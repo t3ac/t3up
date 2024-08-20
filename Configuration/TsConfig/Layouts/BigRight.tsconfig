@@ -17,13 +17,13 @@ mod {
                                         name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos0
                                         colspan = 2
                                         colPos = 0
-                                        disallowed.CType = headerimage_content
+                                        disallowed.CType = t3upheaderimage_content
                                     }
                                     2 {
                                         name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos2
                                         colPos = 2
                                         colspan = 1
-                                        disallowed.CType = headerimage_content
+                                        disallowed.CType = t3upheaderimage_content
                                     }
                                     
     

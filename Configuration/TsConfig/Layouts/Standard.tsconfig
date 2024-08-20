@@ -18,7 +18,7 @@ mod {
 										name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos3
 										colspan = 4
 										colPos = 3
-										allowed.CType = headerimage_content,carousel,slideshow,shortcut,youtubevideo_pi1, news_newsliststicky
+										allowed.CType = t3upheaderimage_content,carousel,slideshow,shortcut,youtubevideo_pi1, news_newsliststicky
 									}
 								}
 							}
@@ -28,20 +28,20 @@ mod {
 										name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos1
 										colPos = 1
 										colspan = 1
-										disallowed.CType = headerimage_content
+										disallowed.CType = t3upheaderimage_content
 									}
 									
 									2 {
 										name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos0
 										colspan = 2
 										colPos = 0
-										disallowed.CType = headerimage_content
+										disallowed.CType = t3upheaderimage_content
 									}
 									3 {
 										name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos2
 										colPos = 2
 										colspan = 1
-										disallowed.CType = headerimage_content
+										disallowed.CType = t3upheaderimage_content
 									}
 								}
 							}  

@@ -18,7 +18,7 @@ mod {
 										name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos3
 										colspan = 5
 										colPos = 3
-										allowed.CType = carousel,slideshow,youtubevideo_pi1,headerimage_content,news_newsliststicky
+										allowed.CType = carousel,slideshow,youtubevideo_pi1,t3upheaderimage_content,news_newsliststicky
 									}
 								}
 							}
@@ -28,11 +28,13 @@ mod {
 										name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos0
 										colspan = 3
 										colPos = 0
+										disallowed.CType = t3upheaderimage_content
 									}
 									2 {
 										name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos2
 										colPos = 2
 										colspan = 2
+										disallowed.CType = t3upheaderimage_content
 									}
 								}
 							}  
