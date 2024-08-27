@@ -198,6 +198,7 @@ plugin.tx_wsscss.variables {
 	v2 =	calc({$page.components.gutter} * .5)
 	v15=	calc({$page.components.gutter} * (.75 / 2))
 	v2 =	calc({$page.components.gutter} * .5)
+	v25 =	calc({$page.components.gutter} * .60)
 	v3 =	calc({$page.components.gutter} * .75)
 	v4 =	calc({$page.components.gutter} *	1)
 	v45=	calc({$page.components.gutter} *	1.25)	
@@ -215,11 +216,11 @@ plugin.tx_wsscss.variables {
 	-v6 = calc(#{$v6} * -1); /* 2rem */
 	-v7 = calc(#{$v7} * -1); /* 3rem */
 	
-	v50 = calc(50% - #{$v15})
-	v33 = calc(33.33% - #{$v2})
-	v34 = calc(33.33% - #{$v3})
-	v25 = calc(25% - #{$v3})
-	v20 = calc(20% - #{$v1})
+	c50 = calc(50% - #{$v15})
+	c33 = calc(33.33% - #{$v2})
+	c34 = calc(33.33% - #{$v3})
+	c25 = calc(25% - #{$v25})
+	c20 = calc(20% - #{$v1})
 	
 }
 
@@ -228,7 +229,7 @@ page.includeCSS{
 
 	main					= EXT:t3up/Resources/Public/Sass/_index.scss
 	main.linenumber				= true	
-	main.forceOnTop				= 0
+	main.forceOnTop				= 1
 	main.outputStyle			= compressed 
 	
 	scssfelogin				= {$page.scss.scssfelogin}
@@ -237,7 +238,7 @@ page.includeCSS{
 	scssfelogin.outputStyle			= compressed	
 
 	wall                            	= EXT:t3up/Resources/Public/Sass/Extensions/_wall.scss
-    wall.if.isTrue                     	= {$page.scss.scsswall}
-   	wall.outputStyle             		= compressed  
+	wall.if.isTrue                     	= {$page.scss.scsswall}
+	wall.outputStyle             		= compressed  
 	
 }
