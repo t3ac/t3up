@@ -23,9 +23,12 @@ main{
 	
 	/* frame white */
 	.frame-white												{transition: all ease 0.3s; background-color: rgba(255, 255, 255, 1);
+		.ce-textpic > h2,
+		.ce-textpic > h3,
+		.ce-textpic > h4									{padding: $v3 $v3 0; letter-spacing: 0.01rem;}
 		>h2,
 		>h3,
-		>h4												{padding: $v3 $v3 0; margin: 0 ; letter-spacing: 0.01rem;}
+		>h4														{padding: $v3 $v3 0; margin: 0 ; letter-spacing: 0.01rem;}
 		
 	.frame-table > h3 											{margin: 0 0 $v4 !important; text-transform: none;} 
 	.frame-table > h4 											{margin: $h4-margin  !important;}
