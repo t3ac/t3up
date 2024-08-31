@@ -138,7 +138,7 @@ a.carousel-control-next 									{width: 5%; background: #00000077; transition: 
 
 /* Slider **********************************************/
 
-.t3up_slider{											 	overflow: hidden; margin-left: $-v3; margin-right: $-v3;
+.t3up_slider{											 	overflow: hidden; 
 	.carousel-control-prev,.carousel-control-next 			{max-width:  calc(#{$g} *  6); }
 	&.carousel												{overflow: visible; margin-left: 0rem; margin-right: 0rem;}
 	&.carousel .carousel-inner > div						{height: 100%; transition: 1s ease-in-out;}
@@ -164,45 +164,20 @@ a.carousel-control-next 									{width: 5%; background: #00000077; transition: 
 	.carousel-indicators.right_inside						{bottom: auto; top: 1rem; margin-right: 1rem; margin-left: auto; left: auto; opacity: 1;}	
 	.carousel-indicators.right_outside						{bottom: auto; top: $-v7; margin-right: 1rem; margin-left: auto; left: auto; opacity: 1;}	
 	
-	.carousel-caption										{right: 0; left: 0; bottom: 0; z-index: 3; padding-top: 0; padding-bottom: 0;}
+	.carousel-caption										{z-index: 3; right: inherit; left: inherit; bottom: inherit; padding: 0; text-align: inherit; }
 
 	.carousel-inner picture									{min-width: 100%; display: block;}
 	.carousel-inner picture img								{min-width: 100%; min-height: 100%; object-fit: cover; object-position: center 0;}
 	
 	.overlayslider											{position: absolute; z-index: 2; opacity: .5;}
-}
 
 	/* SliderStyles */
-	.sliderstyle-1{
-		.carousel-caption									{bottom: 0; top: auto; left: 0; right: 0;} 
-	}	
+	.carousel-caption.still									{bottom: 0; top: auto; left: 0; right: 0;} 
 	
-	.sliderstyle-4{
-		.carousel-caption									{bottom: 5%; left: 0; right: 0;} 
-	}	
+	.carousel-caption.stil2									{top: 50%; left: 0; right: 0; width: auto;} 
 	
-	.sliderstyle-5{
-		.carousel-caption{									bottom: 10%; top: auto; left: 0; right: 0;
-			.h1a											{font-weight: 500; font-size: $v5;}
-			.h3a											{font-weight: 400; font-size: $v3;}			
-		} 
+	.carousel-caption.stil3{								bottom: 15%; top: auto; left: 0; right: 33.3%;
+		.h3													{font-weight: 500; font-size: $v5;}
 	}	
-
-@media screen and (min-width: 768px){
-	.sliderstyle-5{
-		.carousel-caption{ 
-			.h1a											{font-size: $v6;}
-			.h3a											{font-size: $v2;}			
-		} 
-	} 
-}		 
-	 
-
-@media screen and (min-width: 992px){
-	.sliderstyle-5{
-		.carousel-caption{ 
-			.h1a											{font-size: $v7;}
-			.h3a											{font-size: $v6;}			
-		} 
-	}		
+		
 }
