@@ -41,6 +41,10 @@
 	
 .ce-above .ce-bodytext										{clear: both;}
 .ce-intext.ce-left ol, .ce-intext.ce-left ul				{padding-left: $v5; overflow: auto;}
+
+.ce-above .ce-gallery + h2,
+.ce-above .ce-gallery + h3,
+.ce-above .ce-gallery + h4									{margin-top: $v3;}
 	
 .ce-textpic > *.above										{clear: both}		
 
