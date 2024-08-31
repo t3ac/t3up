@@ -31,15 +31,12 @@ $(document).ready(function() {
 		$('.subnavigation li span').click(function(){
           	var	$li			= $(this).parent(),	
           		$this		= $(this),
-				$subnav	    = $li.find('> .subsubmenu'),
-				$height	    = $li.find('.navlink').height(),
-				$height	    = $height + 24;
+				$subnav	    = $li.find('> .subsubmenu');
 			
 				if ($li.attr('data-show-sub') === 'true') {
 					$li.attr({'data-show-sub': 'false'});
 					$li.removeClass('cur');
 					$this.text(unescape('+')); 
-					$this.css('height',$height); 
 					$li.removeClass('activated');
 					$subnav.slideUp(function(){
 						$subnav.attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});
@@ -49,7 +46,6 @@ $(document).ready(function() {
 					$li.siblings().removeClass('activated');
 					$li.siblings().attr({'data-show-sub': 'false'});
 					$li.siblings().find('> .subsubmenu').slideUp().attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});		
-					$this.css('height',$height); 
 					$this.text(unescape('–')); 
 					$li.attr({'data-show-sub': 'true'});
 					$li.addClass('activated');
@@ -63,10 +59,7 @@ $(document).ready(function() {
 			
           	var	$li			= $(this).parent(),	
           		$span       = $li.find('>span'),
-				$subnav	    = $li.find('> .subsubmenu'),
-          		$this		= $(this),
-				$height	    = $this.height(),
-				$height	    = $height + 24;
+				$subnav	    = $li.find('> .subsubmenu');
 			
 			if (event.keyCode == 9) {
 				
@@ -74,7 +67,6 @@ $(document).ready(function() {
 					$li.attr({'data-show-sub': 'false'});
 					$li.removeClass('cur');
 					$span.text(unescape('+')); 
-					$span.css('height',$height); 
 					$li.removeClass('activated');
 					$subnav.slideUp(function(){
 						$subnav.attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});
@@ -86,7 +78,6 @@ $(document).ready(function() {
 					$li.siblings().find('> .subsubmenu').slideUp().attr({'aria-hidden': 'true'}).attr({'aria-expanded':'false'});		
 					
 					$span.text(unescape('–')); 
-					$span.css('height',$height); 
 					$li.attr({'data-show-sub': 'true'});
 					$li.addClass('activated');
 					
