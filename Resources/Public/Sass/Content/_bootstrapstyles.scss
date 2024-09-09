@@ -7,140 +7,14 @@ a.btn														{color: $baseColor;}
 a.carousel-control-prev, 
 a.carousel-control-next 									{width: 5%; background: #00000077; transition: all 0.3s ease; color: #fff !important; font-size: 200% !important; opacity: .01;}
 
-/* Accordions * ************************************** */
 
-.t3up_accordion{ 
-	 a.accordion-button										{display: flex; align-content: space-between; align-items: center; font-size: 100%; }
-	 a.accordion-button::after,
-	 a.accordion-button::before								{display: flex; align-items: center; justify-content: center; font-family: $symbol; font-weight: normal !important; transition: all ease .3s; font-size: 150%; width: $v6; height: $v6;}
-	 a.accordion-button:not(.collapsed)::after				{font-family: $symbol; transform: rotate(-180deg);}
-	
-	 .accordion-item .accordion-header > a					{border-top: 0; padding-right: $v3; padding-left: $v3; background-color: #fff; border: 1px solid $gray-500; border-bottom: 0;}
-	 .accordion-item:first-of-type .accordion-header	> a	{border-radius: 5px 5px 0 0;}	
-	 .accordion-item:last-of-type .accordion-header > a.collapsed	{border-radius: 0 0 5px 5px; border-bottom: 1px solid $gray-500;}	
-	
-	 .accordion-item .accordion-body						{background-color: #fff; border-left: 1px solid $gray-500; border-right: 1px solid $gray-500;}
-	 .accordion-item .accordion-body > *					{padding-top: $v3; padding-bottom: $v3; background: none !important;}
-	 .accordion-item .accordion-body > .frame-text			{padding: $v3;}	 
-	 .accordion-item .accordion-body > .frame-textmedia		{padding: $v3;}	 
-	 .accordion-item .accordion-body > * > *:last-of-type	{margin-bottom: 0;; } 
-	 .accordion-item:last-of-type .accordion-body			{border-bottom: 1px solid $gray-500; border-radius: 0 0 5px 5px;}
-
-	 .accordion-item .accordion-body > * > h2,
-	 .accordion-item .accordion-body > * > h3,
-	 .accordion-item .accordion-body > * > h4				{display: none !important;}
-}	
- 
-
-.t3up_accordion.accordionstyle-1{ 
-		 a.accordion-button::after							{content:$plus; color: $gray-800;; }
-		 a.accordion-button:not(.collapsed)::after			{content:$minus;}
-		.accordion-item .accordion-header > a				{padding-right: 0;}
-		.accordion-item:first-of-type .accordion-header	> a	{border-radius: 0;}
-		.accordion-item .accordion-header > a				{background-color: $gray-100; }	
-		.accordion-item .accordion-header > a.collapsed		{background-color: #fff; }	
-
-		.accordion-item:last-of-type .accordion-header > a.collapsed	{border-radius: 0;}	
-		.accordion-item:last-of-type .accordion-body		{border-radius: 0;} 
-}
-
-.t3up_accordion.accordionstyle-2{ 
-		 a.accordion-button::after							{content:$plus; padding-right: $v2; padding-left:$v2; color: #252525;}
-		 a.accordion-button:not(.collapsed)::after			{content:$minus;} 
-		 a.accordion-button:hover:after						{background-color: rgba(0, 0, 0, 0.125);}	
-		.accordion-item .accordion-header > a				{padding-right: 0;}
-		.accordion-item:first-of-type .accordion-header	> a	{border-radius: 0;}
-		.accordion-item .accordion-header > a				{background-color: $gray-200; }	
-		.accordion-item .accordion-header > a.collapsed		{background-color: #fff; }	
-
-		.accordion-item:last-of-type .accordion-header > a.collapsed	{border-radius: 0;}	
-		.accordion-item:last-of-type .accordion-body		{border-radius: 0;} 
-}
-
-.t3up_accordion.accordionstyle-3{ 
-		a.accordion-button::after							{content:$plus; color: #333;}
-		a.accordion-button:not(.collapsed)::after			{content:$minus;}
-		.accordion-item .accordion-header > a				{background: #efefef; border-radius: 0; border: 0;}
-		.accordion-item .accordion-header > a.collapsed		{background: none; border-bottom: 1px solid rgba(0,0,0,.2)}
-		.accordion-item .accordion-body						{background-color: #fff; border: 0;}
-
-} 
-
-.t3up_accordion.accordionstyle-4{ 
-	 a.accordion-button::after								{content:$plus; color: #333;;}
-	 a.accordion-button:not(.collapsed)::after				{content:$minus;}
-	 .accordion-item:first-of-type .accordion-header	> a	{border-radius: 0;}
-	 .accordion-item .accordion-header > a					{background-color: #fff; border-radius: 0; font-weight: normal; border-color: #ebebeb; border-left: 0; border-right: 0; transition: background 0.2s, color 0.2s;}
-	 .accordion-item .accordion-header > a:hover			{background-color: rgb(245,245,245); }
-	 .accordion-item .accordion-header > a.collapsed		{background: none;}
-	 .accordion-item:last-of-type .accordion-header > a.collapsed	{border-radius: 0; border-color: #ebebeb;} 
-	 .accordion-item .accordion-body						{background-color: #fff; border: 0;}
-}
-
-.t3up_accordion.accordionstyle-5{ 
-	 a.accordion-button										{justify-content: start;}
-	 a.accordion-button::before								{content:$plus; color: #333; padding-left: $v3; padding-right: $v3; }
-	 a.accordion-button:not(.collapsed)::before				{content:$minus; transform: rotate(-180deg); padding-left: $v3; padding-right: $v3; }
-	 .accordion-item:first-of-type .accordion-header	> a	{border-radius: 0;}
-	 .accordion-item .accordion-header > a						{background-color: #fff; padding-left: 0; padding-right: 0; background-color: #fff; border-radius: 0; font-weight: normal; border-color: #ebebeb; border-left: 0; border-right: 0; transition: background 0.2s, color 0.2s;}
-	 .accordion-item:last-of-type .accordion-header > a.collapsed	{border-radius: 0; border-color: #ebebeb;} 
-	 .accordion-item .accordion-body						{background-color: #fff; border: 0;}
-}
-
-.t3up_accordion.accordionstyle-6{ 
-	 a.accordion-button										{justify-content: start;}
-	 a.accordion-button::before								{content:$plus; color: #333; padding-left: $v3; padding-right: $v3; }
-	 a.accordion-button:not(.collapsed)::before				{content:$minus; transform: rotate(-180deg); padding-left: $v3; padding-right: $v3; }
-	 .accordion-item:first-of-type .accordion-header	> a	{border-radius: 0;}
-	 .accordion-item .accordion-header > a					{padding-left: 0; padding-right: 0; background-color: #fff; border-radius: 0; font-weight: normal; border-color: #ebebeb; border-left: 0; border-right: 0; transition: background 0.2s, color 0.2s;}
-	 .accordion-item .accordion-header > a:hover			{background-color: rgb(245,245,245); }
-	 .accordion-item .accordion-header > a.collapsed		{background: none;}
-	 .accordion-item:last-of-type .accordion-header > a.collapsed	{border-radius: 0; border-color: #ebebeb;} 
-	 .accordion-item .accordion-body						{background-color: #fff; border: 0;}
-}
-
-
-/* Tabs * ************************************** */	
-.t3up_tabulator	{
-	.tab-content .tab-pane > *								{background: none;}
-	 .tab-content .tab-pane > * > h2,
-	 .tab-content .tab-pane > * > h3,
-	 .tab-content .tab-pane > * > h4						{display: none !important;}
-}
-	
-	
-.tabssstyle-1{
-	.nav-item												{margin-bottom: -1px; cursor: pointer; }
-	.nav-link.active										{border-color: rgba(0,0,0,.2) rgba(0,0,0,.2) #fff rgba(0,0,0,.2);}
-	.tab-content											{padding-top: $v3; padding-right: $v3; padding-left: $v3; background-color: #fff; border-radius: 0 0 5px 5px; border: 1px solid rgba(0,0,0,.2);}
-}
-
-.t3up_tabulator.tabssstyle-2{
-		.nav-item											{border-color:	rgba(0,0,0,.215) rgba(0,0,0,.2) transparent transparent; background-color: #fff; box-shadow: inset 0px -3px 2px 0 rgb(0 0 0 / 15%)}
-		.nav-item.active									{box-shadow: none; border-color:	rgba(0,0,0,.2) rgba(0,0,0,.25) #fff;}
-}
- 
-.t3up_tabulator.tabssstyle-3{
-		.nav-item											{box-shadow: none; border-color:	rgba(0,0,0,.2) rgba(0,0,0,.2) transparent transparent; background-color: rgba(0, 0, 0, 0.03); color: #252525;}
-		.nav-item.active									{border-color:	rgba(0,0,0,.2) rgba(0,0,0,.2) #fff; background-color: #fff;}
-}
-
-.t3up_tabulator.tabssstyle-4{
-		.nav-item											{box-shadow: none; border-color:	rgba(0,0,0,.2) rgba(0,0,0,.2) transparent transparent; background-color: rgba(0, 0, 0, 0.050); color: #666;}
-		.nav-item.active									{border-color:	rgba(0,0,0,.2) rgba(0,0,0,.2) #fff; background-color: #fff; color: #252525;}
-}
-
-.t3up_tabulator.tabssstyle-5{
-		.nav-item											{box-shadow: none; border-color:	rgba(0,0,0,1) rgba(0,0,0,1) transparent transparent; background-color: rgba(0, 0, 0, .33); color: #fff;}
-		.nav-item.active									{border-color:	rgba(0,0,0,1) rgba(0,0,0,1) rgba(0,0,0,1); background-color: #000;}
-}
 
 
 /* Slider **********************************************/
 
 .t3up_slider{											 	overflow: hidden; 
 	.carousel-control-prev,.carousel-control-next 			{max-width:  calc(#{$g} *  6); }
-	&.carousel												{overflow: visible; margin-left: 0rem; margin-right: 0rem;}
+	&.carousel												{margin-left: 0rem; margin-right: 0rem;}
 	&.carousel .carousel-inner > div						{height: 100%; transition: 1s ease-in-out;}
 	
 	p														{margin-bottom: 0;}
