@@ -35,10 +35,6 @@ page {
 		access					= access
 		# cat=t3up: components/appearance/05; type=options[empty,meanmenu,mmenu,simplemenu]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:mobil
 		mobilmenu				= mmenu					
-		# cat=t3up: components/appearance/06; type=options[1,2,3,4,5,6]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapaccordion
-		bootstrapaccordion		= 1	
-		# cat=t3up: components/appearance/07; type=options[1,2,3,4]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstraptabs
-		bootstraptabs			= 1
 		# cat=t3up: components/appearance/08; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:mainpadding
 		mainpadding				= 0 0 $v6 0
 	 }
@@ -133,6 +129,8 @@ page {
 		darkblue					= #2D4F9A
 		# cat=t3up: color/pagecolor/10; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:darkgrey
 		darkgrey					= #454545
+        # cat=t3up: color/pagecolor/11; type =color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:lightgrey
+        lightgrey                     =#dadada
 			
 		#	customsubcategory=footer=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer
 		# cat=t3up: color/footer/01; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1BGColor 
