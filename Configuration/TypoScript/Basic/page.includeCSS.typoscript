@@ -97,7 +97,7 @@ plugin.tx_wsscss.variables {
 	yellow							= {$page.color.yellow}
 	darkblue						= {$page.color.darkblue}	
 	darkgrey						= {$page.color.darkgrey}		
-
+    	lightgrey                       			= {$page.color.lightgrey}
 	# Fluidstylecontent values	
 	borderWidth						= {$page.design.borderWidth}
 	borderPadding						= {$page.design.borderPadding}
