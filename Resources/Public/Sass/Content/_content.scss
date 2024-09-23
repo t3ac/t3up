@@ -63,7 +63,7 @@ main{
 	.frame-lightgrey .ce-textpic > h4 ~ .ce-bodytext			{padding-top: 0;}	
 			
 	/* frame colored */
-	.frame-colored												{background-color:rgba(lighten($baseColor, 57.5%),1); transition: all ease 0.3s;  color: $baseTextColor !important;}
+	.frame-colored												{background-color:rgba(lighten($baseColor, 57.5%),1); transition: all ease 0.3s;  color: $baseTextColor;}
 	
 	.frame-colored .ce-textpic > h2,
 	.frame-colored .ce-textpic > h3,
@@ -75,7 +75,7 @@ main{
 	.frame-colored .ce-textpic > h4 ~ .ce-bodytext				{padding-top: 0;}		
 
 	/* frame white */
-	.frame-white												{transition: all ease 0.3s; background-color: rgba(255, 255, 255, 1); color: $baseTextColor !important;}
+	.frame-white												{transition: all ease 0.3s; background-color: rgba(255, 255, 255, 1); color: $baseTextColor;}
 	
 	.frame-white .ce-textpic > h2,
 	.frame-white .ce-textpic > h3,
