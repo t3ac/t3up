@@ -94,40 +94,40 @@
 		 		
 
 	/* -- TT-CONTENT PADDING----------- */
-	<trans-unit id="paddingBeforeClass">
-		<source>Padding Before</source>
-	</trans-unit>
-		<trans-unit id="paddingAfterClass">
-	<source>Padding After</source>
-	</trans-unit>
-	<trans-unit id="space_class">
-		<source>Inner Padding</source>
-	</trans-unit> 
-
-	<trans-unit id="space_class_none">
-		<source>none</source>
-	</trans-unit>
-	<trans-unit id="space_class_1">
-		<source>0,25 unit</source>
-	</trans-unit> 
-	<trans-unit id="space_class_2">
-		<source>0,5 unit</source>
-	</trans-unit>
-	<trans-unit id="space_class_3">
-		<source>0,75 unit</source>
-	</trans-unit>
-	<trans-unit id="space_class_4">
-		<source>1 unit</source>
-	</trans-unit>
-	<trans-unit id="space_class_5">
-		<source>1,5 unit</source>
-	</trans-unit> 
-	<trans-unit id="space_class_6">
-		<source>2 unit</source>
-	</trans-unit>
-	<trans-unit id="space_class_7">
-		<source>3 unit</source>
-	</trans-unit> 
+		<trans-unit id="paddingBeforeClass">
+			<source>Padding Before</source>
+		</trans-unit>
+			<trans-unit id="paddingAfterClass">
+		<source>Padding After</source>
+		</trans-unit>
+		<trans-unit id="space_class">
+			<source>Inner Padding</source>
+		</trans-unit> 
+	
+		<trans-unit id="space_class_none">
+			<source>none</source>
+		</trans-unit>
+		<trans-unit id="space_class_1">
+			<source>0,25 unit</source>
+		</trans-unit> 
+		<trans-unit id="space_class_2">
+			<source>0,5 unit</source>
+		</trans-unit>
+		<trans-unit id="space_class_3">
+			<source>0,75 unit</source>
+		</trans-unit>
+		<trans-unit id="space_class_4">
+			<source>1 unit</source>
+		</trans-unit>
+		<trans-unit id="space_class_5">
+			<source>1,5 unit</source>
+		</trans-unit> 
+		<trans-unit id="space_class_6">
+			<source>2 unit</source>
+		</trans-unit>
+		<trans-unit id="space_class_7">
+			<source>3 unit</source>
+		</trans-unit> 
 
 	/* -- Colors ----------- */
 			<trans-unit id="pagecolor">
