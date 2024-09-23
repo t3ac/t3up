@@ -9,7 +9,7 @@
     > div a .Item .wall-teaser 				{transition: bottom  .25s ease-in; color: inherit;  position: absolute; bottom: -50%;  left: 0;  padding: 0 $v3 $v3; width: 100%; opacity: 0; font-weight: normal;}
     > div a .Item .wall-teaser > *			{margin: 0;}    
   
-    > div a:hover .Item    					{background: $baseColor;}
+    > div a:hover .Item    					{background: $baseColor; color: #fff;}
     > div a:hover .Item .wall-teaser  		{bottom: 0%; opacity: 1;}
     
 	> div a .wall-img-wrap  				{overflow: hidden; display: flex;	justify-content: center;	align-items: center;}
