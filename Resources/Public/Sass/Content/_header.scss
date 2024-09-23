@@ -2,11 +2,11 @@ header {										background-color: $headerBgColor; color: $headerColor; z-index
 
     &.sticky									{box-shadow: $shadow;}
     &.sticky .logo img							{width: auto; max-width: $logostickywidth;}
-    &.sticky .toparea							{display: none !important;}
+    &.sticky .toparea							{height: 0; overflow: hidden; }
 
-	a											{color: $headerLinkColor; transition: color ease .3s; text-decoration: none;}
+	a											{color: $headerLinkColor; transition: color ease 1s; text-decoration: none;}
 	a:hover										{color: $headerLinkHoverColor;}
-	.logo										{transition: color ease 0.3s; }
+	.logo										{transition: all ease 0.3s; }
 	.logo img									{width: $logowidth; height: auto; transition: color ease 0.3s; }
 	.logoII										{} 
 	.logoII img									{width: $logoIIwidth; height: auto; float: right; }
@@ -21,13 +21,13 @@ header {										background-color: $headerBgColor; color: $headerColor; z-index
 
 /* top *******************************/
 
-	.toparea									{display: flex; width: 100%; background-color: rgba($topBgColor,$topBgColorTrans); top: 0; z-index: 998;}
+	.toparea									{display: flex; width: 100%; background-color: transparent; background-color: rgba($topBgColor,$topBgColorTrans); top: 0; z-index: 998; transition: color ease .3s;}
 	.toparea.active								{box-shadow: $shadow;}
 
 	.funcItemTitle								{display: none; font-size: 85%;}
 
 	.top{										padding: 0; font-size: 1rem;
-		a										{color: $topLinkColor; transition: color ease .3s;}
+		a										{color: inherit; color: $topLinkColor; transition: color ease .3s;}
 		a:before								{font-family: $symbol;font-size: $symbolfontsize;}		
 		a:hover									{color: $topLinkHoverColor;}
 		
