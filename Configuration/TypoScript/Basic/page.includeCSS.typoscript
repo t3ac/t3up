@@ -97,7 +97,9 @@ plugin.tx_wsscss.variables {
 	yellow							= {$page.color.yellow}
 	darkblue						= {$page.color.darkblue}	
 	darkgrey						= {$page.color.darkgrey}		
-    	lightgrey                       			= {$page.color.lightgrey}
+    lightgrey                       = {$page.color.lightgrey}
+
+
 	# Fluidstylecontent values	
 	borderWidth						= {$page.design.borderWidth}
 	borderPadding						= {$page.design.borderPadding}
@@ -121,21 +123,10 @@ plugin.tx_wsscss.variables {
 	
 	# Typography
 	h1							= {$page.typography.h1}
-	h1-md							= {$page.typography.h1.md}	
-	h1-lg							= {$page.typography.h1.lg}	
 	h1-dir							= {$page.typography.h1.direction}	
 	h2							= {$page.typography.h2}
-	h2-md							= {$page.typography.h2.md}	
-	h2-lg							= {$page.typography.h2.lg}	
 	h3							= {$page.typography.h3}
-	h3-md							= {$page.typography.h3.md}	
-	h3-lg							= {$page.typography.h3.lg} 
 	h4							= {$page.typography.h4} 
-	h4-md							= {$page.typography.h4.md}	
-	h4-lg							= {$page.typography.h4.lg}	
-	p-md							= {$page.typography.p.md}
-	p-lg							= {$page.typography.p.lg}
-	p-footer						= {$page.typography.p.footer}
 	h1-fontweight						= {$page.typography.h1.fontweight}
 	h2-fontweight						= {$page.typography.h2.fontweight}
 	h3-fontweight						= {$page.typography.h3.fontweight} 
@@ -207,7 +198,7 @@ plugin.tx_wsscss.variables {
 	v7 =	calc({$page.components.gutter} *	3)
 	
 	-v1 = calc(#{$v1} * -1); /* .25rem */
-	-v15= calc({$page.components.gutter} * (.75 / 2) * -1); /* -.375rem */
+	-v15= calc(#{$v15} * (.75 / 2) * -1); /* -.375rem */
 	-v2 = calc(#{$v2} * -1); /* .5rem */
 	-v3 = calc(#{$v3} * -1); /* .75rem */
 	-v4 = calc(#{$v4} * -1); /* 1rem */
