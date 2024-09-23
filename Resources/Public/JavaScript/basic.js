@@ -45,7 +45,13 @@ jQuery(document).ready(function($) {
    $body.on('ontouchend click', '#sideanker div.act a', function(event) {
       $(".overlay").fadeOut();  ;
  	});
- 	
+
+    /* MMenu *********************************************************************************************************/  
+    
+   $(".mm-wrapper__blocker").click(function(){ 
+       $('.main-nav__burger').removeClass('act');
+ 	});
+ 
     /* Nonav *********************************************************************************************************/  
 
    $body.on('ontouchend click', '.breadcrumbrow  .nonav1 > a', function(event) {
