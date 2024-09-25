@@ -15,21 +15,21 @@ DELETE FROM `tx_powermail_domain_model_answer` WHERE deleted = 1;
 DELETE FROM `tx_powermail_domain_model_mail` WHERE deleted = 1;
 
 
-# Flex säubern
-UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'text';
-UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'textmedia';
-UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'header';
-UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'textpic';
-UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'header';
-UPDATE `tt_content` SET `pi_flexform` = NULL WHERE `CType` = 'shortcut';
-
+# Flex saeubern
+UPDATE `tt_content` SET `list_type` = '', `pi_flexform` = NULL WHERE `CType` = 'text';
+UPDATE `tt_content` SET `list_type` = '', `pi_flexform` = NULL WHERE `CType` = 'textmedia';
+UPDATE `tt_content` SET `list_type` = '', `pi_flexform` = NULL WHERE `CType` = 'header';
+UPDATE `tt_content` SET `list_type` = '', `pi_flexform` = NULL WHERE `CType` = 'textpic';
+UPDATE `tt_content` SET `list_type` = '', `pi_flexform` = NULL WHERE `CType` = 'header';
+UPDATE `tt_content` SET `list_type` = '', `pi_flexform` = NULL WHERE `CType` = 'shortcut';
+UPDATE `tt_content` SET `list_type` = '', `pi_flexform` = '' WHERE `CType` LIKE 'shortcut';
 
 #####################################################
 # Loeschen der Sysfileeintraege die nicht mehr existierenden Daten
 DELETE FROM sys_file WHERE sys_file.missing=1 AND sys_file.uid NOT IN (SELECT sys_file_reference.uid_local FROM sys_file_reference WHERE sys_file_reference.uid_local=sys_file.uid)
 
-# Rücksetzen auf text, wenn textpic keine Bilder hat
+# Ruecksetzen auf text, wenn textpic keine Bilder hat
 UPDATE `tt_content` SET `CType` = 'text' WHERE `CType` LIKE 'textpic' AND `image` = 0;
 
-# Rücksetzen auf text, wenn textmedia keine Bilder hat
+# Ruecksetzen auf text, wenn textmedia keine Bilder hat
 UPDATE `tt_content` SET `CType` = 'text' WHERE `CType` LIKE 'textmedia' AND `assets` = 0;
