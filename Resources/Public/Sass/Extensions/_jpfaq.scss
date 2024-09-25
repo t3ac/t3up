@@ -1,24 +1,24 @@
 .tx-jpfaq{
 	ul 										{ margin: 0; padding: 0; }
 
-	.jpfaqList  li 							{list-style: none;	margin:  0;	padding: 0; background: rgba(255,255,255,.65); border: 1px solid rgba($baseTextColor,.15); border-top: 0; transition: all ease 0.3s;}
+	.jpfaqList  li 							{list-style: none;	margin:  0;	padding: 0; background: rgba(255,255,255,.65); border: 1px solid rgba($textColor,.15); border-top: 0; transition: all ease 0.3s;}
 	.jpfaqList  li:hover 					{background: rgba(255,255,255,1);}	
-	.jpfaqList  li:first-of-type 			{border-top: 1px solid rgba($baseTextColor,.15); border-radius: .5rem .5rem 0 0;; }	
+	.jpfaqList  li:first-of-type 			{border-top: 1px solid rgba($textColor,.15); border-radius: .5rem .5rem 0 0;; }	
 	.jpfaqList  li:last-of-type 			{border-radius: 0  0 .5rem .5rem; }	
 	.jpfaqList  li .h3   					{cursor: pointer; padding: .25rem 0 .25rem  .75rem; margin: 0; }
-	.jpfaqList  li .h3::after           	{content: '+';  font-weight: normal!important; transition: all ease 0.3s; font-size: 125%; background-color: #dadada; padding: 1rem 0.6rem; color: $baseTextColor;  margin: -.25rem 0 -.25rem .25rem;}
+	.jpfaqList  li .h3::after           	{content: '+';  font-weight: normal!important; transition: all ease 0.3s; font-size: 125%; background-color: #dadada; padding: 1rem 0.6rem; color: $textColor;  margin: -.25rem 0 -.25rem .25rem;}
 	.jpfaqList  li .questionUnfolded        {background: rgba(255,255,255,1);}	
 	.jpfaqList  li .questionUnfolded::after	{content: '–'; transform: rotate(-180deg);}
 
 
-	.jpfaqList .jpfaqAnswer                 {border-top: 1px solid rgba($baseTextColor,.05); padding-left: .75rem; padding-right: .75rem; padding-top: .75rem; }																					
+	.jpfaqList .jpfaqAnswer                 {border-top: 1px solid rgba($textColor,.05); padding-left: .75rem; padding-right: .75rem; padding-top: .75rem; }																					
 
 
 
 	.jpfaqAll 								{cursor: pointer; margin-bottom: .75rem;}
 
 	.jpfaqShowAll::before,
-	.jpfaqHideAll::before 					{content: '\F055'; font-family: $symbol; color: $baseTextColor;}
+	.jpfaqHideAll::before 					{content: '\F055'; font-family: $symbol; color: $textColor;}
 	.jpfaqHideAll::before  					{content: '\F056';}
 
 
