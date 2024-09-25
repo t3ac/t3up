@@ -171,51 +171,51 @@
               
             
 	         /* -- Colors ----------- */
-			<trans-unit id="pagecolor">
+			<trans-unit id="basecolor">
 			     <source>Pagecolor</source>
                 <target state="translated">Seiten-Hauptfarbe</target> 
 		    </trans-unit>	
-			<trans-unit id="pagecolor-no">
+			<trans-unit id="basecolor-no">
 			     <source>No Color</source>
                 <target state="translated">keine</target> 			     
 		    </trans-unit>	
-			<trans-unit id="pagecolor-blue">
+			<trans-unit id="basecolor-blue">
 			     <source>Blue</source>
                 <target state="translated">Blau</target> 
 		    </trans-unit>	
-			<trans-unit id="pagecolor-red">
+			<trans-unit id="basecolor-red">
 			     <source>Red</source>
 			     <target state="translated">Rot</target> 
 		    </trans-unit>	
-			<trans-unit id="pagecolor-green">
+			<trans-unit id="basecolor-green">
 			     <source>Green</source>
 			     <target state="translated">Grün</target> 
 		    </trans-unit>
-			<trans-unit id="pagecolor-orange">
+			<trans-unit id="basecolor-orange">
 			     <source>Orange</source>
 			     <target state="translated">Orange</target> 
 		    </trans-unit>	
-			<trans-unit id="pagecolor-violett">
+			<trans-unit id="basecolor-violett">
 			     <source>Violett</source>
 			     <target state="translated">Violett</target>
 		    </trans-unit>	
-			<trans-unit id="pagecolor-yellow">
+			<trans-unit id="basecolor-yellow">
 			     <source>Yellow</source>
 			     <target state="translated">Gelb</target> 
 		    </trans-unit>	  
-			<trans-unit id="pagecolor-grey">
+			<trans-unit id="basecolor-grey">
 			     <source>Grey</source>
 			     <target state="translated">Grau</target>
 		    </trans-unit>	
-			<trans-unit id="pagecolor-turquoise">
+			<trans-unit id="v-turquoise">
 			     <source>Turquoise</source>
 			     <target state="translated">Türkis</target>
 		    </trans-unit>	
-			<trans-unit id="pagecolor-darkblue">
+			<trans-unit id="basecolor-darkblue">
 			     <source>Dark blue</source>
 			     <target state="translated">Dunkelblau</target>
 		    </trans-unit>	
-			<trans-unit id="pagecolor-darkgrey">
+			<trans-unit id="v-darkgrey">
 			     <source>Dark grey</source>
 			     <target state="translated">Dunkelgrau</target>
 		    </trans-unit>	
