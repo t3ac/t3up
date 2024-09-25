@@ -74,19 +74,19 @@ header {										background-color: $headerBgColor; color: $headerColor; z-index
 			.tab-pane{							min-width: 15rem; width: auto; padding: $v4; background-color: #fff; z-index: 997; box-shadow: $shadow; top: auto; left: auto; right: 0; transform: none; position: absolute;
 				h2,
 				h3,
-				h4								{font-weight: bold; margin: 0; padding-bottom:$v2 !important; color: $baseTextColor; font-size: 100%;}		 
+				h4								{font-weight: bold; margin: 0; padding-bottom:$v2 !important; color: $textColor; font-size: 100%;}		 
 				a.color-mode__btn				{display: block; padding: $v1; text-align: left; position: relative; border-width: 0; border-radius: 0; border: 1px solid transparent;}
 				a.color-mode__btn:hover			{cursor: pointer;}	 
 				a.color-mode__btn > span		{display: inline-block; height: $v4; width: $v6; border: 1px solid #808080; position: relative;top: $v1; margin-right :$v2; background: #fff; overflow: hidden;}
 				a.color-mode__btn.dark > span	{background: #000; }
 				a.color-mode__btn.system > span:before {content: ""; position: absolute; bottom: calc(clamp(12px, 2.8vw, 24px) * -1.4); right: calc(#{$v4} * -1); width: $v7; height: $v6; transform: rotate(-28deg); z-index: 1; background-color: #000;}
-				a.color-mode__btn b				{color: $baseTextColor;}
+				a.color-mode__btn b				{color: $textColor;}
 				.fsrange						{font-size: 125%; cursor: pointer; }
 				ul								{list-style-type: none;}
 				ul li							{display: block; padding-bottom:$v1; padding-top:$v1;}
-				ul li a							{padding: 0; color: $baseTextColor; }
+				ul li a							{padding: 0; color: $textColor; }
 				ul li a:focus,
-				ul li a:hover					{border-bottom: 1px solid $baseTextColor;; font-weight: bold;} 
+				ul li a:hover					{border-bottom: 1px solid $textColor;; font-weight: bold;} 
 			 }
 		 }
 	}
@@ -94,6 +94,8 @@ header {										background-color: $headerBgColor; color: $headerColor; z-index
 }
 
 @media screen and (min-width: 992px) {
+	.stickyheader header						{/*position: fixed; */ width: 100%; background-color: transparent; }
+	.stickyheader header.sticky					{background-color: $headerBgColor;}
 	header {	
 		.funcItemTitle							{display: inline-block;}
 		.notitle .funcItemTitle					{display: none;}
