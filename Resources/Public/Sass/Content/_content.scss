@@ -1,12 +1,12 @@
 main{																		 
-	> .container												{background-color: $baseContainerBgColor;}	
+	> .container												{background-color: $containerBgColor;}	
 	> .container > .row											{padding: $mainpadding;}	
 		
 	/* Area Content */
 	.content a,
-	.contentRight a												{color: $baseLinkColor; font-weight: $boldweight; line-height: $lineheight; }
+	.contentRight a												{color: $linkColor; font-weight: $boldweight; line-height: $lineheight; }
 	.content a:hover,
-	.contentRight a:hover										{color: $baseLinkHoverColor;}
+	.contentRight a:hover										{color: $linkHoverColor;}
 	.content div > p:last-of-type								{margin-bottom: 0;}
 		
 		
@@ -63,7 +63,7 @@ main{
 	.frame-lightgrey .ce-textpic > h4 ~ .ce-bodytext			{padding-top: 0;}	
 			
 	/* frame colored */
-	.frame-colored												{background-color:rgba(lighten($baseColor, 57.5%),1); transition: all ease 0.3s;  color: $baseTextColor;}
+	.frame-colored												{background-color:rgba(lighten($baseColor, 57.5%),1); transition: all ease 0.3s;  color: $textColor;}
 	
 	.frame-colored .ce-textpic > h2,
 	.frame-colored .ce-textpic > h3,
@@ -75,7 +75,7 @@ main{
 	.frame-colored .ce-textpic > h4 ~ .ce-bodytext				{padding-top: 0;}		
 
 	/* frame white */
-	.frame-white												{transition: all ease 0.3s; background-color: rgba(255, 255, 255, 1); color: $baseTextColor;}
+	.frame-white												{transition: all ease 0.3s; background-color: rgba(255, 255, 255, 1); color: $textColor;}
 	
 	.frame-white .ce-textpic > h2,
 	.frame-white .ce-textpic > h3,
@@ -124,7 +124,8 @@ main{
 	
 .page.orange{
 	.frame-colored												{background: rgba(lighten($orange, 57.5%),1);}
-	main h2, main h3, main a,
+	
+	main h1, main h2, main h3, main a,
 	.frame-colored h2,
 	.frame-colored h3,
 	.frame-colored h4,
@@ -143,7 +144,7 @@ main{
 	
 .page.blue{
 	.frame-colored												{background: rgba(lighten($blue, 57.5%),1);}
-	main h2, main h3, main a,
+	main h1, main h2, main h3, main a,
 	.frame-colored h2,
 	.frame-colored h3,
 	.frame-colored h4, 
@@ -162,7 +163,7 @@ main{
 	
 .page.green{
 	.frame-colored												{background: rgba(lighten($green, 57.5%),1);}
-	main h2, main h3, main a,
+	main h1, main h2, main h3, main a,
 	.frame-colored h2,
 	.frame-colored h3,
 	.frame-colored h4, 
@@ -181,7 +182,7 @@ main{
 	
 .page.grey{
 	.frame-grey													{background: rgba(lighten($grey, 57.5%),1);}
-	main h2, main h3, main a,
+	main h1, main h2, main h3, main a,
 	.frame-colored h2,
 	.frame-colored h3,
 	.frame-colored h4,
@@ -200,7 +201,7 @@ main{
 	
 .page.red{
 	.frame-colored												{background: rgba(lighten($red, 57.5%),1);}
-	main h2, main h3, main a,
+	main h1, main h2, main h3, main a,
 	.frame-colored h2,
 	.frame-colored h3,
 	.frame-colored h4, 
@@ -219,7 +220,7 @@ main{
 	
 .page.turquoise{
 	.frame-colored												{background: rgba(lighten($turquoise, 65%),1);}
-	main h2, main h3, main a,
+	main h1, main h2, main h3, main a,
 	.frame-colored h2,
 	.frame-colored h3,
 	.frame-colored h4,
@@ -238,7 +239,7 @@ main{
 	
 .page.violett{
 	.frame-colored												{background: lighten($violett, 60%);}
-	main h2, main h3, main a,
+	main h1, main h2, main h3, main a,
 	.frame-colored h2,
 	.frame-colored h3,
 	.frame-colored h4, 
@@ -257,7 +258,7 @@ main{
 	
 .page.yellow{
 	.frame-colored												{background: darken($yellow, 50%);}
-	main h2, main h3, main a,
+	main h1, main h2, main h3, main a,
 	.frame-colored h2,
 	.frame-colored h3,
 	.frame-colored h4, 
