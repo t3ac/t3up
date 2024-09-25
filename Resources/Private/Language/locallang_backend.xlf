@@ -130,40 +130,40 @@
 		</trans-unit> 
 
 	/* -- Colors ----------- */
-			<trans-unit id="pagecolor">
+		 <trans-unit id="basecolor">
 			<source>Pagecolor</source>
 		 </trans-unit>	
-			<trans-unit id="pagecolor-no">
+			<trans-unit id="basecolor-no">
 			<source>No Color</source>
 		 </trans-unit>	
-			<trans-unit id="pagecolor-blue">
+			<trans-unit id="basecolor-blue">
 			<source>Blue</source>
 		 </trans-unit>	
-			<trans-unit id="pagecolor-red">
+			<trans-unit id="basecolor-red">
 			<source>Red</source>
 		 </trans-unit>	
-			<trans-unit id="pagecolor-green">
+			<trans-unit id="basecolor-green">
 			<source>Green</source>
 		 </trans-unit>
-			<trans-unit id="pagecolor-orange">
+			<trans-unit id="basecolor-orange">
 			<source>Orange</source>
 		 </trans-unit>	
-			<trans-unit id="pagecolor-violett">
+			<trans-unit id="basecolor-violett">
 			<source>Violett</source>
 		 </trans-unit>	
-			<trans-unit id="pagecolor-yellow">
+			<trans-unit id="basecolor-yellow">
 			<source>Yellow</source>
 		 </trans-unit>	
-			<trans-unit id="pagecolor-grey">
+			<trans-unit id="basecolor-grey">
 			<source>Grey</source>
 		 </trans-unit>	
-			<trans-unit id="pagecolor-turquoise">
+			<trans-unit id="basecolor-turquoise">
 			<source>Turquoise</source>
 		 </trans-unit>	
-			<trans-unit id="pagecolor-darkblue">
+			<trans-unit id="basecolor-darkblue">
 			<source>Dark blue</source>
 		 </trans-unit>	
-			<trans-unit id="pagecolor-darkgrey">
+			<trans-unit id="basecolor-darkgrey">
 			<source>Dark grey</source>
 		 </trans-unit>	
 		 
