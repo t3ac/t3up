@@ -101,7 +101,7 @@ lib.main {
 		navcolor                < lib.navcolor   
 		navwrap      			< lib.navigationwrap
 		notlogowrap             < lib.notlogowrap
-        pagecolor    			< lib.content.pagecolor
+        basecolor    			< lib.content.pagecolor
         pictureoverlayfunction  < lib.pictureoverlayfunction
         showtitle               < lib.header.showtitle
         title        			< lib.content.title	
@@ -127,7 +127,4 @@ lib.main {
         media.wrap                 = |
         
 	  }
-	  
 }
-
-
