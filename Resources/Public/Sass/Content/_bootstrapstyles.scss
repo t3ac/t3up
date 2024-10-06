@@ -1,57 +1,52 @@
 /* Bootstrap Korrektur */
-a.btn-secondary												{background-color: transparent;}
-a.btn-light													{background-color: #fff;}
-.btn														{font-size: $p;font-weight: 400 !important; border-radius: 0; border-color: $baseColor; color: $baseColor;}
-a.btn														{color: $baseColor;}
+a.btn-secondary						{background-color: transparent;}
+a.btn-light						{background-color: #fff;}
+.btn							{font-size: $p;font-weight: 400 !important; border-radius: 0; border-color: $baseColor; color: $baseColor;}
+a.btn							{color: $baseColor;}
 
 a.carousel-control-prev, 
-a.carousel-control-next 									{width: 5%; background: #00000077; transition: all 0.3s ease; color: #fff !important; font-size: 200% !important; opacity: .01;}
-
-
+a.carousel-control-next 				{width: 5%; background: #00000077; transition: all 0.3s ease; color: #fff !important; font-size: 200% !important; opacity: .01;}
 
 
 /* Slider **********************************************/
 
-.t3up_slider{											 	overflow: hidden; 
-	.carousel-control-prev,.carousel-control-next 			{max-width:  calc(#{$g} *  6); }
-	&.carousel												{margin-left: 0rem; margin-right: 0rem;}
-	&.carousel .carousel-inner > div						{height: 100%; transition: 1s ease-in-out;}
+.t3up_slider{						overflow: hidden; 
+	.carousel-control-prev,.carousel-control-next 	{max-width:  calc(#{$g} *  6); }
+	&.carousel					{margin-left: 0rem; margin-right: 0rem;}
+	&.carousel .carousel-inner > div		{height: 100%; transition: 1s ease-in-out;}
 	
-	p														{margin-bottom: 0;}
+	p						{margin-bottom: 0;}
 	.carousel-control-prev,
-	.carousel-control-next									{transition: all ease .3s; z-index: 5; }
+	.carousel-control-next				{transition: all ease .3s; z-index: 5; }
 	.carousel-control-prev:hover, 
-	.carousel-control-next:hover							{background-color: rgba(0,0,0,.25);}
+	.carousel-control-next:hover			{background-color: rgba($black,.25);}
 	
 	.carousel-control-prev .prev, 
-	.carousel-control-next .next							{transition: all ease .3s; opacity: 0; color: #fff; font-family: $symbol; font-size: $v7; font-weight: 400; display: block; padding: 1rem;}	
+	.carousel-control-next .next			{transition: all ease .3s; opacity: 0; color: #fff; font-family: $symbol; font-size: $v7; font-weight: 400; display: block; padding: 1rem;}	
 	
 	.carousel-control-prev:hover .prev, 
-	.carousel-control-next:hover .next						{opacity: 1;}
-	.carousel-indicators li									{cursor: pointer;}
+	.carousel-control-next:hover .next		{opacity: 1;}
+	.carousel-indicators li				{cursor: pointer;}
 	
-	.carousel-indicators									{top: 1rem; bottom: auto; z-index: 4;}
+	.carousel-indicators				{top: $v4; bottom: auto; z-index: 4;}
 	
-	.carousel-indicators.bottom_outside						{position: absolute; top: auto; bottom: $-v7; margin-right: auto; margin-left: auto; left: auto; right: auto; width: 100%; opacity: 1;}
-	.carousel-indicators.top_inside							{bottom: auto; top: 1rem; margin-right: auto; margin-left: auto; left: auto; right: auto; width: 100%; opacity: 1;}
-	.carousel-indicators.top_outside						{bottom: auto; top: $-v7; margin-right: auto; margin-left: auto; left: auto; right: auto; width: 100%; opacity: 1;}
-	.carousel-indicators.right_inside						{bottom: auto; top: 1rem; margin-right: 1rem; margin-left: auto; left: auto; opacity: 1;}	
-	.carousel-indicators.right_outside						{bottom: auto; top: $-v7; margin-right: 1rem; margin-left: auto; left: auto; opacity: 1;}	
+	.carousel-indicators.bottom_outside		{position: absolute; top: auto; bottom: $-v7; margin-right: auto; margin-left: auto; left: auto; right: auto; width: 100%; opacity: 1;}
+	.carousel-indicators.top_inside			{bottom: auto; top: $v4; margin-right: auto; margin-left: auto; left: auto; right: auto; width: 100%; opacity: 1;}
+	.carousel-indicators.top_outside		{bottom: auto; top: $-v7; margin-right: auto; margin-left: auto; left: auto; right: auto; width: 100%; opacity: 1;}
+	.carousel-indicators.right_inside		{bottom: auto; top: $v4; margin-right: $v4; margin-left: auto; left: auto; opacity: 1;}	
+	.carousel-indicators.right_outside		{bottom: auto; top: $-v7; margin-right: $v4; margin-left: auto; left: auto; opacity: 1;}	
 	
-	.carousel-caption										{z-index: 3; right: inherit; left: inherit; bottom: inherit; padding: 0; text-align: inherit; }
+	.carousel-caption				{z-index: 3; right: inherit; left: inherit; bottom: inherit; padding: 0; text-align: inherit; }
 
-	.carousel-inner picture									{min-width: 100%; display: block;}
-	.carousel-inner picture img								{min-width: 100%; min-height: 100%; object-fit: cover; object-position: center 0;}
 	
-	.overlayslider											{position: absolute; z-index: 2; opacity: .5;}
+	.overlayslider					{position: absolute; z-index: 2; opacity: .5;}
 
 	/* SliderStyles */
-	.carousel-caption.still									{bottom: 0; top: auto; left: 0; right: 0;} 
+	.carousel-caption.still				{bottom: 0; top: auto; left: 0; right: 0;} 
 	
-	.carousel-caption.stil2									{top: 50%; left: 0; right: 0; width: auto;} 
+	.carousel-caption.stil2				{top: 50%; left: 0; right: 0; width: auto;} 
 	
-	.carousel-caption.stil3{								bottom: 15%; top: auto; left: 0; right: 33.3%;
-		.h3													{font-weight: 500; font-size: $v5;}
+	.carousel-caption.stil3{			bottom: 15%; top: auto; left: 0; right: 33.3%;
+		.h3					{font-weight: 500; font-size: $v5;}
 	}	
-		
 }
