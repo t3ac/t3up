@@ -97,8 +97,8 @@
 		<trans-unit id="paddingBeforeClass">
 			<source>Padding Before</source>
 		</trans-unit>
-			<trans-unit id="paddingAfterClass">
-		<source>Padding After</source>
+		<trans-unit id="paddingAfterClass">
+			<source>Padding After</source>
 		</trans-unit>
 		<trans-unit id="space_class">
 			<source>Inner Padding</source>
