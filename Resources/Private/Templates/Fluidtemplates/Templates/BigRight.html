@@ -7,7 +7,7 @@
             <div class="overlay"></div> 
             <div class="container px-0 pb-5">  
                 <div class="row">
-				     <f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
+			<f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
 		              <f:if condition="{data.deltitle} != '1'">
 		                <f:if condition="{data.showtitle} == 0">
 		                    <f:then>
@@ -20,7 +20,7 @@
 		              </f:if>
 
                     <div class="col-12 contentarea">
-                        <div class="row gutter">
+                        <div class="row">
                         <!--TYPO3SEARCH_begin--> 
                             <div class="col-12 col-md-8 content">
                                 <f:format.raw>{content}</f:format.raw>
