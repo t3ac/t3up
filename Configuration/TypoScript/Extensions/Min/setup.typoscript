@@ -1,0 +1,21 @@
+plugin.tx_min.tinysource {
+        enable = 1
+        body {
+                stripComments = 0
+                preventStripOfSearchComment = 0
+                removeTypeInScriptTags = 0
+                
+        }
+        protectCode {
+                10 = /(<textarea.*?>.*?<\/textarea>)/is
+                20 = /(<pre.*?>.*?<\/pre>)/is
+                30 = /(<script.*?>.*?<\/script>)/is
+        }
+}
+
+plugin.tx_min.assetCollector {
+        compressCss = 0
+        compressInlineCss = 0
+        compressJs = 0
+        compressInlineJs = 0
+}
