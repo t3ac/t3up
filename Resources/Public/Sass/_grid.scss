@@ -1,4 +1,3 @@
-
 /* g Constante from constant.typoscript default: clamp(12px, 2.8vw, 24px)*/ 
 $v1:  calc(#{$g} * .25); /* .25rem ~ 4px */
 $v15: calc(#{$g} * (.75 / 2)); /* .375rem ~ 6px */
@@ -10,7 +9,6 @@ $v45: calc(#{$g} *  1.25); /* 1rem ~ 16px */
 $v5:  calc(#{$g} * 1.5); /* 1.5rem ~ 24px */
 $v6:  calc(#{$g} *  2); /* 2rem ~ 32px */
 $v7:  calc(#{$g} *  3); /* 3rem ~ 48px */
-
 
 $-v1:  calc(#{$v1} * -1); /* .25rem */
 $-v15: calc(#{$v15} * (.75 / 2) * -1); /* -.375rem */
