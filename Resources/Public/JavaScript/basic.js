@@ -50,6 +50,8 @@ jQuery(document).ready(function($) {
     
    $(".mm-wrapper__blocker").click(function(){ 
        $('.main-nav__burger').removeClass('act');
+       $('body').removeClass('mm-wrapper');
+       $('.overlay').hide();
  	});
  
     /* Nonav *********************************************************************************************************/  
