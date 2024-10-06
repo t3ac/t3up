@@ -7,8 +7,7 @@
 	<f:if condition="{conf.resultsNumeration}">
 		<span class="result-number">{resultrow.number}.</span>
 	</f:if>
-	<span class="result-title"><f:format.raw>{resultrow.title}</f:format.raw></span>
-	<span class="clearer">&nbsp;</span>
+	<span class="result-title h4"><f:format.raw>{resultrow.title}</f:format.raw></span>
 	<div class="add-info">
 		<f:if condition="{conf.showResultUrl}">
 			<i>{f:translate(key: 'LLL:EXT:ke_search/Resources/Private/Language/locallang_searchbox.xlf:label_resulturl')}:</i> <f:format.raw>{resultrow.url}</f:format.raw><br />
