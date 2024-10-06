@@ -2,10 +2,23 @@
 ###	PAGE###
 ##############
 
-styles.content.loginform.recursive 				= 4
+styles.content.loginform.recursive 		= 4
 styles.content.loginform.redirectFirstMethod	= 1
-styles.content.loginform.redirectDisable 		= 0
-styles.content.loginform.redirectMode			= login,logout,getpost,userLogin,referer,refererDomains,loginError
+styles.content.loginform.redirectDisable 	= 0
+styles.content.loginform.redirectMode		= login,logout,getpost,userLogin,referer,refererDomains,loginError
+
+youtubevideo.nocookiehost 			= 1
+youtubevideo.gdprnote 				= 1
+
+plugin.tx_dpnglossary.settings.addStylesheet	= 0
+
+plugin.tx_jpfaq_faq {
+	settings.jquery >
+	settings.js >
+	settings.css >
+	settings.fontAwesome >
+}
+
 
 
 page {
@@ -44,15 +57,15 @@ page {
 		# cat=t3up: color/base/01; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseColor
 		baseColor				= #151515
 		# cat=t3up: color/base/02; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseTextColor
-		baseTextColor			= #151515
+		textColor			= #151515
 		# cat=t3up: color/base/03; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseLinkColor
-		baseLinkColor			= #151515
+		linkColor			= #151515
 		# cat=t3up: color/base/04; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseLinkHoverColor
-		baseLinkHoverColor		= #000000
+		linkHoverColor		= #000000
 		# cat=t3up: color/base/05; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bodyBgColor
 		bodyBgColor				= transparent
 		# cat=t3up: color/base/06; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseContainerBgColor
-		baseContainerBgColor	= transparent
+		containerBgColor	= transparent
 		# cat=t3up: color/base/07; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:shadow			
 		shadow					=0 2px 10px 0px rgba(0,0,0,.2)
 
@@ -598,7 +611,7 @@ page {
 	 totop {
 	 	# customsubcategory=totop=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totop
 		# cat=t3up: totop/totop/01; type=options[empty,totop]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopfunction
-		totop						= totop 
+		totop					= totop 
 		# cat=t3up: totop/totop/02; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopBgColor 
 		totopBgColor				=inherit
 		# cat=t3up: totop/totop/03; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopLinkColor
@@ -615,7 +628,7 @@ page {
 	 typography {
 		# customsubcategory=bread=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bread	
 		# cat=t3up: typography/bread/01; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontsize
-		fontsize					= clamp(.9rem, 1rem, 1.2rem)
+		fontsize					= clamp(.9rem, 2.2vw, 1.2rem)
 		# cat=t3up: typography/bread/02; type=int+; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:boldweight
 		boldweight					= 600
 		# cat=t3up: typography/bread/03; type= string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:lineheight
@@ -675,7 +688,7 @@ page {
 		# cat=t3up: typography/extra/02; type= string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navigationfontweight
 		navFontWeight				= 400
 		# cat=t3up: typography/extra/03; type= string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbolfontsize
-		symbolfontsize				= 100%
+		symbolfontsize				= clamp(.9rem, 2.2vw, 1rem)
 	 }
 }
 
