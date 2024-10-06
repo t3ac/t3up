@@ -1,5 +1,0 @@
-plugin.tx_kesearch_pi1.view.templateRootPaths.10 = EXT:t3up/Resources/Private/Templates/KeSearch/Templates/
-plugin.tx_kesearch_pi2.view.templateRootPaths.10 = EXT:t3up/Resources/Private/Templates/KeSearch/Templates/
-plugin.tx_kesearch_pi3.view.templateRootPaths.10 = EXT:t3up/Resources/Private/Templates/KeSearch/Templates/
-
-
