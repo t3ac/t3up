@@ -129,11 +129,11 @@ call_user_func(static function () {
 	}
 
 	if (ExtensionManagementUtility::isLoaded('ke_search')) {
-		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/KeSearch/kesearch.typoscript'");
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/KeSearch/setup.typoscript'");
 	}
 	
 	if (ExtensionManagementUtility::isLoaded('jpfaq')) {
-		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Jpfaq/jpfaq.typoscript'");
+	    ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Jpfaq/setup.typoscript'");
 	}
 	
 	if (ExtensionManagementUtility::isLoaded('powermail')) {
@@ -149,13 +149,17 @@ call_user_func(static function () {
 		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Odsom/setup.typoscript'");
 	}
 	
+	if (ExtensionManagementUtility::isLoaded('dpn_glossary')) {
+	    ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Dpn_glossary/setup.typoscript'");
+	}
+	
 	if (ExtensionManagementUtility::isLoaded('fs_media_gallery')) {
 		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/FsMediaGallery/setup.typoscript'");
 		ExtensionManagementUtility::addTypoScriptConstants("@import 'EXT:t3up/Configuration/TypoScript/Extensions/FsMediaGallery/constants.typoscript'");
 	}
 	
 	if (ExtensionManagementUtility::isLoaded('min')) {
-		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Min/min.typoscript'");
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Min/setup.typoscript'");
 	}
 	
 	$icons = [
