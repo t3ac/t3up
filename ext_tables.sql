@@ -8,7 +8,7 @@ CREATE TABLE pages (
     hidenav int(11) DEFAULT '0' NOT NULL,
     nonav int(11) DEFAULT '0' NOT NULL,
     previousnext int(11) DEFAULT '0' NOT NULL,
-	pagecolor varchar(60) DEFAULT '' NOT NULL,
+	basecolor varchar(60) DEFAULT '' NOT NULL,
 );
 
 
