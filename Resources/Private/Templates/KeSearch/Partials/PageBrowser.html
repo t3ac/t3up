@@ -8,14 +8,14 @@
 
 <f:if condition="{numberofresults} > {conf.resultsPerPage}">
     <div class="pages_total">
-        <div class="result_txt">{f:translate(key: 'LLL:EXT:ke_search/Resources/Private/Language/locallang_searchbox.xlf:results')} {pagination.startRecordNumber}
+        <div class="result_txt mb-2">{f:translate(key: 'LLL:EXT:ke_search/Resources/Private/Language/locallang_searchbox.xlf:results')} {pagination.startRecordNumber}
             {f:translate(key: 'LLL:EXT:ke_search/Resources/Private/Language/locallang_searchbox.xlf:until')} {pagination.endRecordNumber}
             {f:translate(key: 'LLL:EXT:ke_search/Resources/Private/Language/locallang_searchbox.xlf:of')} {numberofresults}</div>
         <div class="kesearch_pagebrowser">
             <f:spaceless>
-                <ul>
+                <ul class="f3-widget-paginator">
                     <f:if condition="{pagination.previousPageNumber}">
-                        <li>
+                        <li class="previous">
                             <kesearch:link
                                 piVars="{page: pagination.previousPageNumber}"
                                 keepPiVars="1"
@@ -31,7 +31,7 @@
                         </li>
                     </f:for>
                     <f:if condition="{pagination.nextPageNumber}">
-                        <li>
+                        <li class="next">
                             <kesearch:link
                                 piVars="{page: pagination.nextPageNumber}"
                                 keepPiVars="1"
