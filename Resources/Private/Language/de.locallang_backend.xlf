@@ -123,10 +123,12 @@
                 <source>Padding Before</source>
                 <target state="translated">Innenabstand davor</target>  
             </trans-unit>   
+            
             <trans-unit id="paddingAfterClass">
                 <source>Padding After</source>
                 <target state="translated">Innenabstand danach</target>  
-            </trans-unit>       
+            </trans-unit>      
+             
             <trans-unit id="space_class">
                 <source>Inner Padding</source>
                 <target state="translated">Innenabstand</target>            
