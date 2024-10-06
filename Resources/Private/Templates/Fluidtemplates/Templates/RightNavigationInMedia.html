@@ -33,16 +33,16 @@
 							<!--TYPO3SEARCH_begin-->             
 								<f:format.raw>{right}</f:format.raw>
 							<!--TYPO3SEARCH_end-->                         
-					  </f:if>                                        
-						<f:if condition="{data.hidenav} != '1'">
-							<f:then>
-							<!-- beginn: subnavigation #nav -->
-								<div class="d-none d-lg-block col-lg-12"> 
-									<f:render partial="Submenu/Submenu" arguments="{_all}"/>
-								</div>
-							<!-- ende: subnavigation #nav -->   
-							</f:then>
-						</f:if>
+					</f:if>                                        
+					<f:if condition="{data.hidenav} != '1'">
+						<f:then>
+						<!-- beginn: subnavigation #nav -->
+							<div class="d-none d-lg-block col-lg-12"> 
+								<f:render partial="Submenu/Submenu" arguments="{_all}"/>
+							</div>
+						<!-- ende: subnavigation #nav -->   
+						</f:then>
+					</f:if>
 				   </div>
 				</div> 
 			 </div>   
