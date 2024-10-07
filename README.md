@@ -4,3 +4,4 @@ V11
 19.09.2024 Löschen der verschiedenen Schriftgrößen, Vereinheitlichung durch den Einsatz von clamp
 19.09.2024 Korrektur der Javascript Basic: Klicken auf Overlay setzt das Burgermenue Icon zurück.
 19.09.2024 Einsetzen der Standard-Schriftgröße in index.sass für Browser < 5% die "clamp" nicht ausgeben können.
+6.10 Entfernen der class "gutter" aus den Templates
