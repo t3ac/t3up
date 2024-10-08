@@ -8,7 +8,7 @@ main{
 	.content a:hover,
 	.contentRight a:hover						{color: $linkHoverColor;}
 	.content div > p:last-of-type					{margin-bottom: 0;}
-		
+			
 	/* frame info */
 	.frame-info							{border: 1px solid $info; padding: $v3; background-color:rgba(lighten($info, 55%),1); transition: all ease 0.3s; 
 		> h3,
@@ -37,9 +37,6 @@ main{
 		> h4							{color: $warning;}														
 	}	
 	
-	
-	/* frame header */	
-	.frame-header *							{margin: 0}	
 
 	/* frame column */
 	.frame-twocol .ce-text 						{column-fill: balance; column-gap: $v3; column-count:1;}
