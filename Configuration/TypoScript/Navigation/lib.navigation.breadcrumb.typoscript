@@ -68,6 +68,7 @@ lib.navigation.breadcrumbxl {
 
     10 = TEXT
     10.value = {$page.breadcrumb.breadcrumbtext}    
+    10.if.isTrue = {$page.breadcrumb.breadcrumbtext}      
     10.wrap = <span class="pe-2 {$page.breadcrumb.breadcrumbstart}">|</span>
     
     20 = COA
