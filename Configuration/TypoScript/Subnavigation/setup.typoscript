@@ -1,1 +1,5 @@
-
+page.includeJSFooterlibs 
+	subnavigation			= EXT:t3up/Resources/Public/JavaScript/subnavigation.js 
+	subnavigation.async		= 1
+}
+page.includeCSS.subnavigation		= EXT:t3up/Resources/Public/Sass/Content/_subnavigation.scss
