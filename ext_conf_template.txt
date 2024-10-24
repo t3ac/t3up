@@ -1,5 +1,4 @@
 
-
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:TCEForm
 TCEForm 					= 1
 
@@ -14,7 +13,6 @@ RTE 						= 1
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:UserTs
 UserTs 						= 1
-
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:LeftNavigation
 LeftNavigation  			= 0
@@ -31,9 +29,6 @@ RightNavigation  			= 0
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightNavigationInMedia
 RightNavigationInMedia		= 0
 
-
-
-
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:Standard
 Standard					= 1
 
@@ -42,7 +37,6 @@ OneColumn					= 1
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightMarginal
 RightMarginal				= 0
-
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:BigLeft
 BigLeft						= 0
@@ -55,6 +49,3 @@ SmallLeft					= 0
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:SmallRight
 SmallRight					= 0
-
-
-
