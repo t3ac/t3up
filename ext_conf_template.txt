@@ -15,19 +15,19 @@ RTE 						= 1
 UserTs 						= 1
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:LeftNavigation
-LeftNavigation  			= 0
+LeftNavigation  				= 0
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:LeftNavigationMarginal
-LeftNavigationMarginal  	= 0
+LeftNavigationMarginal  			= 0
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:LeftNavigationInMedia
-LeftNavigationInMedia		= 0
+LeftNavigationInMedia				= 0
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightNavigation
-RightNavigation  			= 0
+RightNavigation  				= 0
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightNavigationInMedia
-RightNavigationInMedia		= 0
+RightNavigationInMedia				= 0
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:Standard
 Standard					= 1
@@ -36,7 +36,7 @@ Standard					= 1
 OneColumn					= 1
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightMarginal
-RightMarginal				= 0
+RightMarginal					= 0
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:BigLeft
 BigLeft						= 0
