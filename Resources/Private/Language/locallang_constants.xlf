@@ -250,6 +250,9 @@
 		<trans-unit id="darkgrey">
 			<source>Pagecolor for navigation and mark up: darkgrey</source>
 		</trans-unit> 
+		<trans-unit id="lightgrey">
+			<source>Pagecolor for navigation and mark up: lightgrey</source>
+		</trans-unit> 
 		
 		/* table */
 		<trans-unit id="tableConstants">
