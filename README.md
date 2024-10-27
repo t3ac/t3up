@@ -5,3 +5,4 @@
 6.10.2024  - Entfernen der class "gutter" aus den Templates
 17.10.2024  - Um die Farben und Navigation in der Breadcrumb nutzen zu können muss in der localconfig unter FE
             'addRootLineFields' => 'basecolor,nonav' eingetragen wqerden
+27.10.2024 - Korrektur Sprachdatei 
