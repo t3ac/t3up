@@ -301,6 +301,11 @@
 			<source>Pagecolor for navigation and mark up: darkgrey</source>
 			<target state="translated">Farbwert für die Farbe: Dunkelgrau</target>
 		</trans-unit> 
+		<trans-unit id="lightgrey">
+			<source>Pagecolor for navigation and mark up: lightgrey</source>
+			<target state="translated">Farbwert für die Farbe: Hellgrau</target>
+		</trans-unit> 
+
 								
 		/* table */
 		<trans-unit id="tableConstants">
