@@ -11,4 +11,5 @@ lib.header.top {
 	8  < lib.header.loginpage
 	9  < lib.header.loginbutton
 	10  < lib.header.searchpage
+	20  < lib.header.searchfield
 }
