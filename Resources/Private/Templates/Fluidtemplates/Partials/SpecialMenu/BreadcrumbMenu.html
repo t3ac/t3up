@@ -2,7 +2,9 @@
     data-namespace-typo3-fluid="true">
      <f:if condition="{BreadcrumbMenu}">
         <nav class="d-none d-md-flex align-items-center breadcrumbrow">
-        <span class="breadcrumbnavinf {breadcrumbstart} pe-2"><f:translate key="LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:here" />:</span>
+	        <f:if condition="{breadcrumbtext}">
+	        	<span class="breadcrumbnavinf {breadcrumbstart} pe-2"><f:translate key="LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:here" />:</span>
+	        </f:if>
             <ol class="d-flex align-items-center py-3">
                 <f:cObject typoscriptObjectPath="lib.home" />
                 <f:for each="{BreadcrumbMenu}" as="item">
