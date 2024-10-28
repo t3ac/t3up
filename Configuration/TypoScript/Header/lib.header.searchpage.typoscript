@@ -1,23 +1,24 @@
-lib.header.preferencesbutton 		= COA
+lib.header.preferencesbutton 			= COA
 lib.header.preferencesbutton {
-    if.isTrue                       = {$page.top.searchpage}
-    
-	10 								= TEXT
-	10.data 						= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:search	
+	if.isTrue				= {$page.top.searchpage}
+	if.isTrue				= {$page.top.searchpos}
+	
+	10 					= TEXT
+	10.data 				= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:search	
 	10.typolink {
-		wrap 						= <span class=" funcItemTitle ps-2">|</span>
-  		ATagBeforeWrap				= 1
-        parameter                   = {$page.top.searchpage}
-        ATagParams                 	= class="p-4 p-md-3 px-lg-2 py-lg-1 search navitem d-inline-block" data-show-sub="false" title="search" aria-label="link search"
-    }
-     wrap 							= <li class="d-inline-block order-{$page.top.searchpos}">|</li> 
+		wrap 				= <span class=" funcItemTitle ps-2">|</span>
+  		ATagBeforeWrap			= 1
+		parameter			= {$page.top.searchpage}
+		ATagParams			= class="p-4 p-md-3 px-lg-2 py-lg-1 search navitem d-inline-block" data-show-sub="false" title="search" aria-label="link search"
+	}
+	 wrap 					= <li class="d-inline-block order-{$page.top.searchpos}">|</li> 
 }
 
 
 
 [{$page.top.searchpage} in tree.rootLineIds]
-    lib.header.searchpage >
-    lib.header.searchpage 			=
+	lib.header.searchpage >
+	lib.header.searchpage 			=
 	lib.header.searchpage.wrap 		= <li class="d-none"></li>
 [END]
 
