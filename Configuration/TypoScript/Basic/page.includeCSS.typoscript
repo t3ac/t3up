@@ -28,7 +28,7 @@ plugin.tx_wsscss.variables {
 	bodyBgColor						= {$page.color.bodyBgColor}
 	textColor						= {$page.color.textColor}
 	linkColor						= {$page.color.linkColor}
-	linkHoverColor					= {$page.color.linkHoverColor}
+	linkHoverColor						= {$page.color.linkHoverColor}
 	containerBgColor					= {$page.color.containerBgColor} 
 
 	# Header
@@ -67,11 +67,11 @@ plugin.tx_wsscss.variables {
 	footer1BgColor						= {$page.color.footer1BgColor}
 	footer1TextColor					= {$page.color.footer1TextColor}
 	footer1LinkColor					= {$page.color.footer1LinkColor}
-	footer1LinkHoverColor				= {$page.color.footer1LinkHoverColor}
+	footer1LinkHoverColor					= {$page.color.footer1LinkHoverColor}
 	footer3BgColor						= {$page.color.footer3BgColor}
 	footer3TextColor					= {$page.color.footer3TextColor}
 	footer3LinkColor					= {$page.color.footer3LinkColor}
-	footer3LinkHoverColor				= {$page.color.footer3LinkHoverColor}
+	footer3LinkHoverColor					= {$page.color.footer3LinkHoverColor}
 	
 	# Bootstrap variablen 
 	warning							= {$page.color.warning}
@@ -97,44 +97,44 @@ plugin.tx_wsscss.variables {
 	yellow							= {$page.color.yellow}
 	darkblue						= {$page.color.darkblue}	
 	darkgrey						= {$page.color.darkgrey}		
-    lightgrey                       = {$page.color.lightgrey}
+	lightgrey						= {$page.color.lightgrey}
 
 
 	# Fluidstylecontent values	
 	borderWidth						= {$page.design.borderWidth}
-	borderPadding					= {$page.design.borderPadding}
+	borderPadding						= {$page.design.borderPadding}
 	borderColor						= {$page.design.borderColor}
 	textMargin						= {$page.design.textMargin}
-	columnSpacing					= {$page.design.columnSpacing}
+	columnSpacing						= {$page.design.columnSpacing}
 	rowSpacing						= {$page.design.rowSpacing}
 	
 	# Table
 	tableHeader						= {$page.color.tableHeader}
-	tableHeaderColor				= {$page.color.tableHeaderColor}
-	tableHeaderLineColor			= {$page.color.tableHeaderLineColor}
-	tableLineColor					= {$page.color.tableLineColor}
+	tableHeaderColor					= {$page.color.tableHeaderColor}
+	tableHeaderLineColor					= {$page.color.tableHeaderLineColor}
+	tableLineColor						= {$page.color.tableLineColor}
 
 	# Totop
-	totopBgColor					= {$page.totop.totopBgColor}
-	totopLinkColor					= {$page.totop.totopLinkColor}
-	totopLinkHoverColor				= {$page.totop.totopLinkHoverColor}
-	totopPosBottom					= {$page.totop.totopPosBottom}
-	totopPosRight					= {$page.totop.totopPosRight}
+	totopBgColor						= {$page.totop.totopBgColor}
+	totopLinkColor						= {$page.totop.totopLinkColor}
+	totopLinkHoverColor					= {$page.totop.totopLinkHoverColor}
+	totopPosBottom						= {$page.totop.totopPosBottom}
+	totopPosRight						= {$page.totop.totopPosRight}
 	
 	# Typography
-	h1								= {$page.typography.h1}
+	h1							= {$page.typography.h1}
 	h1-dir							= {$page.typography.h1.direction}	
-	h2								= {$page.typography.h2}
-	h3								= {$page.typography.h3}
-	h4								= {$page.typography.h4} 
-	h1-fontweight					= {$page.typography.h1.fontweight}
-	h2-fontweight					= {$page.typography.h2.fontweight}
-	h3-fontweight					= {$page.typography.h3.fontweight} 
-	h4-fontweight					= {$page.typography.h4.fontweight}
-	h1-lineheight					= {$page.typography.h1.lineheight}
-	h2-lineheight					= {$page.typography.h2.lineheight}
-	h3-lineheight					= {$page.typography.h3.lineheight} 
-	h4-lineheight					= {$page.typography.h4.lineheight}
+	h2							= {$page.typography.h2}
+	h3							= {$page.typography.h3}
+	h4							= {$page.typography.h4} 
+	h1-fontweight						= {$page.typography.h1.fontweight}
+	h2-fontweight						= {$page.typography.h2.fontweight}
+	h3-fontweight						= {$page.typography.h3.fontweight} 
+	h4-fontweight						= {$page.typography.h4.fontweight}
+	h1-lineheight						= {$page.typography.h1.lineheight}
+	h2-lineheight						= {$page.typography.h2.lineheight}
+	h3-lineheight						= {$page.typography.h3.lineheight} 
+	h4-lineheight						= {$page.typography.h4.lineheight}
 	h1-margin						= {$page.typography.h1.margin}
 	h2-margin						= {$page.typography.h2.margin}
 	h3-margin						= {$page.typography.h3.margin} 
@@ -143,16 +143,16 @@ plugin.tx_wsscss.variables {
 	boldweight						= {$page.typography.boldweight}
 	lineheight						= {$page.typography.lineheight}
 	h3-footer						= {$page.typography.footer1.h3}
-	footer1fontsize					= {$page.typography.footer1.fontsize}
-	footer1fontweight				= {$page.typography.footer1.fontweight}
-	footer1lineheight				= {$page.typography.footer1.lineheight}
-	footer3fontsize					= {$page.typography.footer3.fontsize}
-	footer3fontweight				= {$page.typography.footer3.fontweight}
+	footer1fontsize						= {$page.typography.footer1.fontsize}
+	footer1fontweight					= {$page.typography.footer1.fontweight}
+	footer1lineheight					= {$page.typography.footer1.lineheight}
+	footer3fontsize						= {$page.typography.footer3.fontsize}
+	footer3fontweight					= {$page.typography.footer3.fontweight}
 	
-	navigationfontsize				= {$page.typography.navigationfontsize}
-	symbolfontsize					= {$page.typography.symbolfontsize}
-	navFontWeight					= {$page.typography.navFontWeight} 
-	breadcrumbtextsize				= {$page.breadcrumb.breadcrumbtextsize}
+	navigationfontsize					= {$page.typography.navigationfontsize}
+	symbolfontsize						= {$page.typography.symbolfontsize}
+	navFontWeight						= {$page.typography.navFontWeight} 
+	breadcrumbtextsize					= {$page.breadcrumb.breadcrumbtextsize}
 	linkweight						= {$page.typography.linkweight}
 	
 	# Files							
@@ -171,7 +171,7 @@ plugin.tx_wsscss.variables {
 	navigation						= {$page.scss.scssnavigation}	
 	
 	# Boostrap Scss
-	bootstrapstyles					= {$page.scss.scssbootstrapstyles}	
+	bootstrapstyles						= {$page.scss.scssbootstrapstyles}	
 	
 	# Extensions
 	lightbox						= {$page.scss.scsslightbox}
@@ -180,8 +180,8 @@ plugin.tx_wsscss.variables {
 	mobilmenu						= {$page.components.mobilmenu}
 	
 	# Sideanker						
-	sideankercolorBg				= {$page.color.sideankercolorBg} 
-	sideankerlicolor				= {$page.color.sideankerlicolor} 
+	sideankercolorBg					= {$page.color.sideankercolorBg} 
+	sideankerlicolor					= {$page.color.sideankerlicolor} 
 	
 		
 	/* g Constante from constant.typoscript default: clamp(12px, 2.8vw, 24px)*/ 
@@ -244,4 +244,9 @@ page.includeCSS{
 	wall.if.isTrue				= {$page.scss.scsswall}
 	wall.outputStyle			= compressed  
 	
+	
 }
+
+plugin.tx_kesearch_pi1.cssFile >
+plugin.tx_kesearch_pi2.cssFile >
+plugin.tx_kesearch_pi3.cssFile >
