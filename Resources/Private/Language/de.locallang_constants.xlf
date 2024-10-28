@@ -6,6 +6,10 @@
 
 
 		/* -- Breadcrumb ------------------------- */ 
+		 <trans-unit id="breadcrumbs">
+			<source>Breadcrumb options</source>
+			<target state="translated">Breadcrumb Einstellungen</target>
+		</trans-unit>
 		<trans-unit id="breadcrumbstyle">
 			<source>Breadcrumb style, 1 - standard, 2 - extended.</source>
 			<target state="translated">Breadcrumb Stil, 0 - ohne, keine Breadcrumbleiste, 1 - Standard, 2 - erweitert, dann wird ein +-Symbol sichtbar und die benachbarten Seiten können direkt aufgerufen werden.</target> 
@@ -36,6 +40,10 @@
 		</trans-unit>
 
 		/* -- Cms ------------------------- */
+		 <trans-unit id="components">
+			<source>Components</source>
+			<target state="translated">Basis-Komponenten</target>
+		</trans-unit>
 		<trans-unit id="container">
 			<source>Max-width of the containers (default 1440px)</source>
 			<target state="translated">Hauptcontainer, maximale Breite: der Css max-width-Wert des Boostrap-Hauptcontainers (Vorgabe: 1440px)</target>
@@ -57,7 +65,7 @@
 		/* base */ 
 		<trans-unit id="basecolors">
 			<source>Basecolors</source>
-			<target state="translated">Basis Farbeinstellungen</target> 
+			<target state="translated">Farben Basiseinstellungen</target> 
 		</trans-unit>
 		<trans-unit id="baseColor">
 			<source>Basecolor</source>
@@ -106,7 +114,7 @@
 		
 		
 		/* footer */
-		<trans-unit id="footer">
+		<trans-unit id="footerColors">
 			<source>Colors in the Footerarea</source>
 			<target state="translated">Farben im Footerbereich</target>
 		</trans-unit>
@@ -257,6 +265,10 @@
 
  
 		/* Page */
+		<trans-unit id="pagecolors">
+			<source>Colorvalue for the variables</source>
+			<target state="translated">Farben der Farbvariablen</target>
+		</trans-unit> 		
 		<trans-unit id="pagecolor">
 			<source>Pagecolors</source>
 			<target state="translated">Seitenfarben: diese sind als Seiteneigenschaften auf jeder Seite verfügbar. Es muss in der "LocalConfiguration.php" im Bereich "FE" 'addRootLineFields' => 'pagecolor,' eingetragen sein. Diese Farbauswahl bestimmt dann Rahmen, Überschrift- und Linkfarben</target>
@@ -305,7 +317,6 @@
 			<source>Pagecolor for navigation and mark up: lightgrey</source>
 			<target state="translated">Farbwert für die Farbe: Hellgrau</target>
 		</trans-unit> 
-		
 								
 		/* table */
 		<trans-unit id="tableConstants">
@@ -324,7 +335,7 @@
 		/* bootstrap */
 		<trans-unit id="bootstrap">
 			<source>Bootstrap Basiccolors</source>
-			<target state="translated">Boostrap Farbwerte</target> 
+			<target state="translated">Farben für Bootstrap</target> 
 		</trans-unit>
 		<trans-unit id="bootstrapcolor.danger">
 			<source>Bootstrapcolor danger color</source>
@@ -962,7 +973,7 @@
 		</trans-unit>
 		<trans-unit id="searchpage">
 			<source>ID of the page with the search form, shows a button in the top-area</source>
-			<target state="translated">Zeigt einen Suche-Button. ID der PID</target>
+			<target state="translated">PID der Suchseite</target>
 		</trans-unit>
 		<trans-unit id="searchbutton">
 			<source>Shows a button with it a dropdown element.</source>
@@ -974,12 +985,12 @@
 		</trans-unit> 
 		<trans-unit id="searchfield">
 			<source>ID of the searchfield.</source>
-			<target state="translated">Zeigt ein Suchfeld</target>
+			<target state="translated">ID des Suchfelds für den Headerbereich</target>
 		</trans-unit> 
 
 		<trans-unit id="tops">
-				<source>Toparea</source>
-				<target state="translated">Top-Bereich</target>
+			<source>Toparea</source>
+			<target state="translated">Top-Bereich</target>
 		</trans-unit>
 		<trans-unit id="topposition">
 			<source>Position of the top area in the header. Active means absolute on the top.</source>
@@ -1033,7 +1044,7 @@
 		</trans-unit>
 		<trans-unit id="bread">
 			<source>Size, lineheight and weight for p, li, td, th</source>
-			<target state="translated">Schriftgröße, Zeilensbstand und Schnitt der Tags p, li, td, th</target>
+			<target state="translated">Schriftgröße, Zeilensabstand und Schnitt der Tags p, li, td, th</target>
 		</trans-unit> 
 		
 		<trans-unit id="symbolfontsize">
@@ -1109,7 +1120,11 @@
 		</trans-unit>
 		<trans-unit id="lineheight">
 			<source>lineheight/line spacing p-tag and li-tag (default 135%)</source>
-			<target state="translated">Zeilenhöhe fürhtml-tags p und li - Tablets (Vorgabe 135%)</target>
+			<target state="translated">Zeilenhöhe für html-tags p und li - Tablets (Vorgabe 135%)</target>
+		</trans-unit> 
+		<trans-unit id="linkweight">
+			<source>Fontweight of links</source>
+			<target state="translated">Schriftschnitt für Links</target>
 		</trans-unit> 
 		
 		<trans-unit id="h1.margin">
