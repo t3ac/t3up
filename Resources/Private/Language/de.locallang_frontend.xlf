@@ -81,7 +81,7 @@
 				 <target state="translated">Bilder</target>
 			</trans-unit>	
 			<trans-unit id="here">
-				 <source>You are herep</source>
+				 <source>You are here</source>
 				 <target state="translated">Sie sind hier</target>
 			</trans-unit>
 		</body>
