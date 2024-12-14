@@ -3,84 +3,87 @@
 	<file source-language="de" datatype="plaintext" original="messages" date="2023-09-22T11:44:12Z" product-name="t3up">
  	<header/>
 		<body>
-		    <trans-unit id="here">
-			     <source>You are here</source>
-			     <target state="translated">Sie sind hier</target>
-		    </trans-unit>
-		    <trans-unit id="prev">
-			     <source>Previous</source>
-			     <target state="translated">zurück</target>
-		    </trans-unit>
-		    <trans-unit id="next">
-			     <source>Next</source>
-			     <target state="translated">weiter</target>    
-		    </trans-unit>		
-		    <trans-unit id="monthview">
-			     <source>Month</source>
-			     <target state="translated">Monat</target>   
-		    </trans-unit>	
-		    <trans-unit id="listview">
-			     <source>List view</source>
-			     <target state="translated">Listenansicht</target>  
-		    </trans-unit>
-		    
-		    <trans-unit id="colormode">
-			     <source>Colormode</source>
-			     <target state="translated">Farbmodi</target>
-		    </trans-unit>
-		    <trans-unit id="colormodedesc">
-			     <source>Shows the Colormode</source>
-			     <target state="translated">Zeigt die Farbmodi</target>
-		    </trans-unit>
-		    
-		    <trans-unit id="colormodetitle">
-			     <source>Light-/darkmodus</source>
-			     <target state="translated">Hell-/Dunkelmodus</target>
-		    </trans-unit>
-		    <trans-unit id="system">
-			     <source>Standard</source>
-			     <target state="translated">Systemstandard</target>			     
-		    </trans-unit>
-		    <trans-unit id="light">
-			     <source>Light</source>
-			     <target state="translated">Hell</target>					     
-		    </trans-unit>			    	  
-		    <trans-unit id="dark">
-			     <source>Dark</source>
-			     <target state="translated">Dunkel</target>			     
-		    </trans-unit>
-		    <trans-unit id="fontsize">
-			     <source>Fontsize</source>
-			     <target state="translated">Schriftgröße</target>			     
-		    </trans-unit>	
-		    <trans-unit id="search">
-			     <source>Search</source>
-			     <target state="translated">Suche</target>			     
-		    </trans-unit>			    
-		    	
-		    <trans-unit id="language_select">
-			     <source>Language selection</source>
-			     <target state="translated">Sprachauswahl</target>			      
-		    </trans-unit>	
-		    
-		    <trans-unit id="location">
-			     <source>Location</source>
-			     <target state="translated">Standort</target>				     
-		    </trans-unit>
-		    <trans-unit id="rss">
-			     <source>Subscribe to RSS feed</source>
-			     <target state="translated">RSS-Feed abbonieren</target>
-		    </trans-unit>
-		    <trans-unit id="searchpage">
-			     <source>Search page</source>
-			     <target state="translated">Such-Seite</target>
-		    </trans-unit>	
-		          
-		    <trans-unit id="assets">
-			     <source>Assets</source>
-			     <target state="translated">Bilder</target>
-		    </trans-unit>	
-		    
+			<trans-unit id="here">
+				 <source>You are here</source>
+				 <target state="translated">Sie sind hier</target>
+			</trans-unit>
+			<trans-unit id="prev">
+				 <source>Previous</source>
+				 <target state="translated">zurück</target>
+			</trans-unit>
+			<trans-unit id="next">
+				 <source>Next</source>
+				 <target state="translated">weiter</target>	
+			</trans-unit>		
+			<trans-unit id="monthview">
+				 <source>Month</source>
+				 <target state="translated">Monat</target>   
+			</trans-unit>	
+			<trans-unit id="listview">
+				 <source>List view</source>
+				 <target state="translated">Listenansicht</target>  
+			</trans-unit>
+			
+			<trans-unit id="colormode">
+				 <source>Colormode</source>
+				 <target state="translated">Farbmodi</target>
+			</trans-unit>
+			<trans-unit id="colormodedesc">
+				 <source>Shows the Colormode</source>
+				 <target state="translated">Zeigt die Farbmodi</target>
+			</trans-unit>
+			
+			<trans-unit id="colormodetitle">
+				 <source>Light-/darkmodus</source>
+				 <target state="translated">Hell-/Dunkelmodus</target>
+			</trans-unit>
+			<trans-unit id="system">
+				 <source>Standard</source>
+				 <target state="translated">Systemstandard</target>				 
+			</trans-unit>
+			<trans-unit id="light">
+				 <source>Light</source>
+				 <target state="translated">Hell</target>						 
+			</trans-unit>					  
+			<trans-unit id="dark">
+				 <source>Dark</source>
+				 <target state="translated">Dunkel</target>				 
+			</trans-unit>
+			<trans-unit id="fontsize">
+				 <source>Fontsize</source>
+				 <target state="translated">Schriftgröße</target>				 
+			</trans-unit>	
+			<trans-unit id="search">
+				 <source>Search</source>
+				 <target state="translated">Suche</target>				 
+			</trans-unit>				
+				
+			<trans-unit id="language_select">
+				 <source>Language selection</source>
+				 <target state="translated">Sprachauswahl</target>				  
+			</trans-unit>	
+			
+			<trans-unit id="location">
+				 <source>Location</source>
+				 <target state="translated">Standort</target>					 
+			</trans-unit>
+			<trans-unit id="rss">
+				 <source>Subscribe to RSS feed</source>
+				 <target state="translated">RSS-Feed abbonieren</target>
+			</trans-unit>
+			<trans-unit id="searchpage">
+				 <source>Search page</source>
+				 <target state="translated">Such-Seite</target>
+			</trans-unit>	
+				  
+			<trans-unit id="assets">
+				 <source>Assets</source>
+				 <target state="translated">Bilder</target>
+			</trans-unit>	
+			<trans-unit id="here">
+				 <source>You are herep</source>
+				 <target state="translated">Sie sind hier</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

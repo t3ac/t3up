@@ -7,6 +7,9 @@
 
 
 		/* -- Breadcrumb ------------------------- */ 
+		 <trans-unit id="breadcrumbs">
+			<source>Breadcrumb options</source>
+		</trans-unit>
 		 <trans-unit id="breadcrumbwrapconstants">
 			<source>Css-Breadcrumb</source>
 		</trans-unit>
@@ -30,6 +33,9 @@
 		</trans-unit>
 
 		/* -- Cms Components ------------------------- */
+		 <trans-unit id="components">
+			<source>Components</source>
+		</trans-unit>
 		<trans-unit id="container">
 			<source>Max-width of the containers (default 1440px)</source>
 		</trans-unit>
@@ -99,7 +105,7 @@
 
 		
 		/* footer */
-		<trans-unit id="footer">
+		<trans-unit id="footerColors">
 			<source>Colors in the Footerarea</source>
 		</trans-unit> 
 		<trans-unit id="footer1BGColor">
@@ -217,6 +223,9 @@
 		</trans-unit> 
 
 		 /* Page */
+		<trans-unit id="pagecolors">
+			<source>Colorvalue for the variables</source>
+		</trans-unit> 	
 		<trans-unit id="pagecolor">
 			<source>Pagecolors</source>
 		</trans-unit> 
@@ -251,7 +260,7 @@
 			<source>Pagecolor for navigation and mark up: darkgrey</source>
 		</trans-unit> 
 		<trans-unit id="lightgrey">
-			<source>Pagecolor for navigation and mark up: ligthgrey</source>
+			<source>Pagecolor for navigation and mark up: lightgrey</source>
 		</trans-unit> 
 		
 		/* table */
@@ -356,8 +365,10 @@
 		<trans-unit id="inview">
 			<source>Including the jquery.wheninview.js</source>
 		</trans-unit> 
-		
-	 
+		<trans-unit id="wall">
+			<source>Including the jquery.wall.js</source>
+		</trans-unit> 
+		 
                
 	        /* -- Fonts ------------------------- */  		
             <trans-unit id="font">
@@ -389,11 +400,13 @@
             </trans-unit>  
 			
             /* -- Footer ------------------------- */   
+            
             <trans-unit id="bg1">
                  <source>Informationarea and wraps in the Footer</source>
             </trans-unit> 
+            
             <trans-unit id="footer1">
-                 <source>Show the footer (default = 1)</source>
+                 <source>Show the footer (default = on)</source>
             </trans-unit>
             <trans-unit id="address">
                  <source>ID of the postaladdress</source>
@@ -471,33 +484,6 @@
 		<trans-unit id="logo">
 			<source>Location of the logo-file (recommended SVG), with leading "/". Logo german</source>
 		</trans-unit>
-		<trans-unit id="logo.1">
-			<source>Location of the english logo-file</source>
-		</trans-unit> 
-		<trans-unit id="logo.2">
-			<source>Location of the french logo-file</source>
-		</trans-unit> 
-		<trans-unit id="logo.3">
-			<source>Location of the italian logo-file</source>
-		</trans-unit> 
-		<trans-unit id="logo.4">
-			<source>Location of the polish logo-file</source>
-		</trans-unit> 
-		<trans-unit id="logo.5">
-			<source>Location of the turkey logo-file</source>
-		</trans-unit> 
-		<trans-unit id="logo.6">
-			<source>Location of the spanish logo-file</source>
-		</trans-unit>
-		<trans-unit id="logo.7">
-			<source>Location of the portuguese logo-file</source>
-		</trans-unit> 
-		<trans-unit id="logo.8">
-			<source>Location of the romanian logo-file</source>
-		</trans-unit> 
-		<trans-unit id="logo.9">
-			<source>Location of the chinese logo-file</source>
-		</trans-unit> 
 		<trans-unit id="alttext">
 			<source>Alttext of the logo in the header</source>
 		</trans-unit> 
@@ -507,29 +493,11 @@
 		<trans-unit id="logowrap">
 			<source>Div wrap of the logo</source>
 		</trans-unit> 
-		<trans-unit id="logopos">
-			<source>Logo position: 1 - Left inside, 2 - Right inside, 3 - Topleft, 4 - Top right</source>
-		</trans-unit>
 		<trans-unit id="notlogowrap">
 			<source>Wrap of the part after the logo. Default "d-flex col-10 flex-wrap vertical-align-stretch"</source>
 		</trans-unit>
 		<trans-unit id="logostickywidth">
 			<source>width of the logo in the headerarea (compressed)</source>
-		</trans-unit> 
-		<trans-unit id="logoII">
-			<source>Location of the second logo-file (recommended SVG), with leading "/".</source>
-		</trans-unit> 
-		<trans-unit id="alttextII">
-			<source>Alttext of the 2. logo in the header</source>
-		</trans-unit> 
-		<trans-unit id="linklogoII">
-			<source>Link of the 2. logo</source>
-		</trans-unit>
-		<trans-unit id="logoIIwidth">
-			<source>width of the 2. logo in the headerarea</source>
-		</trans-unit>
-		<trans-unit id="logoIIwrap"> 
-			<source>Div wrap of the 2. logo</source>
 		</trans-unit> 
 		<trans-unit id="mobillogo">
 			<source>Shows a small logo in the toparea for mobil devices.</source>
@@ -701,6 +669,7 @@
 		</trans-unit> 
 				 
 		/* -- socialmedia ------------------------- */
+
 		<trans-unit id="socialmediaposition">
 			<source>Position of the Socialmediabuttons</source>
 		</trans-unit> 
@@ -937,7 +906,9 @@
 		 <trans-unit id="lineheight">
 			<source>lineheight/line spacing p-tag and li-tag (default 1.5rem)</source>
 		</trans-unit> 
-				
+		<trans-unit id="linkweight">
+			<source>Fontweight of links</source>
+		</trans-unit> 		
 				
 		 <trans-unit id="footers">
 			<source>Fontsize, fontweights in the footerarea</source>
@@ -973,6 +944,8 @@
 		 <trans-unit id="navigationfontweight">
 			<source>Fontweight for the first level navigation (600)</source>
 		</trans-unit>
+		
+		
 		
 	 </body>
 </file>

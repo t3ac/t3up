@@ -6,6 +6,10 @@
 
 
 		/* -- Breadcrumb ------------------------- */ 
+		 <trans-unit id="breadcrumbs">
+			<source>Breadcrumb options</source>
+			<target state="translated">Breadcrumb Einstellungen</target>
+		</trans-unit>
 		<trans-unit id="breadcrumbstyle">
 			<source>Breadcrumb style, 1 - standard, 2 - extended.</source>
 			<target state="translated">Breadcrumb Stil, 0 - ohne, keine Breadcrumbleiste, 1 - Standard, 2 - erweitert, dann wird ein +-Symbol sichtbar und die benachbarten Seiten können direkt aufgerufen werden.</target> 
@@ -36,6 +40,10 @@
 		</trans-unit>
 
 		/* -- Cms ------------------------- */
+		 <trans-unit id="components">
+			<source>Components</source>
+			<target state="translated">Basis-Komponenten</target>
+		</trans-unit>
 		<trans-unit id="container">
 			<source>Max-width of the containers (default 1440px)</source>
 			<target state="translated">Hauptcontainer, maximale Breite: der Css max-width-Wert des Boostrap-Hauptcontainers (Vorgabe: 1440px)</target>
@@ -57,7 +65,7 @@
 		/* base */ 
 		<trans-unit id="basecolors">
 			<source>Basecolors</source>
-			<target state="translated">Basis Farbeinstellungen</target> 
+			<target state="translated">Farben Basiseinstellungen</target> 
 		</trans-unit>
 		<trans-unit id="baseColor">
 			<source>Basecolor</source>
@@ -106,7 +114,7 @@
 		
 		
 		/* footer */
-		<trans-unit id="footer">
+		<trans-unit id="footerColors">
 			<source>Colors in the Footerarea</source>
 			<target state="translated">Farben im Footerbereich</target>
 		</trans-unit>
@@ -257,6 +265,10 @@
 
  
 		/* Page */
+		<trans-unit id="pagecolors">
+			<source>Colorvalue for the variables</source>
+			<target state="translated">Farben der Farbvariablen</target>
+		</trans-unit> 		
 		<trans-unit id="pagecolor">
 			<source>Pagecolors</source>
 			<target state="translated">Seitenfarben: diese sind als Seiteneigenschaften auf jeder Seite verfügbar. Es muss in der "LocalConfiguration.php" im Bereich "FE" 'addRootLineFields' => 'pagecolor,' eingetragen sein. Diese Farbauswahl bestimmt dann Rahmen, Überschrift- und Linkfarben</target>
@@ -305,7 +317,6 @@
 			<source>Pagecolor for navigation and mark up: lightgrey</source>
 			<target state="translated">Farbwert für die Farbe: Hellgrau</target>
 		</trans-unit> 
-
 								
 		/* table */
 		<trans-unit id="tableConstants">
@@ -324,7 +335,7 @@
 		/* bootstrap */
 		<trans-unit id="bootstrap">
 			<source>Bootstrap Basiccolors</source>
-			<target state="translated">Boostrap Farbwerte</target> 
+			<target state="translated">Farben für Bootstrap</target> 
 		</trans-unit>
 		<trans-unit id="bootstrapcolor.danger">
 			<source>Bootstrapcolor danger color</source>
@@ -445,20 +456,24 @@
 			<target state="translated">Symbolschrift: FontAwesome, für FontAwesome Pro muss eine Lizens erworben werden.</target> 
 		</trans-unit>
 
-        <trans-unit id="symbolfontpath">
-            <source>Path of the symbol font-files (default typo3conf/ext/t3up/Resources/Public/Fonts/)</source>
+        	<trans-unit id="symbolfontpath">
+            		<source>Path of the symbol font-files (default typo3conf/ext/t3up/Resources/Public/Fonts/)</source>
 			<target state="translated">SymbolSchriftpfad. Schrift: Die Schriften befindet sich unterhalb des angegebenen Pfades. Um eine andere Schrift einzubinden, muss diesem Paket, oder dem angebenen Pfad integriert werden. Verzeichnis muss entsprechend der Schrift lauten. Bitte dazu die vorhandenen Sass-Dateien unter Resources/Public/Sass/Fonts/ für die Schriften anschauen.</target> 
-        </trans-unit>    
-        <trans-unit id="symbolfontdef">
-            <source>Path of the symbol font-definitions (default typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
+        	</trans-unit>    
+        	<trans-unit id="symbolfontdef">
+       			<source>Path of the symbol font-definitions (default typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
 			<target state="translated">Pfad, in dem sich die Symbolschrift-Scss-Datei befindet, in der die Schriftdefinitionen befinden, Ursprung ist: composer '../vendor/t3ac/t3up/Resources/Public/Sass/', alt 'typo3conf/ext/t3up/Resources/Public/Sass/', darunter befindet sich dann ein Ordner Fonts und darunter die Schriftdatei.scc, die immer so heißen muss, wie die Schrift selber, auch mit Leerzeichen.</target> 
-        </trans-unit>  
+        	</trans-unit>  
 		
 		/* -- Footer ------------------------- */
 		<trans-unit id="bg1">
 			<source>Informationarea and wraps in the Footer</source>
 			<target state="translated">Informationen und Wraps im Footerbereich</target>
 		</trans-unit> 
+            	<trans-unit id="footer1">
+                 	<source>Show the footer (default = on)</source>
+                 	<target state="translated">Anzeige von Footer 1 (an)</target>
+            	</trans-unit>
 		<trans-unit id="address">
 			<source>ID of the postaladdress</source>
 			<target state="translated">Adresse: Content-ID des Elements mit der Anschrift etc.</target>
@@ -557,42 +572,6 @@
 			<source>Location of the logo-file (recommended SVG), with leading "/".</source>
 			<target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/".</target> 
 		</trans-unit>
-		<trans-unit id="logo.1">
-			<source>Location of the english logo-file</source>
-			<target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Englisch - locale: en_US</target>
-		</trans-unit>
-		<trans-unit id="logo.2">
-			<source>Location of the french logo-file</source>
-			<target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Französisch - locale: fr_FR</target>
-		</trans-unit> 
-		<trans-unit id="logo.3">
-			<source>Location of the italian logo-file</source>
-			<target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Italienisch - locale: it_IT</target>
-		</trans-unit> 
-		<trans-unit id="logo.4">
-			<source>Location of the polish logo-file</source>
-			<target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Polnisch - locale: pl_PL</target>
-		</trans-unit>
-		<trans-unit id="logo.5">
-			<source>Location of the turkey logo-file</source>
-			<target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Türkisch - locale: tr_TR</target>
-		</trans-unit> 
-		<trans-unit id="logo.6">
-			<source>Location of the spanish logo-file</source>
-			<target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Spanisch - locale: es_ES</target>
-		</trans-unit> 
-		<trans-unit id="logo.7">
-			<source>Location of the portuguese logo-file</source>
-			<target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Portugiesisch - locale: pt_PT</target>
-		</trans-unit>
-		<trans-unit id="logo.8">
-			<source>Location of the romanian logo-file</source>
-			<target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Romanian - locale: ro_RO</target>
-		</trans-unit> 
-		<trans-unit id="logo.9">
-			<source>Location of the chinese logo-file</source>
-			<target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Chinesisch - locale: cn_CN</target>
-		</trans-unit> 
 		<trans-unit id="alttext">
 			<source>Alttext for the Logo in the header</source>
 			<target state="translated">Alttext des Logos</target>
@@ -605,10 +584,6 @@
 			<source>Div wrap for the Logo</source>
 			<target state="translated">Div wrap um das Logo</target>
 		</trans-unit>
-		<trans-unit id="logopos">
-			<source>Logo position: 1 - Left inside, 2 - Right inside, 3 - Topleft, 4 - Top right, 5 center</source>
-			<target state="translated">Logoposition: Das Logo kann innerhalb des Headers links 1 oder rechts 2 sitzen, dann ist die Symbolleiste oberhalb aktiv (topposition = active), oder die Symbolleiste ist im Header integriert, dann ebenfalls links 3, rechts 4, zentriert 5.</target> 
-			</trans-unit>
 		<trans-unit id="notlogowrap">
 			<source>Wrap of the part after the logo. Default "d-flex col-10 flex-wrap vertical-align-stretch"</source>
 			<target state="translated">Wrap Um den Headerbereich nach dem Logo. Vorgabe "d-flex col-10 flex-wrap vertical-align-stretch"</target> 
@@ -616,26 +591,6 @@
 		<trans-unit id="logostickywidth">
 			<source>width of the logo in the headerarea (compressed)</source>
 			<target state="translated">Sticky Logo Breite des Logos im Headerbereich wenn Header dynamisch verkleinert ist. (dynheader muss aktiv sein)</target>
-		</trans-unit>
-		<trans-unit id="logoII">
-			<source>Location of the second logo-file (recommended SVG), with leading "/".</source>
-			<target state="translated">2. Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/".</target> 
-		</trans-unit>
-		<trans-unit id="alttextII">
-			<source>Alttext of the 2. logo in the header</source>
-			 <target state="translated">Alttext des 2. Logos</target>
-		</trans-unit> 
-		<trans-unit id="linklogoII">
-			<source>Link of the 2. logo</source>
-			<target state="translated">Linkadresse des 2. Logos</target>
-		</trans-unit>
-			<trans-unit id="logoIImaxwidth">
-			<source>Max. width of the 2. logo in the headerarea</source>
-			<target state="translated">2. Logo Breite: Maximale Breite des Logos im Headerbereich</target>
-		</trans-unit> 
-		<trans-unit id="logoIIwrap">
-			<source>Div wrap of the 2. logo</source>
-			 <target state="translated">Div wrap um das 2.Logo</target>
 		</trans-unit>
 		<trans-unit id="mobillogo">
 			<source>Shows a small logo in the toparea for mobil devices.</source>
@@ -962,7 +917,7 @@
 		</trans-unit>
 		<trans-unit id="searchpage">
 			<source>ID of the page with the search form, shows a button in the top-area</source>
-			<target state="translated">Zeigt einen Suche-Button. ID der PID</target>
+			<target state="translated">PID der Suchseite</target>
 		</trans-unit>
 		<trans-unit id="searchbutton">
 			<source>Shows a button with it a dropdown element.</source>
@@ -974,12 +929,12 @@
 		</trans-unit> 
 		<trans-unit id="searchfield">
 			<source>ID of the searchfield.</source>
-			<target state="translated">Zeigt ein Suchfeld</target>
+			<target state="translated">ID des Suchfelds für den Headerbereich</target>
 		</trans-unit> 
 
 		<trans-unit id="tops">
-				<source>Toparea</source>
-				<target state="translated">Top-Bereich</target>
+			<source>Toparea</source>
+			<target state="translated">Top-Bereich</target>
 		</trans-unit>
 		<trans-unit id="topposition">
 			<source>Position of the top area in the header. Active means absolute on the top.</source>
@@ -1033,7 +988,7 @@
 		</trans-unit>
 		<trans-unit id="bread">
 			<source>Size, lineheight and weight for p, li, td, th</source>
-			<target state="translated">Schriftgröße, Zeilensbstand und Schnitt der Tags p, li, td, th</target>
+			<target state="translated">Schriftgröße, Zeilensabstand und Schnitt der Tags p, li, td, th</target>
 		</trans-unit> 
 		
 		<trans-unit id="symbolfontsize">
@@ -1109,7 +1064,11 @@
 		</trans-unit>
 		<trans-unit id="lineheight">
 			<source>lineheight/line spacing p-tag and li-tag (default 135%)</source>
-			<target state="translated">Zeilenhöhe fürhtml-tags p und li - Tablets (Vorgabe 135%)</target>
+			<target state="translated">Zeilenhöhe für html-tags p und li - Tablets (Vorgabe 135%)</target>
+		</trans-unit> 
+		<trans-unit id="linkweight">
+			<source>Fontweight of links</source>
+			<target state="translated">Schriftschnitt für Links</target>
 		</trans-unit> 
 		
 		<trans-unit id="h1.margin">
