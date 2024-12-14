@@ -1,17 +1,17 @@
 /* Bootstrap Korrektur */
 a.btn-secondary						{background-color: transparent;}
-a.btn-light						{background-color: #fff;}
+a.btn-light						{background-color: $white;}
 .btn							{font-size: $p;font-weight: 400 !important; border-radius: 0; border-color: $baseColor; color: $baseColor;}
 a.btn							{color: $baseColor;}
 
 a.carousel-control-prev, 
-a.carousel-control-next 				{width: 5%; background: #00000077; transition: all 0.3s ease; color: #fff !important; font-size: 200% !important; opacity: .01;}
+a.carousel-control-next 				{width: 10%; max-width: 120px; background: #00000077; transition: all 0.3s ease; opacity: .01;}
 
 
 /* Slider **********************************************/
 
 .t3up_slider{						overflow: hidden; 
-	.carousel-control-prev,.carousel-control-next 	{max-width:  calc(#{$g} *  6); }
+	.carousel-control-prev,.carousel-control-next 	{max-width: calc(#{$g} *  6); }
 	&.carousel					{margin-left: 0rem; margin-right: 0rem;}
 	&.carousel .carousel-inner > div		{height: 100%; transition: 1s ease-in-out;}
 	
@@ -22,7 +22,7 @@ a.carousel-control-next 				{width: 5%; background: #00000077; transition: all 0
 	.carousel-control-next:hover			{background-color: rgba($black,.25);}
 	
 	.carousel-control-prev .prev, 
-	.carousel-control-next .next			{transition: all ease .3s; opacity: 0; color: #fff; font-family: $symbol; font-size: $v7; font-weight: 400; display: block; padding: 1rem;}	
+	.carousel-control-next .next			{transition: all ease .3s; opacity: 0; color: $white; font-family: $symbol; font-size: $v7; font-weight: 400; display: block; padding: $v4;}	
 	
 	.carousel-control-prev:hover .prev, 
 	.carousel-control-next:hover .next		{opacity: 1;}
