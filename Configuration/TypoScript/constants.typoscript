@@ -430,7 +430,7 @@ page.top{
 	# cat= top/searchs/02; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:searchbutton
 	searchbutton			= 
 	# cat= top/searchs/03; typetype= int[1-10]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:searchpos
-	searchpos			= 9 
+	searchpos			= 
 	# cat= top/searchs/04; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:searchfield
 	searchfield			= 
 
