@@ -37,10 +37,15 @@ page.includeJSFooterlibs {
 		totop.async				= 1		
 		 
 		dynheader				= EXT:t3up/Resources/Public/JavaScript/jquery.dynheader.js
-		dynheader.if.value			= {$page.header.dynheader}
-		dynheader.if.equals			= header
+		dynheader.if.value			= {$page.header.dynheader}	
+		dynheader.if.equals			= shy-header 
 		dynheader.async				= 1
 		
+		dynheader				= EXT:t3up/Resources/Public/JavaScript/jquery.dynheader2.js
+		dynheader.if.value			= {$page.header.dynheader}	
+		dynheader.if.equals			= sticky-header 
+		dynheader.async				= 1	
+			
 		wall		  			 = EXT:t3up/Resources/Public/JavaScript/freewall.js
 		wall.if.isTrue		  		= {$page.files.wall}
 		wall.async				= 0
@@ -52,7 +57,7 @@ page.includeJSFooterlibs {
 		wallstart		  		= EXT:t3up/Resources/Public/JavaScript/startwall.js
 		wallstart.if.isTrue		  	= {$page.files.wall}	
 		wallstart.async				= 0
-		
+
 		# mobil ********************************************************************************
 
 		mobilmenu				= EXT:t3up/Resources/Public/JavaScript/jquery.meanmenu.js

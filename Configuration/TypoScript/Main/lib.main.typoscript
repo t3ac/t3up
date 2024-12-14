@@ -41,6 +41,9 @@ lib.breadcrumbstyle.value		= {$page.breadcrumb.breadcrumbstyle}
 lib.breadcrumbstart			 = TEXT
 lib.breadcrumbstart.value		= {$page.breadcrumb.breadcrumbstart}
 
+lib.dynheader			 	= TEXT
+lib.dynheader.value			= {$page.header.dynheader}
+
 lib.languagemenu			= TEXT
 lib.languagemenu.value			= {$page.top.languagemenu} 
 
@@ -88,10 +91,10 @@ lib.main {
 		breadcrumb		< lib.breadcrumb
 		breadcrumbstyle		< lib.breadcrumbstyle
 		breadcrumbpos		< lib.breadcrumbpos
-		breadcrumbstart		< lib.breadcrumbstart	
+		breadcrumbstart		< lib.breadcrumbstart
+		dynstyle		< lib.dynheader	
 		inside			< lib.header.inside		
 		languagestyle 		< lib.languagemenu	
-		logopos			< lib.header.logopos
 		login			< lib.login
 		mobil			< lib.header.mobilbutton
 		navdir			< lib.navigation.navdir

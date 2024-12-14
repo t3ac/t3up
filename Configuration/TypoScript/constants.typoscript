@@ -46,21 +46,13 @@ page {
 }
 
 # customcategory=colors=T3up: Colors
-
 # customsubcategory=base=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:basecolors
-
 # customsubcategory=header=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:header
-
 # customsubcategory=navigationcolor=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navigationcolor
-
 # customsubcategory=headercolor=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headercolor
-
 # customsubcategory=pagecolors=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pagecolors
-
 # customsubcategory=footerColors=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footerColors
-
 # customsubcategory=bootstrap= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrap
-
 
 page.color {
 	# cat= colors/base/01; type= color; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseColor
@@ -191,11 +183,9 @@ page.color {
 	minus				= '–'
 }
 
-# 	customcategory=config=T3up: Config
-
-#	customsubcategory=configa=Compress
-
-#	customsubcategory=admin=Config
+# customcategory=config=T3up: Config
+# customsubcategory=configa=Compress
+# customsubcategory=admin=Config
 
 page.config {
 	# cat= config/appearance/; type= string; label= Header Comment
@@ -217,7 +207,7 @@ page.config {
 	# cat= config/admin/07; type= string; label= Separator of the website-title
 	pageTitleSeparator		= | 
 
-	#	customsubcategory= compressfiles= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:compressfiles
+	# customsubcategory= compressfiles= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:compressfiles
 	# cat= config/configa/01; type= boolean; label= Compress JavaScript
 	compressJs			= 0
 	# cat= config/configa/02; type= boolean; label= Compress Css
@@ -228,7 +218,7 @@ page.config {
 	concatenateCss			= 0 
 }
 
-# 	customcategory=design=T3up: Fluid style content
+# customcategory=design=T3up: Fluid style content
 
 page.design {
 	# cat= design/fluid_style_content/; type= string; label= Imageborder
@@ -248,11 +238,8 @@ page.design {
  }	
 
 # customcategory=files=T3up: Files
-
 # customsubcategory=contentElement=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:contentElement
-
 # customsubcategory=fluidtemplates=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fluidtemplates
-
 # customsubcategory=javascript=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:javascript
 
 page.files{
@@ -273,13 +260,13 @@ page.files{
 	# cat= files/fluidtemplates/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fluidtemplates.templatepath
 	fluidtemplates.templateRootPaths	= EXT:t3up/Resources/Private/Templates/Fluidtemplates/Templates/		
 			 
-	# cat= files/javascript/01; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:basic 
+	# cat= files/javascript/01; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:basic 
 	basic				= active
-	# cat= files/javascript/04; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:jquery
+	# cat= files/javascript/04; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:jquery
 	jquery				= active
-	# cat= files/javascript/04; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:inview	
+	# cat= files/javascript/04; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:inview	
 	inview 				= 
-	# cat= files/javascript/05; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:wall		
+	# cat= files/javascript/05; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:wall		
 	wall 				= 
 }
 
@@ -303,14 +290,13 @@ page.fonts{
 	symbolfontpath			= ../vendor/t3ac/t3up/Resources/Public/Fonts/			
  }	
 
-
 # customcategory=footer=T3up: Footer
-
 # customsubcategory=bg1= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bg1	
-
 # customsubcategory=bg2= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bg2	
 
 page.footer{ 
+	# cat= footer/bg1/00; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1
+	basefooter			= 1
 	# cat= footer/bg1/01; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:address
 	address				= 
 	# cat= footer/bg1/02; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:addressWrap
@@ -330,13 +316,13 @@ page.footer{
 	# cat= footer/bg1/09; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1Wrap
 	footer1Wrap			= <div class= "footer1"><div class= "container"><div class= "row p-0  py-sm-3 px-xxl-0 py-lg-5">|</div></div></div> 
 
-	# cat= footer/bg2/00; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:base
+	# cat= footer/bg2/00; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:base
 	base				= 
 	# cat= footer/bg2/01; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:copyright
 	copyright			= 
-	# cat= footer/bg2/02; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:lastchange
+	# cat= footer/bg2/02; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:lastchange
 	lastchange			= 
-	# cat= footer/bg2/03; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pid
+	# cat= footer/bg2/03; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pid
 	pid				= 				
 	# cat= footer/bg2/04; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:link
 	link				= 
@@ -348,7 +334,7 @@ page.footer{
 	disabilityaccess		= 
 	# cat= footer/bg2/08; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:impress
 	impress				= 
-	# cat= footer/bg2/09; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:owner
+	# cat= footer/bg2/09; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:owner
 	owner				= 
 	# cat= footer/bg2/10; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:sitemap
 	sitemap				= 
@@ -357,22 +343,19 @@ page.footer{
 }
 
 #	customcategory=headerarea=T3up: Header	
-
 #	customsubcategory=logo=Logo	
 
 page.header{
 	# cat = headerarea/logo/001; type= string; label	= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logo 
-	logo				= typo3conf/ext/t3up/Resources/Public/Design/Logo.svg 
+	logo				= 
 			
 	# cat= headerarea/logo/101; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:alttext	
 	alttext				= Home	
 	# cat= headerarea/logo/102; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logowidth
 	logowidth			= 100%	 
 	# cat= headerarea/logo/103; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logowrap
-	logowrap			= <div class= "logo d-none d-md-inline-block col-3 my-auto p-3">|</div> 		
+	logowrap			= <div class= "logo d-none d-md-inline-block col-3 px-3">|</div> 		
 	
-	# cat= headerarea/logo/104; type= options[1,2,3,4,5]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logopos
-	logopos				= 1
 	# cat= headerarea/logo/105; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:notlogowrap
 	notlogowrap			= d-flex col-9 flex-wrap vertical-align-stretch 		
 	# cat= headerarea/logo/106; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:logostickywidth
@@ -387,20 +370,17 @@ page.header{
 			
 	# cat= headerarea/01; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:home
 	home				= 1		
-	# cat= headerarea/02; type= options[,header]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:dynheader
-	dynheader			= 	
+	# cat= headerarea/02; type= options[no-dyn,shy-header,sticky-header,fixed]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:dynheader
+	dynheader			= no-dyn
 
 	# cat= headerarea/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headcontainer	
-	headcontainer			= container	
+	headcontainer			= container d-flex
 
 }
 
 # customcategory=top=T3up: Top-Header	
-
 # customsubcategory=functions=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:functions
-
 # customsubcategory=searchs=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:searchs
-
 # customsubcategory=tops=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:tops
 
 page.top{	
@@ -410,12 +390,12 @@ page.top{
 	# cat= top/functions/02; type= int[1-10]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:homebuttonpos
 	homebuttonpos			= 1
 
-	# cat= top/functions/03; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontsize
+	# cat= top/functions/03; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontsize
 	fontsize			= 
 	# cat= top/functions/04; type= type= int[1-10]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontsizepos
 	fontsizepos			= 2
 
-	# cat= top/functions/05; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:darkmode
+	# cat= top/functions/05; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:darkmode
 	darkmode			= 
 	# cat= top/functions/06; type= type= int[1-10]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:darkmodepos
 	darkmodepos			= 3
@@ -440,23 +420,23 @@ page.top{
 
 	# cat= top/functions/14; type= int+;label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:loginpage
 	loginpage			= 
-	# cat= top/functions/15; type = options[,active]; label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:loginbutton
+	# cat= top/functions/15; type = boolean; label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:loginbutton
 	loginbutton			= 
 	# cat= top/functions/16; type= type= int[1-10]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:loginbuttonpos
 	loginbuttonpos			= 7
 
 	# cat= top/searchs/01; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:searchpage
 	searchpage			= 
-	# cat= top/searchs/02; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:searchbutton
+	# cat= top/searchs/02; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:searchbutton
 	searchbutton			= 
 	# cat= top/searchs/03; typetype= int[1-10]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:searchpos
 	searchpos			= 9 
 	# cat= top/searchs/04; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:searchfield
 	searchfield			= 
 
-	# cat= top/tops/01; type= options[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:topposition
+	# cat= top/tops/01; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:topposition
 	topposition			= active		
-	# cat= top/tops/02; type= options[0,1]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:showtitle
+	# cat= top/tops/02; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:showtitle
 	showtitle			= 
 	# cat= top/tops/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:topwrap
 	topwrap				= w-100 align-items-center justify-content-end 
@@ -506,33 +486,33 @@ page.meta {
 # customcategory=navigation=T3up: Navigation	
 
 page.navigation {
-	# cat= colors/bootstrap/navigation/101; type= options[0,1,2,3,5,6,7]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navstyle
+	# cat= navigation/101; type= options[0,1,2,3,5,6,7]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navstyle
 	style				= 1
-	# cat= colors/bootstrap/navigation/102; type= options[,navigation]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navigation
+	# cat= navigation/102; type= options[,navigation]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navigation
 	navigation			= navigation
-	# cat= colors/bootstrap/navigation/103; type= options[justify-content-start,justify-content-end,justify-content-center,justify-content-between]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navdir
+	# cat= navigation/103; type= options[justify-content-start,justify-content-end,justify-content-center,justify-content-between]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navdir
 	navdir				= justify-content-start	
-	# cat= colors/bootstrap/navigation/104; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navwrap	
+	# cat= navigation/104; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navwrap	
 	navwrap				= mt-auto
-	# cat= colors/bootstrap/navigation/106; type= int [1-10]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:maxlevels
+	# cat= navigation/106; type= int [1-10]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:maxlevels
 	maxlevels			= 4	
-	# cat= colors/bootstrap/navigation/107; type= int [1-100]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:maxitems	
+	# cat= navigation/107; type= int [1-100]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:maxitems	
 	maxitems			= 10
-	# cat= colors/bootstrap/navigation/109; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:entryLevel	
+	# cat= navigation/109; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:entryLevel	
 	entryLevel			= 0	
-	# cat= colors/bootstrap/navigation/109; type= options[0,1]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navcolor
+	# cat= navigation/109; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navcolor
 	color				= 0	 
-	# cat= colors/bootstrap/navigation/110; type= options[1,2,3,4]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:chars
+	# cat= navigation/110; type= options[1,2,3,4]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:chars
 	chars				= 1
-	# cat= colors/bootstrap/navigation/111; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:subnav.level
+	# cat= navigation/111; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:subnav.level
 	subnavlevel			= 1
-	# cat= colors/bootstrap/navigation/112; type= options[0,1]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:leveltitle
-	leveltitle			= 1
-	# cat= colors/bootstrap/navigation/113; type= options[0,1]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:sideAnker
-	sideAnker			= 0	
-	# cat= colors/bootstrap/navigation/114; type= options[leftround,leftsquare,rightround,rightsquare]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:sideAnkerstyle
+	# cat= navigation/112; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:leveltitle
+	leveltitle			= 
+	# cat= navigation/113; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:sideAnker
+	sideAnker			= 	
+	# cat= navigation/114; type= options[leftround,leftsquare,rightround,rightsquare]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:sideAnkerstyle
 	sideankerstylefunction		= leftround	
-	# cat= colors/bootstrap/navigation/115;  type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:burgerAnkerExtra
+	# cat= navigation/115;  type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:burgerAnkerExtra
 	burgerAnkerExtra		= 	
 }
 
@@ -565,11 +545,8 @@ page.socialmedia {
 	hidelabel			= d-none		
  }
 	
-
 # customcategory=scss=T3up: Sass	
-
 # customsubcategory=basicSass=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbasic 
-
 # customsubcategory=extensions=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssextensions
 
 page.scss {
@@ -610,31 +587,27 @@ page.scss {
 	scsswall			= wall	
  }
 
-# customsubcategory=totop=T3up: To top
+# customcategory=totop=T3up: To top
 
 page.totop {
 	# cat=totop/01; type=options[empty,totop]; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopfunction
-	totop					= totop 
+	totop				= totop 
 	# cat=totop/02; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopBgColor 
-	totopBgColor				= inherit
+	totopBgColor			= inherit
 	# cat=totop/03; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopLinkColor
-	totopLinkColor				= inherit
+	totopLinkColor			= inherit
 	# cat=totop/04; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopLinkHoverColor
-	totopLinkHoverColor			= inherit
+	totopLinkHoverColor		= inherit
 	# cat=totop/05; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopPosBottom
-	totopPosBottom				= $v4
+	totopPosBottom			= $v4
 	# cat=totop/06; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopPosRight
-	totopPosRight				= $v4
+	totopPosRight			= $v4
 } 
  
 # customcategory=typography=T3up: Typography	
-
 # customsubcategory=headers=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headers	
-
 # customsubcategory=footers=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footers	
-
 # customsubcategory=bread=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bread	
-
 
 page.typography {
 	# cat= typography/bread/01; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontsize
@@ -660,7 +633,7 @@ page.typography {
 	h1.padding			= 0
 
 	# cat= typography/headers/10; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2
-	h2					= 1.7
+	h2				= 1.7
 	# cat= typography/headers/13; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.fontweight
 	h2.fontweight			= 400
 	# cat= typography/headers/14; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.margin

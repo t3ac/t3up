@@ -1,14 +1,14 @@
 lib.header.preferencesbutton 		= COA
 lib.header.preferencesbutton {
-    if.isTrue                       = {$page.top.preferencesbutton}
+    if.isTrue                       	= {$page.top.preferencesbutton}
     
-	10 								= TEXT
-	10.data 						= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:preferences	
+	10 				= TEXT
+	10.data 			= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:preferences	
 	10.typolink {
-		wrap 						= <span class=" funcItemTitle px-2">|</span>
-  		ATagBeforeWrap				= 1
-        parameter                   = {$page.top.preferencesbutton}
-        ATagParams                  = class="p-4 p-md-3 px-lg-2 py-lg-1 preferences navitem d-block" data-show-sub="false" title="Preferences" aria-label="link preferences"
-    }
-    wrap 							= <li class="d-inline-block order-{$page.top.preferencesbuttonpos}">|</li> 
+		wrap 			= <span class=" funcItemTitle px-2">|</span>
+  		ATagBeforeWrap		= 1
+        	parameter		= {$page.top.preferencesbutton}
+       		ATagParams		= class="p-4 p-md-3 px-lg-2 py-lg-1 preferences navitem d-block" data-show-sub="false" title="Preferences" aria-label="link preferences"
+    	}
+    wrap 				= <li class="d-inline-block order-{$page.top.preferencesbuttonpos}">|</li> 
 }

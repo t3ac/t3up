@@ -13,6 +13,7 @@ lib.header.logo.10 {
 	imageLinkWrap.enable			= 1 
 	imageLinkWrap.typolink.parameter	= {$page.header.home}	
 }
+
 lib.header.logo.wrap				= {$page.header.logowrap}
 
 
