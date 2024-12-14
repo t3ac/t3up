@@ -1,10 +1,8 @@
 lib.header.searchbutton 			= COA
 lib.header.searchbutton {
-	if.isGreater				= {$page.top.searchpage}
+	if.isTrue				= {$page.top.searchpage}
 	if.isTrue				= {$page.top.searchpos}
-	
 	10 					= TEXT
-	
 	10.data 				= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:search	
 	10.typolink {
 		wrap 				= <span class=" funcItemTitle ps-2">|</span>
