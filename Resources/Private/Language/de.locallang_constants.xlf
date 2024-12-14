@@ -449,7 +449,7 @@
 		</trans-unit> 
 		<trans-unit id="fontdef">
 			<source>Path of the font-definitions (default: typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
-			<target state="translated">Pfad, in dem sich die scss-Datei befindet, in der die Schriftdefinitionen befinden, Ursprung ist: composer '../vendor/t3ac/t3up/Resources/Public/Sass/', alt 'typo3conf/ext/t3up/Resources/Public/Sass/', darunter befindet sich dann ein Ordner Fonts und darunter die Schriftdatei.scc, die immer so heißen muss, wie die Schrift selber, auch mit Leerzeichen.</target> 
+			<target state="translated">Pfad, in dem sich die scss-Datei befindet, in der die Schriftdefinitionen befinden, Ursprung ist: composer '../vendor/t3ac/t3up/Resources/Public/Sass/', alt 'typo3conf/ext/t3up/Resources/Public/Sass/', darunter befindet sich dann ein Ordner Fonts und darunter die Schriftdatei.scss, die immer so heißen muss, wie die Schrift selber, auch mit Leerzeichen.</target> 
 		</trans-unit> 
 		<trans-unit id="symbol">
 			<source>The Symbol fontface</source>
@@ -462,7 +462,7 @@
         	</trans-unit>    
         	<trans-unit id="symbolfontdef">
        			<source>Path of the symbol font-definitions (default typo3conf/ext/t3up/Resources/Public/Sass/), in your own definition maybe: Cms/Resources/Public/Sass/</source>
-			<target state="translated">Pfad, in dem sich die Symbolschrift-Scss-Datei befindet, in der die Schriftdefinitionen befinden, Ursprung ist: composer '../vendor/t3ac/t3up/Resources/Public/Sass/', alt 'typo3conf/ext/t3up/Resources/Public/Sass/', darunter befindet sich dann ein Ordner Fonts und darunter die Schriftdatei.scc, die immer so heißen muss, wie die Schrift selber, auch mit Leerzeichen.</target> 
+			<target state="translated">Pfad, in dem sich die Symbolschrift-Scss-Datei befindet, in der die Schriftdefinitionen befinden, Ursprung ist: composer '../vendor/t3ac/t3up/Resources/Public/Sass/', alt 'typo3conf/ext/t3up/Resources/Public/Sass/', darunter befindet sich dann ein Ordner Fonts und darunter die Schriftdatei.scss, die immer so heißen muss, wie die Schrift selber, auch mit Leerzeichen.</target> 
         	</trans-unit>  
 		
 		/* -- Footer ------------------------- */
