@@ -6,7 +6,7 @@ lib.header.darkmode{
 
 	10 						= TEXT
 	10.data 				= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:colormode 
-	10.wrap					= <li class="d-inline-block order-{$page.top.darkmodepos}"><a href="#" class="colormode navitem d-inline-block p-4 p-md-3 px-lg-2 py-lg-1" data-show-sub="false" title="|">
+	10.wrap					= <li class="d-inline-block order-{$page.top.darkmodepos}"><a href="#" class="colormode navitem d-inline-block px-3 py-2 px-md-2 py-md-1" data-show-sub="false" title="|">
 	15 						= TEXT
 	15.data 				= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:colormodedesc
 	15.wrap					= <span class="ps-2 funcItemTitle">|</span></a>		
