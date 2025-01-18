@@ -277,8 +277,12 @@ page.fonts{
 	font				= Arial
 	# cat= fonts/02; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontdef
 	fontdef				= ../vendor/t3ac/t3up/Resources/Public/Sass/
+	# cat= fonts/02; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontdef2
+	fontdef2			= ../vendor/t3ac/t3up/Resources/Public/Sass/
 	# cat= fonts/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontpath
-	fontpath			= ../vendor/t3ac/t3up/Resources/Public/Fonts/	
+	fontpath			= ../vendor/t3ac/t3up/Resources/Public/Fonts/
+	# cat= fonts/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontpath2
+	fontpath2			= ../vendor/t3ac/t3up/Resources/Public/Fonts/	
 	# cat= fonts/04; type= options[Courier,Times]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font2
 	font2				= Courier
 	# cat= fonts/05; type= options[empty,'FontAwesome']; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbol	 
@@ -376,6 +380,8 @@ page.header{
 	# cat= headerarea/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headcontainer	
 	headcontainer			= container d-flex
 
+	# cat= headerarea/04; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headarea	
+	area				= d-flex
 }
 
 # customcategory=top=T3up: Top-Header	
