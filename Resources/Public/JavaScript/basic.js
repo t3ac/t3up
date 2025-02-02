@@ -135,7 +135,7 @@ jQuery(document).ready(function($) {
 	footer = $('footer').height();
 	
 	if ( $(window).width() < 576 ) {
-	   	$('.trigger').click(function(){
+	   	$('.footer1 .trigger').click(function(){
 			$(this).next().slideToggle( "slow" );
 			$(this).toggleClass('active');
 			if ($(this).attr('aria-expanded') === 'true' ) {
