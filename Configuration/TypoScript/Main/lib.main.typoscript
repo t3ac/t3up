@@ -99,7 +99,7 @@ lib.main {
 		mobil			< lib.header.mobilbutton
 		navdir			< lib.navigation.navdir
 		navstyle		< lib.navigation.navstyle
-		headarea		< lib.header.area
+		headarea		< lib.header.area 
 		headcontainer		< lib.header.container 
 		navcolor		< lib.navcolor
 		navwrap			< lib.navigationwrap

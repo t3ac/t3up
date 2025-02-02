@@ -68,7 +68,7 @@ page.color {
 	# cat= colors/base/06; type= color; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:baseContainerBgColor
 	baseContainerBgColor		= transparent
 	# cat= colors/base/07; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:shadow
-	shadow				= 0 $v1 $v3 0 rgba(0,0,0,.2)
+	shadow				= 0 $v025 $v050 0 rgba(0,0,0,.2)
 
 	# cat= colors/header/01; type= color; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headerBgColor
 	headerBgColor			= inherit
@@ -277,20 +277,21 @@ page.fonts{
 	font				= Arial
 	# cat= fonts/02; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontdef
 	fontdef				= ../vendor/t3ac/t3up/Resources/Public/Sass/
-	# cat= fonts/02; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontdef2
-	fontdef2			= ../vendor/t3ac/t3up/Resources/Public/Sass/
 	# cat= fonts/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontpath
 	fontpath			= ../vendor/t3ac/t3up/Resources/Public/Fonts/
-	# cat= fonts/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontpath2
-	fontpath2			= ../vendor/t3ac/t3up/Resources/Public/Fonts/	
+	
 	# cat= fonts/04; type= options[Courier,Times]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:font2
-	font2				= Courier
-	# cat= fonts/05; type= options[empty,'FontAwesome']; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbol	 
-	symbol				= 'FontAwesome'
-	symbolfiles			= FontAwesome	
-	# cat= fonts/06; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbolfontdef
+	font2				= Courier	
+    # cat= fonts/05; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontdef2
+    fontdef2            = ../vendor/t3ac/t3up/Resources/Public/Sass/
+	# cat= fonts/06; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontpath2
+	fontpath2			= ../vendor/t3ac/t3up/Resources/Public/Fonts/	
+
+	# cat= fonts/07; type= options[empty,'FontAwesome']; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbol	 
+	symbolfont				= 'FontAwesome'
+	# cat= fonts/08; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbolfontdef
 	symbolfontdef			= ../vendor/t3ac/t3up/Resources/Public/Sass/
-	# cat= fonts/07; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbolfontpath
+	# cat= fonts/09; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbolfontpath
 	symbolfontpath			= ../vendor/t3ac/t3up/Resources/Public/Fonts/			
  }	
 
@@ -589,8 +590,8 @@ page.scss {
 	scsslightbox			= lightbox
 	# cat= scss/extensions/102; type= string]; label= Felogin
 	scssfelogin			= EXT:t3up/Resources/Public/Sass/Extensions/_felogin.scss	
-	# cat= scss/extensions/103; type= options[wall,empty]; label= Freewall
-	scsswall			= wall	
+	# cat= scss/extensions/103; type= boolean; label= Freewall
+	scsswall			= 1	
  }
 
 # customcategory=totop=T3up: To top
@@ -605,9 +606,9 @@ page.totop {
 	# cat=totop/04; type=color; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopLinkHoverColor
 	totopLinkHoverColor		= inherit
 	# cat=totop/05; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopPosBottom
-	totopPosBottom			= $v4
+	totopPosBottom			= $v1
 	# cat=totop/06; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:totopPosRight
-	totopPosRight			= $v4
+	totopPosRight			= $v1
 } 
  
 # customcategory=typography=T3up: Typography	
@@ -634,7 +635,7 @@ page.typography {
 	# cat= typography/headers/04; type= options[left,center,right]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.direction
 	h1.direction			= left
 	# cat= typography/headers/05; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.margin
-	h1.margin			= 0 0 $v4 !important
+	h1.margin			= 0 0 $v025 !important
 	# cat= typography/headers/06; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h1.padding
 	h1.padding			= 0
 
@@ -643,7 +644,7 @@ page.typography {
 	# cat= typography/headers/13; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.fontweight
 	h2.fontweight			= 400
 	# cat= typography/headers/14; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.margin
-	h2.margin			= 0 0 $v2
+	h2.margin			= 0 0 $v050
 	# cat= typography/headers/15; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h2.lineheight
 	h2.lineheight			= 
 
@@ -652,7 +653,7 @@ page.typography {
 	# cat= typography/headers/21; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.md
 	h3.fontweight			= 600
 	# cat= typography/headers/22; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.margin
-	h3.margin			= 0 0 $v2
+	h3.margin			= 0 0 $v050
 	# cat= typography/headers/23; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:h3.lineheight
 	h3.lineheight			= 
 				

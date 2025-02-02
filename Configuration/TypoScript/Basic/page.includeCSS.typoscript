@@ -1,252 +1,211 @@
 ## Die CSS-Variablen ############################################################################
 
+@import 'EXT:t3up/Configuration/TypoScript/Basic/page.scssvariables.typoscript'
+
 plugin.tx_wsscss.variables {
-	# Basic
-	
-	p							= {$page.typography.fontsize}
-	g							= {$page.components.gutter}
-	font							= {$page.fonts.font}	
-	fontdef							= {$page.fonts.fontdef}
-	fontpath						= ../../../{$page.fonts.fontpath}	
-	symbolfontdef						= {$page.fonts.symbolfontdef}
-	symbolfontpath						= ../../../{$page.fonts.symbolfontpath}	
+    # Basic
+
  
-	font2							= {$page.fonts.font2}
-	
-	symbol							= {$page.fonts.symbol}
-	symbolfiles						= {$page.fonts.symbolfiles}
-	
-	shadow							= {$page.color.shadow} 
-	pictureoverlay						= {$page.color.pictureoverlay} 
-	pictureoverlaytext					= {$page.color.pictureoverlaytext} 
-	pictureoverlaytextsize					= {$page.color.pictureoverlaytextsize}
+    font                            = {$page.fonts.font}    
+    fontdef                         = {$page.fonts.fontdef}
+    fontpath                        = ../../../{$page.fonts.fontpath}  
+    
+    font2                           = {$page.fonts.font2}
+    fontdef2                        = {$page.fonts.fontdef2}
+    fontpath2                       = ../../../{$page.fonts.fontpath2}        
+    
+    symbol                          = {$page.fonts.symbolfont}
+    symbolfont                      = {$page.fonts.symbolfont}
+    symbolfontdef                   = {$page.fonts.symbolfontdef}
+    symbolfontpath                  = ../../../{$page.fonts.symbolfontpath}    
+                    
+    shadow                          = {$page.color.shadow} 
+    pictureoverlay                  = {$page.color.pictureoverlay} 
+    pictureoverlaytext              = {$page.color.pictureoverlaytext} 
+    pictureoverlaytextsize          = {$page.color.pictureoverlaytextsize}
 
-	container						= {$page.components.container}px
-	mainpadding						= {$page.components.mainpadding}
-	
-	baseColor						= {$page.color.baseColor}	
-	bodyBgColor						= {$page.color.bodyBgColor}
-	textColor						= {$page.color.textColor}
-	linkColor						= {$page.color.linkColor}
-	linkHoverColor						= {$page.color.linkHoverColor}
-	containerBgColor					= {$page.color.containerBgColor} 
+    container                       = {$page.components.container}px
+    mainpadding                     = {$page.components.mainpadding}
+    
+    baseColor                       = {$page.color.baseColor}    
+    bodyBgColor                     = {$page.color.bodyBgColor}
+    textColor                       = {$page.color.textColor}
+    linkColor                       = {$page.color.linkColor}
+    linkHoverColor                  = {$page.color.linkHoverColor}
+    containerBgColor                = {$page.color.containerBgColor} 
 
-	# Header
-	headerBgColor						= {$page.color.headerBgColor}
-	headerColor						= {$page.color.headerColor}
-	headerLinkColor						= {$page.color.headerLinkColor}
-	headerLinkHoverColor					= {$page.color.headerLinkHoverColor}
-	topBgColor						= {$page.color.topBgColor}
-	topBgColorTrans						= {$page.color.topBgColorTrans}
-	topLinkColor						= {$page.color.topLinkColor}
-	topLinkHoverColor					= {$page.color.topLinkHoverColor}
-	logowidth						= {$page.header.logowidth}
-	logoIIwidth						= {$page.header.logoIIwidth} 
-	logostickywidth						= {$page.header.logostickywidth}	
-	mobillogowidth						= {$page.header.mobillogowidth}	
-	
-	# Navigation 
-	navLinkColor						= {$page.color.navLinkColor}	
-	navLinkHoverColor					= {$page.color.navLinkHoverColor}	
-	navLinkHoverBGColor					= {$page.color.navLinkHoverBGColor}	
-	subnavLinkColor						= {$page.color.subnavLinkColor}	
-	subnavLinkHoverColor					= {$page.color.subnavLinkHoverColor}	
-	subNavBG						= {$page.color.subNavBG}	
-	subnavigationLinkColor					= {$page.color.subnavigationLinkColor}	
-	subnavigationLinkHoverColor				= {$page.color.subnavigationLinkHoverColor}	
-	navBorderBottomColor					= {$page.color.navBorderBottomColor}		
-	overlay							= {$page.color.overlay} 
-	
-	# Content Header colors
-	h1-color						= {$page.color.h1-color}	
-	h2-color						= {$page.color.h2-color}	
-	h3-color						= {$page.color.h3-color}	
-	h4-color						= {$page.color.h4-color}				
-	
-	# Footer
-	footer1BgColor						= {$page.color.footer1BgColor}
-	footer1TextColor					= {$page.color.footer1TextColor}
-	footer1LinkColor					= {$page.color.footer1LinkColor}
-	footer1LinkHoverColor					= {$page.color.footer1LinkHoverColor}
-	footer3BgColor						= {$page.color.footer3BgColor}
-	footer3TextColor					= {$page.color.footer3TextColor}
-	footer3LinkColor					= {$page.color.footer3LinkColor}
-	footer3LinkHoverColor					= {$page.color.footer3LinkHoverColor}
-	
-	# Bootstrap variablen 
-	warning							= {$page.color.warning}
-	success							= {$page.color.success}
-	secondary						= {$page.color.secondary}
-	primary							= {$page.color.primary}
-	info							= {$page.color.info}
-	danger							= {$page.color.danger}
-	light							= {$page.color.light}
-	dark							= {$page.color.dark}
-	link							= {$page.color.link}
-	plus							= {$page.color.plus}
-	minus							= {$page.color.minus}
+    # Header
+    headerBgColor                   = {$page.color.headerBgColor}
+    headerColor                     = {$page.color.headerColor}
+    headerLinkColor                 = {$page.color.headerLinkColor}
+    headerLinkHoverColor            = {$page.color.headerLinkHoverColor}
+    topBgColor                      = {$page.color.topBgColor}
+    topBgColorTrans                 = {$page.color.topBgColorTrans}
+    topLinkColor                    = {$page.color.topLinkColor}
+    topLinkHoverColor               = {$page.color.topLinkHoverColor}
+    logowidth                       = {$page.header.logowidth}
+    logoIIwidth                     = {$page.header.logoIIwidth} 
+    logostickywidth                 = {$page.header.logostickywidth}    
+    mobillogowidth                  = {$page.header.mobillogowidth}    
+    
+    # Navigation 
+    navLinkColor                    = {$page.color.navLinkColor}    
+    navLinkHoverColor               = {$page.color.navLinkHoverColor}    
+    navLinkHoverBGColor             = {$page.color.navLinkHoverBGColor}    
+    subnavLinkColor                 = {$page.color.subnavLinkColor}    
+    subnavLinkHoverColor            = {$page.color.subnavLinkHoverColor}    
+    subNavBG                        = {$page.color.subNavBG}    
+    subnavigationLinkColor          = {$page.color.subnavigationLinkColor}    
+    subnavigationLinkHoverColor     = {$page.color.subnavigationLinkHoverColor}    
+    navBorderBottomColor            = {$page.color.navBorderBottomColor}        
+    overlay                         = {$page.color.overlay} 
+    
+    # Content Header colors
+    h1-color                        = {$page.color.h1-color}    
+    h2-color                        = {$page.color.h2-color}    
+    h3-color                        = {$page.color.h3-color}    
+    h4-color                        = {$page.color.h4-color}                
+    
+    # Footer
+    footer1BgColor                  = {$page.color.footer1BgColor}
+    footer1TextColor                = {$page.color.footer1TextColor}
+    footer1LinkColor                = {$page.color.footer1LinkColor}
+    footer1LinkHoverColor           = {$page.color.footer1LinkHoverColor}
+    footer3BgColor                  = {$page.color.footer3BgColor}
+    footer3TextColor                = {$page.color.footer3TextColor}
+    footer3LinkColor                = {$page.color.footer3LinkColor}
+    footer3LinkHoverColor           = {$page.color.footer3LinkHoverColor}
+    
+    # Bootstrap variablen 
+    warning                         = {$page.color.warning}
+    success                         = {$page.color.success}
+    secondary                       = {$page.color.secondary}
+    primary                         = {$page.color.primary}
+    info                            = {$page.color.info}
+    danger                          = {$page.color.danger}
+    light                           = {$page.color.light}
+    dark                            = {$page.color.dark}
+    link                            = {$page.color.link}
+    plus                            = {$page.color.plus}
+    minus                           = {$page.color.minus}
 
-	# Pagecolor
-	blue							= {$page.color.blue}
-	green							= {$page.color.green}
-	grey							= {$page.color.grey}
-	orange							= {$page.color.orange}	
-	red								= {$page.color.red}
-	turquoise						= {$page.color.turquoise}
-	violett							= {$page.color.violett}
-	yellow							= {$page.color.yellow}
-	darkblue						= {$page.color.darkblue}	
-	darkgrey						= {$page.color.darkgrey}		
-	lightgrey						= {$page.color.lightgrey}
+    # Pagecolor
+    blue                            = {$page.color.blue}
+    green                           = {$page.color.green}
+    grey                            = {$page.color.grey}
+    orange                          = {$page.color.orange}    
+    red                             = {$page.color.red}
+    turquoise                       = {$page.color.turquoise}
+    violett                         = {$page.color.violett}
+    yellow                          = {$page.color.yellow}
+    darkblue                        = {$page.color.darkblue}    
+    darkgrey                        = {$page.color.darkgrey}        
+    lightgrey                       = {$page.color.lightgrey}
 
+    # Fluidstylecontent values    
+    borderWidth                     = {$page.design.borderWidth}
+    borderPadding                   = {$page.design.borderPadding}
+    borderColor                     = {$page.design.borderColor}
+    textMargin                      = {$page.design.textMargin}
+    columnSpacing                   = {$page.design.columnSpacing}
+    rowSpacing                      = {$page.design.rowSpacing}
+    
+    # Table
+    tableHeader                     = {$page.color.tableHeader}
+    tableHeaderColor                = {$page.color.tableHeaderColor}
+    tableHeaderLineColor            = {$page.color.tableHeaderLineColor}
+    tableLineColor                  = {$page.color.tableLineColor}
 
-	# Fluidstylecontent values	
-	borderWidth						= {$page.design.borderWidth}
-	borderPadding						= {$page.design.borderPadding}
-	borderColor						= {$page.design.borderColor}
-	textMargin						= {$page.design.textMargin}
-	columnSpacing						= {$page.design.columnSpacing}
-	rowSpacing						= {$page.design.rowSpacing}
-	
-	# Table
-	tableHeader						= {$page.color.tableHeader}
-	tableHeaderColor					= {$page.color.tableHeaderColor}
-	tableHeaderLineColor					= {$page.color.tableHeaderLineColor}
-	tableLineColor						= {$page.color.tableLineColor}
+    # Totop
+    totopBgColor                    = {$page.totop.totopBgColor}
+    totopLinkColor                  = {$page.totop.totopLinkColor}
+    totopLinkHoverColor             = {$page.totop.totopLinkHoverColor}
+    totopPosBottom                  = {$page.totop.totopPosBottom}
+    totopPosRight                   = {$page.totop.totopPosRight}
+    
+    # Typography
+    h1                              = {$page.typography.h1}
+    h1-dir                          = {$page.typography.h1.direction}    
+    h2                              = {$page.typography.h2}
+    h3                              = {$page.typography.h3}
+    h4                              = {$page.typography.h4} 
+    h1-fontweight                   = {$page.typography.h1.fontweight}
+    h2-fontweight                   = {$page.typography.h2.fontweight}
+    h3-fontweight                   = {$page.typography.h3.fontweight} 
+    h4-fontweight                   = {$page.typography.h4.fontweight}
+    h1-lineheight                   = {$page.typography.h1.lineheight}
+    h2-lineheight                   = {$page.typography.h2.lineheight}
+    h3-lineheight                   = {$page.typography.h3.lineheight} 
+    h4-lineheight                   = {$page.typography.h4.lineheight}
+    h1-margin                       = {$page.typography.h1.margin}
+    h2-margin                       = {$page.typography.h2.margin}
+    h3-margin                       = {$page.typography.h3.margin} 
+    h4-margin                       = {$page.typography.h4.margin}
+    h1-padding                      = {$page.typography.h1.padding}
+    boldweight                      = {$page.typography.boldweight}
+    lineheight                      = {$page.typography.lineheight}
+    h3-footer                       = {$page.typography.footer1.h3}
+    footer1fontsize                 = {$page.typography.footer1.fontsize}
+    footer1fontweight               = {$page.typography.footer1.fontweight}
+    footer1lineheight               = {$page.typography.footer1.lineheight}
+    footer3fontsize                 = {$page.typography.footer3.fontsize}
+    footer3fontweight               = {$page.typography.footer3.fontweight}
+    
+    navigationfontsize              = {$page.typography.navigationfontsize}
+    symbolfontsize                  = {$page.typography.symbolfontsize}
+    navFontWeight                   = {$page.typography.navFontWeight} 
+    breadcrumbtextsize              = {$page.breadcrumb.breadcrumbtextsize}
+    linkweight                      = {$page.typography.linkweight}
+    
+    # Files                            
+    access                          = {$page.components.access}
+    totop                           = {$page.totop.totop}
+    fsc                             = {$page.scss.scssfsc}
+    links                           = {$page.scss.scsslinks}    
+    table                           = {$page.scss.scsstable}    
+    social                          = {$page.scss.scsssocialmedia} 
 
-	# Totop
-	totopBgColor						= {$page.totop.totopBgColor}
-	totopLinkColor						= {$page.totop.totopLinkColor}
-	totopLinkHoverColor					= {$page.totop.totopLinkHoverColor}
-	totopPosBottom						= {$page.totop.totopPosBottom}
-	totopPosRight						= {$page.totop.totopPosRight}
-	
-	# Typography
-	h1							= {$page.typography.h1}
-	h1-dir							= {$page.typography.h1.direction}	
-	h2							= {$page.typography.h2}
-	h3							= {$page.typography.h3}
-	h4							= {$page.typography.h4} 
-	h1-fontweight						= {$page.typography.h1.fontweight}
-	h2-fontweight						= {$page.typography.h2.fontweight}
-	h3-fontweight						= {$page.typography.h3.fontweight} 
-	h4-fontweight						= {$page.typography.h4.fontweight}
-	h1-lineheight						= {$page.typography.h1.lineheight}
-	h2-lineheight						= {$page.typography.h2.lineheight}
-	h3-lineheight						= {$page.typography.h3.lineheight} 
-	h4-lineheight						= {$page.typography.h4.lineheight}
-	h1-margin						= {$page.typography.h1.margin}
-	h2-margin						= {$page.typography.h2.margin}
-	h3-margin						= {$page.typography.h3.margin} 
-	h4-margin						= {$page.typography.h4.margin}
-	h1-padding						= {$page.typography.h1.padding}
-	boldweight						= {$page.typography.boldweight}
-	lineheight						= {$page.typography.lineheight}
-	h3-footer						= {$page.typography.footer1.h3}
-	footer1fontsize						= {$page.typography.footer1.fontsize}
-	footer1fontweight					= {$page.typography.footer1.fontweight}
-	footer1lineheight					= {$page.typography.footer1.lineheight}
-	footer3fontsize						= {$page.typography.footer3.fontsize}
-	footer3fontweight					= {$page.typography.footer3.fontweight}
-	
-	navigationfontsize					= {$page.typography.navigationfontsize}
-	symbolfontsize						= {$page.typography.symbolfontsize}
-	navFontWeight						= {$page.typography.navFontWeight} 
-	breadcrumbtextsize					= {$page.breadcrumb.breadcrumbtextsize}
-	linkweight						= {$page.typography.linkweight}
-	
-	# Files							
-	access							= {$page.components.access}
-	totop							= {$page.totop.totop}
-	fsc								= {$page.scss.scssfsc}
-	links							= {$page.scss.scsslinks}	
-	table							= {$page.scss.scsstable}	
-	social							= {$page.scss.scsssocialmedia} 
-
-	# Basic Scss
-	breadcrumb						= {$page.scss.scssbreadcrumb}	
-	header							= {$page.scss.scssheader}	
-	content							= {$page.scss.scsscontent}	
-	footer							= {$page.scss.scssfooter}	
-	navigation						= {$page.scss.scssnavigation}	
-	
-	# Boostrap Scss
-	bootstrapstyles						= {$page.scss.scssbootstrapstyles}	
-	
-	# Extensions
-	lightbox						= {$page.scss.scsslightbox}
-	
-	# Mobil
-	mobilmenu						= {$page.components.mobilmenu}
-	
-	# Sideanker						
-	sideankercolorBg					= {$page.color.sideankercolorBg} 
-	sideankerlicolor					= {$page.color.sideankerlicolor} 
-	
-		
-	/* g Constante from constant.typoscript default: clamp(12px, 2.8vw, 24px)*/ 
-	v1 =	calc({$page.components.gutter} * .25) 
-	v2 =	calc({$page.components.gutter} * .5)
-	v15=	calc({$page.components.gutter} * (.75 / 2))
-	v2 =	calc({$page.components.gutter} * .5)
-	v25 =	calc({$page.components.gutter} * .60)
-	v3 =	calc({$page.components.gutter} * .75)
-	v4 =	calc({$page.components.gutter} *	1)
-	v45=	calc({$page.components.gutter} *	1.25)	
-	v5 =	calc({$page.components.gutter} * 1.5)
-	v6 =	calc({$page.components.gutter} *	2)
-	v7 =	calc({$page.components.gutter} *	3)
-	
-	-v1 = calc(#{$v1} * -1); /* .25rem */
-	-v15= calc(#{$v15} * (.75 / 2) * -1); /* -.375rem */
-	-v2 = calc(#{$v2} * -1); /* .5rem */
-	-v3 = calc(#{$v3} * -1); /* .75rem */
-	-v4 = calc(#{$v4} * -1); /* 1rem */
-	-v45= calc(#{$v45} * -1); /* 1.25rem */
-	-v5 = calc(#{$v5} * -1); /* 1.5rem */
-	-v6 = calc(#{$v6} * -1); /* 2rem */
-	-v7 = calc(#{$v7} * -1); /* 3rem */
-	
-	c50 = calc(50% - #{$v15})
-	c33 = calc(33.33% - #{$v2})
-	c34 = calc(33.33% - #{$v3})
-	c25 = calc(25% - #{$v25})
-	c20 = calc(20% - #{$v1})
-	
-	white = #fff;
-	black = #000;
-	gray-100 = #f8f9fa
-	gray-200 = #e9ecef
-	gray-300 = #dee2e6
-	gray-400 = #ced4da
-	gray-500 = #adb5bd
-	gray-600 = #6c757d
-	gray-700 = #495057
-	gray-800 = #343a40
-	gray-900 = #212529
-	
+    # Basic Scss
+    breadcrumb                      = {$page.scss.scssbreadcrumb}    
+    header                          = {$page.scss.scssheader}    
+    content                         = {$page.scss.scsscontent}    
+    footer                          = {$page.scss.scssfooter}    
+    navigation                      = {$page.scss.scssnavigation}    
+    
+    # Boostrap Scss
+    bootstrapstyles                 = {$page.scss.scssbootstrapstyles}    
+    
+    # Extensions
+    lightbox                        = {$page.scss.scsslightbox}
+    
+    # Mobil
+    mobilmenu                       = {$page.components.mobilmenu}
+    
+    # Sideanker                        
+    sideankercolorBg                = {$page.color.sideankercolorBg} 
+    sideankerlicolor                = {$page.color.sideankerlicolor}     
 }
 
-page.includeCSS	= COA
+page.includeCSS    = COA
 page.includeCSS{
 
-	main					= EXT:t3up/Resources/Public/Sass/_index.scss
-	main.linenumber				= true	
-	main.forceOnTop				= 1
-	main.outputStyle			= compressed 
-	
-	scssfelogin				= {$page.scss.scssfelogin}
-	scssfelogin.if.isTrue			= {$page.scss.scssfelogin}		
-	scssfelogin.linenumber			= true	
-	scssfelogin.outputStyle			= compressed	
+    main                        = EXT:t3up/Resources/Public/Sass/_index.scss
+    main.linenumber             = true    
+    main.forceOnTop             = 1
+    main.outputStyle            = compressed 
+    
+    wall                        = EXT:t3up/Resources/Public/Sass/Extensions/_wall.scss
+    wall.if.isTrue              = {$page.scss.scsswall}
+    wall.outputStyle            = compressed  
 
-	wall					= EXT:t3up/Resources/Public/Sass/Extensions/_wall.scss
-	wall.if.isTrue				= {$page.scss.scsswall}
-	wall.outputStyle			= compressed  
-	
-	
 }
 
 plugin.tx_kesearch_pi1.cssFile >
 plugin.tx_kesearch_pi2.cssFile >
 plugin.tx_kesearch_pi3.cssFile >
+
+
+
+
+
+
