@@ -147,30 +147,37 @@
                <target state="translated">0,25 Abstand</target>
             </trans-unit> 
             <trans-unit id="space_class_2">
-               <source>0,5 unit</source>
-               <target state="translated">0,5 Abstand</target>
+               <source>0,33 unit</source>
+               <target state="translated">0,33 Abstand</target>
             </trans-unit>     
             <trans-unit id="space_class_3">
-                <source>0,75 unit</source>
-                <target state="translated">0,75 Abstand</target>               
+                <source>0,5 unit</source>
+                <target state="translated">0,5 Abstand</target>               
             </trans-unit>
             <trans-unit id="space_class_4">
-                <source>1 unit</source>
-                <target state="translated">ganzer Abstand</target>                   
+                <source>0,66 unit</source>
+                <target state="translated">0,66 Abstand</target>                   
             </trans-unit>  
             <trans-unit id="space_class_5">
-                <source>1,5 unit</source>
-                <target state="translated">1,5 Abstand</target>            
+                <source>0,75 unit</source>
+                <target state="translated">0,75 Abstand</target>            
             </trans-unit>             
             <trans-unit id="space_class_6">
-                <source>2 unit</source>
-                <target state="translated">Doppelter Abstand</target>      
+                <source>1 unit</source>
+                <target state="translated">ganzer Abstand</target>      
             </trans-unit>  
             <trans-unit id="space_class_7">
-                <source>3 unit</source>
-                <target state="translated">Dreifacher Abstand</target>     
+                <source>1.5 unit</source>
+                <target state="translated">1.5 Abstand</target>     
             </trans-unit>    
-              
+            <trans-unit id="space_class_8">
+                <source>2 units</source>
+                <target state="translated">zweifacher Abstand</target>     
+            </trans-unit> 
+            <trans-unit id="space_class_9">
+                <source>3 units</source>
+                <target state="translated">dreifacher Abstand</target>     
+            </trans-unit> 
             
 	         /* -- Colors ----------- */
 			<trans-unit id="basecolor">
