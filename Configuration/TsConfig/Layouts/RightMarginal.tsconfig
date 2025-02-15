@@ -18,7 +18,7 @@ mod {
 										name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos3
 										colspan = 5
 										colPos = 3
-										allowed.CType = carousel,slideshow,youtubevideo_pi1,t3upheaderimage_content,news_newsliststicky
+										allowed.CType = carousel,t3upslideshow_content,youtubevideo_pi1,t3upheaderimage_content,news_newsliststicky
 										maxitems = 1
 									}
 								}

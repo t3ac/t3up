@@ -3,8 +3,8 @@ lib.header.quicklinks{
 	if.isTrue 			= {$page.top.quicklinks} 
 	10 					= TEXT
 	10.value (
-	    <li class="d-inline-block order-{$page.top.quicklinksbuttonpos}">
-	        <a class="quicklinksmode navitem d-inline-block p-4 p-md-3 px-lg-2 py-lg-1" data-show-sub="false" title="quicklinks mode">
+	    <li class="d-inline-block quicklinks order-{$page.top.quicklinksbuttonpos}">
+	        <a class="quicklinksmode navitem d-inline-block {$page.top.liaclass}" data-show-sub="false" title="quicklinks mode">
 	            <span class="ps-2  funcItemTitle">Quicklinks</span>          
 	        </a>     
 	   )    

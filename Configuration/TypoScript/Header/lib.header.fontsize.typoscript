@@ -4,7 +4,7 @@ lib.header.fontsize{
 
 	10 								= TEXT
 	10.data 						= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:fontsize
-	10.wrap							= <li class="d-none d-lg-inline-block order-{$page.top.fontsizepos}"><a  href="#" class="fontmode navitem d-inline-block p-4 p-md-3 px-lg-2 py-lg-1" data-show-sub="false" title="|"><span class="symb d-inline-block">A+</span>	 
+	10.wrap							= <li class="d-none d-lg-inline-block order-{$page.top.fontsizepos}"><a  href="#" class="fontmode navitem d-inline-block {$page.top.liaclass}" data-show-sub="false" title="|"><span class="symb d-inline-block">A+</span>	 
 
 	15 								= TEXT
 	15.data 						= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:fontsize

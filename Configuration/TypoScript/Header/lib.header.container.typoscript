@@ -1,3 +1,7 @@
-lib.header.container                   		=  TEXT
-lib.header.container.value         			=  {$page.header.headcontainer}  
-lib.header.container.insertData               = 1
+lib.header.container                   	=  TEXT
+lib.header.container.value         		=  {$page.header.headcontainer}  
+lib.header.container.insertData        	= 1
+
+lib.header.area                   		=  TEXT
+lib.header.area.value         			=  {$page.header.area}  
+lib.header.area.insertData              = 1

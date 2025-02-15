@@ -14,7 +14,7 @@ options {
 	
 	pageTree.showPageIdWithTitle = 1
 	clearCache.pages = 0
-	clipboardNumberPads = 3	
+	clipboardNumberPads = 1
 	saveClipboard = 0	
 	contextMenu.table.pages.disableItems = mountAsTreeRoot
 }

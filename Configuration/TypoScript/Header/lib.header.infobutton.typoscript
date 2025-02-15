@@ -7,7 +7,7 @@ lib.header.infobutton {
 		wrap 						= <span class=" funcItemTitle ps-2">|</span>
 		ATagBeforeWrap				= 1
 		parameter					= {$page.top.infobutton}
-		ATagParams					= class="p-4 p-md-3 px-lg-2 py-lg-1 info navitem d-block" data-show-sub="false" title="Info" aria-label="link infos"
+		ATagParams					= class="{$page.top.liaclass} info navitem d-block" data-show-sub="false" title="Info" aria-label="link infos"
 	 }
 	 wrap = <li class="d-inline-block order-{$page.top.infobuttonpos}">|</li> 
 }

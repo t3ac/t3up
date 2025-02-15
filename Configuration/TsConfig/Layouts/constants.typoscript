@@ -447,8 +447,6 @@ page.top{
 	showtitle			= 
 	# cat= top/tops/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:topwrap
 	topwrap				= w-100 align-items-center justify-content-end 
-	# cat= top/tops/04; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:liaclass
-	liaclass				= px-3 py-2 px-md-3 py-md-1	 	
 }	 
 
 # customcategory=meta=T3up: Meta	

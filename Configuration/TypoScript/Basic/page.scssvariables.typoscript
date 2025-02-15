@@ -1,0 +1,89 @@
+plugin.tx_wsscss.variables {
+    
+    p = {$page.typography.fontsize}
+    g = {$page.components.gutter}
+    
+    /* g Constante from constant.typoscript default = clamp(12px, 2.8vw, 24px)*/ 
+    v010 =  calc({$page.components.gutter} * .10);                  /* .15rem ~ 2px */
+    v015 =  calc({$page.components.gutter} * .15);                  /* .2rem ~ 3px */ 
+    v020 =  calc({$page.components.gutter} * .20);                  /* .2rem ~ 3px */  
+    v025  = calc({$page.components.gutter} * .25);                  /* .25rem ~ 4px */  
+    v030 =  calc({$page.components.gutter} * .30);                  /* .30rem ~ 5px */
+    v033 =  calc({$page.components.gutter} * (1 / 3));              /* .33rem ~ 6px */
+    v040 =  calc({$page.components.gutter} * .4);                   /* .4rem ~ 7px */    
+    v050 =  calc({$page.components.gutter} * .5);                   /* .5rem ~ 8px */
+    v060 =  calc({$page.components.gutter} * .6);                   /* .9rem ~ 9px */
+    v066 =  calc({$page.components.gutter} *  (2 / 3));             /* .66rem ~ 10px */
+    v070 =  calc({$page.components.gutter} * .70);                  /* .70rem ~ 11px */
+    v075 =  calc({$page.components.gutter} * .75);                  /* .75rem ~ 12px */
+    v080 =  calc({$page.components.gutter} * .80);                  /* .80rem ~ 13px */ 
+    v090 =  calc({$page.components.gutter} * .90);                  /* .90rem ~ 15px */ 
+    v1 =    calc({$page.components.gutter} *  1);                   /* 1rem ~ 16px */
+    v125 =  calc({$page.components.gutter} *  1.25);                /* 1rem ~ 20px */ 
+    v135 =  calc({$page.components.gutter} * (4 / 3));              /* 1rem ~ 21px */ 
+    v15 =   calc({$page.components.gutter} *  1.5);                 /* 1.5rem ~ 24px */
+    v175 =  calc({$page.components.gutter} *  1.75);                /* 1.75rem ~ 28px */    
+    v2 =    calc({$page.components.gutter} *  2);                   /* 2rem ~ 32px */
+    v3 =    calc({$page.components.gutter} *  3);                   /* 3rem ~ 48px */
+    v4 =    calc({$page.components.gutter} *  4);                   /* 4rem ~ 64px */
+    v5 =    calc({$page.components.gutter} *  5);                   /* 5rem ~ 80px */
+    v6 =    calc({$page.components.gutter} *  6);                   /* 6rem ~ 96px */
+    v7 =    calc({$page.components.gutter} *  7);                   /* 7rem ~ 112px */
+    v8 =    calc({$page.components.gutter} *  8);                   /* 8rem ~ 118x */
+    v9 =    calc({$page.components.gutter} *  9);                   /* 9rem ~ 144px */
+    v10 =   calc({$page.components.gutter} *  10);                  /* 10rem ~ 160x */
+    v11 =   calc({$page.components.gutter} *  11);                  /* 12rem ~ 192x */
+    v12 =   calc({$page.components.gutter} *  12);                  /* 12rem ~ 192x */
+    v13 =   calc({$page.components.gutter} *  13);                  /* 13rem ~ 208x */
+    v14 =   calc({$page.components.gutter} *  14);                  /* 14rem ~ 224x */
+    
+    -v025 =  calc({$page.components.gutter} * .25 * -1);            /* .25rem ~ 4px */
+    -v033 =  calc({$page.components.gutter} * (.75 / 2) * -1);      /* .375rem ~ 6px */
+    -v050 =  calc({$page.components.gutter} * .5 * -1);             /* .5rem ~ 8px */
+    -v066 =  calc({$page.components.gutter} * .66 * -1);            /* .66rem ~ 10px */
+    -v075 =  calc({$page.components.gutter} * .75 * -1);            /* .75rem ~ 12px */
+    -v1 =    calc({$page.components.gutter} *  1 * -1);             /* 1rem ~ 16px */
+    -v15 =   calc({$page.components.gutter} *  1.5 * -1);           /* 1.5rem ~ 24px */
+    -v2 =    calc({$page.components.gutter} *  2 * -1);             /* 2rem ~ 32px */
+    -v3 =    calc({$page.components.gutter} *  3 * -1);             /* 3rem ~ 48px */
+    -v4 =    calc({$page.components.gutter} *  4 * -1);             /* 4rem ~ 64px */
+    -v5 =    calc({$page.components.gutter} *  5 * -1);             /* 5rem ~ 80px */
+    -v6 =    calc({$page.components.gutter} *  6 * -1);             /* 6rem ~ 96px */
+    -v7 =    calc({$page.components.gutter} *  7 * -1);             /* 7rem ~ 112px */
+    -v8 =    calc({$page.components.gutter} *  8 * -1);             /* 8rem ~ 118x */
+    -v9 =    calc({$page.components.gutter} *  9 * -1);             /* 9rem ~ 144px */
+    -v10 =   calc({$page.components.gutter} *  10 * -1);            /* 10rem ~ 160x */
+    -v11 =   calc({$page.components.gutter} *  11 * -1);            /* 12rem ~ 192x */
+    -v12 =   calc({$page.components.gutter} *  12 * -1);            /* 12rem ~ 192x */
+    -v13 =   calc({$page.components.gutter} *  13 * -1);            /* 13rem ~ 208x */
+    -v14 =   calc({$page.components.gutter} *  14 * -1);            /* 14rem ~ 224x */
+
+    c100 = 100%;
+    c90 = 90%;
+    c80 = 80%;
+    c75 = 75%;
+    c70 = 70%;
+    c66 = 66.666667%; 
+    c60 = 60%;
+    c50 = 50%;
+    c40 = 40%;
+    c33 = 33.33333%;
+    c30 = 30%;
+    c25 = 25%
+    c20 = 20%;
+    c15 = 15%;
+    c10 = 10%;
+        
+    white = #fff;
+    black = #000;
+    gray-100 = #f8f9fa
+    gray-200 = #e9ecef
+    gray-300 = #dee2e6
+    gray-400 = #ced4da
+    gray-500 = #adb5bd
+    gray-600 = #6c757d
+    gray-700 = #495057
+    gray-800 = #343a40
+    gray-900 = #212529
+
+}

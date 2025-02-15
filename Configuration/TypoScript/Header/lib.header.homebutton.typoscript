@@ -4,7 +4,7 @@ lib.header.homebutton {
 		value 							= <span class="ps-2 funcItemTitle">Home</span>
 		typolink {
 				parameter				= {$page.header.home}
-				ATagParams				= class="home navitem d-inline-block p-4 p-md-3 px-lg-2 py-lg-1" data-show-sub="false" title="Start" aria-label="link start"
+				ATagParams				= class="home navitem d-inline-block {$page.top.liaclass}" data-show-sub="false" title="Start" aria-label="link start"
 		}
 		wrap 							= <li class="d-inline-block order-{$page.top.homebuttonpos}">|</li> 
 }

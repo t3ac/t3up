@@ -10,5 +10,6 @@ lib.header.top {
 	6  < lib.header.quicklinks
 	8  < lib.header.loginpage
 	9  < lib.header.loginbutton
-	10  < lib.header.searchpage
+	10  < lib.header.searchbutton
+	20  < lib.header.searchfield
 }
