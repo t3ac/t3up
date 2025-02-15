@@ -1,0 +1,6 @@
+page {
+    scss {
+        # cat =t3up: scss/extensions/211; type =string;  label = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsspowermail
+        scsspowermail                 = EXT:t3up/Resources/Public/Sass/Extensions/_powermail.scss
+    }
+}

@@ -1,0 +1,9 @@
+lib.header.headerimage = IMAGE
+lib.header.headerimage {
+  file {
+    import.data = levelmedia:-1, slide
+    treatIdAsReference = 1
+    import.listNum = 0
+  }
+  wrap = <div class="headerimage">|</div>
+}

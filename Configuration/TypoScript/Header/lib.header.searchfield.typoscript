@@ -1,0 +1,15 @@
+lib.header.searchfield = COA
+lib.header.searchfield.if.isTrue = {$page.top.searchfield}
+
+lib.header.searchfield.10 = RECORDS
+lib.header.searchfield.10.tables= tt_content
+lib.header.searchfield.10.source = {$page.top.searchfield}
+
+
+lib.header.searchfield.wrap = <li class="d-none d-sm-block topSearchField order-20">|</li>
+
+[{$page.top.searchpage} in tree.rootLineIds]
+    lib.header.searchfield >
+    lib.header.searchfield =
+    lib.header.searchfield.wrap = <div class="d-none"></div>
+[END]

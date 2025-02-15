@@ -1,0 +1,12 @@
+plugin.tx_solr.view.templateRootPaths.20 = EXT:t3up/Resources/Private/Templates/Solr/Templates/
+plugin.tx_solr.view.partialRootPaths.20 = EXT:t3up/Resources/Private/Templates/Solr/Partials/
+plugin.tx_solr.view.layoutRootPaths.20 = EXT:t3up/Resources/Private/Templates/Solr/Layouts/
+
+
+page.includeCSS{
+   	scsssolr                       = EXT:t3up/Resources/Public/Sass/Extensions/_solr.scss
+    scsssolr.linenumber            = true   
+	scsssolr.outputStyle           = compressed   
+}
+
+plugin.tx_solr.search.results.resultsHighlighting = 1

@@ -1,0 +1,6 @@
+
+page.includeCSS.jpfaq 				= EXT:t3up/Resources/Public/Sass/Extensions/_jpfaq.scss
+
+plugin.tx_jpfaq_faq.view.templateRootPath.10	= EXT:t3up/Resources/Private/Templates/Jpfaq/Templates/
+plugin.tx_jpfaq_faq.view.partialRootPath.10	= EXT:t3up/Resources/Private/Templates/Jpfaq/Partials/
+plugin.tx_jpfaq_faq.view.layoutRootPath.10 	= EXT:t3up/Resources/Private/Templates/Jpfaq/Layouts/

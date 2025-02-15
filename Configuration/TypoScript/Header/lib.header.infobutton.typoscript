@@ -1,0 +1,13 @@
+lib.header.infobutton = COA
+lib.header.infobutton {
+	 if.isTrue						= {$page.top.infobutton}
+	10 								= TEXT
+	10.data 						= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:infos	
+	10.typolink {
+		wrap 						= <span class=" funcItemTitle ps-2">|</span>
+		ATagBeforeWrap				= 1
+		parameter					= {$page.top.infobutton}
+		ATagParams					= class="{$page.top.liaclass} info navitem d-block" data-show-sub="false" title="Info" aria-label="link infos"
+	 }
+	 wrap = <li class="d-inline-block order-{$page.top.infobuttonpos}">|</li> 
+}
