@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-02-03T22:04:04Z" product-name="eventnews">
+		<header/>
+		<body>
+			<trans-unit id="flexforms_general.eventRestriction">
+				<source>Event Restriction</source>
+				<target state="translated">Meldungen und Veranstaltungen</target>
+			</trans-unit>
+			<trans-unit id="flexforms_general.eventRestriction.1">
+				<source>Only events</source>
+				<target state="translated">Nur Veranstaltungen</target>
+			</trans-unit>
+			<trans-unit id="flexforms_general.eventRestriction.2">
+				<source>Only non events</source>
+				<target state="translated">Keine Veranstaltungen</target>
+			</trans-unit>
+
+			<trans-unit id="search-noresult">
+				<source>No news found.</source>
+				<target state="translated">Keine Veranstaltungen für diesen Zeitraum gefunden.</target>
+			</trans-unit>
+			<trans-unit id="result-month">
+				<source>Events in </source>
+				<target state="translated">Veranstaltungen im </target>
+			</trans-unit>
+
+			<trans-unit id="filter">
+				<source>Filter</source>
+				<target state="translated">filter</target>
+			</trans-unit>
+			<trans-unit id="filter_submit">
+				<source>Submit</source>
+				<target state="translated">Senden</target>
+			</trans-unit>
+			
+			<trans-unit id="organizer">
+				<source>Organizer</source>
+				<target state="translated">Veranstalter</target>
+			</trans-unit>
+			<trans-unit id="organizers">
+				<source>Organizers</source>
+				<target state="translated">Veranstalter</target>
+			</trans-unit>
+			<trans-unit id="no-organizer">
+				<source>No organizer registered.</source>
+				<target state="translated">Kein Veranstalter angegeben.</target>
+			</trans-unit>
+			<trans-unit id="location">
+				<source>Location</source>
+				<target state="translated">Ort</target>
+			</trans-unit>
+			<trans-unit id="locations">
+				<source>Locations</source>
+				<target state="translated">Ort</target>
+			</trans-unit>
+			<trans-unit id="category">
+				<source>Category</source>
+				<target state="translated">Kategorie</target>
+			</trans-unit>
+			<trans-unit id="categories">
+				<source>Categories</source>
+				<target state="translated">Kategorien</target>
+			</trans-unit>
+			<trans-unit id="calendar">
+				<source>Calendar</source>
+				<target state="translated">Kalender</target>
+			</trans-unit>
+			<trans-unit id="list">
+				<source>List</source>
+				<target state="translated">Liste</target>
+			</trans-unit>
+			<trans-unit id="event_start">
+				<source>Event start</source>
+				<target state="translated">Beginn</target>
+			</trans-unit>
+			<trans-unit id="event_end">
+				<source>Event end</source>
+			<target state="translated">Ende</target>
+			</trans-unit>
+			<trans-unit id="searchDateFrom">
+				<source>Startdatum</source>
+				<target state="translated">Startdatum</target>
+			</trans-unit>
+			<trans-unit id="searchDateTo">
+				<source>Enddatum</source>
+				<target state="translated">End datum</target>
+			</trans-unit>
+            <trans-unit id="event_fullday">
+                <source>Event day</source>
+                <target state="translated">Veranstaltungstag</target>
+            </trans-unit>       
+		</body>
+	</file>
+</xliff>

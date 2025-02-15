@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="it" datatype="plaintext" original="messages" date="2023-09-22T11:44:12Z" product-name="t3up">
+ 	<header/>
+		<body>
+		    <trans-unit id="here">
+			     <source>You are here</source>
+			     <target state="translated">Sei qui</target>
+		    </trans-unit>
+		    <trans-unit id="prev">
+			     <source>Previous</source>
+			     <target state="translated">Precedente</target>
+		    </trans-unit>
+		    <trans-unit id="next">
+			     <source>Next</source>
+			     <target state="translated">Prossimo</target>    
+		    </trans-unit>		
+		    <trans-unit id="monthview">
+			     <source>Month</source>
+			     <target state="translated">Mese</target>   
+		    </trans-unit>	
+		    <trans-unit id="listview">
+			     <source>List view</source>
+			     <target state="translated">Vista elenco</target>  
+		    </trans-unit>
+		    
+		    <trans-unit id="colormode">
+			     <source>Colormode</source>
+			     <target state="translated">Selezione del colore</target>
+		    </trans-unit>
+		    <trans-unit id="colormodetitle">
+			     <source>Light-/darkmode</source>
+			     <target state="translated">Selezione luce/scuro</target>
+		    </trans-unit>
+		    <trans-unit id="system">
+			     <source>Standard</source>
+			     <target state="translated">Standard</target>			     
+		    </trans-unit>
+		    <trans-unit id="light">
+			     <source>Light</source>
+			     <target state="translated">luce</target>					     
+		    </trans-unit>			    	  
+		    <trans-unit id="dark">
+			     <source>Dark</source>
+			     <target state="translated">scuro</target>			     
+		    </trans-unit>
+		    
+		    <trans-unit id="fontsize">
+			     <source>Fontsize</source>
+			     <target state="translated">Dimensione dei caratteri</target>			     
+		    </trans-unit>	
+		    
+		    <trans-unit id="language_select">
+			     <source>Language selection</source>
+			     <target state="translated">Selezione della lingua</target>			      
+		    </trans-unit>	
+		    
+		</body>
+	</file>
+</xliff>
