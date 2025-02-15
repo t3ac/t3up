@@ -1,0 +1,15 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+
+<div class="form-group my-3 row powermail_fieldwrap powermail_fieldwrap_type_date powermail_fieldwrap_{field.marker} {field.css} {settings.styles.framework.fieldAndLabelWrappingClasses}">
+	<f:render partial="Form/FieldLabel" arguments="{_all}" />
+
+	<div class="col-sm-8  {settings.styles.framework.fieldWrappingClasses}">
+		<f:form.textfield
+				type="{field.datepickerSettingsOptimized}"
+				id="powermail_field_{field.marker}"
+				property="{field.marker}"
+				value="{vh:Misc.PrefillField(field:field, mail:mail)}"
+				additionalAttributes="{vh:Validation.DatepickerDataAttribute(field:field, value:'{vh:Misc.PrefillField(field:field)}')}"
+				class="form-control powermail_date {settings.styles.framework.fieldClasses} {vh:Validation.ErrorClass(field:field, class:'powermail_field_error')}" />
+	</div>
+</div>
