@@ -15,7 +15,9 @@
 @mixin p066 {padding: $v066;}
 @mixin p075 {padding: $v075;}
 @mixin p1 {padding: $v1;}
+@mixin p125 {padding: $v125;}
 @mixin p15 {padding: $v15;}
+@mixin p175 {padding: $v175;}
 @mixin p2 {padding: $v2;}
 @mixin p3  {padding: $v3;}
 @mixin p4 {padding: $v4;}
@@ -44,8 +46,12 @@
 @mixin px-075 {padding-left: $-v075; padding-right:$-v075;}
 @mixin px1 {padding-left: $v1; padding-right:$v1;}
 @mixin px-1 {padding-left: $-v1; padding-right:$-v1;}
+@mixin px125 {padding-left: $v125; padding-right:$v125;}
+@mixin px-125 {padding-left: $-v125; padding-right:$-v125;}
 @mixin px15 {padding-left: $v15; padding-right:$v15;}
 @mixin px-15 {padding-left: $-v15; padding-right:$-v15;}
+@mixin px175 {padding-left: $v175; padding-right:$v175;}
+@mixin px-175 {padding-left: $-v175; padding-right:$-v175;}
 @mixin px2 {padding-left: $v2; padding-right:$v2;}
 @mixin px-2 {padding-left: $-v2; padding-right:$-v2;}
 @mixin px3  {padding-left: $v3; padding-right:$v3;}
@@ -86,8 +92,12 @@
 @mixin py-075 {padding-top: $-v075; padding-bottom:$-v075;}
 @mixin py1 {padding-top: $v1; padding-bottom:$v1;}
 @mixin py-1 {padding-top: $-v1; padding-bottom:$-v1;}
+@mixin py125 {padding-top: $v125; padding-bottom:$v125;}
+@mixin py-125 {padding-top: $-v125; padding-bottom:$-v125;}
 @mixin py15 {padding-top: $v15; padding-bottom:$v15;}
 @mixin py-15 {padding-top: $-v15; padding-bottom:$-v15;}
+@mixin py175 {padding-top: $v175; padding-bottom:$v175;}
+@mixin py-175 {padding-top: $-v175; padding-bottom:$-v175;}
 @mixin py2 {padding-top: $v2; padding-bottom:$v2;}
 @mixin py-2 {padding-top: $-v2; padding-bottom:$-v2;}
 @mixin py3  {padding-top: $v3; padding-bottom:$v3;}
@@ -336,8 +346,12 @@
 @mixin mx-075 {margin-left: $-v075; margin-right:$-v075;}
 @mixin mx1 {margin-left: $v1; margin-right:$v1;}
 @mixin mx-1 {margin-left: $-v1; margin-right:$-v1;}
+@mixin mx125 {margin-left: $v125; margin-right:$v125;}
+@mixin mx-125 {margin-left: $-v125; margin-right:$-v125;}
 @mixin mx15 {margin-left: $v15; margin-right:$v15;}
 @mixin mx-15 {margin-left: $-v15; margin-right:$-v15;}
+@mixin mx175 {margin-left: $v175; margin-right:$v175;}
+@mixin mx-175 {margin-left: $-v175; margin-right:$-v175;}
 @mixin mx2 {margin-left: $v2; margin-right:$v2;}
 @mixin mx-2 {margin-left: $-v2; margin-right:$-v2;}
 @mixin mx3  {margin-left: $v3; margin-right:$v3;}
@@ -380,8 +394,12 @@
 @mixin my-075 {margin-top: $-v075; margin-bottom:$-v075;}
 @mixin my1 {margin-top: $v1; margin-bottom:$v1;}
 @mixin my-1 {margin-top: $-v1; margin-bottom:$-v1;}
+@mixin my125 {margin-top: $v125; margin-bottom:$v125;}
+@mixin my-125 {margin-top: $-v125; margin-bottom:$-v125;}
 @mixin my15 {margin-top: $v15; margin-bottom:$v15;}
 @mixin my-15 {margin-top: $-v15; margin-bottom:$-v15;}
+@mixin my175 {margin-top: $v175; margin-bottom:$v175;}
+@mixin my-175 {margin-top: $-v175; margin-bottom:$-v175;}
 @mixin my2 {margin-top: $v2; margin-bottom:$v2;}
 @mixin my-2 {margin-top: $-v2; margin-bottom:$-v2;}
 @mixin my3  {margin-top: $v3; margin-bottom:$v3;}
@@ -425,8 +443,12 @@
 @mixin mt-075 {margin-top: $-v075;}
 @mixin mt1 {margin-top: $v1;}
 @mixin mt-1 {margin-top: $-v1;}
+@mixin mt125 {margin-top: $v125;}
+@mixin mt-25 {margin-top: $-v125;}
 @mixin mt15 {margin-top: $v15;}
 @mixin mt-15 {margin-top: $-v15;}
+@mixin mt175 {margin-top: $v175;}
+@mixin mt-175 {margin-top: $-v175;}
 @mixin mt2 {margin-top: $v2;}
 @mixin mt-2 {margin-top: $-v2;}
 @mixin mt3  {margin-top: $v3;}
@@ -469,8 +491,12 @@
 @mixin mb-075 {margin-bottom: $-v075;}
 @mixin mb1 {margin-bottom: $v1;}
 @mixin mb-1 {margin-bottom: $-v1;}
+@mixin mb125 {margin-bottom: $v125;}
+@mixin mb-125 {margin-bottom: $-v125;}
 @mixin mb15 {margin-bottom: $v15;}
 @mixin mb-15 {margin-bottom: $-v15;}
+@mixin mb175 {margin-bottom: $v175;}
+@mixin mb-175 {margin-bottom: $-v175;}
 @mixin mb2 {margin-bottom: $v2;}
 @mixin mb-2 {margin-bottom: $-v2;}
 @mixin mb3  {margin-bottom: $v3;}
@@ -513,8 +539,12 @@
 @mixin ms-075 {margin-left: $-v075;}
 @mixin ms1 {margin-left: $v1;}
 @mixin ms-1 {margin-left: $-v1;}
+@mixin ms125 {margin-left: $v125;}
+@mixin ms-125 {margin-left: $-v125;}
 @mixin ms15 {margin-left: $v15;}
 @mixin ms-15 {margin-left: $-v15;}
+@mixin ms175 {margin-left: $v175;}
+@mixin ms-175 {margin-left: $-v175;}
 @mixin ms2 {margin-left: $v2;}
 @mixin ms-2 {margin-left: $-v2;}
 @mixin ms3  {margin-left: $v3;}
@@ -557,8 +587,12 @@
 @mixin me-075 {margin-right: $-v075;}
 @mixin me1 {margin-right: $v1;}
 @mixin me-1 {margin-right: $-v1;}
+@mixin me125 {margin-right: $v125;}
+@mixin me-125 {margin-right: $-v125;}
 @mixin me15 {margin-right: $v15;}
 @mixin me-15 {margin-right: $-v15;}
+@mixin me175 {margin-right: $v175;}
+@mixin me-175 {margin-right: $-v175;}
 @mixin me2 {margin-right: $v2;}
 @mixin me-2 {margin-right: $-v2;}
 @mixin me3  {margin-right: $v3;}
