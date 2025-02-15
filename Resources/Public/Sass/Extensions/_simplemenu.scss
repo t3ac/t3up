@@ -1,0 +1,42 @@
+/* mobil - Navigation ************************************************************************************************** */
+
+@media screen and (max-width: 991px) {
+  .left                           {position: inherit;}
+
+
+  #menu                           {position: absolute; top: 0; z-index: 10; left: -300px; padding: 0; width: 300px; max-width: 100%; flex: 0 0 100%;}  
+  #menu .simpleclose              {background-color: #454545; color: #fff; } 
+  #menu .simpleclose a            {color: #fff; font-weight: normal;  } 
+  .mobil                          {left: 0px;}
+  .page.pagepush                  {margin: 0 0 0 300px; overflow: visible;}
+  .overlay                        {display: none; width: 100%; height: 100%; position: absolute; left: 0;  top: 0;  z-index: 9999;  opacity: .6;  background-color: #454545;}
+  
+  
+  #menu {
+    .nav                          {display: block;}
+    span                          {display: none;}
+    ul                            {margin: 0; list-style-type: none; padding: 0; background: #fff;}
+    ul li                         {float: none; display: block;}
+  
+    ul li a                       {position: relative; color: #333 !important; display: block; font-size: 115%; 
+                                   padding-top: 10px; padding-right: 25px; padding-bottom: 7.5px; padding-left: 10px; border-bottom: 1px dotted #B1B1B1 }
+    ul ul li a                    {padding-left: 20px; background: #F0F0F0;}
+    ul ul ul li a                 {padding-left: 30px; background: #E1E1E1;}
+    ul ul ul ul li a              {padding-left: 40px; background: #D3D3D3;}
+    ul ul ul ul li ul a           {padding-left: 40px; background: #C2C2C2;}
+
+    li:first-child, 
+    li:last-child                 {display: block;}                           
+    ul ul                         {position: relative; display: none;}
+  
+    .overview                     {display: none;}
+    .overview a                   {font-weight: bold;}
+    .overview a::before           {font-family: $symbol; content: "\f105"; float: left; padding: 0 5px 0 0; margin: 0;}
+  
+    .plus::after                  {font-family: $symbol; content: "\f107"; position: absolute; right: 7.5px; top: 10px; font-size: 125%;}
+    .plus.on::after               {font-family: $symbol; content: "\f106"; position: absolute; right: 7.5px; top: 10px; font-size: 125%;}
+    .cur > a::after               {font-family: $symbol; content: "\f105"; position: absolute; right: 7.5px; top: 10px; font-size: 125%;}
+  
+    ul li.no a                    {background: none !important;color: #333 !important;}
+  }
+}

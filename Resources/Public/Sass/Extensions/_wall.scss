@@ -1,0 +1,57 @@
+/* Wall ***************************************************************************************************************/
+.wall{										/*overflow: hidden;*/
+
+	> div									{overflow: hidden; float: left;   position: relative; width: 100%;}
+	
+  	> div a .Item							{background: none; transition: all .25s ease-in; position: absolute; top: 0; left: 0; height: 100%;  width: 100%;  overflow: hidden;}
+  	> div a .Item .wall-category			{font-weight: normal;}
+
+    > div a .Item .wall-teaser 				{transition: bottom  .25s ease-in; color: inherit;  position: absolute; bottom: -50%;  left: 0;  padding: 0 $v3 $v3; width: 100%; opacity: 0; font-weight: normal;}
+    > div a .Item .wall-teaser > *			{margin: 0;}    
+  
+    > div a:hover .Item    					{background: $baseColor; color: #fff;}
+    > div a:hover .Item .wall-teaser  		{bottom: 0%; opacity: 1;}
+    
+	> div a .wall-img-wrap  				{overflow: hidden; display: flex;	justify-content: center;	align-items: center;}
+	
+
+	> div a .wall-img-wrap img 				{width: 100%;  opacity: 1; transition: opacity .25s ease-in;width: auto; height: 100%; min-width: 100%; max-width: inherit;} 	
+
+	> div a .wall-headline					{}
+	
+	.f3-widget-paginator					{position: absolute; bottom: $-v7;}
+
+}
+
+
+@media screen and (min-width: 540px) 	{
+	.wall{
+	 	> div.smallwall						{width: 50%;} 
+    	> div.largewall						{width: 100%;}   	
+	}
+	
+}
+      
+      
+@media screen and (min-width: 768px) 	{
+	.wall{
+	 	> div.smallwall						{width: 33.33%;} 
+    	> div.largewall						{width: 66.66667%;}   	
+	}
+	
+}
+      
+@media screen and (min-width: 992px) 	{
+	.wall{
+	 	> div.smallwall						{width: 20%;} 
+    	> div.largewall						{width: 40%;}   
+	}
+}
+      
+@media screen and (min-width: 1200px) 	{
+	.wall{
+	 	> div.smallwall						{width: 16.66666666667%;} 
+    	> div.largewall						{width: 33.333333333%;}   
+	}
+}
+      
