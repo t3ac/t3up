@@ -1,0 +1,35 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:n="http://typo3.org/ns/Jp/Jpfaq/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+
+<f:section name="main">
+    <f:if condition="{showSearchForm}">
+        <f:render partial="SearchForm" arguments="{showNumberOfResults: showNumberOfResults}"/>
+    </f:if>
+
+    <h2 class="jpfaqCategory" itemprop="about">
+        <f:for each="{categories}" as="category">{category.category}<br/></f:for>
+    </h2>
+
+    <div class="jpfaqAll">
+        <div class="jpfaqShowAll">
+            <f:translate key="jpfaq_showAll"/>
+        </div>
+        <div class="jpfaqHideAll">
+            <f:translate key="jpfaq_hideAll"/>
+        </div>
+    </div>
+
+    <ul class="jpfaqList">
+        <f:for each="{questions}" as="question">
+            <n:excludeAlreadyDisplayedQuestions question="{question}"/>
+            <f:render partial="Question/Question" arguments="{_all}"/>
+        </f:for>
+    </ul>
+
+    <f:if condition="{showCategoriesCommentForm}">
+        <f:render partial="Categorycomment/LoadCommentFormLink" arguments="{currentUid: currentUid, restrictToCategories: restrictToCategories}"/>
+    </f:if>
+</f:section>
+</html>
