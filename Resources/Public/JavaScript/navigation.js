@@ -103,17 +103,13 @@ $(document).ready(function() {
         $body.on('focus mouseenter click', '.logo', function(event) {
             resMenue();
         }) 
-                 
-        $body.on('focus mouseenter click', '.top', function(event) {
-            resMenue();
-        })  
         
         $body.on('click ontouchend', '.overlay', function(event) {
             resMenue();
         })  
         
         $body.on('mouseleave', '.Nav', function(event) {
-            resMenue();	
+         //   resMenue();	
         })  
         
         $body.on('click ontouchend', '.closelink', function(event) {
