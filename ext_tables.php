@@ -1,6 +1,6 @@
 <?php
 
-defined('TYPO3_MODE') || defined('TYPO3') || die('Access denied.');
+defined('TYPO3') or die;
 
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['cs_presets'] = 'EXT:t3up/Configuration/Rte/CsPresets.yaml';
 
