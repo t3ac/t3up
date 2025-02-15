@@ -108,26 +108,32 @@
 			<source>none</source>
 		</trans-unit>
 		<trans-unit id="space_class_1">
-			<source>0,25 unit</source>
+			<source>0,25 unit - 4px</source>
 		</trans-unit> 
 		<trans-unit id="space_class_2">
-			<source>0,5 unit</source>
+			<source>0,33 unit ~ 5px</source>
 		</trans-unit>
 		<trans-unit id="space_class_3">
-			<source>0,75 unit</source>
+			<source>0,5 unit - 8px</source>
 		</trans-unit>
 		<trans-unit id="space_class_4">
-			<source>1 unit</source>
+			<source>0,66 unit ~ 11px</source>
 		</trans-unit>
 		<trans-unit id="space_class_5">
-			<source>1,5 unit</source>
+			<source>0,75 unit - 12px</source>
 		</trans-unit> 
 		<trans-unit id="space_class_6">
-			<source>2 unit</source>
+			<source>1 unit - 16px</source>
 		</trans-unit>
-		<trans-unit id="space_class_7">
-			<source>3 unit</source>
-		</trans-unit> 
+        <trans-unit id="space_class_7">
+            <source>1.5 units - 24px</source>
+        </trans-unit> 
+        <trans-unit id="space_class_8">
+            <source>2 units - 32px</source>
+        </trans-unit>  
+        <trans-unit id="space_class_9">
+            <source>3 units - 48px</source>
+        </trans-unit>  
 
 	/* -- Colors ----------- */
 		 <trans-unit id="basecolor">

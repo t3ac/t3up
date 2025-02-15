@@ -366,9 +366,9 @@
 			<source>Including the jquery.wheninview.js</source>
 		</trans-unit> 
 		<trans-unit id="wall">
-			<source>Including the jquery.wall.js</source>
-		</trans-unit> 
-		 
+			<source>Including the jquery.freewall.js</source>
+		</trans-unit> 		
+	 
                
 	        /* -- Fonts ------------------------- */  		
             <trans-unit id="font">
@@ -400,13 +400,11 @@
             </trans-unit>  
 			
             /* -- Footer ------------------------- */   
-            
             <trans-unit id="bg1">
                  <source>Informationarea and wraps in the Footer</source>
             </trans-unit> 
-            
             <trans-unit id="footer1">
-                 <source>Show the footer (default = on)</source>
+                 <source>Show the footer (default = 1)</source>
             </trans-unit>
             <trans-unit id="address">
                  <source>ID of the postaladdress</source>
@@ -484,6 +482,33 @@
 		<trans-unit id="logo">
 			<source>Location of the logo-file (recommended SVG), with leading "/". Logo german</source>
 		</trans-unit>
+		<trans-unit id="logo.1">
+			<source>Location of the english logo-file</source>
+		</trans-unit> 
+		<trans-unit id="logo.2">
+			<source>Location of the french logo-file</source>
+		</trans-unit> 
+		<trans-unit id="logo.3">
+			<source>Location of the italian logo-file</source>
+		</trans-unit> 
+		<trans-unit id="logo.4">
+			<source>Location of the polish logo-file</source>
+		</trans-unit> 
+		<trans-unit id="logo.5">
+			<source>Location of the turkey logo-file</source>
+		</trans-unit> 
+		<trans-unit id="logo.6">
+			<source>Location of the spanish logo-file</source>
+		</trans-unit>
+		<trans-unit id="logo.7">
+			<source>Location of the portuguese logo-file</source>
+		</trans-unit> 
+		<trans-unit id="logo.8">
+			<source>Location of the romanian logo-file</source>
+		</trans-unit> 
+		<trans-unit id="logo.9">
+			<source>Location of the chinese logo-file</source>
+		</trans-unit> 
 		<trans-unit id="alttext">
 			<source>Alttext of the logo in the header</source>
 		</trans-unit> 
@@ -493,11 +518,29 @@
 		<trans-unit id="logowrap">
 			<source>Div wrap of the logo</source>
 		</trans-unit> 
+		<trans-unit id="logopos">
+			<source>Logo position: 1 - Left inside, 2 - Right inside, 3 - Topleft, 4 - Top right</source>
+		</trans-unit>
 		<trans-unit id="notlogowrap">
 			<source>Wrap of the part after the logo. Default "d-flex col-10 flex-wrap vertical-align-stretch"</source>
 		</trans-unit>
 		<trans-unit id="logostickywidth">
 			<source>width of the logo in the headerarea (compressed)</source>
+		</trans-unit> 
+		<trans-unit id="logoII">
+			<source>Location of the second logo-file (recommended SVG), with leading "/".</source>
+		</trans-unit> 
+		<trans-unit id="alttextII">
+			<source>Alttext of the 2. logo in the header</source>
+		</trans-unit> 
+		<trans-unit id="linklogoII">
+			<source>Link of the 2. logo</source>
+		</trans-unit>
+		<trans-unit id="logoIIwidth">
+			<source>width of the 2. logo in the headerarea</source>
+		</trans-unit>
+		<trans-unit id="logoIIwrap"> 
+			<source>Div wrap of the 2. logo</source>
 		</trans-unit> 
 		<trans-unit id="mobillogo">
 			<source>Shows a small logo in the toparea for mobil devices.</source>
@@ -787,7 +830,10 @@
 		 <trans-unit id="showtitle">
 			<source>If it's true, shows the title with the icons in the toparea</source>
 		</trans-unit> 
-
+		 <trans-unit id="liaclass">
+			<source>Class for the a-tag</source>
+		</trans-unit> 
+		
 		 /* -- ToTop ------------------------- */ 
 
 		<trans-unit id="totop">
