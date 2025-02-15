@@ -1,3 +1,0 @@
-lib.navigation.navdir                   		=  TEXT
-lib.navigation.navdir.value         			=  {$page.navigation.navdir}  
-lib.navigation.navdir.insertData                = 1

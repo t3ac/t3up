@@ -1,9 +1,0 @@
-## Extension
-page.includeCSS.odsom   				= COA
-page.includeCSS{
-   	odsom								= EXT:t3up/Resources/Public/Sass/Extensions/_odsosm.scss
-    odsom.linenumber 					= true   
-	odsom.outputStyle					= compressed   
-}
-
-

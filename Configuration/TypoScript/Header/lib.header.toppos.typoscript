@@ -1,5 +1,0 @@
-lib.header.toppos = TEXT
-lib.header.toppos.value = {$page.top.topposition}
-lib.header.toppos.insertData = 1
-
-
