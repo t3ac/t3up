@@ -1,6 +1,8 @@
 
 lib.navigation.simpleburger = COA
-lib.navigation.simpleburger.10              =< lib.contentElement
+// lib.navigation.simpleburger.if.isTrue          = {$page.navigation.sideAnker} 
+
+lib.navigation.simpleburger.10                 =< lib.contentElement
 lib.navigation.simpleburger.10 {
     templateName                            = BurgerAnker
 	  

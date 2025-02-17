@@ -6,9 +6,9 @@ lib.header.searchbutton {
     10.data                     = LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:search    
     10.typolink {
         wrap                    = <span class=" funcItemTitle ps-2">|</span>
-        ATagBeforeWrap        = 1
+        ATagBeforeWrap          = 1
         parameter               = {$page.top.searchpage}
-        ATagParams              = class="{$page.top.liaclass} search navitem d-inline-block" data-show-sub="false" title="search" aria-label="link search"
+        ATagParams              = alt="link to searchpage" class="{$page.top.liaclass} search navitem d-inline-block" data-show-sub="false" title="search" aria-label="link search"
     }
      wrap                       = <li class="d-inline-block searchbutton order-{$page.top.searchpos}">|</li> 
 }
