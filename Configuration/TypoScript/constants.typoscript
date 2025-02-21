@@ -495,7 +495,7 @@ page.meta {
 # customcategory=navigation=T3up: Navigation	
 
 page.navigation {
-	# cat= navigation/101; type= options[0,1,2,3,5,6,7]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navstyle
+	# cat= navigation/101; type= options[0,1,2,3,4,5]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navstyle
 	style				= 1
 	# cat= navigation/102; type= options[,navigation]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navigation
 	navigation			= navigation
