@@ -13,7 +13,7 @@
                         <f:render partial="Menu/Elements/Link" arguments="{item: item}"/>
                 </f:else>
                 <f:else>
-                    <li class="{anz} navitem" data-show-sub="false">
+                    <li class="{anz} {f:if(condition:item.children, then:'navitem')}" data-show-sub="false">
                         <f:render partial="Menu/Elements/Link" arguments="{item: item}"/>
                 </f:else>
             </f:if>   
