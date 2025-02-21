@@ -6,7 +6,7 @@
 $EM_CONF[$_EXTKEY] = array (
     'title'            => 'T3UP - Basic Installation',
     'description'      => 'T3UP - Distribution.',
-    'version'          => '12.0.06',
+    'version'          => '12.1.01',
     'state'            => 'stable',
     'category'         => 'templates',
     'author'           => 'Michael Lang',
