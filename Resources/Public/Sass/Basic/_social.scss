@@ -10,7 +10,7 @@
     ul.social li .symbol a              {font-size: 125%; display: block; width: calc(#{$p} * 2.5); text-decoration: none;} 
 
     ul.social li.wa > span:first-of-type  {width: calc(#{$p} * 2.5);}
-    ul.social li img                      {width: $v15; height: auto; margin: auto;} 
+    ul.social li img                      {width: $v150; height: auto; margin: auto;} 
     
     ul.social li:hover                  {margin-left: calc(#{$p} * -5); color: $totopLinkHoverColor; } 
   
@@ -29,7 +29,7 @@
     ul.social li .symbol a              {font-size: 125%; display: block; width: calc(#{$p} * 2.5); text-decoration: none;} 
 
     ul.social li.wa > span:first-of-type  {width: calc(#{$p} * 2.5);}
-    ul.social li img                      {width: $v15; height: auto; margin: auto;}  
+    ul.social li img                      {width: $v150; height: auto; margin: auto;}  
   
     ul.social li:hover                  {margin-right: calc(#{$p} * -5); color: $totopLinkHoverColor; text-decoration: none;} 
   
