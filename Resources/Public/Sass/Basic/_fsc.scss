@@ -15,7 +15,7 @@
     
 .ce-table td, .ce-table th              {vertical-align: top;}
     
-.ce-gallery iframe                      {border-width: 0;}
+.ce-gallery iframe                      {border-width: 0;   aspect-ratio: 16 / 9;}
 .ce-border iframe                       {border: $borderWidth solid $borderColor; padding: $borderPadding;}
     
 .ce-gallery figure                      {display: block;}
@@ -63,7 +63,7 @@
 .frame-space-before-4                   {margin-top: $v066;}
 .frame-space-before-5                   {margin-top: $v075;}
 .frame-space-before-6                   {margin-top: $v1;}
-.frame-space-before-7                   {margin-top: $v15;}
+.frame-space-before-7                   {margin-top: $v150;}
 .frame-space-before-8                   {margin-top: $v2;}
 .frame-space-before-9                   {margin-top: $v3;}
 
@@ -73,7 +73,7 @@
 .frame-space-after-4                    {margin-bottom: $v066;}
 .frame-space-after-5                    {margin-bottom: $v075;}
 .frame-space-after-6                    {margin-bottom: $v1;}
-.frame-space-after-7                    {margin-bottom: $v15;}
+.frame-space-after-7                    {margin-bottom: $v150;}
 .frame-space-after-8                    {margin-bottom: $v2;}
 .frame-space-after-9                    {margin-bottom: $v3;}
 
@@ -83,7 +83,7 @@
 .frame-padding-before-4                 {padding-top: $v066;}
 .frame-padding-before-5                 {padding-top: $v075;}
 .frame-padding-before-6                 {padding-top: $v1;}
-.frame-padding-before-7                 {padding-top: $v15;}
+.frame-padding-before-7                 {padding-top: $v150;}
 .frame-padding-before-8                 {padding-top: $v2;}
 .frame-padding-before-9                 {padding-top: $v3;}
 
@@ -93,6 +93,6 @@
 .frame-padding-after-4                  {padding-bottom: $v066;}
 .frame-padding-after-5                  {padding-bottom: $v075;}
 .frame-padding-after-6                  {padding-bottom: $v1;}
-.frame-padding-after-7                  {padding-bottom: $v15;}
+.frame-padding-after-7                  {padding-bottom: $v150;}
 .frame-padding-after-8                  {padding-bottom: $v2;}
 .frame-padding-after-9                  {padding-bottom: $v3;}
