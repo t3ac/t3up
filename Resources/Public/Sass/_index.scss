@@ -92,11 +92,13 @@ body                                {transition: all ease .3s; height: 100.01%; 
   
   
 /** Korrektur ******************************************/
-.row                                {margin-top: 0;  margin-right:0; margin-left: 0;}
-.row > *                            {padding-right:inherit; padding-left: inherit; margin-top: inherit;}
+/*
+_grid.scsss
+
+*/
 
 ul                                  {margin: 0; padding: 0;list-style-type: square;}  
-.h1, h1                            {color: $baseColor; transition: all ease .3s; font-size: calc(#{$h1} * #{$p}); font-weight: $h1-fontweight; color: $h1-color; margin: $h1-margin; line-height: $h1-lineheight; text-align: $h1-dir; padding-left: $h1-padding; padding-right: $h1-padding; } 
+.h1, h1                            {color: $baseColor; transition: all ease .3s; font-size: calc(#{$h1} * #{$p}); font-weight: $h1-fontweight; color: $h1-color; margin: $h1-margin; line-height: $h1-lineheight; text-align: $h1-dir; padding: $h1-padding; } 
 .h2, h2                            {transition: all ease .3s; font-size: calc(#{$h2} * #{$p}); font-weight: $h2-fontweight; color: $h2-color; margin: $h2-margin; line-height: $h2-lineheight;} 
 .h3, h3                            {transition: all ease .3s; font-size: calc(#{$h3} * #{$p}); font-weight: $h3-fontweight; color: $h3-color; margin: $h3-margin; line-height: $h3-lineheight;} 
 .left .h2, .left h2, .right .h2 , .right h2, .left .h3,
