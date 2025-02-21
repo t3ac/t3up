@@ -4,11 +4,8 @@
 
 @if $enable-grid-classes {
   .row {
-    @include make-row();
-
-    > * {
-      @include make-col-ready();
-    }
+        display: flex;
+        flex-wrap: wrap;
   }
 }
 
