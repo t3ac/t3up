@@ -3,14 +3,14 @@
 	> ul						{margin-bottom: $v6; border-top: 1px solid rgba($black, 0.2);}	
 	.cur > a					{font-weight: 600; text-transform: uppercase; color: $baseColor;}
 	.act > a					{font-weight: 600;}
-	.levelTitle					{background: rgba($baseColor,.85); font-weight: 600; padding: $v15 $v4 $v15 $v2; color: $white !important; text-transform: uppercase; margin: 0;}
+	.levelTitle					{background: rgba($baseColor,.85); font-weight: 600; padding: $v150 $v4 $v150 $v2; color: $white !important; text-transform: uppercase; margin: 0;}
 	li						{position: relative; display: block; line-height: 130%; padding-left: 0; border-bottom: 1px solid rgba($black, 0.2);}	
 	li:last-of-type					{border-bottom: 0;}	
 	span						{font-weight: 400; background: rgba($baseColor,.05);}	
 	ul li						{background: $white; line-height: 120%; margin-bottom: 0;}
-	ul li a						{padding-top: $v15; padding-bottom: $v15; padding-left: $v2; padding-right: $v4; display: block; color: $linkColor; }
+	ul li a						{padding-top: $v150; padding-bottom: $v150; padding-left: $v2; padding-right: $v4; display: block; color: $linkColor; }
 	ul li a:hover					{color: rgba($darkgrey,1)}
-	ul li > span					{padding-top: $v15; padding-bottom: $v15; display: flex; justify-content: center; align-items: stretch; cursor: pointer; font-size: 150%; position: absolute; right: 0; top: 0; width: 2rem; text-align: center; }
+	ul li > span					{padding-top: $v150; padding-bottom: $v150; display: flex; justify-content: center; align-items: stretch; cursor: pointer; font-size: 150%; position: absolute; right: 0; top: 0; width: 2rem; text-align: center; }
 	ul ul						{border-top: 1px solid rgba($black, 0.2);}
 	ul ul li					{background: rgba($black,.025); }
 	ul ul li a					{padding-left: $v3; }	
