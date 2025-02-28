@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="t3up">
+        <header/>
+        <body>
+            <trans-unit id="Standard">
+                <source>Standard backendlayout (off/on)</source>
+            </trans-unit>
+            <trans-unit id="OneColumn">
+                <source>OneColum backendlayout (off/on)</source>
+            </trans-unit>    
+            <trans-unit id="LeftNavigation">
+                <source>Layout with left sub-navigation (off/on)</source>
+            </trans-unit>
+            <trans-unit id="LeftNavigationInMedia">
+                <source>Layout with left sub-navigation and a Medial inline (off/on)</source>
+            </trans-unit>
+            <trans-unit id="LeftNavigationMarginal">
+                <source>Layout with left sub-navigation and a right marginal (off/on)</source>
+            </trans-unit>
+            <trans-unit id="RightNavigation">
+                <source>Layout with right sub-navigation (off/on)</source>
+            </trans-unit>
+            <trans-unit id="RightMarginal">
+                <source>Layout with right marginal (off/on)</source>
+            </trans-unit>
+            <trans-unit id="RightNavigationInMedia">            
+                <source>Layout with right navigation and Media inline (off/on)</source>
+            </trans-unit>
+
+            <trans-unit id="BigRight">            
+                <source>Bigger right marginal column (off/on)</source>
+            </trans-unit>
+            <trans-unit id="BigLeft">            
+                <source>Bigger left marginal column (off/on)</source>
+            </trans-unit>
+            <trans-unit id="SmallRight">            
+                <source>Right marginal column (off/on)</source>
+            </trans-unit>
+            <trans-unit id="SmallLeft">            
+                <source>Left marginal column (off/on)</source>
+            </trans-unit>
+        
+            <trans-unit id="TCEMain">
+                <source>Main Usergroup permission configuration (off/on)</source>
+            </trans-unit>
+            <trans-unit id="TCEForm">
+                <source>Backend Forms configuration (off/on)</source>
+            </trans-unit>
+            <trans-unit id="TCEFrames">
+                <source>Shows div. Frames to select</source>
+            </trans-unit>            
+            <trans-unit id="RTE">
+                <source>Rich-text-editor configuration (off/on)</source>
+            </trans-unit>
+            <trans-unit id="UserTs">
+                <source>User configuration (off/on)</source>
+            </trans-unit>
+            <trans-unit id="News">
+                <source>Newslayouts</source>
+            </trans-unit> 
+            <trans-unit id="NewsLinkhandler">
+                <source>News</source>
+            </trans-unit> 
+            
+            <trans-unit id="tt_addressLinkhandler">
+                <source>Addresses</source>
+            </trans-unit> 
+        </body>
+    </file>
+</xliff>
