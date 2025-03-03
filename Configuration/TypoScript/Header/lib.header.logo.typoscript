@@ -1,0 +1,28 @@
+#######################################
+#### logo #############################
+#######################################
+
+lib.header.logo = COA
+lib.header.logo.10 = IMAGE
+lib.header.logo.10 {
+    file                                    = {$page.header.logo}
+    altText                                 = {$page.header.alttext}
+    params                                  = type="logo" 
+    imageLinkWrap                           = 1
+    imageLinkWrap.enable                    = 1 
+    imageLinkWrap.typolink.parameter        = {$page.header.home}
+    imageLinkWrap.typolink.additionalParams = 
+    
+}
+
+lib.header.logo.wrap                    = {$page.header.logowrap}
+
+
+
+##################################################################################
+
+lib.header.logo.100                     =< lib.header.logo.10
+lib.header.logo.100 {
+    file                                = {$page.header.mobillogo}
+    wrap                                = {$page.header.mobillogowrap} 
+}

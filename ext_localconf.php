@@ -122,7 +122,46 @@ call_user_func(static function () {
 	if ($Configuration['SmallRight']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/SmallRight.tsconfig'");
 	}
+	
+	# Extensions #####################################
 
+	if (ExtensionManagementUtility::isLoaded('solr')) {
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Solr/solr.typoscript'");
+	}
+
+	if (ExtensionManagementUtility::isLoaded('ke_search')) {
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/KeSearch/setup.typoscript'");
+	}
+	
+	if (ExtensionManagementUtility::isLoaded('jpfaq')) {
+	    ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Jpfaq/setup.typoscript'");
+	}
+	
+	if (ExtensionManagementUtility::isLoaded('powermail')) {
+		ExtensionManagementUtility::addTypoScriptConstants("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Powermail/constants.typoscript'");
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Powermail/powermail.typoscript'");
+	}
+	
+	if (ExtensionManagementUtility::isLoaded('news')) {
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/News/tx_news.typoscript'");
+	}
+	
+	if (ExtensionManagementUtility::isLoaded('ods_osm')) {
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Odsom/setup.typoscript'");
+	}
+	
+	if (ExtensionManagementUtility::isLoaded('dpn_glossary')) {
+	    ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Dpn_glossary/setup.typoscript'");
+	}
+	
+	if (ExtensionManagementUtility::isLoaded('fs_media_gallery')) {
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/FsMediaGallery/setup.typoscript'");
+		ExtensionManagementUtility::addTypoScriptConstants("@import 'EXT:t3up/Configuration/TypoScript/Extensions/FsMediaGallery/constants.typoscript'");
+	}
+	
+	if (ExtensionManagementUtility::isLoaded('min')) {
+		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/Min/setup.typoscript'");
+	}
 	
 	$icons = [
 		'apps-pagetree-folder-contains-brofix' => 'brofix.svg',

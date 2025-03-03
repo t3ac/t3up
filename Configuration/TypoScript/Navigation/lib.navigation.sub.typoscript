@@ -1,0 +1,49 @@
+lib.navigation.sub = COA
+lib.navigation.sub.10 = HMENU
+lib.navigation.sub.10{
+  
+  entryLevel = 4
+  1 = TMENU
+  1 {
+  		expAll = 1
+        
+        NO = 1
+        NO {
+            wrapItemAndSub = <li>|</li>
+        }
+        ACT = 1
+        ACT {
+            wrapItemAndSub = <li class="active">|</li>
+        }
+   }
+   
+   2 < .1
+   3 < .1
+    wrap = <ul id="submenu">|</ul>
+}
+
+
+lib.navigation.sub.30 = HMENU
+lib.navigation.sub.30 {
+    special = rootline
+
+    # zeige komplette rootline an
+    #pecial.range = 1|-1
+
+    # Variation: Link nur auf die Uebergeordnete Seite
+    special.range = 4|-1
+
+    # Text vor dem Rootline Menue
+    wrap = <p>Sie sind hier:&nbsp;|</p>
+
+    1 = TMENU
+    1.target = _top
+    1.NO {
+
+        linkWrap = | /
+
+    }
+}
+
+
+lib.navigation.sub.wrap = <div class="d-lg-none">|</div>

@@ -1,0 +1,72 @@
+####
+# Example of what CKEditor can all bring
+###
+
+# Load default processing options
+imports:
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
+    
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+
+  config:
+    contentsCss: ["EXT:t3up/Resources/Public/Css/rte.css"]
+    
+    style:
+      definitions:
+      - { name: "center", element: 'p', classes: ['text-center']}
+      - { name: "right", element: 'p', classes: ['text-end']}
+      
+      - { name: "Link intern", element: 'a', classes: ["link-internal"]}
+      - { name: "Anker", element: 'a', classes: ["smooth"]}           
+      - { name: "Link extern", element: 'a', classes: ["link-external"]}
+      - { name: "Phone", element: 'a', classes: ["link-phone"]}
+      - { name: "Fax", element: 'a', classes: ["link-fax"]}      
+      - { name: "E-Mail", element: 'a', classes: ["link-mail"]}
+      - { name: "Download", element: 'a', classes: ["link-download"]}
+      - { name: "Button light", element: 'a', classes: ["btn", "btn-light"]}
+      - { name: "Button secondary", element: 'a', classes: ["btn", "btn-secondary"]}
+      - { name: "Info", element: 'a', classes: ["link-info"]}
+      - { name: "Web", element: 'a', classes: ["link-web"]}
+    
+    removePlugins:
+      - image
+
+    removeButtons:
+        - Underline
+        - Strike   
+        - Table
+        
+        
+    alignment:
+      options:
+        - { name: 'left', className: 'text-start' }
+        - { name: 'center', className: 'text-center' }
+        - { name: 'right', className: 'text-end' }
+        - { name: 'justify', className: 'text-justify' }
+           
+    heading:
+      options:
+        - { model: 'paragraph', title: 'Paragraph' }
+        - { model: 'heading2', view: 'h2', title: 'Heading 2'}
+        - { model: 'heading3', view: 'h3', title: 'Heading 3'}
+        - { model: 'heading4', view: 'h4', title: 'Heading 4'}
+        
+    toolbarGroups:
+      - { name: styles, groups: [ styles, format ] }
+      - { name: basicstyles, groups: [ basicstyles ] }
+      - { name: paragraph, groups: [ list, indent, blocks, align ] }
+      - { name: links, groups: [ links ] }
+      - "/"
+      - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
+      - { name: insert, groups: [ insert ] }
+      - { name: tools, groups: [ specialchar ] }
+      - { name: document, groups: [ mode ] }
+
+
+    importModules:
+      - { 'module': '@ckeditor/ckeditor5-show-blocks', 'exports': ['ShowBlocks'] }
+      - { 'module': '@ckeditor/ckeditor5-word-count', 'exports': ['WordCount'] }
