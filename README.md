@@ -7,3 +7,4 @@
             'addRootLineFields' => 'basecolor,nonav' eingetragen wqerden
 27.10.2024 - Korrektur der Sprachdatei. Neue CKEditor-Version.
 13.12.2024 - Ändern der Javascripte und Sass-Dateien für Sticky-Header
+20.02.2025 - Löschen aller Xetra-Sass und Setup-Files
