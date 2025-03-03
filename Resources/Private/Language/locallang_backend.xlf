@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up">
+     <header/>
+        <body>
+        
+            /* -- BACKENDLAYOUTS ------------------------- */
+         
+        <trans-unit id="colpos0">
+           <source>Content</source>
+        </trans-unit>
+        <trans-unit id="colpos1">
+           <source>Left column</source>
+        </trans-unit>
+        <trans-unit id="colpos2">
+           <source>Right column</source>
+        </trans-unit>
+        <trans-unit id="colpos3">
+           <source>Media</source>
+        </trans-unit>
+
+         /* -- */
+        <trans-unit id="Standard">
+           <source>Standardlayout</source>
+        </trans-unit>
+           <trans-unit id="OneColumn">
+           <source>OneColumn Layout</source>
+        </trans-unit>
+           <trans-unit id="LeftNavigation">
+           <source>Layout with left navigation</source>
+        </trans-unit>    
+           <trans-unit id="LeftNavigationInMedia">
+           <source>Layout with left navigation and media</source>
+        </trans-unit>    
+           <trans-unit id="LeftNavigationMarginal">
+           <source>Layout with left navigation, and marginalcolumn</source>
+        </trans-unit>    
+           <trans-unit id="RightNavigation">
+           <source>Layout with right navigation</source>
+        </trans-unit>              
+           <trans-unit id="RightMarginal">
+           <source>Layout with right marginal (off/on)</source>
+        </trans-unit>
+        <trans-unit id="RightNavigationInMedia">
+           <source>Layout with right navigation and media</source>
+        </trans-unit>    
+           <trans-unit id="BigRight">
+           <source>Layout with a bigger right marginal (off/on)</source>
+        </trans-unit>
+           <trans-unit id="BigLeft">
+           <source>Layout with a bigger left marginal (off/on)</source>
+        </trans-unit>     
+        <trans-unit id="SmallRight">
+            <source>Layout with a small right marginal (off/on)</source>
+        </trans-unit>
+        <trans-unit id="SmallLeft">
+            <source>Layout with a small left marginal (off/on)</source>
+        </trans-unit>      
+
+    /* -- PAGE ------------------------- */
+        <trans-unit id="fullpage">
+           <source>Pagelayout without a container</source>
+        </trans-unit>            
+        <trans-unit id="showtitle">
+           <source>Don't show the title</source>
+        </trans-unit>
+        <trans-unit id="deltitle">
+           <source>Delete the title (h1), for plugins eg. news</source>
+        </trans-unit>
+        <trans-unit id="breadcrumb">
+           <source>Hide the breadcrumb</source>
+        </trans-unit> 
+        <trans-unit id="hidenav">
+           <source>Hides the subnavigation</source>
+        </trans-unit>
+        <trans-unit id="nonav">
+           <source>This page has no link in the navigation</source>
+        </trans-unit>
+        <trans-unit id="previousnext">
+           <source>Shows previous/next buttons</source>
+        </trans-unit>
+         
+         
+    /* -- TT-CONTENT IMAGE ORIENT----------- */    
+        <trans-unit id="header-below">
+           <source>Header below the image (center)</source>
+        </trans-unit>
+        <trans-unit id="header-below-left">
+           <source>Header below the image (left)</source>
+        </trans-unit>
+            <trans-unit id="header-below-right">
+           <source>Header below the image (right)</source>
+        </trans-unit>
+                 
+
+    /* -- TT-CONTENT PADDING----------- */
+    
+        <trans-unit id="padding_before">
+           <source>Padding Before</source>
+        </trans-unit>
+        
+        <trans-unit id="padding_after">
+           <source>Padding After</source>
+        </trans-unit>
+        
+        <trans-unit id="space_class">
+           <source>Inner Padding</source>
+        </trans-unit> 
+    
+        <trans-unit id="space_class_none">
+           <source>none</source>
+        </trans-unit>
+        <trans-unit id="space_class_1">
+           <source>0,25 unit - 4px</source>
+        </trans-unit> 
+        <trans-unit id="space_class_2">
+           <source>0,33 unit ~ 5px</source>
+        </trans-unit>
+        <trans-unit id="space_class_3">
+           <source>0,5 unit - 8px</source>
+        </trans-unit>
+        <trans-unit id="space_class_4">
+           <source>0,66 unit ~ 11px</source>
+        </trans-unit>
+        <trans-unit id="space_class_5">
+           <source>0,75 unit - 12px</source>
+        </trans-unit> 
+        <trans-unit id="space_class_6">
+           <source>1 unit - 16px</source>
+        </trans-unit>
+        <trans-unit id="space_class_7">
+           <source>1.5 units - 24px</source>
+        </trans-unit> 
+        <trans-unit id="space_class_8">
+           <source>2 units - 32px</source>
+        </trans-unit>  
+        <trans-unit id="space_class_9">
+           <source>3 units - 48px</source>
+        </trans-unit>  
+
+    /* -- Colors ----------- */
+        <trans-unit id="basecolor">
+           <source>Pagecolor</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-no">
+           <source>No Color</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-blue">
+           <source>Blue</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-red">
+           <source>Red</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-green">
+           <source>Green</source>
+        </trans-unit>
+           <trans-unit id="basecolor-orange">
+           <source>Orange</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-violett">
+           <source>Violett</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-yellow">
+           <source>Yellow</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-grey">
+           <source>Grey</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-turquoise">
+           <source>Turquoise</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-darkblue">
+           <source>Dark blue</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-darkgrey">
+           <source>Dark grey</source>
+        </trans-unit>    
+         
+        /* -- Designs ----------- */
+        
+        <trans-unit id="none">
+           <source>None</source>
+        </trans-unit>            
+        <trans-unit id="default">
+           <source>Default</source>
+        </trans-unit>            
+            <trans-unit id="standard">
+           <source>Standard</source>
+        </trans-unit>        
+
+    
+        <trans-unit id="colored">
+           <source>Colored background</source>
+        </trans-unit>    
+           <trans-unit id="white">
+           <source>White background</source>
+        </trans-unit>    
+           <trans-unit id="lightgrey">
+           <source>Lightgrey background</source>
+        </trans-unit>             
+        <trans-unit id="line">
+           <source>With a line</source>
+        </trans-unit>
+        <trans-unit id="twocol">
+           <source>Text with 2 columns</source>
+        </trans-unit>
+        <trans-unit id="containerhandle">
+           <source>Handle as a container</source>
+        </trans-unit>
+        </body>
+    </file>
+</xliff>
