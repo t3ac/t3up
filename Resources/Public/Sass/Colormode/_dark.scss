@@ -1,0 +1,114 @@
+html[color-mode$=dark] {
+	
+	/* Variablen */
+	
+	$baseColor: #fff;
+	$bodyBgColor: #151515;
+	$textColor: #fff;
+	$linkColor: rgb(217, 237, 253); 
+	$linkHoverColor:  rgb(153, 198, 238);
+	$containerBgColor: transparent; 
+	
+	/* Header */
+	$topBgColor:#000;
+	$topLinkColor: #eee;
+	$topLinkHoverColor: #fff;
+	
+	/* Navigation */
+	$subNavBG: #333;
+	$subnavLinkColor: #eee;
+	$subnavLinkHoverColor:  #fff;
+	
+
+	/* footer */
+	$footer1BgColor: #151515 !important;  
+	$footer1TextColor: #eee !important;
+	$footer1LinkColor: #eee !important;
+	$footer1LinkHoverColor: #fff !important;
+	$footer3BgColor: #000 !important;
+	$footer3TextColor: #eee !important;
+	$footer3LinkColor: #eee !important;
+	$footer3LinkHoverColor: #fff !important;
+
+	
+	body{							background-color: $bodyBgColor !important; color: $textColor !important;
+		.tab-pane,
+		.dropdown-menu 					{background-color: $bodyBgColor !important; color: $textColor !important;}
+		.tab-pane a,
+		.dropdown-menu a 				{color: $topLinkColor !important;}	
+		.tab-pane a:hover, 
+		.dropdown-menu a:hover				{color: $topLinkHoverColor !important;} 
+		.btn-close					{filter: invert(100%);}	
+		
+		.dropdown-item:hover, 
+		.dropdown-item:focus 				{background: transparent !important; }
+
+	} 
+
+	header {						background-color: $subNavBG !important; color: $textColor !important;
+	.toparea						{background-color: rgba($topBgColor,$topBgColorTrans);}
+	.logoII img,
+	.logo img,
+	.weblogo img						{filter: invert(100%) grayscale(100%) contrast(400%)}
+	
+	a							{color: $topLinkColor !important;}  
+	a:hover							{color: $topLinkHoverColor !important;}
+
+	.tab-content{
+	.tab-pane{			
+		h2,
+		h3,
+		h4 						{color: $topLinkColor !important;}  
+		}
+	}
+	.quicklinks ul,
+	nav#menu ul li ul					{background-color: $subNavBG !important; } 
+	nav#menu ul li ul *					{color: $textColor !important;} 
+	nav#menu a						{color: $topLinkColor !important;}  
+	nav#menu a:hover					{color: $topLinkHoverColor !important; background: transparent !important;}
+	li.languagemenu.active a				{border-bottom: 2px solid #fff !important;} 
+
+
+	a.meanmenu-reveal:before				{border-bottom: $v1 solid $topLinkColor !important; border-top: $v1 solid $topLinkColor !important;} 
+	a.meanmenu-reveal:after					{background-color: $topLinkColor !important;}
+	.box							{background-color: $subNavBG !important;}
+	
+	&.activeNav ul.subnav li.activated			{background-color: $subNavBG !important;}  
+	
+	.nav-service .tab-content .tab-pane a.color-mode__btn b {color: #fff !important;}  
+	
+	}
+	
+	main {
+	
+	*							{color: $baseColor !important; background: transparent !important;  } 
+
+		.news .article					{border: 1px solid rgba($baseColor,.5) !important;}
+		.news .moreNews					{color: transparent !important}
+
+		.breadcrumbrow .navbar-nav>li>span>a		{color: $baseColor !important; }
+		.breadcrumbrow .navbar-nav a.extend:after	{color: $baseColor !important;  border: 1px solid $baseColor !important;}
+
+		.t3up_accordion a.accordion-button::after 	{color: $baseColor !important; }
+
+		.frame-texttile,
+		.t3up_tabulator .tab-content,
+		.frame-white					{background-color: $darkgrey !important; }
+
+		.t3up_tabulator .nav-link.active 		{border-color: rgba($white, 0.2)  rgba($white, 0.2)  rgba($white, 0.2) ;}
+	}
+	
+	footer {						 color: $footer1TextColor; background: $footer1BgColor;
+		a						{color: $footer1LinkColor}
+		a:hover						{color: $footer1LinkHoverColor}
+		a:before					{color: $footer1LinkColor}
+	}
+}
+
+
+
+
+
+
+
+
