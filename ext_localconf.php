@@ -11,8 +11,17 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\TYPO3\CMS\Frontend\DataProcessing
 
 
 call_user_func(static function () {
-	
-	
+    
+    /***************
+     * ws_scss
+     */
+    if (!class_exists(\ScssPhp\ScssPhp\Version::class, true)) {
+        $extPath = ExtensionManagementUtility::extPath('t3up');
+        require_once $extPath . 'Resources/Private/Vendor/scssphp/scss.inc.php';
+    }
+    
+
+		
 	# Abfrage, ob es im Backend unter Extensions eine Configurationsdatei gibt, wenn ja dann soll diese ausgeführt werden.
 	# die Konfiguration für das Backend ist in der Datei ext_conf_template.txt
 	# The extension configuration -----------------------------------------------------------------------#
@@ -61,31 +70,26 @@ call_user_func(static function () {
 	# Enable/dissable the LeftNavigation-Layout -> addPageTSConfig
 	if ($Configuration['LeftNavigation']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/LeftNavigation.tsconfig'");
-		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Subnavigation/setup.typoscript'");
 	}
 	
 	# Enable/dissable the LeftNavigationMarginal-Layout -> addPageTSConfig
 	if ($Configuration['LeftNavigationMarginal']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/LeftNavigationMarginal.tsconfig'");
-		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Subnavigation/setup.typoscript'");
 	}
 	
 	# Enable/dissable the LeftNavigationInMedia-Layout -> addPageTSConfig
 	if ($Configuration['LeftNavigationInMedia']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/LeftNavigationInMedia.tsconfig'");
-		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Subnavigation/setup.typoscript'");
 	}
 
 	# Enable/dissable the RightNavigation-Layout -> addPageTSConfig
 	if ($Configuration['RightNavigation']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/RightNavigation.tsconfig'");
-		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Subnavigation/setup.typoscript'");
 	}
 	
 	# Enable/dissable the RightNavigationInMedia-Layout -> addPageTSConfig
 	if ($Configuration['RightNavigationInMedia']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Layouts/RightNavigationInMedia.tsconfig'");
-		ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Subnavigation/setup.typoscript'");
 	}
 
 	# Enable/dissable the Standard-Layout -> addPageTSConfig
