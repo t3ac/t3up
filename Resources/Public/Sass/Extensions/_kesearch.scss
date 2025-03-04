@@ -1,54 +1,54 @@
 /* formElements */
-.top .tx-kesearch-pi1 a 				{padding: 0;}
-.top .tx-kesearch-pi1 .reset 				{display: none;}
+.top .tx-kesearch-pi1 a                     {padding: 0;}
+.top .tx-kesearch-pi1 .reset                {display: none;}
 
-.tx-kesearch-pi1 .kesearch_searchbox 			{border:none;}
+.tx-kesearch-pi1 .kesearch_searchbox        {border:none;}
 
 #kesearch_filters{
-	/* buttFixes */
-	.list li.checkboxButton,
-	.list li.checkboxButtonSubmit		{text-decoration: none !important;}
-	.list li.checkboxButtonSubmit		{margin-bottom: 1px;}
-	.list li.checkboxButtonSubmit		{padding-bottom: 0;}
+    /* buttFixes */
+    .list li.checkboxButton,
+    .list li.checkboxButtonSubmit           {text-decoration: none !important;}
+    .list li.checkboxButtonSubmit           {margin-bottom: 1px;}
+    .list li.checkboxButtonSubmit           {padding-bottom: 0;}
 
-	/* Filters */
-	select				{margin: 0 0 $v3 0;}
-	.list 				{border: 1px solid $grey; margin-bottom: $v3;}
-	.list .head 				{display:block;border-bottom: 1px solid §grey; padding: $v2;}
-	.list ul 				{padding: $v3; margin: 0; list-style-type:none;}
-	.list ul.expanded 			{display:block;}
-	.list ul.closed 			{display:none;}
-	.list li 				{display:block; list-style-type:none; margin:0 0 $v3 0;color: $textColor;}
+    /* Filters */
+    select                                  {margin: 0 0 $v075 0;}
+    .list                                   {border: 1px solid $grey; margin-bottom: $v075;}
+    .list .head                             {display:block;border-bottom: 1px solid §grey; padding: $v050;}
+    .list ul                                {padding: $v075; margin: 0; list-style-type:none;}
+    .list ul.expanded                       {display:block;}
+    .list ul.closed                         {display:none;}
+    .list li                                {display:block; list-style-type:none; margin:0 0 $v075 0;color: $textColor;}
 
-	.list a.kesGreyButt 			{margin-left: $v3;}
-	.list li:hover,
-	.list li a:hover			{text-decoration: none;color: $textColor; cursor: pointer;}
-	.list li.selected 			{font-weight: bold;}
-	.list li.parent0,
-	.list li.level0 			{margin-left: $v4;}
-	.list li.parent1,
-	.list li.level1 			{margin-left: $v5;}
-	.list li.parent2,
-	.list li.level2 			{margin-left: $v6;}
-	.list li.parent3,
-	.list li.level3 			{margin-left: $v7;}
-	.list li.parent0,
-	.list li.parent1,
-	.list li.parent2,
-	.list li.parent3 			{font-weight: bold;list-style-position: outside;}
+    .list a.kesGreyButt                     {margin-left: $v075;}
+    .list li:hover,
+    .list li a:hover                        {text-decoration: none;color: $textColor; cursor: pointer;}
+    .list li.selected                       {font-weight: bold;}
+    .list li.parent0,
+    .list li.level0                         {margin-left: $v1;}
+    .list li.parent1,
+    .list li.level1                         {margin-left: $v125;}
+    .list li.parent2,
+    .list li.level2                         {margin-left: $v150;}
+    .list li.parent3,
+    .list li.level3                         {margin-left: $v175;}
+    .list li.parent0,
+    .list li.parent1,
+    .list li.parent2,
+    .list li.parent3                        {font-weight: bold;list-style-position: outside;}
 
-	/* Checkboxes */
-	.list ul.checkboxList			{padding-bottom: 1px;}
-	.list li.optionCheckBox 		{width: 200px;text-decoration: none;margin-bottom: 4px;}
-	.list li.optionCheckBox input[type="checkbox"]{ margin: 0 $v1 0 0;}
-	label					{display:block; font-weight:bold; color: #353535; margin:0 0 4px 0;}
-	.list li.region 			{font-weight: bold;margin-top: $v1;}
-	.list li.noclick 			{cursor: default !important;}
-	.list li.country 			{margin-left: 7px;}
+    /* Checkboxes */
+    .list ul.checkboxList                   {padding-bottom: 1px;}
+    .list li.optionCheckBox                 {width: 200px;text-decoration: none;margin-bottom: 4px;}
+    .list li.optionCheckBox input[type="checkbox"]{ margin: 0 $v025 0 0;}
+    label                                   {display:block; font-weight:bold; color: #353535; margin:0 0 4px 0;}
+    .list li.region                         {font-weight: bold;margin-top: $v025;}
+    .list li.noclick                        {cursor: default !important;}
+    .list li.country                        {margin-left: 7px;}
 
-	/* SPECIAL CSS CLASS */
-	.small 				{display:block; height: 4rem;max-height: 4rem; overflow-y: auto;overflow-x: hidden;}
-	.larger 				{display:block;height: 8rem;max-height: 8rem;overflow-y: auto;overflow-x: hidden;}
+    /* SPECIAL CSS CLASS */
+    .small                                  {display:block; height: 4rem;max-height: 4rem; overflow-y: auto;overflow-x: hidden;}
+    .larger                                 {display:block;height: 8rem;max-height: 8rem;overflow-y: auto;overflow-x: hidden;}
 
 }
 
@@ -56,15 +56,15 @@
 
 
 /* Results */
-#kesearch_num_results					{color:$grey;}
+#kesearch_num_results                       {color:$grey;}
 
-#kesearch_results .result-list-item			{margin:  0 0 $v3 0; padding: $v3; border: 1px solid $lightgrey}
-#kesearch_results .result-list-item:hover		{box-shadow: $shadow;}
+#kesearch_results .result-list-item         {margin:  0 0 $v075 0; padding: $v075; border: 1px solid $lightgrey}
+#kesearch_results .result-list-item:hover   {box-shadow: $shadow;}
 
 
-#kesearch_results .result-list-item .result-teaser 	{color:$darkgrey;}
+#kesearch_results .result-list-item .result-teaser     {color:$darkgrey;}
 
-.tx-kesearch-pi1 #kesearch_results .teaser_icon img 	{margin-top:$v1; margin-right:$v1;}
+.tx-kesearch-pi1 #kesearch_results .teaser_icon img     {margin-top:$v025; margin-right:$v025;}
 
 .tx-kesearch-pi1 #kesearch_results .result-list-item .hit {color: $red; font-weight: bold;}
 
@@ -84,25 +84,22 @@
 }
 
 /* Query time */
-.tx-kesearch-pi1 #kesearch_query_time 			{font-style: italic;text-align: center;font-size: 80%;}
+.tx-kesearch-pi1 #kesearch_query_time                       {font-style: italic;text-align: center;font-size: 80%;}
 
 /* Searchbox */
-.tx-kesearch-pi1 .searchbox 				{margin-bottom: $v1;}
-.tx-kesearch-pi1 .searchbox input 			{margin-left: 0; width: 8rem;}
-.tx-kesearch-pi1 .searchbox input.submit {
-    width: 18px;
-    height: 18px;
-    border: none;
-    background: none;
-    vertical-align: middle;
-}
-.tx-kesearch-pi1 form.static .searchbox input.submit 	{margin-top: -16px;}
-.tx-kesearch-pi1 form.ajax .searchbox input.submit 	{margin-top: -4px;}
-.tx-kesearch-pi1 .searchbox .search_input 		{margin-right: $v1;}
+
+.kesearch_searchbox                                         {display: flex}
+.kesearch_searchbox > *                                     {margin-right: $v1;} 
+.tx-kesearch-pi1 .searchbox                                 {margin-bottom: $v025;}
+.tx-kesearch-pi1 .searchbox input                           {margin-left: 0; width: 8rem;}
+.tx-kesearch-pi1 .searchbox input.submit                    {width:  $v125;  height: $v125;    border: none;  background: none; vertical-align: middle;}
+.tx-kesearch-pi1 form.static .searchbox input.submit        {margin-top: -16px;}
+.tx-kesearch-pi1 form.ajax .searchbox input.submit          {margin-top: -4px;}
+.tx-kesearch-pi1 .searchbox .search_input                   {margin-right: $v025;}
 
 /* General Message */
-.tx-kesearch-pi1 .general-message 			{padding: $v1;}
-.tx-kesearch-pi1 .general-message .image 		{vertical-align: middle;margin-right: $v3;}
+.tx-kesearch-pi1 .general-message                           {padding: $v025;}
+.tx-kesearch-pi1 .general-message .image                    {vertical-align: middle;margin-right: $v075;}
 
 /* Ordering */
 .tx-kesearch-pi1 #kesearch_ordering span.down {
@@ -121,13 +118,13 @@
     border-style: none solid solid;
     border-width: 0 4px 4px;
 }
-.tx-kesearch-pi1 #kesearch_ordering div.ordering 	{max-width:300px;}
+.tx-kesearch-pi1 #kesearch_ordering div.ordering            {max-width:300px;}
 .tx-kesearch-pi1 #kesearch_ordering ul {
     display: inline-block;
     height: 20px;
     list-style-type: none;
-    margin: 0 0 $v3;
+    margin: 0 0 $v075;
     padding: 0;
 }
-.tx-kesearch-pi1 #kesearch_ordering ul li 		{margin-right: $v3;}
+.tx-kesearch-pi1 #kesearch_ordering ul li                   {margin-right: $v3;}
 
