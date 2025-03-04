@@ -262,8 +262,10 @@ page.files{
 			 
 	# cat= files/javascript/01; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:basic 
 	basic				= active
-	# cat= files/javascript/04; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:jquery
+	# cat= files/javascript/02; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:jquery
 	jquery				= active
+    # cat= files/javascript/03; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:subnavigation
+    subnavigation       = 
 	# cat= files/javascript/04; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:inview	
 	inview 				= 
 	# cat= files/javascript/05; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:wall		
@@ -586,6 +588,8 @@ page.scss {
 	scsstable			= table	
 	# cat= scss/basicSass/26; type= options[bootstrapstyles,empty]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbootstrapstyles
 	scssbootstrapstyles		= bootstrapstyles
+    # cat= scss/basicSass/27; type= options[subnavigation,empty]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsssubnavigation
+    scssssubnavigation       = subnavigation
 		
 	# Extensions ____________________________________________	
 	# cat= scss/extensions/101; type= options[lightbox,empty]; label= Lightbox
