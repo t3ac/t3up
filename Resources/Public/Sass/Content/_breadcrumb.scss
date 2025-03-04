@@ -2,8 +2,8 @@
 	  ol                                    			{list-style: none; padding: 0; margin: 0}
 	  ol li                                 			{margin:0; display: inline-block; padding: 0 0 0 $v025; font-size: 100% !important; line-height: 100%; }
 	  ol li a                               			{color: rgba($textColor, .85); transition: all ease .3s; font-size: 100% !important; line-height: 100%; }
-	  ol li a:hover                         			{color: rgba($textColor, 1);}
-	  ol li::after                          			{content:'|'; padding: 0 0 0 $v1;} 
+	  ol li a:hover                         			{color: rgba($textColor, 025);}
+	  ol li::after                          			{content:'|'; padding: 0 0 0 $v025;} 
 	  ol li:last-of-type::after             			{content:'';}  
 	  
 	 .navbar-nav										{padding: 0; }	

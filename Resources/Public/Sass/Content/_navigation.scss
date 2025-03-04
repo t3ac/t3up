@@ -9,7 +9,7 @@
         > ul > li                               {position:relative; order:2; hyphens: none;}
         > ul > li > span, 
         > ul > li > a                           {cursor:pointer; margin:0;font-size:$navigationfontsize; letter-spacing:.01em; transition:color ease .3s; text-transform:uppercase; padding:$v015 $v1 $v033; 
-                                                border-bottom-width:$v020; border-bottom-style:solid; border-bottom-color:transparent; display:block; color:$navLinkColor; display:inline-block; font-weight:$navFontWeight;}             
+                                                border-bottom-width:$v015; border-bottom-style:solid; border-bottom-color:transparent; display:block; color:$navLinkColor; display:inline-block; font-weight:$navFontWeight;}             
         > ul > li.cur > a,
         > ul > li > a:hover                     {color:$navLinkHoverColor; border-bottom-color:$navLinkHoverColor;}
         > ul > li.activated > a                 {border-bottom-color:$navLinkHoverColor+99;}
@@ -42,7 +42,7 @@
         > ul                                    {min-height:$v4;}
         > ul > li                               {padding:0; hyphens: none;}
         > ul > li > a                           {padding:$v015 $v1 $v033; display:inline-block; cursor:pointer; font-size:$navigationfontsize; transition:color ease .3s; text-transform:uppercase;
-                                                border-bottom-width:$v020; border-bottom-style:solid; border-bottom-color:transparent; color:$navLinkColor; font-weight:$navFontWeight;}     
+                                                border-bottom-width:$v015; border-bottom-style:solid; border-bottom-color:transparent; color:$navLinkColor; font-weight:$navFontWeight;}     
         > ul > li.act > a,
         > ul > li.cur > a                       {color:$navLinkHoverColor; border-bottom-color:rgba($baseColor, .75);}
         

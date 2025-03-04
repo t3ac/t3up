@@ -27,6 +27,7 @@
 @import 'Content/'    + $footer        + '.scss';
 @import 'Content/'    + $navigation    + '.scss';
 @import 'Content/'    + $header        + '.scss';
+@import 'Content/'    + $subnavigation + '.scss';
 
 /* Extensions */
 @import 'Extensions/' + $lightbox      + '.scss';

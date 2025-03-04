@@ -19,7 +19,7 @@ header {                                        background-color: $headerBgColor
     &.shy-header                                {position: fixed; z-index: 1002; transition: all 0.3s; ;}
     &.shy-aktiv                                 {box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2); ;}
 
-    &.shy-aktiv .logo img                       {width: $logostickywidth; padding-top: $v2; padding-bottom: $v2;}
+    &.shy-aktiv .logo img                       {width: $logostickywidth; padding-top: $v050; padding-bottom: $v050;}
 
 /* top *******************************/
 
@@ -71,15 +71,15 @@ header {                                        background-color: $headerBgColor
         > li > a                                {cursor: pointer; text-transform: none;}
 
         .tab-content{
-            .tab-pane{                          min-width: 15rem; width: auto; padding: $v4; background-color: #fff; z-index: 997; box-shadow: $shadow; top: auto; left: auto; right: 0; transform: none; position: absolute;
+            .tab-pane{                          min-width: 15rem; width: auto; padding: $v1; background-color: #fff; z-index: 997; box-shadow: $shadow; top: auto; left: auto; right: 0; transform: none; position: absolute;
                 h2,
                 h3,
-                h4                              {font-weight: bold; margin: 0; padding-bottom:$v2 !important; color: $textColor; font-size: 100%;}
-                a.color-mode__btn               {display: block; padding: $v1; text-align: left; position: relative; border-width: 0; border-radius: 0; border: 1px solid transparent;}
+                h4                              {font-weight: bold; margin: 0; padding-bottom:$v050 !important; color: $textColor; font-size: 100%;}
+                a.color-mode__btn               {display: block; padding: $v025; text-align: left; position: relative; border-width: 0; border-radius: 0; border: 1px solid transparent;}
                 a.color-mode__btn:hover         {cursor: pointer;}
-                a.color-mode__btn > span        {display: inline-block; height: $v4; width: $v6; border: 1px solid #808080; position: relative;top: $v1; margin-right :$v2; background: #fff; overflow: hidden;}
+                a.color-mode__btn > span        {display: inline-block; height: $v1; width: $v150; border: 1px solid #808080; position: relative;top: $v025; margin-right :$v050; background: #fff; overflow: hidden;}
                 a.color-mode__btn.dark > span   {background: #000;}
-                a.color-mode__btn.system > span:before        {content: ""; position: absolute; bottom: calc(clamp(12px, 2.8vw, 24px) * -1.4); right: calc(#{$v4}* -1); width: $v7; height: $v6; transform: rotate(-28deg); z-index: 1; background-color: #000;}
+                a.color-mode__btn.system > span:before        {content: ""; position: absolute; bottom: calc(clamp(12px, 2.8vw, 24px) * -1.4); right: calc(#{$v1}* -0.9); width: $v2; height: $v2; transform: rotate(-30deg); z-index: 1; background-color: #000;}
                 a.color-mode__btn b             {color: $textColor;}
                 .fsrange                        {font-size: 125%; cursor: pointer;}
                 ul                              {list-style-type: none;}
