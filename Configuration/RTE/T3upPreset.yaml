@@ -31,6 +31,16 @@ editor:
       - { name: "Button secondary", element: 'a', classes: ["btn", "btn-secondary"]}
       - { name: "Info", element: 'a', classes: ["link-info"]}
       - { name: "Web", element: 'a', classes: ["link-web"]}
+      
+      - { name: "UL ohne Aufzählungspunkte", element: 'ul', classes: ["ohne"]}
+      - { name: "UL mit Strich", element: 'ul', classes: ["dash"]}
+      - { name: "UL mit Quadrat", element: 'ul', classes: ["square"]}
+      - { name: "UL für Symbole", element: 'ul', classes: ["symbols"]}
+      
+      - { name: "Ol decimal", element: ['ol'], classes: ["decimal"]}
+      - { name: "Ol roman", element: ['ol'], classes: ["roman"]}
+      - { name: "Ol griech.", element: ['ol'], classes: ["lower-greek"]}
+      - { name: "Ol abc", element: ['ol'], classes: ["lower-alpha"]}  
     
     removePlugins:
       - image
