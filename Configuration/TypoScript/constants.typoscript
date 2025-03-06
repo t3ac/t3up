@@ -394,7 +394,7 @@ page.header{
 
 page.top{	
 
-	# cat= top/functions/01; type= range[,active]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:homebutton 
+	# cat= top/functions/01; type= boolean; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:homebutton 
 	homebutton			= 1	
 	# cat= top/functions/02; type= int[1-10]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:homebuttonpos
 	homebuttonpos			= 1
