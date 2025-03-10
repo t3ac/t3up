@@ -1,7 +1,7 @@
 /** totop.scss *************************/
 .toTop {						display: none;
 							text-decoration: none !important; position:fixed; transition: background-color ease .5s;
-							z-index: 80; width: $v150; height: $v150; background-color: rgba($totopBgColor,.7); bottom: $totopPosBottom; right: $totopPosRight; 
+							z-index: 80; width: $v2; height: $v2; background-color: rgba($totopBgColor,.7); bottom: $totopPosBottom; right: $totopPosRight; 
 	a						{color: $totopLinkColor; text-decoration: none !important;}
 	a:before					{content:'\f106'; font-family: $symbol; font-size: 175%;}
 	a:hover						{color: rgba($totopLinkHoverColor,1)}  
