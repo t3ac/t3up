@@ -12,10 +12,3 @@ plugin.tx_min.tinysource {
                 30 = /(<script.*?>.*?<\/script>)/is
         }
 }
-
-plugin.tx_min.assetCollector {
-        compressCss = 0
-        compressInlineCss = 0
-        compressJs = 0
-        compressInlineJs = 0
-}
