@@ -55,10 +55,10 @@ call_user_func(static function () {
 	}
 	
 	# Enable/dissable the RTE -> addPageTSConfig
-	//if ($Configuration['RTE']) {
-	///    $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['T3upPreset'] = 'EXT:t3up/Configuration/RTE/T3upPreset.yaml';
-		// ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Rte.tsconfig'");
-	// }
+	if ($Configuration['RTE']) {
+	   $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['T3upPreset'] = 'EXT:t3up/Configuration/RTE/T3upPreset.yaml';
+		 ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Rte.tsconfig'");
+	}
 	
 	# Enable/dissable the UserTS -> addUserTSConfig
 	if ($Configuration['UserTs']) {
