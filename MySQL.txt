@@ -1,5 +1,3 @@
-DELETE FROM sys_file WHERE sys_file.missing=1 AND sys_file.uid NOT IN (SELECT sys_file_reference.uid_local FROM sys_file_reference WHERE sys_file_reference.uid_local=sys_file.uid); 
-
 ## Leeren der History
 DELETE FROM `sys_history` WHERE `history_data` IS NULL;
 DELETE FROM `sys_history` WHERE `userid` IS NULL;
@@ -26,7 +24,7 @@ UPDATE `tt_content` SET `list_type` = '', `pi_flexform` = '' WHERE `CType` LIKE 
 
 #####################################################
 # Loeschen der Sysfileeintraege die nicht mehr existierenden Daten
-DELETE FROM sys_file WHERE sys_file.missing=1 AND sys_file.uid NOT IN (SELECT sys_file_reference.uid_local FROM sys_file_reference WHERE sys_file_reference.uid_local=sys_file.uid)
+DELETE FROM sys_file WHERE sys_file.missing=1 AND sys_file.uid NOT IN (SELECT sys_file_reference.uid_local FROM sys_file_reference WHERE sys_file_reference.uid_local=sys_file.uid); 
 
 # Ruecksetzen auf text, wenn textpic keine Bilder hat
 UPDATE `tt_content` SET `CType` = 'text' WHERE `CType` LIKE 'textpic' AND `image` = 0;
