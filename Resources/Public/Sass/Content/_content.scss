@@ -10,28 +10,28 @@ main{
     .content div > p:last-of-type                       {margin-bottom: 0;}
             
     /* frame info */
-    .frame-info                                         {border: 1px solid $info; padding: $v3; background-color:rgba(lighten($info, 55%),1); transition: all ease 0.3s; 
+    .frame-info                                         {border: 1px solid $info; padding: $v075; background-color:rgba(lighten($info, 55%),1); transition: all ease 0.3s; 
         > h3,
         > h2,
         > h4                                            {color: $info;}                                                        
     }    
     
     /* frame danger */
-    .frame-danger                                       {border: 1px solid $danger; padding: $v3; background-color:rgba(lighten($danger, 55%),1); transition: all ease 0.3s; 
+    .frame-danger                                       {border: 1px solid $danger; padding: $v075; background-color:rgba(lighten($danger, 55%),1); transition: all ease 0.3s; 
         > h3,
         > h2,
         > h4                                            {color: $danger;}                                                        
     }    
     
     /* frame success */
-    .frame-success                                      {border: 1px solid $success; padding: $v3; background-color:rgba(lighten($success, 55%),1); transition: all ease 0.3s; 
+    .frame-success                                      {border: 1px solid $success; padding: $v075; background-color:rgba(lighten($success, 55%),1); transition: all ease 0.3s; 
         > h3,
         > h2,
         > h4                                            {color: $success;}                                                        
     }    
 
     /* frame warning */
-    .frame-warning                                      {border: 1px solid $warning; padding: $v3; background-color:rgba(lighten($warning, 55%),1); transition: all ease 0.3s; 
+    .frame-warning                                      {border: 1px solid $warning; padding: $v075; background-color:rgba(lighten($warning, 55%),1); transition: all ease 0.3s; 
         > h3,
         > h2,
         > h4                                            {color: $warning;}
@@ -39,11 +39,11 @@ main{
     
 
     /* frame column */
-    .frame-twocol .ce-text                              {column-fill: balance; column-gap: $v3; column-count:1;}
+    .frame-twocol .ce-text                              {column-fill: balance; column-gap: $v075; column-count:1;}
     
     /* frame line */
     .frame-line                                         {border-bottom: 2px solid rgba($baseColor, 0.25);}
-    .frame-line    .ce-bodytext                         {padding-bottom: $v3;}
+    .frame-line    .ce-bodytext                         {padding-bottom: $v075;}
     .frame-line    p:last-of-type                       {margin-bottom: 0;}
     
     /* frame lightgrey */
@@ -51,8 +51,8 @@ main{
     
     .frame-lightgrey .ce-textpic > h2,
     .frame-lightgrey .ce-textpic > h3,
-    .frame-lightgrey .ce-textpic > h4                   {padding-left: $v3; padding-right: $v3;}
-    .frame-lightgrey .ce-textpic > .ce-bodytext         {padding: $v3; padding-top: 0;} 
+    .frame-lightgrey .ce-textpic > h4                   {padding-left: $v075; padding-right: $v075;}
+    .frame-lightgrey .ce-textpic > .ce-bodytext         {padding: $v075; padding-top: 0;} 
     
     .frame-lightgrey .ce-textpic > h2 ~ .ce-bodytext,    
     .frame-lightgrey .ce-textpic > h3 ~ .ce-bodytext,    
@@ -63,8 +63,8 @@ main{
     
     .frame-colored .ce-textpic > h2,
     .frame-colored .ce-textpic > h3,
-    .frame-colored .ce-textpic > h4                     {padding-left: $v3; padding-right: $v3;}    
-    .frame-colored .ce-textpic > .ce-bodytext           {padding: $v3; padding-top: 0;}    
+    .frame-colored .ce-textpic > h4                     {padding-left: $v075; padding-right: $v075;}    
+    .frame-colored .ce-textpic > .ce-bodytext           {padding: $v075; padding-top: 0;}    
     
     .frame-colored .ce-textpic > h2 ~ .ce-bodytext,
     .frame-colored .ce-textpic > h3 ~ .ce-bodytext,
@@ -75,10 +75,10 @@ main{
     
     .frame-white .ce-textpic > h2,
     .frame-white .ce-textpic > h3,
-    .frame-white .ce-textpic > h4                       {padding-left: $v3; padding-right: $v3;}    
-    .frame-white .ce-textpic > .ce-bodytext             {padding: $v3; padding-top: 0;}    
-    .frame-white .ce-textpic.ce-left.ce-intext          {padding-left: $v3;}
-    .frame-white .ce-textpic.ce-right.ce-intext         {padding-right: $v3;}
+    .frame-white .ce-textpic > h4                       {padding-left: $v075; padding-right: $v075;}    
+    .frame-white .ce-textpic > .ce-bodytext             {padding: $v075; padding-top: 0;}    
+    .frame-white .ce-textpic.ce-left.ce-intext          {padding-left: $v075;}
+    .frame-white .ce-textpic.ce-right.ce-intext         {padding-right: $v075;}
 
     .frame-white .ce-textpic > h2 ~ .ce-bodytext,    
     .frame-white .ce-textpic > h3 ~ .ce-bodytext,    
@@ -89,22 +89,22 @@ main{
     .frame-textmedia{
         &.frame-white > h2,
         &.frame-white > h3,    
-        &.frame-white > h4                              {padding-top: $v3; padding-right: $v3; padding-left: $v3;}    
+        &.frame-white > h4                              {padding-top: $v075; padding-right: $v075; padding-left: $v075;}    
         
         &.frame-colored > h2,
         &.frame-colored > h3,            
-        &.frame-colored > h4                            {padding-top: $v3; padding-right: $v3; padding-left: $v3;}    
+        &.frame-colored > h4                            {padding-top: $v075; padding-right: $v075; padding-left: $v075;}    
         
         &.frame-lightgrey > h2,
         &.frame-lightgrey > h3,            
-        &.frame-lightgrey > h4                          {padding-top: $v3; padding-right: $v3; padding-left: $v3;}    
+        &.frame-lightgrey > h4                          {padding-top: $v075; padding-right: $v075; padding-left: $v075;}    
     }
     
     .frame-text{
-        &.frame-line                                    {padding-bottom: $v3;}        
+        &.frame-line                                    {padding-bottom: $v075;}        
         &.frame-colored,        
         &.frame-white,
-        &.frame-lightgrey                               {padding: $v3;}    
+        &.frame-lightgrey                               {padding: $v075;}    
     }
 
     .smalltext                                          {font-size: calc(#{$p} * .8);}
