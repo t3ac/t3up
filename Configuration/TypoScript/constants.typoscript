@@ -683,6 +683,8 @@ page.typography {
     navFontWeight           = 400
     # cat= typography/extra/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:symbolfontsize
     symbolfontsize          = 100%
+    # cat= typography/extra/04; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:socialsymbolfontsize
+    socialsymbolfontsize    = 175%
 }
 
 ######################
