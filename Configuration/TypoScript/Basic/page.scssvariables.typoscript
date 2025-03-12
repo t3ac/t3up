@@ -40,6 +40,8 @@ plugin.tx_wsscss.variables {
     v180 = calc({$page.components.gutter} *  1.8);                 /* 1.8rem ~ 29px */ 
        
     v2   = calc({$page.components.gutter} * 2);                    /* 2rem ~ 32px */
+    v225 = calc({$page.components.gutter} * 2.25);                 /* 2rem ~ 36px */    
+    v25  = calc({$page.components.gutter} * 2.5);                  /* 2rem ~ 40px */
     v3   = calc({$page.components.gutter} * 3);                    /* 3rem ~ 48px */
     v4   = calc({$page.components.gutter} * 4);                    /* 4rem ~ 64px */
     v5   = calc({$page.components.gutter} * 5);                    /* 5rem ~ 80px */
