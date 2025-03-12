@@ -1,8 +1,6 @@
 lib.topscroll 						= COA
 lib.topscroll {
-    if.isTrue                       = {$page.totop.totop}
-    if.equals                 		= totop 
-    
+    if.isTrue                       = {$page.totop.totop}    
 	10 								= TEXT
 	10.data 						= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:totop	
 	10.typolink {
