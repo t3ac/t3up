@@ -1,6 +1,6 @@
 .socialsideright{                       position: fixed; top: 40vH; right: calc(#{$p} *  -6); z-index: 3;
 
-    ul.social                           {width: calc(#{$p} *  9) !important; margin: 0; padding: 0; list-style: none; position: relative}
+    ul.social                           {width: calc(#{$p} *  9.5) !important; margin: 0; padding: 0; list-style: none; position: relative}
     ul.social li                        {border: 1px solid $darkgrey; border-right: 0; height:$v225; transition: all ease .3s; margin-top: -1px; display: flex; align-items: center; background-color: $totopBgColor; color: $totopLinkColor; }
     ul.social li:last-of-type           {border-bottom: 1px solid $darkgrey;}
 
@@ -18,7 +18,7 @@
 
 .socialsideleft{                        position: fixed; top: 40vH; left: calc(#{$p} * -6); z-index: 3;
 
-    ul.social                           {width: calc(#{$p} *  9)  !important; margin: 0; padding: 0; list-style: none; position: relative}
+    ul.social                           {width: calc(#{$p} *  9.5)  !important; margin: 0; padding: 0; list-style: none; position: relative}
     ul.social li                        {border: 1px solid $darkgrey; border-right: 0; flex-direction: row-reverse; height: $v225;  margin-top: -1px;  transition: all ease .3s; display: flex; align-items: center; background-color: $totopBgColor; color: $totopLinkColor; }
     ul.social li:last-of-type           {border-bottom: 1px solid $darkgrey;}
 
