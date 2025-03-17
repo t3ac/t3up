@@ -540,19 +540,21 @@ page.socialmedia {
     instagram           = 
     # cat= socialmedias/05; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:x
     x                   = 
-    # cat= socialmedias/06; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:email
+    # cat= socialmedias/06; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:whatsapp
+    whatsapp            = 
+    # cat= socialmedias/07; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:email
     email               = 
-    # cat= socialmedias/07; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:xing
+    # cat= socialmedias/08; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:xing
     xing                    = 
-    # cat= socialmedias/08; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:linkedin
+    # cat= socialmedias/09; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:linkedin
     linkedin            = 
-    # cat= socialmedias/09; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:location
+    # cat= socialmedias/10; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:location
     location            = 
-    # cat= socialmedias/10; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:search
+    # cat= socialmedias/11; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:search
     search              =  
-    # cat= socialmedias/11; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:login
+    # cat= socialmedias/12; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:login
     login               = 
-    # cat= socialmedias/12; type= options[d-inline-block,d-none]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:hidelabel
+    # cat= socialmedias/13; type= options[d-inline-block,d-none]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:hidelabel
     hidelabel           = d-none        
  }
     
