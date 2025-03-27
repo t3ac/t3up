@@ -60,11 +60,11 @@ header {                                        background-color: $headerBgColor
         > &.active a                            {border-bottom: 2px solid $topLinkColor;}
         
 
-        &:before                                {content:"|"; padding-right: $v2;}
+        &:before                                {content:"|"; padding-right: $v075;}
      }
     
     .burgeranker > ul + div                     {border-top: 1px solid rgba($topLinkColor,.5);}
-    .burgeranker > ul div ul                    {margin-top: $v2; padding-top: $v2;}
+    .burgeranker > ul div ul                    {margin-top: $v2; padding-top: $v075;}
 
     .nav-service{
         > li                                    {position: relative;}

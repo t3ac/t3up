@@ -10,106 +10,50 @@ main{
     .content div > p:last-of-type                       {margin-bottom: 0;}
             
     /* frame info */
-    .frame-info                                         {border: 1px solid $info; padding: $v075; background-color:rgba(lighten($info, 55%),1); transition: all ease 0.3s; 
+    .frame-info                                         {border: 1px solid $info; background-color:rgba(lighten($info, 55%),1); transition: all ease 0.3s; 
         > h3,
         > h2,
         > h4                                            {color: $info;}                                                        
     }    
     
     /* frame danger */
-    .frame-danger                                       {border: 1px solid $danger; padding: $v075; background-color:rgba(lighten($danger, 55%),1); transition: all ease 0.3s; 
+    .frame-danger                                       {border: 1px solid $danger; background-color:rgba(lighten($danger, 55%),1); transition: all ease 0.3s; 
         > h3,
         > h2,
         > h4                                            {color: $danger;}                                                        
     }    
     
     /* frame success */
-    .frame-success                                      {border: 1px solid $success; padding: $v075; background-color:rgba(lighten($success, 55%),1); transition: all ease 0.3s; 
+    .frame-success                                      {border: 1px solid $success; background-color:rgba(lighten($success, 55%),1); transition: all ease 0.3s; 
         > h3,
         > h2,
         > h4                                            {color: $success;}                                                        
     }    
 
     /* frame warning */
-    .frame-warning                                      {border: 1px solid $warning; padding: $v075; background-color:rgba(lighten($warning, 55%),1); transition: all ease 0.3s; 
+    .frame-warning                                      {border: 1px solid $warning; background-color:rgba(lighten($warning, 55%),1); transition: all ease 0.3s; 
         > h3,
         > h2,
         > h4                                            {color: $warning;}
     }    
-    
 
     /* frame column */
     .frame-twocol .ce-text                              {column-fill: balance; column-gap: $v075; column-count:1;}
     
     /* frame line */
     .frame-line                                         {border-bottom: 2px solid rgba($baseColor, 0.25);}
-    .frame-line    .ce-bodytext                         {padding-bottom: $v075;}
     .frame-line    p:last-of-type                       {margin-bottom: 0;}
     
-    /* frame lightgrey */
-    .frame-lightgrey                                    {background-color:$lightgrey; transition: all ease 0.3s;} 
-    
-    .frame-lightgrey .ce-textpic > h2,
-    .frame-lightgrey .ce-textpic > h3,
-    .frame-lightgrey .ce-textpic > h4                   {padding-left: $v075; padding-right: $v075;}
-    .frame-lightgrey .ce-textpic > .ce-bodytext         {padding: $v075; padding-top: 0;} 
-    
-    .frame-lightgrey .ce-textpic > h2 ~ .ce-bodytext,    
-    .frame-lightgrey .ce-textpic > h3 ~ .ce-bodytext,    
-    .frame-lightgrey .ce-textpic > h4 ~ .ce-bodytext    {padding-top: 0;}
-            
     /* frame colored */
-    .frame-colored                                      {background-color:rgba(lighten($baseColor, 57.5%),1); transition: all ease 0.3s;  color: $textColor;}
+    .frame-colored                                      {transition: all ease 0.3s; background-color:rgba(lighten($baseColor, 57.5%),1);}
     
-    .frame-colored .ce-textpic > h2,
-    .frame-colored .ce-textpic > h3,
-    .frame-colored .ce-textpic > h4                     {padding-left: $v075; padding-right: $v075;}    
-    .frame-colored .ce-textpic > .ce-bodytext           {padding: $v075; padding-top: 0;}    
-    
-    .frame-colored .ce-textpic > h2 ~ .ce-bodytext,
-    .frame-colored .ce-textpic > h3 ~ .ce-bodytext,
-    .frame-colored .ce-textpic > h4 ~ .ce-bodytext      {padding-top: 0;}
-
     /* frame white */
-    .frame-white                                        {transition: all ease 0.3s; background-color: rgba(255, 255, 255, 1); color: $textColor;}
-    
-    .frame-white .ce-textpic > h2,
-    .frame-white .ce-textpic > h3,
-    .frame-white .ce-textpic > h4                       {padding-left: $v075; padding-right: $v075;}    
-    .frame-white .ce-textpic > .ce-bodytext             {padding: $v075; padding-top: 0;}    
-    .frame-white .ce-textpic.ce-left.ce-intext          {padding-left: $v075;}
-    .frame-white .ce-textpic.ce-right.ce-intext         {padding-right: $v075;}
+    .frame-white                                        {transition: all ease 0.3s; background-color: rgba(255, 255, 255, 1);}
 
-    .frame-white .ce-textpic > h2 ~ .ce-bodytext,    
-    .frame-white .ce-textpic > h3 ~ .ce-bodytext,    
-    .frame-white .ce-textpic > h4 ~ .ce-bodytext        {padding-top: 0;}        
+    /* frame lightgrey */
+    .frame-lightgrey                                    {transition: all ease 0.3s; background-color: $lightgrey;} 
     
-     /* */
-     
-    .frame-textmedia{
-        &.frame-white > h2,
-        &.frame-white > h3,    
-        &.frame-white > h4                              {padding-top: $v075; padding-right: $v075; padding-left: $v075;}    
-        
-        &.frame-colored > h2,
-        &.frame-colored > h3,            
-        &.frame-colored > h4                            {padding-top: $v075; padding-right: $v075; padding-left: $v075;}    
-        
-        &.frame-lightgrey > h2,
-        &.frame-lightgrey > h3,            
-        &.frame-lightgrey > h4                          {padding-top: $v075; padding-right: $v075; padding-left: $v075;}    
-    }
-    
-    .frame-text{
-        &.frame-line                                    {padding-bottom: $v075;}        
-        &.frame-colored,        
-        &.frame-white,
-        &.frame-lightgrey                               {padding: $v075;}    
-    }
-
     .smalltext                                          {font-size: calc(#{$p} * .8);}
-    
-
 }
 
 @media (min-width: 768px) {

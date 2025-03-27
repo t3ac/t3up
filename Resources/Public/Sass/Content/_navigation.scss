@@ -39,7 +39,7 @@
 
      /* Navigation 2    ***/
      .activeNav{                                width:100%; 
-        > ul                                    {min-height:$v4;}
+        > ul                                    {min-height:$v1;}
         > ul > li                               {padding:0; hyphens: none;}
         > ul > li > a                           {padding:$v015 $v1 $v033; display:inline-block; cursor:pointer; font-size:$navigationfontsize; transition:color ease .3s; text-transform:uppercase;
                                                 border-bottom-width:$v015; border-bottom-style:solid; border-bottom-color:transparent; color:$navLinkColor; font-weight:$navFontWeight;}     
@@ -48,22 +48,22 @@
         
         > ul > li:not(.act) > a:hover           {color:$navLinkHoverColor; border-bottom-color:rgba($navLinkHoverColor, .25);}
         
-        ul.subnav                               {position:absolute; z-index:1004; width:$c33; list-style:none; left:0; top:$v1; border-right:1px solid #efefef; height:calc(100% - 2rem);}
+        ul.subnav                               {position:absolute; z-index:1004; width:$c33; list-style:none; left:0; top:$v050; border-right:1px solid #efefef; height:calc(100% - 2rem);}
         
         ul.subnav ul.subnav                     {left:100%; z-index:1005; position:absolute; top:0; width:100%;}
         ul.subnav ul.subnav    ul.subnav        {z-index:1006; position:absolute; top:0rem;}
         ul.subnav li                            {display:flex; justify-content:space-between;}
-        ul.subnav li span                       {padding:$v050 $v050; font-size:v5; line-height:$v1; font-weight:normal; cursor:pointer;}
-        ul.subnav li a                          {padding:$v050 $v1;}
+        ul.subnav li span                       {padding-right: $v025; font-size:$v075; line-height:$v1; font-weight:normal; cursor:pointer;}
+        ul.subnav li a                          {line-height: $v1; padding:$v015 $v075; transition: all ease .3s; font-size: 90%;}
 
-        ul.subnav li.activated                  {background:#efefef;}
+        ul.subnav li.activated                  {background: rgba($baseColor, .10);}
         
         ul.subnav li.act,            
-        ul.subnav li.cur                        {background:rgba($baseColor, .20);}
+        ul.subnav li.cur                        {background:rgba($baseColor, .10);}
         
         ul.subnav li > a:hover                  {font-weight:bold;}
         
-        .box                                    {min-height:40vh; max-height:50vh; z-index:1002; width:100%; position:absolute; left:0; display:none; 
+        .box                                    {min-height:350px; z-index:1002; width:100%; position:absolute; left:0; display:none; 
                                                 border-top:1px solid $grey; box-shadow:$shadow; background-color:rgba($white,1); overflow-x:hidden;}
      }
     

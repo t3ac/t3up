@@ -9,19 +9,19 @@ ol.roman                                        {list-style-type:upper-roman;}
 ol.greek                                        {list-style-type:lower-greek;}
 ol.lower-alpha                                  {list-style-type:lower-alpha;}
 
-a.link-internal::before                         {color: $linkColor; content:'\F0A9'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v015;}
+a.link-internal::before                         {color: $linkColor; content:'\F0A9'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v025;}
 a.link-internal-blank::before,
 a.link-external-blank::before,
-a.link-external::before                         {color: $linkColor; content:'\F08E'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v015;}
-a.link-mail::before                             {color: $linkColor; content:'\F1fa'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v015;}
-a.link-download::before                         {color: $linkColor; content:'\F019'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v015;}
-a.link-web::before                              {color: $linkColor; content:'\F0AC'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v015;}
-a.link-fax::before                              {color: $linkColor; content:'\F1AC'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v015;}
-a.link-phone::before                            {color: $linkColor; content:'\F095'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v015;}
-a.link-mobil::before                            {color: $linkColor; content:'\F10b'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v015;}
-a.link-folder::before                           {color: $linkColor; content:'\F07b'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v015;}
-a.link-info::before                             {color: $linkColor; content:'\F05a'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v015;}
-a.link-web::before                              {color: $linkColor; content:'\F0ac'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v015;}
+a.link-external::before                         {color: $linkColor; content:'\F08E'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v025;}
+a.link-mail::before                             {color: $linkColor; content:'\F1fa'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v025;}
+a.link-download::before                         {color: $linkColor; content:'\F019'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v025;}
+a.link-web::before                              {color: $linkColor; content:'\F0AC'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v025;}
+a.link-fax::before                              {color: $linkColor; content:'\F1AC'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v025;}
+a.link-phone::before                            {color: $linkColor; content:'\F095'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v025;}
+a.link-mobil::before                            {color: $linkColor; content:'\F10b'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v025;}
+a.link-folder::before                           {color: $linkColor; content:'\F07b'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v025;}
+a.link-info::before                             {color: $linkColor; content:'\F05a'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v025;}
+a.link-web::before                              {color: $linkColor; content:'\F0ac'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v025;}
 
 
 ul.dash li:before                               {content: '\2014'; width: $v075;  margin-left: 0; display: inline-block; margin-right:  $v025; }
