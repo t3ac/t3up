@@ -8,7 +8,10 @@
                 {f:if(condition: data.space_after_class, then: 'frame-space-after-{data.space_after_class}')}
                 {f:if(condition: data.padding_before_class, then: 'frame-padding-before-{data.padding_before_class}')} 
                 {f:if(condition: data.padding_after_class, then: 'frame-padding-after-{data.padding_after_class}')}
+                {f:if(condition: data.padding_side_class, then: 'frame-padding-side-{data.padding_side_class}')}
+                {f:if(condition: data.padding_inner_class, then: 'frame-padding-inner-{data.padding_inner_class}')}            
 			    {f:if(condition: data.sectionIndex, then: ' sectionIndex')}
+			    {f:if(condition: data.spacing, then: ' imgspace-{data.spacing}')}
                 ">
                 
                 <f:if condition="{data._LOCALIZED_UID}">
