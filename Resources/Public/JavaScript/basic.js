@@ -1,8 +1,9 @@
 jQuery(document).ready(function($) {
 	
     
-   var $body = $('body');
-
+   var $body = $('body'),
+        $stH = $('.sticky-header').height();
+        $stH = $('header.fixed').height();
 	
    container = parseInt($('.container').css('max-width'));
    
@@ -130,7 +131,8 @@ jQuery(document).ready(function($) {
    		
    
    $('main').css('padding-bottom', footer + 'px');
-   		
+   $('main').css('padding-top', $stH);	
+   
 	/* Footer **********************************************************************************************************/
 	footer = $('footer').height();
 	

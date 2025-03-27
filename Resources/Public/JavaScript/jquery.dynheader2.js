@@ -3,9 +3,6 @@ jQuery(document).ready(function($) {
 	var 	hh = $('header').height(),
 		sh =  hh * 0.66;
 
-		$('main').css('padding-top',hh);
-
-
 	//On Scroll Functionality
 	$(window).scroll( () => {
 		var windowTop = $(window).scrollTop();
