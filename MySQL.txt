@@ -31,3 +31,9 @@ UPDATE `tt_content` SET `CType` = 'text' WHERE `CType` LIKE 'textpic' AND `image
 
 # Ruecksetzen auf text, wenn textmedia keine Bilder hat
 UPDATE `tt_content` SET `CType` = 'text' WHERE `CType` LIKE 'textmedia' AND `assets` = 0;
+
+####################################################
+# Padding für Colorframes
+UPDATE `tt_content` SET `padding_side_class` = '5' AND `padding_before_class` = '5' AND  `padding_after_class` = '5' WHERE `frame_class` LIKE '%white%';
+UPDATE `tt_content` SET `padding_side_class` = '5' AND `padding_before_class` = '5' AND  `padding_after_class` = '5' WHERE `frame_class` LIKE '%color%';
+UPDATE `tt_content` SET `padding_side_class` = '5' AND `padding_before_class` = '5' AND  `padding_after_class` = '5' WHERE `frame_class` LIKE '%grey%';

@@ -13,8 +13,10 @@ CREATE TABLE pages (
 
 
 CREATE TABLE tt_content (
-	padding_before_class varchar(60) DEFAULT '' NOT NULL,
-	padding_after_class varchar(60) DEFAULT '' NOT NULL,
+    padding_before_class varchar(60) DEFAULT '' NOT NULL,
+    padding_after_class varchar(60) DEFAULT '' NOT NULL,
+    padding_side_class varchar(60) DEFAULT '' NOT NULL,
+    padding_inner_class varchar(60) DEFAULT '' NOT NULL,
 );
 
 

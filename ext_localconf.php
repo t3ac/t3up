@@ -3,6 +3,7 @@
 defined('TYPO3') or die;
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor;
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\TYPO3\CMS\Frontend\DataProcessing\GalleryProcessor::class] = [
@@ -20,24 +21,13 @@ call_user_func(static function () {
         require_once $extPath . 'Resources/Private/Vendor/scssphp/scss.inc.php';
     }
     
+	# Auslesen Konfiguration ext_conf_template.txt
 
-		
-	# Abfrage, ob es im Backend unter Extensions eine Configurationsdatei gibt, wenn ja dann soll diese ausgeführt werden.
-	# die Konfiguration für das Backend ist in der Datei ext_conf_template.txt
-	# The extension configuration -----------------------------------------------------------------------#
-   
-	
-	if (class_exists('TYPO3\CMS\Core\Configuration\ExtensionConfiguration')) {
-		$extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
-			\TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class
-			);
-		$Configuration = $extensionConfiguration->get('t3up');
-	} else {
-		$Configuration = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get('t3up');
-		if (!is_array($Configuration)) {
-			$Configuration = unserialize($Configuration);
-		}
-	}
+	$extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+		\TYPO3\CMS\Core\Configuration\ExtensionConfiguration::class
+		);
+	$Configuration = $extensionConfiguration->get('t3up');
+
 
 	if ($Configuration['TCEForm']) {
 		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/TCEForm.tsconfig'");
@@ -51,8 +41,14 @@ call_user_func(static function () {
 	
 	# Enable/dissable the TCEMain -> addPageTSConfig
 	if ($Configuration['TCEFrames']) {
-		ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Design.tsconfig'");
+	    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/Design.tsconfig'");
 	}
+	
+	# Enable/dissable the TCEMain -> addPageTSConfig
+	if ($Configuration['TCEBootstrapFrames']) {
+	    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/TsConfig/BootstrapDesign.tsconfig'");
+	}
+	
 	
 	# Enable/dissable the RTE -> addPageTSConfig
 	if ($Configuration['RTE']) {
