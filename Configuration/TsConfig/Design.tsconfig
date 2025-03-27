@@ -29,6 +29,10 @@ TCEFORM {
                    		colored			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored
 					}
 				}   
+				table {
+					addItems { 
+					}
+				}  				
 				header {
 					addItems { 
                     	white  			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
@@ -54,30 +58,3 @@ TCEFORM {
 		} // frame_class
 	} // tt_content  
 } // TCEFORM
-
-[backend.user.isAdmin]
-    TCEFORM {
-        tt_content {
-            frame_class {
-                types {
-                    text {
-                        addItems {  
-                            danger          = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.danger 
-                            info            = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.info 
-                            success         = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.success 
-                            warning         = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.warning                                                                         
-                        }
-                    }     
-                    textmedia {
-                        addItems { 
-                            danger          = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.danger 
-                            info            = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.info 
-                            success         = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.success 
-                            warning         = LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.warning                                                                         
-                        }
-                    }    
-                }
-            }
-       }   
-    }
-[GLOBAL]

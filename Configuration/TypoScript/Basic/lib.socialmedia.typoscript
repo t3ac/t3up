@@ -78,19 +78,19 @@ lib.socialmedia.10 {
         50.wrap                       = <li role="menuitem">|</li>     
       
         ## Wird nur angezeigt, wenn Konstante ein String ist
-        60                            = COA
-        60.if.isTrue                  = {$page.socialmedia.whatsapp}
-        60.10                         = IMAGE
-        60.10.file                    = EXT:t3up/Resources/Public/Icons/wa.svg
-        60.10.typolink.parameter      = {$page.socialmedia.whatsapp} _blank
-        60.10.typolink.title          = whatsapp        
-        60.10.wrap                    = <span class="symbol d-block wa pt-1">|</span>
-        60.20                         = TEXT
-        60.20.value                   = WhatsApp        
-        60.20.typolink.parameter      = {$page.socialmedia.whatsapp} _blank
-        60.20.typolink.title          = whatsapp 
-        60.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
-        60.wrap                       = <li class="wa" role="menuitem">|</li>   
+        70                            = COA
+        70.if.isTrue                  = {$page.socialmedia.whatsapp}
+        70.10                         = IMAGE
+        70.10.file                    = EXT:t3up/Resources/Public/Icons/wa.svg
+        70.10.typolink.parameter      = {$page.socialmedia.whatsapp} _blank
+        70.10.typolink.title          = whatsapp        
+        70.10.wrap                    = <span class="symbol d-block wa pt-1">|</span>
+        70.20                         = TEXT
+        70.20.value                   = WhatsApp        
+        70.20.typolink.parameter      = {$page.socialmedia.whatsapp} _blank
+        70.20.typolink.title          = whatsapp 
+        70.20.wrap                    = <span class="socialtext {$page.socialmedia.hidelabel}">|</span>        
+        70.wrap                       = <li class="wa" role="menuitem">|</li>   
         
         ## Wird nur angezeigt, wenn Konstante ein String ist
         70                            = COA

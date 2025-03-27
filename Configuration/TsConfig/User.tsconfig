@@ -44,8 +44,4 @@ TCAdefaults.pages.hidden = 0
 # Activate the thumnails
 setup.override.thumbnailsByDefault = 1
 
-# disable direct upload
-setup.default.edit_docModuleUpload = 0
-setup.override.edit_docModuleUpload = 0
-
 

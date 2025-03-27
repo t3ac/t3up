@@ -48,6 +48,49 @@ $padding = array(
             'default'    => '',
         ],
     ],
+    'padding_side_class'  => [
+        'exclude' => true,
+        'label'   => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_side',
+        'config'  => [
+            'type'       => 'select',
+            'renderType' => 'selectSingle',
+            'items'      => [
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_none', '0'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_1', '1'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_2', '2'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_3', '3'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_4', '4'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_5', '5'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_6', '6'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_7', '7'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_8', '8'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_9', '9'],
+            ],
+            'default'    => '',
+        ],
+    ],
+    'padding_inner_class'  => [
+        'exclude' => true,
+        'displayCond' => 'FIELD:CType:=:textmedia',
+        'label'   => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_inner',
+        'config'  => [
+            'type'       => 'select',
+            'renderType' => 'selectSingle',
+            'items'      => [
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_none', '0'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_1', '1'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_2', '2'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_3', '3'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_4', '4'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_5', '5'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_6', '6'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_7', '7'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_8', '8'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:space_class_9', '9'],
+            ],
+            'default'    => '',
+        ],
+    ],
 );
 
 // **********************************************************************************
@@ -64,7 +107,7 @@ $padding = array(
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'tt_content',
     'padding_fields',
-    'padding_before_class,padding_after_class'
+    'padding_before_class,padding_side_class,padding_after_class,padding_inner_class'
     );
 
 // **********************************************************************************

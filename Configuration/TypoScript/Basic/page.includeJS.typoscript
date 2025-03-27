@@ -65,9 +65,7 @@ page.includeJSFooterlibs {
 		mobilmenu.if.equals			= meanmenu	  
 		mobilmenu.async				= 1
 
-		mmenupoly				= EXT:t3up/Resources/Public/JavaScript/mmenu.polyfills.js
-		mmenupoly.if.value			= {$page.components.mobilmenu}		
-		mmenupoly.if.equals			= mmenu	
+
 
 		mmenu					= EXT:t3up/Resources/Public/JavaScript/mmenu.js
 		mmenu.if.value				= {$page.components.mobilmenu}		

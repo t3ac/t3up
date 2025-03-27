@@ -1,14 +1,10 @@
-lib.level0 = HMENU 
-lib.level0 {
-  entryLevel = 0
+lib.level1 = HMENU 
+lib.level1 {
+  entryLevel = 1
   1 = TMENU
   1.wrap = <ul class="dropdown-menu" aria-labelledby="dropdown01">|</ul>
   1.NO.wrapItemAndSub = <li>|</li>
   1.NO.ATagParams = class="dropdown-item"
-  1.ACT = 1  
-  1.ACT <  .1.NO
-  1.ACT.wrapItemAndSub = <li class="act">|</li>
-  1.ACT.ATagParams = class="dropdown-item"  
   1.CUR = 1  
   1.CUR <  .1.NO
   1.CUR.wrapItemAndSub = <li class="cur">|</li>
@@ -16,13 +12,6 @@ lib.level0 {
   1.expAll = 1
   1.wrap = <a class="nav-link extend" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level-1"></a><ul class="dropdown-menu" aria-labelledby="dropdown01">|</ul>
 }
-
-lib.level1 < .lib.level0
-lib.level1 {
-  entryLevel = 1
-  1.wrap = <a class="nav-link extend" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level-2"></a><ul class="dropdown-menu" aria-labelledby="dropdown02">|</ul>
-}
-
 
 lib.level2 < .lib.level1
 lib.level2 {
@@ -81,20 +70,9 @@ lib.navigation.breadcrumbxl {
     20 {
 
         10 < lib.home
-    
-        10 = COA
-        10.10 = TEXT
-        10.data = levelfield : 0, nonav  
-        10.10.wrap  = <span class="startpage nonav|">     
-        10.20 = TEXT
-        10.20.data = leveltitle : 0  
-        10.20.typolink.parameter.data = leveluid : 0
-        10.20.wrap = |</span>
-        10.30 < lib.level0
-        10.wrap = <li class="nav-item d-flex  dropdown">|</li>
         
         20 = COA
-        20.if.isTrue.data = leveluid : 1        
+        20.if.isTrue.data = leveluid : 2        
         20.10 = TEXT
         20.10.data = levelfield : 1, nonav  
         20.10.wrap  = <span class="nonav|">     
@@ -104,9 +82,21 @@ lib.navigation.breadcrumbxl {
         20.20.wrap = |</span>
         20.30 < lib.level1
         20.wrap = <li class="nav-item d-flex  dropdown">|</li>
-                
+        
+        21 = COA
+        21.if.isFalse.data = leveluid : 2
+        21.if.isTrue.data = leveltitle : 1 
+        21.10 = TEXT
+        21.10.data = levelfield : 1, nonav  
+        21.10.wrap  = <span class="nonav|">  
+        21.20 = TEXT
+        21.20.data = leveltitle : 1  
+        21.20.typolink.parameter.data = leveluid : 1
+        21.20.wrap = |</span>   
+        21.wrap = <li class="nav-item ">|</li>               
+        
         30 = COA
-        30.if.isTrue.data = leveluid : 2
+        30.if.isTrue.data = leveluid : 3
         30.10 = TEXT
         30.10.data = levelfield : 2, nonav  
         30.10.wrap  = <span class="nonav|">     
@@ -116,9 +106,21 @@ lib.navigation.breadcrumbxl {
         30.20.wrap = |</span>
         30.30 < lib.level2
         30.wrap = <li class="nav-item d-flex  dropdown">|</li>
-                     
+        
+        31 = COA
+        31.if.isFalse.data = leveluid : 3
+        31.if.isTrue.data = leveltitle : 2  
+        31.10 = TEXT
+        31.10.data = levelfield : 2, nonav  
+        31.10.wrap  = <span class="nonav|">  
+        31.20 = TEXT
+        31.20.data = leveltitle : 2  
+        31.20.typolink.parameter.data = leveluid : 2
+        31.20.wrap = |</span>   
+        31.wrap = <li class="nav-item ">|</li>        
+             
         40 = COA
-        40.if.isTrue.data = leveluid : 3        
+        40.if.isTrue.data = leveluid : 4        
         40.10 = TEXT
         40.10.data = levelfield : 3, nonav  
         40.10.wrap  = <span class="nonav|">     
@@ -128,9 +130,21 @@ lib.navigation.breadcrumbxl {
         40.20.wrap = |</span>
         40.30 < lib.level3
         40.wrap = <li class="nav-item d-flex  dropdown">|</li>
-                
+        
+        41 = COA
+        41.if.isFalse.data = leveluid : 4
+        41.if.isTrue.data = leveltitle : 3  
+        41.10 = TEXT
+        41.10.data = levelfield : 3, nonav  
+        41.10.wrap  = <span class="nonav|">  
+        41.20 = TEXT
+        41.20.data = leveltitle : 3  
+        41.20.typolink.parameter.data = leveluid : 3
+        41.20.wrap = |</span>   
+        41.wrap = <li class="nav-item ">|</li>         
+        
         50 = COA
-        50.if.isTrue.data = leveluid : 4      
+        50.if.isTrue.data = leveluid : 5        
         50.10 = TEXT
         50.10.data = levelfield : 4, nonav  
         50.10.wrap  = <span class="nonav|">     
@@ -140,9 +154,21 @@ lib.navigation.breadcrumbxl {
         50.20.wrap = |</span>
         50.30 < lib.level4
         50.wrap = <li class="nav-item d-flex  dropdown">|</li> 
+
+        51 = COA
+        51.if.isFalse.data = leveluid : 5
+        51.if.isTrue.data = leveltitle : 4  
+        51.10 = TEXT
+        51.10.data = levelfield : 4, nonav  
+        51.10.wrap  = <span class="nonav|">  
+        51.20 = TEXT
+        51.20.data = leveltitle : 4  
+        51.20.typolink.parameter.data = leveluid : 4
+        51.20.wrap = |</span>   
+        51.wrap = <li class="nav-item ">|</li>
         
         60 = COA
-        60.if.isTrue.data = leveluid : 5
+        60.if.isTrue.data = leveluid : 6 
         60.10 = TEXT
         60.10.data = levelfield : 5, nonav  
         60.10.wrap  = <span class="nonav|">     
@@ -152,9 +178,21 @@ lib.navigation.breadcrumbxl {
         60.20.wrap = |</span>
         60.30 < lib.level5
         60.wrap = <li class="nav-item d-flex  dropdown">|</li> 
-                
+        
+        61 = COA
+        61.if.isFalse.data = leveluid : 6
+        61.if.isTrue.data = leveltitle : 5  
+        61.10 = TEXT
+        61.10.data = levelfield : 5, nonav  
+        61.10.wrap  = <span class="nonav|">  
+        61.20 = TEXT
+        61.20.data = leveltitle : 5  
+        61.20.typolink.parameter.data = leveluid : 5
+        61.20.wrap = |</span>   
+        61.wrap = <li class="nav-item ">|</li>
+        
         70 = COA
-        70.if.isTrue.data = leveluid : 6 
+        70.if.isTrue.data = leveluid : 7  
         70.10 = TEXT
         70.10.data = levelfield : 6, nonav  
         70.10.wrap  = <span class="nonav|">     
@@ -164,9 +202,21 @@ lib.navigation.breadcrumbxl {
         70.20.wrap = |</span>
         70.30 < lib.level6
         70.wrap = <li class="nav-item d-flex  dropdown">|</li>  
-                
+        
+        71 = COA
+        71.if.isFalse.data = leveluid : 7
+        71.if.isTrue.data = leveltitle : 6  
+        71.10 = TEXT
+        71.10.data = levelfield : 6, nonav  
+        71.10.wrap  = <span class="nonav|">  
+        71.20 = TEXT
+        71.20.data = leveltitle : 6  
+        71.20.typolink.parameter.data = leveluid : 6
+        71.20.wrap = |</span>   
+        71.wrap = <li class="nav-item ">|</li>
+        
         80 = COA
-        80.if.isTrue.data = leveluid : 7  
+        80.if.isTrue.data = leveluid : 8  
         80.10 = TEXT
         80.10.data = levelfield : 7, nonav  
         80.10.wrap  = <span class="nonav|">     
@@ -176,9 +226,21 @@ lib.navigation.breadcrumbxl {
         80.20.wrap = |</span>
         80.30 < lib.level7
         80.wrap = <li class="nav-item d-flex  dropdown">|</li> 
-               
+        
+        81 = COA
+        81.if.isFalse.data = leveluid : 8
+        81.if.isTrue.data = leveltitle : 7  
+        81.10 = TEXT
+        81.10.data = levelfield : 7, nonav  
+        81.10.wrap  = <span class="nonav|">  
+        81.20 = TEXT
+        81.20.data = leveltitle : 7  
+        81.20.typolink.parameter.data = leveluid : 7
+        81.20.wrap = |</span>   
+        81.wrap = <li class="nav-item ">|</li>
+       
         90 = COA
-        90.if.isTrue.data = leveluid : 8
+        90.if.isTrue.data = leveluid : 9
         90.10 = TEXT
         90.10.data = levelfield : 8, nonav  
         90.10.wrap  = <span class="nonav|">     
@@ -189,6 +251,18 @@ lib.navigation.breadcrumbxl {
         90.30 < lib.level8
         90.wrap = <li class="nav-item d-flex  dropdown">|</li>  
         
+        91 = COA
+        91.if.isFalse.data = leveluid : 9
+        91.if.isTrue.data = leveltitle : 8  
+        91.10 = TEXT
+        91.10.data = levelfield : 8, nonav  
+        91.10.wrap  = <span class="nonav|">  
+        91.20 = TEXT
+        91.20.data = leveltitle : 8  
+        91.20.typolink.parameter.data = leveluid : 8
+        91.20.wrap = |</span>   
+        91.wrap = <li class="nav-item ">|</li>  
+
         wrap = <ul class="{$page.breadcrumb.breadcrumbulwrap}">|</ul>
     }
     wrap = <nav class="{$page.breadcrumb.breadcrumbwrap}">|</nav>
