@@ -552,6 +552,10 @@
         <trans-unit id="dynheader">
             <source>Dynamic header-height by mouse-scrolling, has a own javascript.</source>
         </trans-unit>
+        <trans-unit id="area">
+            <source>Wrap inside the header exclude the logo.</source>
+        </trans-unit>
+
 
         /* -- META ------------------------- */ 
         <trans-unit id="meta.author">

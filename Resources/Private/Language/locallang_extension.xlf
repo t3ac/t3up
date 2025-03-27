@@ -49,7 +49,11 @@
             </trans-unit>
             <trans-unit id="TCEFrames">
                 <source>Shows div. Frames to select</source>
-            </trans-unit>            
+            </trans-unit>   
+            <trans-unit id="TCEBootstrapFrames">
+                <source>Shows the Boostrapframes to select</source>
+            </trans-unit>               
+                     
             <trans-unit id="RTE">
                 <source>Rich-text-editor configuration (off/on)</source>
             </trans-unit>

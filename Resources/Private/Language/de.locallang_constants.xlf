@@ -256,11 +256,11 @@
         </trans-unit>
         <trans-unit id="sideankercolorBg">
             <source>Color of the sideanker background</source>
-            <target state="translated">Hintergrundfarbe der Sidenker</target>
+            <target state="translated">Hintergrundfarbe der Sideanker</target>
         </trans-unit> 
         <trans-unit id="sideankerlicolor">
             <source>Color of the list points</source>
-            <target state="translated">Farbe der Listenpunkte der Sidenker</target>
+            <target state="translated">Farbe der Listenpunkte der Sideanker</target>
         </trans-unit> 
 
  

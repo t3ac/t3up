@@ -127,12 +127,24 @@
             <trans-unit id="padding_after">
                 <source>Padding After</source>
                 <target state="translated">Innenabstand danach</target>  
-            </trans-unit>      
-             
+            </trans-unit>    
+                
+                
+            <trans-unit id="padding_side">
+               <source>Padding side</source>
+               <target state="translated">Seitlichen Innenabstand</target> 
+            </trans-unit>        
+            
+            <trans-unit id="padding_inner">
+               <source>Innerpadding</source>
+               <target state="translated">Inneren Innenabstand</target>                
+            </trans-unit>
+ 
             <trans-unit id="space_class">
                 <source>Inner Padding</source>
                 <target state="translated">Innenabstand</target>            
-            </trans-unit>          
+            </trans-unit>   
+                   
             <trans-unit id="space_class_none">
                 <source>none</source>
                 <target state="translated">Standard</target>

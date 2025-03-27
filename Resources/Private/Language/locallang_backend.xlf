@@ -96,12 +96,21 @@
     /* -- TT-CONTENT PADDING----------- */
     
         <trans-unit id="padding_before">
-           <source>Padding Before</source>
+           <source>Padding before</source>
         </trans-unit>
         
         <trans-unit id="padding_after">
-           <source>Padding After</source>
+           <source>Padding after</source>
         </trans-unit>
+         
+        <trans-unit id="padding_side">
+           <source>Padding side</source>
+        </trans-unit>        
+        
+        <trans-unit id="padding_inner">
+           <source>Innerpadding</source>
+        </trans-unit>
+       
         
         <trans-unit id="space_class">
            <source>Inner Padding</source>
