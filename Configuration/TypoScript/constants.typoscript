@@ -25,6 +25,8 @@ page {
         breadcrumbtext          = 1
         # cat= breadcrumbs/05; type= string;label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:breadcrumbtextsize
         breadcrumbtextsize      = 80%
+        # cat= breadcrumbs/06; type= boolean;label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:breadcrumbtop
+        breadcrumbtop          = 
     }
 }
 
@@ -86,6 +88,9 @@ page.color {
     topLinkColor            = #666
     # cat= colors/header/08; type= color; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:topLinkHoverColor
     topLinkHoverColor       = inherit
+    # cat= colors/header/09; type= color; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:breadcrumbtopcolor
+    breadcrumbtop           = inherit
+    
     
     # cat= colors/navigationcolor/020; type= color; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:navLinkColor
     navLinkColor            = #333   
@@ -624,7 +629,7 @@ page.totop {
 
 page.typography {
     # cat= typography/bread/01; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:fontsize
-    fontsize            = clamp(.9rem, 1rem, 1.2rem)
+    fontsize            = .9rem
     # cat= typography/bread/02; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:boldweight
     boldweight          = 600
     # cat= typography/bread/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:lineheight

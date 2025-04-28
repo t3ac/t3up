@@ -46,7 +46,8 @@ plugin.tx_wsscss.variables {
     logowidth                       = {$page.header.logowidth}
     logoIIwidth                     = {$page.header.logoIIwidth} 
     logostickywidth                 = {$page.header.logostickywidth}    
-    mobillogowidth                  = {$page.header.mobillogowidth}    
+    mobillogowidth                  = {$page.header.mobillogowidth}  
+    breadcrumbtop                   = {$page.color.breadcrumbtop}
     
     # Navigation 
     navLinkColor                    = {$page.color.navLinkColor}    
