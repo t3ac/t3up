@@ -12,6 +12,9 @@ jQuery(document).ready(function($) {
        if ($(window).scrollTop() > 45) {
             $('.page').removeClass('trans');
             $('.page').unbind('click');
+            $('header').addClass('shadow');     
+      } else  {
+            $('header').removeClass('shadow');     
       }
 	});
 	
