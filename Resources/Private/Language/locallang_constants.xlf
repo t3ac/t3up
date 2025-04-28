@@ -29,7 +29,10 @@
          <trans-unit id="breadcrumbtextsize">
             <source>Fontsize</source>
         </trans-unit>
-
+         <trans-unit id="breadcrumbtop">
+            <source>Position of the breadcrumb, top or content</source>
+        </trans-unit>
+        
         /* -- Cms Components ------------------------- */
          <trans-unit id="components">
             <source>Components</source>
@@ -162,6 +165,9 @@
         </trans-unit>
         <trans-unit id="headcontainer">
             <source>Additional Classes in the header-area: (default: container)</source>
+        </trans-unit>
+         <trans-unit id="breadcrumbtopcolor">
+            <source>Backgroundcolor of the breadcrumb in the header (default inherit)</source>
         </trans-unit>
 
         /* Headercolor */
@@ -984,11 +990,15 @@
             <source>Size, lineheight and weight for p, li, td, th</source>
         </trans-unit> 
          <trans-unit id="symbolsize">
-            <source>Fontsize for the symbols (Default 15px)</source>
+            <source>Fontsize for the symbols (Default 100%)</source>
         </trans-unit>
          <trans-unit id="navigationfontweight">
             <source>Fontweight for the first level navigation (600)</source>
         </trans-unit>
+         <trans-unit id="socialsymbolfontsize">
+            <source>Fontsize for the socialsymbols (Default 175%)</source>
+        </trans-unit>        
+        
         
      </body>
 </file>

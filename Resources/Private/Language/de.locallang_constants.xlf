@@ -1167,6 +1167,14 @@
             <source>Fontsize in footerbase-area (default 100%)</source>
             <target state="translated">Schriftgröße in der Footer-Abschlußzeile (Vorgabe 100%)</target>
         </trans-unit>
+         <trans-unit id="navigationfontweight">
+            <source>Fontweight for the first level navigation (600)</source>
+            <target state="translated">Schriftschnitt der obersten Navigationsebene (Vorgabe 600)</target>
+        </trans-unit>
+         <trans-unit id="socialsymbolfontsize">
+            <source>Fontsize for the socialsymbols (Default 175%)</source>
+            <target state="translated">Schriftgröße in der Social Symbole (Vorgabe 175%)</target>
+        </trans-unit>
 
     </body>
 
