@@ -36,6 +36,7 @@ data-namespace-typo3-fluid="true">
 	
 			</f:else>
 		</f:if>
+		<f:render section="breadcrumb" arguments="{_all}"/>
 	</header>
 </f:section>
 
@@ -49,6 +50,8 @@ data-namespace-typo3-fluid="true">
 		<f:if condition="{menuLanguage}"><f:render partial="SpecialMenu/Language" arguments="{_all}"/></f:if>
 	</ul>
 </f:section>
+
+
 
 <f:section name="navi">
     <f:if condition="{navstyle} == 1">
@@ -68,6 +71,19 @@ data-namespace-typo3-fluid="true">
     </f:if>
 </f:section>
 
+<f:section name="breadcrumb">
+       <f:if condition="{breadcrumbtop} = 1"> 
+           <div class="breadcrumbtop">              
+	           <div class="container">
+	               <div class="row">                    
+	                       <f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
+	               </div>
+	           </div>
+           </div>           
+       </f:if>             
+</f:section>
+
 </html>
+
 
 
