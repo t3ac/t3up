@@ -7,3 +7,5 @@
             'addRootLineFields' => 'basecolor,nonav' eingetragen wqerden
 27.10.2024 - Korrektur der Sprachdatei. Neue CKEditor-Version.
 13.12.2024 - Ändern der Javascripte und Sass-Dateien für Sticky-Header
+28.04.2025 - Ändern der Breadcrumb in Position im Header/ im Content
+            - Version für scssphp ws_scss 13.0.02, Problem mit 13.1.
