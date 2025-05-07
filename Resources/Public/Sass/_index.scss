@@ -126,10 +126,10 @@ main {                            hyphens: auto; -webkit-hyphens: auto; -webkit-
     p                               {margin-bottom: $v033;}
     li                              {margin-bottom: $v033;}
 
-    ul                              {padding: 0 0 $v1 $v1; list-style-type: square;}
-    ul ul                           {padding: 0 0 0   $v2; list-style-type: square;}
-    ul ul ul                        {padding: 0 0 0   $v3; list-style-type: square;}
-    ol                              {padding: 0 0 $v1 $v1;}
+    ul                              {padding: 0 0 $v050 $v125; list-style-type: square;}
+    ul ul                           {padding: 0 0 0 $v175;     list-style-type: square;}
+    ul ul ul                        {padding: 0 0 0 $v2;     list-style-type: square;}
+    ol                              {padding: 0 0 $v050 $v125;}
 }
 
 @media screen and (min-width:  576px){

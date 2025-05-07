@@ -8,6 +8,7 @@ main{
     .content a:hover,
     .contentRight a:hover                               {color: $linkHoverColor;}
     .content div > p:last-of-type                       {margin-bottom: 0;}
+    .content p ~ ul                                     {margin-top: $v033;}   
             
     /* frame info */
     .frame-info                                         {border: 1px solid $info; background-color:rgba(lighten($info, 55%),1); transition: all ease 0.3s; 

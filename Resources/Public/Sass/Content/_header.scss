@@ -54,12 +54,12 @@ header {                                        background-color: $headerBgColor
                             
     }
 
-    li.languagemenu {                           display: block;
+    li.languagemenu {                           display: block; 
         a                                       {font-weight: bold; transition: color ease 0.3s; padding: 0; border-bottom: 2px solid transparent;}
         span                                    {text-transform: uppercase; display: block;}
-        > &.active a                            {border-bottom: 2px solid $topLinkColor;}
-        
-
+        > .active a                             {border-bottom: 2px solid $topLinkColor;}
+        > .inactive                             {opacity: .8;}  
+        > .inactive:hover                       {opacity: 1;}  
         &:before                                {content:"|"; padding-right: $v075;}
      }
     
