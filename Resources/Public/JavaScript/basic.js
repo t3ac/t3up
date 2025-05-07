@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
-	var $body = $('body'),
+	
+    
+   var $body = $('body'),
         $stH = $('.sticky-header').height();
         $stH = $('header.fixed').height();
 	
@@ -138,7 +140,7 @@ jQuery(document).ready(function($) {
 	footer = $('footer').height();
 	
 	if ( $(window).width() < 576 ) {
-	   	$('.triggable > .trigger').click(function(){
+	   	$('.trigger').click(function(){
 			$(this).next().slideToggle( "slow" );
 			$(this).toggleClass('active');
 			if ($(this).attr('aria-expanded') === 'true' ) {
