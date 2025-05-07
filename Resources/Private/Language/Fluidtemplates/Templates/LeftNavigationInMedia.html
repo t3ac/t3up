@@ -1,0 +1,38 @@
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	 <f:layout name="Standard" />
+	 <f:section name="Content">
+		<f:render partial="Header.html" section="list" arguments="{_all}" />
+		<main id="content" class="leftNavigation">
+			<div class="overlay"></div> 
+			<div class="container">  
+				<div class="row">
+					<div class="d-none d-lg-block col-lg-3 left">
+						<div class="subnav pt-3"><f:render partial="Submenu/Submenu" arguments="{_all}"/></div>
+					</div>		  
+					<div class="col-12 col-lg-9 middle">	
+						<f:format.raw>{media}</f:format.raw>
+						<f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
+						<div class="col-12 content">
+							<f:if condition="{data.deltitle} != '1'">
+								<f:if condition="{data.showtitle} == 0">
+									<f:then>
+										<f:format.nl2br><h1 class="col-12">{title}</h1></f:format.nl2br>
+										</f:then> 
+									<f:else>
+										<h1 class="notvissible">{title}</h1>  
+									</f:else> 
+								</f:if>
+							</f:if>
+							<!--TYPO3SEARCH_begin--> 
+								<f:format.raw>{content}</f:format.raw>
+							<!--TYPO3SEARCH_end--> 
+							<f:if condition="{data.previousnext}">
+								<f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
+							</f:if>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</main>
+	  </f:section>
+</html>
