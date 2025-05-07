@@ -576,42 +576,6 @@
             <source>Location of the logo-file (recommended SVG), with leading "/".</source>
             <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/".</target> 
         </trans-unit>
-        <trans-unit id="logo.1">
-            <source>Location of the english logo-file</source>
-            <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Englisch - locale: en_US</target>
-        </trans-unit>
-        <trans-unit id="logo.2">
-            <source>Location of the french logo-file</source>
-            <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Französisch - locale: fr_FR</target>
-        </trans-unit> 
-        <trans-unit id="logo.3">
-            <source>Location of the italian logo-file</source>
-            <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Italienisch - locale: it_IT</target>
-        </trans-unit> 
-        <trans-unit id="logo.4">
-            <source>Location of the polish logo-file</source>
-            <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Polnisch - locale: pl_PL</target>
-        </trans-unit>
-        <trans-unit id="logo.5">
-            <source>Location of the turkey logo-file</source>
-            <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Türkisch - locale: tr_TR</target>
-        </trans-unit> 
-        <trans-unit id="logo.6">
-            <source>Location of the spanish logo-file</source>
-            <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Spanisch - locale: es_ES</target>
-        </trans-unit> 
-        <trans-unit id="logo.7">
-            <source>Location of the portuguese logo-file</source>
-            <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Portugiesisch - locale: pt_PT</target>
-        </trans-unit>
-        <trans-unit id="logo.8">
-            <source>Location of the romanian logo-file</source>
-            <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Romanian - locale: ro_RO</target>
-        </trans-unit> 
-        <trans-unit id="logo.9">
-            <source>Location of the chinese logo-file</source>
-            <target state="translated">Logo-Datei mit Pfad: (empfohlen SVG), mit folgendem "/". Chinesisch - locale: cn_CN</target>
-        </trans-unit> 
         <trans-unit id="alttext">
             <source>Alttext for the Logo in the header</source>
             <target state="translated">Alttext des Logos</target>
@@ -680,6 +644,11 @@
             <source>Additional Classes in the header-area: (default: container)</source>
             <target state="translated">Zusätzliche CSS-Klasse im Headerbereich</target> 
         </trans-unit>
+        <trans-unit id="area">
+            <source>Wrap inside the header exclude the logo.</source>
+            <target state="translated">Zusätzlicher wrap im Header exkludiert aber das Logo.</target> 
+        </trans-unit>
+
 
         /* -- META ------------------------- */
         <trans-unit id="meta.author">
