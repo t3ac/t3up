@@ -1,5 +1,5 @@
 ##############
-###  PAGE  ###
+###    PAGE###
 ##############
 
 styles.content.loginform.recursive      = 4
@@ -37,7 +37,7 @@ page {
         # cat= components/01; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:container
         container           = 1440
         # cat= components/02; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:gutter
-        gutter              = clamp(1.5rem, 2.8vw, 1.75rem)
+        gutter              = clamp(12px, 2.8vw, 24px)
         # cat= components/04; type= options[empty,access]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:access
         access              = access
         # cat= components/05; type= options[empty,meanmenu,mmenu,simplemenu]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:mobil
@@ -312,19 +312,19 @@ page.footer{
     # cat= footer/bg1/01; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:address
     address             = 
     # cat= footer/bg1/02; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:addressWrap
-    addressWrap         = <div id= "contact" class= "triggable col-12 col-sm-6 col-lg-3">|</div>
+    addressWrap         = <div id= "contact" class= "col-12 col-sm-6 col-lg-3">|</div>
     # cat= footer/bg1/03; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service1
     service1            = 
     # cat= footer/bg1/04; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service1Wrap
-    service1Wrap            = <div class= "triggable col-12 col-sm-6 col-lg-3">|</div>
+    service1Wrap            = <div class= "col-12 col-sm-6 col-lg-3">|</div>
     # cat= footer/bg1/05; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service2
     service2            = 
     # cat= footer/bg1/06; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service2Wrap
-    service2Wrap            = <div class= "triggable col-12 col-sm-6 col-lg-3">|</div> 
+    service2Wrap            = <div class= "col-12 col-sm-6 col-lg-3">|</div> 
     # cat= footer/bg1/07; type= int+; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service3
     service3            = 
     # cat= footer/bg1/08; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:service3Wrap
-    service3Wrap            = <div class= "triggable col-12 col-sm-6 col-lg-3">|</div>    
+    service3Wrap            = <div class= "col-12 col-sm-6 col-lg-3">|</div>    
     # cat= footer/bg1/09; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:footer1Wrap
     footer1Wrap         = <div class= "footer1"><div class= "container"><div class= "row p-0  py-sm-3 px-xxl-0 py-lg-5">|</div></div></div> 
 
@@ -388,7 +388,7 @@ page.header{
     # cat= headerarea/03; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headcontainer    
     headcontainer           = container d-flex
 
-    # cat= headerarea/04; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:headarea 
+    # cat= headerarea/04; type= string; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:area 
     area                = d-flex
 }
 
