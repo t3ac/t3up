@@ -21,6 +21,10 @@ call_user_func(static function () {
         require_once $extPath . 'Resources/Private/Vendor/scssphp/scss.inc.php';
     }
     
+	# Auslesen Images
+	ExtensionManagementUtility::addPageTsConfig("@import 'EXT:t3up/Configuration/TsConfig/TCEIMAGE.tsconfig'");
+	
+	
 	# Auslesen Konfiguration ext_conf_template.txt
 
 	$extensionConfiguration = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
