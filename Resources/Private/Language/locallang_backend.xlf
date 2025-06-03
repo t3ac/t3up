@@ -216,6 +216,135 @@
         <trans-unit id="containerhandle">
            <source>Handle as a container</source>
         </trans-unit>
+
+			/* -- LIGHTBOX ------------------------ */
+		    <trans-unit id="lightboxstyle">
+			     <source>Lightbox effects</source>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle0">
+			     <source>none</source>
+		    </trans-unit>		    
+		    <trans-unit id="lightboxstyle1">
+			     <source>Simple effect</source>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle2">
+			     <source>Simple effect with close buttton</source>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle3">
+			     <source>Gallery with Navigation</source>
+		    </trans-unit>		    
+		    <trans-unit id="lightboxstyle4">
+			     <source>Gallery with Arrows</source>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle5">
+			     <source>Gallery with Navigation and Arrows</source>
+		    </trans-unit>
+
+            <trans-unit id="inf">
+                 <source>Enable the copyright view</source>
+            </trans-unit>   
+            
+            <trans-unit id="rollover">
+                 <source>Enable the rollover effect</source>
+            </trans-unit>     
+            
+             <trans-unit id="spacing">
+                 <source>Spacing</source>
+            </trans-unit>   
+             <trans-unit id="spacing0">
+                 <source>Standard</source>
+            </trans-unit>  
+             <trans-unit id="spacing1">
+                 <source>0,25</source>
+            </trans-unit>   
+             <trans-unit id="spacing2">
+                 <source>0,33</source>
+            </trans-unit>   
+             <trans-unit id="spacing3">
+                 <source>0,5</source>
+            </trans-unit>   
+             <trans-unit id="spacing4">
+                 <source>0,66</source>
+            </trans-unit>       
+             <trans-unit id="spacing5">
+                 <source>0,75</source>
+            </trans-unit>  
+             <trans-unit id="spacing6">
+                 <source>1</source>
+            </trans-unit>       
+             <trans-unit id="spacing7">
+                 <source>1,5</source>
+            </trans-unit>      
+             <trans-unit id="spacing8">
+                 <source>2</source>
+            </trans-unit>  
+             <trans-unit id="spacing9">
+                 <source>3</source>
+            </trans-unit>           
+            
+				
+			/* -- IMAGES -------------------------------- */
+			<trans-unit id="image.05">
+				<source>Column width 5%</source>
+			</trans-unit>	
+			<trans-unit id="image.10">
+				<source>Column width 10%</source>
+			</trans-unit>	
+			<trans-unit id="image.15">
+				<source>Column width 15%</source>
+			</trans-unit>	
+			<trans-unit id="image.20">
+				<source>Column width 20%</source>
+			</trans-unit>	
+			<trans-unit id="image.25">
+				<source>Column width 25%</source>
+			</trans-unit>	
+			<trans-unit id="image.30">
+				<source>Column width 30%</source>
+			</trans-unit>	
+			<trans-unit id="image.35">
+				<source>Column width 35%</source>
+			</trans-unit>	
+			<trans-unit id="image.40">
+				<source>Column width 40%</source>
+			</trans-unit>	
+			<trans-unit id="image.45">
+				<source>Column width 45%</source>
+			</trans-unit>	
+			<trans-unit id="image.50">
+				<source>Column width 50%</source>
+			</trans-unit>	
+			<trans-unit id="image.55">
+				<source>Column width 55%</source>
+			</trans-unit>	
+			<trans-unit id="image.60">
+				<source>Column width 60%</source>
+			</trans-unit>	
+			<trans-unit id="image.65">
+				<source>Column width 65%</source>
+			</trans-unit>	
+			<trans-unit id="image.70">
+				<source>Column width 70%</source>
+			</trans-unit>	
+			<trans-unit id="image.75">
+				<source>Column width 75%</source>
+			</trans-unit>	
+			<trans-unit id="image.80">
+				<source>Column width 80%</source>
+			</trans-unit>	
+			<trans-unit id="image.85">
+				<source>Column width 85%</source>
+			</trans-unit>	
+			<trans-unit id="image.90">
+				<source>Column width 90%</source>
+			</trans-unit>	
+			<trans-unit id="image.95">
+				<source>Column width 95%</source>
+			</trans-unit>	
+			<trans-unit id="image.100">
+				<source>Column width 100%</source>
+			</trans-unit>	
+
         </body>
     </file>
 </xliff>

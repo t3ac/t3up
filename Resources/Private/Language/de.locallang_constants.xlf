@@ -430,7 +430,14 @@
             <source>Including the Subnavigation JavaScript</source>
             <target state="translated">Javascript Subnavigation: jQuery-Scripte für die T3UP-Subnavigationen</target> 
         </trans-unit> 
-
+	<trans-unit id="lightboxs">
+		<source>Lightbox Files</source>
+		<target state="translated">JQuery Lightbox Datei</target>
+	</trans-unit> 
+	<trans-unit id="lightbox">
+		<source>Including the JQuery Lightbox JavaScript(recommended)</source>
+		<target state="translated">JQuery Lightbox JS-Datei einbinden (empfohlen)</target>
+	 </trans-unit> 
 
         /* -- Fonts ------------------------- */
 

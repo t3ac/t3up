@@ -184,6 +184,16 @@
             <source>H4 color (default inherit)</source>
         </trans-unit> 
                      
+        /* Image */
+        <trans-unit id="pictureoverlayfunction">
+             <source>Switch the overlay for images on/off (default off)</source>
+        </trans-unit>           
+        <trans-unit id="pictureoverlay">
+             <source>The overlaycolor for images (default rgb 65 65 65, 0.15)</source>
+        </trans-unit>
+        <trans-unit id="pictureoverlaytext">
+             <source>The overlaytextcolor - alttext - for images (default rgb 0 0 0, 1)</source>
+        </trans-unit> 
 
         /* navigation */
         <trans-unit id="navigationcolor">
@@ -366,7 +376,12 @@
         <trans-unit id="wall">
             <source>Including the jquery.freewall.js</source>
         </trans-unit>         
-     
+	<trans-unit id="lightboxs">
+		<source>Lightbox Files</source>
+	</trans-unit> 
+	<trans-unit id="lightbox">
+		<source>Including the JQuery Lightbox JavaScript(lightboxcontrol recommended)</source>
+	</trans-unit> 
                
             /* -- Fonts ------------------------- */          
             <trans-unit id="font">

@@ -264,6 +264,130 @@
                  <source>Handle as a container</source>
                  <target state="translated">Verhält sich wie ein Container</target>
             </trans-unit>
+			/* -- LIGHTBOX ------------------------ */
+		    <trans-unit id="lightboxstyle">
+			     <source>Lightbox effects</source>
+				 <target state="translated">Lightbox Effekte</target>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle0">
+			     <source>none</source>
+				 <target state="translated">keine</target>
+		    </trans-unit>		    
+		    <trans-unit id="lightboxstyle1">
+			     <source>Simple effect</source>
+				 <target state="translated">Einfacher Effekt</target>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle2">
+			     <source>Simple effect with close buttton</source>
+				 <target state="translated">mit Schließschalter</target>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle3">
+			     <source>Gallery with Navigation</source>
+				 <target state="translated">mit Navigation</target>
+		    </trans-unit>		    
+		    <trans-unit id="lightboxstyle4">
+			     <source>Gallery with Arrows</source>
+				 <target state="translated">mit Pfeilen</target>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle5">
+			     <source>Gallery with Navigation and Arrows</source>
+				 <target state="translated">mit Navigation und Pfeilen</target>
+		    </trans-unit>
+				
+		    <trans-unit id="inf">
+			     <source>Enable the copyright view</source>
+				 <target state="translated">Erlaubt die Copyright Anzeige.</target>
+		    </trans-unit>	
+				
+            	<trans-unit id="rollover">
+                 <source>Enable the rollover effect</source>
+                 <target state="translated">Rollovereffekt.</target>
+            </trans-unit>     
+                
+				
+			/* -- IMAGES -------------------------------- */
+			<trans-unit id="image.05">
+				<source>Column width 5%</source>
+				 <target state="translated">Bildbreite 5%</target>
+			</trans-unit>	
+			<trans-unit id="image.10">
+				<source>Column width 10%</source>
+				<target state="translated">Bildbreite 10%</target>
+			</trans-unit>	
+			<trans-unit id="image.15">
+				<source>Column width 15%</source>
+				<target state="translated">Bildbreite 15%</target>
+			</trans-unit>	
+			<trans-unit id="image.20">
+				<source>Column width 20%</source>
+				<target state="translated">Bildbreite 20%</target>
+			</trans-unit>	
+			<trans-unit id="image.25">
+				<source>Column width 25%</source>
+				<target state="translated">Bildbreite 25%</target>
+			</trans-unit>	
+			<trans-unit id="image.30">
+				<source>Column width 30%</source>
+				<target state="translated">Bildbreite 30%</target>
+			</trans-unit>	
+			<trans-unit id="image.35">
+				<source>Column width 35%</source>
+				<target state="translated">Bildbreite 35%</target>
+			</trans-unit>	
+			<trans-unit id="image.40">
+				<source>Column width 40%</source>
+				<target state="translated">Bildbreite 40%</target>
+			</trans-unit>	
+			<trans-unit id="image.45">
+				<source>Column width 45%</source>
+				<target state="translated">Bildbreite 45%</target>
+			</trans-unit>	
+			<trans-unit id="image.50">
+				<source>Column width 50%</source>
+				<target state="translated">Bildbreite 50%</target>
+			</trans-unit>	
+			<trans-unit id="image.55">
+				<source>Column width 55%</source>
+				<target state="translated">Bildbreite 55%</target>
+			</trans-unit>	
+			<trans-unit id="image.60">
+				<source>Column width 60%</source>
+				<target state="translated">Bildbreite 60%</target>
+			</trans-unit>	
+			<trans-unit id="image.65">
+				<source>Column width 65%</source>
+				<target state="translated">Bildbreite 65%</target>
+			</trans-unit>	
+			<trans-unit id="image.70">
+				<source>Column width 70%</source>
+				<target state="translated">Bildbreite 70%</target>
+			</trans-unit>	
+			<trans-unit id="image.75">
+				<source>Column width 75%</source>
+				<target state="translated">Bildbreite 75%</target>
+			</trans-unit>	
+			<trans-unit id="image.80">
+				<source>Column width 80%</source>
+				<target state="translated">Bildbreite 80%</target>
+			</trans-unit>	
+			<trans-unit id="image.85">
+				<source>Column width 85%</source>
+				<target state="translated">Bildbreite 85%</target>
+			</trans-unit>	
+			<trans-unit id="image.90">
+				<source>Column width 90%</source>
+				<target state="translated">Bildbreite 90%</target>
+			</trans-unit>	
+			<trans-unit id="image.95">
+				<source>Column width 95%</source>
+				<target state="translated">Bildbreite 95%</target>
+			</trans-unit>	
+			<trans-unit id="image.100">
+				<source>Column width 100%</source>
+				<target state="translated">Bildbreite 100%</target>
+			</trans-unit>	
+
+
         </body>
     </file>
 </xliff>
