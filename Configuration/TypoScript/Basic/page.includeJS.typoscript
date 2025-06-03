@@ -58,6 +58,11 @@ page.includeJSFooterlibs {
 		wallstart.if.isTrue		  	= {$page.files.wall}	
 		wallstart.async				= 0
 
+		lightboxcnt          	     		= EXT:t3up/Resources/Public/JavaScript/imagelightbox.control.js
+		lightboxcnt.if.isPositive       	= {$page.files.lightbox}
+		lightbox          	        	= EXT:t3up/Resources/Public/JavaScript/imagelightbox.min.js
+		lightbox.if.isPositive          	= {$page.files.lightbox}
+
 		# mobil ********************************************************************************
 
 		mobilmenu				= EXT:t3up/Resources/Public/JavaScript/jquery.meanmenu.js

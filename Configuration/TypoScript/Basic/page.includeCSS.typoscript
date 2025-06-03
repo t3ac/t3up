@@ -188,7 +188,12 @@ plugin.tx_wsscss.variables {
     
     # Sideanker                        
     sideankercolorBg                = {$page.color.sideankercolorBg} 
-    sideankerlicolor                = {$page.color.sideankerlicolor}     
+    sideankerlicolor                = {$page.color.sideankerlicolor} 
+
+    # Images
+    pictureoverlay              =   {$page.color.pictureoverlay}
+    pictureoverlaytext          =   {$page.color.pictureoverlaytext}
+    pictureoverlaytextsize      =   {$page.color.pictureoverlaytextsize}    
 }
 
 page.includeCSS    = COA
@@ -197,11 +202,15 @@ page.includeCSS{
     main                        = EXT:t3up/Resources/Public/Sass/_index.scss
     main.linenumber             = true    
     main.forceOnTop             = 1
-    main.outputStyle            = compressed 
+    main.outputStyle            = expanded 
     
     wall                        = EXT:t3up/Resources/Public/Sass/Extensions/_wall.scss
     wall.if.isTrue              = {$page.scss.scsswall}
     wall.outputStyle            = compressed  
+
+    t3up_image                  = EXT:t3up/Resources/Public/Sass/Content/_image.scss
+    t3up_image.linenumber       = true    
+    t3up_image.outputStyle      =  compressed 
 
 }
 

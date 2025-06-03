@@ -602,7 +602,7 @@ page.scss {
     # cat= scss/extensions/102; type= string]; label= Felogin
     scssfelogin         = EXT:t3up/Resources/Public/Sass/Extensions/_felogin.scss   
     # cat= scss/extensions/103; type= boolean; label= Freewall
-    scsswall            = 1 
+    scsswall            = 
  }
 
 # customcategory=totop=T3up: To top
