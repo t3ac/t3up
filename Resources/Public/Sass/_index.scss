@@ -1,8 +1,7 @@
-@import 'mixin.scss';
+@import 'helpers.scss';
 
 /* Bootstrap */
 @import 'Bootstrap/bootstrap.scss';
-@import 'Content/bootstrapgutter.scss';
 @import 'Content/'     + $bootstrapstyles  + '.scss';
 
 /* Colormode */
