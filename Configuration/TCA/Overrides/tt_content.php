@@ -93,6 +93,63 @@ $padding = array(
     ],
 );
 
+$tempfields = array(
+    'lightboxstyle' => [
+        'exclude' => true,
+        'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:lightboxstyle',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:lightboxstyle0', '-'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:lightboxstyle1', 'lightboxstyle-a'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:lightboxstyle2', 'lightboxstyle-b'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:lightboxstyle3', 'lightboxstyle-c'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:lightboxstyle4', 'lightboxstyle-d'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:lightboxstyle5', 'lightboxstyle-e'],
+                ],
+            'default' => 'lightboxstyle-b'
+        ]
+    ],
+    'inf' => [
+        'exclude' => 1,
+        'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:inf',
+        'config' => [
+            'type' => 'check',
+            'default' => 0
+        ]
+    ],
+    'rollover' => [
+        'exclude' => 1,
+        'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:rollover',
+        'config' => [
+            'type' => 'check',
+            'default' => 0
+        ]
+    ],
+    'spacing' => [
+        'exclude' => 1,
+        'label' => 'LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:spacing',
+        'config' => [
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => [
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:spacing0', '0'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:spacing1', '025'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:spacing2', '033'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:spacing3', '050'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:spacing4', '066'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:spacing5', '075'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:spacing6', '1'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:spacing7', '150'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:spacing8', '2'],
+                ['LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:spacing9', '3'],
+            ],
+        ]
+    ],
+);
+
+
 // **********************************************************************************
 
 // Felder der allgemeinen Datensatzbeschreibung hinzufuegen - noch keine Ausgabe im Backend!
@@ -100,6 +157,10 @@ $padding = array(
     'tt_content',
     $padding
     );
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+    'tt_content',
+    $tempfields
+);
 
 // **********************************************************************************
 
@@ -109,12 +170,21 @@ $padding = array(
     'padding_fields',
     'padding_before_class,padding_side_class,padding_after_class,padding_inner_class'
     );
+	
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+ 'tt_content',
+ 'lightboxstyle_fields',
+ 'lightboxstyle,spacing,inf,rollover'
+);
 
 // **********************************************************************************
 
 // Palette hinzufuegen, nach Layout - dadurch Anzeige im Backend
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content','--palette--;LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:padding_class;padding_fields', '', 'after:layout');
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+'tt_content','--palette--;LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:sorting;lightboxstyle_fields', 'textpic,textmedia,image', 'after:image_zoom');
 
 // **********************************************************************************
 
