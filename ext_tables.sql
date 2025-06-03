@@ -17,6 +17,10 @@ CREATE TABLE tt_content (
     padding_after_class varchar(60) DEFAULT '' NOT NULL,
     padding_side_class varchar(60) DEFAULT '' NOT NULL,
     padding_inner_class varchar(60) DEFAULT '' NOT NULL,
+    lightboxstyle varchar(60) DEFAULT '' NOT NULL,  
+    inf smallint(5)  DEFAULT '0' NOT NULL,
+    rollover smallint(5)  DEFAULT '0' NOT NULL, 
+    spacing varchar(60)  DEFAULT '' NOT NULL, 
 );
 
 
