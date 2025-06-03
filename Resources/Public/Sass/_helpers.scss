@@ -1,0 +1,168 @@
+// Bootstrap-Klassen Definieren und erweitern, auch mit negativen Margins
+
+.order-7 {order: 7  !important;}
+.order-8 {order: 8  !important;}
+.order-9 {order: 9  !important;}
+.order-10 {order: 10 !important;}
+.order-11 {order: 11  !important;}
+.order-12 {order: 12  !important;}
+.order-13 {order: 13  !important;}
+.order-14 {order: 14  !important;}
+.order-15 {order: 15 !important;}
+.order-16 {order: 16  !important;}
+.order-17 {order: 17  !important;}
+.order-18 {order: 18  !important;}
+.order-19 {order: 19  !important;}
+.order-20 {order: 20 !important;}
+
+// Margin-/Padding-Werte definieren
+$sizes: (
+    0: 0,
+    1: $v025, 
+    2: $v033,
+    3: $v050, 
+    4: $v066,
+    5: $v075, 
+    6: $v1,
+    7: $v150,
+    8: $v2,
+    9: $v3,
+    auto: auto
+  );
+
+$negative-sizes: (
+    1: $-v025, 
+    2: $-v033,
+    3: $-v050, 
+    4: $-v066,
+    5: $-v075, 
+    6: $-v1,
+    7: $-v150,
+    8: $-v2,
+    9: $-v3
+);   
+
+$directions: (
+  all: (),
+  x: (left, right),
+  y: (top, bottom),
+  t: (top),
+  s: (right),
+  b: (bottom),
+  e: (left)
+);
+
+$breakpoints: (
+  sm: sm,
+  md: md,
+  lg: lg,
+  xl: xl,
+  xxl: xxl
+);
+
+// ---------- Padding-Klassen ----------
+@each $size, $value in $sizes {
+  .p-#{$size} {
+    padding: $value;
+  }
+
+  @each $dir, $props in $directions {
+    @if length($props) > 0 {
+      .p#{$dir}-#{$size} {
+        @each $prop in $props {
+          padding-#{$prop}: $value;
+        }
+      }
+    }
+  }
+}
+
+@each $breakpoint, $bp-value in $breakpoints {
+    @each $size, $value in $sizes {
+      .p-#{$breakpoint}-#{$size} {
+        padding: $value;
+      }
+
+      @each $dir, $props in $directions {
+        @if length($props) > 0 {
+          .p#{$dir}-#{$breakpoint}-#{$size} {
+            @each $prop in $props {
+              padding-#{$prop}: $value;
+            }
+          }
+        }
+      }
+    }
+}
+
+// ---------- Margin-Klassen ----------
+@each $size, $value in $sizes {
+  .m-#{$size} {
+    margin: $value;
+  }
+
+  @each $dir, $props in $directions {
+    @if length($props) > 0 {
+      .m#{$dir}-#{$size} {
+        @each $prop in $props {
+          margin-#{$prop}: $value;
+        }
+      }
+    }
+  }
+}
+
+// Negative Margin-Klassen
+@each $size, $neg-value in $negative-sizes {
+  .-m-#{$size} {
+    margin: $neg-value;
+  }
+
+  @each $dir, $props in $directions {
+    @if length($props) > 0 {
+      .-m#{$dir}-#{$size} {
+        @each $prop in $props {
+          margin-#{$prop}: $neg-value;
+        }
+      }
+    }
+  }
+}
+
+@each $breakpoint, $bp-value in $breakpoints {
+  // Positive Werte
+  @each $size, $value in $sizes {
+    .m-#{$breakpoint}-#{$size} {
+      margin: $value;
+    }
+
+    @each $dir, $props in $directions {
+      @if length($props) > 0 {
+        .m#{$dir}-#{$breakpoint}-#{$size} {
+          @each $prop in $props {
+            margin-#{$prop}: $value;
+          }
+        }
+      }
+    }
+  }
+
+  // Negative Werte
+  @each $size, $neg-value in $negative-sizes {
+    .-m-#{$breakpoint}-#{$size} {
+      margin: $neg-value;
+    }
+
+    @each $dir, $props in $directions {
+      @if length($props) > 0 {
+        .-m#{$dir}-#{$breakpoint}-#{$size} {
+          @each $prop in $props {
+            margin-#{$prop}: $neg-value;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*****************/
