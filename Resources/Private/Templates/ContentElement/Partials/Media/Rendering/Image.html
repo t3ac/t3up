@@ -1,0 +1,57 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<picture  class="position-relative" >
+	<f:variable name="half">{columns/2}</f:variable>
+	
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{2560/columns}', fileExtension: 'webp')}" media="(min-width: 1401px)" type="image/webp">
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{2560/columns}', fileExtension: 'jpeg')}" media="(min-width: 1401px)" type="image/jpeg">
+                    
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{1400/columns}', fileExtension: 'webp')}" media="(min-width: 1281px)" type="image/webp">
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{1400/columns}', fileExtension: 'jpeg')}" media="(min-width: 1281px)" type="image/jpeg">
+
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{1200/columns}', fileExtension: 'webp')}" media="(min-width: 993px)" type="image/webp">
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{1200/columns}', fileExtension: 'jpeg')}" media="(min-width: 993px)" type="image/jpeg">     
+
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{992/columns}', fileExtension: 'webp')}" media="(min-width: 769px)"  type="image/webp">
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{992/columns}', fileExtension: 'jpeg')}" media="(min-width: 769px)"  type="image/jpeg">
+
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{768/columns}',  fileExtension: 'webp')}" media="(min-width: 641px)"  type="image/webp">
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{768/columns}',  fileExtension: 'jpeg')}" media="(min-width: 641px)"  type="image/jpeg">
+
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{640/half}',  fileExtension: 'webp')}" media="(min-width: 481px)"  type="image/webp">    
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{640/half}',  fileExtension: 'jpeg')}" media="(min-width: 481px)"  type="image/jpeg">    
+
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{480/half}',  fileExtension: 'webp')}" media="(min-width: 321px)"  type="image/webp">         
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{480/half}',  fileExtension: 'jpeg')}" media="(min-width: 321px)"  type="image/jpeg">         
+
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{320/half}',  fileExtension: 'webp')}" media="(min-width: 241px)"  type="image/webp">
+        <source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '{320/half}',  fileExtension: 'jpeg')}" media="(min-width: 241px)"  type="image/jpeg">
+
+		<source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '240',  fileExtension: 'webp')}" media="(min-width: 161px)"  type="image/webp">
+		<source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '240',  fileExtension: 'jpeg')}" media="(min-width: 161px)"  type="image/jpeg">
+
+		<source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '160',  fileExtension: 'webp')}" media="(min-width: 121px)"  type="image/webp">
+		<source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '160',  fileExtension: 'jpeg')}" media="(min-width: 121px)"  type="image/jpeg">
+
+    	<source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '120',  fileExtension: 'webp')}" media="(min-width: 81px)"  type="image/webp">
+    	<source srcset="{f:uri.image(image: file,cropVariant: 'default', width: '120',  fileExtension: 'jpeg')}" media="(min-width: 81px)"  type="image/jpeg">
+
+		<f:media file="{file}" alt="{file.alternative}" title="{file.title}" loading="lazy" decoding="{settings.media.imageDecoding}" />
+
+		<f:if condition="{data.inf}" >
+            <f:if condition="{file.properties.copyright}" >   
+                <div class="imageinf">
+                    <span class="symbol">&#xF05a;</span><span>&nbsp;copyright: <f:format.nl2br>{file.properties.copyright}</f:format.nl2br></span>
+                    <f:if condition="{file.properties.creator}"><br /><span><f:format.nl2br>{file.properties.creator}</f:format.nl2br></span></f:if>   
+                    <f:if condition="{file.properties.publisher}"><br /><span><f:format.nl2br>{file.properties.publisher}</f:format.nl2br></span></f:if>
+                    <f:if condition="{file.properties.source}"><br /><span><f:format.nl2br>{file.properties.source}</f:format.nl2br></span></f:if>
+                    <f:if condition="{file.properties.content_creation_date}"><br /><span><f:format.date format="%Y">{file.properties.content_creation_date}</f:format.date></span></f:if>
+                </div>
+		    </f:if>                
+		</f:if>
+		
+        <f:if condition="{data.rollover}">
+            <span class="rollover position-absolute z-10 d-flex align-items-center">{file.alternative}</span>
+		</f:if>        
+		
+    </picture>
+</html>
