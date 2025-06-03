@@ -70,11 +70,6 @@ lib.contentElement {
 	layoutRootPaths.10	 	= {$page.files.contentElement.layoutRootPaths}
 	partialRootPaths.10		= {$page.files.contentElement.partialRootPaths}
 	templateRootPaths.10		= {$page.files.contentElement.templateRootPaths}
-	variables {
-		pictureoverlayfunction 	< lib.pictureoverlayfunction
-		bootstrapaccordion	< lib.bootstrapaccordion
-		bootstraptabs		< lib.bootstraptabs
-	}
 }
 
 # Build the Contentelements ###########################################################
@@ -95,7 +90,7 @@ lib.main {
 		breadcrumbstyle		< lib.breadcrumbstyle
 		breadcrumbpos		< lib.breadcrumbpos
 		breadcrumbstart		< lib.breadcrumbstart
-        breadcrumbtop       < lib.breadcrumbtop	
+        	breadcrumbtop       < lib.breadcrumbtop	
 		dynstyle		< lib.dynheader	
 		inside			< lib.header.inside		
 		languagestyle 		< lib.languagemenu	
