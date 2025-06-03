@@ -186,6 +186,15 @@ page.color {
     plus                = '+'
     # cat= colors/bootstrap/091; type= options[,'–','\f107','\f078','\f13a','\f0ab','\f063']; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:bootstrapcolor.minus
     minus               = '–'
+    
+    # cat=colors/image/01; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pictureoverlay  
+    pictureoverlay      = rgba(255,255,255, 0.75)
+    
+    # cat=colors/image/02; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pictureoverlaytext  
+    pictureoverlaytext  = rgba(0,0,0,1)
+    
+    # cat=colors/image/03; type=string; label=LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:pictureoverlaytextsize  
+    pictureoverlaytextsize = 100%
 }
 
 # customcategory=config=T3up: Config
@@ -588,13 +597,16 @@ page.scss {
     # cat= scss/basicSass/23; type= options[navigation,empty]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssnavigation
     scssnavigation          = navigation
     # cat= scss/basicSass/24; type= options[breadcrumb,empty]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbreadcrumb
-    scssbreadcrumb          = breadcrumb
+    scssbreadcrumb        = breadcrumb
     # cat= scss/basicSass/25; type= options[table,empty]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsstable
-    scsstable           = table 
+    scsstable             = table 
     # cat= scss/basicSass/26; type= options[bootstrapstyles,empty]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scssbootstrapstyles
-    scssbootstrapstyles     = bootstrapstyles
+    scssbootstrapstyles   = bootstrapstyles
     # cat= scss/basicSass/27; type= options[subnavigation,empty]; label= LLL:EXT:t3up/Resources/Private/Language/locallang_constants.xlf:scsssubnavigation
-    scssssubnavigation       = subnavigation
+    scssssubnavigation    = subnavigation
+    # cat                 = t3up: scss/extensions/210;  type =string; label =T3UP - Image
+    scssT3upImage         = EXT:t3up/Resources/Public/Sass/_t3upImage.scss
+    
         
     # Extensions ____________________________________________   
     # cat= scss/extensions/101; type= options[lightbox,empty]; label= Lightbox
@@ -602,7 +614,7 @@ page.scss {
     # cat= scss/extensions/102; type= string]; label= Felogin
     scssfelogin         = EXT:t3up/Resources/Public/Sass/Extensions/_felogin.scss   
     # cat= scss/extensions/103; type= boolean; label= Freewall
-    scsswall            = 
+    scsswall            = 1 
  }
 
 # customcategory=totop=T3up: To top
