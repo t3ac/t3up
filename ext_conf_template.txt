@@ -37,18 +37,3 @@ Standard					= 1
 
 # cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:OneColumn
 OneColumn					= 1
-
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightMarginal
-RightMarginal				= 0
-
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:BigLeft
-BigLeft						= 0
-
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:BigRight
-BigRight					= 0
-
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:SmallLeft
-SmallLeft					= 0
-
-# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:SmallRight
-SmallRight					= 0
