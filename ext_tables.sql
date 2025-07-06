@@ -8,7 +8,7 @@ CREATE TABLE pages (
     hidenav int(11) DEFAULT '0' NOT NULL,
     nonav int(11) DEFAULT '0' NOT NULL,
     previousnext int(11) DEFAULT '0' NOT NULL,
-	basecolor varchar(60) DEFAULT '' NOT NULL,
+	basecolor varchar(60) DEFAULT '' NOT NULL
 );
 
 
@@ -21,6 +21,11 @@ CREATE TABLE tt_content (
     inf smallint(5)  DEFAULT '0' NOT NULL,
     rollover smallint(5)  DEFAULT '0' NOT NULL, 
     spacing varchar(60)  DEFAULT '' NOT NULL, 
+    container int(11) DEFAULT '0' NOT NULL,
+    objectfit int(11) DEFAULT '0' NOT NULL, 
+    bgimage  int(11),
+    bgcolor varchar(255),
+    txtcolor varchar(255)
 );
 
 

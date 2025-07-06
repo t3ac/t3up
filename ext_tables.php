@@ -12,3 +12,5 @@ $GLOBALS['TCA']['tt_content']['columns']['header']['config']['type'] = 'text';
 $GLOBALS['TCA']['tt_content']['columns']['header']['config']['cols'] = '60';
 $GLOBALS['TCA']['tt_content']['columns']['header']['config']['rows'] = '2';
 $GLOBALS['TCA']['tt_content']['columns']['header']['config']['eval'] = 'required';
+
+$GLOBALS['TCA']['tt_content']['columns']['sectionIndex']['config']['default'] = 0;
