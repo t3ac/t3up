@@ -1,0 +1,97 @@
+$spacing-map: (
+  1:  $v01,
+  2:  $v02,
+  3:  $v03,
+  4:  $v04,
+  5:  $v05,
+  6:  $v06,
+  7:  $v07,
+  8:  $v08,
+  9:  $v09,
+  10: $v1,
+  11: $v11,
+  12: $v12,
+  13: $v13,
+  14: $v14,
+  15: $v15,
+  16: $v16,
+  17: $v17,
+  18: $v10,
+  19: $v19,
+  20: $v2,
+  30: $v3,
+  40: $v4,
+  50: $v5,
+  60: $v6,
+  70: $v7,
+  80: $v8,
+  90: $v9
+);
+
+// 2. Generierung aller Padding-Klassen
+@each $key, $value in $spacing-map {
+
+  .p-#{$key} {
+    padding: $value;
+  }
+
+  .ps-#{$key} {
+    padding-left: $value;
+  }
+
+  .pe-#{$key} {
+    padding-right: $value;
+  }
+
+  .pt-#{$key} {
+    padding-top: $value;
+  }
+
+  .pb-#{$key} {
+    padding-bottom: $value;
+  }
+
+  .px-#{$key} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+// 3. Generierung aller Margin-Klassen
+@each $key, $value in $spacing-map {
+
+  .m-#{$key} {
+    margin: $value;
+  }
+
+  .ms-#{$key} {
+    margin-left: $value;
+  }
+
+  .me-#{$key} {
+    margin-right: $value;
+  }
+
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+
+  .mx-#{$key} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  .my-#{$key} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+}
