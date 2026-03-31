@@ -1,0 +1,24 @@
+lib.header.homebutton = COA
+lib.header.homebutton {
+        if.value                            = 0
+	    if.isGreaterThan 		            = {$page.top.homebuttonpos} 
+	    10                                  = TEXT
+	    10 {
+            value                           = <span class="ps-2 funcItemTitle">Home</span>
+            typolink {
+                    parameter               = {$page.header.home}
+                    ATagParams              = alt="link to homepage" class="home navitem d-inline-block {$page.top.liaclass}" data-show-sub="false" title="Start" aria-label="link start"
+            }
+        }
+        wrap                                = <li class="d-inline-flex align-items-center homebutton order-{$page.top.homebuttonpos}">|</li> 
+}
+
+
+lib.home = TEXT
+lib.home {
+        value                      = home
+        typolink.parameter         = {$page.header.home}
+        typolink.ATagParams        = class="symbol navitem d-inline-block" data-show-sub="false" title="Start" aria-label="link start"
+
+        wrap = <li>|</li> 
+}

@@ -1,0 +1,9 @@
+## Extension
+page.includeCSS.powermailBasicCss >
+
+page.includeCSS{
+   	scsspowermail                       = {$page.scss.scsspowermail}
+   	scsspowermail.if.isTrue             = {$page.scss.scsspowermail}   	
+    scsspowermail.linenumber            = true   
+	scsspowermail.outputStyle           = compressed   
+}

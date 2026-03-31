@@ -1,0 +1,14 @@
+
+lib.header.top = COA  
+lib.header.top { 
+	1  < lib.header.mobilbutton
+	2  < lib.header.homebutton
+	3  < lib.header.fontsize	
+	4  < lib.header.darkmode	
+	5  < lib.header.infobutton	
+	6  < lib.header.preferencesbutton
+	7  < lib.header.quicklinks
+	8  < lib.header.loginpage
+	9  < lib.header.searchbutton
+	10 < lib.header.searchfield
+}

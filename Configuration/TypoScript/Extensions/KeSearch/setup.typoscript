@@ -1,0 +1,10 @@
+plugin.tx_kesearch_pi1.view.partialRootPaths.10 = EXT:t3up/Resources/Private/Templates/KeSearch/Partials/
+plugin.tx_kesearch_pi1.view.templateRootPaths.10 = EXT:t3up/Resources/Private/Templates/KeSearch/Templates/
+plugin.tx_kesearch_pi2.view.partialRootPaths.10 = EXT:t3up/Resources/Private/Templates/KeSearch/Partials/
+plugin.tx_kesearch_pi3.view.templateRootPaths.10 = EXT:t3up/Resources/Private/Templates/KeSearch/Templates/
+plugin.tx_kesearch_pi3.view.partialRootPaths.10 = EXT:t3up/Resources/Private/Templates/KeSearch/Partials/
+plugin.tx_kesearch_pi3.view.templateRootPaths.10 = EXT:t3up/Resources/Private/Templates/KeSearch/Templates/
+
+page.includeCSS.kesearch 			= EXT:t3up/Resources/Public/Sass/Extensions/_kesearch.scss
+
+

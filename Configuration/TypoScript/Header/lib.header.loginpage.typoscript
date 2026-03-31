@@ -1,0 +1,37 @@
+### Login Page###########################
+
+lib.header.loginpage                = TEXT
+lib.header.loginpage {
+    if.value                        = 0
+    if.isGreaterThan                = {$page.top.loginbuttonpos}
+    value                           = <span class="ps-2  funcItemTitle">Login</span>
+    typolink {
+        parameter                   = {$page.top.loginpage}
+        parameter.insertData        = 1
+        useCacheHash                = 1
+        # add all get parameters from the current URL
+        addQueryString              = 1
+        addQueryString.method       = GET
+        # remove the page id from the parameters so it is not inserted twice
+        addQueryString.exclude      = id
+        target                      = _self
+        title                       = Login
+        ATagParams                  = alt="link to login" class="login {$page.top.liaclass}"
+     }
+     wrap                           = <li class="d-inline-block order-{$page.top.loginbuttonpos}">|</li> 
+}
+
+[frontend.user.isLoggedIn]
+lib.header.loginpage                = TEXT
+lib.header.loginpage {
+    value                           = <span class="ps-2 small funcItemTitle">Logout</span>
+    typolink {
+        parameter                   = {page:uid}
+        parameter.insertData        = 1
+        additionalParams            = &logintype=logout
+        ATagParams                  = alt="logout button" class="logout"
+        title                       = Logout        
+     }
+    wrap                            = <li class="order-{$page.top.loginbuttonpos} d-flex logout align-items-center">|</li> 
+}
+[END]

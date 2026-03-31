@@ -1,0 +1,3 @@
+lib.header.topwrap              = TEXT
+lib.header.topwrap.value        = {$page.top.topwrap}
+lib.header.topwrap.insertData   = 1

@@ -1,0 +1,17 @@
+lib.header.preferencesbutton            = COA
+lib.header.preferencesbutton {
+    if.value                            = 0
+    if.isGreaterThan                    = {$page.top.preferencesbuttonpos}
+    if.isTrue                           = {$page.top.preferencespage}
+    10                                  = TEXT
+    10 {
+        data                             = LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:preferences
+        typolink {
+            wrap                            = <span class=" funcItemTitle px-2">|</span>
+                ATagBeforeWrap              = 1
+                parameter                   = {$page.top.preferencespage}
+                ATagParams                  = alt="link to preferencepage"  class="{$page.top.liaclass} preferences navitem d-block" data-show-sub="false" title="Preferences" aria-label="link preferences"
+            }
+        }
+    wrap                                = <li class="d-inline-flex align-items-center preferencesbutton order-{$page.top.preferencesbuttonpos}">|</li> 
+}

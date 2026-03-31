@@ -1,0 +1,3 @@
+lib.navigation.navstyle             = TEXT
+lib.navigation.navstyle.value       = {$page.navigation.style}
+lib.navigation.navstyle.insertData  = 1
