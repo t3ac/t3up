@@ -1,0 +1,158 @@
+main{                                                   padding: $mainPadding;
+    .outof                                              {position: absolute; top: -10000rem;}
+        
+    /* Area Content */
+    .content                                            {padding: $contentPadding;}
+  	a                                     		       {color: $linkColor; font-weight: $bold; line-height: $lineHeight; text-decoration: none;}
+	a:focus,     
+	a:hover                               		       {color: $linkHoverColor;}
+    
+    ul.prevnext a                                       {color: $linkColor; line-height: 100%; text-decoration: none;}
+ 
+    hr                                                  {height: 2px !important; background-color: $basicColor; opacity: .25; margin: $v05 0}
+
+    /* frame white */
+	
+	.frame-white{ 										background-color: $white; transition: all ease 0.3s; padding: $v05;
+	    p:last-of-type						            {margin-bottom: 0; }                                                 
+	} 	
+	
+	.frame-colored{ 									    background: lighten($basicColor, 80%); transition: all ease 0.3s; 
+		> div										    {padding: $v05;}
+		> h3,
+		> h2,
+		> h4                                             {margin-bottom: 0; padding: $v05; background: lighten($basicColor, 15%); color: $white  !important; }    
+		p:last-of-type						            {margin-bottom: 0; }  
+	                                                   
+	} 
+	
+
+    /* frame info */
+    .frame-info                                         {border: 1px solid $info; background-color:rgba(lighten($info, 55%),1); transition: all ease 0.3s; 
+        > h3,
+        > h2,
+        > h4                                            {color: $info;}                                                        
+    }    
+    
+    /* frame danger */
+    .frame-danger                                       {border: 1px solid $danger; background-color:rgba(lighten($danger, 55%),1); transition: all ease 0.3s; 
+        > h3,
+        > h2,
+        > h4                                            {color: $danger;}                                                        
+    }    
+    
+    /* frame success */
+    .frame-success                                      {border: 1px solid $success; background-color:rgba(lighten($success, 55%),1); transition: all ease 0.3s; 
+        > h3,
+        > h2,
+        > h4                                            {color: $success;}                                                        
+    }    
+
+    /* frame warning */
+    .frame-warning                                      {border: 1px solid $warning; background-color:rgba(lighten($warning, 55%),1); transition: all ease 0.3s; 
+        > h3,
+        > h2,
+        > h4                                            {color: $warning;}
+    }    
+}
+
+main:not(.onePager) .opg > *                            {display: none;}
+main:not(.onePager) .opg:after                          {font-size: 150%; line-height: 130%;font-weight: bold; color: #cc0000; display: block; /*padding: $v3; */ content: 'Verhält sich wie ein Container ist nur mit Seitenlayout OnePager erlaubt.'};
+
+/* .opg class für onepager -> container */
+main.onePager {
+    .content .fitinview                                 {margin: 0 !important; display: flex; width: 100% !important; height: 100vH !important; position: relative; transition: all ease 0.3s; background-repeat: no-repeat; background-position: center center; background-size: cover; } 
+    .content .fitinview > .container                    {height: 100%; align-items: center; display: flex;}
+}
+
+main .container{
+    &.white  *                                          {color: $white; border-color: $white; }
+    &.lightgrey  *                                      {color: $lightgrey; border-color: $lightgrey;}
+    &.grey  *                                           {color: $grey; border-color: $grey;}
+    &.darkergrey  *                                     {color: $darkergrey; border-color: $darkergrey;}
+    &.darkgrey  *                                       {color: $darkgrey; border-color: $darkgrey}
+    &.black  *                                          {color: $black; border-color: $black; }
+    &.orange  *                                         {color: $orange; border-color: $orange;}
+    &.blue  *                                           {color: $blue; border-color: $blue;}
+    &.darkblue  *                                       {color: $darkblue; border-color: $darkblue; }               
+    &.red  *                                            {color: $red; border-color: $red; }
+    &.green  *                                          {color: $green; border-color:$green; }
+    &.violett  *                                        {color: $violett; border-color:$violett; }
+    &.turquoise  *                                      {color: $turquoise; border-color: $turquoise;}
+    &.yellow  *                                         {color: $yellow; border-color: $yellow; }
+}
+
+
+/**** Design **************************************************************************/
+
+$design-colors: (
+  orange: (color: $orange, bg: rgba(lighten($orange, 57.5%), 1)),
+  blue: (color: $blue, bg: rgba(lighten($blue, 57.5%), 1)),
+  green: (color: $green, bg: rgba(lighten($green, 57.5%), 1)),
+  grey: (color: darken($grey, 10%), bg: rgba(lighten($grey, 57.5%), 1)),
+  red: (color: $red, bg: rgba(lighten($red, 57.5%), 1)),
+  turquoise: (color: $turquoise, bg: rgba(lighten($turquoise, 65%), 1)),
+  violett: (color: $violett, bg: lighten($violett, 60%)),
+  yellow: (color: $yellow, bg: darken($yellow, 50%))
+);
+
+@each $name, $settings in $design-colors {
+  .page.#{$name} {
+    .frame-colored {
+      background: map-get($settings, bg);
+    }
+
+    main h1,
+    main a,
+    .frame-colored h2,
+    .frame-colored h3,
+    .frame-colored h4,
+    .frame-colored a {
+      color: map-get($settings, color);
+    }
+
+    .btn.btn-secondary {
+      background-color: map-get($settings, color);
+    }
+
+    .btn.btn-secondary a {
+      color: $white;
+    }
+
+    hr {
+      background-color: map-get($settings, color);
+    }
+
+    .frame-line {
+      border-bottom: 2px solid rgba(map-get($settings, color), 0.5);
+    }
+
+    .ce-table-colorstripe th,
+    .ce-table-normalplus th {
+      background-color: map-get($settings, color);
+    }
+
+    .ce-table-colorstripe tr:nth-child(2n) td {
+      background-color: rgba(map-get($settings, color), 0.2);
+    }
+
+    .f3-widget-paginator .current,
+    .f3-widget-paginator .current a {
+      background-color: map-get($settings, color);
+    }
+
+    .news {
+      .article .moreNews:after {
+        background-color: rgba(map-get($settings, color), 0.5);
+      }
+
+      .article:hover .moreNews:after {
+        background-color: rgba(map-get($settings, color), 0.75);
+      }
+    }
+
+    .t3upheaderimage span.inf > p {
+      background-color: rgba(map-get($settings, color), 0.75);
+    }
+  }
+}

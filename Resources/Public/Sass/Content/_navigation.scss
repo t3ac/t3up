@@ -1,0 +1,130 @@
+@media screen and (min-width:992px){
+    header {    
+        .mainNavigtion{
+                
+            [aria-expanded=false]                   {display: none;}
+            [aria-expanded=true]                    {display: block; opacity: 1 !important; } 
+            [aria-hidden=true]                      {display: none;}
+            [aria-hidden=false]                     {display: block; opacity: 1 !important; } 
+            ul                                      {list-style:none; margin:0; display:flex; padding-left: 0;}
+            .nav-flex                               {display: flex;}
+            .nav-block                              {display: block;}
+                
+        }
+        
+          ul                                        {padding: 0; margin: 0;} 
+          li,
+          p                                         {margin: 0;}  
+        
+         li.dropmenue > span                        {cursor:pointer; display:inline-block;}
+         span.nonav1 > a                            {cursor:default;}
+        
+         // Navigation 1:standard 
+         .standardNav{                               
+            .nav__level1{                           
+                > li{                               position:relative; hyphens: none; text-align: center;  border-bottom-width: $navLinkBorderBottomHeight; border-bottom-style:solid; border-bottom-color:transparent;
+                    > span,
+                    > a                             {cursor:pointer; margin:0;font-size:$navFontSize; letter-spacing:.01em; transition:color ease .3s; text-transform:uppercase; padding:$v01 $v1 $v03; 
+                                                    display:block; color:$navLinkColor; display:inline-block; font-weight:$navFontWeight;}             
+                    &.cur
+                    &.activated                     {border-bottom-color:$navLinkHoverColor+99;}
+                    &.act                           {border-bottom-color:$navLinkHoverColor; border-bottom-color:$navLinkBorderBottomColor;}
+                }
+                > li:hover                          {color:$navLinkHoverColor; border-bottom-color:$navLinkHoverColor;}
+    
+                
+            }
+            .nav__level2,
+            .nav__level3{                           text-align: left; top: auto;margin-top: $navLinkBorderBottomHeight; background-color:$subnavBG; width:200%; box-shadow:$shadow; position:absolute; white-space:nowrap; z-index:1002; transition:all ease .3s;
+              > li{                                 display:flex; justify-content:space-between; border-bottom:1px solid rgba($navLinkColor,.2);
+                &.act,
+                &.cur                               {background-color:rgba($basicColor, .05);} 
+                > p,
+                > a                                 {cursor:pointer; margin:0;font-size:$navFontSize; display:inline-block; padding:$v02 $v05; transition:all ease .3s; text-align:inherit; 
+                                                    width:100%; white-space:normal; color:$subnavLinkColor;}
+                                                    
+                > li:hover, 
+                &.activated                         {background-color:rgba($subnavLinkColor,.090);}                                  
+                 
+                span                                {align-self:stretch; cursor:pointer; padding:$v05 0 $v05 0; display:block; text-align:center; width:$v15;
+                                                    font-family:$symbol; line-height:100%; color:$subnavLinkColor;}
+                > li:hover > span                   {background-color:rgba($navLinkColor,.090);} 
+                                                    
+              }   
+            }
+            .nav__level3                            {top:auto; width:100%; left: 100%; margin-top: 0;}
+         }
+    
+         // Navigation 2
+         .activeNav{                                
+           .nav__level1{                            min-height:$v05;
+                > li {                              hyphens: none; text-align: center;  border-bottom-width: $navLinkBorderBottomHeight; border-bottom-style:solid; border-bottom-color:transparent;
+                    > a                             {padding:$v01 $v1 $v03; display:inline-block; cursor:pointer; font-size:$navFontSize; transition:color ease .3s; text-transform:uppercase; color:$navLinkColor; font-weight:$navFontWeight;}    
+                    &.cur                           {border-bottom-color:rgba($basicColor, .75);}
+                    &.act                           {border-bottom-color:$navLinkHoverColor; border-bottom-color:$navLinkBorderBottomColor;}
+                    &:hover                         {color:$navLinkHoverColor; border-bottom-color:$navLinkHoverColor;}
+                 }    
+            }
+            
+            .nav__level2                            {position:absolute; z-index:1004; width:$c33; list-style:none; left:0; top:$v05; border-right:1px solid #efefef; height:calc(100% - 2rem);}
+            .nav__level3                            {left:100%; z-index:1005; position:absolute; top:0; width:100%;}
+            .nav__level4                            {z-index:1006; position:absolute; top:0;}
+            .subnav{
+                li                                  {display:flex; justify-content:space-between; text-align: left;}
+                li span                             {padding-right: $v02; font-size:$v07; line-height:$v1; font-weight:normal; cursor:pointer;}
+                li a                                {line-height: $v1; padding: $v01 $v07; transition: all ease .3s;}
+                li > a:hover                        {font-weight:bold;}
+                li.activated                        {background: rgba($basicColor, .10);}
+                li.act,            
+                li.cur                              {background:rgba($basicColor, .10);}            
+            }        
+            .box                                    {min-height:350px; z-index:1002; width:100%; position:absolute; left:0; display:none; margin-top: $navLinkBorderBottomHeight; box-shadow:$shadow; background-color:rgba($white,1); overflow-x:hidden;}
+            .btn-close                              {position: absolute; right: $v05; top: $v05;}
+         }
+        
+         // Navigation 3:Navigation on the right, full size 
+         .blockNav{
+    
+            .nav__level1{
+                > li{                               order:2; hyphens: none;
+                    > span:not(.btn-close),   
+                    > a                             {cursor:pointer; font-size:$navFontSize; transition:all ease .3s; font-weight:$navFontWeight;text-transform:uppercase; padding:$v01 $v1 0; 
+                                                    display:block; width:100%; text-align:inherit; white-space:nowrap; border-bottom-width: $navLinkBorderBottomHeight; border-bottom-style:solid; border-bottom-color:transparent; text-transform: none; }
+                    &.act > a                       {border-bottom-color:$navLinkHoverColor;}
+                }
+            }
+            .nav__level2{                           position:absolute; left:0; background-color:$subnavBG; list-style:none; z-index:1002; padding: $v2; margin:0; box-shadow: $shadow; border-top: 1px solid #000;
+                li                                  {width:auto; flex:1 1 auto!important; display:inline-block; padding: 0 $v1;; vertical-align:top;}
+                li.halb                             {width:50%;} 
+                li.drittel                          {width:33.333%;}
+                li.viertel                          {width:25%;}
+                li.fuenftel                         {width:20%;}
+                li.sechstel                         {width:16.666%;}
+                li.siebtel                          {width:14.28%;}
+                li.achtel                           {width:12.5%;}
+                li > span:not(.btn-close)           {text-transform: uppercase; font-weight: bold; border-bottom: 1px solid $navLinkColor; padding:$v05 0 $v03; display: block;}
+            }        
+            .nav__level3{                           
+                li                                  {width:auto; display:block; margin:0; padding:0; vertical-align:top;}
+                li > a                              {border-bottom: 1px solid $navLinkColor; padding:$v05 0 $v03; display: block;}
+                li:last-of-type > a                 {border-bottom: 0; padding-bottom:0; }
+    
+            }    
+            > ul > li > ul[aria-hidden=false]       {display:flex !important; opacity:1 !important;}
+    
+            .btn-close                              {position: absolute; right: $v05; top: $v05;}
+        }
+    } // header
+}
+
+/* All Mobil-Nav ********************************************************************************************************************************************************/
+
+@media screen and (max-width:991px){
+    header ul.nav,    
+    .mm-menu    span.btn-close                  {display:none;}
+}
+
+
+@media screen and (min-width:992px){
+    header nav#menu                             {display:block;}
+}

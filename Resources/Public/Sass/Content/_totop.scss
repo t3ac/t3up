@@ -1,0 +1,12 @@
+/** totop.scss *************************/
+.toTop {						      display: none;
+							      text-decoration: none !important; position:fixed; transition: background-color ease .5s;
+							      z-index: 80; width: $v2; height: $v2; background-color: rgba($totopBgColor,.7); bottom: $totopPosBottom; right: $totopPosRight; border: 1px solid  $totopLinkColor;
+	a						      {color: $totopLinkColor; text-decoration: none !important;}
+	a:before					      {content:'\e986';  font-family: $symbol; font-size: 175%; font-weight: bold;}
+	a:hover						  {color: rgba($totopLinkHoverColor,1)}  
+	span						      {display: none;}
+													
+	&.fixed						   {display: flex !important; justify-content: center; align-items: center;}
+	&.fixed:hover				   {background-color: rgba($totopBgColor,1)}  
+}		

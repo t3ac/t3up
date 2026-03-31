@@ -1,0 +1,76 @@
+header {                                        background-color: $headerBgColor; width: 100%; transition: all ease 0.3s;
+    *                                           {color: $headerTextColor;}
+    &.sticky                                    {position: -webkit-sticky; position: sticky; top: 0; z-index: 1000; box-shadow: $shadow; }
+    &.dynamic                                   {position: fixed; top: 0; z-index: 1000; transition: all ease 1s; background-color: $headerBgColor;}
+    &.dynamic > .top,
+    &.dynamic  nav                              {transition: all ease .3s; opacity: 0}
+    
+    &.dynamic:hover,      
+    &.dynamic.blend                             {background-color: $headerBgBlendColor; box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);}
+    
+    &.dynamic.blend > .top,
+    &.dynamic.blend  nav                        {opacity: 1}
+    
+    a                                           {color: $headerLinkColor; transition: color ease 1s; text-decoration: none;}
+    a:focus, a:hover                            {color: $headerLinkHoverColor;} 
+   
+    .logo                                       {transition: all ease 0.3s;}
+    .logo img                                   {width: $headerLogoWidth; height: auto; transition: all ease 0.3s;}
+    .mobillogo img                              {width: $headerMoilLogoWidth; height: auto; transition: all ease 0.3s;}
+
+    
+    
+    
+    
+    .top {                                      background-color: $headerTopBgColor; line-height: 1rem; width: 100%; transition: all ease 0.3s;
+        *                                       {color: $headerTopTextColor;}
+        a                                       {color: $headerTopLinkColor;} 
+        a:focus, a:hover                        {color: $headerTopLinkHoverColor;}
+        .funcItemTitle                          {padding-left: $v05; font-size: 70%;}
+        > ul > li                               {position: relative;}
+        button                                  {border: 0;}
+        button.resetbutton                      {display: none !important;}
+        .sym                                    {font-size: $headerSymbolFontSize;}
+        
+        ul.justify-content-end .tab-pane        {left: auto; right: 0;}
+        ul.justify-content-start .tab-pane      {left: 0; right: auto;} 
+
+        li.languagemenu .active > a             {text-decoration: underline;text-underline-offset: 0.2em; text-decoration-thickness:2px; word-spacing: -0.3em;; letter-spacing: 1px; }                   
+            
+        .tab-pane{                              transition: all ease .3s; display: none; background-color: $headerTopSubBgColor; padding: $v07; box-shadow: $shadow; transform: none; min-width: 15rem; top: auto;
+            &.show                              {display: block; }   
+            *                                   {color: $headerTopSubTextColor;}
+            h2,
+            h3,
+            h4                                  {font-weight: bold; margin: 0; padding-bottom:$v05 !important; color: $textColor; font-size: $p;}
+            a                                   {color: $headerTopSubLinkColor; }
+            a:focus, a:hover                    {color: $headerTopSubLinkHoverColor;} 
+            a.color-mode__btn                   {display: block; padding: $v02; text-align: left; position: relative; border-width: 0; border-radius: 0; border: 1px solid transparent;}
+            a.color-mode__btn:hover             {cursor: pointer;}
+            a.color-mode__btn > span            {display: inline-block; height: $v1; width: $v15; border: 1px solid #808080; position: relative;top: $v02; margin-right :$v05; background: #fff; overflow: hidden;}
+            a.color-mode__btn.dark > span       {background: #000;}
+            a.color-mode__btn.system > span:before        {content: ""; position: absolute; bottom: calc(clamp(12px, 2.8vw, 24px) * -1.4); right: calc(#{$v1}* -0.9); width: $v2; height: $v2; transform: rotate(-30deg); z-index: 1; background-color: #000;}
+            .fsrange                            {font-size: 125%; cursor: pointer;}
+            ul                                  {list-style-type: none; padding-left: 0;}
+            ul li                               {display: block; padding-bottom:$v03; padding-top:$v03;}
+            ul li a                             {padding: 0; color: $textColor;}
+            ul li a:focus,
+            ul li a:hover                       {border-bottom: 1px solid $textColor;; font-weight: bold;}
+         }
+         
+         a.nav_burger                           {width: 2.5rem; height: 2rem; cursor: pointer;  position: relative; display: inline-block; vertical-align: middle;}
+         a.nav_burger::before                   {content: ''; position: absolute; border-bottom: .125rem solid rgb($headerTopLinkColor);  border-top: .125rem solid rgb($headerTopLinkColor); transition: transform .3s; margin: auto; bottom: .5rem; top: .5rem; right: .25rem; left: .25rem;}
+         a.nav_burger.act:before                {transform: rotate(45deg); bottom: 0; display: block; top: 0;  height: 2px;  background-color: rgb($headerTopLinkColor); border: none;}
+         a.nav_burger::after                    {content: ''; position: absolute; display: block; transition: transform .3s; height: .125rem; background-color: $headerTopLinkColor; margin: auto; bottom: 0; right: .25rem; left: .25rem; top: 0rem;}
+         a.nav_burger.act:after                 {transform: rotate(315deg);}
+
+        
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    header {    
+        .funcItemTitle                          {display: inline-block;}
+    }
+}

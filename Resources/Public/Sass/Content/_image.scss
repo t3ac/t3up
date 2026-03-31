@@ -1,0 +1,344 @@
+    
+/* Allgemein */
+
+/* Gallery */
+.ce-gallery img                         {display: block; max-width: 100%; height: auto; width: 100%;}
+
+.ce-border,
+.ce-border img                          {margin: 0 !important;}
+    
+.ce-center .ce-outer                    {position: relative; float: right; right: 50%;}
+.ce-center .ce-inner                    {position: relative; float: right; right: -50%;}
+ 
+.ce-gallery img                         {display: block; height: auto}
+.ce-align-left                          {text-align: left;}
+.ce-align-center                        {text-align: center;}
+.ce-align-right                         {text-align: right;}
+    
+.ce-table td, .ce-table th              {vertical-align: top;}
+    
+.ce-gallery iframe                      {border-width: 0;   aspect-ratio: 16 / 9;}
+    
+.ce-gallery figure                      {display: block;}
+.ce-gallery figcaption                  {display: block; font-style: italic; padding: $v02 $v03 }
+
+.ce-textpic, .ce-image, .ce-nowrap 
+.ce-bodytext, .ce-gallery, .ce-row, 
+.ce-uploads li, .ce-uploads div         {overflow: hidden;}
+
+.ce-left .ce-gallery, .ce-column        {float: left;}
+.ce-right .ce-gallery                   {float: right;}
+    
+.ce-above .ce-bodytext                  {clear: both;}
+.ce-intext.ce-left ol,
+.ce-intext.ce-left ul                   {overflow: auto;}
+ 
+/* Image margin */
+
+.ce-intext.ce-right .ce-gallery, .ce-intext.ce-left .ce-gallery {margin-bottom: 0;}
+
+.ce-column:last-child                   {margin-right: 0;}
+    
+.ce-row                                 {margin-bottom: $v07;}
+.ce-row:last-child                      {margin-bottom: 0;}
+
+/* Image Above */
+
+.ce-above .ce-gallery + h2,
+.ce-above .ce-gallery + h3,
+.ce-above .ce-gallery + h4              {margin-top: $v05;}
+    
+.ce-textpic > *.above                   {clear: both}
+
+.ce-row > div:first-of-type                             {padding-left: 0;  }
+.ce-row > div:last-of-type                              {padding-right: 0; }
+
+.ce-intext figure                                       {margin-bottom: $v07; }
+
+
+ /* Image Rollover */
+.rollover                                               {transition: all ease .5s; top: 100vh; z-index: 9; height: 100%; width: 100%; padding: $v05; color: transparent; background: transparent; font-weight: bold; text-align: center;}
+picture:hover .rollover                                 {top: 0; background: $pictureoverlay; color: $pictureoverlayTextColor; font-size: $pictureoverlayTextSize; }
+
+/* Only Main */
+main img                                                {width: 100%; height: auto;}
+main .ce-column figure                                  {overflow: hidden;}
+       
+/* Image Information */
+main .ce-column div.imageinf                            {position: absolute; top: $v1; left: $v1; padding: $v05; background: transparent; color: transparent; transition: all ease .3s; }
+main .ce-column:hover div.imageinf                      {background: $white; color: $black;}
+  
+
+
+/* Picture in columns 1-8  ******************************************************** */
+
+
+$sizes: (
+  0:   0,
+  1:  $v01, 
+  2:  $v02,
+  3:  $v03, 
+  4:  $v04,
+  5:  $v05, 
+  6:  $v06,
+  7:  $v07,
+  8:  $v1,
+  9:  $v15,
+  10: $v2,
+  11: $v3
+);
+
+$negative-sizes: (
+  0:   0,
+  1:  $-v01, 
+  2:  $-v02,
+  3:  $-v03, 
+  4:  $-v04,
+  5:  $-v05, 
+  6:  $-v06,
+  7:  $-v07,
+  8:  $-v1,
+  9:  $-v15,
+  10: $-v2,
+  11: $-v3
+);
+
+// Map zur Berechnung von Rand unten für figure
+$bottom-map: (
+  1:  05,
+  2:  05,
+  3:  05,
+  4:  05,
+  5:  05,
+  6:  05,
+  7:  05,
+  8:  1,
+  9:  1,
+  10: 1,
+  11: 1
+);
+
+// Anzahl der möglichen Spalten
+$columns: 2, 3, 4, 5, 6, 7, 8;
+
+// Prozentbreiten der Spalten
+$column-widths: (
+  2: 50%,
+  3: 33.33%,
+  4: 25%,
+  5: 20%,
+  6: 16.6666666666666%,
+  7: 14.25%,
+  8: 12.5%
+);
+
+@each $key, $val in $sizes {
+  $neg: map-get($negative-sizes, $key);
+  $bottom-key: map-get($bottom-map, $key);
+
+  .imgspace-#{$key} {
+    @each $col in $columns {
+      .ce-gallery[data-ce-columns="#{$col}"] {
+        .ce-inner {
+          margin: 0 #{$neg};
+        }
+        .ce-row {
+          width: 100%;
+          display: inline;
+        }
+        .ce-column {
+          width: map-get($column-widths, $col) !important;
+        }
+        .ce-column:nth-child(n) figure {
+          margin-right: #{$val};
+          margin-left: #{$val};
+          margin-bottom: map-get($sizes, $bottom-key);
+        }
+      }
+    }
+  }
+}
+
+
+/* Picture Layouts ******************************************************** */
+
+// Layoutgruppen definieren
+$layouts-100: 2100, 2095, 2090, 2085;
+$layouts-75: 2080, 2075, 2070, 2065;
+$layouts-50: 2060, 2055, 2050, 2045, 2040;
+$layouts-25: 2035, 2030, 2025, 2020;
+$layouts-10: 2015, 2010, 2005;
+
+@mixin gallery-layout($width, $gallery-margin-left: null, $center-margin: false) {
+  .ce-left .ce-gallery,
+  .ce-right .ce-gallery {width: $width;  }
+
+  .ce-center .ce-gallery {
+    width: $width;
+    @if $center-margin {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .ce-gallery .ce-gallery {
+    width: $width;
+    @if $gallery-margin-left != null {
+      margin-left: $gallery-margin-left;
+    }
+  }
+
+  .ce-gallery figure {display: block;}
+  .ce-gallery .ce-inner,
+  .ce-gallery .ce-outer {float: none;right: 0;}
+  .ce-column {margin-right: 0;width: 100%;}
+  img {width: 100%;}
+}
+
+// Schleifen pro Layoutgruppe
+@each $id in $layouts-100 {
+  .frame-layout-#{$id} {
+    @include gallery-layout(100%);
+  }
+}
+
+@each $id in $layouts-75 {
+  .frame-layout-#{$id} {
+    @include gallery-layout(75%, 12.5%, true);
+  }
+}
+
+@each $id in $layouts-50 {
+  .frame-layout-#{$id} {
+    @include gallery-layout(50%, 25%, true);
+  }
+}
+
+@each $id in $layouts-25 {
+  .frame-layout-#{$id} {
+    @include gallery-layout(25%, 37.5%, true);
+  }
+}
+
+@each $id in $layouts-10 {
+  .frame-layout-#{$id} {
+    @include gallery-layout(10%, 45%, true);
+  }
+}
+
+
+// Schleife von 100% (ID 2100) bis 5% (ID 2005)
+
+@media (min-width: 768px) {
+  @for $i from 0 through 20 {
+    $value: (100 - ($i * 5)) * 1%; // Prozentwert mit Einheit
+    $id: 2100 - ($i * 5);          // Layout-ID
+    $margin-left: ($i * 5) / 2 * 1%; 
+
+    .frame-layout-#{$id} {
+      .ce-left .ce-gallery {width: $value; }
+      .ce-right .ce-gallery {width: $value; }
+      .ce-center .ce-gallery {width: $value;margin-left: auto;margin-right: auto;}
+      .ce-gallery .ce-gallery {width: $value;margin-left: $margin-left;}
+      .ce-gallery figure {display: block;}
+      .ce-column {margin-right: 0;width: 100%;}
+      img {width: 100%;}
+    }
+  }
+}
+
+/* Padding before / after ***************************************************/
+
+
+.innerPadding-1{
+    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v01}    
+    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v01}
+}
+.innerPadding-2{
+    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v02}    
+    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v02}
+}
+.innerPadding-3{
+    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v03}    
+    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v03}
+}
+
+.innerPadding-4{
+    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v04}    
+    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v04}
+}
+
+.innerPadding-5{
+    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v05}    
+    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v05}
+}
+
+.innerPadding-6{
+    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v06}    
+    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v06}
+}
+
+.innerPadding-7{
+    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v07}    
+    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v07}
+}
+
+.innerPadding-8{
+    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v08}    
+    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v08}
+}
+
+.innerPadding-9{
+    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v09}    
+    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v09}
+}
+
+.innerPadding-10{
+    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v1; margin-left: $v1}
+    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v1; margin-right: $v1; }
+}
+
+
+
+.frame-padding-before-1:not(.frame-singleaccordion)     {padding-top: $v02;}
+.frame-padding-before-2:not(.frame-singleaccordion)     {padding-top: $v03;}
+.frame-padding-before-3:not(.frame-singleaccordion)     {padding-top: $v05;}
+.frame-padding-before-4:not(.frame-singleaccordion)     {padding-top: $v06;}
+.frame-padding-before-5:not(.frame-singleaccordion)     {padding-top: $v07;}
+.frame-padding-before-6:not(.frame-singleaccordion)     {padding-top: $v1;}
+.frame-padding-before-7:not(.frame-singleaccordion)     {padding-top: $v15;}
+.frame-padding-before-8:not(.frame-singleaccordion)     {padding-top: $v2;}
+.frame-padding-before-9:not(.frame-singleaccordion)     {padding-top: $v3;}
+
+.frame-padding-after-1:not(.frame-singleaccordion)      {padding-bottom: $v02;}
+.frame-padding-after-2:not(.frame-singleaccordion)      {padding-bottom: $v03;}
+.frame-padding-after-3:not(.frame-singleaccordion)      {padding-bottom: $v05;}
+.frame-padding-after-4:not(.frame-singleaccordion)      {padding-bottom: $v06;}
+.frame-padding-after-5:not(.frame-singleaccordion)      {padding-bottom: $v07;}
+.frame-padding-after-6:not(.frame-singleaccordion)      {padding-bottom: $v1;}
+.frame-padding-after-7:not(.frame-singleaccordion)      {padding-bottom: $v15;}
+.frame-padding-after-8:not(.frame-singleaccordion)      {padding-bottom: $v2;}
+.frame-padding-after-9:not(.frame-singleaccordion)      {padding-bottom: $v3;}
+
+.frame-padding-side-1:not(.frame-singleaccordion)       {padding-left: $v02; padding-right: $v02;}
+.frame-padding-side-2:not(.frame-singleaccordion)       {padding-left: $v03; padding-right: $v03;}
+.frame-padding-side-3:not(.frame-singleaccordion)       {padding-left: $v05; padding-right: $v05;}
+.frame-padding-side-4:not(.frame-singleaccordion)       {padding-left: $v06; padding-right: $v06;}
+.frame-padding-side-5:not(.frame-singleaccordion)       {padding-left: $v07; padding-right: $v07;}
+.frame-padding-side-6:not(.frame-singleaccordion)       {padding-left: $v1;  padding-right: $v1;}
+.frame-padding-side-7:not(.frame-singleaccordion)       {padding-left: $v15; padding-right: $v15;}
+.frame-padding-side-8:not(.frame-singleaccordion)       {padding-left: $v2;  padding-right: $v2;}
+.frame-padding-side-9:not(.frame-singleaccordion)       {padding-left: $v3;  padding-right: $v3;}
+
+/* Spacing Start *************************************************************************/
+.ce-row.spacing25 > div {padding-right: calc(#{$v02} / 2); padding-left: calc(#{$v02} / 2); }
+.ce-row.spacing33 > div {padding-right: calc(#{$v03} / 2); padding-left: calc(#{$v03} / 2); }
+.ce-row.spacing50 > div {padding-right: calc(#{$v05} / 2); padding-left: calc(#{$v04} / 2); }
+.ce-row.spacing66 > div {padding-right: calc(#{$v06} / 2); padding-left: calc(#{$v06} / 2); }
+.ce-row.spacing75 > div {padding-right: calc(#{$v07} / 2); padding-left: calc(#{$v07} / 2); }
+.ce-row.spacing1  > div {padding-right: $v05; padding-left: $v05; }
+.ce-row.spacing15 > div {padding-right: calc(#{$v15} / 2); padding-left: calc(#{$v15} / 2); }
+.ce-row.spacing2  > div {padding-right: calc(#{$v2} / 2); padding-left: calc(#{$v2} / 2); }
+.ce-row.spacing3  > div {padding-right: calc(#{$v3} / 2); padding-left: calc(#{$v3} / 2); }
+
+

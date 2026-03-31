@@ -1,0 +1,90 @@
+/* Bootstrap Korrektur */
+a.btn-secondary						                    {background-color: transparent;}
+a.btn-light						                        {background-color: $white;}
+.btn							                            {font-size: $v1;font-weight: 400 !important; border-radius: 0; border-color: $basicColor; color: $basicColor;}
+a.btn							                        {color: $basicColor;}
+a.btn-more                                               {background-color: #000000cc; border: 0; color: #fffe;}
+a.btn-more:hover                                         {color: #ffff;}
+
+.carousel-caption                                       {right: inherit; left: inherit;}
+
+.container                                               {max-width: $container;}
+
+/* Slider **********************************************/
+
+.t3up_slider {
+    
+    .imageformat1                                      {aspect-ratio: 1 / 1;}
+    .imageformat2                                      {aspect-ratio: 3 / 2;}
+    .imageformat3                                      {aspect-ratio: 16 / 9;}		
+    .imageformat4                                      {aspect-ratio: 21 / 9;}
+    .imageformat5                                      {aspect-ratio: 3 / 1;}
+    .imageformat6                                      {aspect-ratio: 4 / 5;}
+    .imageformat7                                      {aspect-ratio: 4 / 3;}
+
+    img                                                {width: 100%; height: 100%; object-fit: cover; object-position: center 0;}
+    .hero-image img                                    {width: 100vw; height: 100vh;} 
+    
+	figure		                                       {margin: 0;}
+	.carousel-caption.stil1							   {bottom: 0; width: 100%; padding: 0;}	
+	.carousel-caption.stil2							   {width: auto; bottom: 0; padding: 0;}		
+	.carousel-caption.stil3							   {width: auto; bottom: 20%; left: 5%; padding: 0;}
+	.carousel-caption.stil4,	
+	.carousel-caption.stil5							   {width: 100%; bottom: 0; left: 0; padding: 0; height: 100%; display: inline-flex; align-items: center; transition: all ease .5s; }
+	.carousel-caption.stil4 > *,	
+	.carousel-caption.stil5 > *						   {text-align: center;}
+	
+	.carousel-caption.stil4							   {opacity: 0; }
+	.carousel-caption.stil4:hover					   {opacity: 1;}		
+	
+	.carousel-caption.stil1	a,	
+	.carousel-caption.stil2	a,		
+	.carousel-caption.stil3	a						   {padding: $v1;}	
+	
+	.carousel-caption.stil1	.capa,	
+	.carousel-caption.stil2	.capa,		
+	.carousel-caption.stil3	.capa					   {padding: $v1;}			
+	
+	.carousel-control-prev,
+	.carousel-control-next							   {opacity: 0; transition: all ease 1s; width: auto; z-index: 4; }		
+	
+	.carousel-control-prev > span,
+	.carousel-control-next > span    				   {padding: $v1;}		
+	
+	.carousel-control-prev:focus,
+	.carousel-control-next:focus,		
+	.carousel-control-prev:hover,
+	.carousel-control-next:hover					   {opacity: 1 ;}
+
+	.carousel-indicators                               {z-index: 3; margin-top: $v1; bottom: inherit; top: 0;}
+    
+    
+    .carousel-indicators.st1                           {margin-bottom: $v1; top: inherit;  bottom: 0;}
+    .carousel-indicators.st2                           {margin-bottom: $v1; top: inherit;  bottom: 0;}        
+    .carousel-indicators.st2 li                        {width: $v06; height: $v07; transition: all ease .5s; opacity: .7;}            
+    .carousel-indicators.st2 li:hover                  {opacity: 1}    
+    .carousel-indicators.st3                           {margin-bottom: $v1; top: inherit;  bottom: 0;}              
+    .carousel-indicators.st3 li                        {width: $v04; height: $v05; background: none; border: #fffd solid 3px; transition: all ease .5s; opacity: .7;}            
+    .carousel-indicators.st3 li:hover                  {border: #ffff solid 3px;}  
+    
+
+    .slidersymbol1{font-size: calc(clamp(8px, 2.425vw, 36px) * 1)}
+    .slidersymbol2{font-size: calc(clamp(8px, 2.425vw, 36px) * 1.25)}
+    .slidersymbol3{font-size: calc(clamp(8px, 2.425vw, 36px) * 1.5)}
+    .slidersymbol4{font-size: calc(clamp(8px, 2.425vw, 36px) * 1.75)}   
+    .slidersymbol5{font-size: calc(clamp(8px, 2.425vw, 36px) * 2)}      
+    
+
+        
+}
+@media screen and (max-width: 582px) {
+    .t3up_slider {
+        &.dynamic .ce-bodytext blockquote p{width: 100%;}
+    }
+} 
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-item {
+      transition: transform 0.6s ease-in-out;
+  }
+}

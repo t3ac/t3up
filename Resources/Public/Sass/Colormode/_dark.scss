@@ -1,0 +1,93 @@
+html[color-mode=dark] {
+	
+	/* Variablen */
+	
+	$baseColor: #fff;
+	$bodyBgColor: #151515;
+	$textColor: #fff;
+	$linkColor: rgb(235, 245, 255); 
+	$linkHoverColor:  #fff;
+	$containerBgColor: transparent; 
+	
+	/* Header */
+	$topBgColor:#000;
+	$topLinkColor: #eee;
+	$topLinkHoverColor: #fff;
+	
+    
+	/* Navigation */
+	$subNavBG: #333;
+	$subnavLinkColor: #eee;
+	$subnavLinkHoverColor:  #fff;
+	
+	/* Headuing */
+    $h1-color: #fff;
+    $h2-color: #fff;
+    $h3-color: #fff;
+    $h4-color: #fff;
+    
+	/* footer */
+	$footer1BgColor: #151515 !important;  
+	$footer1TextColor: #eee !important;
+	$footer1LinkColor: #eee !important;
+	$footer1LinkHoverColor: #fff !important;
+	$footer3BgColor: #000 !important;
+	$footer3TextColor: #eee !important;
+	$footer3LinkColor: #eee !important;
+	$footer3LinkHoverColor: #fff !important;
+    
+    
+        
+    body {                                  background: #000 ; 
+        .mm-panel,
+        .mm-panels,
+        > nav                               {background: #000;}
+       .mm-listitem                         {border-color: #aaa;}
+
+        *                                   {color: #fff;}
+        .h1, h1                             {color: $h1-color;} 
+        .h2, h2                             {color: $h2-color;} 
+        .h3, h3                             {color: $h3-color;} 
+        .h4, h4                             {color: $h4-color;}
+        
+        a.link-internal::before,
+        a.link-internal-blank::before,
+        a.link-external-blank::before,
+        a.link-external::before,             
+        a.link-mail::before,           
+        a.link-download::before,    
+        a.link-web::before,   
+        a.link-fax::before,             
+        a.link-phone::before,          
+        a.link-mobil::before,      
+        a.link-folder::before,  
+        a.link-info::before,                {color: $linkColor;}
+        
+        
+        .toTop a:before                     {color: #000;} 
+        
+        footer {                            background: $footer1BgColor;    
+            .footer1{                             
+                *                           {color: $footer1TextColor;}
+                a                           {color: $footer1LinkColor;}
+                a:hover                     {color: $footer1LinkHoverColor;}
+            }   
+            .footer2{                       background-color: $footer2BgColor;       
+                *                           {color: $footer2TextColor;}
+                a                           {color: $footer2LinkColor;}
+                a:hover                     {color: $footer2LinkHoverColor;}
+            }   
+            .footer3{                       background-color: $footer3BgColor;       
+                *                           {color: $footer3TextColor;}
+                a                           {color: $footer3LinkColor;}
+                a:hover                     {color: $footer3LinkHoverColor;}
+            }   
+        } /* footer */
+           
+    } /* body */
+	
+} /* html */
+
+
+
+

@@ -1,0 +1,42 @@
+footer {                            position: sticky; top: 100vh; z-index: 15; width: 100%; transition: all ease .3s; bottom: 0; overflow: hidden;  background: $footer1BgColor;   border-top: 1px solid $footer1TextColor; 
+    *                               {text-decoration: none; list-style: none;}
+    
+    ul,
+    ol                              {padding: 0; margin: 0;}
+    h2,
+    h3                              {font-size: calc(#{$h3} * 1    * #{$p});}                              
+    
+    .footer1{                             
+        *                           {color: $footer1TextColor;}
+        a                           {color: $footer1LinkColor;}
+        a:hover                     {color: $footer1LinkHoverColor;}
+        .trigger                    {display: none;}       
+    }   
+
+    
+    .footer2{                       background-color: $footer2BgColor;       
+        *                           {color: $footer2TextColor;}
+        a                           {color: $footer2LinkColor;}
+        a:hover                     {color: $footer2LinkHoverColor;}
+    }   
+
+    .footer3{                       background-color: $footer3BgColor; border-top: 1px solid $footer3TextColor;         
+        *                           {color: $footer3TextColor;}
+        a                           {color: $footer3LinkColor;}
+        a:hover                     {color: $footer3LinkHoverColor;}
+        .pidhide                    {opacity: 0; transition: all ease .3s;}
+        .pidhide:hover              {opacity: 1;} 
+    }   
+}
+
+@media screen and (max-width: 581px) {
+    footer.footerdynamic {                 
+        .trigger                        {display: block; font-size: $p}
+        .trigger:after                  {font-family: $symbol; content:'add'; float: right; font-size: calc(#{$p} * 1.5);}  
+        .trigger.active:after           {content:'remove'; }          
+        .trigger ~ .frame,    
+        .trigger ~ .frame >h2,
+        .trigger ~ .frame >h3,    
+        .trigger ~ .frame >h4           {display: none;}   
+    }
+}

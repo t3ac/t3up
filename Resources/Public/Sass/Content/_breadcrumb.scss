@@ -1,0 +1,47 @@
+.breadcrumbrow {                                        font-size: $breadcrumbTextSize !important; line-height: 100%; color: rgba($textColor, .85);
+      a                                                 {text-decoration-style: solid; text-underline-offset: 4px; text-decoration-thickness: 1px; text-decoration-color: transparent; transition: all ease .3s;}
+      a:hover,  
+      a:focus                                           {text-decoration-color: $textColor; }
+      li,
+      p                                                 {margin: 0;}  
+      ol                                                {list-style: none; padding: 0; margin: 0}
+      
+      ol li                                             {margin:0; display: inline-block; padding: 0 0 0 $v02; font-size: 100% !important; line-height: 100%; }
+      ol li a                                           {color: rgba($textColor, .85); transition: all ease .3s; font-size: 100% !important; line-height: 100%; }
+      ol li a:hover                                     {color: rgba($textColor, 1);}
+      ol li::after                                      {content:'|'; padding: 0 0 0 $v02;} 
+      ol li:last-of-type::after                         {content:'';}  
+      
+     .navbar-nav                                        {padding: 0; }  
+     .navbar-nav > li                                   {margin: 0; align-items: center; }       
+     .navbar-nav > li > ul                              {box-shadow: $shadow;}
+     .navbar-nav > li > a                               {font-size: 100% !important; color: rgba($textColor, .85) !important;} 
+     .navbar-nav > li > span > a                        {font-size: 100% !important; color: rgba($textColor, .85) !important;}
+     .navbar-nav > li > span.home1 > a:before           {content:'home'; /* @include symbol-outline;*/ font-weight: 700; }                              
+     
+     .navbar-nav > li:after                             {content: '|'; padding: 0 0 0 $v05 !important;} 
+     .navbar-nav > li:last-of-type::after               {content: ''  !important; padding: 0 !important;}
+     .navbar-nav > li > span                            {padding: 0 0 0 $v05 !important;} 
+     .navbar-nav > li:first-of-type > span              {padding: 0 0 0 0 !important;}      
+     
+     .navbar-nav a.extend                               {display: inline; padding: 0 0 0 $v05 !important;} 
+     .navbar-nav a.extend:after                         {font-weight: bold; font-size: 125%; display: inline-block; color: $textColor; text-align: center; padding:3px $v02; border: 1px solid $textColor; content:'+'; font-family: $font; font-weight: normal; min-width: $v07; min-height: $v07; } 
+     .navbar-nav a.extend.show:after                    {content:'–';} 
+     
+     .navbar-nav > li:not(.dropdown)::after             {content: '|';padding: 0 0 0 $v05 !important;}
+     .navbar-nav > li.symb:after,
+     .navbar-nav > li:last-of-type::after               {content: ''  !important; padding: 0 !important;}
+     .navbar-nav > span.capital::after                  {content: '|';padding: 0 0 0 $v05 !important;}  
+     
+     .navbar-nav > li.act  a.extend:after               {content:'–'; color: #fff; border: 1px solid #000; background: $gray-500; } 
+     .navbar-nav li a.dropdown-item:focus               {background: transparent;} 
+     .navbar-nav li.act > ul.dropdown-menu              {display: block; }                    
+     
+     .navbar-nav ul li.cur a                            {background: $gray-300;}
+     
+     .dropdown-menu                                     {box-shadow: $shadow;} 
+     .dropdown-menu li a:focus                          {color: $basicColor;}
+     .dropdown-menu li                                  {line-height: 135%;}     
+     }
+
+/* div.breadcrumbtop                                       {background: $breadcrumbtop;} */
