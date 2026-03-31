@@ -1,0 +1,77 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  Hda\T3up\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+    autowire: true
+
+  Hda\T3up\Hooks\DataHandlerHook:
+    tags:
+      - name: event.listener
+        identifier: 't3up-datamap-hook'
+        event: TYPO3\CMS\Core\DataHandling\Event\AfterDatabaseOperationsEvent
+
+  hda.t3up.updates.content_spacing_update:
+    class: Hda\T3up\Updates\ContentSpacingUpdate
+    arguments:
+      $connectionPool: '@TYPO3\CMS\Core\Database\ConnectionPool'
+    tags:
+      - name: 'install.upgrade.wizard'
+
+  Hda\T3up\Command\DebugContainerCommand:
+    arguments:
+      $container: '@service_container'
+    tags:
+      - name: console.command
+        command: 't3up:debug:container'
+
+  Hda\T3up\Command\CreateFontsSymlinkCommand:
+    tags:
+      - name: console.command
+        command: 't3up:symlink:fonts'  
+  
+  Hda\T3up\Command\UpdateTypoScriptConstantsCommand:
+    tags:
+      - name: console.command
+        command: 't3up:update:constants'
+
+  Hda\T3up\Command\ContentSpacingCommand:
+    tags:
+      - name: console.command
+        command: 't3up:update:spacing'
+
+  Hda\T3up\Command\SetOwnerPermissionsCommand:
+    tags:
+      - name: console.command
+        command: 't3up:set:owner-perms'
+
+  Hda\T3up\Command\UpdateTo13Command:
+    tags:
+      - name: console.command
+        command: 't3up:update:to13'
+        
+  Hda\T3up\Command\ConvertListTypesCommand:
+    tags:
+      - name: console.command
+        command: 't3up:convert:listtypes'
+        
+  Hda\T3up\Command\ConvertPageBackendLayoutsCommand:
+    tags:
+      - name: console.command
+        command: 't3up:convert:layouts'   
+        
+  Hda\T3up\Command\SysFileTypeFixCommand:
+    tags:
+      - name: console.command
+        command: 't3up:fix:filetype'     
+        
+  Hda\T3up\Command\FixGrid2LayoutCommand:
+    tags:
+      - name: console.command
+        command: 't3up:fix:grid2'
+        
+        

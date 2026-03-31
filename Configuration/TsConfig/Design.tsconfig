@@ -1,0 +1,61 @@
+TCEFORM {
+	tt_content {		
+		layout {
+			disableNoMatchingValueElement = 1
+		}			
+	}
+}
+
+TCEFORM {
+	tt_content {
+		frame_class {
+			removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
+			disableNoMatchingValueElement = 1
+            types {
+				text {
+					addItems { 
+                    	lightgrey  		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:lightgrey
+                    	white  			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                   		line			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:line
+                   		colored			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored
+                   		twocol			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:twocol
+					}
+				} 
+				textmedia {
+					addItems { 
+                    	lightgrey  		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:lightgrey
+                    	white  			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                   		line			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:line
+                   		colored			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored
+					}
+				}   
+				table {
+					addItems { 
+                    	white  			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+					}
+				}  				
+				header {
+					addItems { 
+                    	white  			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                   		line			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:line
+					}
+	            }  
+				list {
+					addItems { 
+                    	white  			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+					}
+	            }  
+	            menu_subpages {
+					addItems { 
+						subnavigation 	= Subnavigation
+					}
+	            }  
+	            shorcut {
+					addItems { 
+						line			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:line
+					}
+	            }  
+			} // types
+		} // frame_class
+	} // tt_content  
+} // TCEFORM
