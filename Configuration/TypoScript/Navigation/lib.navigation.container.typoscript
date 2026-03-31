@@ -1,3 +1,0 @@
-lib.navigation.container                   		=  TEXT
-lib.navigation.container.value         			=  {$page.navigation.container}  
-lib.navigation.container.insertData               = 1
