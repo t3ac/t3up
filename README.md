@@ -1,11 +1,7 @@
-20.08.2024  - new Configs for the templates
-19.09.2024  - Löschen der verschiedenen Schriftgrößen, Vereinheitlichung durch den Einsatz von clamp
-19.09.2024  - Korrektur der Javascript Basic: Klicken auf Overlay setzt das Burgermenue Icon zurück.
-19.09.2024   - Einsetzen der Standard-Schriftgröße in index.sass für Browser < 5% die "clamp" nicht ausgeben können.
-6.10.2024  - Entfernen der class "gutter" aus den Templates
-17.10.2024  - Um die Farben und Navigation in der Breadcrumb nutzen zu können muss in der localconfig unter FE
-            'addRootLineFields' => 'basecolor,nonav' eingetragen wqerden
-27.10.2024 - Korrektur der Sprachdatei. Neue CKEditor-Version.
-13.12.2024 - Ändern der Javascripte und Sass-Dateien für Sticky-Header
-28.04.2025 - Ändern der Breadcrumb in Position im Header/ im Content
-            - Version für scssphp ws_scss 13.0.02, Problem mit 13.1.
+2025-08-01 `t3up-table`, `t3up-onepager` und `t3up-image` sind integriert.
+Google Icons — Material Symbols ersetzt Font Awesome. Varianten: `filled` / `outline`. Klassenbeispiele: `.symbol`, `.symbol-outline`.
+Social-Media-Elemente nutzen `.brands` und verwenden FFFontawesome Brands.
+2025-08-21 Material im RTE integriert.
+Symbolic link for fonts added (see Commands).
+2025-08-25 In the `public/` folder there should be a symlink to `../vendor/hda/t3up/Resources/Public/Fonts`.
+2025-10-01 New fonts inside Merriweather Sans and Merriweather.
