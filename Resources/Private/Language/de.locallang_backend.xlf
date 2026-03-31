@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up">
+     <header/>
+        <body>
+        
+            /* -- BACKENDLAYOUTS ------------------------- */
+            
+            <trans-unit id="colpos0">
+                 <source>Content</source>
+                 <target state="translated">Inhaltsbereich</target>
+            </trans-unit>
+            <trans-unit id="colpos1">
+                 <source>Left column</source>
+                 <target state="translated">Linke Spalte</target>
+            </trans-unit>
+            <trans-unit id="colpos2">
+                 <source>Right column</source>
+                 <target state="translated">Rechte Spalte</target>
+            </trans-unit>
+            <trans-unit id="colpos3">
+                 <source>Media</source>
+                 <target state="translated">Media/Kopfbereich</target>
+            </trans-unit>
+
+
+            /* -- */
+            <trans-unit id="Standard">
+                 <source>Standardlayout</source>
+                 <target state="translated">Standardlayout</target>    
+            </trans-unit>
+            <trans-unit id="OneColumn">
+                 <source>OneColumn Layout</source>
+                 <target state="translated">Einspalten Layout mit Media</target>
+            </trans-unit>
+            <trans-unit id="LeftNavigation">
+                 <source>Layout with left navigation</source>
+                 <target state="translated">Layout mit linker Unternavigation</target>
+            </trans-unit>      
+            <trans-unit id="LeftNavigationInMedia">
+                <source>Layout with left navigation and media</source>
+                <target state="translated">Layout mit linker Unternavigation und Media</target>                
+             </trans-unit>    
+            <trans-unit id="LeftNavigationMarginal">
+                 <source>Layout with left navigation, and marginalcolumn</source>
+                 <target state="translated">Layout mit linker Unternavigation und rechter Marginalspalte</target>
+            </trans-unit>      
+            <trans-unit id="RightNavigation">
+                 <source>Layout with right navigation</source>
+                 <target state="translated">Layout mit rechter Unternavigation</target>
+            </trans-unit>                    
+            <trans-unit id="RightMarginal">
+                 <source>Layout with right marginal (off/on)</source>
+                 <target state="translated">Layout mit rechter Marginalspalte</target>
+            </trans-unit>
+            <trans-unit id="RightNavigationInMedia">
+                <source>Layout with right navigation and media</source>
+                <target state="translated">Layout mit rechter Unternavigation und Media</target>                
+             </trans-unit>    
+            <trans-unit id="BigRight">
+                 <source>Layout with a bigger right marginal (off/on)</source>
+                 <target state="translated">Layout mit breiter rechter Marginalspalte</target>
+            </trans-unit>
+            <trans-unit id="BigLeft">
+                 <source>Layout with a bigger left marginal (off/on)</source>
+                 <target state="translated">Layout mit breiter linker Marginalspalte</target>
+            </trans-unit>      
+            <trans-unit id="SmallRight">
+                 <source>Layout with a small right marginal (off/on)</source>
+                 <target state="translated">Layout mit schmaler rechter Marginalspalte</target>
+            </trans-unit>
+            <trans-unit id="SmallLeft">
+                 <source>Layout with a small left marginal (off/on)</source>
+                 <target state="translated">Layout mit schmaler linker Marginalspalte</target>
+            </trans-unit>      
+
+            /* -- PAGE ------------------------- */
+            <trans-unit id="fullpage">
+                 <source>Pagelayout without a container</source>
+                 <target state="translated">Seitenlayout, 100% Breite, ohne Container-Einfassung</target>
+            </trans-unit>            
+            <trans-unit id="showtitle">
+                 <source>Don't show the title</source>
+                 <target state="translated">Zeige Seitenüberschrift (H1) nicht</target>
+            </trans-unit>
+            <trans-unit id="deltitle">
+                 <source>Delete the title (h1), for plugins eg. news</source>
+                 <target state="translated">Lösche Seitenüberschrift (H1), für z.B. Einzelansicht von News</target>
+            </trans-unit>
+            <trans-unit id="breadcrumb">
+                <source>Hide the breadcrumb</source>
+                 <target state="translated">Blende Breadcrumb-Menü aus</target>
+            </trans-unit> 
+            <trans-unit id="hidenav">
+                 <source>Hides the subnavigation</source>
+                 <target state="translated">Blende Unternavigation auf dieser Seite aus</target>
+            </trans-unit>
+            <trans-unit id="nonav">
+                 <source>This page has no link in the navigation</source>
+                 <target state="translated">Diese Seite hat keinen Link in der Navigation.</target>
+            </trans-unit>            
+            <trans-unit id="previousnext">
+                 <source>Shows previous/next buttons</source>
+                 <target state="translated">Vor-/Zurück-Button unterhalb des Inhalts</target>  
+            </trans-unit>
+
+             /* -- TT-CONTENT IMAGE ORIENT----------- */    
+            <trans-unit id="header-below">
+                 <source>Header below the image (center)</source>
+               <target state="translated">Überschrift unter dem Bild (zentriert)</target>                         
+            </trans-unit>
+            <trans-unit id="header-below-left">
+                 <source>Header below the image (left)</source>
+               <target state="translated">Überschrift unter dem Bild (links)</target>                         
+            </trans-unit>
+            <trans-unit id="header-below-right">
+                 <source>Header below the image (right)</source>
+                <target state="translated">Überschrift unter dem Bild (rechts)</target>                 
+            </trans-unit>
+                         
+             /* -- TT-CONTENT PADDING----------- */
+            <trans-unit id="padding_before">
+                <source>Padding Before</source>
+                <target state="translated">Innenabstand davor</target>  
+            </trans-unit>   
+            
+            <trans-unit id="padding_after">
+                <source>Padding After</source>
+                <target state="translated">Innenabstand danach</target>  
+            </trans-unit>    
+                
+                
+            <trans-unit id="padding_side">
+               <source>Padding side</source>
+               <target state="translated">Seitlichen Innenabstand</target> 
+            </trans-unit>        
+            <trans-unit id="padding_inner">
+               <source>Innerpadding</source>
+               <target state="translated">Inneren Innenabstand</target>                
+            </trans-unit>
+            
+            <trans-unit id="space_class">
+                <source>Inner Padding</source>
+                <target state="translated">Innenabstand</target>            
+            </trans-unit>   
+            
+            <trans-unit id="space_class_none">
+                <target state="translated">ohne</target>
+            </trans-unit>        
+            <trans-unit id="space_class_1">
+               <target state="translated">0,1 Abstand</target>
+            </trans-unit> 
+            <trans-unit id="space_class_2">
+               <target state="translated">0,2 Abstand</target>
+            </trans-unit>     
+            <trans-unit id="space_class_3">
+                <target state="translated">0,3 Abstand</target>               
+            </trans-unit>
+            <trans-unit id="space_class_4">
+                <target state="translated">0,4 Abstand</target>                   
+            </trans-unit>  
+            <trans-unit id="space_class_5">
+                <target state="translated">0,5 Abstand</target>            
+            </trans-unit>             
+            <trans-unit id="space_class_6">
+                <target state="translated">0,6 Abstand</target>      
+            </trans-unit>  
+            <trans-unit id="space_class_7">
+                <target state="translated">0,7 Abstand</target>     
+            </trans-unit>    
+            <trans-unit id="space_class_8">
+                <target state="translated">einfacher Abstand</target>     
+            </trans-unit> 
+            <trans-unit id="space_class_9">
+                <target state="translated">eineinhalbfacher Abstand</target>     
+            </trans-unit> 
+            <trans-unit id="space_class_10">
+                <target state="translated">doppelter Abstand</target>     
+            </trans-unit> 
+            <trans-unit id="space_class_11">
+                <target state="translated">dreifacher Abstand</target>     
+            </trans-unit> 
+            <trans-unit id="space_class_12">
+                <target state="translated">vierfacher Abstand</target>     
+            </trans-unit> 
+            <trans-unit id="space_class_13">
+                <target state="translated">fünfacher Abstand</target>     
+            </trans-unit>              
+            <trans-unit id="space_class_14">
+                <target state="translated">sechsfacher Abstand</target>     
+            </trans-unit> 
+            <trans-unit id="space_class_15">
+                <target state="translated">siebenfacher Abstand</target>     
+            </trans-unit>            
+            <trans-unit id="space_class_16">
+                <target state="translated">achtfacher Abstand</target>     
+            </trans-unit> 
+            <trans-unit id="space_class_117">
+                <target state="translated">neunfacher Abstand</target>     
+            </trans-unit> 
+            
+           /* -- Animation ----------- */  
+            <trans-unit id="animate_easing">
+                <source>Easing</source>     
+                <target state="translated">Beschleunigung </target>
+            </trans-unit>                
+                       
+            <trans-unit id="animate_duration">
+                 <source>Duration</source>   
+                 <target state="translated">Duration</target>                
+             </trans-unit>   
+                                 
+            <trans-unit id="animate_delay">
+                 <source>Delay</source>   
+                 <target state="translated">Verzögerung</target>                
+             </trans-unit>
+                   
+             /* -- Colors ----------- */
+            <trans-unit id="basecolor">
+                 <source>Pagecolor</source>
+                <target state="translated">Seiten-Hauptfarbe</target> 
+            </trans-unit>    
+            <trans-unit id="basecolor-no">
+                 <source>No Color</source>
+                <target state="translated">keine</target>                  
+            </trans-unit>    
+            <trans-unit id="basecolor-blue">
+                 <source>Blue</source>
+                <target state="translated">Blau</target> 
+            </trans-unit>    
+            <trans-unit id="basecolor-red">
+                 <source>Red</source>
+                 <target state="translated">Rot</target> 
+            </trans-unit>    
+            <trans-unit id="basecolor-green">
+                 <source>Green</source>
+                 <target state="translated">Grün</target> 
+            </trans-unit>
+            <trans-unit id="basecolor-orange">
+                 <source>Orange</source>
+                 <target state="translated">Orange</target> 
+            </trans-unit>    
+            <trans-unit id="basecolor-violett">
+                 <source>Violett</source>
+                 <target state="translated">Violett</target>
+            </trans-unit>    
+            <trans-unit id="basecolor-yellow">
+                 <source>Yellow</source>
+                 <target state="translated">Gelb</target> 
+            </trans-unit>      
+            <trans-unit id="basecolor-grey">
+                 <source>Grey</source>
+                 <target state="translated">Grau</target>
+            </trans-unit>    
+            <trans-unit id="v-turquoise">
+                 <source>Turquoise</source>
+                 <target state="translated">Türkis</target>
+            </trans-unit>    
+            <trans-unit id="basecolor-darkblue">
+                 <source>Dark blue</source>
+                 <target state="translated">Dunkelblau</target>
+            </trans-unit>    
+            <trans-unit id="v-darkgrey">
+                 <source>Dark grey</source>
+                 <target state="translated">Dunkelgrau</target>
+            </trans-unit>    
+            
+           /* -- Designs ----------- */
+
+            <trans-unit id="white">
+                 <source>White background</source>
+                 <target state="translated">Weißer Hintergrund</target>
+            </trans-unit>            
+            <trans-unit id="colored">
+                 <source>Colored background</source>
+                 <target state="translated">Farbiger Hintergrund</target>
+            </trans-unit>                                       
+            <trans-unit id="line">
+                 <source>With a line</source>
+                 <target state="translated">Mit Linie</target>
+            </trans-unit>
+            <trans-unit id="twocol">
+                 <source>Text with 2 columns</source>
+                 <target state="translated">2-spaltiger Text</target>                 
+            </trans-unit>  
+
+            <trans-unit id="containerhandle">
+                 <source>Handle as a container</source>
+                 <target state="translated">Verhält sich wie ein Container</target>
+            </trans-unit>
+            
+            /* -- LIGHTBOX ------------------------ */
+            <trans-unit id="lightboxstyle">
+                 <source>Lightbox effects</source>
+                 <target state="translated">Lightbox Effekte</target>
+            </trans-unit>   
+            <trans-unit id="lightboxstyle0">
+                 <source>none</source>
+                 <target state="translated">keine</target>
+            </trans-unit>           
+            <trans-unit id="lightboxstyle1">
+                 <source>Simple effect</source>
+                 <target state="translated">Einfacher Effekt</target>
+            </trans-unit>   
+            <trans-unit id="lightboxstyle2">
+                 <source>Simple effect with close buttton</source>
+                 <target state="translated">mit Schließschalter</target>
+            </trans-unit>   
+            <trans-unit id="lightboxstyle3">
+                 <source>Gallery with Navigation</source>
+                 <target state="translated">mit Navigation</target>
+            </trans-unit>           
+            <trans-unit id="lightboxstyle4">
+                 <source>Gallery with Arrows</source>
+                 <target state="translated">mit Pfeilen</target>
+            </trans-unit>   
+            <trans-unit id="lightboxstyle5">
+                 <source>Gallery with Navigation and Arrows</source>
+                 <target state="translated">mit Navigation und Pfeilen</target>
+            </trans-unit>
+                
+            <trans-unit id="inf">
+                 <source>Enable the copyright view</source>
+                 <target state="translated">Erlaubt die Copyright Anzeige.</target>
+            </trans-unit>   
+                
+            <trans-unit id="rollover">
+                 <source>Enable the rollover effect</source>
+                 <target state="translated">Rollovereffekt.</target>
+            </trans-unit>     
+                
+                
+            /* -- IMAGES -------------------------------- */
+            <trans-unit id="image.05">
+                <source>Column width 5%</source>
+                 <target state="translated">Bildbreite 5%</target>
+            </trans-unit>   
+            <trans-unit id="image.10">
+                <source>Column width 10%</source>
+                <target state="translated">Bildbreite 10%</target>
+            </trans-unit>   
+            <trans-unit id="image.15">
+                <source>Column width 15%</source>
+                <target state="translated">Bildbreite 15%</target>
+            </trans-unit>   
+            <trans-unit id="image.20">
+                <source>Column width 20%</source>
+                <target state="translated">Bildbreite 20%</target>
+            </trans-unit>   
+            <trans-unit id="image.25">
+                <source>Column width 25%</source>
+                <target state="translated">Bildbreite 25%</target>
+            </trans-unit>   
+            <trans-unit id="image.30">
+                <source>Column width 30%</source>
+                <target state="translated">Bildbreite 30%</target>
+            </trans-unit>   
+            <trans-unit id="image.35">
+                <source>Column width 35%</source>
+                <target state="translated">Bildbreite 35%</target>
+            </trans-unit>   
+            <trans-unit id="image.40">
+                <source>Column width 40%</source>
+                <target state="translated">Bildbreite 40%</target>
+            </trans-unit>   
+            <trans-unit id="image.45">
+                <source>Column width 45%</source>
+                <target state="translated">Bildbreite 45%</target>
+            </trans-unit>   
+            <trans-unit id="image.50">
+                <source>Column width 50%</source>
+                <target state="translated">Bildbreite 50%</target>
+            </trans-unit>   
+            <trans-unit id="image.55">
+                <source>Column width 55%</source>
+                <target state="translated">Bildbreite 55%</target>
+            </trans-unit>   
+            <trans-unit id="image.60">
+                <source>Column width 60%</source>
+                <target state="translated">Bildbreite 60%</target>
+            </trans-unit>   
+            <trans-unit id="image.65">
+                <source>Column width 65%</source>
+                <target state="translated">Bildbreite 65%</target>
+            </trans-unit>   
+            <trans-unit id="image.70">
+                <source>Column width 70%</source>
+                <target state="translated">Bildbreite 70%</target>
+            </trans-unit>   
+            <trans-unit id="image.75">
+                <source>Column width 75%</source>
+                <target state="translated">Bildbreite 75%</target>
+            </trans-unit>   
+            <trans-unit id="image.80">
+                <source>Column width 80%</source>
+                <target state="translated">Bildbreite 80%</target>
+            </trans-unit>   
+            <trans-unit id="image.85">
+                <source>Column width 85%</source>
+                <target state="translated">Bildbreite 85%</target>
+            </trans-unit>   
+            <trans-unit id="image.90">
+                <source>Column width 90%</source>
+                <target state="translated">Bildbreite 90%</target>
+            </trans-unit>   
+            <trans-unit id="image.95">
+                <source>Column width 95%</source>
+                <target state="translated">Bildbreite 95%</target>
+            </trans-unit>   
+            <trans-unit id="image.100">
+                <source>Column width 100%</source>
+                <target state="translated">Bildbreite 100%</target>
+            </trans-unit>   
+
+          /* OnePager */
+
+			<trans-unit id="containerhandle">
+			     <source>Handle as a container</source>
+			     <target state="translated">Verhält sich wie ein Container</target>
+		    </trans-unit>
+
+			<trans-unit id="container">
+			     <source>Container</source>
+			     <target state="translated">Container</target>
+		    </trans-unit>	
+		    
+		    
+			<trans-unit id="objectfit">
+			     <source>Object-fit</source>
+			     <target state="translated">Inhaltselement passt sich komplett dem Fenster an - objectfit</target>			     
+		    </trans-unit>	
+		    
+			<trans-unit id="bgimage">
+			     <source>Backgroundimage</source>
+			     <target state="translated">Großes Hintergrundbild</target>
+		    </trans-unit>	
+			<trans-unit id="bgcolor">
+			     <source>Backgroundcolor</source>
+			     <target state="translated">Hintergrundfarbe</target>			     
+		    </trans-unit>
+  
+			<trans-unit id="darkgrey">
+			     <source>Darkgrey background</source>
+			     <target state="translated">Dunkelgrau</target>
+		    </trans-unit>	
+			<trans-unit id="darkergrey">
+			     <source>Darker grey</source>
+			     <target state="translated">Dunkeleres Grau</target>
+		    </trans-unit>	 
+			<trans-unit id="darkblue">
+			     <source>Darkblue</source>
+			     <target state="translated">Dunkelblau</target>
+		    </trans-unit>			    
+			<trans-unit id="black">
+			     <source>Black background</source>
+			     <target state="translated">Schwarz</target>
+		    </trans-unit>  
+            <trans-unit id="grey">
+			     <source>Grey background</source>
+			     <target state="translated">Grau</target>
+            </trans-unit> 
+			<trans-unit id="white">
+			     <source>White background</source>
+			     <target state="translated">Weiß</target>
+		    </trans-unit>  
+            <trans-unit id="colored">
+			     <source>Colored background</source>
+			     <target state="translated">Farbig</target>
+            </trans-unit> 
+            <trans-unit id="lightgrey">
+			     <source>Lightgrey background</source>
+			     <target state="translated">Hellgrau</target>
+            </trans-unit> 
+
+			<trans-unit id="blue">
+			     <source>Blue</source>
+				<target state="translated">Blau</target>
+		    </trans-unit>			
+			<trans-unit id="green">
+			     <source>Green</source>
+				<target state="translated">Grün</target>
+		    </trans-unit>				    	
+			<trans-unit id="orange">
+			     <source>Orange</source>
+				<target state="translated">Orange</target>
+		    </trans-unit>				
+			<trans-unit id="red">
+			     <source>Red</source>
+				<target state="translated">Rot</target>
+		    </trans-unit>				
+			<trans-unit id="turquoise">
+			     <source>Turquoise</source>
+				<target state="translated">Türkis</target>
+		    </trans-unit>				
+			<trans-unit id="violett">
+			     <source>Violett</source>
+				<target state="translated">Violett</target>
+		    </trans-unit>				
+			<trans-unit id="yellow">
+			     <source>Yellow</source>
+				<target state="translated">Gelb</target>
+		    </trans-unit>	
+		    	
+			<trans-unit id="blacktxt">
+			     <source>Black</source>
+			    <target state="translated">Schwarz</target>
+		    </trans-unit>	
+			<trans-unit id="whitetxt">
+			    <source>White</source>
+			    <target state="translated">Weiß</target>  
+		    </trans-unit>		    	
+			<trans-unit id="darkgreytxt">
+			     <source>Darkgrey</source>
+			     <target state="translated">Dunkelgrau</target>  
+		    </trans-unit>	
+			<trans-unit id="darkbluetxt">
+			     <source>Darkblue</source>
+			     <target state="translated">Dunkelblau</target>
+		    </trans-unit>
+		    
+			<trans-unit id="none">
+			     <source>none/inherit</source>
+			     <target state="translated">Ohne/vererbt</target>
+		    </trans-unit>	         
+            
+           /* -- TABLE ------------------------ */ 
+		    <trans-unit id="tablefields">
+			     <source>Tablefields</source>
+			     <target state="translated">Tebellenfelder</target>
+		    </trans-unit>
+		    <trans-unit id="tablelayout.stripe">
+			     <source>Striped</source>
+			     <target state="translated">Gestreift</target>
+		    </trans-unit>
+		    <trans-unit id="tablelayout.normalplus">
+			     <source>Colored header</source>
+			     <target state="translated">Farbiger Tabellenkopf</target>
+		    </trans-unit>	   
+		    <trans-unit id="tablelayout.colorstripe">
+			     <source>Colored stripes</source>
+			     <target state="translated">Farbige Streifen</target>
+		    </trans-unit>	   
+		    <trans-unit id="tablelayout.noline">
+			     <source>no lines</source>
+			     <target state="translated">Ohne Linien</target>
+		    </trans-unit>
+			<trans-unit id="tablelayout.lined">
+			     <source>only lines</source>
+			     <target state="translated">Liniert</target>
+		    </trans-unit> 
+		    
+ 			<trans-unit id="tablelayout.10-90">
+				<source>table, 2 cols 10/90</source>
+                <target state="translated">2 Spalten 10/90</target>
+			</trans-unit>
+			<trans-unit id="tablelayout.20-80">
+				<source>table, 2 cols 20/80</source>
+                <target state="translated">2 Spalten 20/80</target>
+			</trans-unit>
+			<trans-unit id="tablelayout.30-70">
+				<source>table, 2 cols 30/70</source>
+                <target state="translated">2 Spalten 30/70</target>				
+			</trans-unit>	
+			<trans-unit id="tablelayout.40-60">
+				<source>table, 2 cols 40/60</source>
+                <target state="translated">2 Spalten 40/60</target>				
+			</trans-unit>	
+			<trans-unit id="tablelayout.50-50">
+				<source>table, 2 cols 50/50</source>
+                <target state="translated">2 Spalten 50/50</target>				
+			</trans-unit>	
+			<trans-unit id="tablelayout.60-40">
+				<source>table, 2 cols 60/40</source>
+                <target state="translated">2 Spalten 60/40</target>				
+			</trans-unit>
+			<trans-unit id="tablelayout.70-30">
+				<source>table, 2 cols 70/30</source>
+                <target state="translated">2 Spalten 70/30</target>				
+			</trans-unit>
+			<trans-unit id="tablelayout.80-20">
+				<source>table, 2 cols 80/20</source>
+                <target state="translated">2 Spalten 80/20</target>				
+			</trans-unit>	
+			<trans-unit id="tablelayout.90-10">
+				<source>table, 2 cols 90/10</source>
+                <target state="translated">2 Spalten 90/10</target>				
+			</trans-unit>	
+			<trans-unit id="tablelayout.20-40-40">
+				<source>table, 3 cols 20/40/40</source>
+                <target state="translated">3 Spalten 20/40/40</target>				
+			</trans-unit>				
+			<trans-unit id="tablelayout.33-33-33">
+				<source>table, 3 cols 33/33/33</source>
+                <target state="translated">3 Spalten 33/33/33</target>	
+			</trans-unit>		
+			<trans-unit id="tablelayout.40-30-30">
+				<source>table, 3 cols 40/30/30</source>
+                <target state="translated">3 Spalten 40/30/30</target>					
+			</trans-unit>
+			<trans-unit id="tablelayout.50-25-25">
+				<source>table, 3 cols 50/25/25</source>
+                <target state="translated">3 Spalten 50/25/25</target>					
+			</trans-unit>		
+			<trans-unit id="tablelayout.60-20-20">
+				<source>table, 3 cols 60/20/20</source>
+                <target state="translated">3 Spalten 60/20/20</target>					
+			</trans-unit>
+			<trans-unit id="tablelayout.80-10-10">
+				<source>table, 3 cols 80/10/10</source>
+                <target state="translated">3 Spalten 80/10/10</target>					
+			</trans-unit>			
+			<trans-unit id="tablelayout.25-25-25-25">
+				<source>table, 4 cols 25-25-25-25</source>
+                <target state="translated">4 Spalten 25/25/25/25</target>					
+			</trans-unit>				
+			<trans-unit id="tablelayout.40-20-20-20">
+				<source>table, 4 cols 40/20/20/20</source>
+				<target state="translated">4 Spalten 40/20/20/20</target>
+			</trans-unit>				
+			<trans-unit id="tablelayout.50-16-16-16">
+				<source>table, 4 cols 50/16/16/16</source>
+				<target state="translated">4 Spalten 50/16/16/16</target>
+			</trans-unit>			
+			<trans-unit id="tablelayout.20-20-20-20-20">
+				<source>table, 5 cols 20/20/20/20/20</source>
+				<target state="translated">5 Spalten 20/20/20/20/20</target>
+			</trans-unit>				
+			<trans-unit id="tablelayout.40-15-15-15-15">
+				<source>table, 5 cols 40/15/15/15/15</source>
+				<target state="translated">5 Spalten 40/15/15/15/15</target>
+			</trans-unit>				
+			<trans-unit id="tablelayout.60-10-10-10-10">
+				<source>table, 5 cols 60/10/10/10/10</source>
+				<target state="translated">5 Spalten 60/10/10/10/10</target>
+			</trans-unit>		
+			<trans-unit id="tablelayout.50-10-10-10-10-10">
+				<source>table, 6 cols 50/10/10/10/10/10</source>
+				<target state="translated">6 Spalten 50/10/10/10/10/10</target>
+			</trans-unit>	
+			<trans-unit id="tablelayout.25-15-15-15-15-15">
+				<source>table, 6 cols 25/15/15/15/15/15</source>
+				<target state="translated">6 Spalten 25/15/15/15/15/15</target>
+			</trans-unit>	
+			<trans-unit id="tablelayout.40-10-10-10-10-10-10">
+				<source>table, 7 cols 40/10/10/10/10/10/10</source>
+				<target state="translated">7 Spalten 40/10/10/10/10/10/10</target>
+			</trans-unit>	
+			<trans-unit id="tablelayout.30-10-10-10-10-10-10-10">
+				<source>table, 8 cols 30/10/10/10/10/10/10/10</source>
+				<target state="translated">8 Spalten 30/10/10/10/10/10/10/10</target>
+			</trans-unit>
+			<trans-unit id="tablelayout.20-10-10-10-10-10-10-10-10">
+				<source>table, 9 cols 20/10/10/10/10/10/10/10</source>
+				<target state="translated">9 Spalten 20/10/10/10/10/10/10/10</target>
+			</trans-unit>
+			<trans-unit id="tablelayout.10-10-10-10-10-10-10-10-10-10">
+				<source>table, 10 cols 100/10/10/10/10/10/10/10</source>
+				<target state="translated">10 Spalten 100/10/10/10/10/10/10/10</target>
+			</trans-unit>	
+
+        </body>
+    </file>
+</xliff>

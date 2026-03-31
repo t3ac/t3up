@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+        <div class="page {basecolor} {inview}" id="top">
+        	<f:cObject typoscriptObjectPath="lib.access" />          
+            <f:render section="Content" optional="TRUE" />
+            <footer id="footer" role="contentinfo" class="{f:if(condition: footerdynamic, then: 'footerdynamic')}">  
+                <f:cObject typoscriptObjectPath="lib.footer" />
+            </footer>
+            <f:cObject typoscriptObjectPath="lib.topscroll" />
+	        <f:cObject typoscriptObjectPath="lib.social" />        
+      </div>  
+</html>

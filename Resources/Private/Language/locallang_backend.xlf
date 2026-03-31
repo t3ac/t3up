@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2014-09-22T11:44:12Z" product-name="t3up">
+     <header/>
+        <body>
+        
+        /* TCA  ------------------------- */
+        
+         <trans-unit id="container_class">
+           <source>Container behaviour</source>
+        </trans-unit>       
+        
+         <trans-unit id="animation_class">
+           <source>Animation values</source>
+        </trans-unit>       
+        
+         <trans-unit id="padding_class">
+           <source>Extended padding classes</source>
+        </trans-unit>                     
+        
+        
+        /* -- BACKENDLAYOUTS ------------------------- */
+
+        <trans-unit id="colpos0">
+           <source>Content</source>
+        </trans-unit>
+        <trans-unit id="colpos1">
+           <source>Left column</source>
+        </trans-unit>
+        <trans-unit id="colpos2">
+           <source>Right column</source>
+        </trans-unit>
+        <trans-unit id="colpos3">
+           <source>Media</source>
+        </trans-unit>
+
+         /* -- */
+        <trans-unit id="OnePager">
+           <source>OnePager Layout</source>
+        </trans-unit>
+        <trans-unit id="OneColumn">
+           <source>OneColumn Layout</source>
+        </trans-unit>
+        <trans-unit id="LeftNavigation">
+           <source>Layout with left navigation</source>
+        </trans-unit>    
+        <trans-unit id="RightNavigation">
+           <source>Layout with right navigation</source>
+        </trans-unit>              
+
+    /* -- PAGE ------------------------- */
+        <trans-unit id="fullpage">
+           <source>Pagelayout without a container</source>
+        </trans-unit>            
+        <trans-unit id="showtitle">
+           <source>Don't show the title</source>
+        </trans-unit>
+        <trans-unit id="deltitle">
+           <source>Delete the title (h1), for plugins eg. news</source>
+        </trans-unit>
+        <trans-unit id="breadcrumb">
+           <source>Hide the breadcrumb</source>
+        </trans-unit> 
+        <trans-unit id="hidenav">
+           <source>Hides the subnavigation</source>
+        </trans-unit>
+        <trans-unit id="nonav">
+           <source>This page has no link in the navigation</source>
+        </trans-unit>
+        <trans-unit id="previousnext">
+           <source>Shows previous/next buttons</source>
+        </trans-unit>
+         
+         
+    /* -- TT-CONTENT IMAGE ORIENT----------- */    
+        <trans-unit id="header-below">
+           <source>Header below the image (center)</source>
+        </trans-unit>
+        <trans-unit id="header-below-left">
+           <source>Header below the image (left)</source>
+        </trans-unit>
+            <trans-unit id="header-below-right">
+           <source>Header below the image (right)</source>
+        </trans-unit>
+                 
+
+    /* -- TT-CONTENT PADDING----------- */
+    
+        <trans-unit id="padding_before">
+           <source>Padding before</source>
+        </trans-unit>
+        <trans-unit id="padding_after">
+           <source>Padding after</source>
+        </trans-unit>
+        <trans-unit id="padding_side">
+           <source>Padding side</source>
+        </trans-unit>        
+        <trans-unit id="padding_inner">
+           <source>Innerpadding</source>
+        </trans-unit>
+        <trans-unit id="space_class">
+           <source>Inner Padding</source>
+        </trans-unit> 
+        <trans-unit id="space_class_none">
+           <source>none</source>
+        </trans-unit>
+        <trans-unit id="space_class_1">
+           <source>0,1</source>
+        </trans-unit> 
+        <trans-unit id="space_class_2">
+           <source>0,2</source>
+        </trans-unit>     
+        <trans-unit id="space_class_3">
+            <source>0,3</source>               
+        </trans-unit>
+        <trans-unit id="space_class_4">
+            <source>0,4</source>                   
+        </trans-unit>  
+        <trans-unit id="space_class_5">
+            <source>0,5</source>            
+        </trans-unit>             
+        <trans-unit id="space_class_6">
+            <source>0,6</source>      
+        </trans-unit>  
+        <trans-unit id="space_class_7">
+            <source>0,7</source>     
+        </trans-unit>    
+        <trans-unit id="space_class_8">
+            <source>1 unit</source>     
+        </trans-unit> 
+        <trans-unit id="space_class_9">
+            <source>1 and a half unit</source>     
+        </trans-unit> 
+        <trans-unit id="space_class_10">
+            <source>2 units</source>     
+        </trans-unit> 
+         <trans-unit id="space_class_11">
+            <source>3 units</source>     
+        </trans-unit>
+    
+      /* -- Animtate ----------- */
+        <trans-unit id="animate">
+            <source>Animation</source>     
+        </trans-unit>      
+        <trans-unit id="fade-up">
+            <source>fade-up</source>     
+        </trans-unit>      
+        <trans-unit id="fade-down">
+            <source>fade-down</source>     
+        </trans-unit>         
+        <trans-unit id="fade-right">
+            <source>fade-right</source>     
+        </trans-unit>      
+        <trans-unit id="fade-left">
+            <source>fade-left</source>     
+        </trans-unit>         
+        <trans-unit id="fade-up-right">
+            <source>fade-up-right</source>     
+        </trans-unit>      
+        <trans-unit id="fade-up-left">
+            <source>fade-up-left</source>     
+        </trans-unit>         
+        <trans-unit id="fade-down-right">
+            <source>fade-down-right</source>     
+        </trans-unit>      
+         <trans-unit id="fade-down-left">
+            <source>fade-down-left</source>     
+        </trans-unit>         
+        <trans-unit id="zoom-in">
+            <source>zoom-in</source>     
+        </trans-unit>      
+         <trans-unit id="zoom-in-up">
+            <source>zoom-in-up</source>     
+        </trans-unit>         
+        <trans-unit id="zoom-in-down">
+            <source>zoom-in-down</source>     
+        </trans-unit>      
+         <trans-unit id="zoom-in-right">
+            <source>zoom-in-right</source>     
+        </trans-unit>         
+        <trans-unit id="zoom-in-left">
+            <source>zoom-in-left</source>     
+        </trans-unit>      
+         <trans-unit id="zoom-out">
+            <source>zoom-out</source>     
+        </trans-unit>         
+        <trans-unit id="zoom-out-up">
+            <source>zoom-out-up</source>     
+        </trans-unit>      
+         <trans-unit id="zoom-out-down">
+            <source>zoom-out-down</source>     
+        </trans-unit>         
+        <trans-unit id="zoom-out-right">
+            <source>zoom-out-right</source>     
+        </trans-unit>      
+         <trans-unit id="zoom-out-left">
+            <source>zoom-out-left</source>     
+        </trans-unit>     
+        <trans-unit id="slide">
+            <source>slide</source>     
+        </trans-unit>         
+        <trans-unit id="slide-up">
+            <source>slide-up</source>     
+        </trans-unit>      
+         <trans-unit id="slide-down">
+            <source>slide-down</source>     
+        </trans-unit>         
+        <trans-unit id="slide-right">
+            <source>slide-right</source>     
+        </trans-unit>      
+         <trans-unit id="slide-left">
+            <source>slide-left</source>     
+        </trans-unit>     
+                   
+        <trans-unit id="animate_duration">
+            <source>Duration</source>     
+        </trans-unit>  
+        <trans-unit id="0">
+            <source>0</source>     
+        </trans-unit>   
+        <trans-unit id="250">
+            <source>0.25 s</source>     
+        </trans-unit>           
+        <trans-unit id="500">
+            <source>0.5 s</source>     
+        </trans-unit>  
+        <trans-unit id="750">
+            <source>0.75 s</source>     
+        </trans-unit>          
+        <trans-unit id="1000">
+            <source>1s</source>     
+        </trans-unit>  
+        <trans-unit id="1250">
+            <source>1.25 s</source>     
+        </trans-unit>          
+        <trans-unit id="1500">
+            <source>1.5 s</source>     
+        </trans-unit>  
+        <trans-unit id="1750">
+            <source>1.75 s</source>     
+        </trans-unit>          
+        <trans-unit id="2000">
+            <source>2 s</source>     
+        </trans-unit>  
+        <trans-unit id="2250">
+            <source>2.25 s</source>     
+        </trans-unit>          
+        <trans-unit id="2500">
+            <source>2.5 s</source>     
+        </trans-unit>  
+        <trans-unit id="2750">
+            <source>2.75 s</source>     
+        </trans-unit>          
+        <trans-unit id="3000">
+            <source>3s</source>     
+        </trans-unit> 
+        
+        <trans-unit id="animate_delay">
+            <source>Delay</source>   
+        </trans-unit> 
+        
+      /* -- Easing ----------- */  
+        <trans-unit id="animate_easing">
+            <source>Easing</source>     
+        </trans-unit>        
+        <trans-unit id="linear">
+           <source>linear</source>
+        </trans-unit>            
+        <trans-unit id="ease">
+           <source>ease</source>
+        </trans-unit>            
+        <trans-unit id="ease-in">
+           <source>ease-in</source>
+        </trans-unit>          
+        <trans-unit id="ease-out">
+           <source>ease-out</source>
+        </trans-unit>         
+        <trans-unit id="ease-in-out">
+           <source>ease-in-out</source>
+        </trans-unit>         
+        <trans-unit id="ease-in-back">
+           <source>ease-in-back</source>
+        </trans-unit>           
+        <trans-unit id="ease-out-back">
+           <source>ease-out-back</source>
+        </trans-unit>           
+        <trans-unit id="ease-in-out-back">
+           <source>ease-in-out-back</source>
+        </trans-unit>      
+        <trans-unit id="ease-in-sine">
+           <source>ease-in-sine</source>
+        </trans-unit>            
+        <trans-unit id="ease-out-sine">
+           <source>ease-out-sine</source>
+        </trans-unit>            
+        <trans-unit id="ease-in-out-sine">
+           <source>ease-in-out-sine</source>
+        </trans-unit>       
+        <trans-unit id="ease-in-quad">
+           <source>ease-in-quad</source>
+        </trans-unit>       
+        <trans-unit id="ease-out-quad">
+           <source>ease-out-quad</source>
+        </trans-unit>       
+        <trans-unit id="ease-in-out-quad">
+           <source>ease-in-out-quad</source>
+        </trans-unit>  
+        <trans-unit id="ease-in-cubic">
+           <source>ease-in-cubic</source>
+        </trans-unit>  
+        <trans-unit id="ease-out-cubic">
+           <source>ease-out-cubic</source>
+        </trans-unit>  
+        <trans-unit id="ease-in-out-cubic">
+           <source>ease-in-out-cubic</source>
+        </trans-unit>  
+        <trans-unit id="ease-in-quart">
+           <source>ease-in-quart</source>
+        </trans-unit>  
+        <trans-unit id="ease-out-quart">
+           <source>ease-out-quart</source>
+        </trans-unit>  
+        <trans-unit id="ease-in-out-quart">
+           <source>ease-in-out-quart</source>
+        </trans-unit>  
+
+    /* -- Colors ----------- */
+        <trans-unit id="basecolor">
+           <source>Pagecolor</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-no">
+           <source>No Color</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-blue">
+           <source>Blue</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-red">
+           <source>Red</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-green">
+           <source>Green</source>
+        </trans-unit>
+           <trans-unit id="basecolor-orange">
+           <source>Orange</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-violett">
+           <source>Violett</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-yellow">
+           <source>Yellow</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-grey">
+           <source>Grey</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-turquoise">
+           <source>Turquoise</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-darkblue">
+           <source>Dark blue</source>
+        </trans-unit>    
+           <trans-unit id="basecolor-darkgrey">
+           <source>Dark grey</source>
+        </trans-unit>  
+        
+        /* bootstrap */
+        <trans-unit id="bootstrap">
+            <source>Bootstrap Basiccolors</source>
+        </trans-unit>
+        <trans-unit id="bootstrapcolor.danger">
+            <source>Bootstrapcolor danger color</source>
+        </trans-unit>
+        <trans-unit id="bootstrapcolor.warning">
+            <source>Bootstrapcolor warning color</source>
+        </trans-unit>
+        <trans-unit id="bootstrapcolor.success">
+            <source>Bootstrapcolor success color</source>
+        </trans-unit>
+        <trans-unit id="bootstrapcolor.primary">
+            <source>Bootstrapcolor primary color</source>
+        </trans-unit>
+        <trans-unit id="bootstrapcolor.success">
+            <source>Bootstrapcolor success color</source>
+        </trans-unit>
+        <trans-unit id="bootstrapcolor.secondary">
+            <source>Bootstrapcolor secondary color</source>
+        </trans-unit>
+        <trans-unit id="bootstrapcolor.info">
+            <source>Bootstrapcolor info color</source>
+        </trans-unit>
+        <trans-unit id="bootstrapcolor.light">
+            <source>Bootstrapcolor light color</source>
+        </trans-unit>
+        <trans-unit id="bootstrapcolor.dark">
+            <source>Bootstrapcolor dark color</source>
+        </trans-unit>  
+         
+        /* -- Designs ----------- */
+        
+        <trans-unit id="none">
+           <source>None</source>
+        </trans-unit>            
+        <trans-unit id="default">
+           <source>Default</source>
+        </trans-unit>            
+            <trans-unit id="standard">
+           <source>Standard</source>
+        </trans-unit>        
+        <trans-unit id="colored">
+           <source>Colored background</source>
+        </trans-unit>    
+           <trans-unit id="white">
+           <source>White background</source>
+        </trans-unit>    
+           <trans-unit id="lightgrey">
+           <source>Lightgrey background</source>
+        </trans-unit>             
+        <trans-unit id="line">
+           <source>With a line</source>
+        </trans-unit>
+        <trans-unit id="twocol">
+           <source>Text with 2 columns</source>
+        </trans-unit>
+        <trans-unit id="containerhandle">
+           <source>Handle as a container</source>
+        </trans-unit>
+
+			/* -- LIGHTBOX ------------------------ */
+		    <trans-unit id="lightboxstyle">
+			     <source>Lightbox effects</source>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle0">
+			     <source>none</source>
+		    </trans-unit>		    
+		    <trans-unit id="lightboxstyle1">
+			     <source>Simple effect</source>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle2">
+			     <source>Simple effect with close buttton</source>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle3">
+			     <source>Gallery with Navigation</source>
+		    </trans-unit>		    
+		    <trans-unit id="lightboxstyle4">
+			     <source>Gallery with Arrows</source>
+		    </trans-unit>	
+		    <trans-unit id="lightboxstyle5">
+			     <source>Gallery with Navigation and Arrows</source>
+		    </trans-unit>
+
+			/* -- Spacing ------------------------ */
+			
+			
+             <trans-unit id="spacing">
+                 <source>Spacing</source>
+            </trans-unit>   
+             <trans-unit id="space_class_none">
+                 <source>Standard</source>
+            </trans-unit>  
+             <trans-unit id="space_class_1">
+                 <source>0,1</source>
+            </trans-unit>   
+             <trans-unit id="space_class_2">
+                 <source>0,2</source>
+            </trans-unit>   
+             <trans-unit id="space_class_3">
+                 <source>0,3</source>
+            </trans-unit>   
+             <trans-unit id="space_class_4">
+                 <source>0,4</source>
+            </trans-unit>       
+             <trans-unit id="space_class_5">
+                 <source>0,5</source>
+            </trans-unit>  
+             <trans-unit id="space_class_6">
+                 <source>0,6</source>
+            </trans-unit>       
+             <trans-unit id="space_class_7">
+                 <source>0,7</source>
+            </trans-unit>      
+             <trans-unit id="space_class_8">
+                 <source>1</source>
+            </trans-unit>  
+             <trans-unit id="space_class_9">
+                 <source>1,5</source>
+            </trans-unit>               
+             <trans-unit id="space_class_10">
+                 <source>2</source>
+            </trans-unit>  
+             <trans-unit id="space_class_11">
+                 <source>3</source>
+            </trans-unit>  
+             <trans-unit id="space_class_12">
+                 <source>4</source>
+            </trans-unit>  
+             <trans-unit id="space_class_13">
+                 <source>5</source>
+            </trans-unit>              
+             <trans-unit id="space_class_14">
+                 <source>6</source>
+            </trans-unit>  
+             <trans-unit id="space_class_15">
+                 <source>7</source>
+            </trans-unit>                  
+             <trans-unit id="space_class_16">
+                 <source>8</source>
+            </trans-unit>  
+             <trans-unit id="space_class_17">
+                 <source>9</source>
+            </trans-unit>                  
+                        
+            /* Inner padding */        
+                        
+            <trans-unit id="padding_inner_class_none">
+                 <source>None</source>
+            </trans-unit>                  
+            <trans-unit id="padding_inner_class_1">
+                 <source>0,1</source>
+            </trans-unit>                  
+
+            <trans-unit id="padding_inner_class_2">
+                 <source>0,2</source>
+            </trans-unit>                     
+              <trans-unit id="padding_inner_class_3">
+                 <source>0,3</source>
+            </trans-unit>                  
+            <trans-unit id="padding_inner_class_4">
+                 <source>0,4</source>
+            </trans-unit>                      
+            <trans-unit id="padding_inner_class_5">
+                 <source>0,5</source>
+            </trans-unit>                  
+            <trans-unit id="padding_inner_class_6">
+                 <source>0,6</source>
+            </trans-unit>      
+            <trans-unit id="padding_inner_class_7">
+                 <source>0,7</source>
+            </trans-unit>                      
+            <trans-unit id="padding_inner_class_8">
+                 <source>0,8</source>
+            </trans-unit>                  
+            <trans-unit id="padding_inner_class_9">
+                 <source>0,9</source>
+            </trans-unit>      				
+            <trans-unit id="padding_inner_class_10">
+                 <source>1</source>
+            </trans-unit>      				
+								
+				
+				
+				
+				
+				
+				
+				
+			/* -- IMAGES -------------------------------- */
+			<trans-unit id="image.05">
+				<source>Column width 5%</source>
+			</trans-unit>	
+			<trans-unit id="image.10">
+				<source>Column width 10%</source>
+			</trans-unit>	
+			<trans-unit id="image.15">
+				<source>Column width 15%</source>
+			</trans-unit>	
+			<trans-unit id="image.20">
+				<source>Column width 20%</source>
+			</trans-unit>	
+			<trans-unit id="image.25">
+				<source>Column width 25%</source>
+			</trans-unit>	
+			<trans-unit id="image.30">
+				<source>Column width 30%</source>
+			</trans-unit>	
+			<trans-unit id="image.35">
+				<source>Column width 35%</source>
+			</trans-unit>	
+			<trans-unit id="image.40">
+				<source>Column width 40%</source>
+			</trans-unit>	
+			<trans-unit id="image.45">
+				<source>Column width 45%</source>
+			</trans-unit>	
+			<trans-unit id="image.50">
+				<source>Column width 50%</source>
+			</trans-unit>	
+			<trans-unit id="image.55">
+				<source>Column width 55%</source>
+			</trans-unit>	
+			<trans-unit id="image.60">
+				<source>Column width 60%</source>
+			</trans-unit>	
+			<trans-unit id="image.65">
+				<source>Column width 65%</source>
+			</trans-unit>	
+			<trans-unit id="image.70">
+				<source>Column width 70%</source>
+			</trans-unit>	
+			<trans-unit id="image.75">
+				<source>Column width 75%</source>
+			</trans-unit>	
+			<trans-unit id="image.80">
+				<source>Column width 80%</source>
+			</trans-unit>	
+			<trans-unit id="image.85">
+				<source>Column width 85%</source>
+			</trans-unit>	
+			<trans-unit id="image.90">
+				<source>Column width 90%</source>
+			</trans-unit>	
+			<trans-unit id="image.95">
+				<source>Column width 95%</source>
+			</trans-unit>	
+			<trans-unit id="image.100">
+				<source>Column width 100%</source>
+			</trans-unit>	
+			
+            <trans-unit id="inf">
+                 <source>Enable the copyright view</source>
+            </trans-unit>   
+            <trans-unit id="rollover">
+                 <source>Enable the rollover effect</source>
+            </trans-unit>     
+            
+
+         /* onePager */
+		    
+			<trans-unit id="containerhandle">
+			     <source>Handle as a container</source>
+		    </trans-unit>
+		    
+			<trans-unit id="objectfit">
+			     <source>Object-fit</source>
+		    </trans-unit>	
+		    		    		     
+			<trans-unit id="bgimage">
+			     <source>Backgroundimage</source>
+		    </trans-unit>	
+			<trans-unit id="bgcolor">
+			     <source>Backgroundcolor</source>
+		    </trans-unit>	
+			<trans-unit id="txtcolor">
+			     <source>Textcolor</source>
+		    </trans-unit>			    	  
+		    
+			<trans-unit id="black">
+			     <source>Black</source>
+		    </trans-unit>			
+			<trans-unit id="grey">
+			     <source>Grey</source>
+		    </trans-unit>		
+			<trans-unit id="lightgrey">
+			     <source>Lightgrey</source>
+		    </trans-unit>				
+			<trans-unit id="darkergrey">
+			     <source>Darker grey</source>
+		    </trans-unit>	
+			<trans-unit id="darkgrey">
+			     <source>Darkgrey</source>
+		    </trans-unit>	
+		    		    
+			<trans-unit id="darkblue">
+			     <source>Darkblue</source>
+		    </trans-unit>	
+			<trans-unit id="white">
+			    <source>White</source>
+		    </trans-unit>	
+			<trans-unit id="blue">
+			     <source>Blue</source>
+		    </trans-unit>	
+			<trans-unit id="green">
+			     <source>Green</source>
+		    </trans-unit>			
+			<trans-unit id="orange">
+			     <source>Orange</source>
+		    </trans-unit>				
+			<trans-unit id="red">
+			     <source>Red</source>
+		    </trans-unit>				
+			<trans-unit id="turquoise">
+			     <source>Turquoise</source>
+		    </trans-unit>				
+			<trans-unit id="violett">
+			     <source>Violett</source>
+		    </trans-unit>				
+			<trans-unit id="yellow">
+			     <source>Yellow</source>
+		    </trans-unit>			
+		    	
+			<trans-unit id="blacktxt">
+			     <source>Black</source>
+		    </trans-unit>	
+			<trans-unit id="whitetxt">
+			    <source>White</source>
+		    </trans-unit>		    	
+			<trans-unit id="darkgreytxt">
+			     <source>Darkgrey</source>
+		    </trans-unit>	
+			<trans-unit id="darkbluetxt">
+			     <source>Darkblue</source>
+		    </trans-unit>
+
+     /* -- TABLE ------------------------ */
+		    <trans-unit id="tablefields">
+			     <source>Tablefields</source>
+		    </trans-unit>	 
+		    <trans-unit id="tablelayout.stripe">
+			     <source>Striped</source>
+		    </trans-unit>	   
+		    <trans-unit id="tablelayout.normalplus">
+			     <source>Colored header</source>
+		    </trans-unit>	   
+		    <trans-unit id="tablelayout.colorstripe">
+			     <source>Colored stripes</source>
+		    </trans-unit>
+		    <trans-unit id="tablelayout.noline">
+			     <source>no lines</source>
+		    </trans-unit>
+			<trans-unit id="tablelayout.lined">
+			     <source>only lines</source>
+		    </trans-unit> 
+		    
+ 			<trans-unit id="tablelayout.10-90">
+				<source>table, 2 cols 10/90</source>
+			</trans-unit>
+			<trans-unit id="tablelayout.20-80">
+				<source>table, 2 cols 20/80</source>
+			</trans-unit>
+			<trans-unit id="tablelayout.30-70">
+				<source>table, 2 cols 30/70</source>
+			</trans-unit>	
+			<trans-unit id="tablelayout.40-60">
+				<source>table, 2 cols 40/60</source>
+			</trans-unit>	
+			<trans-unit id="tablelayout.50-50">
+				<source>table, 2 cols 50/50</source>
+			</trans-unit>	
+			<trans-unit id="tablelayout.60-40">
+				<source>table, 2 cols 60/40</source>
+			</trans-unit>
+			<trans-unit id="tablelayout.70-30">
+				<source>table, 2 cols 70/30</source>
+			</trans-unit>
+			<trans-unit id="tablelayout.80-20">
+				<source>table, 2 cols 80/20</source>
+			</trans-unit>	
+			<trans-unit id="tablelayout.90-10">
+				<source>table, 2 cols 90/10</source>
+			</trans-unit>	
+			<trans-unit id="tablelayout.20-40-40">
+				<source>table, 3 cols 20/40/40</source>
+			</trans-unit>				
+			<trans-unit id="tablelayout.33-33-33">
+				<source>table, 3 cols 33/33/33</source>
+			</trans-unit>		
+			<trans-unit id="tablelayout.40-30-30">
+				<source>table, 3 cols 40/30/30</source>
+			</trans-unit>
+			<trans-unit id="tablelayout.50-25-25">
+				<source>table, 3 cols 50/25/25</source>
+			</trans-unit>		
+			<trans-unit id="tablelayout.60-20-20">
+				<source>table, 3 cols 60/20/20</source>
+			</trans-unit>
+			<trans-unit id="tablelayout.80-10-10">
+				<source>table, 3 cols 80/10/10</source>
+			</trans-unit>			
+			<trans-unit id="tablelayout.25-25-25-25">
+				<source>table, 4 cols 25-25-25-25</source>
+			</trans-unit>				
+			<trans-unit id="tablelayout.40-20-20-20">
+				<source>table, 4 cols 40/20/20/20</source>
+			</trans-unit>				
+			<trans-unit id="tablelayout.50-16-16-16">
+				<source>table, 4 cols 50/16/16/16</source>
+			</trans-unit>			
+			<trans-unit id="tablelayout.20-20-20-20-20">
+				<source>table, 5 cols 20/20/20/20/20</source>
+			</trans-unit>				
+			<trans-unit id="tablelayout.40-15-15-15-15">
+				<source>table, 5 cols 40/15/15/15/15</source>
+			</trans-unit>				
+			<trans-unit id="tablelayout.60-10-10-10-10">
+				<source>table, 5 cols 60/10/10/10/10</source>
+			</trans-unit>		
+			<trans-unit id="tablelayout.50-10-10-10-10-10">
+				<source>table, 6 cols 50/10/10/10/10/10</source>
+			</trans-unit>	
+			<trans-unit id="tablelayout.25-15-15-15-15-15">
+				<source>table, 6 cols 25/15/15/15/15/15</source>
+			</trans-unit>	
+			<trans-unit id="tablelayout.40-10-10-10-10-10-10">
+				<source>table, 7 cols 40/10/10/10/10/10/10</source>
+			</trans-unit>	
+			<trans-unit id="tablelayout.30-10-10-10-10-10-10-10">
+				<source>table, 8 cols 30/10/10/10/10/10/10/10</source>
+			</trans-unit>
+			<trans-unit id="tablelayout.20-10-10-10-10-10-10-10-10">
+				<source>table, 9 cols 20/10/10/10/10/10/10/10</source>
+			</trans-unit>
+			<trans-unit id="tablelayout.10-10-10-10-10-10-10-10-10-10">
+				<source>table, 10 cols 100/10/10/10/10/10/10/10</source>
+			</trans-unit>	
+
+
+        </body>
+    </file>
+</xliff>

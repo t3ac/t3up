@@ -1,0 +1,41 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<picture  class="position-relative" >
+	
+	    <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '1200', fileExtension: 'webp')}"  media="(width > 992px)"> 
+	    <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '1200', fileExtension: 'jpeg')}"  media="(width > 992px)"> 	    
+	    <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '992',  fileExtension: 'webp')}"  media="(width > 768px">
+	    <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '992',  fileExtension: 'jpeg')}"  media="(width > 768px">
+        <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '768',  fileExtension: 'webp')}"  media="(width > 640px)"> 
+        <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '768',  fileExtension: 'jpeg')}"  media="(width > 640px)"> 	    
+        <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '640',  fileExtension: 'webp')}"  media="(width > 480px)"> 
+        <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '640',  fileExtension: 'jpeg')}"  media="(width > 480px)"> 
+	    <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '480',  fileExtension: 'webp')}"  media="(width > 320px)"> 
+	    <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '480',  fileExtension: 'jpeg')}"  media="(width > 320px)"> 
+	    <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '320',  fileExtension: 'webp')}"  media="(width > 160px)"> 
+	    <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '320',  fileExtension: 'jpeg')}"  media="(width > 160px)"> 
+        <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '160',  fileExtension: 'webp')}"  media="(width > 80px)"> 
+        <source srcset="{f:uri.image(image: file, treatIdAsReference: true, width: '160',  fileExtension: 'jpeg')}"  media="(width > 80px)"> 
+        <source srcset="{f:uri.image(image: file, treatIdAsReference: true, fileExtension: 'webp')}"> 
+        <source srcset="{f:uri.image(image: file, treatIdAsReference: true, fileExtension: 'jpeg')}">         
+
+		<f:media file="{file}" alt="{file.alternative}" title="{file.title}" loading="lazy" decoding="{settings.media.imageDecoding}" width="{data.imagewidth}" height="{data.imageheight}"  />
+        
+		<f:if condition="{data.inf}" >
+            <f:if condition="{file.properties.copyright}" >   
+                <div class="imageinf">
+                    <span class="symbol">&#xF05a;</span><span>&nbsp;copyright: <f:format.nl2br>{file.properties.copyright}</f:format.nl2br></span>
+                    <f:if condition="{file.properties.creator}"><br /><span><f:format.nl2br>{file.properties.creator}</f:format.nl2br></span></f:if>   
+                    <f:if condition="{file.properties.publisher}"><br /><span><f:format.nl2br>{file.properties.publisher}</f:format.nl2br></span></f:if>
+                    <f:if condition="{file.properties.source}"><br /><span><f:format.nl2br>{file.properties.source}</f:format.nl2br></span></f:if>
+                    <f:if condition="{file.properties.content_creation_date}"><br /><span><f:format.date format="%Y">{file.properties.content_creation_date}</f:format.date></span></f:if>
+                </div>
+		    </f:if>                
+		</f:if>
+		
+        <f:if condition="{data.rollover}">
+            <span class="rollover position-absolute z-10 d-inline-flex align-items-center justify-content-center">{file.title}</span>
+		</f:if>        
+		
+    </picture>
+</html>
+

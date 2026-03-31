@@ -1,0 +1,44 @@
+ <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:layout name="Standard" />
+	<f:section name="Content">
+		<f:render partial="Header.html" section="Header" arguments="{_all}" />
+		<main id="content" class="RightMarginal">
+			<div class="overlay"></div> 
+			<f:format.raw>{media}</f:format.raw>
+			<div class="container"> 
+                <div class="row">
+                    <f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
+                    <div class="col-12 col-lg-8 content px-3 ps-xxl-0">        
+                        <!--TYPO3SEARCH_begin-->
+                          <f:if condition="{data.deltitle} != '1'">
+                            <f:if condition="{data.showtitle} == 0">
+                                <f:then>
+                                  <f:format.nl2br><h1 class="{h1wrap}">{title}</h1></f:format.nl2br>
+                                 </f:then> 
+                                <f:else>
+                                    <h1 class="outof">{title}</h1>  
+                                 </f:else> 
+                            </f:if>
+                          </f:if>
+                            <f:format.raw>{content}</f:format.raw>
+                         <!--TYPO3SEARCH_end-->  
+                    </div>                                  
+                    <div class="col-12 col-lg-4 right px-3 pe-xxl-0">                                         
+                        <f:if condition="{right}">
+                            <!--TYPO3SEARCH_begin-->             
+                                <f:format.raw>{right}</f:format.raw>
+                            <!--TYPO3SEARCH_end-->                         
+                      </f:if>   
+                   </div>
+                </div> 
+                <div class="row">
+                    <div class="col-12 col-lg-8">          
+                         <f:if condition="{data.previousnext}">
+                            <f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
+                        </f:if>
+                    </div>                                  
+                </div> 
+			 </div>   
+		</main>
+	 </f:section>
+</html>

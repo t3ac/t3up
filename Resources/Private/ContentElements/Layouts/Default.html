@@ -1,0 +1,86 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+    <f:if condition="{data.frame_class} != none">
+        <f:then>
+            <f:if condition="{data.container}">
+                <f:then>
+		            <div id="c{data.uid}" class="opg frame frame-{data.CType} {f:if(condition: data.objectfit, then: 'fitinview')} {f:if(condition: data.frame_class, then: 'frame-{data.frame_class}')} {f:if(condition: data.layout, then: 'frame-layout-{data.layout}')} {f:if(condition: data.space_before_class, then: 'mt-{data.space_before_class}')} {f:if(condition: data.space_after_class, then: 'mb-{data.space_after_class}')} {f:if(condition: data.animate, then: 'aos-init')}"
+		                style="<f:if condition="{data.bgimage}">background-image: url(<f:uri.image image='{files.0}' />);</f:if><f:if condition="{data.bgcolor}">background-color: {data.bgcolor};</f:if>""		                
+                        {f:if(condition: data.animate, then: 'data-aos="{data.animate}"')} {f:if(condition: data.animate, then: 'data-aos-duration="{data.animate_duration}"')} {f:if(condition: data.animate, then: 'data-aos-duration="{data.animate_easing}"')} {f:if(condition: data.animate, then: 'data-aos-delay="{data.animate_delay}"')}>
+                        
+		                <div class="container {f:if(condition: data.txtcolor, then: '{data.txtcolor}')} {f:if(condition: data.padding_before_class, then: 'pt-{data.padding_before_class}')} {f:if(condition: data.padding_after_class, then: 'pb-{data.padding_after_class}')} {f:if(condition: data.padding_side_class, then: '{data.padding_side_class}')}">
+
+			                <f:if condition="{data._LOCALIZED_UID}">
+			                    <a id="c{data._LOCALIZED_UID}"></a>
+			                </f:if>
+
+			                <f:render section="Before" optional="true">
+			                    <f:render partial="DropIn/Before/All" arguments="{_all}" />
+			                </f:render>
+			                
+			                <f:render section="Header" optional="true">
+			                    <f:render partial="Header/All" arguments="{_all}" />
+			                </f:render>
+			                
+			                <f:render section="Main" optional="true" />
+			                
+			                <f:render section="Footer" optional="true">
+			                    <f:render partial="Footer/All" arguments="{_all}" />
+			                </f:render>
+			                
+			                <f:render section="After" optional="true">
+			                    <f:render partial="DropIn/After/All" arguments="{_all}" />
+			                </f:render>
+			            </div>    
+		            </div>
+		          </f:then>  
+		          <f:else>
+		            <div id="c{data.uid}" class="frame frame-{data.CType} {f:if(condition: data.frame_class, then: 'frame-{data.frame_class}')} {f:if(condition: data.layout, then: 'frame-layout-{data.layout}')} {f:if(condition: data.space_before_class, then: 'mt-{data.space_before_class}')} {f:if(condition: data.space_after_class, then: 'mb-{data.space_after_class}')} {f:if(condition: data.padding_before_class, then: 'pt-{data.padding_before_class}')} {f:if(condition: data.padding_after_class, then: 'pb-{data.padding_after_class}')} {f:if(condition: data.padding_side_class, then: '{data.padding_side_class}')} {f:if(condition: data.sectionIndex, then: ' sectionIndex')} {f:if(condition: data.animate, then: 'aos-init')}"
+		                 {f:if(condition: data.animate, then: 'data-aos="{data.animate}"')} {f:if(condition: data.animate, then: 'data-aos-duration="{data.animate_duration}"')} {f:if(condition: data.animate, then: 'data-aos-duration="{data.animate_easing}"')} {f:if(condition: data.animate, then: 'data-aos-delay="{data.animate_delay}"')}>
+		                               
+		                <f:if condition="{data._LOCALIZED_UID}">
+		                    <a id="c{data._LOCALIZED_UID}"></a>
+		                </f:if>
+		                
+		                <f:render section="Before" optional="true">
+		                    <f:render partial="DropIn/Before/All" arguments="{_all}" />
+		                </f:render>
+		                
+		                <f:render section="Header" optional="true">
+		                    <f:render partial="Header/All" arguments="{_all}" />
+		                </f:render>
+		                
+		                <f:render section="Main" optional="true" />
+		                
+		                <f:render section="Footer" optional="true">
+		                    <f:render partial="Footer/All" arguments="{_all}" />
+		                </f:render>
+		                
+		                <f:render section="After" optional="true">
+		                    <f:render partial="DropIn/After/All" arguments="{_all}" />
+		                </f:render> 
+		            </div>
+		          </f:else>
+		       </f:if>
+        </f:then>
+        <f:else>
+            <f:if condition="{data._LOCALIZED_UID}">
+                <a id="c{data._LOCALIZED_UID}"></a>
+            </f:if>
+            <f:render section="Before" optional="true">
+                <f:render partial="DropIn/Before/All" arguments="{_all}" />
+            </f:render>
+            <f:render section="Header" optional="true">
+                <f:render partial="Header/All" arguments="{_all}" />
+            </f:render>
+            <f:render section="Main" optional="true" />
+            <f:render section="Footer" optional="true">
+                <f:render partial="Footer/All" arguments="{_all}" />
+            </f:render>
+            <f:render section="After" optional="true">
+                <f:render partial="DropIn/After/All" arguments="{_all}" />
+            </f:render>
+        </f:else>
+    </f:if>
+</f:spaceless>
+</html>
