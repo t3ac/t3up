@@ -1,0 +1,30 @@
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:TCEMain
+Permission                  = 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:TCEFrames
+DesignFrames                      = 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:TCEBootstrapFrames
+BootstrapFrames             = 0
+
+# cat=PageTS; type=boolean; label=Use t3up Tablelayouts (off/on)
+TableLayouts                = 0
+
+# cat=PageTS; type=boolean; label=Use t3up Imagelayouts(off/on)
+ImageLayouts                = 1
+
+# Layouts ---------------------------------------------------------------------------------------------------------#
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:LeftNavigation
+LeftNavigation              = 0
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightNavigation
+RightNavigation             = 0
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:RightMarginal
+RightMarginal               = 0
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:OneColumn
+OneColumn                   = 1
+
+# cat=PageTS; type=boolean; label=LLL:EXT:t3up/Resources/Private/Language/locallang_extension.xlf:OnePager
+OnePager                    = 0
