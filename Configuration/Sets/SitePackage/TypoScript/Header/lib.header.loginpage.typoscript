@@ -1,0 +1,37 @@
+### Login Page###########################
+
+lib.header.loginpage                = TEXT
+lib.header.loginpage {
+    if.value                        = 0
+    if.isGreaterThan                = {$t3upHeader.loginButtonPos}
+    value                           = <span class="symbol sym">toggle_on</span><span class="showtitle{$t3upHeader.showtitle} ps-3 small">Login</span>
+    typolink {
+        parameter                   = {$t3upHeader.loginPage}
+        parameter.insertData        = 1
+        useCacheHash                = 1
+        # add all get parameters from the current URL
+        addQueryString              = 1
+        addQueryString.method       = GET
+        # remove the page id from the parameters so it is not inserted twice
+        addQueryString.exclude      = id
+        target                      = _self
+        title                       = Login
+        ATagParams                  = alt="link to login" class="login d-inline-flex align-items-center {$t3upHeader.topATagWrap}"
+     }
+     wrap                           = <li class="order-{$t3upHeader.loginButtonPos} {$t3upHeader.topElementWrap}">|</li> 
+}
+
+[frontend.user.isLoggedIn]
+lib.header.loginpage                = TEXT
+lib.header.loginpage {
+    value                           = <span class="symbol">toggle_off</span><span class="showtitle{$t3upHeader.showtitle} ps-3 small">Logout</span>
+    typolink {
+        parameter                   = {page:uid}
+        parameter.insertData        = 1
+        additionalParams            = &logintype=logout
+        ATagParams                  = alt="logoutbutton" class="logout d-inline-flex align-items-center"
+        title                       = Logout        
+     }
+    wrap                            = <li class="order-{$t3upHeader.loginButtonPos}">|</li> 
+}
+[END]

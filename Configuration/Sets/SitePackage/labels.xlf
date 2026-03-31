@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2025" product-name="t3up">
+     <header/>
+        <body>
+        
+ 			<trans-unit id="categories.T3up-Breadcrumb">
+			    <source>Breadcrumb Configuration</source>
+			</trans-unit>         
+        
+        
+			<trans-unit id="categories.T3up-Colors">
+			    <source>Colors</source>
+			</trans-unit>   
+			<trans-unit id="categories.T3up-Colors.basic">
+			    <source>Basic colors</source>
+			</trans-unit>   			
+			<trans-unit id="categories.T3up-Colors.footer">
+			    <source>Footer colors</source>
+			</trans-unit>   			
+			<trans-unit id="categories.T3up-Colors.header">
+			    <source>Header colors</source>
+			</trans-unit>   						
+			<trans-unit id="categories.T3up-Colors.heading">
+			    <source>Heading colors</source>
+			</trans-unit>   						
+			<trans-unit id="categories.T3up-Colors.navigation">
+			    <source>Navigation colors</source>
+			</trans-unit>   													
+			<trans-unit id="categories.T3up-Colors.pagecolors">
+			    <source>Pagecolors</source>
+			</trans-unit>   													
+			<trans-unit id="categories.T3up-Colors.specials">
+			    <source>Specials</source>
+			</trans-unit>  
+        
+ 			<trans-unit id="categories.T3up-Components">
+			    <source>Components</source>
+			</trans-unit>         
+        			
+ 			<trans-unit id="categories.T3up-Config">
+			    <source>Configuration</source>
+			</trans-unit>   
+			      
+  			<trans-unit id="categories.T3up-Files">
+			    <source>Files</source>
+			</trans-unit>         
+  			<trans-unit id="categories.T3up-Files.Js">
+			    <source>JavaScript-Files</source>
+			</trans-unit>        					       					
+  			<trans-unit id="categories.T3up-Files.Html">
+			    <source>Templates</source>
+			</trans-unit>          					
+  			<trans-unit id="categories.T3up-Files.Scss">
+			    <source>Scss-Files</source>
+			</trans-unit>  
+			          						
+ 			<trans-unit id="categories.T3up-Fonts">
+			    <source>Fonts</source>
+			</trans-unit>      			 													
+							
+            <trans-unit id="categories.T3up-Header">
+                <source>Header</source>
+            </trans-unit>      			 													
+            <trans-unit id="categories.T3up-Header.top">
+                <source>Top-Header</source>
+            </trans-unit>    
+            		
+ 			<trans-unit id="categories.T3up-Meta">
+			    <source>Meta</source>
+			</trans-unit>      			 													
+																					
+ 			<trans-unit id="categories.T3up-Navigation">
+			    <source>Navigation</source>
+			</trans-unit>      			 													
+														
+ 			<trans-unit id="categories.T3up-Socialmedia">
+			    <source>Socialmedia</source>
+			</trans-unit>      			 													
+								
+ 			<trans-unit id="categories.T3up-Totop">
+			    <source>Totop-function</source>
+			</trans-unit>      			 													
+																
+ 			<trans-unit id="categories.T3up-Typography">
+			    <source>Typography</source>
+			</trans-unit>      			 													
+																
+														
+			<note>Breadcrumb</note>									
+			<trans-unit id="settings.t3upBreadcrumb.breadcrumbStyle">
+			    <source>Style: (0 none, 1 simple, 2 extended)</source>
+			</trans-unit>   
+			<trans-unit id="settings.description.t3upBreadcrumb.breadcrumbStyle">
+			    <source>The extended version, with a dropdown for the subnavigation</source>
+			</trans-unit>   			     
+			<trans-unit id="settings.t3upBreadcrumb.breadcrumbWrap">
+			    <source>All wrap</source>
+			</trans-unit>           
+			<trans-unit id="settings.t3upBreadcrumb.breadcrumbUlWrap">
+			    <source>UL wrap</source>
+			</trans-unit>           
+			<trans-unit id="settings.t3upBreadcrumb.breadcrumbHome">
+			    <source>Show the home as a symbol</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upBreadcrumb.breadcrumbTextSize">
+			    <source>Font-size for the breadcrumb</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upBreadcrumb.breadcrumbPos">
+			    <source>Position of the breadcrumbmenu, in the header, or in the content-area (default: content)</source>
+			</trans-unit>			
+			
+			
+			<note>Colors</note>		
+			<trans-unit id="settings.t3upColors.basicColor">
+			    <source>Basecolor</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upColors.textColor">
+			    <source>Textcolor for the content</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upColors.linkColor">
+			    <source>Linkcolor for the content</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upColors.linkHoverColor">
+			    <source>Hovercolor for links in the content</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upColors.bodyBgColor">
+			    <source>Background-color of the page</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.shadow">
+			    <source>Standardvalue for the shadow</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.overlay">
+			    <source>Overlayvalue when navigation is triggered</source>
+			</trans-unit>	
+								
+			<trans-unit id="settings.t3upColors.footer1BgColor">
+			    <source>Backgroundcolor of the footer1-area</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer1TextColor">
+			    <source>Textcolor in the footer1-area</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer1LinkColor">
+			    <source>Linkcolor in the footer1-area</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer1LinkHoverColor">
+			    <source>Hovercolor for links in the footer1-area</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.footer2BgColor">
+			    <source>Backgroundcolor of the footer2-area</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer2TextColor">
+			    <source>Textcolor in the footer2-area</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer2LinkColor">
+			    <source>Linkcolor in the footer2-area</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer2LinkHoverColor">
+			    <source>Hovercolor for links in the footer2-area</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upColors.footer3BgColor">
+			    <source>Backgroundcolor of the footer3-area</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer3TextColor">
+			    <source>Textcolor in the footer3-area</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer3LinkColor">
+			    <source>Linkcolor in the footer3-area</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer3LinkHoverColor">
+			    <source>Hovercolor for links in the footer3-area</source>
+			</trans-unit>
+																		
+			<trans-unit id="settings.t3upColors.headerBgColor">
+			    <source>Background-color of the header</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upColors.headerBgBlendColor">
+			    <source>Activated header background</source>
+			</trans-unit>					
+			<trans-unit id="settings.t3upColors.headerTextColor">
+			    <source>Textcolor in the header</source>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerLinkColor">
+			    <source>Linkcolor in the header</source>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerLinkHoverColor">
+			    <source>Hovercolor for links in the header</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.headerTopBgColor">
+			    <source>Background-color of the topheader</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upColors.headerTopTextColor">
+			    <source>Textcolor in the topheader</source>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerTopLinkColor">
+			    <source>Linkcolor in the topheader</source>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerTopLinkHoverColor">
+			    <source>Hovercolor for links in the topheader</source>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerLinkHoverColor">
+			    <source>Hovercolor for links in the header</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.headerTopSubBgColor">
+			    <source>Background-color of the topheader pulldown</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upColors.headerTopSubTextColor">
+			    <source>Textcolor in the topheader pulldown</source>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerTopSubLinkColor">
+			    <source>Linkcolor in the topheader pulldown</source>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerTopSubLinkHoverColor">
+			    <source>Hovercolor for links in the topheader pulldown</source>
+			</trans-unit>		
+			
+			<trans-unit id="settings.t3upColors.h1-color">
+			    <source>Color for the h1-headlines</source>
+			</trans-unit>							
+			<trans-unit id="settings.t3upColors.h2-color">
+			    <source>Color for the h2-headlines</source>
+			</trans-unit>							
+			<trans-unit id="settings.t3upColors.h3-color">
+			    <source>Color for the h3-headlines</source>
+			</trans-unit>							
+			<trans-unit id="settings.t3upColors.h4-color">
+			    <source>Color for the h4-headlines</source>
+			</trans-unit>	
+			
+			<trans-unit id="settings.t3upColors.navLinkColor">
+			    <source>Linkcolor for the navigation</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.navLinkHoverColor">
+			    <source>Hovercolor for links in the navigation</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.navLinkHoverBGColor">
+			    <source>Linkcolor for the subnavigation</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.navLinkBorderBottomColor">
+			    <source>Bordercolor of the links in the navigation</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upColors.navLinkBorderBottomHeight">
+			    <source>Borderheight of the links in the navigation</source>
+			</trans-unit>
+			
+			<trans-unit id="settings.t3upColors.subnavLinkColor">
+			    <source>Linkcolor for the subnavigation</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.subnavLinkHoverColor">
+			    <source>Hovercolor for links of the subnavigation</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upColors.subnavBG">
+			    <source>Background of the subnavigation</source>
+			</trans-unit>					
+			
+			<trans-unit id="settings.t3upColors.blue">
+			    <source>Blue</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.green">
+			    <source>Green</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.grey">
+			    <source>Grey</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.orange">
+			    <source>Orange</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.red">
+			    <source>Red</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.blue">
+			    <source>Blue</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.turquoise">
+			    <source>Turquoise</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.violett">
+			    <source>Violett</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.yellow">
+			    <source>Yellow</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upColors.darkblue">
+			    <source>Darkblue</source>
+			</trans-unit>					
+			<trans-unit id="settings.t3upColors.darkgrey">
+			    <source>Darkgrey</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.lightgrey">
+			    <source>Lightgrey</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.pictureoverlay">
+			    <source>Overlaycolor for imgaes</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.pictureoverlayTextColor">
+			    <source>Textcolor for the overlayfunction</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upColors.pictureoverlayTextSize">
+			    <source>Fontsize for the overlayfunction</source>
+			</trans-unit>	
+            <trans-unit id="settings.t3upColors.info">
+                <source>Bootstrap Info-color</source>
+            </trans-unit>       			
+            <trans-unit id="settings.t3upColors.warning">
+                <source>Bootstrap Warning-color</source>
+            </trans-unit>       
+            <trans-unit id="settings.t3upColors.danger">
+                <source>Bootstrap Danger-color</source>
+            </trans-unit>       
+            <trans-unit id="settings.t3upColors.success">
+                <source>Bootstrap Success-color</source>
+            </trans-unit>       
+			
+			<note>Components</note>	
+			<trans-unit id="settings.t3upComponents.container">
+			    <source>Container width</source>
+			</trans-unit>			
+            <trans-unit id="settings.t3upComponents.home">
+                <source>ID of "home", means the startpage</source>
+            </trans-unit>   
+			<trans-unit id="settings.t3upComponents.gutter">
+			    <source>Gutter value</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upComponents.access">
+			    <source>Activate the accessmenue</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upComponents.mmenu">
+			    <source>Activate the mobilmenu mmenue</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upComponents.mainPadding">
+			    <source>Padding of the main-area</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upComponents.contentPadding">
+			    <source>Padding of the content-area</source>
+			</trans-unit>		
+            <trans-unit id="settings.t3upComponents.favicon">
+                <source>Path of the favicon</source>
+            </trans-unit>   
+
+			<note>Config</note>	
+			<trans-unit id="settings.t3upConfig.headerComment">
+			    <source>Comment in the head</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upConfig.admPanel">
+			    <source>Show the admin panel (default 1)</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upConfig.contentObjectExceptionHandler">
+			    <source>Shows errors in frontend (default 0)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upConfig.debug">
+			    <source>Debug handling (default 0)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upConfig.indexEnable">
+			    <source>Enables cached pages (default 1)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upConfig.indexExternals">
+			    <source>External media linked to on pages is indexed (default 1)</source>
+			</trans-unit>							
+			<trans-unit id="settings.t3upConfig.nocache">
+			    <source>No-Cache setting (default 0)</source>
+			</trans-unit>									
+			<trans-unit id="settings.t3upConfig.cachePeriod">
+			    <source>Cache period (in seconds)</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upConfig.concatenateJs">
+			    <source>Concatenate Javascripts (default 1)</source>
+			</trans-unit>					
+			<trans-unit id="settings.t3upConfig.concatenateCss">
+			    <source>Concatenate CSS (default 1)</source>
+			</trans-unit>					
+			<trans-unit id="settings.t3upConfig.compressJs">
+			    <source>Compress Javascripts (default 1)</source>
+			</trans-unit>					
+			<trans-unit id="settings.t3upConfig.compressCss">
+			    <source>Compress CSS (default 1)</source>
+			</trans-unit>					
+			<trans-unit id="settings.t3upConfig.removeDefaultCss">
+			    <source>Remove default CSS (default 1)</source>
+			</trans-unit>					
+			<trans-unit id="settings.t3upConfig.removeDefaultJS">
+			    <source>Remove default JS (default 0)</source>
+			</trans-unit>								
+			<trans-unit id="settings.t3upConfig.pageTitleSeparator">
+			    <source>Seperator for the title (default |)</source>
+			</trans-unit>							
+	
+	
+			<note>Scss-, Javascript, HTML-Files</note>	
+			<note>HTML-Files</note>   	
+			<trans-unit id="settings.t3upFiles.Html.contentElement.layoutRootPaths">
+			    <source>Contentelement Layout-path</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upFiles.Html.contentElement.partialRootPaths">
+			    <source>Contentelement Partial-path</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upFiles.Html.contentElement.templateRootPaths">
+			    <source>Contentelement Template-path</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upFiles.Html.fluidtemplates.layoutRootPaths">
+			    <source>Fluidtemplates Layout-path</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upFiles.Html.fluidtemplates.partialRootPaths">
+			    <source>Fluidtemplates Partial-path</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upFiles.Html.fluidtemplates.templateRootPaths">
+			    <source>Fluidtemplates Template-path</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upFiles.Html.Felogin">
+			    <source>Felogin-path</source>
+			</trans-unit>	
+									
+            <note>Javascript</note>  	
+			<trans-unit id="settings.t3upFiles.Js.basic">
+			    <source>Basic (default 1)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upFiles.Js.bootstrap">
+			    <source>Bootstrap (default 1)</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upFiles.Js.dark">
+			    <source>Darkmode (default 1)</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upFiles.Js.jquery">
+			    <source>Jquery 3.7.1 (default 1)</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upFiles.Js.navigation">
+			    <source>Navigation (default 1)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upFiles.Js.lightbox">
+			    <source>Lightbox (default 1)</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upFiles.Js.table">
+			    <source>Table (default 1)</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upFiles.Js.subnavigation">
+			    <source>Subnavigation (default 0)</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upFiles.Js.inview">
+			    <source>Inview (default 0)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upFiles.Js.wall">
+			    <source>Wall (default 0)</source>
+			</trans-unit>	
+			
+			<note>Scss</note>   	
+			<trans-unit id="settings.t3upFiles.Scss.access">
+			    <source>Access menu (default 1)</source>
+			</trans-unit>	
+            <trans-unit id="settings.t3upFiles.Scss.bootstrap">
+                <source>Bootstrap library (default 1)</source>
+            </trans-unit>			
+			<trans-unit id="settings.t3upFiles.Scss.bootstrapstyles">
+			    <source>Bootstrapstyles (default 1)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upFiles.Scss.breadcrumb">
+			    <source>Breadcrumbmenu (default 1)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upFiles.Scss.content">
+			    <source>Content (default 1)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upFiles.Scss.felogin">
+			    <source>Felogin (default 1)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upFiles.Scss.footer">
+			    <source>Footer (default 1)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upFiles.Scss.fsc">
+			    <source>Fluid Syle Content (default 1)</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upFiles.Scss.image">
+			    <source>Image (default 1)</source>
+			</trans-unit>																										
+			<trans-unit id="settings.t3upFiles.Scss.lightbox">
+			    <source>Lightbox (default 1)</source>
+			</trans-unit>																										
+			<trans-unit id="settings.t3upFiles.Scss.links">
+			    <source>Links (default 1)</source>
+			</trans-unit>												
+			<trans-unit id="settings.t3upFiles.Scss.header">
+			    <source>Header (default 1)</source>
+			</trans-unit>																										
+			<trans-unit id="settings.t3upFiles.Scss.navigation">
+			    <source>Navigation (default 1)</source>
+			</trans-unit>												
+			<trans-unit id="settings.t3upFiles.Scss.socialmedia">
+			    <source>Socialmedia (default 1)</source>
+			</trans-unit>																										
+			<trans-unit id="settings.t3upFiles.Scss.subnavigation">
+			    <source>Subnavigation (default 0)</source>
+			</trans-unit>												
+			<trans-unit id="settings.t3upFiles.Scss.table">
+			    <source>Table (default 1)</source>
+			</trans-unit>																										
+			<trans-unit id="settings.t3upFiles.Scss.wall">
+			    <source>Wall of elements (default 0)</source>
+			</trans-unit>												
+																
+				 
+			<note>Fonts</note>		
+			<trans-unit id="settings.t3upFonts.font">
+			    <source>Font</source>
+			</trans-unit>
+            <trans-unit id="settings.t3upFonts.symbol">
+                <source>Symbolfont</source>
+            </trans-unit>
+            <trans-unit id="settings.t3upFonts.brand">
+                <source>Brands</source>
+            </trans-unit>
+			<trans-unit id="settings.t3upFonts.fontPath">
+			    <source>Fontpath</source>
+			</trans-unit>
+			
+
+
+			<note>Footer</note>	
+			<trans-unit id="categories.T3up-Footer">
+			    <source>Footer-Area</source>
+			</trans-unit>
+			<trans-unit id="categories.T3up-Footer.footer1">
+			    <source>Top-Footer-Area</source>
+			</trans-unit>
+			<trans-unit id="categories.T3up-Footer.footer2">
+			    <source>Icon-Area</source>
+			</trans-unit>
+			<trans-unit id="categories.T3up-Footer.footer3">
+			    <source>Baseline</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upFooter.basefooter">
+			    <source>Top-Footer-Area</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upFooter.address">
+			    <source>ID of the contentelement with the address</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upFooter.addressWrap">
+			    <source>Wrap for the address-content element</source>
+			</trans-unit>								
+			<trans-unit id="settings.t3upFooter.service1">
+			    <source>ID of the service-1 contentelement</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upFooter.service1Wrap">
+			    <source>Wrap for the service-1-content element</source>
+			</trans-unit>								
+			<trans-unit id="settings.t3upFooter.service2">
+			    <source>ID of the service-2 contentelement</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upFooter.service2Wrap">
+			    <source>Wrap for the service-2-content element</source>
+			</trans-unit>						
+			<trans-unit id="settings.t3upFooter.service3">
+			    <source>ID of the service-3 contentelement</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upFooter.service3Wrap">
+			    <source>Wrap for the service-3-content element</source>
+			</trans-unit>						
+            <trans-unit id="settings.t3upFooter.footerdynamic">
+                <source>Dynamic elements in mobilviews</source>
+            </trans-unit>                       
+            <trans-unit id="settings.t3upFooter.footer1Wrap">
+                <source>Wrap arround the footer1 area</source>
+            </trans-unit>  
+            <trans-unit id="settings.t3upFooter.base">
+                <source>Activate the baseline</source>
+            </trans-unit>  
+            <trans-unit id="settings.t3upFooter.baseWrap">
+                <source>Wrap arround the baseline</source>
+            </trans-unit>                          
+            <trans-unit id="settings.t3upFooter.copyright">
+                <source>Copyright information</source>
+            </trans-unit>              
+            <trans-unit id="settings.t3upFooter.contactpage">
+                <source>PID of the contactpage</source>
+            </trans-unit>              
+            <trans-unit id="settings.t3upFooter.lastchange">
+                <source>Show the lastchance date</source>
+            </trans-unit>              
+            <trans-unit id="settings.t3upFooter.pid">
+                <source>Show the pid of the actual page</source>
+            </trans-unit>              
+            <trans-unit id="settings.t3upFooter.link">
+                <source>Link in the baseline</source>
+            </trans-unit>   
+            <trans-unit id="settings.t3upFooter.dataprotection">
+                <source>PID of the dataprotection page</source>
+            </trans-unit>    
+            <trans-unit id="settings.t3upFooter.disabilityaccess">
+                <source>PID of the disabilityaccess page</source>
+            </trans-unit>    
+             <trans-unit id="settings.t3upFooter.impress">
+                <source>PID of the impress page</source>
+            </trans-unit>                           
+             <trans-unit id="settings.t3upFooter.sitemap">
+                <source>PID of the sitemap page</source>
+            </trans-unit>                           
+                                              
+			<note>Header</note>				
+			<trans-unit id="settings.t3upHeader.logo">
+			    <source>Path of the logo-file</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upHeader.alttext">
+			    <source>Logo alttext</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upHeader.logoWidth">
+			    <source>Width of the logo</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upHeader.logoWrap">
+			    <source>Logo wrap</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upHeader.logoStickyWidth">
+			    <source>Sticky logo width</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upHeader.mobilLogo">
+			    <source>Path of the mobillogo-file</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upHeader.logoWidth">
+			    <source>Width of the mobilLogoWidth</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upHeader.mobilLogoWrap">
+			    <source>Mobillogo wrap</source>
+			</trans-unit>						
+			<trans-unit id="settings.t3upHeader.symbolFontSize">
+			    <source>Symbol fontsize</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upHeader.dynheader">
+			    <source>Dynamic header</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upHeader.headerAreaWrap">
+			    <source>Headerarea Wrap</source>
+			</trans-unit>		
+						
+			<note>Header TOP</note>					
+			<trans-unit id="settings.t3upHeader.toppos">
+			    <source>Position of the Top-area</source>
+			</trans-unit>				
+			<trans-unit id="settings.description.t3upHeader.toppos">
+			    <source>Top, the "top-list" as a separat line on top of the page.</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upHeader.topWrap">
+			    <source>Wrap around the "top-list"</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upHeader.topElementWrap">
+			    <source>Wrap around the "top-list"-elements</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upHeader.topATagWrap">
+			    <source>Wrap around the "top-A"-elements</source>
+			</trans-unit>							
+			<trans-unit id="settings.t3upHeader.mobilBottonPos">
+			    <source>Integer for the position of the mobilbutton-symbol in the "top-list"</source>
+			</trans-unit>					
+			<trans-unit id="settings.description.t3upHeader.mobilBottonPos">
+			    <source>Empty, means unvisible, the mobilmenue in "components" must be active!</source>
+			</trans-unit>					
+            <trans-unit id="settings.t3upHeader.homeButtonPos">
+                <source>Integer for the position of the Homebutton-symbol in the "top-list"</source>
+            </trans-unit>   								
+ 			<trans-unit id="settings.description.t3upHeader.homeButtonPos">
+			    <source>Empty, means unvisible, the home-button must be active in the "components"</source>
+			</trans-unit>           
+            <trans-unit id="settings.t3upHeader.fontsizeButtonPos">
+                <source>Integer for the position of the fontsize-symbol in the "top-list"</source>
+            </trans-unit>       				
+            <trans-unit id="settings.t3upHeader.darkmodeButtonPos">
+                <source>Integer for the position of the darkmode-symbol in the "top-list"</source>
+            </trans-unit>       
+            <trans-unit id="settings.t3upHeader.quicklinksButtonPos">
+                <source>Integer for the position of the quicklinks-symbol in the "top-list"</source>
+            </trans-unit>       
+ 			<trans-unit id="settings.t3upHeader.quicklinks">
+			    <source>ID of the quicklinksmenu</source>
+			</trans-unit>                         
+            <trans-unit id="settings.t3upHeader.loginPage">
+                <source>ID of the loginpage</source>
+            </trans-unit>       
+            <trans-unit id="settings.t3upHeader.loginButtonPos">
+                <source>Integer for the position of the loginbutton-symbol in the "top-list"</source>
+            </trans-unit>                            
+            <trans-unit id="settings.t3upHeader.languagemenu">
+                <source>Style of the lanuagemenu</source>
+            </trans-unit>                            
+            <trans-unit id="settings.t3upHeader.languagemenuPos">
+                <source>Integer for the position of the languagemenu-symbol in the "top-list"</source>
+            </trans-unit>             		            		
+ 			<trans-unit id="settings.description.t3upHeader.languagemenuPos">
+			    <source>Empty, means the languagemenu is unvisible</source>
+			</trans-unit>              		
+ 			<trans-unit id="settings.t3upHeader.searchpage">
+			    <source>ID of the searchpage</source>
+			</trans-unit>              		
+ 			<trans-unit id="settings.t3upHeader.searchfield">
+			    <source>ID of the plugin of the searchfield</source>
+			</trans-unit>               		            		
+ 			<trans-unit id="settings.description.t3upHeader.searchfield">
+			    <source>If active, a inputfield is in the top-list visible</source>
+			</trans-unit>    
+ 			<trans-unit id="settings.t3upHeader.searchpageButtonPos">
+			    <source>Integer for the position of the searchpage-symbol in the "top-list"</source>
+			</trans-unit>  
+ 			<trans-unit id="settings.t3upHeader.showtitle">
+			    <source>If active, the title of the symbol is visible</source>
+			</trans-unit>  			
+			 			
+			 			        		
+			<note>Meta</note>							
+			<trans-unit id="settings.t3upMeta.author">
+			    <source>Author</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upMeta.copyright">
+			    <source>Copyright</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upMeta.google-site-verification">
+			    <source>Google-site-verification</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upMeta.publisher">
+			    <source>Publisher</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upMeta.page-topic">
+			    <source>Page-topic</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upMeta.robots">
+			    <source>Robots (index, follow)</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upMeta.viewport">
+			    <source>Viewport (width = device-width, initial-scale   = 1.0)</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upMeta.og-image">
+			    <source>og-image</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upMeta.og-title">
+			    <source>og-title</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upMeta.og-description">
+			    <source>og-description</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upMeta.og-type">
+			    <source>og-type</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upMeta.og-url">
+			    <source>og-url</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upMeta.og-site_name">
+			    <source>og-site_name</source>
+			</trans-unit>	
+			
+			
+			<note>Navigation</note>				
+			<trans-unit id="settings.t3upNavigation.style">
+			    <source>Navigation-style</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upNavigation.navdir">
+			    <source>Navigation direction</source>
+			</trans-unit>							
+			<trans-unit id="settings.t3upNavigation.navwrap">
+			    <source>Wrap around the Navigation</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upNavigation.maxLevels">
+			    <source>Max. levels in the Navigation</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upNavigation.maxItems">
+			    <source>Max. Items in the Navigation</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upNavigation.entryLevel">
+			    <source>Navigation entrylevel</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upNavigation.color">
+			    <source>Colored navigation</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upNavigation.linkPadding">
+			    <source>Linkpadding of the first level</source>
+			</trans-unit>	
+            <trans-unit id="settings.t3upNavigation.subnavigation">
+                <source>Activate the subnavigation</source>
+            </trans-unit>   									
+            <trans-unit id="settings.t3upNavigation.subnavLevel">
+                <source>Entrylevel of the subnavigation</source>
+            </trans-unit>   			
+			<trans-unit id="settings.t3upNavigation.subnavTitle">
+			    <source>Shows the leveltitele in the subnavigation</source>
+			</trans-unit>				
+					
+						
+			<note>Socialmedia</note>	
+			<trans-unit id="settings.t3upSocialmedia.pos">
+			    <source>Position of the socialmediamenu</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upSocialmedia.youtube">
+			    <source>The youtube channel</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.instagram">
+			    <source>The instagram channel</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.x">
+			    <source>The X channel</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.xing">
+			    <source>The Xing channel</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.linkedin">
+			    <source>The linkedin channel</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.bluesky">
+			    <source>The bluesky channel</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.whatsApp">
+			    <source>The WhatsApp channel</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.tiktok">
+			    <source>The tiktok channel</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.location">
+			    <source>The pid of the location</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.search">
+			    <source>The pid of the searchpage</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.login">
+			    <source>The pid of the loginpage</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.email">
+			    <source>The email-address</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.hidelabel">
+			    <source>Hide the labels</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolFontsize">
+			    <source>Fontsize of the symbols</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolFontColor">
+			    <source>Symbol color</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolBgColor">
+			    <source>Symbol background-color</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolBorderColor">
+			    <source>Symbol border-color</source>
+			</trans-unit>				
+				
+				
+			<note>ToTop</note>												
+			<trans-unit id="settings.t3upTotop.totop">
+			    <source>Activate the totop-function</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upTotop.totopBgColor">
+			    <source>Totop-backgroundcolor</source>
+			</trans-unit>											
+			<trans-unit id="settings.t3upTotop.totopLinkColor">
+			    <source>Totop-color</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTotop.totopLinkHoverColor">
+			    <source>Totop-hovercolor</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTotop.totopPosBottom">
+			    <source>Totop bottom position</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTotop.totopPosRight">
+			    <source>Totop right position</source>
+			</trans-unit>	
+					
+																				
+			<note>Typography</note>				
+			<trans-unit id="settings.t3upTypography.fontSize">
+			    <source>General fontsize</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upTypography.boldWeight">
+			    <source>General fontweight of bold</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upTypography.lineHeight">
+			    <source>General lineHeight</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.linkWeight">
+			    <source>General fontweight of links</source>
+			</trans-unit>											
+			<trans-unit id="settings.t3upTypography.pMargin">
+			    <source>General bottom margin of paragraph</source>
+			</trans-unit>
+			<trans-unit id="settings.t3upTypography.h1">
+			    <source>Scalefactor of h1</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h1.fontWeight">
+			    <source>Fontweight of h1</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h1.lineHeight">
+			    <source>Lineheight of h1</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h1.alignment">
+			    <source>Alignment of h1</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h1.wrap">
+			    <source>Wrap of h1</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h2">
+			    <source>Scalefactor of h2</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h2.fontWeight">
+			    <source>Fontweight of h2</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h2.lineHeight">
+			    <source>Lineheight of h2</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h2.margin">
+			    <source>Margins of h2</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h3">
+			    <source>Scalefactor of h3</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h3.fontWeight">
+			    <source>Fontweight of h3</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h3.lineHeight">
+			    <source>Lineheight of h3</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h3.margin">
+			    <source>Margins of h3</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h4">
+			    <source>Scalefactor of h4</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h4.fontWeight">
+			    <source>Fontweight of h4</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h4.lineHeight">
+			    <source>Lineheight of h4</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h4.margin">
+			    <source>Margins of h4</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.footer1.fontSize">
+			    <source>Footer 1 fontsize</source>
+			</trans-unit>								
+			<trans-unit id="settings.t3upTypography.footer3.fontSize">
+			    <source>Footer 3 fontsize</source>
+			</trans-unit>								
+            <trans-unit id="settings.t3upTypography.navFontWeight">
+                <source>Fontweight of the navigation</source>
+            </trans-unit>   
+            <trans-unit id="settings.t3upTypography.navFontSize">
+                <source>Fontsize of the navigation</source>
+            </trans-unit>   		
+			<trans-unit id="settings.t3upTypography.symbolFontSize">
+			    <source>Symbol fontsize</source>
+			</trans-unit>																									
+        </body>
+        
+    </file>
+</xliff>

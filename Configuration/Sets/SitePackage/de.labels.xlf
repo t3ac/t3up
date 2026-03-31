@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext" original="messages" date="2025-12-22T11:44:12Z" product-name="t3up">
+     <header/>
+        <body>
+ 			<trans-unit id="categories.T3up-Breadcrumb">       
+ 			      <target state="translated">Breadcrumbmenü Einstellungen</target>
+			</trans-unit>    
+			    
+			<trans-unit id="categories.T3up-Colors">
+			      <target state="translated">Farben</target>
+			</trans-unit>   
+			<trans-unit id="categories.T3up-Colors.basic">
+			      <target state="translated">Basis Farbeinstellungen</target>
+			</trans-unit>   		
+			<trans-unit id="categories.T3up-Colors.footer">
+			      <target state="translated">Farben im Footerbereich</target>
+			</trans-unit>   		
+			<trans-unit id="categories.T3up-Colors.header">
+			      <target state="translated">Farben im Headerbereich</target>
+			</trans-unit>   							
+			<trans-unit id="categories.T3up-Colors.heading">
+			      <target state="translated">Farben der Überschriften</target>
+			</trans-unit>   		
+			<trans-unit id="categories.T3up-Colors.navigation">
+			      <target state="translated">Navigationsfarbeinstellungen</target>
+			</trans-unit>   		
+			<trans-unit id="categories.T3up-Colors.pagecolors">
+			      <target state="translated">Seitenfarben</target>
+			</trans-unit>   		
+			<trans-unit id="categories.T3up-Colors.specials">
+			      <target state="translated">Sonderfarben</target>
+			</trans-unit>   		
+																						
+ 			<trans-unit id="categories.T3up-Components">       
+ 			      <target state="translated">Komponenten</target>
+			</trans-unit> 
+					
+ 			<trans-unit id="categories.T3up-Config">       
+ 			      <target state="translated">Allgemeine Konfiguration</target>
+			</trans-unit> 	
+			
+  			<trans-unit id="categories.T3up-Files">
+                  <target state="translated">Dateien</target>
+			</trans-unit>         
+            <trans-unit id="categories.T3up-Files.Js">
+                <source>JavaScript</source>
+            </trans-unit>                                                   
+            <trans-unit id="categories.T3up-Files.Html">
+                <source>Html</source>
+            </trans-unit>                                						
+            <trans-unit id="categories.T3up-Files.Scss">
+                <source>Scss</source>
+            </trans-unit>
+             			
+ 			<trans-unit id="categories.T3up-Fonts">       
+ 			      <target state="translated">Schriften</target>
+			</trans-unit> 	
+			
+ 			<trans-unit id="categories.T3up-Header">       
+ 			      <target state="translated">Header-Bereich</target>
+			</trans-unit> 	
+            <trans-unit id="categories.T3up-Header.top">
+                <target state="translated">Top-Header</target>
+            </trans-unit>
+            
+ 			<trans-unit id="categories.T3up-Meta">       
+ 			      <target state="translated">Head Meta-Einstellungen</target>
+			</trans-unit> 	
+								
+ 			<trans-unit id="categories.T3up-Navigation">       
+ 			      <target state="translated">Navigationseinstellungen</target>
+			</trans-unit> 	
+			
+ 			<trans-unit id="categories.T3up-Socialmedia">       
+ 			      <target state="translated">Socialmedia</target>
+			</trans-unit> 	
+																	
+ 			<trans-unit id="categories.T3up-Totop">       
+ 			      <target state="translated">ToTop-Einstellungen</target>
+			</trans-unit> 	
+																	
+ 			<trans-unit id="categories.T3up-Typography">       
+ 			      <target state="translated">Typografie</target>
+			</trans-unit> 									
+				
+				
+			<note>Breadcrumb</note>			
+			<trans-unit id="settings.t3upBreadcrumb.breadcrumbStyle">
+			    <target state="translated">Stile: (0 keine, 1 Standard, 2 Erweitert)</target>
+			</trans-unit>
+			<trans-unit id="settings.description.t3upBreadcrumb.breadcrumbStyle">
+			    <target state="translated">Die erweiterte Version mit einem Dropdown für das Untermenü</target>
+			</trans-unit>   			     
+			<trans-unit id="settings.t3upBreadcrumb.breadcrumbWrap">
+			    <target state="translated">Wrap um das Breadcrumbmenü</target>
+			</trans-unit>           
+			<trans-unit id="settings.t3upBreadcrumb.breadcrumbUlWrap">
+			    <target state="translated">Wrap um das UL-Element</target>
+			</trans-unit>           
+			<trans-unit id="settings.t3upBreadcrumb.breadcrumbHome">
+			    <target state="translated">Das home-symbol anzeigen</target>
+			</trans-unit>
+			<trans-unit id="settings.t3upBreadcrumb.breadcrumbTextSize">
+			    <target state="translated">Schriftgröße des Breadcrumbmenü</target>
+			</trans-unit>
+			
+			<note>Farben</note>				
+			<trans-unit id="settings.t3upColors.basicColor">
+			    <target state="translated">Basisfarbe</target>
+			</trans-unit>
+			<trans-unit id="settings.t3upColors.textColor">
+			    <target state="translated">Textfarbe des Inhalts</target>
+			</trans-unit>
+			<trans-unit id="settings.t3upColors.linkColor">
+			    <target state="translated">Linkfarbe des Inhalts</target>
+			</trans-unit>			
+			<trans-unit id="settings.t3upColors.linkHoverColor">
+			    <target state="translated">Hoverfarbe der Links des Inhalts</target>
+			</trans-unit>		
+			<trans-unit id="settings.t3upColors.bodyBgColor">
+			    <target state="translated">Hintergrundfarbe der Seite</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.shadow">
+			    <target state="translated">Standardwert für Schatten</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.overlay">
+			    <target state="translated">Overlay-Wert, wenn die Navigation angezeigt wird</target>
+			</trans-unit>	
+								
+			<trans-unit id="settings.t3upColors.footer1BgColor">
+			    <target state="translated">Hintergrundfarbe des Footer1-Bereichs</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer1TextColor">
+			    <target state="translated">Textfarbe des Footer1-Bereichs</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer1LinkColor">
+			    <target state="translated">Linkfarbe des Footer1-Bereichs</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer1LinkHoverColor">
+			    <target state="translated">Hoverfarbe der Links des Footer1-Bereichs</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.footer2BgColor">
+			    <target state="translated">Hintergrundfarbe des Footer2-Bereichs</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer2TextColor">
+			    <target state="translated">Textfarbe des Footer2-Bereichs</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer2LinkColor">
+			    <target state="translated">Linkfarbe des Footer2-Bereichs</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer2LinkHoverColor">
+			    <target state="translated">Hoverfarbe der Links des Footer2-Bereichs</target>
+			</trans-unit>
+			<trans-unit id="settings.t3upColors.footer3BgColor">
+			    <target state="translated">Hintergrundfarbe des Footer3-Bereichs</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer3TextColor">
+			    <target state="translated">Textfarbe des Footer3-Bereichs</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer3LinkColor">
+			    <target state="translated">Linkfarbe des Footer3-Bereichs</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.footer3LinkHoverColor">
+			    <target state="translated">Hoverfarbe der Links des Footer3-Bereichs</target>
+			</trans-unit>
+																		
+			<trans-unit id="settings.t3upColors.headerBgColor">
+			    <target state="translated">Hintergrundfarbe des Header-Bereichs</target>
+			</trans-unit>		
+            <trans-unit id="settings.t3upColors.headerBgBlendColor">
+                <target state="translated">Activer Header Hintergrundfarbe</target>
+            </trans-unit>
+			<trans-unit id="settings.t3upColors.headerTextColor">
+			    <target state="translated">Textfarbe des Header-Bereichs</target>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerLinkColor">
+			    <target state="translated">Linkfarbe des Header-Bereichs</target>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerLinkHoverColor">
+			    <target state="translated">Hoverfarbe der Links des Header-Bereichs</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.headerTopBgColor">
+			    <target state="translated">Hintergrundfarbe des Top-Header-Bereichs</target>
+			</trans-unit>		
+			<trans-unit id="settings.t3upColors.headerTopTextColor">
+			    <target state="translated">Textfarbe des Top-Header-Bereichs</target>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerTopLinkColor">
+			    <target state="translated">Linkfarbe des Top-Header-Bereichs</target>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerTopLinkHoverColor">
+			    <target state="translated">Hoverfarbe der Links des Top-Header-Bereichs</target>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerTopSubBgColor">
+			    <target state="translated">Hintergrundfarbe des Pulldowns des Top-Header-Bereichs</target>
+			</trans-unit>		
+			<trans-unit id="settings.t3upColors.headerTopSubTextColor">
+			    <target state="translated">Textfarbe des Pulldowns des Top-Header-Bereichs</target>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerTopSubLinkColor">
+			    <target state="translated">Linkfarbe des Pulldowns des Top-Header-Bereichs</target>
+			</trans-unit>						
+			<trans-unit id="settings.t3upColors.headerTopSubLinkHoverColor">
+			    <target state="translated">Hoverfarbe der Links des Pulldowns des Top-Header-Bereichs</target>
+			</trans-unit>		
+			
+			<trans-unit id="settings.t3upColors.h1-color">
+			    <target state="translated">Color for the h1-headlines</target>
+			</trans-unit>							
+			<trans-unit id="settings.t3upColors.h2-color">
+			    <target state="translated">Color for the h2-headlines</target>
+			</trans-unit>							
+			<trans-unit id="settings.t3upColors.h3-color">
+			    <target state="translated">Color for the h3-headlines</target>
+			</trans-unit>							
+			<trans-unit id="settings.t3upColors.h4-color">
+			    <target state="translated">Color for the h4-headlines</target>
+			</trans-unit>	
+			
+			<trans-unit id="settings.t3upColors.navLinkColor">
+			    <target state="translated">Linkcolor for the navigation</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.navLinkHoverColor">
+			    <target state="translated">Hovercolor for links in the navigation</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.navLinkHoverBGColor">
+			    <target state="translated">Linkcolor for the subnavigation</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.navLinkBorderBottomColor">
+			    <target state="translated">Bordercolor of the links in the navigation</target>
+			</trans-unit>
+			<trans-unit id="settings.t3upColors.navLinkBorderBottomHeight">
+			    <target state="translated">Borderheight of the links in the navigation</target>
+			</trans-unit>
+			
+			<trans-unit id="settings.t3upColors.subnavLinkColor">
+			    <target state="translated">Linkcolor for the subnavigation</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.subnavLinkHoverColor">
+			    <target state="translated">Hovercolor for links of the subnavigation</target>
+			</trans-unit>			
+			<trans-unit id="settings.t3upColors.subnavBG">
+			    <target state="translated">Background of the subnavigation</target>
+			</trans-unit>					
+			
+			<trans-unit id="settings.t3upColors.blue">
+			    <target state="translated">Blue</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upColors.green">
+			    <target state="translated">Green</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.grey">
+			    <target state="translated">Grey</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.orange">
+			    <target state="translated">Orange</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.red">
+			    <target state="translated">Red</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.blue">
+			    <target state="translated">Blue</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.turquoise">
+			    <target state="translated">Turquoise</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.violett">
+			    <target state="translated">Violett</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.yellow">
+			    <target state="translated">Yellow</target>
+			</trans-unit>		
+			<trans-unit id="settings.t3upColors.darkblue">
+			    <target state="translated">Darkblue</target>
+			</trans-unit>					
+			<trans-unit id="settings.t3upColors.darkgrey">
+			    <target state="translated">Darkgrey</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.lightgrey">
+			    <target state="translated">Lightgrey</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.pictureoverlay">
+			    <target state="translated">Overlaycolor for imgaes</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upColors.pictureoverlayTextColor">
+			    <target state="translated">Textcolor for the overlayfunction</target>
+			</trans-unit>			
+			<trans-unit id="settings.t3upColors.pictureoverlayTextSize">
+			    <target state="translated">Fontsize for the overlayfunction</target>
+			</trans-unit>			
+			
+			
+			<note>Komponenten</note>	
+			<trans-unit id="settings.t3upComponents.container">
+			    <target state="translated">Container Breite</target>
+			</trans-unit>			
+			<trans-unit id="settings.t3upComponents.gutter">
+			    <target state="translated">Gutter Werte</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upComponents.access">
+			    <target state="translated">Aktivieren des Access-Menüs</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upComponents.mmenu">
+			    <target state="translated">Aktivieren des Mobilmenü</target>
+			</trans-unit>		
+			<trans-unit id="settings.t3upComponents.mainPadding">
+			    <target state="translated">Padding des Main-Bereiches</target>
+			</trans-unit>		
+			<trans-unit id="settings.t3upComponents.contentPadding">
+			    <target state="translated">Padding des Inhalt-Bereiches</target>
+			</trans-unit>		
+				
+			
+			<note>Konfiguration</note>	
+			<trans-unit id="settings.t3upConfig.headerComment">
+			    <target state="translated">Kommentar im head der Seite</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upConfig.admPanel">
+			    <target state="translated">Das Adminpanel anzeigen (default 1)</target>
+			</trans-unit>
+			<trans-unit id="settings.t3upConfig.contentObjectExceptionHandler">
+			    <target state="translated">Fehler im Frontend ausgeben (default 0)</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upConfig.debug">
+			    <target state="translated">Debug aktivieren (default 0)</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upConfig.indexEnable">
+			    <target state="translated">Seitenindexierung aktivieren (default 1)</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upConfig.indexExternals">
+			    <target state="translated">Externe Medien indexieren (default 1)</target>
+			</trans-unit>							
+			<trans-unit id="settings.t3upConfig.nocache">
+			    <target state="translated">Cache abschalten (default 0)</target>
+			</trans-unit>									
+			<trans-unit id="settings.t3upConfig.cachePeriod">
+			    <target state="translated">Cache Periode (in Sekunden)</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upConfig.concatenateJs">
+			    <target state="translated">Javascripts zusammenfassen (default 1)</target>
+			</trans-unit>					
+			<trans-unit id="settings.t3upConfig.concatenateCss">
+			    <target state="translated">CSS zusammenfassen (default 1)</target>
+			</trans-unit>					
+			<trans-unit id="settings.t3upConfig.compressJs">
+			    <target state="translated">Javascripts komprimieren (default 1)</target>
+			</trans-unit>					
+			<trans-unit id="settings.t3upConfig.compressCss">
+			    <target state="translated">CSS komprimieren (default 1)</target>
+			</trans-unit>					
+			<trans-unit id="settings.t3upConfig.removeDefaultCss">
+			    <target state="translated">Standard CSS deaktivieren (default 1)</target>
+			</trans-unit>					
+			<trans-unit id="settings.t3upConfig.removeDefaultJS">
+			    <target state="translated">Standard JS deaktivieren (default 0)</target>
+			</trans-unit>								
+			<trans-unit id="settings.t3upConfig.pageTitleSeparator">
+			    <target state="translated">Seperator für den Titel (default |)</target>
+			</trans-unit>	
+			
+				
+			<note>Schriften</note>	
+			<trans-unit id="settings.t3upFonts.font">
+			    <target state="translated">Schriftart (font)</target>
+			</trans-unit>
+			<trans-unit id="settings.t3upFonts.symbol">
+			    <target state="translated">Symbol-Schriftart</target>
+			</trans-unit>			
+			<trans-unit id="settings.t3upFonts.brand">
+			    <target state="translated">Marke(Brand)-Schriftart</target>
+			</trans-unit>			
+			<trans-unit id="settings.t3upFonts.fontPath">
+			    <target state="translated">Schriftenpfad</target>
+			</trans-unit>
+			
+			
+			<note>Header-Bereich</note>				
+			<trans-unit id="settings.t3upHeader.logo">
+			    <target state="translated">Pfad zur Logo-Datei</target>
+			</trans-unit>			
+			<trans-unit id="settings.t3upHeader.alttext">
+			    <target state="translated">Logo Alttext</target>
+			</trans-unit>			
+			<trans-unit id="settings.t3upHeader.logoWidth">
+			    <target state="translated">Breite des Logos</target>
+			</trans-unit>			
+			<trans-unit id="settings.t3upHeader.logoWrap">
+			    <target state="translated">Wrap um das Logo</target>
+			</trans-unit>		
+			<trans-unit id="settings.t3upHeader.logoStickyWidth">
+			    <target state="translated">Sticky Logo Breite</target>
+			</trans-unit>
+			<trans-unit id="settings.t3upHeader.mobilLogo">
+			    <target state="translated">Pfad zur Mobillogo-Datei</target>
+			</trans-unit>
+			<trans-unit id="settings.t3upHeader.mobilLogoWidth">
+			    <target state="translated">Breite des Mobillogos</target>
+			</trans-unit>
+			<trans-unit id="settings.t3upHeader.mobilLogoWrap">
+			    <target state="translated">Wrap um das Mobillogo</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upHeader.symbolFontSize">
+			    <target state="translated">Symbol Schriftgröße</target>
+			</trans-unit>			
+						
+			
+			<note>Navigation</note>				
+			<trans-unit id="settings.t3upNavigation.style">
+			    <source>Navigationsstil</source>
+			</trans-unit>	
+			<trans-unit id="settings.t3upNavigation.navdir">
+			    <source>Navigationsausrichtung</source>
+			</trans-unit>							
+			<trans-unit id="settings.t3upNavigation.navwrap">
+			    <source>Wrap um die Navigation</source>
+			</trans-unit>			
+			<trans-unit id="settings.t3upNavigation.maxLevels">
+			    <source>Max. Ebenen in der Navigation</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upNavigation.maxItems">
+			    <source>Max. Elemente in der Navigation</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upNavigation.entryLevel">
+			    <source>Navigation Einstiegsebene</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upNavigation.color">
+			    <source>Farbige Navigation</source>
+			</trans-unit>		
+			<trans-unit id="settings.t3upNavigation.linkPadding">
+			    <source>Linkpadding in der ersten Ebene</source>
+			</trans-unit>											
+			<trans-unit id="settings.t3upNavigation.subnavLevel">
+			    <source>Einstiegsebene der Unternavigation</source>
+			</trans-unit>				
+			<trans-unit id="settings.t3upNavigation.subnavTitle">
+			    <source>Shows the leveltitele in the subnavigation</source>
+			</trans-unit>				
+					
+					
+			<note>Socialmedia</note>	
+			<trans-unit id="settings.t3upSocialmedia.pos">
+			    <target state="translated">Position des Socialmediamenüs</target>
+			</trans-unit>			
+			<trans-unit id="settings.t3upSocialmedia.youtube">
+			    <target state="translated">Der Youtube channel</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.instagram">
+			    <target state="translated">Der Instagram channel</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.x">
+			    <target state="translated">Der X channel</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.xing">
+			    <target state="translated">Der Xing channel</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.linkedin">
+			    <target state="translated">Der Linkedin channel</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.bluesky">
+			    <target state="translated">Der Bluesky channel</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.whatsApp">
+			    <target state="translated">Der WhatsApp channel</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.tiktok">
+			    <target state="translated">Der Tiktok channel</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.location">
+			    <target state="translated">Pid der Seite des Standorts</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.search">
+			    <target state="translated">Pid der Suchseite</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.login">
+			    <target state="translated">Pid der Login-Seite</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.email">
+			    <target state="translated">Die Emailadresse</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.hidelabel">
+			    <target state="translated">Die Labels verstecken</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolFontsize">
+			    <target state="translated">Schriftgröße der Symbole</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolFontColor">
+			    <target state="translated">Symbol Farbe</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolBgColor">
+			    <target state="translated">Symbol Hintergrundfarbe</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolBorderColor">
+			    <target state="translated">Symbol Rahmenfarbe</target>
+			</trans-unit>				
+				
+				
+			<note>ToTop Funktion</note>					
+			<trans-unit id="settings.t3upTotop.totop">
+			    <target state="translated">Aktivieren der totop-Funktion</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upTotop.totopBgColor">
+			    <target state="translated">Totop-Hintergrundfarbe</target>
+			</trans-unit>											
+			<trans-unit id="settings.t3upTotop.totopLinkColor">
+			    <target state="translated">Totop-Farbe</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTotop.totopLinkHoverColor">
+			    <target state="translated">Totop-Hover-Farbe</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTotop.totopPosBottom">
+			    <target state="translated">Totop untere Position</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTotop.totopPosRight">
+			    <target state="translated">Totop rechte Position</target>
+			</trans-unit>	
+			
+						
+			<note>Typografie</note>										
+			<trans-unit id="settings.t3upTypography.fontSize">
+			    <target state="translated">Generelle Schriftgröße</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upTypography.boldWeight">
+			    <target state="translated">Generelle Gewichtung für fett</target>
+			</trans-unit>				
+			<trans-unit id="settings.t3upTypography.lineHeight">
+			    <target state="translated">Generelle Zeilenhöhe</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.linkWeight">
+			    <target state="translated">Generelle Gewichtung für Links</target>
+			</trans-unit>											
+			<trans-unit id="settings.t3upTypography.pMargin">
+			    <target state="translated">Genereller Abstand für Absätze</target>
+			</trans-unit>
+			<trans-unit id="settings.t3upTypography.h1">
+			    <target state="translated">Skalierungsfaktor für H1-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h1.fontWeight">
+			    <target state="translated">Gewichtung für H1-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h1.lineHeight">
+			    <target state="translated">Zeilenhöhe für H1-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h1.alignment">
+			    <target state="translated">Ausrichtung für H1-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h1.wrap">
+			    <target state="translated">Ummantelung für H1-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h2">
+			    <target state="translated">Skalierungsfaktor für H2-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h2.fontWeight">
+			    <target state="translated">Gewichtung für H2-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h2.lineHeight">
+			    <target state="translated">Zeilenhöhe für H2-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h2.margin">
+			    <target state="translated">Abstand für H2-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h3">
+			    <target state="translated">Skalierungsfaktor für H3-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h3.fontWeight">
+			    <target state="translated">Gewichtung für H3-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h3.lineHeight">
+			    <target state="translated">Zeilenhöhe für H3-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h3.margin">
+			    <target state="translated">Abstand für H3-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h4">
+			    <target state="translated">Skalierungsfaktor für H4-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h4.fontWeight">
+			    <target state="translated">Gewichtung für H4-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h4.lineHeight">
+			    <target state="translated">Zeilenhöhe für H4-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.h4.margin">
+			    <target state="translated">Abstand für H4-Überschriften</target>
+			</trans-unit>	
+			<trans-unit id="settings.t3upTypography.footer1.fontSize">
+			    <target state="translated">Footer 1 Schriftgröße</target>
+			</trans-unit>								
+			<trans-unit id="settings.t3upTypography.footer3.fontSize">
+			    <target state="translated">Footer 3 Schriftgröße</target>
+			</trans-unit>								
+            <trans-unit id="settings.t3upTypography.navFontWeight">
+                <target state="translated">Gewichtung für die Navigation</target>
+            </trans-unit>						
+            <trans-unit id="settings.t3upTypography.navFontSize">
+                <target state="translated">Schriftgröße für die Navigation</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

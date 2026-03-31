@@ -1,0 +1,207 @@
+## Die CSS-Variablen ############################################################################
+
+@import 'EXT:t3up/Configuration/Sets/SitePackage/TypoScript/Basic/page.scssvariables.typoscript'
+
+plugin.tx_wsscss.variables{
+
+    // COMPONENTS
+    container                       = {$t3upComponents.container}px
+    mainPadding                     = {$t3upComponents.mainPadding}
+    contentPadding                  = {$t3upComponents.contentPadding}
+ 
+    // BREADCRUMB 
+    breadcrumbTextSize              = {$t3upBreadcrumb.breadcrumbTextSize}
+ 
+    // COLORS ---------------------------------------------------------
+    // Basic Colors
+    basicColor                      = {$t3upColors.basicColor}    
+    bodyBgColor                     = {$t3upColors.bodyBgColor}        
+    textColor                       = {$t3upColors.textColor}
+    linkColor                       = {$t3upColors.linkColor}
+    linkHoverColor                  = {$t3upColors.linkHoverColor} 
+    shadow                          = {$t3upColors.shadow}  
+    overlay                         = {$t3upColors.overlay}  
+    
+    // Footer Colors     
+    footer1BgColor                  = {$t3upColors.footer1BgColor}    
+    footer1TextColor                = {$t3upColors.footer1TextColor}       
+    footer1LinkColor                = {$t3upColors.footer1LinkColor}  
+    footer1LinkHoverColor           = {$t3upColors.footer1LinkHoverColor}   
+    footer2BgColor                  = {$t3upColors.footer2BgColor}           
+    footer2TextColor                = {$t3upColors.footer2TextColor}       
+    footer2LinkColor                = {$t3upColors.footer2LinkColor}  
+    footer2LinkHoverColor           = {$t3upColors.footer2LinkHoverColor}      
+    footer3BgColor                  = {$t3upColors.footer3BgColor}           
+    footer3TextColor                = {$t3upColors.footer3TextColor}       
+    footer3LinkColor                = {$t3upColors.footer3LinkColor}  
+    footer3LinkHoverColor           = {$t3upColors.footer3LinkHoverColor}  
+            
+    // Header Colors            
+    headerBgColor                   = {$t3upColors.headerBgColor}  
+    headerBgBlendColor              = {$t3upColors.headerBgBlendColor}        
+    headerTextColor                 = {$t3upColors.headerTextColor}    
+    headerLinkColor                 = {$t3upColors.headerLinkColor}                
+    headerLinkHoverColor            = {$t3upColors.headerLinkHoverColor}      
+    headerTopBgColor                = {$t3upColors.headerTopBgColor}    
+    headerTopTextColor              = {$t3upColors.headerTopTextColor}    
+    headerTopLinkColor              = {$t3upColors.headerTopLinkColor}                
+    headerTopLinkHoverColor         = {$t3upColors.headerTopLinkHoverColor}   
+    headerTopSubBgColor             = {$t3upColors.headerTopSubBgColor}    
+    headerTopSubTextColor           = {$t3upColors.headerTopSubTextColor}    
+    headerTopSubLinkColor           = {$t3upColors.headerTopSubLinkColor}                
+    headerTopSubLinkHoverColor      = {$t3upColors.headerTopSubLinkHoverColor}  
+    
+    // Header          
+    headerSymbolFontSize            = {$t3upHeader.symbolFontSize}  
+    headerLogoWidth                 = {$t3upHeader.logoWidth}   
+    headerMoilLogoWidth             = {$t3upHeader.mobilLogoWidth}  
+             
+    // Heading Colors                 
+    h1-color                        = {$t3upColors.h1-color}   
+    h2-color                        = {$t3upColors.h2-color}   
+    h3-color                        = {$t3upColors.h3-color}   
+    h4-color                        = {$t3upColors.h4-color}   
+  
+    // Navigation      
+    navFontSize                     = {$t3upTypography.navFontSize}   
+    navFontWeight                   = {$t3upTypography.navFontWeight}   
+    navLinkColor                    = {$t3upColors.navLinkColor}   
+    navLinkHoverColor               = {$t3upColors.navLinkHoverColor}      
+    navLinkHoverBGColor             = {$t3upColors.navLinkHoverBGColor}  
+    navLinkBorderBottomColor        = {$t3upColors.navLinkBorderBottomColor}  
+    navLinkBorderBottomHeight       = {$t3upColors.navLinkBorderBottomHeight}px  
+    navFontSize                     = {$t3upTypography.navFontSize}
+    navFontWeight                   = {$t3upTypography.navFontWeight}   
+    subnavLinkColor                 = {$t3upColors.subnavLinkColor}   
+    subnavLinkHoverColor            = {$t3upColors.subnavLinkHoverColor}      
+    subnavBG                        = {$t3upColors.subnavBG}    
+            
+    // Pagecolors      
+    blue                            = {$t3upColors.blue}   
+    green                           = {$t3upColors.green}         
+    grey                            = {$t3upColors.grey}   
+    orange                          = {$t3upColors.orange}    
+    red                             = {$t3upColors.red}              
+    turquoise                       = {$t3upColors.turquoise}      
+    violett                         = {$t3upColors.violett}        
+    yellow                          = {$t3upColors.yellow} 
+    darkblue                        = {$t3upColors.darkblue}                     
+    darkgrey                        = {$t3upColors.darkgrey} 
+    darkergrey                      = {$t3upColors.darkergrey}            
+    lightgrey                       = {$t3upColors.lightgrey}    
+    
+    info                            = {$t3upColors.info}   
+    danger                          = {$t3upColors.danger}  
+    success                         = {$t3upColors.success}   
+    warning                         = {$t3upColors.warning}          
+        
+        
+    // Specials 
+    pictureoverlay                  = {$t3upColors.pictureoverlay} 
+    pictureoverlayTextColor         = {$t3upColors.pictureoverlayTextColor} 
+    pictureoverlayTextSize          = {$t3upColors.pictureoverlayTextSize}     
+            
+    // Fonts
+    font                            = {$t3upFonts.font}
+    symbol                          = {$t3upFonts.symbol}
+    brand                           = {$t3upFonts.brand}
+    fontPath                        = {$t3upFonts.fontPath}
+    
+     # ToTop -----------------------------------------------------------------------   
+    totopBgColor                    = {$t3upTotop.totopBgColor}
+    totopLinkColor                  = {$t3upTotop.totopLinkColor}
+    totopLinkHoverColor             = {$t3upTotop.totopLinkHoverColor}
+    totopPosBottom                  = {$t3upTotop.totopPosBottom}
+    totopPosRight                   = {$t3upTotop.totopPosRight}
+    
+    # Typography -----------------------------------------------------------------------
+    
+    p                               = {$t3upTypography.fontSize}
+    bold                            = {$t3upTypography.boldWeight}
+    lineHeight                      = {$t3upTypography.lineHeight}
+    linkWeight                      = {$t3upTypography.linkWeight}
+    pMargin                         = {$t3upTypography.pMargin} 
+    
+    h1                              = {$t3upTypography.h1}
+    h1-fontweight                   = {$t3upTypography.h1.fontWeight}
+    h1-lineheight                   = {$t3upTypography.h1.lineheight}
+    h1-margin                       = {$t3upTypography.h1.margin}   
+    h1-alignment                    = {$t3upTypography.h1.alignment}     
+    
+    h2                              = {$t3upTypography.h2}
+    h2-fontweight                   = {$t3upTypography.h2.fontWeight}
+    h2-lineheight                   = {$t3upTypography.h2.lineheight}
+    h2-margin                       = {$t3upTypography.h2.margin}  
+    
+    h3                              = {$t3upTypography.h3}
+    h3-fontweight                   = {$t3upTypography.h3.fontWeight}
+    h3-lineheight                   = {$t3upTypography.h3.lineheight}
+    h3-margin                       = {$t3upTypography.h3.margin}  
+       
+    h4                              = {$t3upTypography.h4}
+    h4-fontweight                   = {$t3upTypography.h4.fontWeight}
+    h4-lineheight                   = {$t3upTypography.h4.lineheight}
+    h4-margin                       = {$t3upTypography.h4.margin}        
+       
+    footer1fontsize                 = {$t3upTypography.footer1.fontsize}
+    footer3fontsize                 = {$t3upTypography.footer3.fontSize}
+   
+}
+
+page.includeCSS    = COA
+page.includeCSS{
+
+    symbol                          = EXT:t3up/Resources/Public/Sass/Fonts/_{$t3upFonts.symbol}.scss
+    symbol.forceOnTop               = 1
+    
+    brand                           = EXT:t3up/Resources/Public/Sass/Fonts/_{$t3upFonts.brand}.scss
+    brand.forceOnTop                = 1
+    
+    font                            = EXT:t3up/Resources/Public/Sass/Fonts/_{$t3upFonts.font}.scss
+    font.forceOnTop                 = 1
+
+    dark                            = EXT:t3up/Resources/Public/Sass/Colormode/_dark.scss
+    contrast                        = EXT:t3up/Resources/Public/Sass/Colormode/_contrast.scss
+
+    image                           = EXT:t3up/Resources/Public/Sass/Content/_image.scss
+
+    ///////
+    bootstrap                       = EXT:t3up/Resources/Public/Sass/Bootstrap/bootstrap.scss
+    bootstrap.if.isTrue             = {$t3upFiles.Scss.bootstrap}    
+    
+    bootstrapStyle                  = EXT:t3up/Resources/Public/Sass/Content/_bootstrapstyles.scss
+    bootstrapStyle.if.isTrue        = {$t3upFiles.Scss.bootstrap}    
+    
+    breadcrumb                      = EXT:t3up/Resources/Public/Sass/Content/_breadcrumb.scss
+    breadcrumb.if.isTrue            = {$t3upFiles.Scss.breadcrumb}    
+        
+    content                         = EXT:t3up/Resources/Public/Sass/Content/_content.scss    
+    content.if.isTrue               = {$t3upFiles.Scss.content}       
+    
+    footer                          = EXT:t3up/Resources/Public/Sass/Content/_footer.scss    
+    footer.if.isTrue                = {$t3upFiles.Scss.footer}    
+    
+    header                          = EXT:t3up/Resources/Public/Sass/Content/_header.scss    
+    header.if.isTrue                = {$t3upFiles.Scss.header}
+    
+    # Mobil
+    
+    mobilmenu                       = EXT:t3up/Resources/Public/Sass/Content/_mmenu.scss  
+    mobilmenu.if.isTrue             = {$t3upComponents.mmenu}
+    
+    
+    navigation                      = EXT:t3up/Resources/Public/Sass/Content/_navigation.scss    
+    navigation.if.isTrue            = {$t3upFiles.Scss.navigation}
+    
+    totop                           = EXT:t3up/Resources/Public/Sass/Content/_totop.scss    
+    totop.if.isTrue                 = {$t3upTotop.totop}
+    
+    //////
+    main                            = EXT:t3up/Resources/Public/Sass/_index.scss
+    main.linenumber                 = true    
+    main.forceOnTop                 = 1
+    main.outputStyle                = expanded 
+     
+}
+
+

@@ -1,0 +1,42 @@
+TCEFORM {
+	tt_content {
+		frame_class {
+			removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
+			disableNoMatchingValueElement = 1
+            types {
+				text {
+					addItems { 
+                        	white  		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                   		colored		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored
+					}
+				} 
+				textmedia {
+					addItems { 
+                    	    white  		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                   		colored		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored
+					}
+				}   
+				table {
+					addItems { 
+                    	   white  		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+					}
+				}  				
+				header {
+					addItems { 
+                    	   white  		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+					}
+	            }  
+				list {
+					addItems { 
+                    	   white  			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+					}
+	            }  
+	            menu_subpages {
+					addItems { 
+						subnavigation 	= Subnavigation
+					}
+	            }  
+			} // types
+		} // frame_class
+	} // tt_content  
+} // TCEFORM

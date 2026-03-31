@@ -1,0 +1,58 @@
+lib.navigation.wraper = TEXT
+lib.navigation.wraper.value                    = {$t3upNavigation.navwrap}
+
+lib.navigation.navdir                        =  TEXT
+lib.navigation.navdir.value         	        =  {$t3upNavigation.navdir}  
+lib.navigation.navdir.insertData             = 1
+
+//////////////////////////////////////////////////////////
+
+lib.navigation.anker =< lib.contentElement
+lib.navigation.anker {
+	variables {
+		navwrap      		< lib.navigation.wraper
+		navdir       		< lib.navigation.navdir
+	}
+    templateName = Anker
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+        10 {
+            special = list
+            special {
+                value {
+                    field = pages
+                    override {
+                        data = page:uid
+                        if {
+                            isFalse.field = pages
+                        }
+                    }
+                }
+            }
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+                10 {
+                    table = tt_content
+                    pidInList.field = uid
+                    as = content
+                    // where = sectionIndex = 1 AND colPos = 0
+                    where = sectionIndex = 1
+                    orderBy = sorting
+                    dataProcessing {
+                        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                        10 {
+                            references.fieldName = image
+                        }
+                    }
+                }
+            }
+        }
+    }
+    stdWrap {
+        editIcons = tt_content: header [header_layout], pages
+        editIcons {
+            iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
+        }
+    }
+}
+   

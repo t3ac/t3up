@@ -1,0 +1,14 @@
+lib.header.mobilbutton                      = COA
+lib.header.mobilbutton {
+    if.value                                = 0
+    if.isGreaterThan                        = {$t3upHeader.mobilBottonPos}
+    10                                      = TEXT
+    10.value                                = Show the navigation
+    10.wrap                                 = <a href="#menu" title="|" alt="shows the mobilmenu" class="nav_burger">&nbsp;</a>
+    20                                      = TEXT
+    20.value                                = Menu
+    20.wrap					                = <span class="showtitle{$t3upHeader.showtitle} small ps-3">|</span>
+    
+    wrap                                    = <li class="d-lg-none mobilButton order-{$t3upHeader.mobilBottonPos} {$t3upHeader.topElementWrap}">|</li>
+    
+}

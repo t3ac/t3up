@@ -1,0 +1,6 @@
+@import './TypoScript/Basic/*.typoscript"
+@import './TypoScript/Content/*.typoscript"
+@import './TypoScript/Extensions/*.typoscript"
+@import './TypoScript/Header/*.typoscript"
+@import './TypoScript/Navigation/*.typoscript"
+

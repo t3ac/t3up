@@ -1,0 +1,1177 @@
+categories:
+    
+  T3up-Config:     
+  
+  T3up-Components:   
+        
+  T3up-Breadcrumb:   
+    
+  T3up-Colors:
+  T3up-Colors.basic:
+    parent: T3up-Colors
+  T3up-Colors.footer:
+    parent: T3up-Colors  
+  T3up-Colors.header:
+    parent: T3up-Colors
+  T3up-Colors.heading:
+    parent: T3up-Colors
+  T3up-Colors.navigation:
+    parent: T3up-Colors
+  T3up-Colors.pagecolors:
+    parent: T3up-Colors   
+  T3up-Colors.specials:
+    parent: T3up-Colors  
+    
+
+  T3up-Files:    
+  T3up-Files.Js: 
+    parent: T3up-Files
+  T3up-Files.Html: 
+    parent: T3up-Files
+  T3up-Files.Scss: 
+    parent: T3up-Files
+      
+  T3up-Fonts:
+    
+  T3up-Footer: 
+  T3up-Footer.footer1:
+    parent: T3up-Footer
+  T3up-Footer.footer2:
+    parent: T3up-Footer
+  T3up-Footer.footer3:
+    parent: T3up-Footer
+            
+  T3up-Header:
+  T3up-Header.top:
+    parent: T3up-Header
+  T3up-Meta:
+      
+  T3up-Navigation:
+
+  T3up-Totop:
+    
+  T3up-Typography:
+    
+  T3up-Socialmedia:
+    
+settings:
+# Breadcrumb Values -------------------
+  t3upBreadcrumb.breadcrumbStyle:
+    category: T3up-Breadcrumb
+    default: '1'
+    type: int
+    enum:
+      0: '0'
+      1: '1'      
+      2: '2'      
+  t3upBreadcrumb.breadcrumbWrap:  
+    category: T3up-Breadcrumb
+    type: string
+    default: 'breadcrumbrow navbar navbar-expand-lg d-none d-lg-flex py-3 w-100'    
+  t3upBreadcrumb.breadcrumbUlWrap:  
+    category: T3up-Breadcrumb
+    type: string
+    default: 'align-items-center list-unstyled navbar-nav me-auto mb-0'    
+  t3upBreadcrumb.breadcrumbHome:  
+    category: T3up-Breadcrumb
+    default: '1'
+    type: int
+  t3upBreadcrumb.breadcrumbTextSize:  
+    category: T3up-Breadcrumb
+    default: '80%'
+    type: string  
+  t3upBreadcrumb.breadcrumbPos:
+    category: T3up-Breadcrumb
+    default: '0'
+    type: int
+    enum:
+      0: 'Content'
+      1: 'Header'      
+      
+# Color Values ------------------------
+  # Basic -----------------------------
+  t3upColors.basicColor:  
+    category: T3up-Colors.basic
+    type: color
+    default: 'rgba(30,30,30,1)'
+  t3upColors.bodyBgColor:
+    category: T3up-Colors.basic
+    type: color
+    default: 'rgba(255,255,255,1)'
+  t3upColors.textColor:
+    category: T3up-Colors.basic
+    type: color
+    default: 'rgba(30,30,30,1)'
+  t3upColors.linkColor:
+    category: T3up-Colors.basic
+    type: color
+    default: 'rgba(30,30,30,1)'
+  t3upColors.linkHoverColor:
+    category: T3up-Colors.basic
+    type: color
+    default: 'rgba(0,0,0,1)'
+  t3upColors.shadow:
+    category: T3up-Colors.basic
+    type: string
+    default: '0 $v03 $v05 0 rgba(0,0,0,.2)'    
+  t3upColors.overlay:
+    category: T3up-Colors.basic
+    type: string
+    default: 'rgba(33, 33, 33, 0.35)'    
+
+    
+  # Footer ---------------------------  
+  t3upColors.footer1BgColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(255,255,255,0)'       
+  t3upColors.footer1TextColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(30,30,30,1)'  
+  t3upColors.footer1LinkColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(30,30,30,1)'  
+  t3upColors.footer1LinkHoverColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(0,0,0,1)'     
+  t3upColors.footer2BgColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(255,255,255,0)'       
+  t3upColors.footer2TextColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(30,30,30,1)' 
+  t3upColors.footer2LinkColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(30,30,30,1)'    
+  t3upColors.footer2LinkHoverColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(0,0,0,1)'      
+  t3upColors.footer3BgColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(255,255,255,0)'       
+  t3upColors.footer3TextColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(30,30,30,1)'   
+  t3upColors.footer3LinkColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(30,30,30,1)'       
+  t3upColors.footer3LinkHoverColor:
+    category: T3up-Colors.footer
+    type: color
+    default: 'rgba(0,0,0,1)'    
+        
+  # Header ---------------------------  
+  t3upColors.headerBgColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(0,0,0,0)'  
+  t3upColors.headerBgBlendColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(0,0,0,1)'      
+  t3upColors.headerTextColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(30,30,30,1)'   
+  t3upColors.headerLinkColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(30,30,30,1)' 
+  t3upColors.headerLinkHoverColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(0,0,0,1)' 
+  t3upColors.headerTopBgColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(255,255,255,0)'     
+  t3upColors.headerTopTextColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(30,30,30,1)'   
+  t3upColors.headerTopLinkColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(30,30,30,1)' 
+  t3upColors.headerTopLinkHoverColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(0,0,0,1)' 
+  t3upColors.headerTopSubBgColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(255,255,255,0)'     
+  t3upColors.headerTopSubTextColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(30,30,30,1)'   
+  t3upColors.headerTopSubLinkColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(30,30,30,1)' 
+  t3upColors.headerTopSubLinkHoverColor:
+    category: T3up-Colors.header
+    type: color
+    default: 'rgba(0,0,0,1)' 
+  
+         
+  # Heading --------------------------     
+  t3upColors.h1-color:
+    category: T3up-Colors.heading
+    type: color
+    default: 'rgba(30,30,30,1)'
+  t3upColors.h2-color:
+    category: T3up-Colors.heading
+    type: color
+    default: 'rgba(30,30,30,1)'
+  t3upColors.h3-color:
+    category: T3up-Colors.heading
+    type: color
+    default: 'rgba(30,30,30,1)'
+  t3upColors.h4-color:
+    category: T3up-Colors.heading
+    type: color
+    default: 'rgba(30,30,30,1)'
+
+  # Navigation ----------------------       
+  t3upColors.navLinkColor:
+    category: T3up-Colors.navigation
+    type: color
+    default: 'rgba(30,30,30,1)'    
+  t3upColors.navLinkHoverColor:
+    category: T3up-Colors.navigation
+    type: color
+    default: 'rgba(0,0,0,1)' 
+  t3upColors.navLinkHoverBGColor:
+    category: T3up-Colors.navigation
+    type: color
+    default: 'rgba(0,0,0,1)'    
+  t3upColors.navLinkBorderBottomColor:
+    category: T3up-Colors.navigation
+    type: color
+    default: 'rgba(0,0,0,1)'      
+  t3upColors.navLinkBorderBottomHeight:
+    category: T3up-Colors.navigation
+    type: int
+    default: '8' 
+  t3upColors.subnavLinkColor:
+    category: T3up-Colors.navigation
+    type: color
+    default: 'rgba(30,30,30,1)'    
+  t3upColors.subnavLinkHoverColor:
+    category: T3up-Colors.navigation
+    type: color
+    default: 'rgba(0,0,0,1)'    
+  t3upColors.subnavBG:
+    category: T3up-Colors.navigation
+    type: color
+    default: 'rgba(255, 255, 255, .98)'     
+    
+  # Pagecolor ------------------------     
+  t3upColors.blue:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#346097'  
+  t3upColors.green:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#406C03'  
+  t3upColors.grey:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#787878'      
+  t3upColors.orange:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#A94611'      
+  t3upColors.red:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#A50F19'      
+  t3upColors.turquoise:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#1D725F'           
+  t3upColors.violett:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#863177'           
+  t3upColors.yellow:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#F5F507'           
+  t3upColors.darkblue:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#2D4F9A'           
+  t3upColors.darkgrey:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#666666'     
+  t3upColors.darkergrey:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#454545'               
+  t3upColors.lightgrey:
+    category: T3up-Colors.pagecolors
+    type: color
+    default: '#dadada'   
+    
+  # Specials -------------------------- 
+  t3upColors.pictureoverlay:
+    category: T3up-Colors.specials
+    type: color
+    default: 'rgba(255,255,255, 0.75)'  
+  t3upColors.pictureoverlayTextColor:
+    category: T3up-Colors.specials
+    type: color
+    default: 'rgba(0,0,0,1)'     
+  t3upColors.pictureoverlayTextSize:
+    category: T3up-Colors.specials
+    type: string
+    default: '100%'    
+  t3upColors.info:
+    category: T3up-Colors.specials
+    type: color
+    default: '#0dcaf0'        
+  t3upColors.warning:
+    category: T3up-Colors.specials
+    type: color
+    default: '#ffc107'
+  t3upColors.danger:
+    category: T3up-Colors.specials
+    type: color
+    default: '#dc3545'   
+  t3upColors.success:
+    category: T3up-Colors.specials
+    type: color
+    default: '#198754'  
+    
+# Components Values ------------------     
+  t3upComponents.container:
+    category: T3up-Components
+    type: int
+    default: '1440'  
+  t3upComponents.home:
+    category: T3up-Components
+    type: int
+    default: '1'  
+  t3upComponents.gutter:
+    category: T3up-Components
+    type: string
+    default: 'clamp(1rem, 0.8803rem + 0.7979vw, 1.375rem)'    
+  t3upComponents.access:
+    category: T3up-Components
+    type: bool
+    default: true
+  t3upComponents.mmenu:
+    category: T3up-Components
+    type: bool
+    default: true
+  t3upComponents.mainPadding:
+    category: T3up-Components
+    type: string
+    default: 0
+  t3upComponents.contentPadding:
+    category: T3up-Components
+    type: string
+    default: 0 0 $v1 0
+  t3upComponents.favicon:
+    category: T3up-Components
+    type: string
+    default: 'EXT:t3up/Resources/Public/Design/favicon.ico'
+    
+# Configuration ------------------------
+  t3upConfig.headerComment:
+    category: T3up-Config
+    type: string
+    default: 'TYPO3 Sitepackage by Michael Lang'
+  t3upConfig.admPanel:
+    category: T3up-Config
+    type: bool
+    default: true 
+  t3upConfig.debug:
+    category: T3up-Config
+    type: bool
+    default: false  
+  t3upConfig.contentObjectExceptionHandler:
+    category: T3up-Config
+    type: bool
+    default: false  
+  t3upConfig.nocache:
+    category: T3up-Config
+    type: bool
+    default: false 
+  t3upConfig.cachePeriod:
+    category: T3up-Config
+    type: int
+    default: '86400'                     
+  t3upConfig.indexEnable:
+    category: T3up-Config
+    type: bool
+    default: true             
+  t3upConfig.indexExternals:
+    category: T3up-Config
+    type: bool
+    default: true                        
+  t3upConfig.pageTitleSeparator:
+    category: T3up-Config
+    type: string
+    default: '|'
+  t3upConfig.concatenateJs:
+    category: T3up-Config
+    type: bool
+    default: true    
+  t3upConfig.compressJs:
+    category: T3up-Config
+    type: bool
+    default: true    
+  t3upConfig.concatenateCss:
+    category: T3up-Config
+    type: bool
+    default: true      
+  t3upConfig.compressCss:
+    category: T3up-Config
+    type: bool
+    default: true    
+  t3upConfig.removeDefaultCss:
+    category: T3up-Config
+    type: bool
+    default: true    
+  t3upConfig.removeDefaultJS:
+    category: T3up-Config
+    type: bool
+    default: false 
+    
+# Files ------------------------------
+  t3upFiles.Html.contentElement.layoutRootPaths:     
+    category: T3up-Files.Html
+    type: string
+    default: 'EXT:t3up/Resources/Private/Templates/ContentElement/Layouts/'    
+  t3upFiles.Html.contentElement.partialRootPaths:     
+    category: T3up-Files.Html
+    type: string
+    default: 'EXT:t3up/Resources/Private/Templates/ContentElement/Partials/'  
+  t3upFiles.Html.contentElement.templateRootPaths:     
+    category: T3up-Files.Html
+    type: string
+    default: 'EXT:t3up/Resources/Private/Templates/ContentElement/templateRootPaths/'  
+    
+  t3upFiles.Html.fluidtemplates.layoutRootPaths:     
+    category: T3up-Files.Html
+    type: string
+    default: 'EXT:t3up/Resources/Private/Templates/Fluidtemplates/Layouts/'    
+  t3upFiles.Html.fluidtemplates.partialRootPaths:     
+    category: T3up-Files.Html
+    type: string
+    default: 'EXT:t3up/Resources/Private/Templates/Fluidtemplates/Partials/'  
+  t3upFiles.Html.fluidtemplates.templateRootPaths:     
+    category: T3up-Files.Html
+    type: string
+    default: 'EXT:t3up/Resources/Private/Templates/Fluidtemplates/templateRootPaths/' 
+  t3upFiles.Html.Felogin:     
+    category: T3up-Files.Html
+    type: string
+    default: 'EXT:t3up/Resources/Private/Templates/Felogin/Templates/'      
+           
+  t3upFiles.Js.basic:     
+    category: T3up-Files.Js
+    type: bool
+    default: true
+  t3upFiles.Js.bootstrap:     
+    category: T3up-Files.Js
+    type: bool
+    default: true    
+  t3upFiles.Js.dark:     
+    category: T3up-Files.Js
+    type: bool
+    default: true        
+  t3upFiles.Js.jquery:     
+    category: T3up-Files.Js
+    type: bool
+    default: true
+  t3upFiles.Js.navigation:     
+    category: T3up-Files.Js
+    type: bool
+    default: true   
+  t3upFiles.Js.lightbox:     
+    category: T3up-Files.Js
+    type: bool
+    default: true
+  t3upFiles.Js.table:     
+    category: T3up-Files.Js
+    type: bool
+    default: true 
+  t3upFiles.Js.subnavigation:     
+    category: T3up-Files.Js
+    type: bool
+    default: false
+  t3upFiles.Js.inview:     
+    category: T3up-Files.Js
+    type: bool
+    default: false
+  t3upFiles.Js.wall:     
+    category: T3up-Files.Js
+    type: bool
+    default: false
+    
+  t3upFiles.Scss.access:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true   
+  t3upFiles.Scss.bootstrap:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true  
+  t3upFiles.Scss.bootstrapstyles:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true    
+  t3upFiles.Scss.breadcrumb:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true
+  t3upFiles.Scss.content:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true    
+  t3upFiles.Scss.felogin:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true    
+  t3upFiles.Scss.footer:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true    
+  t3upFiles.Scss.fsc:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true      
+  t3upFiles.Scss.image:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true    
+  t3upFiles.Scss.lightbox:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true    
+  t3upFiles.Scss.links:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true
+  t3upFiles.Scss.header:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true    
+  t3upFiles.Scss.navigation:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true
+  t3upFiles.Scss.socialmedia:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true
+  t3upFiles.Scss.subnavigation:     
+    category: T3up-Files.Scss
+    type: bool
+    default: false
+  t3upFiles.Scss.table:     
+    category: T3up-Files.Scss
+    type: bool
+    default: true
+  t3upFiles.Scss.wall:     
+    category: T3up-Files.Scss
+    type: bool
+    default: false  
+            
+    
+# Font Values ------------------------ 
+  t3upFonts.font:
+    category: T3up-Fonts
+    default: 'Open Sans'
+    type: string
+    enum:
+      Open Sans: 'Open Sans'
+      PT Sans: 'PT Sans'
+      Roboto: 'Roboto'
+      Source Sans Pro: 'Source Sans Pro'
+      Work Sans: 'Work Sans'
+      Merriweather: 'Merriweather'
+      Merriweather Sans: 'Merriweather Sans'
+  t3upFonts.symbol:
+    category: T3up-Fonts
+    default: 'Material Symbols Sharp'
+    type: string
+  t3upFonts.brand:
+    category: T3up-Fonts
+    default: 'FontAwesome'
+    type: string     
+  t3upFonts.fontPath:
+    category: T3up-Fonts
+    default: '../../../../Fonts/'
+    type: string
+
+# Footer ----------------------------  
+  t3upFooter.basefooter:    
+    category: T3up-Footer.footer1
+    type: bool
+    default: true 
+  t3upFooter.address:    
+    category: T3up-Footer.footer1
+    type: int
+    default: '0' 
+  t3upFooter.addressWrap:    
+    category: T3up-Footer.footer1
+    type: string
+    default: '<div id="contact" class="col-12 col-sm-6 col-lg-3 pe-lg-5">|</div>' 
+  t3upFooter.service1:    
+    category: T3up-Footer.footer1
+    type: int
+    default: '0' 
+  t3upFooter.service1Wrap:    
+    category: T3up-Footer.footer1
+    type: string
+    default: '<div class="col-12 col-sm-6 col-lg-3 pe-lg-5">|</div>' 
+  t3upFooter.service2:    
+    category: T3up-Footer.footer1
+    type: int
+    default: '0' 
+  t3upFooter.service2Wrap:    
+    category: T3up-Footer.footer1
+    type: string
+    default: '<div class="col-12 col-sm-6 col-lg-3 pe-lg-5">|</div>' 
+  t3upFooter.service3:    
+    category: T3up-Footer.footer1
+    type: int
+    default: '0' 
+  t3upFooter.service3Wrap:    
+    category: T3up-Footer.footer1
+    type: string
+    default: '<div class="col-12 col-sm-6 col-lg-3">|</div>'     
+  t3upFooter.footerdynamic:    
+    category: T3up-Footer.footer1
+    type: bool
+    default: false 
+  t3upFooter.footer1Wrap:    
+    category: T3up-Footer.footer1
+    type: string
+    default: '<div class= "footer1"><div class="container"><div class="row px-5 px-xl-0 py-7 py-xl-10">|</div></div></div>'  
+       
+  t3upFooter.base:    
+    category: T3up-Footer.footer3
+    type: bool
+    default: false 
+  t3upFooter.baseWrap:    
+    category: T3up-Footer.footer3
+    type: string
+    default: '<div class="footer3"><div class="container"><div class="d-md-flex justify-content-between p-5 px-xl-0">|</div></div></div>'
+  t3upFooter.copyright:    
+    category: T3up-Footer.footer3
+    type: string
+    default: ''         
+  t3upFooter.contactpage:    
+    category: T3up-Footer.footer3
+    type: int
+    default: '0'           
+  t3upFooter.lastchange:    
+    category: T3up-Footer.footer3
+    type: bool
+    default: false          
+  t3upFooter.pid:    
+    category: T3up-Footer.footer3
+    type: bool
+    default: false        
+  t3upFooter.link:    
+    category: T3up-Footer.footer3
+    type: string
+    default: ''   
+  t3upFooter.dataprotection:    
+    category: T3up-Footer.footer3    
+    type: int
+    default: '0' 
+  t3upFooter.disabilityaccess:    
+    category: T3up-Footer.footer3    
+    type: int
+    default: '0' 
+  t3upFooter.impress:    
+    category: T3up-Footer.footer3    
+    type: int
+    default: '0' 
+  t3upFooter.sitemap:    
+    category: T3up-Footer.footer3    
+    type: int
+    default: '0' 
+        
+                  
+# Header ----------------------------  
+  t3upHeader.logo:
+    category: T3up-Header
+    type: string
+    default: ''  
+  t3upHeader.alttext:
+    category: T3up-Header
+    type: string
+    default: 'Home'  
+  t3upHeader.logoWidth:
+    category: T3up-Header
+    type: string
+    default: '100%'
+  t3upHeader.logoWrap:
+    category: T3up-Header
+    type: string
+    default: 'logo d-inline-block col-6 col-sm-4 col-md-3 order-1 pb-5 pt-md-6 pb-md-8 ps-5 ps-xl-0'
+  t3upHeader.logoStickyWidth:
+    category: T3up-Header
+    type: string
+    default: '33.33%'
+  t3upHeader.mobilLogo:
+    category: T3up-Header
+    type: string
+    default: ''  
+  t3upHeader.mobilLogoWidth:
+    category: T3up-Header
+    type: string
+    default: '100%'         
+  t3upHeader.dynheader:
+    category: T3up-Header
+    default: 'none'
+    type: string
+    enum:
+      none: 'none'
+      sticky: 'sticky'  
+      dynamic: 'dynamic'            
+  t3upHeader.headerAreaWrap:
+    category: T3up-Header
+    type: string
+    default: 'container position-relative d-flex justify-content-between'    
+         
+  # TOP Header -------------------------------     
+  t3upHeader.toppos:
+    category: T3up-Header.top
+    default: '1'
+    type: int
+    enum:
+      0: 'none'
+      1: 'Top'      
+      2: 'Inline'   
+  t3upHeader.topWrap:
+    category: T3up-Header.top
+    type: string
+    default: 'top container list-unstyled d-flex align-items-center justify-content-end mb-0'          
+  t3upHeader.topElementWrap:
+    category: T3up-Header.top
+    type: string
+    default: 'ps-7'
+  t3upHeader.topATagWrap:
+    category: T3up-Header.top    
+    type: string
+    default: 'py-3'
+  t3upHeader.mobilBottonPos:
+    category: T3up-Header.top    
+    type: string
+    default: ''    
+  t3upHeader.homeButtonPos:
+    category: T3up-Header.top
+    type: int
+    default: '0'     
+  t3upHeader.fontsizeButtonPos:
+    category: T3up-Header.top
+    type: int
+    default: '0'   
+  t3upHeader.darkmodeButtonPos:
+    category: T3up-Header.top
+    type: int
+    default: '0'   
+  t3upHeader.quicklinksButtonPos:
+    category: T3up-Header.top
+    type: int
+    default: '0'   
+  t3upHeader.quicklinks:
+    category: T3up-Header.top
+    type: string
+    default: ''     
+  t3upHeader.loginPage:
+    category: T3up-Header.top
+    type: string
+    default: ''               
+  t3upHeader.loginButtonPos:
+    category: T3up-Header.top
+    type: int
+    default: '0'      
+  t3upHeader.languagemenu:
+    category: T3up-Header.top
+    default: '2'
+    type: int
+    enum:
+      0: 'none'
+      1: 'Globe'      
+      2: 'ISO'      
+  t3upHeader.languagemenuPos:
+    category: T3up-Header.top
+    type: string
+    default: ''       
+  t3upHeader.searchpage:
+    category: T3up-Header.top
+    type: string
+    default: '' 
+  t3upHeader.searchfield:
+    category: T3up-Header.top
+    type: string
+    default: ''           
+  t3upHeader.searchpageButtonPos:
+    category: T3up-Header.top
+    type: string
+    default: ''         
+  t3upHeader.showtitle:
+    category: T3up-Header.top
+    default: '1'
+    type: string
+    enum:
+      funcItemTitle: 'show'
+      funcItemTitle d-none: 'hide'  
+  t3upHeader.symbolFontSize:
+    category: T3up-Header.top
+    type: string
+    default: '$v1%'     
+ 
+# Meta ------------------------------- 
+  t3upMeta.author:
+    category: T3up-Meta
+    type: string
+    default: ''  
+  t3upMeta.copyright:
+    category: T3up-Meta
+    type: string
+    default: ''  
+  t3upMeta.google-site-verification:
+    category: T3up-Meta
+    type: string
+    default: ''  
+  t3upMeta.page-topic:
+    category: T3up-Meta
+    type: string
+    default: ''       
+  t3upMeta.publisher:
+    category: T3up-Meta
+    type: string
+    default: ''       
+  t3upMeta.robots:
+    category: T3up-Meta
+    type: string
+    default: 'index, follow'    
+  t3upMeta.viewport:
+    category: T3up-Meta
+    type: string
+    default: 'width = device-width, initial-scale = 1.0'   
+  t3upMeta.og-image:
+    category: T3up-Meta
+    type: string
+    default: '' 
+  t3upMeta.og-title:
+    category: T3up-Meta
+    type: string
+    default: '' 
+  t3upMeta.og-description:
+    category: T3up-Meta
+    type: string
+    default: '' 
+  t3upMeta.og-type:
+    category: T3up-Meta
+    type: string
+    default: '' 
+  t3upMeta.og-url:
+    category: T3up-Meta
+    type: string
+    default: '' 
+  t3upMeta.og-site_name:
+    category: T3up-Meta
+    type: string
+    default: ''   
+      
+# Navigation ---------------------------  
+  t3upNavigation.style:
+    category: T3up-Navigation
+    default: '1'
+    type: int
+    enum:
+      0: 'none'
+      1: 'Standard'      
+      2: 'Active'   
+      3: 'Block'   
+      4: 'Anker'  
+        
+  t3upNavigation.navdir:
+    category: T3up-Navigation
+    default: 'justify-content-start'   
+    type: string
+    enum:
+      justify-content-start: 'left'
+      justify-content-end: 'right'      
+      justify-content-center: 'center'   
+      justify-content-between: 'Block'   
+  t3upNavigation.navwrap:
+    category: T3up-Navigation
+    default: 'mt-auto order-2'   
+    type: string 
+  t3upNavigation.maxLevels:
+    category: T3up-Navigation
+    default: '4'   
+    type: int  
+  t3upNavigation.maxItems:
+    category: T3up-Navigation
+    default: '20'   
+    type: int  
+  t3upNavigation.entryLevel:
+    category: T3up-Navigation
+    default: '0'   
+    type: int  
+  t3upNavigation.color:
+    category: T3up-Navigation
+    type: bool
+    default: false   
+  t3upNavigation.linkPadding:
+    category: T3up-Navigation
+    type: string
+    default: '$v01 $v1 $v03'  
+  t3upNavigation.subnavigation:
+    category: T3up-Navigation
+    type: bool
+    default: false     
+  t3upNavigation.subnavLevel:
+    category: T3up-Navigation
+    type: int
+    default: '1'      
+  t3upNavigation.subnavTitle:
+    category: T3up-Navigation
+    type: bool
+    default: false
+
+ # Socialmedia --------------------------- 
+  t3upSocialmedia.pos:
+    category: T3up-Socialmedia
+    default: '0'
+    type: int
+    enum:
+      0: 'none'
+      1: 'bottom'
+      2: 'right'
+      3: 'left' 
+  t3upSocialmedia.youtube:
+    category: T3up-Socialmedia
+    type: string
+    default:  ''   
+  t3upSocialmedia.instagram:
+    category: T3up-Socialmedia
+    type: string
+    default:  ''      
+  t3upSocialmedia.x:
+    category: T3up-Socialmedia
+    type: string
+    default:  ''    
+  t3upSocialmedia.xing:
+    category: T3up-Socialmedia
+    type: string
+    default:  ''      
+  t3upSocialmedia.linkedin:
+    category: T3up-Socialmedia
+    type: string
+    default:  ''    
+  t3upSocialmedia.bluesky:
+    category: T3up-Socialmedia
+    type: string
+    default:  ''       
+  t3upSocialmedia.whatsApp:
+    category: T3up-Socialmedia
+    type: string
+    default:  ''    
+  t3upSocialmedia.tiktok:
+    category: T3up-Socialmedia
+    type: string
+    default:  ''    
+  t3upSocialmedia.location:
+    category: T3up-Socialmedia
+    type: int
+    default:  '0'    
+  t3upSocialmedia.search:
+    category: T3up-Socialmedia
+    type: int
+    default:  '0'    
+  t3upSocialmedia.login:
+    category: T3up-Socialmedia
+    type: int
+    default:  '0'                                                         
+  t3upSocialmedia.email:
+    category: T3up-Socialmedia
+    type: string
+    default:  ''    
+  t3upSocialmedia.hidelabel:
+    category: T3up-Socialmedia
+    default: '0'
+    type: int
+    enum:
+      0: 'd-none'
+      1: 'd-inline-block'      
+  t3upSocialmedia.socialSymbolFontsize:
+    category: T3up-Socialmedia
+    type: string
+    default:  '175%'   
+  t3upSocialmedia.socialSymbolFontColor:
+    category: T3up-Socialmedia
+    type: color
+    default:  '#151515'  
+  t3upSocialmedia.socialSymbolBgColor:
+    category: T3up-Socialmedia
+    type: color
+    default:  '#ffffff'       
+  t3upSocialmedia.socialSymbolBorderColor:
+    category: T3up-Socialmedia
+    type: color
+    default:  '#151515' 
+    
+    
+ # Totop --------------------------- 
+  t3upTotop.totop:
+    category: T3up-Totop
+    type: bool
+    default: true 
+  t3upTotop.totopBgColor:
+    category: T3up-Totop
+    type: color
+    default:  '#ffffff' 
+  t3upTotop.totopLinkColor:
+    category: T3up-Totop
+    type: color
+    default:  '#151515'     
+  t3upTotop.totopLinkHoverColor:
+    category: T3up-Totop
+    type: color
+    default:  '#000000'     
+  t3upTotop.totopPosBottom:
+    category: T3up-Totop
+    type: string
+    default:  '$v1'     
+  t3upTotop.totopPosRight:
+    category: T3up-Totop
+    type: string
+    default:  '$v1'     
+                                
+    
+  # Typography ---------------------------    
+  t3upTypography.fontSize:
+    category: T3up-Typography
+    type: string
+    default:  '1rem'      
+  t3upTypography.boldWeight:
+    category: T3up-Typography
+    type: int
+    default:  '600'      
+  t3upTypography.lineHeight:
+    category: T3up-Typography
+    type: string
+    default:  ''      
+  t3upTypography.linkWeight:
+    category: T3up-Typography
+    type: int
+    default:  '600'     
+  t3upTypography.pMargin:
+    category: T3up-Typography
+    type: string
+    default:  '1.3rem'     
+  t3upTypography.h1:
+    category: T3up-Typography
+    type: string
+    default:  '2.05'                   
+  t3upTypography.h1.fontWeight:
+    category: T3up-Typography
+    type: int
+    default:  '600'          
+  t3upTypography.h1.lineHeight:
+    category: T3up-Typography
+    type: string
+    default:  ''             
+  t3upTypography.h1.alignment:
+    category: T3up-Typography
+    type: string
+    default:  'left'             
+    enum:
+      left: 'left'
+      center: 'center' 
+      right: 'right'         
+  t3upTypography.h1.wrap:
+    category: T3up-Typography
+    type: string
+    default:  'col-12 px-3 pb-3 px-lg-0 '            
+  t3upTypography.h2:
+    category: T3up-Typography
+    type: string
+    default:  '1.7'                   
+  t3upTypography.h2.fontWeight:
+    category: T3up-Typography
+    type: int
+    default:  '600'          
+  t3upTypography.h2.lineHeight:
+    category: T3up-Typography
+    type: string
+    default:  ''             
+  t3upTypography.h2.margin:
+    category: T3up-Typography
+    type: string
+    default:  '0 0 $v05'       
+  t3upTypography.h3:
+    category: T3up-Typography
+    type: string
+    default:  '1.35'                   
+  t3upTypography.h3.fontWeight:
+    category: T3up-Typography
+    type: int
+    default:  '600'          
+  t3upTypography.h3.lineHeight:
+    category: T3up-Typography
+    type: string
+    default:  ''             
+  t3upTypography.h3.margin:
+    category: T3up-Typography
+    type: string
+    default:  '0 0 $v05'       
+  t3upTypography.h4:
+    category: T3up-Typography
+    type: string
+    default:  '1'                   
+  t3upTypography.h4.fontWeight:
+    category: T3up-Typography
+    type: int
+    default:  '600'          
+  t3upTypography.h4.lineHeight:
+    category: T3up-Typography
+    type: string
+    default:  ''             
+  t3upTypography.h4.margin:
+    category: T3up-Typography
+    type: string
+    default:  '0'           
+  t3upTypography.footer1.fontSize:
+    category: T3up-Typography
+    type: string
+    default:  '100%'          
+  t3upTypography.footer3.fontSize:
+    category: T3up-Typography
+    type: string
+    default:  '100%'            
+  t3upTypography.navFontSize:
+    category: T3up-Typography
+    type: string
+    default:  '100%'            
+  t3upTypography.navFontWeight:
+    category: T3up-Typography
+    type: int
+    default:  '400'          

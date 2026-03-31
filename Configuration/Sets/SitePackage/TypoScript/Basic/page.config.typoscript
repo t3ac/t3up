@@ -1,0 +1,50 @@
+config {
+ 	
+ 	admPanel                               = {$t3upConfig.admPanel}	
+ 	
+	additionalHeaders {
+	    10.header = strict-transport-security:max-age=31536000
+	    20.header = X-Frame-Options:SAMEORIGIN
+	    30.header = X-Xss-Protection: 1; mode=block
+	    40.header = X-Content-Type-Options: nosniff
+	    50.header = Referrer-Policy:strict-origin
+	    60.header = Cross-Origin-Opener-Policy:same-origin
+        70.header = Cross-Origin-Embedder-Policy:require-corp
+	    80.header = Permissions-Policy: geolocation=(self), microphone=()
+	}
+
+	cache_period                           = {$t3upConfig.cachePeriod}
+	compressCss                            = {$t3upConfig.compressCss}
+	compressJs                             = {$t3upConfig.compressJs}
+	concatenateCss                         = {$t3upConfig.concatenateCss}
+	concatenateJs                          = {$t3upConfig.concatenateJs}
+	
+	contentObjectExceptionHandler          = {$t3upConfig.contentObjectExceptionHandler}
+	debug                                  = {$t3upConfig.debug}	
+	
+    headerComment                          = {$t3upConfig.headerComment} 
+    htmlTag.attributes.class               = no-js
+    index_externals                        = {$t3upConfig.indexExternals}
+    index_enable                           = {$t3upConfig.indexEnable}    
+    
+	no_cache								  = {$t3upConfig.nocache}
+	 
+	pageTitleSeparator	    			      = {$t3upConfig.pageTitleSeparator}
+    pageTitleSeparator.noTrimWrap          = | | |
+	pageTitleFirst                         = 1
+	prefixLocalAnchors                     = all
+    removeDefaultJs                        = {$t3upConfig.removeDefaultJs}
+    removeDefaultCss                       = {$t3upConfig.removeDefaultCss}
+    sendCacheHeaders = 1
+    cache_headers {
+        browser = 1
+        cache_control = public
+    }
+}
+
+# Spamschutz
+    spamProtectEmailAddresses              = 2
+    spamProtectEmailAddresses_atSubst      = &#64;
+    spamProtectEmailAddresses_lastDotSubst = <span>.</span>
+}
+

@@ -1,0 +1,9 @@
+name: hda/t3up
+label: T3UP-Sitepackes for TYPO3 13
+
+dependencies:
+  - typo3/fluid-styled-content
+  - typo3/seo-sitemap
+  - typo3/felogin 
+optionalDependencies:
+  - typo3/form
