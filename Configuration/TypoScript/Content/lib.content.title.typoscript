@@ -1,3 +1,0 @@
-## Show subtitle or title #####################################################
-lib.content.title = TEXT
-lib.content.title.field = subtitle // title

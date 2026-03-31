@@ -1,5 +1,0 @@
-lib.header.mobilbutton                      = TEXT
-lib.header.mobilbutton.if.value             = 0
-lib.header.mobilbutton.if.isGreaterThan     = {$page.top.mobilbottonpos}
-lib.header.mobilbutton.value                = Show the navigation
-lib.header.mobilbutton.wrap                 = <li class="d-inline-flex d-lg-none align-items-center mobilButton order-{$page.top.mobilbottonpos}"><a href="#menu" title="|" alt="shows the mobilmenu" class="main-nav__burger meanmenu-reveal">&nbsp;</a></li>
