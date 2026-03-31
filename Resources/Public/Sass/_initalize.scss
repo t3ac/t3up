@@ -1,0 +1,178 @@
+/* special selector ************************************/
+.notvissible    {display: none !important; color: transparent !important; font-size: 0; padding: 0 !important; margin: 0 !important; border: 0 !important;} 
+.btn-close      {font-size: 115%; font-weight: bold; cursor: pointer; z-index: 1007; position: absolute; top: $v03; right: $v03; border: 1px solid $textColor; border-radius: 0;}
+
+.bold           {font-weight: $bold;}
+.uppercase      {text-transform: uppercase;}
+ 
+   
+/* BODY ***************************************************************/
+
+body {                                  background-color: $bodyBgColor; font-family: $font !important;
+    
+    *                                   {color: $textColor; }     
+    p,li,h,td                           {font-size: $p;} 
+    
+    figure                              {margin: 0;}
+
+    .container                          {padding-left: 0; padding-right: 0;}
+    
+    .h1, h1                             {transition: all ease .3s; font-weight: $h1-fontweight; color: $h1-color; line-height: $h1-lineheight; text-align: $h1-alignment;} 
+    .h2, h2                             {transition: all ease .3s; font-weight: $h2-fontweight; color: $h2-color; margin: $h2-margin; line-height: $h2-lineheight;} 
+    .h3, h3                             {transition: all ease .3s; font-weight: $h3-fontweight; color: $h3-color; margin: $h3-margin; line-height: $h3-lineheight;} 
+    .h4, h4                             {transition: all ease .3s; font-weight: $h4-fontweight; color: $h4-color; margin: $h4-margin; line-height: $h4-lineheight;}
+    
+    .h1, h1                             {font-size: calc(#{$h1} * #{$p});} 
+    .h2, h2                             {font-size: calc(#{$h2} * #{$p});} 
+    .h3, h3                             {font-size: calc(#{$h3} * #{$p});} 
+    
+    .small,
+    .small a                           {font-size: calc(.8 * #{$p});}
+    
+    @media screen and (min-width:  576px){
+        .h1, h1                        {font-size: calc(#{$h1} * 1.1      * #{$p});}
+        .h2, h2                        {font-size: calc(#{$h2} * 1        * #{$p});}
+        .h3, h3                        {font-size: calc(#{$h3} * 1        * #{$p});}
+    }
+    @media screen and (min-width:  768px){
+        .h1, h1                        {font-size: calc(#{$h1} * 1.2      * #{$p});}
+        .h2, h2                        {font-size: calc(#{$h2} * 1.1      * #{$p});}
+        .h3, h3                        {font-size: calc(#{$h3} * 1.05     * #{$p});}
+    }
+    @media screen and (min-width:  992px){
+        .h1, h1                        {font-size: calc(#{$h1} * 1.3      * #{$p});}
+        .h2, h2                        {font-size: calc(#{$h2} * 1.15     * #{$p});}
+        .h3, h3                        {font-size: calc(#{$h3} * 1.1      * #{$p});}
+    }
+    @media screen and (min-width: 1280px){
+        .h1, h1                        {font-size: calc(#{$h1} * 1.4      * #{$p});}
+        .h2, h2                        {font-size: calc(#{$h2} * 1.2      * #{$p});}
+        .h3, h3                        {font-size: calc(#{$h3} * 1.2      * #{$p});}
+    }
+    @media screen and (min-width: 1440px){
+        .h1, h1                        {font-size: calc(#{$h1} * 1.5      * #{$p});}
+        .h2, h2                        {font-size: calc(#{$h2} * 1.3      * #{$p});}
+        .h3, h3                        {font-size: calc(#{$h3} * 1.25     * #{$p});}
+    }
+
+}
+/* MAIN ***************************************************************/
+
+main{
+   
+
+
+    p                               {margin-bottom: $pMargin;}
+    li                              {margin-bottom: $v15;}
+    
+    ul                              {padding: 0 0 0 $v1; list-style-type: square;}
+    ul ul                           {padding: 0 0 0 $v2; list-style-type: square;}
+    ul ul ul                        {padding: 0 0 0 $v3; list-style-type: square;}
+    ol                              {padding: 0 0 0 $v1;}
+
+}
+   
+
+
+
+/* input: range*****************************************/
+@media screen and (-webkit-min-device-pixel-ratio:0)     {
+                input[type='range'] {overflow: hidden;width: auto;height: $v08; -webkit-appearance: none;background-color: $white; border: 1px solid $lightgrey; }
+                input[type='range']::-webkit-slider-runnable-track {height: $v08;-webkit-appearance: none;color: $white;margin-top: 0;}
+                input[type='range']::-webkit-slider-thumb {width: $v06;-webkit-appearance: none; height:$v08; cursor: ew-resize; background: $textColor; box-shadow: -$v7 0 0 $v7 $white;}
+}
+
+
+/* Adminpanel ******************************************/
+.icon-markup svg                    {max-width: $v6; opacity: .5; transition: all ease .3s;}
+.icon-markup svg:hover              {opacity: 1}
+.typo3-editPanel                    {border-bottom: 5px solid $basicColor; font-style: italic; color: $basicColor; opacity: .5;  transition: all ease .3s; padding: $v02; background-color: rgba($basicColor,.75); margin-top: $v03;  margin-bottom: $v03; }
+.icon-markup .icon-markup svg       {opacity: 1;}
+.typo3-editPanel:hover              {opacity: 1; color: $white; }
+.typo3-editPanel .icon-markup svg:hover {filter: invert(100%);}
+.typo3-editPanel-label:before       {content:'Inhaltselement: '}
+.icon-actions-edit-unhide .icon-markup svg {background: rgb(150,50,50);} 
+.typo3-editPanel a                  {display: inline-block !important;}
+
+
+@mixin symbol {
+  font-family: "Material Symbols Sharp";
+  transform: translateY($v01); 
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga";
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* SYMBOL ******************************************/
+@mixin symbol-outline {
+  font-family: "Material Symbols Sharp";
+  transform: translateY($v01); 
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga";
+}
+
+.brands {
+  font-family: "FontAwesome";
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.symbol {
+  font-family: "Material Symbols Sharp";
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.symbol-outline {
+  font-family: "Material Symbols Sharp";
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
