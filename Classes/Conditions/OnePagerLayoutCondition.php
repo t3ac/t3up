@@ -1,4 +1,3 @@
-
 <?php
 namespace T3ac\T3up\Conditions;
 
