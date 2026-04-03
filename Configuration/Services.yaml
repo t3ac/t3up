@@ -16,7 +16,7 @@ services:
         event: TYPO3\CMS\Core\DataHandling\Event\AfterDatabaseOperationsEvent
 
   T3ac.t3up.updates.content_spacing_update:
-    class: Hda\T3up\Updates\ContentSpacingUpdate
+    class: T3ac\T3up\Updates\ContentSpacingUpdate
     arguments:
       $connectionPool: '@TYPO3\CMS\Core\Database\ConnectionPool'
     tags:
