@@ -132,7 +132,7 @@
                 
             <trans-unit id="padding_side">
                <source>Padding side</source>
-               <target state="translated">Seitlichen Innenabstand</target> 
+               <target state="translated">Seitlichen Innenabstand (px-5 px-lg-0)</target> 
             </trans-unit>        
             <trans-unit id="padding_inner">
                <source>Innerpadding</source>
