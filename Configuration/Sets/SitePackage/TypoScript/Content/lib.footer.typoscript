@@ -92,26 +92,26 @@ lib.infos {
      10.if.isTrue                           = {$t3upFooter.contactpage}
      10.value                               = Contact
      10.lang.de                             = Kontakt
-     10.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$page.footer.contactpage}" taget = "self">|</a></li>
+     10.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$t3upFooter.contactpage}" taget = "self">|</a></li>
      20                                     = TEXT
      20.if.isTrue                           = {$t3upFooter.dataprotection}
      20.value                               = Dataprotection
      20.lang.de                             = Datenschutz
-     20.wrap                                = <li class="small d-inline-block m-0 px-3"n><a href="index.php?id={$page.footer.dataprotection}" taget = "self">|</a></li>
+     20.wrap                                = <li class="small d-inline-block m-0 px-3"n><a href="index.php?id={$t3upFooter.dataprotection}" taget = "self">|</a></li>
      30                                     = TEXT
      30.if.isTrue                           = {$t3upFooter.disabilityaccess}
      30.value                               = Disability access
      30.lang.de                             = Barrierefreiheit
-     30.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$page.footer.disabilityaccess}" taget = "self">|</a></li>
+     30.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$t3upFooter.disabilityaccess}" taget = "self">|</a></li>
      40                                     = TEXT
      40.if.isTrue                           = {$t3upFooter.impress}
      40.value                               = Legal Notice
      40.lang.de                             = Impressum
-     40.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$page.footer.impress}" taget = "self">|</a></li> 
+     40.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$t3upFooter.impress}" taget = "self">|</a></li> 
      50                                     = TEXT
      50.if.isTrue                           = {$t3upFooter.sitemap}
      50.value                               = Sitemap
-     50.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$page.footer.sitemap}" taget = "self">|</a></li> 
+     50.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$t3upFooter.sitemap}" taget = "self">|</a></li> 
      wrap                                   = <ul class="w-auto infs mx-md-7">|</ul> 
 }
 
