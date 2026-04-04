@@ -10,6 +10,17 @@ a.btn-more:hover                                         {color: #ffff;}
 
 .container                                               {max-width: $container;}
 
+
+@keyframes x { 
+  to {offset-distance: 100%}
+}
+
+.inarow {                                               display: flex; overflow: hidden; mask: linear-gradient(90deg,#0000, #000 5% 95%,#0000);
+
+    .bannerelement{                                     width: var(--s); offset: shape(from calc(var(--s)/-2) 50%,hline by calc(sibling-count()*max(100%/var(--n),var(--s) + 10px))); animation: x var(--d) linear infinite calc(-1*sibling-index()*var(--d)/sibling-count());}
+    &:hover .bannerelement                              {animation-play-state: paused}
+}
+
 /* Slider **********************************************/
 
 .t3up_slider {
@@ -66,17 +77,15 @@ a.btn-more:hover                                         {color: #ffff;}
     .carousel-indicators.st3                           {margin-bottom: $v1; top: inherit;  bottom: 0;}              
     .carousel-indicators.st3 li                        {width: $v04; height: $v05; background: none; border: #fffd solid 3px; transition: all ease .5s; opacity: .7;}            
     .carousel-indicators.st3 li:hover                  {border: #ffff solid 3px;}  
-    
+
 
     .slidersymbol1{font-size: calc(clamp(8px, 2.425vw, 36px) * 1)}
     .slidersymbol2{font-size: calc(clamp(8px, 2.425vw, 36px) * 1.25)}
     .slidersymbol3{font-size: calc(clamp(8px, 2.425vw, 36px) * 1.5)}
     .slidersymbol4{font-size: calc(clamp(8px, 2.425vw, 36px) * 1.75)}   
     .slidersymbol5{font-size: calc(clamp(8px, 2.425vw, 36px) * 2)}      
-    
-
-        
 }
+
 @media screen and (max-width: 582px) {
     .t3up_slider {
         &.dynamic .ce-bodytext blockquote p{width: 100%;}
