@@ -184,11 +184,12 @@ page.includeCSS{
     header                          = EXT:t3up/Resources/Public/Sass/Content/_header.scss    
     header.if.isTrue                = {$t3upFiles.Scss.header}
     
-    # Mobil
+    lightbox                        = EXT:t3up/Resources/Public/Sass/Content/_lightbox.scss    
+    lightbox.if.isTrue              = {$t3upFiles.Scss.lightbox}    
     
+    # Mobil
     mobilmenu                       = EXT:t3up/Resources/Public/Sass/Content/_mmenu.scss  
     mobilmenu.if.isTrue             = {$t3upComponents.mmenu}
-    
     
     navigation                      = EXT:t3up/Resources/Public/Sass/Content/_navigation.scss    
     navigation.if.isTrue            = {$t3upFiles.Scss.navigation}
