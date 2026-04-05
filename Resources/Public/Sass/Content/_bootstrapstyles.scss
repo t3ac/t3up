@@ -60,7 +60,7 @@ a.btn-more:hover                                         {color: #ffff;}
 	.carousel-control-next							   {opacity: 0; transition: all ease 1s; width: auto; z-index: 4; }		
 	
 	.carousel-control-prev > span,
-	.carousel-control-next > span    				   {padding: $v1;}		
+	.carousel-control-next > span    				   {padding: $v1; color: $white;}		
 	
 	.carousel-control-prev:focus,
 	.carousel-control-next:focus,		
