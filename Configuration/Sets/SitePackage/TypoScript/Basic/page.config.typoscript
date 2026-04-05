@@ -40,9 +40,8 @@ config {
         browser = 1
         cache_control = public
     }
-}
 
-# Spamschutz
+    # Spamschutz
     spamProtectEmailAddresses              = 2
     spamProtectEmailAddresses_atSubst      = &#64;
     spamProtectEmailAddresses_lastDotSubst = <span>.</span>
