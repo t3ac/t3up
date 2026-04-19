@@ -75,12 +75,21 @@ $pagesColumns = [
             'default' => 0
         ]
     ],
+    'xtraclass'  => [
+        'exclude' => true,
+        'label'   => $ll . ':xtraclass',
+        'config'  => [
+            'type'       => 'input',
+            'default'    => '',
+        ],
+    ],
+    
     
 ];
 
 $GLOBALS['TCA']['pages']['palettes']['t3up'] = [
     'canNotCollapse' => true,
-    'showitem' => 'basecolor,--linebreak--,showtitle,deltitle,--linebreak--,breadcrumb,previousnext,--linebreak--,hidenav,nonav'
+    'showitem' => 'basecolor,xtraclass,--linebreak--,showtitle,deltitle,--linebreak--,breadcrumb,previousnext,--linebreak--,hidenav,nonav'
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $pagesColumns);

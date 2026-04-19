@@ -1,0 +1,11 @@
+lib.contentElement {
+  layoutRootPaths {
+    100 = EXT:t3up/Resources/Private/ContentElements/Layouts/
+  }
+  partialRootPaths {
+    100 = EXT:t3up/Resources/Private/ContentElements/Partials/
+  }
+  templateRootPaths {
+    100 = EXT:t3up/Resources/Private/ContentElements/Templates/
+  }
+}

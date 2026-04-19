@@ -1,0 +1,11 @@
+lib.header.homebutton = TEXT
+lib.header.homebutton {
+        if.value                            = 0
+	    if.isGreaterThan 		            = {$t3upHeader.homeButtonPos} 
+        value                               = <span class="symbol sym">home</span><span class="showtitle{$t3upHeader.showtitle} ps-3 small">Home</span>
+          typolink {
+             parameter                      = {$t3upComponents.home} 
+             ATagParams                     = alt="link to homepage" class="d-inline-flex align-items-center {$t3upHeader.topATagWrap}" data-show-sub="false" title="Start" aria-label="link start"
+         }
+        wrap                                = <li class="order-{$t3upHeader.homeButtonPos} {$t3upHeader.topElementWrap}">|</li> 
+}

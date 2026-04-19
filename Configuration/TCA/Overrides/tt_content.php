@@ -52,7 +52,7 @@ $padding = array(
         'label'   => $ll . ':padding_side',
         'config'  => [
             'type'       => 'input',
-            'default'    => 'px-5 px-lg-0',
+            'default'    => '',
         ],
     ],
     'padding_inner_class'  => [
@@ -431,7 +431,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['onepager_fields'] = [
 // Palette hinzufuegen, nach Layout - dadurch Anzeige im Backend
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content','--palette--;' . $ll . ':padding_class;newpadding_fields','textmedia,text','before:sectionIndex');
+    'tt_content','--palette--;' . $ll . ':padding_class;newpadding_fields','textmedia,text,buttons','before:sectionIndex');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content','--palette--;' . $ll . ':animation_class;animation_fields','textmedia,text,t3up_hero,headerbutton,imagebutton,symbolbutton,youtubevideo_pi1','before:sectionIndex');

@@ -67,7 +67,7 @@ settings:
   t3upBreadcrumb.breadcrumbWrap:  
     category: T3up-Breadcrumb
     type: string
-    default: 'breadcrumbrow navbar navbar-expand-lg d-none d-lg-flex py-3 w-100'    
+    default: 'breadcrumbrow navbar navbar-expand-lg d-none d-lg-flex p-5 px-xl-0 w-100'    
   t3upBreadcrumb.breadcrumbUlWrap:  
     category: T3up-Breadcrumb
     type: string
@@ -593,7 +593,10 @@ settings:
     category: T3up-Files.Scss
     type: bool
     default: false  
-            
+  t3upFiles.Scss.Own:     
+    category: T3up-Files.Scss
+    type: string     
+    default: ''   
     
 # Font Values ------------------------ 
   t3upFonts.font:
@@ -1063,7 +1066,7 @@ settings:
   t3upTotop.totopPosRight:
     category: T3up-Totop
     type: string
-    default:  '$v1'     
+    default:  '100%'     
                                 
     
   # Typography ---------------------------    

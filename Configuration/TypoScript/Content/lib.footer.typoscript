@@ -1,0 +1,166 @@
+lib.address = COA
+lib.address.if.isTrue                       = {$t3upFooter.address} 
+lib.address {
+    10                                      = COA
+    10.if.isTrue                            = {t3upFooter.footerdynamic} 
+    10{   
+         10                                 = RECORDS
+         10.tables                          = tt_content
+         10.source                          = {$t3upFooter.address}
+         10.if.isTrue.data                  = header
+         10.conf.tt_content                 = TEXT
+         10.conf.tt_content.field           = header
+         10.wrap                            = <h3 class="trigger" data-toggle="collapse" aria-expanded="false">|</h3>
+         20                                 = RECORDS
+         20.tables                          = tt_content
+         20.source                          = {$t3upFooter.address}
+     }
+}
+
+lib.service1                                < lib.address
+lib.service1.if.isTrue                      = {$t3upFooter.service1} 
+lib.service1 {
+     10.10.source                           = {$t3upFooter.service1}
+     10.20.source                           = {$t3upFooter.service1}   
+     20.10.source                           = {$t3upFooter.service1}        
+      
+}
+
+lib.service2                                < lib.address
+lib.service2.if.isTrue                      = {$t3upFooter.service2} 
+lib.service2 {
+     10.10.source                           = {$t3upFooter.service2}
+     10.20.source                           = {$t3upFooter.service2}
+     20.10.source                           = {$t3upFooter.service2}    
+}
+
+lib.service3                                < lib.address
+lib.service3.if.isTrue                      = {$t3upFooter.service3} 
+lib.service3 {
+     10.10.source                           = {$t3upFooter.service3}
+     10.20.source                           = {$t3upFooter.service3} 
+     20.10.source                           = {$t3upFooter.service3}        
+}
+
+#--------------------------------------------------------------------------
+
+lib.extras1 = COA
+lib.extras1.if.isTrue                       = {$t3upFooter.copyright} 
+lib.extras1{
+     10                                     = TEXT
+     10.data                                = U
+     10.strftime                            = %Y
+     10.wrap                                = |&nbsp;
+     20                                     = TEXT
+     20.value                               = {$t3upFooter.copyright} 
+     20.typolink.parameter                  = {$t3upFooter.link}
+     20.typolink.title                      = Website -{$t3upFooter.copyright} 
+     20.typolink.target                     = _blank 
+     wrap                                   = <li class="small d-inline-block">©&nbsp;|</li>
+}
+[frontend.user.isLoggedIn]
+    lib.extras2                             = COA
+    lib.extras2.if.isTrue                   = {$t3upFooter.lastchange} 
+    lib.extras2 {
+         10                                 = TEXT
+         10.data                            = page:SYS_LASTCHANGED
+         10.strftime                        = %d.%m.%Y
+         10.wrap                            = <li class="d-none small d-lg-inline-block">aktualisiert:&nbsp;|</li>
+    }
+[END]
+
+lib.pid = COA
+lib.pid.if.isTrue                           = {$t3upFooter.pid} 
+lib.pid {
+     10                                     = COA
+     10 {
+        10                                  = TEXT
+        10.data                             = page:uid   
+        10.wrap                             = <a href="/index.php?id=|">PID:&nbsp;
+        20                                  = TEXT
+        20.data                             = page:uid   
+        30                                  = TEXT  
+        30.wrap                             = |</a>
+     }
+     10.wrap                                = <li class="pid small d-none d-lg-inline-block pidhide px-3">|</li>
+}
+
+#--------------------------------------------------------------------------
+lib.infos                                   = COA
+lib.infos {
+     10                                     = TEXT
+     10.if.isTrue                           = {$t3upFooter.contactpage}
+     10.if.isGreaterThan                    = 0
+     10.value                               = Contact
+     10.lang.de                             = Kontakt
+     10.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$t3upFooter.contactpage}" taget = "self">|</a></li>
+     20                                     = TEXT
+     20.if.isTrue                           = {$t3upFooter.dataprotection}
+     20.if.isGreaterThan                    = 0
+     20.value                               = Dataprotection
+     20.lang.de                             = Datenschutz
+     20.wrap                                = <li class="small d-inline-block m-0 px-3"n><a href="index.php?id={$t3upFooter.dataprotection}" taget = "self">|</a></li>
+     30                                     = TEXT
+     30.if.isTrue                           = {$t3upFooter.disabilityaccess}
+     30.if.isGreaterThan                    = 0
+     30.value                               = Disability access
+     30.lang.de                             = Barrierefreiheit
+     30.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$t3upFooter.disabilityaccess}" taget = "self">|</a></li>
+     40                                     = TEXT
+     40.if.isTrue                           = {$t3upFooter.impress}
+     40.if.isGreaterThan                    = 0
+     40.value                               = Legal Notice
+     40.lang.de                             = Impressum
+     40.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$t3upFooter.impress}" taget = "self">|</a></li> 
+     50                                     = TEXT
+     50.if.isTrue                           = {$t3upFooter.sitemap}
+     50.if.isGreaterThan                    = 0
+     50.value                               = Sitemap
+     50.wrap                                = <li class="small d-inline-block m-0 px-3"><a href="index.php?id={$t3upFooter.sitemap}" taget = "self">|</a></li> 
+     wrap                                   = <ul class="w-auto infs mx-md-7">|</ul> 
+}
+
+
+### FOOTER - put together   #######################################################
+lib.footer = COA
+lib.footer {
+     10                                     = COA
+     10.10                                  = COA
+     10.10.if.isTrue                        = {$t3upFooter.basefooter}
+     10.10 {
+        10                                  = COA
+        10.10                               < lib.address
+        10.wrap                             = {$t3upFooter.addressWrap}    
+        20                                  = COA 
+        20.10                               < lib.service1
+        20.wrap                             = {$t3upFooter.service1Wrap}
+        30                                  = COA        
+        30.10                               < lib.service2
+        30.wrap                             = {$t3upFooter.service2Wrap}
+        40                                  = COA
+        40.10                               < lib.service3
+        40.wrap                             = {$t3upFooter.service3Wrap}   
+        wrap                                = {$t3upFooter.footer1Wrap} 
+     }
+     
+
+     10.30 = COA
+     10.30.if.isTrue                        = {$t3upFooter.base}
+     10.30 {
+        10                                  = COA
+        10 {
+            10                              < lib.extras1
+            20                              < lib.extras2
+            30                              < lib.extras3
+            100                             < lib.pid    
+            wrap                            = <ul class="inf w-auto">|</ul>
+        }
+        20                                  < lib.infos
+        30                                  < lib.socialmediabottom
+        30.if.value                         = {$t3upFooter.pos}   
+        30.if.equals                        = bottom
+
+        wrap                                = {$t3upFooter.baseWrap}
+     }
+}
+

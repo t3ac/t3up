@@ -1,0 +1,13 @@
+
+lib.header.top = COA  
+lib.header.top { 
+    1  < lib.header.mobilbutton
+    2  < lib.header.homebutton
+    3  < lib.header.fontsize    
+    4  < lib.header.darkmode    
+    5  < lib.header.loginpage
+    6  < lib.header.quicklinks   
+    7  < lib.header.searchbutton
+    8  < lib.header.searchfield
+}
+lib.header.topexta = COA

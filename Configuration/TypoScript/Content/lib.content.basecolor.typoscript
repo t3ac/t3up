@@ -1,0 +1,3 @@
+lib.content.basecolor = TEXT
+lib.content.basecolor.data = levelfield : -1 , basecolor, slide 
+lib.content.basecolor.insertData = 1

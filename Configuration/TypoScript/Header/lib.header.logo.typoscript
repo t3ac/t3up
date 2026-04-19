@@ -1,0 +1,30 @@
+#######################################
+#### logo #############################
+#######################################
+
+
+lib.header.logo = COA
+lib.header.logo.10 = COA
+lib.header.logo.10.10  = IMAGE
+lib.header.logo.10.10  {
+    file                                    = {$t3upHeader.logo}
+    altText                                 = {$t3upHeader.alttext}
+    params                                  = type="logo" 
+    imageLinkWrap                           = 1
+    imageLinkWrap.enable                    = 1 
+    imageLinkWrap.typolink.parameter        = {$t3upComponents.home}
+    imageLinkWrap.typolink.ATagParams       = class="d-none d-md-block h-100 w-100" alt="link to homepage"
+    
+}
+
+lib.header.logo.wrap                        = <div class="{$t3upHeader.logoWrap}">|</div>
+
+
+
+##################################################################################
+
+lib.header.logo.20                         =< lib.header.logo.10.10 
+lib.header.logo.20 {
+    file                                   = {$t3upHeader.mobilLogo}
+    imageLinkWrap.typolink.ATagParams      = class="mobillogo d-block d-md-none h-100 w-100" alt="link to homepage"
+}
