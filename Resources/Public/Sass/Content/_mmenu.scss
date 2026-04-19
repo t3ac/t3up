@@ -119,7 +119,7 @@
 .mm-listitem--opened>.mm-listitem__btn:after                {-webkit-transform:rotate(225deg); -ms-transform:rotate(225deg); transform:rotate(225deg); right:19px}
 
 :root                                                       {--mm-size:80%; --mm-min-size:240px; --mm-max-size:440px}
-.mm-menu--offcanvas                                         {position:fixed; z-index:0}
+.mm-menu--offcanvas                                         {z-index:0}
 .mm-page                                                    {-webkit-box-sizing:border-box; box-sizing:border-box; min-height:100vh; background:inherit}
 :where(.mm-slideout)                                        {position:relative; z-index:1; width:100%; -webkit-transition-duration:.4s; -o-transition-duration:.4s; transition-duration:.4s; -webkit-transition-timing-function:ease; -o-transition-timing-function:ease; transition-timing-function:ease; -webkit-transition-property:width,-webkit-transform; transition-property:width,-webkit-transform; -o-transition-property:width,transform; transition-property:width,transform; transition-property:width,transform,-webkit-transform}
 .mm-wrapper--opened,

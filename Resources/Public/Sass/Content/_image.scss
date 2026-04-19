@@ -47,6 +47,8 @@
 .ce-above .ce-gallery + h2,
 .ce-above .ce-gallery + h3,
 .ce-above .ce-gallery + h4              {margin-top: $v05;}
+
+.ce-above figure                                      {margin-bottom: $v07; }
     
 .ce-textpic > *.above                   {clear: both}
 
@@ -57,7 +59,7 @@
 
 
  /* Image Rollover */
-.rollover                                               {transition: all ease .5s; top: 100vh; z-index: 9; height: 100%; width: 100%; padding: $v05; color: transparent; background: transparent; font-weight: bold; text-align: center;}
+.rollover                                               {transition: all ease .5s; top: 100vh; z-index: 9; height: 100%; width: 100%; padding: $v05; color: transparent; background: transparent;}
 picture:hover .rollover                                 {top: 0; background: $pictureoverlay; color: $pictureoverlayTextColor; font-size: $pictureoverlayTextSize; }
 
 /* Only Main */
@@ -67,6 +69,8 @@ main .ce-column figure                                  {overflow: hidden;}
 /* Image Information */
 main .ce-column div.imageinf                            {position: absolute; top: $v1; left: $v1; padding: $v05; background: transparent; color: transparent; transition: all ease .3s; }
 main .ce-column:hover div.imageinf                      {background: $white; color: $black;}
+
+
   
 
 
@@ -331,14 +335,15 @@ $layouts-10: 2015, 2010, 2005;
 .frame-padding-side-9:not(.frame-singleaccordion)       {padding-left: $v3;  padding-right: $v3;}
 
 /* Spacing Start *************************************************************************/
-.ce-row.spacing25 > div {padding-right: calc(#{$v02} / 2); padding-left: calc(#{$v02} / 2); }
-.ce-row.spacing33 > div {padding-right: calc(#{$v03} / 2); padding-left: calc(#{$v03} / 2); }
-.ce-row.spacing50 > div {padding-right: calc(#{$v05} / 2); padding-left: calc(#{$v04} / 2); }
-.ce-row.spacing66 > div {padding-right: calc(#{$v06} / 2); padding-left: calc(#{$v06} / 2); }
-.ce-row.spacing75 > div {padding-right: calc(#{$v07} / 2); padding-left: calc(#{$v07} / 2); }
-.ce-row.spacing1  > div {padding-right: $v05; padding-left: $v05; }
-.ce-row.spacing15 > div {padding-right: calc(#{$v15} / 2); padding-left: calc(#{$v15} / 2); }
-.ce-row.spacing2  > div {padding-right: calc(#{$v2} / 2); padding-left: calc(#{$v2} / 2); }
-.ce-row.spacing3  > div {padding-right: calc(#{$v3} / 2); padding-left: calc(#{$v3} / 2); }
+.ce-row.spacing1 > div {padding-right: calc(#{$v02} / 2); padding-left: calc(#{$v02} / 2); }
+.ce-row.spacing2 > div {padding-right: calc(#{$v03} / 2); padding-left: calc(#{$v03} / 2); }
+.ce-row.spacing3 > div {padding-right: calc(#{$v05} / 2); padding-left: calc(#{$v04} / 2); }
+.ce-row.spacing4 > div {padding-right: calc(#{$v06} / 2); padding-left: calc(#{$v06} / 2); }
+.ce-row.spacing5 > div {padding-right: calc(#{$v07} / 2); padding-left: calc(#{$v07} / 2); }
+.ce-row.spacing6 > div {padding-right: calc(#{$v08} / 2); padding-left: calc(#{$v08} / 2); }
+.ce-row.spacing7 > div {padding-right: calc(#{$v1} / 2); padding-left: calc(#{$v1} / 2); }
+.ce-row.spacing8 > div {padding-right: $v05; padding-left: $v05; }
+.ce-row.spacing9 > div {padding-right: calc(#{$v2} / 2); padding-left: calc(#{$v2} / 2); }
+.ce-row.spacing10 > div {padding-right: calc(#{$v3} / 2); padding-left: calc(#{$v3} / 2); }
 
 

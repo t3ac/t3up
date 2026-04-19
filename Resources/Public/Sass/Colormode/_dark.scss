@@ -3,12 +3,13 @@ html[color-mode=dark] {
 	/* Variablen */
 	
 	$baseColor: #fff;
-	$bodyBgColor: #151515;
+	$bodyBgColor: #151515 !important;
 	$textColor: #fff;
-	$linkColor: rgb(235, 245, 255); 
+	$linkColor: rgb(235, 245, 255) !important; 
+    
 	$linkHoverColor:  #fff;
 	$containerBgColor: transparent; 
-	
+    	
 	/* Header */
 	$topBgColor:#000;
 	$topLinkColor: #eee;
@@ -37,18 +38,28 @@ html[color-mode=dark] {
 	$footer3LinkHoverColor: #fff !important;
     
     
+    
+    .mm-btn--next:after, .mm-btn--prev:before {border-color: $linkColor;}
+    
         
-    body {                                  background: #000 ; 
+    body {                                  background: #000  !important;
         .mm-panel,
         .mm-panels,
         > nav                               {background: #000;}
        .mm-listitem                         {border-color: #aaa;}
+       
+       .opg                                 {background: #000 !important;}
+       
+       
+       .breadcrumbrow .navbar-nav>li>a      {color: $linkColor;}
 
         *                                   {color: #fff;}
         .h1, h1                             {color: $h1-color;} 
         .h2, h2                             {color: $h2-color;} 
         .h3, h3                             {color: $h3-color;} 
         .h4, h4                             {color: $h4-color;}
+        
+        main a:focus, main a:hover          {color: $linkColor;}
         
         a.link-internal::before,
         a.link-internal-blank::before,
@@ -64,6 +75,7 @@ html[color-mode=dark] {
         a.link-info::before,                {color: $linkColor;}
         
         
+        .bannerelement                      {color: #fff;}               
         .toTop a:before                     {color: #000;} 
         
         footer {                            background: $footer1BgColor;    

@@ -2,7 +2,7 @@ header {                                        background-color: $headerBgColor
     *                                           {color: $headerTextColor;}
     &.sticky                                    {position: -webkit-sticky; position: sticky; top: 0; z-index: 1000; box-shadow: $shadow; }
     &.dynamic                                   {position: fixed; top: 0; z-index: 1000; transition: all ease 1s; background-color: $headerBgColor;}
-    &.dynamic > .top,
+    &.dynamic > .top                            {transition: all ease .3s; opacity: 1}
     &.dynamic  nav                              {transition: all ease .3s; opacity: 0}
     
     &.dynamic:hover,      
@@ -71,6 +71,7 @@ header {                                        background-color: $headerBgColor
 
 @media screen and (min-width: 992px) {
     header {    
+        &.dynamic > .top                        {opacity: 0}
         .funcItemTitle                          {display: inline-block;}
     }
 }
