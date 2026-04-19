@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2026-03-11T13:43:43+00:00" product-name="t3up/hero">
+		<header/>
+		<body>
+			<trans-unit id="title">
+				<source>Heroelement for the Headerslider</source>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>Description for Content Element t3up/hero</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

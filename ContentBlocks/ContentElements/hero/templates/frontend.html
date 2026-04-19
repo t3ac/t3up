@@ -1,0 +1,24 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+
+<f:comment><!-- Include the assets/frontend.css stylesheet --></f:comment>
+<f:asset.css identifier="myCssIdentifier" href="{cb:assetPath()}/frontend.css"/>
+
+    <div id="c{data.uid}" class="sliderhero {data.CType} overflow-hidden vh-100">
+	    <div class="position-relative z-1 hero-image">
+	       <img src="{f:uri.image(image: data.image.0)}">
+	    </div>
+	    <div class="position-absolute z-2 top-0 start-0 w-100 h-100 hero-image">
+	       <div class="container h-100 d-flex justify-content-start  mx-auto {f:if(condition: data.animate, then: 'aos-init')}" {f:if(condition: data.animate, then: 'data-aos="{data.animate}"')} {f:if(condition: data.animate, then: 'data-aos-duration="{data.animate_duration}"')}>
+	           <div class="align-content-end mb-80 w-50">
+		           <f:format.html><div class="p-7 mb-7 hero-content">{data.bodytext}</div></f:format.html>
+		           <f:link.typolink class="btn btn-more p-3 px-7" parameter="{data.url}">{data.button_text}</f:link.typolink>
+		       </div>   
+	       </div>
+	    </div>	           
+	</div>
+
+</html>
