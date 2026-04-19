@@ -5,7 +5,3 @@
               Symbolic link for fonts added (see Commands).
 2025-08-25    In the `public/` folder there should be a symlink to `../vendor/hda/t3up/Resources/Public/Fonts`.
 2025-10-01    New fonts inside Merriweather Sans and Merriweather.
-
-Diese folgende Information muss in die settings.yaml im Ordner sites/NameDerSite
-# Lightbox
-styles.content.textmedia.linkWrap.lightboxEnabled: 1   
