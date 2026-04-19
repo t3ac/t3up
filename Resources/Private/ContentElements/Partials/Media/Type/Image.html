@@ -29,7 +29,7 @@
 			    </f:if>
 			  </f:else>  
 	       </f:if>
-	    <f:if condition="{file.description}">
+	    <f:if condition="{file.description} && {data.rollover} == '0'">
 	        <figcaption class="image-caption">
 	            {file.description -> f:format.nl2br()}
 	        </figcaption>

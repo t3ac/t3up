@@ -33,7 +33,15 @@
 		</f:if>
 		
         <f:if condition="{data.rollover}">
-            <span class="rollover position-absolute z-10 d-inline-flex align-items-center justify-content-center">{file.title}</span>
+            <div class="rollover position-absolute flex-wrap z-10 d-inline-flex align-items-center">
+                <div>
+	            <span class="h4 d-block">{file.title}</span>
+	            <f:if condition="{file.description}" >
+	                <span class="p">{file.description}</span>
+	            </f:if>  
+	            </div>
+	            
+            </div>
 		</f:if>        
 		
     </picture>

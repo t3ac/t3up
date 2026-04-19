@@ -70,6 +70,10 @@
         <trans-unit id="previousnext">
            <source>Shows previous/next buttons</source>
         </trans-unit>
+        <trans-unit id="xtraclass">
+           <source>Additional class</source>
+        </trans-unit>        
+        
          
          
     /* -- TT-CONTENT IMAGE ORIENT----------- */    
