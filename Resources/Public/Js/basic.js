@@ -82,6 +82,7 @@ jQuery(document).ready(function($) {
             checkDarkMode();
          }
      });
+     
 
     /* Service Area *********************************************************************************************/
      $("#service_nav > li > a").click(function(){
@@ -93,6 +94,11 @@ jQuery(document).ready(function($) {
        $(this).parent().removeClass('active show');
     });
 
+    $(window).bind('scroll', function () {
+         $('.tab-pane').removeClass('active show');
+     });
+    
+    
     /* Footer **********************************************************************************************************/
     footer = $('footer').height();
     
