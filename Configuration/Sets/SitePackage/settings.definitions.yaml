@@ -845,7 +845,7 @@ settings:
   t3upHeader.symbolFontSize:
     category: T3up-Header.top
     type: string
-    default: '$v1%'     
+    default: '$v1'     
  
 # Meta ------------------------------- 
   t3upMeta.author:
