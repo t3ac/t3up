@@ -5,13 +5,13 @@
 
 $EM_CONF[$_EXTKEY] = array (
     'title'            => 'T3UP - Basic Installation',
-    'description'      => 'T3UP - Distribution.',
-    'version'          => '13.2.05',
+    'description'      => 'T3UP - Distribution',
+    'version'          => '13.2.06',
     'state'            => 'stable',
     'category'         => 'templates',
     'author'           => 'Michael Lang',
-    'author_email'     => 'michael.lang@h-da.de',
-    'author_company'   => 'h_da Hochschule Darmstadt',
+    'author_email'     => 'info@t3ac.de',
+    'author_company'   => 'mediaDesign',
     'constraints' =>
     array (
         'depends' =>
