@@ -191,9 +191,11 @@ page.includeCSS{
     mobilmenu                       = EXT:t3up/Resources/Public/Sass/Content/_mmenu.scss  
     mobilmenu.if.isTrue             = {$t3upComponents.mmenu}
     
-    
     navigation                      = EXT:t3up/Resources/Public/Sass/Content/_navigation.scss    
     navigation.if.isTrue            = {$t3upFiles.Scss.navigation}
+    
+    subnavigation                   = EXT:t3up/Resources/Public/Sass/Content/_subnavigation.scss    
+    subnavigation.if.isTrue         = {$t3upFiles.Scss.subnavigation}
     
     totop                           = EXT:t3up/Resources/Public/Sass/Content/_totop.scss    
     totop.if.isTrue                 = {$t3upTotop.totop}
