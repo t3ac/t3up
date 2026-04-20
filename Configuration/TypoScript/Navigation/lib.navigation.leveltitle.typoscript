@@ -1,7 +1,7 @@
 lib.navigation.leveltitle = COA
 lib.navigation.leveltitle {
-    if.isTrue = {$page.navigation.leveltitle}
+    if.isTrue = {$t3upNavigation.subnavTitle}
     10 = TEXT
-    10.data = leveltitle : {$page.navigation.subnavlevel} , slide
+    10.data = leveltitle : {$t3upNavigation.subnavLevel} , slide
     wrap = <div class="levelTitle">|</div>
 }
