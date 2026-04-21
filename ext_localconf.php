@@ -83,6 +83,11 @@ if ($Configuration['OnePager']) {
     ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/PageTsConfig/BackendLayouts/OnePager.tsconfig'");
 }
 
+# Extensions #####################################
+
+if (ExtensionManagementUtility::isLoaded('ke_search')) {
+    ExtensionManagementUtility::addTypoScriptSetup("@import 'EXT:t3up/Configuration/TypoScript/Extensions/kesearch.typoscript'");
+}
 # Icon Provider ################################################################################
 
 $icons = [
