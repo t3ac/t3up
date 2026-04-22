@@ -56,11 +56,5 @@ page.includeJSFooterlibs {
         # mobil ********************************************************************************
 
         mobilmenu                     = EXT:t3up/Resources/Public/Js/mmenu.js
-       // mobilmenu.if.value            = {$t3upComponents.mmenu}      
-       // mobilmenu.if.equals           = mmenu 
-        
-      //  mmenustart                  = EXT:t3up/Resources/Public/Js/mmenu.start.js
-     //   mmenustart.if.value         = {$t3upComponents.mmenu}      
-      //  mmenustart.if.equals        = mmenu 
 
 }
