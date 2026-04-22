@@ -2,28 +2,33 @@ $bold : bold;
 $normal : normal;
 
 .subnavigation {                        left: auto; position: relative;    width: 100%;
-	a                                   {text-decoration: none;}
+	a                                   {text-decoration: none; color: $darkgrey}
+	li.act a                            {color: $black}
     ul                                  {list-style: none; padding: 0;}
-    > ul                                {margin-bottom: $v15; border-top: 1px solid rgba($black, 0.2);}    
+    > ul                                {margin-bottom: $v15; border-top: 1px solid rgba($darkgrey, 0.2);}    
     .cur > a                            {font-weight: $bold; text-transform: uppercase; color: $basicColor;}
     .act > a                            {font-weight: $bold;}
     .levelTitle                         {background: rgba($basicColor,.85); font-weight: $bold; padding: $v03 $v05; color: $white !important; text-transform: uppercase; margin: 0;}
+    .subsubmenu                         {border-top: 1px solid rgba($black, 0.2); background: rgba($darkgrey,.075);}
+ 
     li                                  {position: relative; display: block; line-height: 130%; padding-left: 0; border-bottom: 1px solid rgba($black, 0.2); margin: 0;}    
     li:last-of-type                     {border-bottom: 0;}    
     span                                {font-weight: $normal; background: rgba($basicColor,.05);}    
-    ul li                               {background: $white; line-height: 120%; margin-bottom: 0;}
+    > ul > li                           {background: $white; line-height: 120%; margin-bottom: 0;}
     ul li a                             {padding: $v05 $v15 $v05 $v05; display: block; color: $linkColor; }
-    ul li a:hover                       {color: rgba($darkgrey,1)}
+    ul li a:hover                       {color: $black}
     ul li > span                        {transition: all ease .3s; padding: $v03; display: block; cursor: pointer; font-size: 150%; position: absolute; right: 0; top: 0; text-align: center; }
-    ul ul                               {border-top: 1px solid rgba($black, 0.2);}
-    ul ul li                            {background: rgba($black,.025);}
-    ul ul li a                          {padding-left: $v07;}    
-    ul ul ul li a                       {padding-left: $v1;} 
-    ul ul ul ul li a                    {padding-left: $v12;}    
-    ul ul ul ul ul li a                 {padding-left: $v15;} 
+    
+    ul ul li a                          {padding-left: $v1;}    
+    ul ul ul li a                       {padding-left: $v15;} 
+    ul ul ul ul li a                    {padding-left: $v2;}    
+    ul ul ul ul ul li a                 {padding-left: $v25;} 
     
     > ul > li                           {border-left: 1px solid rgba($black, 0.2); border-right: 1px solid rgba($black, 0.2);}
     > ul > li:last-of-type              {border-bottom: 1px solid rgba($black, 0.2);}
+    
+    ul[aria-hidden="true"]              {display: none;}
+    ul[aria-hidden="false"]             {display: block;}    
 }
 
 @media screen and (min-width: 1200px){
