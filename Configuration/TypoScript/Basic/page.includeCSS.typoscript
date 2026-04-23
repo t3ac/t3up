@@ -143,7 +143,7 @@ plugin.tx_wsscss.variables{
     h4-lineheight                   = {$t3upTypography.h4.lineheight}
     h4-margin                       = {$t3upTypography.h4.margin}        
        
-    footer1fontsize                 = {$t3upTypography.footer1.fontsize}
+    footer1fontsize                 = {$t3upTypography.footer1.fontSize}
     footer3fontsize                 = {$t3upTypography.footer3.fontSize}
    
 }
@@ -195,7 +195,7 @@ page.includeCSS{
     navigation.if.isTrue            = {$t3upFiles.Scss.navigation}
     
     subnavigation                   = EXT:t3up/Resources/Public/Sass/Content/_subnavigation.scss    
-    subnavigation.if.isTrue         = {$t3upFiles.Scss.subnavigation}
+    subnavigation.if.isTrue         = {$t3upNavigation.subnavigation}
     
     totop                           = EXT:t3up/Resources/Public/Sass/Content/_totop.scss    
     totop.if.isTrue                 = {$t3upTotop.totop}
