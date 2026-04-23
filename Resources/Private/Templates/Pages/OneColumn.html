@@ -27,9 +27,9 @@
 	             </div>
             </div>
         </div>
-        <f:if condition="{data.previousnext}">
-            <f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
-        </f:if>     
+			<f:if condition="{page.pageRecord.previousnext}">
+				<f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
+			</f:if> 
       </main>
      </f:section>
 </html>
