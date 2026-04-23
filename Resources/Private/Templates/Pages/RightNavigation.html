@@ -22,7 +22,7 @@
 						  </f:if>
 							<f:format.raw>{content}</f:format.raw>
 						 <!--TYPO3SEARCH_end-->  
-						 <f:if condition="{data.previousnext}">
+						<f:if condition="{page.pageRecord.previousnext}">
 							<f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
 						</f:if>
 					</div>                                  
