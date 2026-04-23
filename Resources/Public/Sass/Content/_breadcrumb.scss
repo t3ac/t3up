@@ -1,4 +1,5 @@
-.breadcrumbrow {                                        font-size: $breadcrumbTextSize !important; line-height: 100%; color: rgba($textColor, .85);
+.breadcrumbrow {                                        
+      *                                                 {font-size: $breadcrumbTextSize !important; line-height: 100%; color: rgba($textColor, .85);}
       a                                                 {text-decoration-style: solid; text-underline-offset: 4px; text-decoration-thickness: 1px; text-decoration-color: transparent; transition: all ease .3s;}
       a:hover,  
       a:focus                                           {text-decoration-color: $textColor; }
@@ -15,8 +16,8 @@
      .navbar-nav                                        {padding: 0; }  
      .navbar-nav > li                                   {margin: 0; align-items: center; }       
      .navbar-nav > li > ul                              {box-shadow: $shadow;}
-     .navbar-nav > li > a                               {font-size: 100% !important; color: rgba($textColor, .85) !important;} 
-     .navbar-nav > li > span > a                        {font-size: 100% !important; color: rgba($textColor, .85) !important;}
+     .navbar-nav > li > a                               {color: rgba($textColor, .85) !important;} 
+     .navbar-nav > li > span > a                        {color: rgba($textColor, .85) !important;}
      .navbar-nav > li > span.home1 > a:before           {content:'home'; /* @include symbol-outline;*/ font-weight: 700; }                              
      
      .navbar-nav > li:after                             {content: '|'; padding: 0 0 0 $v05 !important;} 
