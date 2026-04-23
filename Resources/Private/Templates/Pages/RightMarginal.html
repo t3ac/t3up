@@ -10,8 +10,8 @@
                     <f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
                     <div class="col-12 col-lg-8 content px-3 ps-xxl-0">        
                         <!--TYPO3SEARCH_begin-->
-                          <f:if condition="{data.deltitle} != '1'">
-                            <f:if condition="{data.showtitle} == 0">
+					  		<f:if condition="{page.pageRecord.deltitle} != '1'">
+								<f:if condition="{page.pageRecord.showtitle} == 0">
                                 <f:then>
                                   <f:format.nl2br><h1 class="{h1wrap}">{title}</h1></f:format.nl2br>
                                  </f:then> 
