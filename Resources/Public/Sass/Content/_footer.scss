@@ -1,13 +1,11 @@
 footer {                            position: sticky; top: 100vh; z-index: 15; width: 100%; transition: all ease .3s; bottom: 0; overflow: hidden;  background: $footer1BgColor;   border-top: 1px solid $footer1TextColor; 
     *                               {text-decoration: none; list-style: none;}
-    
     ul,
     ol                              {padding: 0; margin: 0;}
-    h2,
-    h3                              {font-size: calc(#{$h3} * 1    * #{$p});}                              
     
     .footer1{                             
-        *                           {color: $footer1TextColor;}
+        *                           {color: $footer1TextColor; font-size: $footer1fontsize;}
+        h2,h3                       {font-size: $footer1fontsize;}
         a                           {color: $footer1LinkColor;}
         a:hover                     {color: $footer1LinkHoverColor;}
         .trigger                    {display: none;}       
@@ -21,7 +19,8 @@ footer {                            position: sticky; top: 100vh; z-index: 15; w
     }   
 
     .footer3{                       background-color: $footer3BgColor; border-top: 1px solid $footer3TextColor;         
-        *                           {color: $footer3TextColor;}
+        *                           {color: $footer3TextColor;  font-size: $footer3fontsize;}
+        h2,h3                       {font-size: $footer3fontsize;}
         a                           {color: $footer3LinkColor;}
         a:hover                     {color: $footer3LinkHoverColor;}
         .pidhide                    {opacity: 0; transition: all ease .3s;}
