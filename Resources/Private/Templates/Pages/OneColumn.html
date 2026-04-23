@@ -10,8 +10,8 @@
 					<f:if condition="{breadcrumbtop} != '1'">
 						<f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
 					</f:if> 
-	              	<f:if condition="{data.deltitle} != '1'">
-						<f:if condition="{data.showtitle} == 0">
+					  <f:if condition="{page.pageRecord.deltitle} != '1'">
+						<f:if condition="{page.pageRecord.showtitle} == 0">
 							<f:then>
 								<f:format.nl2br><h1 class="{h1wrap}">{title}</h1></f:format.nl2br>
 							</f:then> 
