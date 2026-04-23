@@ -33,9 +33,9 @@
                 </div> 
                 <div class="row">
                     <div class="col-12 col-lg-8">          
-                         <f:if condition="{data.previousnext}">
-                            <f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
-                        </f:if>
+						<f:if condition="{page.pageRecord.previousnext}">
+							<f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
+						</f:if>
                     </div>                                  
                 </div> 
 			 </div>   
