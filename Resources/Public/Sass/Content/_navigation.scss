@@ -25,7 +25,7 @@
                 > li{                               position:relative; hyphens: none; text-align: center;  border-bottom-width: $navLinkBorderBottomHeight; border-bottom-style:solid; border-bottom-color:transparent;
                     > span,
                     > a                             {cursor:pointer; margin:0;font-size:$navFontSize; letter-spacing:.01em; transition:color ease .3s; text-transform:uppercase; padding:$v01 $v1 $v03; 
-                                                    display:block; color:$navLinkColor; display:inline-block; font-weight:$navFontWeight;}             
+                                                    color:$navLinkColor; display:inline-block; font-weight:$navFontWeight;}             
                     &.cur
                     &.activated                     {border-bottom-color:$navLinkHoverColor+99;}
                     &.act                           {border-bottom-color:$navLinkHoverColor; border-bottom-color:$navLinkBorderBottomColor;}
