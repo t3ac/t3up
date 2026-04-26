@@ -276,6 +276,14 @@ settings:
     category: T3up-Colors.navigation
     type: color
     default: 'rgba(255, 255, 255, .98)'     
+  t3upColors.subnavigationLinkColor:
+    category: T3up-Colors.navigation
+    type: color
+    default: 'rgba(99,99,99,1)'    
+  t3upColors.subnavigationLinkHoverColor:
+    category: T3up-Colors.navigation
+    type: color
+    default: 'rgba(0,0,0,1)'  
     
   # Pagecolor ------------------------     
   t3upColors.blue:
@@ -356,6 +364,11 @@ settings:
     category: T3up-Colors.specials
     type: color
     default: '#198754'  
+  t3upColors.overlayColor:
+    category: T3up-Colors.specials
+    type: string
+    default: 'rgba(33, 33, 33, 0.35)'     
+    
     
 # Components Values ------------------     
   t3upComponents.container:
@@ -512,10 +525,6 @@ settings:
     category: T3up-Files.Js
     type: bool
     default: true 
-  t3upFiles.Js.subnavigation:     
-    category: T3up-Files.Js
-    type: bool
-    default: false
   t3upFiles.Js.inview:     
     category: T3up-Files.Js
     type: bool
@@ -581,10 +590,6 @@ settings:
     category: T3up-Files.Scss
     type: bool
     default: true
-  t3upFiles.Scss.subnavigation:     
-    category: T3up-Files.Scss
-    type: bool
-    default: false
   t3upFiles.Scss.table:     
     category: T3up-Files.Scss
     type: bool
