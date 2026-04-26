@@ -375,6 +375,11 @@
 			</trans-unit>
 			
 			
+			<note>Javascript-Bereich</note>	
+		    <trans-unit id="settings.t3upFiles.Js.inview">
+               <target state="translated">Dynamische Inhalte (default 0)</target>
+            </trans-unit>   
+			
 			<note>Header-Bereich</note>				
 			<trans-unit id="settings.t3upHeader.logo">
 			    <target state="translated">Pfad zur Logo-Datei</target>
