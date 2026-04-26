@@ -47,16 +47,18 @@ header {                                        background-color: $headerBgColor
             a:focus, a:hover                    {color: $headerTopSubLinkHoverColor;} 
             a.color-mode__btn                   {display: block; padding: $v02; text-align: left; position: relative; border-width: 0; border-radius: 0; border: 1px solid transparent;}
             a.color-mode__btn:hover             {cursor: pointer;}
-            a.color-mode__btn > span            {display: inline-block; height: $v1; width: $v15; border: 1px solid #808080; position: relative;top: $v02; margin-right :$v05; background: #fff; overflow: hidden;}
-            a.color-mode__btn.dark > span       {background: #000;}
+            a.color-mode__btn > span            {display: inline-block; height: $v1; width: $v15; border: 1px solid lightgray; position: relative;top: $v02; margin-right :$v05; background: #fff; overflow: hidden;}
+            a.color-mode__btn.dark > span       {background: $black;}
             a.color-mode__btn.system > span:before        {content: ""; position: absolute; bottom: calc(clamp(12px, 2.8vw, 24px) * -1.4); right: calc(#{$v1}* -0.9); width: $v2; height: $v2; transform: rotate(-30deg); z-index: 1; background-color: #000;}
             .fsrange                            {font-size: 125%; cursor: pointer;}
             ul                                  {list-style-type: none; padding-left: 0;}
             ul li                               {display: block; padding-bottom:$v03; padding-top:$v03;}
             ul li a                             {padding: 0; color: $textColor;}
             ul li a:focus,
-            ul li a:hover                       {border-bottom: 1px solid $textColor;; font-weight: bold;}
+            ul li a:hover                       {border-bottom: 1px solid $textColor; font-weight: bold;}
          }
+         .submitbutton                          {background: lightgray; margin-left: 0; border-right: 1px solid $grey;}
+         .tx-kesearch-pi1                       {border-left: 1px solid $grey;}       
          
          a.nav_burger                           {width: 2.5rem; height: 2rem; cursor: pointer;  position: relative; display: inline-block; vertical-align: middle;}
          a.nav_burger::before                   {content: ''; position: absolute; border-bottom: .125rem solid rgb($headerTopLinkColor);  border-top: .125rem solid rgb($headerTopLinkColor); transition: transform .3s; margin: auto; bottom: .5rem; top: .5rem; right: .25rem; left: .25rem;}
