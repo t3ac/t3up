@@ -2,14 +2,14 @@
 # Table structure for table 'pages'
 #
 CREATE TABLE pages (
-    showtitle int(11) DEFAULT '0' NOT NULL,
-    deltitle int(11) DEFAULT '0' NOT NULL,    
-    breadcrumb int(11) DEFAULT '0' NOT NULL,  
-    hidenav int(11) DEFAULT '0' NOT NULL,
-    nonav int(11) DEFAULT '0' NOT NULL,
-    previousnext int(11) DEFAULT '0' NOT NULL,
+    showtitle tinyint(1) DEFAULT '0' NOT NULL,
+    deltitle tinyint(1) DEFAULT '0' NOT NULL,    
+    breadcrumb tinyint(1) DEFAULT '0' NOT NULL,  
+    hidenav tinyint(1) DEFAULT '0' NOT NULL,
+    nonav tinyint(1) DEFAULT '0' NOT NULL,
+    previousnext tinyint(1) DEFAULT '0' NOT NULL,
     basecolor varchar(60) DEFAULT '' NOT NULL,
-    xtraclass varchar(60) DEFAULT '' NOT NULL   
+    xtraclass varchar(60) DEFAULT '' NOT NULL
 );
 
 
@@ -26,9 +26,9 @@ CREATE TABLE tt_content (
     inf smallint(5)  DEFAULT '0' NOT NULL,
     rollover smallint(5)  DEFAULT '0' NOT NULL, 
     spacing varchar(60)  DEFAULT '' NOT NULL, 
-    container int(11) DEFAULT '0' NOT NULL,
-    objectfit int(11) DEFAULT '0' NOT NULL, 
-    bgimage  int(11),
+    container tinyint(1) DEFAULT '0' NOT NULL,
+    objectfit tinyint(1) DEFAULT '0' NOT NULL, 
+    bgimage  tinyint(1),
     bgcolor varchar(255),
     txtcolor varchar(255)
 );
