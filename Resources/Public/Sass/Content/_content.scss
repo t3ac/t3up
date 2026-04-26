@@ -1,5 +1,8 @@
 main{                                                   padding: $mainPadding;
     .outof                                              {position: absolute; top: -10000rem;}
+    
+    .overlay {left: 0;  top: 0;  position: absolute; width: 100%;height: 100.1%;z-index: 100;display: none;   background-color: $overlayColor;  }
+    
         
     /* Area Content */
     .content                                            {padding: $contentPadding;}
