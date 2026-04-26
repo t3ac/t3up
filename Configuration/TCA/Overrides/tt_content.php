@@ -262,6 +262,7 @@ $tempfields = array(
 $container = [
     'container' => [
         'exclude' => true,
+        'displayCond' => 'USER:T3ac\\T3up\\UserConditions\\DisplayCond->isOnePagerLayout',
         'label' => $ll . ':containerhandle',
         'config' => [
             'type' => 'check'
