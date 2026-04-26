@@ -8,7 +8,7 @@
 			<div class="container">          
 				<div class="row">
 					<div class="col-12 col-lg-3 left pe-lg-5">
-						<f:if condition="{data.hidenav} != '1'">
+						<f:if condition="{page.pageRecord.hidenav} != '1'">
 							<f:then>
 							<!-- beginn: subnavigation #nav -->
 								<div class="d-none d-lg-block subnav"> 
@@ -25,8 +25,8 @@
 					</div>
                     <div class="col-12 col-lg-8 content px-5 pe-lg-3 ps-lg-5"> 
                      	<f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>	  
-		                <f:if condition="{data.deltitle} != '1'">
-		                  <f:if condition="{data.showtitle} == 0">
+		                <f:if condition="{page.pageRecord.deltitle} != '1'">
+		                  <f:if condition="{page.pageRecord.showtitle} == 0">
 		                      <f:then>
 		                        <f:format.nl2br><h1 class="{h1wrap}">{title}</h1></f:format.nl2br>
 		                       </f:then> 
@@ -38,7 +38,7 @@
                         <!--TYPO3SEARCH_begin-->
                             <f:format.raw>{content}</f:format.raw>
                          <!--TYPO3SEARCH_end-->  
-                         <f:if condition="{data.previousnext}">
+                         <f:if condition="{page.pageRecord.previousnext}">
                             <f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
                         </f:if>
                     </div>                      
