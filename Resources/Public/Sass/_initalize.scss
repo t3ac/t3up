@@ -11,7 +11,7 @@
 body {                                  background-color: $bodyBgColor !important; font-family: $font !important;
     
     *                                   {color: $textColor; }     
-    p,li,h,td                           {font-size: $p;} 
+    p,li,th,td                          {font-size: $p; hyphens: auto; hyphenate-limit-chars: auto 5; hyphenate-limit-lines: 2;} 
     
     figure                              {margin: 0;}
 
