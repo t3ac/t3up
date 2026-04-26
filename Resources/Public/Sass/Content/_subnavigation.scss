@@ -2,11 +2,13 @@ $bold : bold;
 $normal : normal;
 
 .subnavigation {                        left: auto; position: relative;    width: 100%;
-	a                                   {text-decoration: none; color: $darkgrey}
-	li.act a                            {color: $black}
+	a                                   {text-decoration: none; color: $subnavigatinLinkColor}
+	a:hover, a:focus                    {text-decoration: none; color: $subnavigatinLinkHoverColor}
+    
+	li.act > a                          {color: $black}
     ul                                  {list-style: none; padding: 0;}
     > ul                                {margin-bottom: $v15; border-top: 1px solid rgba($darkgrey, 0.2);}    
-    .cur > a                            {font-weight: $bold; text-transform: uppercase; color: $basicColor;}
+    .cur > a                            {font-weight: $bold; text-transform: uppercase; color: $black;}
     .act > a                            {font-weight: $bold;}
     .levelTitle                         {background: rgba($basicColor,.85); font-weight: $bold; padding: $v03 $v05; color: $white !important; text-transform: uppercase; margin: 0;}
     .subsubmenu                         {border-top: 1px solid rgba($black, 0.2); background: rgba($darkgrey,.075);}
@@ -15,8 +17,8 @@ $normal : normal;
     li:last-of-type                     {border-bottom: 0;}    
     span                                {font-weight: $normal; background: rgba($basicColor,.05);}    
     > ul > li                           {background: $white; line-height: 120%; margin-bottom: 0;}
-    ul li a                             {padding: $v05 $v15 $v05 $v05; display: block; color: $linkColor; }
-    ul li a:hover                       {color: $black}
+    ul li a                             {padding: $v05 $v15 $v05 $v05; display: block; color: $subnavigatinLinkColor; }
+    ul li a:hover                       {color: $subnavigatinLinkHoverColor}
     ul li > span                        {transition: all ease .3s; padding: $v03; display: block; cursor: pointer; font-size: 150%; position: absolute; right: 0; top: 0; text-align: center; }
     
     ul ul li a                          {padding-left: $v1;}    
@@ -39,7 +41,7 @@ $normal : normal;
     .subnavigation { 
         li.cur                          {background: $basicColor; color: $white;}    
         li.cur:hover > a                {color: $white;}    
-        li                              {background: $white; color: $darkgrey;}                    
+        li                              {background: $white; color: $black;}                    
     } 
 }
 
