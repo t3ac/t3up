@@ -10,7 +10,7 @@
 					<f:if condition="{breadcrumbtop} != '1'">
 						<f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
 					</f:if> 
-					  <f:if condition="{page.pageRecord.deltitle} != '1'">
+	              	<f:if condition="{page.pageRecord.deltitle} != '1'">
 						<f:if condition="{page.pageRecord.showtitle} == 0">
 							<f:then>
 								<f:format.nl2br><h1 class="{h1wrap}">{title}</h1></f:format.nl2br>
@@ -27,9 +27,9 @@
 	             </div>
             </div>
         </div>
-			<f:if condition="{page.pageRecord.previousnext}">
-				<f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
-			</f:if> 
+        <f:if condition="{page.pageRecord.previousnext}">
+            <f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
+        </f:if>     
       </main>
      </f:section>
 </html>
