@@ -435,7 +435,7 @@
 			    <source>Subnavigation (default 0)</source>
 			</trans-unit>			
 			<trans-unit id="settings.t3upFiles.Js.inview">
-			    <source>Inview (default 0)</source>
+			    <source>Inview dynamic content (default 0)</source>
 			</trans-unit>	
 			<trans-unit id="settings.t3upFiles.Js.wall">
 			    <source>Wall (default 0)</source>
