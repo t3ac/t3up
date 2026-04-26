@@ -6,10 +6,15 @@ a.btn							                        {color: $basicColor;}
 a.btn-more                                               {background-color: #000000cc; border: 0; color: #fffe;}
 a.btn-more:hover                                         {color: #ffff;}
 
-.carousel-caption                                       {right: inherit; left: inherit;}
+.carousel-caption                                        {right: inherit; left: inherit;}
 
 .container                                               {max-width: $container;}
 
+.pagination .page-item .page-link                       {color: $linkColor;}
+.pagination .page-item .page-link:hover                 {color: $linkHoverColor;}
+
+
+.pagination .page-item .page-link.active                {color: $white; background-color: $darkgrey}
 
 @keyframes x { 
   to {offset-distance: 100%}
@@ -17,7 +22,8 @@ a.btn-more:hover                                         {color: #ffff;}
 
 .inarow {                                               display: flex; overflow: hidden; mask: linear-gradient(90deg,#0000, #000 5% 95%,#0000);
 
-    .bannerelement{                                     width: var(--s); offset: shape(from calc(var(--s)/-2) 50%,hline by calc(sibling-count()*max(100%/var(--n),var(--s) + 10px))); animation: x var(--d) linear infinite calc(-1*sibling-index()*var(--d)/sibling-count());}
+    .bannerelement{                                     width: var(--s); offset: shape(from calc(var(--s)/-2) 50%,hline by calc(sibling-count()*max(100%/var(--n),var(--s) + 10px))); 
+                                                        animation: x var(--d) linear infinite calc(-1*sibling-index()*var(--d)/sibling-count());}
     &:hover .bannerelement                              {animation-play-state: paused}
 }
 
