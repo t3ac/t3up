@@ -15,63 +15,59 @@ services:
         identifier: 't3up-datamap-hook'
         event: TYPO3\CMS\Core\DataHandling\Event\AfterDatabaseOperationsEvent
 
-  T3ac.t3up.updates.content_spacing_update:
-    class: T3ac\T3up\Updates\ContentSpacingUpdate
-    arguments:
-      $connectionPool: '@TYPO3\CMS\Core\Database\ConnectionPool'
-    tags:
-      - name: 'install.upgrade.wizard'
+#  T3ac.t3up.updates.content_spacing_update:
+#    class: T3ac\T3up\Updates\ContentSpacingUpdate
+#    arguments:
+#      $connectionPool: '@TYPO3\CMS\Core\Database\ConnectionPool'
+#    tags:
+#      - name: 'install.upgrade.wizard'
 
-  T3ac\T3up\Command\DebugContainerCommand:
-    arguments:
-      $container: '@service_container'
-    tags:
-      - name: console.command
-        command: 't3up:debug:container'
+#  T3ac\T3up\Command\DebugContainerCommand:
+#    arguments:
+#      $container: '@service_container'
+#    tags:
+#      - name: console.command
+#        command: 't3up:debug:container'
 
   T3ac\T3up\Command\CreateFontsSymlinkCommand:
-    tags:
+   tags:
       - name: console.command
         command: 't3up:symlink:fonts'  
   
-  T3ac\T3up\Command\UpdateTypoScriptConstantsCommand:
-    tags:
-      - name: console.command
-        command: 't3up:update:constants'
+#  T3ac\T3up\Command\UpdateTypoScriptConstantsCommand:
+#    tags:
+#      - name: console.command
+#        command: 't3up:update:constants'
 
-  T3ac\T3up\Command\ContentSpacingCommand:
-    tags:
-      - name: console.command
-        command: 't3up:update:spacing'
+#  T3ac\T3up\Command\ContentSpacingCommand:
+#    tags:
+#      - name: console.command
+#        command: 't3up:update:spacing'
 
-  T3ac\T3up\Command\SetOwnerPermissionsCommand:
-    tags:
-      - name: console.command
-        command: 't3up:set:owner-perms'
+#  T3ac\T3up\Command\SetOwnerPermissionsCommand:
+#    tags:
+#      - name: console.command
+#        command: 't3up:set:owner-perms'
 
-  T3ac\T3up\Command\UpdateTo13Command:
-    tags:
-      - name: console.command
-        command: 't3up:update:to13'
+#  T3ac\T3up\Command\UpdateTo13Command:
+#    tags:
+#      - name: console.command
+#        command: 't3up:update:to13'
         
-  T3ac\T3up\Command\ConvertListTypesCommand:
-    tags:
-      - name: console.command
-        command: 't3up:convert:listtypes'
+#  T3ac\T3up\Command\ConvertListTypesCommand:
+#    tags:
+#      - name: console.command
+#        command: 't3up:convert:listtypes'
         
-  T3ac\T3up\Command\ConvertPageBackendLayoutsCommand:
-    tags:
-      - name: console.command
-        command: 't3up:convert:layouts'   
+#  T3ac\T3up\Command\ConvertPageBackendLayoutsCommand:
+#    tags:
+#      - name: console.command
+#        command: 't3up:convert:layouts'   
         
-  T3ac\T3up\Command\SysFileTypeFixCommand:
-    tags:
-      - name: console.command
-        command: 't3up:fix:filetype'     
-        
-  T3ac\T3up\Command\FixGrid2LayoutCommand:
-    tags:
-      - name: console.command
-        command: 't3up:fix:grid2'
+#  T3ac\T3up\Command\SysFileTypeFixCommand:
+#    tags:
+#      - name: console.command
+#        command: 't3up:fix:filetype'     
+ 
         
         
