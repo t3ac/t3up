@@ -37,7 +37,7 @@
                  <source>Dark</source>
             </trans-unit>        
             <trans-unit id="fontsize">
-                 <source>Fontsize</source>
+                 <source>Change fontsize</source>
             </trans-unit>    
             <trans-unit id="language_select">
                  <source>Language selection</source>
