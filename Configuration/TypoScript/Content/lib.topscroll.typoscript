@@ -4,10 +4,10 @@ lib.topscroll {
 	10 								= TEXT
 	10.data 						    = LLL:EXT:t13sitepackage/Resources/Private/Language/locallang_frontend.xlf:totop	
 	10.typolink {
-		wrap 						= <span class="notvissible">|</span>
+		wrap 						= <span id="btn-general-backToTop" class="sr-only screen-reader-text">|</span>
   		ATagBeforeWrap				= 1
         parameter                   = page:uid
-        ATagParams                  = tabindex="-1" title="|" aria-label="link totop" class="d-flex align-items-center"
+        ATagParams                  = aria-describedby="btn-general-backToTop" title="|" aria-label="link totop" class="d-flex align-items-center"
     }
     
     wrap 						= <div class="toTop scrollup">|</div>
