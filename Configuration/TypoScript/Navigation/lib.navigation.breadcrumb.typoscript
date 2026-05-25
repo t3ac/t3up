@@ -32,43 +32,43 @@ lib.level1 {
   1.wrap = <a class="nav-link extend" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level-2"></a><ul class="dropdown-menu" aria-labelledby="dropdown02">|</ul>
 }
 
-lib.level2 < .lib.level1
+lib.level2 < .lib.level0
 lib.level2 {
   entryLevel = 2
   1.wrap = <a class="nav-link extend" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level-2"></a><ul class="dropdown-menu" aria-labelledby="dropdown02">|</ul>
 }
 
-lib.level3 < .lib.level1
+lib.level3 < .lib.level0
 lib.level3 {
   entryLevel = 3
   1.wrap = <a class="nav-link extend" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level-3"></a><ul class="dropdown-menu" aria-labelledby="dropdown03">|</ul>
 }
 
-lib.level4 < .lib.level1 
+lib.level4 < .lib.level0
 lib.level4 {
   entryLevel = 4
   1.wrap = <a class="nav-link extend" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level-4"></a><ul class="dropdown-menu" aria-labelledby="dropdown04">|</ul>
 }
 
-lib.level5 < .lib.level1 
+lib.level5 < .lib.level0
 lib.level5 {
   entryLevel = 5
   1.wrap = <a class="nav-link extend" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level-5"></a><ul class="dropdown-menu" aria-labelledby="dropdown05">|</ul>
 }
 
-lib.level6 < .lib.level1 
+lib.level6 < .lib.level0
 lib.level6 {
   entryLevel = 6
   1.wrap = <a class="nav-link extend" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level-6"></a><ul class="dropdown-menu" aria-labelledby="dropdown06">|</ul>
 }
 
-lib.level7 < .lib.level1 
+lib.level7 < .lib.level0 
 lib.level7 {
   entryLevel = 7
   1.wrap = <a class="nav-link extend" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level-7"></a><ul class="dropdown-menu" aria-labelledby="dropdown06">|</ul>
 }
  
-lib.level8 < .lib.level1 
+lib.level8 < .lib.level0
 lib.level8 {
   entryLevel = 8
   1.wrap = <a class="nav-link extend" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false" aria-label="open navigation level-8"></a><ul class="dropdown-menu" aria-labelledby="dropdown06">|</ul>
