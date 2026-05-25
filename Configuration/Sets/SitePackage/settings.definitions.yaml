@@ -818,7 +818,7 @@ settings:
     default: '0'      
   t3upHeader.languagemenu:
     category: T3up-Header.top
-    default: '2'
+    default: '0'
     type: int
     enum:
       0: 'none'
