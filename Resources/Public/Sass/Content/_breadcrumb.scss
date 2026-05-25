@@ -13,6 +13,7 @@
       ol li::after                                      {content:'|'; padding: 0 0 0 $v02;} 
       ol li:last-of-type::after                         {content:'';}  
       
+     .nonav1 a                                          {cursor: not-allowed; opacity: .7;}
      .navbar-nav                                        {padding: 0; }  
      .navbar-nav > li                                   {margin: 0; align-items: center; }       
      .navbar-nav > li > ul                              {box-shadow: $shadow;}
