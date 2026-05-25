@@ -60,27 +60,27 @@ if ($Configuration['ImageLayouts']) {
 
 # Enable/dissable the LeftNavigation-Layout -> addPageTSConfig
 if ($Configuration['LeftNavigation']) {
-    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/PageTsConfig/LeftNavigation.tsconfig'");
+    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/BackendLayouts/LeftNavigation.tsconfig'");
 }
 
 # Enable/dissable the RightNavigation-Layout -> addPageTSConfig
 if ($Configuration['RightNavigation']) {
-    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/PageTsConfig/RightNavigation.tsconfig'");
+    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/BackendLayouts/RightNavigation.tsconfig'");
 }
 
 # Enable/dissable the RightMarginal-Layout -> addPageTSConfig
 if ($Configuration['RightMarginal']) {
-    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/PageTsConfig/RightMarginal.tsconfig'");
+    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/BackendLayouts/RightMarginal.tsconfig'");
 }
 
 # Enable/dissable the OneColumn-Layout -> addPageTSConfig
 if ($Configuration['OneColumn']) {
-    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/PageTsConfig/OneColumn.tsconfig'");
+    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/BackendLayouts/OneColumn.tsconfig'");
 }
 
 # Enable/dissable the OnePager-Layout -> addPageTSConfig
 if ($Configuration['OnePager']) {
-    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/PageTsConfig/OnePager.tsconfig'");
+    ExtensionManagementUtility::addPageTSConfig("@import 'EXT:t3up/Configuration/BackendLayouts/OnePager.tsconfig'");
 }
 
 # Extensions #####################################
