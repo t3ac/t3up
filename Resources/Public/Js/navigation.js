@@ -164,6 +164,11 @@ $(document).ready(function() {
       }
     });
     
+    $body.on('click', '#menu .nav__level2 > li > a', function() {
+            $(this).addClass('show');
+            $(this).parent().siblings().find('a').removeClass('show');            
+        });
+    
     // Tastatur        
     // TAB Key 9
     $body.on('keyup', '.navlink', function(event) {
