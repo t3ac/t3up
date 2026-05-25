@@ -10,6 +10,9 @@ lib.social.20.if.equals             = left
 lib.social.20.wrap                  = <div class="socialsideleft">|</div>    
 
 // ****************************************** 
+lib.basecolor                       = TEXT
+lib.basecolor.data                  = field:basecolor
+lib.basecolor.insertData            = 1
 
 lib.breadcrumb                      = TEXT
 lib.breadcrumb.data                 = field:breadcrumb 
@@ -99,6 +102,8 @@ page {
 
     variables {
     
+        basecolor               < lib.basecolor        
+        
         breadcrumb              < lib.breadcrumb
         breadcrumbstyle         < lib.breadcrumbstyle
         breadcrumbpos           < lib.breadcrumbpos
