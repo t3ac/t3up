@@ -93,7 +93,7 @@
                     &.act > a                       {border-bottom-color:$navLinkHoverColor;}
                 }
             }
-            .nav__level2{                           position:absolute; left:0; background-color:$subnavBG; list-style:none; z-index:1002; padding: $v2; margin:0; box-shadow: $shadow; border-top: 1px solid #000;
+            .nav__level2{                           position:absolute; left:0; background-color:$subnavBG; list-style:none; z-index:1002; padding: $v2 $v1;  margin:0; box-shadow: $shadow; border-top: 1px solid #000;
                 li                                  {width:auto; flex:1 1 auto!important; display:inline-block; padding: 0 $v1;; vertical-align:top;}
                 li.halb                             {width:50%;} 
                 li.drittel                          {width:33.333%;}
@@ -103,10 +103,11 @@
                 li.siebtel                          {width:14.28%;}
                 li.achtel                           {width:12.5%;}
                 li > span:not(.btn-close)           {text-transform: uppercase; font-weight: bold; border-bottom: 1px solid $navLinkColor; padding:$v05 0 $v03; display: block;}
+                > li > a                            {font-weight: $bold;} 
             }        
             .nav__level3{                           
                 li                                  {width:auto; display:block; margin:0; padding:0; vertical-align:top;}
-                li > a                              {border-bottom: 1px solid $navLinkColor; padding:$v05 0 $v03; display: block;}
+                li > a                              {border-bottom: 1px solid $navLinkColor; padding:$v02 0 $v01; display: block;}
                 li:last-of-type > a                 {border-bottom: 0; padding-bottom:0; }
     
             }    
@@ -116,6 +117,88 @@
         }
     } // header
 }
+
+/* Color-Nav ***********************************************************************************************************************************************************/
+
+header .mainNavigtion{
+    .nav__level1 {
+        li.red{
+            a                                      {color: $red;}
+            li                                     {position: relative;}                    
+            li a:before                            {content:'arrow_right'; font-family:$symbol; font-size:150%;  margin-left: $-v05; opacity: 0; transition: all ease .3s; } 
+            li a                                   {padding-left: 0;  display: flex; align-items: center  }      
+            li a:hover:before                      {opacity: 1;  }                       
+            &.activated                            {background-color:$red;}   
+            &.activated >a                         {color: $white;}   
+        }
+        li.blue{
+            a                                      {color: $blue;}
+            li                                     {position: relative;}                    
+            li a:before                            {content:'arrow_right'; font-family:$symbol; font-size:150%;  margin-left: $-v05; opacity: 0; transition: all ease .3s; } 
+            li a                                   {padding-left: 0;  display: flex; align-items: center  }      
+            li a:hover:before                      {opacity: 1;  }                       
+            &.activated                            {background-color:$blue;}   
+            &.activated >a                         {color: $white;}                
+            
+        }        
+        li.green{
+            a                                      {color: $green;}
+            li                                     {position: relative;}                    
+            li a:before                            {content:'arrow_right'; font-family:$symbol; font-size:150%;  margin-left: $-v05; opacity: 0; transition: all ease .3s; } 
+            li a                                   {padding-left: 0;  display: flex; align-items: center  }      
+            li a:hover:before                      {opacity: 1;  }                       
+            &.activated                            {background-color:$green;}   
+            &.activated >a                         {color: $white;}                
+            
+        }        
+        li.turquoise{
+            a                                      {color: $turquoise;}
+            li                                     {position: relative;}                    
+            li a:before                            {content:'arrow_right'; font-family:$symbol; font-size:150%;  margin-left: $-v05; opacity: 0; transition: all ease .3s; } 
+            li a                                   {padding-left: 0;  display: flex; align-items: center  }      
+            li a:hover:before                      {opacity: 1;  }                       
+            &.activated                            {background-color:$turquoise;}   
+            &.activated >a                         {color: $white;}                
+            
+        }
+        li.grey{
+            a                                      {color: $grey;}
+            li                                     {position: relative;}                    
+            li a:before                            {content:'arrow_right'; font-family:$symbol; font-size:150%;  margin-left: $-v05; opacity: 0; transition: all ease .3s; } 
+            li a                                   {padding-left: 0;  display: flex; align-items: center  }      
+            li a:hover:before                      {opacity: 1;  }                       
+            &.activated                            {background-color:$grey;}   
+            &.activated >a                         {color: $white;}                
+            
+        }        
+        li.violett{
+            a                                      {color: $violett;}
+            li                                     {position: relative;}                    
+            li a:before                            {content:'arrow_right'; font-family:$symbol; font-size:150%;  margin-left: $-v05; opacity: 0; transition: all ease .3s; } 
+            li a                                   {padding-left: 0;  display: flex; align-items: center  }      
+            li a:hover:before                      {opacity: 1;  }                       
+            &.activated                            {background-color:$violett;}   
+            &.activated >a                         {color: $white;}                
+            
+        }        
+        li.orange{
+            a                                      {color: $orange;}
+            li                                     {position: relative;}                    
+            li a:before                            {content:'arrow_right'; font-family:$symbol; font-size:150%;  margin-left: $-v05; opacity: 0; transition: all ease .3s; } 
+            li a                                   {padding-left: 0;  display: flex; align-items: center  }      
+            li a:hover:before                      {opacity: 1;  }                       
+            &.activated                            {background-color:$orange;}   
+            &.activated >a                         {color: $white;}                
+            
+        }            
+    }
+} 
+
+
+
+
+
+
 
 /* All Mobil-Nav ********************************************************************************************************************************************************/
 
