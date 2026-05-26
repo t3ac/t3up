@@ -71,8 +71,15 @@ main:not(.onePager) .opg:after                          {font-size: 150%; line-h
 
 /* .opg class für onepager -> container */
 main.onePager {
-    .content .fitinview                                 {margin: 0 !important; display: flex; width: 100% !important; height: 100vH !important; position: relative; transition: all ease 0.3s; background-repeat: no-repeat; background-position: center center; background-size: cover; } 
-    .content .fitinview > .container                    {height: 100%; align-items: center; display: flex;}
+    .content .fitinview                                 {margin: 0 !important; display: flex; width: 100% !important; height: 100%; position: relative; transition: all ease 0.3s; background-repeat: no-repeat; background-position: center center; background-size: cover; } 
+    .content .fitinview > .container                    {height: 100%; align-items: center; display: block;}
+}
+
+@media screen and (min-width: 582px) {
+    main.onePager {
+        .content .fitinview                             {height: 100vH !important;}
+        .content .fitinview > .container                {display: flex;}
+    }
 }
 
 main .container{
