@@ -11,7 +11,7 @@ lib.social.20.wrap                  = <div class="socialsideleft">|</div>
 
 // ****************************************** 
 lib.basecolor                       = TEXT
-lib.basecolor.data                  = field:basecolor
+lib.basecolor.data                  = levelfield:-1,basecolor,slide
 lib.basecolor.insertData            = 1
 
 lib.breadcrumb                      = TEXT
