@@ -76,16 +76,6 @@ a.btn-more:hover                                         {color: #ffff;}
 
 	.carousel-indicators                               {z-index: 3; margin-top: $v1; bottom: inherit; top: 0;}
     
-    
-    .carousel-indicators.st1                           {margin-bottom: $v1; top: inherit;  bottom: 0;}
-    .carousel-indicators.st2                           {margin-bottom: $v1; top: inherit;  bottom: 0;}        
-    .carousel-indicators.st2 li                        {width: $v06; height: $v07; transition: all ease .5s; opacity: .7;}            
-    .carousel-indicators.st2 li:hover                  {opacity: 1}    
-    .carousel-indicators.st3                           {margin-bottom: $v1; top: inherit;  bottom: 0;}              
-    .carousel-indicators.st3 li                        {width: $v04; height: $v05; background: none; border: #fffd solid 3px; transition: all ease .5s; opacity: .7;}            
-    .carousel-indicators.st3 li:hover                  {border: #ffff solid 3px;}  
-
-
     .slidersymbol1{font-size: calc(clamp(8px, 2.425vw, 36px) * 1)}
     .slidersymbol2{font-size: calc(clamp(8px, 2.425vw, 36px) * 1.25)}
     .slidersymbol3{font-size: calc(clamp(8px, 2.425vw, 36px) * 1.5)}
