@@ -1,0 +1,49 @@
+.socialsideright{                       position: fixed; top: 20vH; right: calc(#{$v1} * -7); z-index: 16;
+
+    ul.social                           {width: calc(#{$v1} * 9) !important; margin: 0; padding: 0; list-style: none; position: relative}
+    ul.social li                        {margin-bottom: 0; border: $socialSymbolBorderThickness+px solid $socialSymbolBorderColor; border-right: 0; height:$v2; transition: all ease .3s; margin-top: -1px; display: flex; align-items: center; background-color: $socialSymbolBgColor; color: $socialSymbolFontColor; }
+    ul.social li:last-of-type           {border-bottom: $socialSymbolBorderThickness+pxx solid $socialSymbolBorderColor;}
+
+    ul.social li a                      {color: $socialSymbolFontColor;text-decoration: none;} 
+
+    ul.social li .brands                {text-align: center; display: flex;  align-items: center; height: $v2; }
+    ul.social li .brands a              {font-size: $socialSymbolFontSize; color: $socialSymbolFontColor;  display: block; width: $v2; text-decoration: none;} 
+
+    ul.social li .symbol                {text-align: center; display: flex;  align-items: center; height: $v2; }
+    ul.social li .symbol a              {font-size: $socialSymbolFontSize; color: $socialSymbolFontColor;  display: block; width: $v2; text-decoration: none;} 
+ 
+  
+    
+    ul.social li:hover                  {margin-left: calc(#{$v1} * -5) !important; }
+  
+}
+
+.socialsideleft{                        position: fixed; top: 20vH; left: calc(#{$v1} * -7); z-index: 16;
+
+    ul.social                           {width: calc(#{$v1} * 9) !important; margin: 0; padding: 0; list-style: none; position: relative}
+    ul.social li                        {border-bottom: 0; border: $socialSymbolBorderThickness+px solid $socialSymbolBorderColor; border-left: 0; flex-direction: row-reverse; height: $v2;  margin-top: -1px;  transition: all ease .3s; display: flex; align-items: center; background-color: $socialSymbolBgColor; color: $socialSymbolFontColor; }
+    ul.social li:last-of-type           {border-bottom: $socialSymbolBorderThickness+px solid $socialSymbolBorderColor;}
+
+
+    ul.social li a                      {color: $socialSymbolFontColor; text-decoration: none;}
+
+    ul.social li .brands                {text-align: center; display: flex;  align-items: center; height: $v2 ; }
+    ul.social li .brands a              {font-size: $socialSymbolFontSize; color: $socialSymbolFontColor;  display: block; width: $v2; text-decoration: none;} 
+
+    ul.social li .symbol                {text-align: center; display: flex;  align-items: center; height: $v2 ; }
+    ul.social li .symbol a              {font-size: $socialSymbolFontSize; color: $socialSymbolFontColor;  display: block; width: $v2; text-decoration: none;} 
+
+    
+    ul.social li:hover                  {margin-right: calc(#{$v1} * -5) !important;} 
+  
+}
+
+.socialbottom{                          margin: 0;
+    
+    span.socialtext                     {display: none !important}
+    
+    li                             	    {display: inline-block; border-bottom: 0; line-height: 100%; }
+    li span.brands 			            {display: flex; border: $socialSymbolBorderThickness+px solid $socialSymbolBorderColor; background-color: $socialSymbolBgColor; width: $v2; height: $v2; justify-content: center !important; align-items: center !important;}
+    a                              	    {font-weight: normal; color: $socialSymbolFontColor;  font-size: $socialSymbolFontSize;}
+        
+}
