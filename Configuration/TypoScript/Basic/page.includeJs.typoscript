@@ -56,5 +56,6 @@ page.includeJSFooterlibs {
         # mobil ********************************************************************************
 
         mobilmenu                     = EXT:t3up/Resources/Public/Js/mmenu.js
+        mobilmenu.if.isTrue           = {$t3upComponents.mmenu}
 
 }
