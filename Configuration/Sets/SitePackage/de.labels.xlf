@@ -486,7 +486,7 @@
 			<trans-unit id="settings.t3upSocialmedia.hidelabel">
 			    <target state="translated">Die Labels verstecken</target>
 			</trans-unit>				
-			<trans-unit id="settings.t3upSocialmedia.socialSymbolFontsize">
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolFontSize">
 			    <target state="translated">Schriftgröße der Symbole</target>
 			</trans-unit>				
 			<trans-unit id="settings.t3upSocialmedia.socialSymbolFontColor">
@@ -498,7 +498,10 @@
 			<trans-unit id="settings.t3upSocialmedia.socialSymbolBorderColor">
 			    <target state="translated">Symbol Rahmenfarbe</target>
 			</trans-unit>				
-				
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolBorderThickness">
+			    <source>Borderthickness</source>
+				<target state="translated">Rahmenstärke</target>
+			</trans-unit>	
 				
 			<note>ToTop Funktion</note>					
 			<trans-unit id="settings.t3upTotop.totop">
