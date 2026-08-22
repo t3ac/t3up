@@ -95,7 +95,13 @@ plugin.tx_wsscss.variables{
     success                         = {$t3upColors.success}   
     warning                         = {$t3upColors.warning}          
         
-        
+    // Socialmedia 
+    socialSymbolFontColor           = {$t3upSocialmedia.socialSymbolFontColor} 
+    socialSymbolBorderColor         = {$t3upSocialmedia.socialSymbolBorderColor} 
+    socialSymbolFontSize            = {$t3upSocialmedia.socialSymbolFontSize}   
+    socialSymbolBgColor             = {$t3upSocialmedia.socialSymbolBgColor}    
+    socialSymbolBorderThickness     = {$t3upSocialmedia.socialSymbolBorderThickness}      
+
     // Specials 
     pictureoverlay                  = {$t3upColors.pictureoverlay} 
     pictureoverlayTextColor         = {$t3upColors.pictureoverlayTextColor} 
@@ -187,13 +193,15 @@ page.includeCSS{
     lightbox                        = EXT:t3up/Resources/Public/Sass/Content/_lightbox.scss    
     lightbox.if.isTrue              = {$t3upFiles.Scss.lightbox}    
     
-    # Mobil
     mobilmenu                       = EXT:t3up/Resources/Public/Sass/Content/_mmenu.scss  
     mobilmenu.if.isTrue             = {$t3upComponents.mmenu}
     
     navigation                      = EXT:t3up/Resources/Public/Sass/Content/_navigation.scss    
     navigation.if.isTrue            = {$t3upFiles.Scss.navigation}
     
+    socialmedia                     = EXT:t3up/Resources/Public/Sass/Content/_socialmedia.scss    
+    socialmedia.if.isTrue           = {$t3upFiles.Scss.socialmedia}   
+
     subnavigation                   = EXT:t3up/Resources/Public/Sass/Content/_subnavigation.scss    
     subnavigation.if.isTrue         = {$t3upNavigation.subnavigation}
     
