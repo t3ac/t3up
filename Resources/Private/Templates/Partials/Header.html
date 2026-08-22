@@ -32,12 +32,14 @@
 
 		<f:section name="top">
 			<div class="top">
-			    <f:cObject typoscriptObjectPath="lib.header.topexta" />
-			    <ul id="service_nav" class="{topwrap}">
-			        <f:cObject typoscriptObjectPath="lib.header.top" />
-			        <f:if condition="{languagemenu}"><f:render partial="SpecialMenu/Language" arguments="{_all}"/></f:if>
-			    </ul>
-		    </div>
+				<div class="{topouterwrap}">
+					<f:cObject typoscriptObjectPath="lib.header.topexta" />
+					<ul id="service_nav" class="{topwrap}">
+						<f:cObject typoscriptObjectPath="lib.header.top" />
+						<f:if condition="{languagemenu}"><f:render partial="SpecialMenu/Language" arguments="{_all}"/></f:if>
+					</ul>
+				</div>
+			</div>
 		</f:section>
 		
 		<f:section name="navi">
