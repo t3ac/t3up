@@ -77,15 +77,15 @@ lib.socialmedia.10 {
       
         ## Wird nur angezeigt, wenn Konstante ein String ist
         60                            = COA
-        60.if.isTrue                  = {$t3upSocialmedia.whatsapp}
+        60.if.isTrue                  = {$t3upSocialmedia.whatsApp}
         60.10                         = TEXT
         60.10.value                   = &#xf232; 
-        60.10.typolink.parameter      = {$t3upSocialmedia.whatsapp} _blank
+        60.10.typolink.parameter      = {$t3upSocialmedia.whatsApp} _blank
         60.10.typolink.title          = WhatsApp        
         60.10.wrap                    = <span class="brands wa">|</span>
         60.20                         = TEXT
         60.20.value                   = WhatsApp        
-        60.20.typolink.parameter      = {$t3upSocialmedia.whatsapp} _blank
+        60.20.typolink.parameter      = {$t3upSocialmedia.whatsApp} _blank
         60.20.typolink.title          = WhatsApp 
         60.20.wrap                    = <span class="socialtext {$t3upSocialmedia.hidelabel}">|</span>        
         60.wrap                       = <li role="menuitem">|</li>   
