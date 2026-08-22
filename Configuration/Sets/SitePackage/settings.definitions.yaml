@@ -775,7 +775,11 @@ settings:
   t3upHeader.topWrap:
     category: T3up-Header.top
     type: string
-    default: 'top container list-unstyled d-flex align-items-center justify-content-end mb-0'          
+    default: 'list-unstyled d-flex align-items-center justify-content-end mb-0'
+  t3upHeader.topOuterWrap:
+    category: T3up-Header.top
+    type: string
+    default: 'container d-flex align-items-center justify-content-between px-5 px-xxl-0'
   t3upHeader.topElementWrap:
     category: T3up-Header.top
     type: string
@@ -842,8 +846,8 @@ settings:
     default: ''         
   t3upHeader.showtitle:
     category: T3up-Header.top
-    default: '1'
     type: string
+    default: 'funcItemTitle'
     enum:
       funcItemTitle: 'show'
       funcItemTitle d-none: 'hide'  
@@ -974,6 +978,10 @@ settings:
       1: 'bottom'
       2: 'right'
       3: 'left' 
+  t3upSocialmedia.facebook:
+    category: T3up-Socialmedia
+    type: string
+    default:  ''   
   t3upSocialmedia.youtube:
     category: T3up-Socialmedia
     type: string
@@ -997,11 +1005,11 @@ settings:
   t3upSocialmedia.bluesky:
     category: T3up-Socialmedia
     type: string
-    default:  ''       
+    default:  ''
   t3upSocialmedia.whatsApp:
     category: T3up-Socialmedia
     type: string
-    default:  ''    
+    default:  ''
   t3upSocialmedia.tiktok:
     category: T3up-Socialmedia
     type: string
@@ -1024,12 +1032,12 @@ settings:
     default:  ''    
   t3upSocialmedia.hidelabel:
     category: T3up-Socialmedia
-    default: '0'
-    type: int
+    default: 'd-none'
+    type: string
     enum:
-      0: 'd-none'
-      1: 'd-inline-block'      
-  t3upSocialmedia.socialSymbolFontsize:
+      d-none: 'hide'
+      d-inline-block: 'show'      
+  t3upSocialmedia.socialSymbolFontSize:
     category: T3up-Socialmedia
     type: string
     default:  '175%'   
@@ -1045,7 +1053,10 @@ settings:
     category: T3up-Socialmedia
     type: color
     default:  '#151515' 
-    
+  t3upSocialmedia.socialSymbolBorderThickness:
+    category: T3up-Socialmedia
+    type: int
+    default:  '1'   
     
  # Totop --------------------------- 
   t3upTotop.totop:
