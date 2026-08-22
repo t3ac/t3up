@@ -635,7 +635,10 @@
 			</trans-unit>				
 			<trans-unit id="settings.t3upHeader.topWrap">
 			    <source>Wrap around the "top-list"</source>
-			</trans-unit>			
+			</trans-unit>	
+			<trans-unit id="settings.t3upHeader.topOuterWrap">
+			    <source>Wrap around the whole top area</source>
+			</trans-unit>		
 			<trans-unit id="settings.t3upHeader.topElementWrap">
 			    <source>Wrap around the "top-list"-elements</source>
 			</trans-unit>			
@@ -779,7 +782,10 @@
 			<note>Socialmedia</note>	
 			<trans-unit id="settings.t3upSocialmedia.pos">
 			    <source>Position of the socialmediamenu</source>
-			</trans-unit>			
+			</trans-unit>		
+			<trans-unit id="settings.t3upSocialmedia.facebook">
+			    <source>The facebook channel</source>
+			</trans-unit>	
 			<trans-unit id="settings.t3upSocialmedia.youtube">
 			    <source>The youtube channel</source>
 			</trans-unit>				
@@ -819,7 +825,7 @@
 			<trans-unit id="settings.t3upSocialmedia.hidelabel">
 			    <source>Hide the labels</source>
 			</trans-unit>				
-			<trans-unit id="settings.t3upSocialmedia.socialSymbolFontsize">
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolFontSize">
 			    <source>Fontsize of the symbols</source>
 			</trans-unit>				
 			<trans-unit id="settings.t3upSocialmedia.socialSymbolFontColor">
@@ -831,7 +837,9 @@
 			<trans-unit id="settings.t3upSocialmedia.socialSymbolBorderColor">
 			    <source>Symbol border-color</source>
 			</trans-unit>				
-				
+			<trans-unit id="settings.t3upSocialmedia.socialSymbolBorderThickness">
+			    <source>Borderthickness</source>
+			</trans-unit>				
 				
 			<note>ToTop</note>												
 			<trans-unit id="settings.t3upTotop.totop">
