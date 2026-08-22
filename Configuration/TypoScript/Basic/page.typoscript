@@ -1,17 +1,17 @@
 lib.social                          = COA
 lib.social.10 < lib.socialmedia
-lib.social.10.if.value              = {$page.socialmedia.pos}
+lib.social.10.if.value              = {t3upSocialmedia.pos}
 lib.social.10.if.equals             = right
 lib.social.10.wrap                  = <div class="socialsideright">|</div>    
 
 lib.social.20 < lib.socialmedia
-lib.social.20.if.value              = {$page.socialmedia.pos}
+lib.social.20.if.value              = {$t3upSocialmedia.pos}
 lib.social.20.if.equals             = left
 lib.social.20.wrap                  = <div class="socialsideleft">|</div>    
 
 // ****************************************** 
 lib.basecolor                       = TEXT
-lib.basecolor.data                  = levelfield:-1,basecolor,slide
+lib.basecolor.data                  = field:basecolor
 lib.basecolor.insertData            = 1
 
 lib.breadcrumb                      = TEXT
@@ -84,6 +84,9 @@ lib.top.value                       = {$t3upHeader.toppos}
 lib.topwrap                         = TEXT
 lib.topwrap.value                   = {$t3upHeader.topWrap}
 
+lib.topouterwrap                    = TEXT
+lib.topouterwrap.value              = {$t3upHeader.topOuterWrap}
+
 lib.topElementWrap                  = TEXT
 lib.topElementWrap.value            = {$t3upHeader.topElementWrap}
 lib.topElementWrap.insertData       = 1
@@ -132,6 +135,7 @@ page {
         
         top                     < lib.top
         topwrap                 < lib.topwrap
+        topouterwrap            < lib.topouterwrap
         topElementWrap          < lib.topElementWrap
         
         
