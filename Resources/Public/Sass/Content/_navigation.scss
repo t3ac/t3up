@@ -62,23 +62,39 @@
                     > a                             {padding:$v01 $v1 $v03; display:inline-block; cursor:pointer; font-size:$navFontSize; transition:color ease .3s; text-transform:uppercase; color:$navLinkColor; font-weight:$navFontWeight;}    
                     &.cur                           {border-bottom-color:rgba($basicColor, .75);}
                     &.act                           {border-bottom-color:$navLinkHoverColor; border-bottom-color:$navLinkBorderBottomColor;}
-                    &:hover                         {color:$navLinkHoverColor; border-bottom-color:$navLinkHoverColor;}
+                    &:hover                         {color:$navLinkHoverColor; border-bottom-color: transparent;}
+
+                    > a:after                       {display: block; position: relative; width: 100%;  height: $navLinkBorderBottomHeight; margin: 0; background: $basicColor;
+                                                    content: ""; transform: scaleX(0); transform-origin: left center; transition: transform  180ms ease;}
+                    > a:hover:after                 {transform: scaleX(1);}          
+  
                  }    
             }
-            
-            .nav__level2                            {position:absolute; z-index:1004; width:$c33; list-style:none; left:0; top:$v05; border-right:1px solid #efefef; height:calc(100% - 2rem);}
-            .nav__level3                            {left:100%; z-index:1005; position:absolute; top:0; width:100%;}
-            .nav__level4                            {z-index:1006; position:absolute; top:0;}
-            .subnav{
-                li                                  {display:flex; justify-content:space-between; text-align: left;}
-                li span                             {padding-right: $v02; font-size:$v07; line-height:$v1; font-weight:normal; cursor:pointer;}
-                li a                                {line-height: $v1; padding: $v01 $v07; transition: all ease .3s;}
-                li > a:hover                        {font-weight:bold;}
-                li.activated                        {background: rgba($basicColor, .10);}
-                li.act,            
-                li.cur                              {background:rgba($basicColor, .10);}            
+
+            .nav__level2{                            position:absolute; width:$c33; list-style:none; left: $v2; top: $v2; padding-right: $v05; 
+               > li                                  {transition: all ease .3s;display:flex; justify-content:space-between; text-align: left; align-items: center; border-bottom: 1px solid rgba(100,100,100,0.33); height: 3rem;}
+               > li:hover                            {background:rgba( 0, 20, 40, 0.04)}            
+
+
+               > li span                             {padding-right: $v02; font-size:$v15; line-height:$v1; font-weight:normal; cursor:pointer; background:rgba($basicColor, .075); height: $v2; min-width: $v2; justify-content: center; align-items: center}
+               > li:hover span                       {background:rgba($basicColor, .20); }
+
+               > li.activated                        {background: rgba($basicColor, .10);}
+               > li.act,            
+               > li.cur                              {background:rgba($basicColor, .10);}    
+                 li:hover > a                        {color: $basicColor; }        
+                 li > a                              {line-height: $v1; transition: all ease .3s; font-weight:bold; padding: 0 $v05;}
             }        
-            .box                                    {min-height:350px; z-index:1002; width:100%; position:absolute; left:0; display:none; margin-top: $navLinkBorderBottomHeight; box-shadow:$shadow; background-color:rgba($white,1); overflow-x:hidden;}
+
+            .nav__level3{                           position:absolute; width: calc(200% - 9rem); list-style:none; left: calc(100% + #{$v2}); top: 0;
+                > li                                {transition: all ease .3s; display:inline-flex; border-bottom: 0; height: $v2;width: 50%; align-items: center;}
+                > li:hover                          {background:rgba( 0, 20, 40, 0.04)}
+                > li.activated                      {background: rgba($basicColor, .10);}
+                > li.act,            
+                > li.cur                            {background:rgba($basicColor, .10);}                 
+            }
+
+            .box                                    { min-height: 480px; z-index:1002; width:100%; position:absolute; left:0; display:none; margin-top: $navLinkBorderBottomHeight; box-shadow:$shadow; background-color:rgba($white,1); overflow-x:hidden;}
             .btn-close                              {position: absolute; right: $v05; top: $v05;}
          }
         
