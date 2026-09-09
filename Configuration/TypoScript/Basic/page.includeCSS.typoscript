@@ -75,6 +75,7 @@ plugin.tx_wsscss.variables{
     subnavLinkColor                 = {$t3upColors.subnavLinkColor}   
     subnavLinkHoverColor            = {$t3upColors.subnavLinkHoverColor}      
     subnavBG                        = {$t3upColors.subnavBG}    
+    linkPadding                     = {$t3upNavigation.linkPadding}
             
     // Pagecolors      
     blue                            = {$t3upColors.blue}   
@@ -170,6 +171,7 @@ page.includeCSS{
     contrast                        = EXT:t3up/Resources/Public/Sass/Colormode/_contrast.scss
 
     image                           = EXT:t3up/Resources/Public/Sass/Content/_image.scss
+    
 
     ///////
     bootstrap                       = EXT:t3up/Resources/Public/Sass/Bootstrap/bootstrap.scss
@@ -182,11 +184,11 @@ page.includeCSS{
     breadcrumb.if.isTrue            = {$t3upFiles.Scss.breadcrumb}    
         
     content                         = EXT:t3up/Resources/Public/Sass/Content/_content.scss    
-    content.if.isTrue               = {$t3upFiles.Scss.content}      
-
+    content.if.isTrue               = {$t3upFiles.Scss.content}       
+    
     aos                             = EXT:t3up/Resources/Public/Sass/Content/_aos.scss
     aos.if.isTrue                   = {$t3upFiles.Scss.content}        
-
+        
     footer                          = EXT:t3up/Resources/Public/Sass/Content/_footer.scss    
     footer.if.isTrue                = {$t3upFiles.Scss.footer}    
     
