@@ -145,7 +145,13 @@
       /* -- Animtate ----------- */
         <trans-unit id="animate">
             <source>Animation</source>     
-        </trans-unit>      
+        </trans-unit>    
+        <trans-unit id="fade-in">
+            <source>fade-in</source>     
+        </trans-unit>    
+        <trans-unit id="fade-in-and-up">
+            <source>fade-in-and-up</source>     
+        </trans-unit>    
         <trans-unit id="fade-up">
             <source>fade-up</source>     
         </trans-unit>      
