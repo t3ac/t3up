@@ -24,7 +24,7 @@
             .nav__level1{                           
                 > li{                               position:relative; hyphens: none; text-align: center;  border-bottom-width: $navLinkBorderBottomHeight; border-bottom-style:solid; border-bottom-color:transparent;
                     > span,
-                    > a                             {cursor:pointer; margin:0;font-size:$navFontSize; letter-spacing:.01em; transition:color ease .3s; text-transform:uppercase; padding:$v01 $v1 $v03; 
+                    > a                             {cursor:pointer; margin:0;font-size:$navFontSize; letter-spacing:.01em; transition:color ease .3s; text-transform:uppercase; padding:$linkPadding; 
                                                     color:$navLinkColor; display:inline-block; font-weight:$navFontWeight;}             
                     &.cur
                     &.activated                     {border-bottom-color:$navLinkHoverColor+99;}
@@ -59,7 +59,7 @@
          .activeNav{                                
            .nav__level1{                            min-height:$v05;
                 > li {                              hyphens: none; text-align: center;  border-bottom-width: $navLinkBorderBottomHeight; border-bottom-style:solid; border-bottom-color:transparent;
-                    > a                             {padding:$v01 $v1 $v03; display:inline-block; cursor:pointer; font-size:$navFontSize; transition:color ease .3s; text-transform:uppercase; color:$navLinkColor; font-weight:$navFontWeight;}    
+                    > a                             {padding: $linkPadding; display:inline-block; cursor:pointer; font-size:$navFontSize; transition:color ease .3s; text-transform:uppercase; color:$navLinkColor; font-weight:$navFontWeight;}    
                     &.cur                           {border-bottom-color:rgba($basicColor, .75);}
                     &.act                           {border-bottom-color:$navLinkHoverColor; border-bottom-color:$navLinkBorderBottomColor;}
                     &:hover                         {color:$navLinkHoverColor; border-bottom-color: transparent;}
@@ -104,7 +104,7 @@
             .nav__level1{
                 > li{                               order:2; hyphens: none;
                     > span:not(.btn-close),   
-                    > a                             {cursor:pointer; font-size:$navFontSize; transition:all ease .3s; font-weight:$navFontWeight;text-transform:uppercase; padding:$v01 $v1 0; 
+                    > a                             {cursor:pointer; font-size:$navFontSize; transition:all ease .3s; font-weight:$navFontWeight;text-transform:uppercase; padding:$linkPadding; 
                                                     display:block; width:100%; text-align:inherit; white-space:nowrap; border-bottom-width: $navLinkBorderBottomHeight; border-bottom-style:solid; border-bottom-color:transparent; text-transform: none; }
                     &.act > a                       {border-bottom-color:$navLinkHoverColor;}
                 }
