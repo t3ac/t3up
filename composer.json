@@ -19,7 +19,7 @@
       }
   },
   "require": {
-    "typo3/cms-core": "^13.4-",
+    "typo3/cms-core": "^14.4-",
     "scssphp/scssphp": "^1",
     "wapplersystems/ws-scss": "^13.0.2"
   },
