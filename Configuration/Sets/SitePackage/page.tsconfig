@@ -1,0 +1,57 @@
+
+# Add items from imageorient of textpic elements
+TCEFORM.tt_content.imageorient {
+    addItems {
+        50 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:header-below
+        50.icon = header-below
+        51 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:header-below-right
+        51.icon = header-below-right
+        52 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:header-below-left
+        52.icon = header-below-left
+    }    
+}
+
+
+
+@import.if.isTrue = settings.t3upComponents.designFrames
+@import 'EXT:t3up/Configuration/TsConfig/Design.tsconfig'
+
+@import.if.isTrue = settings.t3upComponents.imageLayouts
+@import 'EXT:t3up/Configuration/TsConfig/ImageLayouts.tsconfig'
+
+@import.if.isTrue = settings.t3upComponents.bootstrapFrames
+@import 'EXT:t3up/Configuration/TsConfig/BootstrapFrames.tsconfig'
+
+@import.if.isTrue = settings.t3upComponents.tableLayouts
+@import 'EXT:t3up/Configuration/TsConfig/TableLayouts.tsconfig'
+
+
+@import.if = expr
+@import.if.isTrue = settings.t3upComponents.permission
+@import.if.equals = 1
+@import 'EXT:t3up/Configuration/TsConfig/Permission.tsconfig'
+
+
+[{$t3upComponents.default} == 1]
+    @import 'EXT:t3up/Configuration/Default/Default.tsconfig'
+[END]
+
+[{$t3upComponents.leftNavigation} == 1]
+    @import 'EXT:t3up/Configuration/TsConfig/LeftNavigation.tsconfig'
+[END]
+
+[{$t3upComponents.rightNavigation} == 1]
+    @import 'EXT:t3up/Configuration/TsConfig/OneColumn.tsconfig'
+[END]
+
+[{$t3upComponents.rightMarginal} == 1]
+    @import 'EXT:t3up/Configuration/TsConfig/RightMarginal.tsconfig'
+[END]
+
+[{$t3upComponents.oneColumn} == 1]
+    @import 'EXT:t3up/Configuration/TsConfig/OneColumn.tsconfig'
+[END]
+
+[{$t3upComponents.onePager} == 1]
+    @import 'EXT:t3up/Configuration/TsConfig/OnePager.tsconfig'
+[END]

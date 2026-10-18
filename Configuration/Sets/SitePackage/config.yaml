@@ -1,0 +1,7 @@
+name: t3ac/t3up
+label: T3UP-Sitepackes for TYPO3 14
+
+dependencies:
+  - typo3/fluid-styled-content
+  - typo3/seo-sitemap
+  - typo3/felogin 

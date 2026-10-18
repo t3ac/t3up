@@ -1,0 +1,41 @@
+page.10.dataProcessing {
+    ### Menu
+    //10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    10 = menu
+
+    10 {
+       as = mainMenu    
+       entryLevel    = {$t3upNavigation.entryLevel}
+       expandAll     = 1 
+       levels        = {$t3upNavigation.maxLevels}
+       maxItems      = {$t3upNavigation.maxItems}
+    }
+    
+    ### Submenu
+    20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    20 {
+      as              = SubMenu
+      levels          = 5
+      entryLevel      = {$t3upNavigation.subnavigation}
+      expandAll       = 1
+    }
+    
+    ### Breadcrumb - Menu 
+    30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    30 {
+      special = rootline
+      special.range = 1|-1
+      includeNotInMenu = 1
+      as = BreadcrumbMenu
+    }
+    
+    ### Language - Menue
+    //    50 = TYPO3\CMS\Frontend\DataProcessing\LanguageMenuProcessor
+    50 = language-menu
+    50 {
+        languages = auto
+        as = menuLanguage
+    }
+     
+    
+}

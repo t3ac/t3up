@@ -1,0 +1,13 @@
+lib.header.searchfield = COA
+lib.header.searchfield {
+    if.isTrue                   = {$t3upHeader.searchfield}
+    10                          = RECORDS
+    10.tables                   = tt_content
+    10.source                   = {$t3upHeader.searchfield}
+    wrap                        = <li class="order-{$t3upHeader.searchpageButtonPos} {$t3upHeader.topElementWrap}">|</li>
+}
+[{$t3upHeader.searchpage} in tree.rootLineIds]
+    lib.header.searchfield >
+    lib.header.searchfield =
+    lib.header.searchfield.wrap = <div class="d-none"></div>
+[END]

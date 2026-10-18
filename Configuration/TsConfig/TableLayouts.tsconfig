@@ -1,0 +1,66 @@
+TCEFORM {
+	tt_content {
+		layout {
+			// removeItems = 1,2,3
+			disableNoMatchingValueElement = 1
+			types {
+				table {
+					removeItems = 1,2,3
+					addItems {
+						1001 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.10-90
+						1002 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.20-80
+						1003 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.30-70
+						1004 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.40-60
+						1005 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.50-50
+						1006 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.60-40
+						1007 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.70-30
+						1008 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.80-20
+						1009 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.90-10
+						1010 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.20-40-40
+						1011 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.33-33-33
+						1012 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.40-30-30
+						1013 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.50-25-25
+						1014 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.60-20-20
+						1015 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.80-10-10
+						1016 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.25-25-25-25
+						1017 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.40-20-20-20
+						1018 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.50-16-16-16
+						1019 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.20-20-20-20-20
+						1020 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.40-15-15-15-15
+						1021 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.60-10-10-10-10
+						1022 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.50-10-10-10-10-10
+						1023 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.25-15-15-15-15-15
+						1024 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.40-10-10-10-10-10-10
+						1025 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.30-10-10-10-10-10-10-10
+						1026 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.20-10-10-10-10-10-10-10-10
+						1027 = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.10-10-10-10-10-10-10-10-10-10
+                    }           
+                }
+            }
+        }
+
+        # TABLE DEFINITIONS ******************************************************************************************************************
+
+	table_class {
+		removeItems = striped
+		disableNoMatchingValueElement = 1
+		addItems {
+			stripe      = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.stripe
+			colorstripe = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.colorstripe
+			noline      = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.noline
+			lined       = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:tablelayout.lined
+		}
+	}               
+
+	frame_class{
+		types {
+			table {
+				addItems { 
+					white  		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+					lightgrey  	= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:lightgrey
+					}
+				} 
+			} // types
+		} // frame_class
+	} // tt_content  
+} // TCEFORM

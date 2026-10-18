@@ -1,0 +1,53 @@
+page.includeJS.dark                 = EXT:t3up/Resources/Public/JavaScript/dark.js 
+page.includeJS.dark.if.isTrue       = {$t3upFiles.Js.dark}  
+
+page.includeJSFooterlibs {
+
+        jQuery                      = EXT:t3up/Resources/Public/JavaScript/jquery-3.7.1.min.js
+        jQuery.if.isTrue            = {$t3upFiles.Js.jquery}
+
+        jQuery.forceOnTop           = 1    
+        
+        basic                       = EXT:t3up/Resources/Public/JavaScript/basic.js
+        basic.if.isTrue             = {$t3upFiles.Js.basic}        
+        
+        bootstrap                   = EXT:t3up/Resources/Public/JavaScript/Bootstrap/bootstrap.min.js
+        bootstrap.if.isTrue         = {$t3upFiles.Js.bootstrap}
+        
+        dynheader                   = EXT:t3up/Resources/Public/JavaScript/jquery.dynheader.js
+        dynheader.if.isTrue         = {$t3upFiles.Js.dynamic}
+                
+        navigation                  = EXT:t3up/Resources/Public/JavaScript/navigation.js 
+        navigation.if.isTrue        = {$t3upFiles.Js.navigation}    
+        
+        lightboxcnt                 = EXT:t3up/Resources/Public/JavaScript/imagelightbox.control.js
+        lightboxcnt.if.isTrue       = {$t3upFiles.Js.lightbox}
+        
+        lightbox                    = EXT:t3up/Resources/Public/JavaScript/imagelightbox.min.js
+        lightbox.if.isTrue          = {$t3upFiles.Js.lightbox}            
+
+        tablesorter                 = EXT:t3up/Resources/Public/JavaScript/jquery.tablesorter.js
+        tablesorter.if.value        = {$t3upFiles.Js.table}   
+        
+        tablesorterstart            = EXT:t3up/Resources/Public/JavaScript/jquery.tablestart.js
+        tablesorterstart.if.isTrue  = {$t3upFiles.Js.table}  
+        
+        aos                         = EXT:t3up/Resources/Public/JavaScript/aos.js          
+        aos.if.isTrue               = {$t3upFiles.Js.inview}
+        
+        # subnavigation ********************************************************************************
+         
+        subnavigation               = EXT:t3up/Resources/Public/JavaScript/subnavigation.js 
+        subnavigation.if.isTrue     = {$t3upNavigation.subnavigation}         
+         
+        # totop ********************************************************************************
+         
+        totop                       = EXT:t3up/Resources/Public/JavaScript/totop.js     
+        totop.if.isTrue             = {$t3upTotop.totop}         
+         
+        # mobil ********************************************************************************
+
+        mobilmenu                     = EXT:t3up/Resources/Public/JavaScript/mmenu-light.js
+        mobilmenu.if.isTrue           = {$t3upComponents.mmenu}
+
+}
