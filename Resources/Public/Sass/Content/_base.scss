@@ -1,0 +1,98 @@
+// @import '../_initalize.scss';
+
+
+/* special selector ************************************/
+.notvissible    {display: none !important; color: transparent !important; font-size: 0; padding: 0 !important; margin: 0 !important; border: 0 !important;} 
+.btn-close      {font-size: 115%; font-weight: bold; cursor: pointer; z-index: 1007; position: absolute; top: $v1; right: $v1; border: 1px solid $textColor; border-radius: 0;}
+
+.bold           {font-weight: $bold;}
+.uppercase      {text-transform: uppercase;}
+ 
+   
+/* BODY ***************************************************************/
+
+body {                              background-color: $bodyBgColor !important; /*font-family: $font !important;*/
+    
+    *                               {color: $textColor; }     
+    p,li,th,td                      {font-size: $p; hyphens: auto; hyphenate-limit-chars: auto 5; hyphenate-limit-lines: 2;} 
+    
+    figure                          {margin: 0;}
+
+    .container                      {padding-left: 0; padding-right: 0;}
+    
+    .h1, h1                         {transition: all ease .3s; font-weight: $h1-fontweight; color: $h1-color; line-height: $h1-lineheight; text-align: $h1-alignment;} 
+    .h2, h2                         {transition: all ease .3s; font-weight: $h2-fontweight; color: $h2-color; margin-bottom: $h2-margin; line-height: $h2-lineheight;} 
+    .h3, h3                         {transition: all ease .3s; font-weight: $h3-fontweight; color: $h3-color; margin-bottom: $h3-margin; line-height: $h3-lineheight;} 
+    .h4, h4                         {transition: all ease .3s; font-weight: $h4-fontweight; color: $h4-color; margin-bottom: $h4-margin; line-height: $h4-lineheight;}
+    
+    .h1, h1                         {font-size: calc(#{$h1} * $p);} 
+    .h2, h2                         {font-size: calc(#{$h2} * $p);} 
+    .h3, h3                         {font-size: calc(#{$h3} * $p);} 
+	.h4, h4                         {font-size: calc(#{$h4} * $p);}  
+	
+    .small,
+    .small a                        {font-size: calc(.8 * $p);} 
+}
+
+/* MAIN ***************************************************************/
+
+main{                               
+    p                               {margin-bottom: $pMargin;}
+    
+    li                              {margin-bottom: $v1;}
+    
+    ul                              {padding: 0 0 0 $v1; list-style-type: square;}
+    ul ul                           {padding: 0 0 0 $v2; list-style-type: square;}
+    ul ul ul                        {padding: 0 0 0 $v3; list-style-type: square;}
+    ol                              {padding: 0 0 0 $v1;}
+}
+
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Daumen (Thumb) für Chrome, Safari, Edge */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Daumen (Thumb) für Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/* Adminpanel ******************************************/
+.icon-markup svg                    {max-width: $v5; opacity: .5; transition: all ease .3s;}
+.icon-markup svg:hover              {opacity: 1}
+.typo3-editPanel                    {border-bottom: 5px solid $basicColor; font-style: italic; color: $basicColor; opacity: .5;  transition: all ease .3s; padding: $v1; background-color: $basicColor; margin-top: $v2;  margin-bottom: $v2; }
+.icon-markup .icon-markup svg       {opacity: 1;}
+.typo3-editPanel:hover              {opacity: 1; color: $white; }
+.typo3-editPanel .icon-markup svg:hover {filter: invert(100%);}
+.typo3-editPanel-label:before       {content:'Inhaltselement: '}
+.icon-actions-edit-unhide .icon-markup svg {background: rgb(150,50,50);} 
+.typo3-editPanel a                  {display: inline-block !important;}
+
+.icon-markup .icon-markup svg       {opacity: 1;}
+.typo3-editPanel:hover              {opacity: 1; color: $white; }
+.typo3-editPanel .icon-markup svg:hover {filter: invert(100%);}
+.typo3-editPanel-label:before       {content:'Inhaltselement: '}
+.icon-actions-edit-unhide .icon-markup svg {background: rgb(150,50,50);} 
+.typo3-editPanel a                  {display: inline-block !important;}
+

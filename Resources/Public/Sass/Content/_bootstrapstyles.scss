@@ -1,3 +1,6 @@
+@import '../_initalize.scss';
+
+
 /* Bootstrap Korrektur */
 a.btn-secondary						                    {background-color: transparent;}
 a.btn-light						                        {background-color: $white;}
@@ -15,6 +18,7 @@ a.btn-more:hover                                         {color: #ffff;}
 
 
 .pagination .page-item .page-link.active                {color: $white; background-color: $darkgrey}
+
 
 @keyframes x { 
   to {offset-distance: 100%}
@@ -44,21 +48,17 @@ a.btn-more:hover                                         {color: #ffff;}
     .hero-image img                                    {width: 100vw; height: 100vh;} 
     
 	figure		                                       {margin: 0;}
-	.carousel-caption.stil1							   {bottom: 0; width: 100%; padding: 0;}	
-	.carousel-caption.stil2							   {width: auto; bottom: 0; padding: 0;}		
-	.carousel-caption.stil3							   {width: auto; bottom: 20%; left: 5%; padding: 0;}
-	.carousel-caption.stil4,	
-	.carousel-caption.stil5							   {width: 100%; bottom: 0; left: 0; padding: 0; height: 100%; display: inline-flex; align-items: center; transition: all ease .5s; }
-	.carousel-caption.stil4 > *,	
-	.carousel-caption.stil5 > *						   {text-align: center;}
+	.carousel-caption                                  {text-align: left;}
+	.carousel-caption.stil1							   {bottom: 0; width: 100%; padding: $v4;}	
+	.carousel-caption.stil2							   {width: auto; bottom: 0; padding: $v4;}		
+	.carousel-caption.stil3							   {width: auto; bottom: 20%; left: 5%; padding: $v4;}	
+	.carousel-caption.stil4                            {width: 100%; bottom: 0; left: 0; padding: 0 $v4; height: 100%; display: inline-flex; align-items: center; transition: all ease .5s; }
+	.carousel-caption.stil5							   {width: 50%; bottom: 0; left: 0; padding: $v4;; height: 100%; display: inline-flex; align-items: center; transition: all ease .5s; }
+	.carousel-caption.stil5 span					   {line-height: 130% !important;}
 	
 	.carousel-caption.stil4							   {opacity: 0; }
 	.carousel-caption.stil4:hover					   {opacity: 1;}		
-	
-	.carousel-caption.stil1	a,	
-	.carousel-caption.stil2	a,		
-	.carousel-caption.stil3	a						   {padding: $v1;}	
-	
+
 	.carousel-caption.stil1	.capa,	
 	.carousel-caption.stil2	.capa,		
 	.carousel-caption.stil3	.capa					   {padding: $v1;}			
@@ -72,10 +72,25 @@ a.btn-more:hover                                         {color: #ffff;}
 	.carousel-control-prev:focus,
 	.carousel-control-next:focus,		
 	.carousel-control-prev:hover,
-	.carousel-control-next:hover					      {opacity: 1 ;}
+	.carousel-control-next:hover					   {opacity: 1 ;}
 
-	.carousel-indicators                               {z-index: 3; margin-top: $v1; bottom: inherit; top: 0;}
-    
+	.carousel-indicators                               {z-index: 3; margin-top: $v3;  bottom: inherit; top: 0;}
+	.carousel-indicators [data-bs-target]              {margin-right: $v1; margin-left: $v1;}
+	.carousel-indicators.st1                           {margin-bottom: $v3; top: inherit;  bottom: 0;}
+	.carousel-indicators.st2                           {margin-bottom: $v3; top: inherit;  bottom: 0;}        
+	.carousel-indicators.st2 li                        {width: $v4; height: $v4; transition: all ease .5s; opacity: .7;}            
+	.carousel-indicators.st2 li:hover                  {opacity: 1}    
+	.carousel-indicators.st3                           {margin-bottom: $v3; top: inherit;  bottom: 0;}              
+	.carousel-indicators.st3 li                        {width: $v3; height: $v3; background: none; border: #fffd solid 3px; transition: all ease .5s; opacity: .7;}            
+	.carousel-indicators.st3 li:hover                  {border: #ffff solid 3px;}      
+	.carousel-indicators.st4                           {margin-bottom: $v3; top: 0;  bottom: inherit;}        
+	.carousel-indicators.st4 li                        {width: $v4; height: $v4; transition: all ease .5s; opacity: .7;}            
+	.carousel-indicators.st4 li:hover                  {opacity: 1}    
+	.carousel-indicators.st5                           {margin-top: $v3; top: 0;  bottom: inherit;}              
+	.carousel-indicators.st5 li                        {width: $v3; height: $v3; background: none; border: #fffd solid 3px; transition: all ease .5s; opacity: .7;}            
+	.carousel-indicators.st5 li:hover                  {border: #ffff solid 3px;} 
+	
+	
     .slidersymbol1{font-size: calc(clamp(8px, 2.425vw, 36px) * 1)}
     .slidersymbol2{font-size: calc(clamp(8px, 2.425vw, 36px) * 1.25)}
     .slidersymbol3{font-size: calc(clamp(8px, 2.425vw, 36px) * 1.5)}

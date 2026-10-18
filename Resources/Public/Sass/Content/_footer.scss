@@ -1,3 +1,6 @@
+
+@import '../_initalize.scss';
+
 footer {                            position: sticky; top: 100vh; z-index: 15; width: 100%; transition: all ease .3s; bottom: 0; overflow: hidden;  background: $footer1BgColor;   border-top: 1px solid $footer1TextColor; 
     *                               {text-decoration: none; list-style: none;}
     ul,
@@ -6,14 +9,15 @@ footer {                            position: sticky; top: 100vh; z-index: 15; w
     .footer1{                             
         *                           {color: $footer1TextColor; font-size: $footer1fontsize;}
         h2,h3                       {font-size: $footer1fontsize;}
+		a::before,
         a                           {color: $footer1LinkColor;}
         a:hover                     {color: $footer1LinkHoverColor;}
         .trigger                    {display: none;}       
     }   
 
-    
     .footer2{                       background-color: $footer2BgColor;       
         *                           {color: $footer2TextColor;}
+		a::before,
         a                           {color: $footer2LinkColor;}
         a:hover                     {color: $footer2LinkHoverColor;}
     }   
@@ -21,6 +25,7 @@ footer {                            position: sticky; top: 100vh; z-index: 15; w
     .footer3{                       background-color: $footer3BgColor; border-top: 1px solid $footer3TextColor;         
         *                           {color: $footer3TextColor;  font-size: $footer3fontsize;}
         h2,h3                       {font-size: $footer3fontsize;}
+		a::before,
         a                           {color: $footer3LinkColor;}
         a:hover                     {color: $footer3LinkHoverColor;}
         .pidhide                    {opacity: 0; transition: all ease .3s;}
@@ -30,12 +35,12 @@ footer {                            position: sticky; top: 100vh; z-index: 15; w
 
 @media screen and (max-width: 581px) {
     footer.footerdynamic {                 
-        .trigger                        {display: block; font-size: $p}
-        .trigger:after                  {font-family: $symbol; content:'add'; float: right; font-size: calc(#{$p} * 1.5);}  
-        .trigger.active:after           {content:'remove'; }          
-        .trigger ~ .frame,    
-        .trigger ~ .frame >h2,
-        .trigger ~ .frame >h3,    
-        .trigger ~ .frame >h4           {display: none;}   
+        .trigger                        {display: block; font-size: $p; margin: 0; padding-top: $v2;  padding-bottom: $v2;}
+        .trigger:after                  {content:'+'; float: right; font-size: calc(#{$p} * 1.75); margin-top: $-v2;}  
+        .trigger.active:after           {content:'–'; }          
+        .trigger ~ .frame-default,    
+        .trigger ~ .frame-default >h2,
+        .trigger ~ .frame-default >h3,    
+        .trigger ~ .frame-default >h4           {display: none; padding-top: $v2;  padding-bottom: $v2;  }   
     }
 }

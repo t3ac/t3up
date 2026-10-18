@@ -1,3 +1,5 @@
+@import '../_initalize.scss';
+
 .socialsideright{                       position: fixed; top: 20vH; right: calc(#{$v1} * -7); z-index: 16;
 
     ul.social                           {width: calc(#{$v1} * 9) !important; margin: 0; padding: 0; list-style: none; position: relative}

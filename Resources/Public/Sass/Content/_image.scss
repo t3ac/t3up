@@ -1,349 +1,285 @@
-    
+
+@import '../_initalize.scss';
+
+
 /* Allgemein */
 
 /* Gallery */
-.ce-gallery img                         {display: block; max-width: 100%; height: auto; width: 100%;}
+.ce-gallery img                                                  {display: block; max-width: 100%; height: auto; width: 100%;}
 
 .ce-border,
-.ce-border img                          {margin: 0 !important;}
+.ce-border img                                                   {margin: 0 !important;}
     
-.ce-center .ce-outer                    {position: relative; float: right; right: 50%;}
-.ce-center .ce-inner                    {position: relative; float: right; right: -50%;}
+.ce-center .ce-outer                                             {position: relative; float: right; right: 50%;}
+.ce-center .ce-inner                                             {position: relative; float: right; right: -50%;}
  
-.ce-gallery img                         {display: block; height: auto}
-.ce-align-left                          {text-align: left;}
-.ce-align-center                        {text-align: center;}
-.ce-align-right                         {text-align: right;}
+.ce-gallery img                                                  {display: block; height: auto}
+.ce-align-left                                                   {text-align: left;}
+.ce-align-center                                                 {text-align: center;}
+.ce-align-right                                                  {text-align: right;}
     
-.ce-table td, .ce-table th              {vertical-align: top;}
+.ce-table td, .ce-table th                                       {vertical-align: top;}
     
-.ce-gallery iframe                      {border-width: 0;   aspect-ratio: 16 / 9;}
+.ce-gallery iframe                                               {border-width: 0;   aspect-ratio: 16 / 9;}
     
-.ce-gallery figure                      {display: block;}
-.ce-gallery figcaption                  {display: block; font-style: italic; padding: $v02 $v03 }
+.ce-gallery figure                                               {display: block;}
+.ce-gallery figcaption                                           {display: block; font-style: italic; padding: $v1 $v2 }
 
 .ce-textpic, .ce-image, .ce-nowrap 
 .ce-bodytext, .ce-gallery, .ce-row, 
-.ce-uploads li, .ce-uploads div         {overflow: hidden;}
+.ce-uploads li, .ce-uploads div                                  {overflow: hidden;}
 
-.ce-left .ce-gallery, .ce-column        {float: left;}
-.ce-right .ce-gallery                   {float: right;}
+.ce-left .ce-gallery, .ce-column                                 {float: left;}
+.ce-right .ce-gallery                                            {float: right;}
     
-.ce-above .ce-bodytext                  {clear: both;}
+.ce-above .ce-bodytext                                           {clear: both;}
 .ce-intext.ce-left ol,
-.ce-intext.ce-left ul                   {overflow: auto;}
+.ce-intext.ce-left ul                                            {overflow: auto;}
  
 /* Image margin */
 
-.ce-intext.ce-right .ce-gallery, .ce-intext.ce-left .ce-gallery {margin-bottom: 0;}
+.ce-intext.ce-right .ce-gallery, .ce-intext.ce-left .ce-gallery  {margin-bottom: 0;}
 
-.ce-column:last-child                   {margin-right: 0;}
+.ce-column:last-child                                            {margin-right: 0;}
     
-.ce-row                                 {margin-bottom: $v07;}
-.ce-row:last-child                      {margin-bottom: 0;}
+.ce-row                                                          {margin-bottom: $v3;}
+.ce-row:last-child                                               {margin-bottom: 0;}
 
 /* Image Above */
 
 .ce-above .ce-gallery + h2,
 .ce-above .ce-gallery + h3,
-.ce-above .ce-gallery + h4              {margin-top: $v05;}
+.ce-above .ce-gallery + h4                                       {margin-top: $v2;}
 
-.ce-above figure                                      {margin-bottom: $v07; }
+.ce-above figure                                                 {margin-bottom: $v3; }
     
-.ce-textpic > *.above                   {clear: both}
+.ce-textpic > *.above                                            {clear: both}
 
-.ce-row > div:first-of-type                             {padding-left: 0;  }
-.ce-row > div:last-of-type                              {padding-right: 0; }
+.ce-row > div:first-of-type                                      {padding-left: 0;  }
+.ce-row > div:last-of-type                                       {padding-right: 0; }
 
-.ce-intext figure                                       {margin-bottom: $v07; }
-
-
+.ce-intext figure                                                {margin-bottom: $v3; }
+  
  /* Image Rollover */
-.rollover                                               {transition: all ease .5s; top: 100vh; z-index: 9; height: 100%; width: 100%; padding: $v05; color: transparent; background: transparent;}
-picture:hover .rollover                                 {top: 0; background: $pictureoverlay; color: $pictureoverlayTextColor; font-size: $pictureoverlayTextSize; }
+.rollover                                                        {transition: all ease .5s; top: 100vh; z-index: 9; height: 100%; width: 100%; padding: $v2; color: transparent; background: transparent;}
+picture:hover .rollover                                          {padding: 0; top: 0; background: $pictureoverlay; color: $pictureoverlayTextColor; }
+picture:hover .rollover > div                                    {}
+picture:hover .rollover > div > *                                {padding: $v3; font-size: $pictureoverlayTextSize;}
 
 /* Only Main */
-main img                                                {width: 100%; height: auto;}
-main .ce-column figure                                  {overflow: hidden;}
+main img                                                         {width: 100%; height: auto;}
+main .ce-column figure                                           {overflow: hidden;}
        
 /* Image Information */
-main .ce-column div.imageinf                            {position: absolute; top: $v1; left: $v1; padding: $v05; background: transparent; color: transparent; transition: all ease .3s; }
-main .ce-column:hover div.imageinf                      {background: $white; color: $black;}
+main .ce-column div.imageinf                                     {position: absolute; top: $v1; left: $v1; padding: $v2; background: transparent; color: transparent; transition: all ease .3s; }
+main .ce-column:hover div.imageinf                               {background: $white; color: $black;}
 
 
-  
-
-
-/* Picture in columns 1-8  ******************************************************** */
-
-
-$sizes: (
-  0:   0,
-  1:  $v01, 
-  2:  $v02,
-  3:  $v03, 
-  4:  $v04,
-  5:  $v05, 
-  6:  $v06,
-  7:  $v07,
-  8:  $v1,
-  9:  $v15,
-  10: $v2,
-  11: $v3
-);
-
-$negative-sizes: (
-  0:   0,
-  1:  $-v01, 
-  2:  $-v02,
-  3:  $-v03, 
-  4:  $-v04,
-  5:  $-v05, 
-  6:  $-v06,
-  7:  $-v07,
-  8:  $-v1,
-  9:  $-v15,
-  10: $-v2,
-  11: $-v3
-);
-
-// Map zur Berechnung von Rand unten für figure
-$bottom-map: (
-  1:  05,
-  2:  05,
-  3:  05,
-  4:  05,
-  5:  05,
-  6:  05,
-  7:  05,
-  8:  1,
-  9:  1,
-  10: 1,
-  11: 1
-);
-
-// Anzahl der möglichen Spalten
-$columns: 2, 3, 4, 5, 6, 7, 8;
-
-// Prozentbreiten der Spalten
-$column-widths: (
-  2: 50%,
-  3: 33.33%,
-  4: 25%,
-  5: 20%,
-  6: 16.6666666666666%,
-  7: 14.25%,
-  8: 12.5%
-);
-
-@each $key, $val in $sizes {
-  $neg: map-get($negative-sizes, $key);
-  $bottom-key: map-get($bottom-map, $key);
-
-  .imgspace-#{$key} {
-    @each $col in $columns {
-      .ce-gallery[data-ce-columns="#{$col}"] {
-        .ce-inner {
-          margin: 0 #{$neg};
-        }
-        .ce-row {
-          width: 100%;
-          display: inline;
-        }
-        .ce-column {
-          width: map-get($column-widths, $col) !important;
-        }
-        .ce-column:nth-child(n) figure {
-          margin-right: #{$val};
-          margin-left: #{$val};
-          margin-bottom: map-get($sizes, $bottom-key);
-        }
-      }
-    }
-  }
-}
-
-
-/* Picture Layouts ******************************************************** */
-
-// Layoutgruppen definieren
-$layouts-100: 2100, 2095, 2090, 2085;
-$layouts-75: 2080, 2075, 2070, 2065;
-$layouts-50: 2060, 2055, 2050, 2045, 2040;
-$layouts-25: 2035, 2030, 2025, 2020;
-$layouts-10: 2015, 2010, 2005;
-
-@mixin gallery-layout($width, $gallery-margin-left: null, $center-margin: false) {
-  .ce-left .ce-gallery,
-  .ce-right .ce-gallery {width: $width;  }
-
-  .ce-center .ce-gallery {
-    width: $width;
-    @if $center-margin {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  .ce-gallery .ce-gallery {
-    width: $width;
-    @if $gallery-margin-left != null {
-      margin-left: $gallery-margin-left;
-    }
-  }
-
-  .ce-gallery figure {display: block;}
-  .ce-gallery .ce-inner,
-  .ce-gallery .ce-outer {float: none;right: 0;}
-  .ce-column {margin-right: 0;width: 100%;}
-  img {width: 100%;}
-}
-
-// Schleifen pro Layoutgruppe
-@each $id in $layouts-100 {
-  .frame-layout-#{$id} {
-    @include gallery-layout(100%);
-  }
-}
-
-@each $id in $layouts-75 {
-  .frame-layout-#{$id} {
-    @include gallery-layout(75%, 12.5%, true);
-  }
-}
-
-@each $id in $layouts-50 {
-  .frame-layout-#{$id} {
-    @include gallery-layout(50%, 25%, true);
-  }
-}
-
-@each $id in $layouts-25 {
-  .frame-layout-#{$id} {
-    @include gallery-layout(25%, 37.5%, true);
-  }
-}
-
-@each $id in $layouts-10 {
-  .frame-layout-#{$id} {
-    @include gallery-layout(10%, 45%, true);
-  }
-}
-
-
-// Schleife von 100% (ID 2100) bis 5% (ID 2005)
-
-@media (min-width: 768px) {
-  @for $i from 0 through 20 {
-    $value: (100 - ($i * 5)) * 1%; // Prozentwert mit Einheit
-    $id: 2100 - ($i * 5);          // Layout-ID
-    $margin-left: ($i * 5) / 2 * 1%; 
-
-    .frame-layout-#{$id} {
-      .ce-left .ce-gallery {width: $value; }
-      .ce-right .ce-gallery {width: $value; }
-      .ce-center .ce-gallery {width: $value;margin-left: auto;margin-right: auto;}
-      .ce-gallery .ce-gallery {width: $value;margin-left: $margin-left;}
-      .ce-gallery figure {display: block;}
-      .ce-column {margin-right: 0;width: 100%;}
-      img {width: 100%;}
-    }
-  }
-}
-
-/* Padding before / after ***************************************************/
-
+/* Padding before / after *******************************************************/
 
 .innerPadding-1{
-    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v01}    
-    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v01}
+    &.ce-textpic.ce-right .ce-gallery                            {padding-left:  $v1}    
+    &.ce-textpic.ce-left .ce-gallery                             {padding-right: $v1}
 }
 .innerPadding-2{
-    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v02}    
-    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v02}
+    &.ce-textpic.ce-right .ce-gallery                            {padding-left:  $v2}    
+    &.ce-textpic.ce-left .ce-gallery                             {padding-right: $v2}
 }
 .innerPadding-3{
-    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v03}    
-    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v03}
+    &.ce-textpic.ce-right .ce-gallery                            {padding-left:  $v3}    
+    &.ce-textpic.ce-left .ce-gallery                             {padding-right: $v3}
 }
 
 .innerPadding-4{
-    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v04}    
-    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v04}
+    &.ce-textpic.ce-right .ce-gallery                            {padding-left:  $v4}    
+    &.ce-textpic.ce-left .ce-gallery                             {padding-right: $v4}
 }
 
 .innerPadding-5{
-    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v05}    
-    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v05}
+    &.ce-textpic.ce-right .ce-gallery                            {padding-left:  $v5}    
+    &.ce-textpic.ce-left .ce-gallery                             {padding-right: $v5}
 }
 
 .innerPadding-6{
-    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v06}    
-    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v06}
+    &.ce-textpic.ce-right .ce-gallery                            {padding-left:  $v6}    
+    &.ce-textpic.ce-left .ce-gallery                             {padding-right: $v6}
 }
 
 .innerPadding-7{
-    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v07}    
-    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v07}
+    &.ce-textpic.ce-right .ce-gallery                            {padding-left:  $v7}    
+    &.ce-textpic.ce-left .ce-gallery                             {padding-right: $v7}
 }
 
-.innerPadding-8{
-    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v08}    
-    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v08}
-}
+/* Spacings *********************************************************************/
 
-.innerPadding-9{
-    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v09}    
-    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v09}
-}
+.imgspace-1 .ce-column                                            {@include px01;}
+.imgspace-2 .ce-column                                            {@include px02;}
+.imgspace-3 .ce-column                                            {@include px03;}
+.imgspace-4 .ce-column                                            {@include px04;}
+.imgspace-5 .ce-column                                            {@include px05;}
+.imgspace-6 .ce-column                                            {@include px06;}
+.imgspace-7 .ce-column                                            {@include px07;}
 
-.innerPadding-10{
-    &.ce-textpic.ce-right .ce-gallery         {padding-left: $v1; margin-left: $v1}
-    &.ce-textpic.ce-left .ce-gallery          {padding-right: $v1; margin-right: $v1; }
-}
+/* Layouts **********************************************************************/
 
+ /* 100 Styles For Images */
+.frame-layout-2100 .ce-left      .ce-gallery                      {width: 100%;}
+.frame-layout-2100 .ce-right     .ce-gallery                      {width: 100%;}
+.frame-layout-2100 .ce-center    .ce-gallery                      {width: 100%; margin-left: 0%}
+.frame-layout-2100 .ce-gallery figure                             {display: block;}
+.frame-layout-2100 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2100 img                                            {width: 100%;}
 
+ /* 95 Styles For Images */
+.frame-layout-2095 .ce-left      .ce-gallery                      {width: 95%;}
+.frame-layout-2095 .ce-right     .ce-gallery                      {width: 95%;}
+.frame-layout-2095 .ce-center    .ce-gallery                      {width: 95%; margin-left:2.50%}
+.frame-layout-2095 .ce-gallery figure                             {display: block;}
+.frame-layout-2095 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2095 img                                            {width: 100%;}
+  
+ /* 90 Styles For Images */
+.frame-layout-2090 .ce-left      .ce-gallery                      {width: 90%;}
+.frame-layout-2090 .ce-right     .ce-gallery                      {width: 90%;}
+.frame-layout-2090 .ce-center    .ce-gallery                      {width: 90%; margin-left:5.0%}
+.frame-layout-2090 .ce-gallery figure                             {display: block;}
+.frame-layout-2090 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2090 img                                            {width: 100%;}
 
-.frame-padding-before-1:not(.frame-singleaccordion)     {padding-top: $v02;}
-.frame-padding-before-2:not(.frame-singleaccordion)     {padding-top: $v03;}
-.frame-padding-before-3:not(.frame-singleaccordion)     {padding-top: $v05;}
-.frame-padding-before-4:not(.frame-singleaccordion)     {padding-top: $v06;}
-.frame-padding-before-5:not(.frame-singleaccordion)     {padding-top: $v07;}
-.frame-padding-before-6:not(.frame-singleaccordion)     {padding-top: $v1;}
-.frame-padding-before-7:not(.frame-singleaccordion)     {padding-top: $v15;}
-.frame-padding-before-8:not(.frame-singleaccordion)     {padding-top: $v2;}
-.frame-padding-before-9:not(.frame-singleaccordion)     {padding-top: $v3;}
+ /* 85 Styles For Images */
+.frame-layout-2085 .ce-left      .ce-gallery                      {width: 85%;}
+.frame-layout-2085 .ce-right     .ce-gallery                      {width: 85%;}
+.frame-layout-2085 .ce-center    .ce-gallery                      {width: 85%; margin-left: 7.50%}
+.frame-layout-2085 .ce-gallery figure                             {display: block;}
+.frame-layout-2085 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2085 img                                            {width: 100%;}
 
-.frame-padding-after-1:not(.frame-singleaccordion)      {padding-bottom: $v02;}
-.frame-padding-after-2:not(.frame-singleaccordion)      {padding-bottom: $v03;}
-.frame-padding-after-3:not(.frame-singleaccordion)      {padding-bottom: $v05;}
-.frame-padding-after-4:not(.frame-singleaccordion)      {padding-bottom: $v06;}
-.frame-padding-after-5:not(.frame-singleaccordion)      {padding-bottom: $v07;}
-.frame-padding-after-6:not(.frame-singleaccordion)      {padding-bottom: $v1;}
-.frame-padding-after-7:not(.frame-singleaccordion)      {padding-bottom: $v15;}
-.frame-padding-after-8:not(.frame-singleaccordion)      {padding-bottom: $v2;}
-.frame-padding-after-9:not(.frame-singleaccordion)      {padding-bottom: $v3;}
+ /* 80 Styles For Images */
+.frame-layout-2080 .ce-left      .ce-gallery                      {width: 80%;}
+.frame-layout-2080 .ce-right     .ce-gallery                      {width: 80%;}
+.frame-layout-2080 .ce-center    .ce-gallery                      {width: 80%; margin-left:10.0%}
+.frame-layout-2080 .ce-gallery figure                             {display: block;}
+.frame-layout-2080 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2080 img                                            {width: 100%;}
 
-.frame-padding-side-1:not(.frame-singleaccordion)       {padding-left: $v02; padding-right: $v02;}
-.frame-padding-side-2:not(.frame-singleaccordion)       {padding-left: $v03; padding-right: $v03;}
-.frame-padding-side-3:not(.frame-singleaccordion)       {padding-left: $v05; padding-right: $v05;}
-.frame-padding-side-4:not(.frame-singleaccordion)       {padding-left: $v06; padding-right: $v06;}
-.frame-padding-side-5:not(.frame-singleaccordion)       {padding-left: $v07; padding-right: $v07;}
-.frame-padding-side-6:not(.frame-singleaccordion)       {padding-left: $v1;  padding-right: $v1;}
-.frame-padding-side-7:not(.frame-singleaccordion)       {padding-left: $v15; padding-right: $v15;}
-.frame-padding-side-8:not(.frame-singleaccordion)       {padding-left: $v2;  padding-right: $v2;}
-.frame-padding-side-9:not(.frame-singleaccordion)       {padding-left: $v3;  padding-right: $v3;}
+ /* 75 Styles For Images */
+.frame-layout-2075 .ce-left      .ce-gallery                      {width: 75%;}
+.frame-layout-2075 .ce-right     .ce-gallery                      {width: 75%;}
+.frame-layout-2075 .ce-center    .ce-gallery                      {width: 75%; margin-left: 12.50%}
+.frame-layout-2075 .ce-gallery figure                             {display: block;}
+.frame-layout-2075 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2075 img                                            {width: 100%;}
 
-/* Spacing Start *************************************************************************/
-.ce-row.spacing1 > div {padding-right: calc(#{$v02} / 2); padding-left: calc(#{$v02} / 2); }
-.ce-row.spacing2 > div {padding-right: calc(#{$v03} / 2); padding-left: calc(#{$v03} / 2); }
-.ce-row.spacing3 > div {padding-right: calc(#{$v05} / 2); padding-left: calc(#{$v04} / 2); }
-.ce-row.spacing4 > div {padding-right: calc(#{$v06} / 2); padding-left: calc(#{$v06} / 2); }
-.ce-row.spacing5 > div {padding-right: calc(#{$v07} / 2); padding-left: calc(#{$v07} / 2); }
-.ce-row.spacing6 > div {padding-right: calc(#{$v08} / 2); padding-left: calc(#{$v08} / 2); }
-.ce-row.spacing7 > div {padding-right: calc(#{$v1} / 2); padding-left: calc(#{$v1} / 2); }
-.ce-row.spacing8 > div {padding-right: $v05; padding-left: $v05; }
-.ce-row.spacing9 > div {padding-right: calc(#{$v2} / 2); padding-left: calc(#{$v2} / 2); }
-.ce-row.spacing10 > div {padding-right: calc(#{$v3} / 2); padding-left: calc(#{$v3} / 2); }
+ /* 70 Styles For Images */
+.frame-layout-2070 .ce-left      .ce-gallery                      {width: 70%;}
+.frame-layout-2070 .ce-right     .ce-gallery                      {width: 70%;}
+.frame-layout-2070 .ce-center    .ce-gallery                      {width: 70%; margin-left: 15.0%}
+.frame-layout-2070 .ce-gallery figure                             {display: block;}
+.frame-layout-2070 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2070 img                                            {width: 100%;}  
+
+ /* 65 Styles For Images */
+.frame-layout-2065 .ce-left      .ce-gallery                      {width: 65%;}
+.frame-layout-2065 .ce-right     .ce-gallery                      {width: 65%;}
+.frame-layout-2065 .ce-center    .ce-gallery                      {width: 65%; margin-left: 17.50%}
+.frame-layout-2065 .ce-gallery figure                             {display: block;}
+.frame-layout-2065 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2065 img                                            {width: 100%;}
+
+ /* 60 Styles For Images */
+.frame-layout-2060 .ce-left      .ce-gallery                      {width: 60%;}
+.frame-layout-2060 .ce-right     .ce-gallery                      {width: 60%;}
+.frame-layout-2060 .ce-center    .ce-gallery                      {width: 60%; margin-left: 20.0%}
+.frame-layout-2060 .ce-gallery figure                             {display: block;}
+.frame-layout-2060 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2060 img                                            {width: 100%;}  
+
+ /* 55 Styles For Images */
+.frame-layout-2055 .ce-left      .ce-gallery                      {width: 55%;}
+.frame-layout-2055 .ce-right     .ce-gallery                      {width: 55%;}
+.frame-layout-2055 .ce-center    .ce-gallery                      {width: 55%; margin-left: 22.50%}
+.frame-layout-2055 .ce-gallery figure                             {display: block;}
+.frame-layout-2055 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2055 img                                            {width: 100%;}
+
+ /* 50 Styles For Images */
+.frame-layout-2050 .ce-left      .ce-gallery                      {width: 50%;}
+.frame-layout-2050 .ce-right     .ce-gallery                      {width: 50%;}
+.frame-layout-2050 .ce-center    .ce-gallery                      {width: 50%; margin-left: 25%}
+.frame-layout-2050 .ce-gallery figure                             {display: block;}
+.frame-layout-2050 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2050 img                                            {width: 100%;}
+
+ /* 45 Styles For Images */
+.frame-layout-2045 .ce-left      .ce-gallery                      {width: 45%;}
+.frame-layout-2045 .ce-right     .ce-gallery                      {width: 45%;}
+.frame-layout-2045 .ce-center    .ce-gallery                      {width: 45%; margin-left: 27.50%}
+.frame-layout-2045 .ce-gallery figure                             {display: block;}
+.frame-layout-2045 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2045 img                                            {width: 100%;}
+
+ /* 40 Styles For Images */
+.frame-layout-2040 .ce-left      .ce-gallery                      {width: 40%;}
+.frame-layout-2040 .ce-right     .ce-gallery                      {width: 40%;}
+.frame-layout-2040 .ce-center    .ce-gallery                      {width: 40%; margin-left: 30%}
+.frame-layout-2040 .ce-gallery figure                             {display: block;}
+.frame-layout-2040 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2040 img                                            {width: 100%;}
+
+ /* 35 Styles For Images */
+.frame-layout-2035 .ce-left      .ce-gallery                      {width: 35%;}
+.frame-layout-2035 .ce-right     .ce-gallery                      {width: 35%;}
+.frame-layout-2035 .ce-center    .ce-gallery                      {width: 35%; margin-left: 32.50%}
+.frame-layout-2035 .ce-gallery figure                             {display: block;}
+.frame-layout-2035 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2035 img                                            {width: 100%;}
+
+ /* 30 Styles For Images */
+.frame-layout-2030 .ce-left      .ce-gallery                      {width: 30%;}
+.frame-layout-2030 .ce-right     .ce-gallery                      {width: 30%;}
+.frame-layout-2030 .ce-center    .ce-gallery                      {width: 30%; margin-left: 35%}
+.frame-layout-2030 .ce-gallery figure                             {display: block;}
+.frame-layout-2030 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2030 img                                            {width: 100%;}
+
+ /* 25 Styles For Images */
+.frame-layout-2025 .ce-left      .ce-gallery                      {width: 25%;}
+.frame-layout-2025 .ce-right     .ce-gallery                      {width: 25%;}
+.frame-layout-2025 .ce-center    .ce-gallery                      {width: 25%; margin-left: 37.50%}
+.frame-layout-2025 .ce-gallery figure                             {display: block;}
+.frame-layout-2025 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2025 img                                            {width: 100%;}
+
+ /* 20 Styles For Images */
+.frame-layout-2020 .ce-left      .ce-gallery                      {width: 20%;}
+.frame-layout-2020 .ce-right     .ce-gallery                      {width: 20%;}
+.frame-layout-2020 .ce-center    .ce-gallery                      {width: 20%; margin-left: 40%}
+.frame-layout-2020 .ce-gallery figure                             {display: block;}
+.frame-layout-2020 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2020 img                                            {width: 100%;}  
+
+ /* 15 Styles For Images */
+.frame-layout-2015 .ce-left      .ce-gallery                      {width: 15%;}
+.frame-layout-2015 .ce-right     .ce-gallery                      {width: 15%;}
+.frame-layout-2015 .ce-center    .ce-gallery                      {width: 15%; margin-left: 42.50%}
+.frame-layout-2015 .ce-gallery figure                             {display: block;}
+.frame-layout-2015 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2015 img                                            {width: 100%;}
+
+ /* 10 Styles For Images */
+.frame-layout-2010 .ce-left      .ce-gallery                      {width: 10%;}
+.frame-layout-2010 .ce-right     .ce-gallery                      {width: 10%;}
+.frame-layout-2010 .ce-center    .ce-gallery                      {width: 10%; margin-left: 45%}
+.frame-layout-2010 .ce-gallery figure                             {display: block;}
+.frame-layout-2010 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2010 img                                            {width: 100%;}
+
+ /* 10 Styles For Images */
+.frame-layout-2005 .ce-left      .ce-gallery                      {width: 5%;}
+.frame-layout-2005 .ce-right     .ce-gallery                      {width: 5%;}
+.frame-layout-2005 .ce-center    .ce-gallery                      {width: 5%; margin-left: 47.5%}
+.frame-layout-2005 .ce-gallery figure                             {display: block;}
+.frame-layout-2005 .ce-column                                     {margin-right: 0; width: 100%;} 
+.frame-layout-2005 img                                            {width: 100%;}
 
 

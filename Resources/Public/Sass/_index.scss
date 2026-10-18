@@ -1,7 +1,13 @@
 /* Bootstrap */
+
+
 @import 'Bootstrap/bootstrap.scss';
-@import '_helpers.scss';
 @import '_initalize.scss';
-@import '_spacepads.scss';
+@import '_spaces.scss';
+@import '_helpers.scss';
+
+@import 'Content/_base.scss';
 @import 'Content/_links.scss';
-@import 'Content/_aos.scss';
+
+
+//@import 'Content/_aos.scss';
