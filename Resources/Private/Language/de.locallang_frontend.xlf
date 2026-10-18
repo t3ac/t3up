@@ -4,85 +4,66 @@
      <header/>
         <body>
             <trans-unit id="here">
-                 <source>You are here</source>
-                 <target state="translated">Sie sind hier</target>
+                 <source>Sie sind hier</source>
             </trans-unit>
             <trans-unit id="prev">
-                 <source>Previous</source>
-                 <target state="translated">zurück</target>
+                 <source>zurück</source>
             </trans-unit>
             <trans-unit id="next">
-                 <source>Next</source>
-                 <target state="translated">weiter</target>    
+                 <source>weiter</source>    
             </trans-unit>        
             <trans-unit id="monthview">
-                 <source>Month</source>
-                 <target state="translated">Monat</target>   
+                 <source>Monat</source>   
             </trans-unit>    
             <trans-unit id="listview">
-                 <source>List view</source>
-                 <target state="translated">Listenansicht</target>  
+                 <source>Listenansicht</source>  
             </trans-unit>
             
             <trans-unit id="colormode">
-                 <source>Colormode</source>
-                 <target state="translated">Farbmodi</target>
+                 <source>Farbmodi</source>
             </trans-unit>
             <trans-unit id="colormodedesc">
-                 <source>Shows the Colormode</source>
-                 <target state="translated">Zeigt die Farbmodi</target>
+                 <source>Zeigt die Farbmodi</source>
             </trans-unit>
             
             <trans-unit id="colormodetitle">
-                 <source>Light-/darkmodus</source>
-                 <target state="translated">Hell-/Dunkelmodus</target>
+                 <source>Hell-/Dunkelmodus</source>
             </trans-unit>
             <trans-unit id="system">
-                 <source>Standard</source>
-                 <target state="translated">Systemstandard</target>                 
+                 <source>Systemstandard</source>                 
             </trans-unit>
             <trans-unit id="light">
-                 <source>Light</source>
-                 <target state="translated">Hell</target>                         
+                 <source>Hell</source>                         
             </trans-unit>                      
             <trans-unit id="dark">
-                 <source>Dark</source>
-                 <target state="translated">Dunkel</target>                 
+                 <source>Dunkel</source>                 
             </trans-unit>
             <trans-unit id="fontsize">
-                 <source>Change fontsize</source>
-                 <target state="translated">Schriftgrößen ändern</target>                 
+                 <source>Schriftgrößen ändern</source>                 
             </trans-unit>    
             <trans-unit id="search">
-                 <source>Search</source>
-                 <target state="translated">Suche</target>                 
+                 <source>Suche</source>                 
             </trans-unit>                
                 
             <trans-unit id="language_select">
-                 <source>Language selection</source>
-                 <target state="translated">Sprachauswahl</target>                  
+                 <source>Sprachauswahl</source>                  
             </trans-unit>    
             
             <trans-unit id="location">
-                 <source>Location</source>
-                 <target state="translated">Standort</target>                     
+                 <source>Standort</source>                     
             </trans-unit>
             <trans-unit id="rss">
-                 <source>Subscribe to RSS feed</source>
-                 <target state="translated">RSS-Feed abbonieren</target>
+                 <source>RSS-Feed abbonieren</source>
             </trans-unit>
             <trans-unit id="searchpage">
-                 <source>Search page</source>
-                 <target state="translated">Such-Seite</target>
+                 <source>Such-Seite</source>
             </trans-unit>    
                   
             <trans-unit id="assets">
-                 <source>Assets</source>
-                 <target state="translated">Bilder</target>
+                 <source>Bilder</source>
             </trans-unit>    
             <trans-unit id="here">
-                 <source>You are here</source>
-                 <target state="translated">Sie sind hier</target>
+                 <source>Sie sind hier</source>
             </trans-unit>
         </body>
     </file>

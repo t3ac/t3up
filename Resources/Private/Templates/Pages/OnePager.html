@@ -2,9 +2,9 @@
 	<f:layout name="Standard" />
 	<f:section name="Content">
 		<f:render partial="Header.html" section="Header" arguments="{_all}" />
-		<main id="content" role="main" class="onePager position-relative">
+		<main id="content" role="main" class="onePager position-relative {settings.t3upComponents.mainPadding}">
 	  		<div class="overlay"></div> 
-			<f:format.raw>{media}</f:format.raw> 
+			<f:render.contentArea contentArea="{content.stage}" />
 			<div class="container beforeContent">  
 				<div class="row">
 					 <f:if condition="{breadcrumbtop} != '1'">			
@@ -13,7 +13,7 @@
 					  <f:if condition="{page.pageRecord.deltitle} != '1'">
 						<f:if condition="{page.pageRecord.showtitle} == 0">
 							<f:then>
-							  <f:format.nl2br><h1 class="{h1wrap}">{title}</h1></f:format.nl2br>
+							  <f:format.nl2br><h1 class="{settings.t3upTypography.h1.wrap}">{title}</h1></f:format.nl2br>
 							 </f:then> 
 							<f:else>
                                 <h1 class="outof">{title}</h1>  
@@ -24,8 +24,7 @@
 			</div>
 			 <div class="col-12 content">
 				<!--TYPO3SEARCH_begin--> 
-				
-					<f:format.raw>{content}</f:format.raw>
+					<f:render.contentArea contentArea="{content.main}" />
 				<!--TYPO3SEARCH_end-->  
 			 </div>
 			<f:if condition="{page.pageRecord.previousnext}">

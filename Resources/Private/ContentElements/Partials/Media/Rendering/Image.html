@@ -19,22 +19,10 @@
         <source srcset="{f:uri.image(image: file, treatIdAsReference: true, fileExtension: 'jpeg')}">         
 
 		<f:media file="{file}" alt="{file.alternative}" title="{file.title}" loading="lazy" decoding="{settings.media.imageDecoding}" width="{data.imagewidth}" height="{data.imageheight}"  />
-        
-		<f:if condition="{data.inf}" >
-            <f:if condition="{file.properties.copyright}" >   
-                <div class="imageinf">
-                    <span class="symbol">&#xF05a;</span><span>&nbsp;copyright: <f:format.nl2br>{file.properties.copyright}</f:format.nl2br></span>
-                    <f:if condition="{file.properties.creator}"><br /><span><f:format.nl2br>{file.properties.creator}</f:format.nl2br></span></f:if>   
-                    <f:if condition="{file.properties.publisher}"><br /><span><f:format.nl2br>{file.properties.publisher}</f:format.nl2br></span></f:if>
-                    <f:if condition="{file.properties.source}"><br /><span><f:format.nl2br>{file.properties.source}</f:format.nl2br></span></f:if>
-                    <f:if condition="{file.properties.content_creation_date}"><br /><span><f:format.date format="%Y">{file.properties.content_creation_date}</f:format.date></span></f:if>
-                </div>
-		    </f:if>                
-		</f:if>
-		
+        		
         <f:if condition="{data.rollover}">
-            <div class="rollover position-absolute flex-wrap z-10 d-inline-flex align-items-center">
-                <div>
+            <div class="rollover position-absolute">
+                <div class="d-flex h-100 align-items-center">
 	            <span class="h4 d-block">{file.title}</span>
 	            <f:if condition="{file.description}" >
 	                <span class="p">{file.description}</span>

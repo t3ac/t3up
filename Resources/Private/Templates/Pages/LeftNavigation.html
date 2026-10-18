@@ -2,28 +2,17 @@
 	<f:layout name="Standard" />
 	<f:section name="Content">
 		<f:render partial="Header.html" section="Header" arguments="{_all}" />
-		<main id="content" class="leftNavigation position-relative">
+		<main id="content" class="leftNavigation position-relative {settings.t3upComponents.mainPadding}">
 			<div class="overlay"></div> 
-            <f:format.raw>{media}</f:format.raw>
+            <f:render.contentArea contentArea="{content.stage}" />
 			<div class="container">          
 				<div class="row">
-					<div class="col-12 col-lg-3 left pe-lg-5">
-						<f:if condition="{page.pageRecord.hidenav} != '1'">
-							<f:then>
-							<!-- beginn: subnavigation #nav -->
-								<div class="d-none d-lg-block subnav"> 
-									<f:render partial="Submenu/Submenu" arguments="{_all}"/>
-								</div>
-							<!-- ende: subnavigation #nav -->   
-							</f:then>
-						</f:if>
-						<f:if condition="{left}">
-							<!--TYPO3SEARCH_begin-->             
-								<f:format.raw>{left}</f:format.raw>
-							<!--TYPO3SEARCH_end-->                         
-					  </f:if>  
+					<div class=" d-none d-lg-block col-lg-4 subnav pe-lg-5">
+						<!-- beginn: subnavigation #nav -->
+							<f:render partial="Submenu/Submenu" arguments="{_all}"/>
+						<!-- ende: subnavigation #nav -->   
 					</div>
-                    <div class="col-12 col-lg-8 content px-5 pe-lg-3 ps-lg-5"> 
+                    <div class="col-12 col-lg-8 content ps-lg-3"> 
                      	<f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>	  
 		                <f:if condition="{page.pageRecord.deltitle} != '1'">
 		                  <f:if condition="{page.pageRecord.showtitle} == 0">
@@ -36,7 +25,7 @@
 		                  </f:if>
 		                </f:if>
                         <!--TYPO3SEARCH_begin-->
-                            <f:format.raw>{content}</f:format.raw>
+                            <f:render.contentArea contentArea="{content.main}" />
                          <!--TYPO3SEARCH_end-->  
                          <f:if condition="{page.pageRecord.previousnext}">
                             <f:cObject typoscriptObjectPath="lib.navigation.prevnext" />

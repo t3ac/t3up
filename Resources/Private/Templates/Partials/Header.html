@@ -1,20 +1,21 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
     <f:spaceless>
         <f:section name="Header">
-            <header id="header" class="{dynheader}" role="region">
-                <f:if condition="{top} == 1">
+            <header id="header" class="{settings.t3upHeader.dynheader}" role="region">
+            
+                <f:if condition="{settings.t3upHeader.toppos} == 1">
                     <f:render section="top" arguments="{_all}"/>
-                    <div class="{headerAreaWrap}"> 
+                    <div class="{settings.t3upHeader.headerAreaWrap}"> 
 	                    <f:cObject typoscriptObjectPath="lib.header.logo" />
 	                    <f:cObject typoscriptObjectPath="lib.header.headerextra" />
 	                    <f:render section="navi" arguments="{_all}"/>
 	                </div>
                 </f:if>
                 
-                <f:if condition="{top} == 2 || {top} == 0">                
-                    <div class="{headerAreaWrap}"> 
+                <f:if condition="{settings.t3upHeader.toppos} == 2 || {settings.t3upHeader.toppos} == 0">                
+                    <div class="{settings.t3upHeader.headerAreaWrap}"> 
                         <f:cObject typoscriptObjectPath="lib.header.logo" />
-                        <div>
+                        <div class="{settings.t3upHeader.headerInnnerAreaWrap}">
 	                        <f:render section="top" arguments="{_all}"/>
 	                        <f:cObject typoscriptObjectPath="lib.header.headerextra" />
 	                        <f:render section="navi" arguments="{_all}"/>  
@@ -32,9 +33,9 @@
 
 		<f:section name="top">
 			<div class="top">
-				<div class="{topouterwrap}">
+				<div class="{settings.t3upHeader.topOuterWrap}">
 					<f:cObject typoscriptObjectPath="lib.header.topexta" />
-					<ul id="service_nav" class="{topwrap}">
+					<ul id="service_nav" class="{settings.t3upHeader.topWrap}">
 						<f:cObject typoscriptObjectPath="lib.header.top" />
 						<f:if condition="{languagemenu}"><f:render partial="SpecialMenu/Language" arguments="{_all}"/></f:if>
 					</ul>
@@ -43,16 +44,16 @@
 		</f:section>
 		
 		<f:section name="navi">
-		    <f:if condition="{navstyle} == 1">
+		    <f:if condition="{settings.t3upNavigation.style} == 1">
 		        <f:render partial="Menu/StandardNavigation" arguments="{_all}"/>
 		    </f:if>
-		    <f:if condition="{navstyle} == 2">
+		    <f:if condition="{settings.t3upNavigation.style} == 2">
 		        <f:render partial="Menu/ActiveNavigation" arguments="{_all}"/>
 		    </f:if>
-		    <f:if condition="{navstyle} == 3">
+		    <f:if condition="{settings.t3upNavigation.style} == 3">
 		        <f:render partial="Menu/BlockNavigation" arguments="{_all}"/>
 		    </f:if>
-		    <f:if condition="{navstyle} == 4">
+		    <f:if condition="{settings.t3upNavigation.style} == 4">
 		        <f:render partial="Menu/AnkerNavigation" arguments="{_all}"/>       
 		    </f:if>
 		</f:section>
