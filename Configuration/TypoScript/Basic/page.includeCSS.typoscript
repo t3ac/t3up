@@ -1,13 +1,19 @@
 ## Die CSS-Variablen ############################################################################
 
-@import 'EXT:t3up/Configuration/Sets/SitePackage/TypoScript/Basic/page.scssvariables.typoscript'
+// @import 'EXT:t3up/Configuration/Sets/SitePackage/TypoScript/Basic/page.scssvariables.typoscript'
 
 plugin.tx_wsscss.variables{
 
     // COMPONENTS
     container                       = {$t3upComponents.container}px
-    mainPadding                     = {$t3upComponents.mainPadding}
-    contentPadding                  = {$t3upComponents.contentPadding}
+    
+    base1							   = {$t3upComponents.spacing1}
+    base2							   = {$t3upComponents.spacing2}
+    base3							   = {$t3upComponents.spacing3}
+    base4							   = {$t3upComponents.spacing4}
+    base5							   = {$t3upComponents.spacing5}
+    base6							   = {$t3upComponents.spacing6}
+    base7							   = {$t3upComponents.spacing7}
  
     // BREADCRUMB 
     breadcrumbTextSize              = {$t3upBreadcrumb.breadcrumbTextSize}
@@ -20,8 +26,12 @@ plugin.tx_wsscss.variables{
     linkColor                       = {$t3upColors.linkColor}
     linkHoverColor                  = {$t3upColors.linkHoverColor} 
     shadow                          = {$t3upColors.shadow}  
-    overlay                         = {$t3upColors.overlay}  
     
+    overlay                         = {$t3upColors.overlay}  
+    pictureoverlay                  = {$t3upColors.pictureoverlay}  
+    pictureoverlayTextColor         = {$t3upColors.pictureoverlayTextColor}    
+    pictureoverlayTextSize         = {$t3upColors.pictureoverlayTextSize}       
+        
     // Footer Colors     
     footer1BgColor                  = {$t3upColors.footer1BgColor}    
     footer1TextColor                = {$t3upColors.footer1TextColor}       
@@ -52,9 +62,20 @@ plugin.tx_wsscss.variables{
     headerTopSubLinkHoverColor      = {$t3upColors.headerTopSubLinkHoverColor}  
     
     // Header          
+    tableHeader                     = {$t3upColors.tableHeader}  
+    tableLineColor                  = {$t3upColors.tableLineColor}  
+    tableHeaderLineColor            = {$t3upColors.tableHeaderLineColor}  
+    tableHeaderColor                = {$t3upColors.tableHeaderColor}   
+    
+    // Header Logo
+    headerLogoMaxWidth              = {$t3upHeader.headerLogoMaxWidth}   
+    logoMaxWidth                    = {$t3upHeader.logoMaxWidth}      
+       
+     // table          
     headerSymbolFontSize            = {$t3upHeader.symbolFontSize}  
     headerLogoWidth                 = {$t3upHeader.logoWidth}   
-    headerMoilLogoWidth             = {$t3upHeader.mobilLogoWidth}  
+    headerMoilLogoWidth             = {$t3upHeader.mobilLogoWidth}     
+    
              
     // Heading Colors                 
     h1-color                        = {$t3upColors.h1-color}   
@@ -72,10 +93,14 @@ plugin.tx_wsscss.variables{
     navLinkBorderBottomHeight       = {$t3upColors.navLinkBorderBottomHeight}px  
     navFontSize                     = {$t3upTypography.navFontSize}
     navFontWeight                   = {$t3upTypography.navFontWeight}   
+    
+    // Subnavigation       
     subnavLinkColor                 = {$t3upColors.subnavLinkColor}   
     subnavLinkHoverColor            = {$t3upColors.subnavLinkHoverColor}      
     subnavBG                        = {$t3upColors.subnavBG}    
-    linkPadding                     = {$t3upNavigation.linkPadding}
+    subnavSubmenuBGColor            = {$t3upColors.subnavSubmenuBGColor}         
+    subnavLineColor                 = {$t3upColors.subnavLineColor} 
+ 
             
     // Pagecolors      
     blue                            = {$t3upColors.blue}   
@@ -94,7 +119,15 @@ plugin.tx_wsscss.variables{
     info                            = {$t3upColors.info}   
     danger                          = {$t3upColors.danger}  
     success                         = {$t3upColors.success}   
-    warning                         = {$t3upColors.warning}          
+    warning                         = {$t3upColors.warning}        
+    
+    // MMColor
+    mmTopBG                         = {$t3upColors.mmTopBG}     
+    mmLiBg                          = {$t3upColors.mmLiBg}         
+    mmLinkColor                     = {$t3upColors.mmLinkColor}     
+    mmTopColor                      = {$t3upColors.mmTopColor}         
+    mmLinkFontSize                  = {$t3upColors.mmLinkFontSize}              
+         
         
     // Socialmedia 
     socialSymbolFontColor           = {$t3upSocialmedia.socialSymbolFontColor} 
@@ -114,6 +147,38 @@ plugin.tx_wsscss.variables{
     brand                           = {$t3upFonts.brand}
     fontPath                        = {$t3upFonts.fontPath}
     
+    // Columns  
+    c8                              = 8.333333333333333%;
+    c10                             = 10%;
+    c15                             = 15%;    
+    c16                             = 16.6666666666666%;    
+    c20                             = 20%;
+    c25                             = 25%
+    c30                             = 30%;
+    c33                             = 33.33333333333333%;
+    c41                             = 41.66666666666667%;
+    c50                             = 50%;
+    c58                             = 58.33333333333333%;
+    c66                             = 66.66666667%;
+    c70                             = 70%;    
+    c75                             = 75%;    
+    c83                             = 83.33333333333333%;    
+    c91                             = 91.66666666666667%;    
+    c100                            = 100%;
+
+    // Bootstrapcolors  
+    white                           = #ffffff
+    black                           = #000000
+    gray-100                        = #f8f9fa
+    gray-200                        = #e9ecef
+    gray-300                        = #dee2e6
+    gray-400                        = #ced4da
+    gray-500                        = #adb5bd
+    gray-600                        = #6c757d
+    gray-700                        = #495057
+    gray-800                        = #343a40
+    gray-900                        = #212529
+    
      # ToTop -----------------------------------------------------------------------   
     totopBgColor                    = {$t3upTotop.totopBgColor}
     totopLinkColor                  = {$t3upTotop.totopLinkColor}
@@ -131,28 +196,35 @@ plugin.tx_wsscss.variables{
     
     h1                              = {$t3upTypography.h1}
     h1-fontweight                   = {$t3upTypography.h1.fontWeight}
-    h1-lineheight                   = {$t3upTypography.h1.lineheight}
+    h1-lineheight                   = {$t3upTypography.h1.lineHeight}
     h1-margin                       = {$t3upTypography.h1.margin}   
     h1-alignment                    = {$t3upTypography.h1.alignment}     
     
     h2                              = {$t3upTypography.h2}
     h2-fontweight                   = {$t3upTypography.h2.fontWeight}
-    h2-lineheight                   = {$t3upTypography.h2.lineheight}
+    h2-lineheight                   = {$t3upTypography.h2.lineHeight}
     h2-margin                       = {$t3upTypography.h2.margin}  
     
     h3                              = {$t3upTypography.h3}
     h3-fontweight                   = {$t3upTypography.h3.fontWeight}
-    h3-lineheight                   = {$t3upTypography.h3.lineheight}
+    h3-lineheight                   = {$t3upTypography.h3.lineHeight}
     h3-margin                       = {$t3upTypography.h3.margin}  
        
     h4                              = {$t3upTypography.h4}
     h4-fontweight                   = {$t3upTypography.h4.fontWeight}
-    h4-lineheight                   = {$t3upTypography.h4.lineheight}
+    h4-lineheight                   = {$t3upTypography.h4.lineHeight}
     h4-margin                       = {$t3upTypography.h4.margin}        
        
     footer1fontsize                 = {$t3upTypography.footer1.fontSize}
     footer3fontsize                 = {$t3upTypography.footer3.fontSize}
-   
+    
+    # Arrows -----------------------------------------------------------------------
+    add                             = {$t3upTypography.add}       
+    remove                          = {$t3upTypography.remove}    
+    forward                         = {$t3upTypography.forward}       
+    backward                        = {$t3upTypography.backward}         
+
+      
 }
 
 page.includeCSS    = COA
@@ -170,10 +242,8 @@ page.includeCSS{
     dark                            = EXT:t3up/Resources/Public/Sass/Colormode/_dark.scss
     contrast                        = EXT:t3up/Resources/Public/Sass/Colormode/_contrast.scss
 
-    image                           = EXT:t3up/Resources/Public/Sass/Content/_image.scss
-    
-
     ///////
+    
     bootstrap                       = EXT:t3up/Resources/Public/Sass/Bootstrap/bootstrap.scss
     bootstrap.if.isTrue             = {$t3upFiles.Scss.bootstrap}    
     
@@ -195,10 +265,13 @@ page.includeCSS{
     header                          = EXT:t3up/Resources/Public/Sass/Content/_header.scss    
     header.if.isTrue                = {$t3upFiles.Scss.header}
     
+    image                           = EXT:t3up/Resources/Public/Sass/Content/_image.scss    
+    image.if.isTrue                 = {$t3upFiles.Scss.image}
+    
     lightbox                        = EXT:t3up/Resources/Public/Sass/Content/_lightbox.scss    
     lightbox.if.isTrue              = {$t3upFiles.Scss.lightbox}    
     
-    mobilmenu                       = EXT:t3up/Resources/Public/Sass/Content/_mmenu.scss  
+    mobilmenu                       = EXT:t3up/Resources/Public/Sass/Content/_mmenu-light.scss  
     mobilmenu.if.isTrue             = {$t3upComponents.mmenu}
     
     navigation                      = EXT:t3up/Resources/Public/Sass/Content/_navigation.scss    
@@ -210,16 +283,22 @@ page.includeCSS{
     subnavigation                   = EXT:t3up/Resources/Public/Sass/Content/_subnavigation.scss    
     subnavigation.if.isTrue         = {$t3upNavigation.subnavigation}
     
+    table                           = EXT:t3up/Resources/Public/Sass/Content/_table.scss    
+    table.if.isTrue                 = {$t3upFiles.Scss.table}   
+    
     totop                           = EXT:t3up/Resources/Public/Sass/Content/_totop.scss    
     totop.if.isTrue                 = {$t3upTotop.totop}
     
     # Own
     own                             = {$t3upFiles.Scss.Own}  
-    
+      
     //////
     main                            = EXT:t3up/Resources/Public/Sass/_index.scss
     main.linenumber                 = true    
     main.forceOnTop                 = 1
     main.outputStyle                = expanded 
+    
+    
+    
      
 }

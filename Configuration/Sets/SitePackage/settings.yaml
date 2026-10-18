@@ -1,0 +1,5 @@
+page.pageview.paths: 'EXT:t3up/Resources/Private/PageView/'
+
+page.tracking.google.trackingID: ''
+page.tracking.google.anonymizeIp: '1'
+

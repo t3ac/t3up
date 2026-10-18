@@ -9,11 +9,11 @@ services:
     exclude: '../Classes/Domain/Model/*'
     autowire: true
 
-  T3ac\T3up\Hooks\DataHandlerHook:
-    tags:
-      - name: event.listener
-        identifier: 't3up-datamap-hook'
-        event: TYPO3\CMS\Core\DataHandling\Event\AfterDatabaseOperationsEvent
+#  T3ac\T3up\Hooks\DataHandlerHook:
+#    tags:
+#      - name: event.listener
+#        identifier: 't3up-datamap-hook'
+#        event: TYPO3\CMS\Core\DataHandling\Event\AfterDatabaseOperationsEvent
 
 #  T3ac.t3up.updates.content_spacing_update:
 #    class: T3ac\T3up\Updates\ContentSpacingUpdate
@@ -29,10 +29,10 @@ services:
 #      - name: console.command
 #        command: 't3up:debug:container'
 
-  T3ac\T3up\Command\CreateFontsSymlinkCommand:
-   tags:
-      - name: console.command
-        command: 't3up:symlink:fonts'  
+#  T3ac\T3up\Command\CreateFontsSymlinkCommand:
+#   tags:
+#      - name: console.command
+ #       command: 't3up:symlink:fonts'  
   
 #  T3ac\T3up\Command\UpdateTypoScriptConstantsCommand:
 #    tags:

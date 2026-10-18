@@ -3,7 +3,16 @@ categories:
   T3up-Config:     
   
   T3up-Components:   
-        
+  T3up-Components.layouts:
+    parent: T3up-Components    
+  T3up-Components.spacing:
+    parent: T3up-Components   
+  T3up-Components.tsconfig:
+    parent: T3up-Components    
+  T3up-Components.misc:
+    parent: T3up-Components  
+
+
   T3up-Breadcrumb:   
     
   T3up-Colors:
@@ -21,8 +30,11 @@ categories:
     parent: T3up-Colors   
   T3up-Colors.specials:
     parent: T3up-Colors  
-    
-
+  T3up-Colors.tablecolor:
+    parent: T3up-Colors  
+  T3up-Colors.mobilcolor:
+    parent: T3up-Colors  
+  
   T3up-Files:    
   T3up-Files.Js: 
     parent: T3up-Files
@@ -51,7 +63,11 @@ categories:
   T3up-Totop:
     
   T3up-Typography:
-    
+  T3up-Typography.header:
+    parent: T3up-Typography
+  T3up-Typography.arrows:
+    parent: T3up-Typography
+
   T3up-Socialmedia:
     
 settings:
@@ -93,173 +109,173 @@ settings:
   t3upColors.basicColor:  
     category: T3up-Colors.basic
     type: color
-    default: 'rgba(30,30,30,1)'
+    default: '#181818'
   t3upColors.bodyBgColor:
     category: T3up-Colors.basic
     type: color
-    default: 'rgba(255,255,255,1)'
+    default: '#ffffff'
   t3upColors.textColor:
     category: T3up-Colors.basic
     type: color
-    default: 'rgba(30,30,30,1)'
+    default: '#181818'
   t3upColors.linkColor:
     category: T3up-Colors.basic
     type: color
-    default: 'rgba(30,30,30,1)'
+    default: '#181818'
   t3upColors.linkHoverColor:
     category: T3up-Colors.basic
     type: color
-    default: 'rgba(0,0,0,1)'
+    default: '#000000'
   t3upColors.shadow:
     category: T3up-Colors.basic
     type: string
-    default: '0 $v03 $v05 0 rgba(0,0,0,.2)'    
+    default: '0 .25rem .5rem 0 #00000011'    
   t3upColors.overlay:
     category: T3up-Colors.basic
     type: string
-    default: 'rgba(33, 33, 33, 0.35)'    
+    default: '#181818'    
 
     
   # Footer ---------------------------  
   t3upColors.footer1BgColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(255,255,255,0)'       
+    default: '#ffffff00'       
   t3upColors.footer1TextColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(30,30,30,1)'  
+    default: '#181818'  
   t3upColors.footer1LinkColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(30,30,30,1)'  
+    default: '#181818'  
   t3upColors.footer1LinkHoverColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(0,0,0,1)'     
+    default: '#000000'     
   t3upColors.footer2BgColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(255,255,255,0)'       
+    default: '#ffffff00'       
   t3upColors.footer2TextColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(30,30,30,1)' 
+    default: '#181818' 
   t3upColors.footer2LinkColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(30,30,30,1)'    
+    default: '#181818'    
   t3upColors.footer2LinkHoverColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(0,0,0,1)'      
+    default: '#000000'      
   t3upColors.footer3BgColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(255,255,255,0)'       
+    default: '#ffffff00'       
   t3upColors.footer3TextColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(30,30,30,1)'   
+    default: '#181818'   
   t3upColors.footer3LinkColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(30,30,30,1)'       
+    default: '#181818'       
   t3upColors.footer3LinkHoverColor:
     category: T3up-Colors.footer
     type: color
-    default: 'rgba(0,0,0,1)'    
+    default: '#000000'    
         
   # Header ---------------------------  
   t3upColors.headerBgColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(0,0,0,0)'  
+    default: '#ffffff'  
   t3upColors.headerBgBlendColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(0,0,0,1)'      
+    default: '#000000'      
   t3upColors.headerTextColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(30,30,30,1)'   
+    default: '#181818'   
   t3upColors.headerLinkColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(30,30,30,1)' 
+    default: '#181818' 
   t3upColors.headerLinkHoverColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(0,0,0,1)' 
+    default: '#000000' 
   t3upColors.headerTopBgColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(255,255,255,0)'     
+    default: '#ffffff'     
   t3upColors.headerTopTextColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(30,30,30,1)'   
+    default: '#181818'   
   t3upColors.headerTopLinkColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(30,30,30,1)' 
+    default: '#181818' 
   t3upColors.headerTopLinkHoverColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(0,0,0,1)' 
+    default: '#000000' 
   t3upColors.headerTopSubBgColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(255,255,255,0)'     
+    default: '#ffffff'     
   t3upColors.headerTopSubTextColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(30,30,30,1)'   
+    default: '#181818'   
   t3upColors.headerTopSubLinkColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(30,30,30,1)' 
+    default: '#181818' 
   t3upColors.headerTopSubLinkHoverColor:
     category: T3up-Colors.header
     type: color
-    default: 'rgba(0,0,0,1)' 
+    default: '#000000' 
   
          
   # Heading --------------------------     
   t3upColors.h1-color:
     category: T3up-Colors.heading
     type: color
-    default: 'rgba(30,30,30,1)'
+    default: '#181818'
   t3upColors.h2-color:
     category: T3up-Colors.heading
     type: color
-    default: 'rgba(30,30,30,1)'
+    default: '#181818'
   t3upColors.h3-color:
     category: T3up-Colors.heading
     type: color
-    default: 'rgba(30,30,30,1)'
+    default: '#181818'
   t3upColors.h4-color:
     category: T3up-Colors.heading
     type: color
-    default: 'rgba(30,30,30,1)'
+    default: '#181818'
 
   # Navigation ----------------------       
   t3upColors.navLinkColor:
     category: T3up-Colors.navigation
     type: color
-    default: 'rgba(30,30,30,1)'    
+    default: '#181818'    
   t3upColors.navLinkHoverColor:
     category: T3up-Colors.navigation
     type: color
-    default: 'rgba(0,0,0,1)' 
+    default: '#000000' 
   t3upColors.navLinkHoverBGColor:
     category: T3up-Colors.navigation
     type: color
-    default: 'rgba(0,0,0,1)'    
+    default: '#000000'    
   t3upColors.navLinkBorderBottomColor:
     category: T3up-Colors.navigation
     type: color
-    default: 'rgba(0,0,0,1)'      
+    default: '#000000'      
   t3upColors.navLinkBorderBottomHeight:
     category: T3up-Colors.navigation
     type: int
@@ -267,24 +283,24 @@ settings:
   t3upColors.subnavLinkColor:
     category: T3up-Colors.navigation
     type: color
-    default: 'rgba(30,30,30,1)'    
+    default: '#181818'    
   t3upColors.subnavLinkHoverColor:
     category: T3up-Colors.navigation
     type: color
-    default: 'rgba(0,0,0,1)'    
+    default: '#000000'    
   t3upColors.subnavBG:
     category: T3up-Colors.navigation
     type: color
-    default: 'rgba(255, 255, 255, .98)'     
-  t3upColors.subnavigationLinkColor:
+    default: '#ffffff' 
+  t3upColors.subnavSubmenuBGColor:
     category: T3up-Colors.navigation
     type: color
-    default: 'rgba(99,99,99,1)'    
-  t3upColors.subnavigationLinkHoverColor:
+    default: '#000000'       
+  t3upColors.subnavLineColor:
     category: T3up-Colors.navigation
     type: color
-    default: 'rgba(0,0,0,1)'  
-    
+    default: '#cccccc'  
+  
   # Pagecolor ------------------------     
   t3upColors.blue:
     category: T3up-Colors.pagecolors
@@ -339,11 +355,11 @@ settings:
   t3upColors.pictureoverlay:
     category: T3up-Colors.specials
     type: color
-    default: 'rgba(255,255,255, 0.75)'  
+    default: '#ffffff44'  
   t3upColors.pictureoverlayTextColor:
     category: T3up-Colors.specials
     type: color
-    default: 'rgba(0,0,0,1)'     
+    default: '#000000'     
   t3upColors.pictureoverlayTextSize:
     category: T3up-Colors.specials
     type: string
@@ -367,43 +383,158 @@ settings:
   t3upColors.overlayColor:
     category: T3up-Colors.specials
     type: string
-    default: 'rgba(33, 33, 33, 0.35)'     
-    
-    
-# Components Values ------------------     
+    default: '#000000cc'   
+  t3upColors.tableHeader:
+    category: T3up-Colors.tablecolor
+    type: string
+    default: '#dadadacc'  
+  t3upColors.tableHeaderColor:
+    category: T3up-Colors.tablecolor
+    type: string
+    default: '#dadadaff'      
+  t3upColors.tableLineColor:
+    category: T3up-Colors.tablecolor
+    type: string
+    default: '#000000cc'  
+  t3upColors.tableHeaderLineColor:
+    category: T3up-Colors.tablecolor
+    type: string
+    default: '#000000cc'  
+  t3upColors.mmTopBG:
+    category: T3up-Colors.mobilcolor
+    type: color
+    default: '#374551'  
+  t3upColors.mmTopColor:
+    category: T3up-Colors.mobilcolor
+    type: color
+    default: '#ffffff'
+  t3upColors.mmLiBg:
+    category: T3up-Colors.mobilcolor
+    type: color
+    default: '#49555F'  
+  t3upColors.mmLinkColor:
+    category: T3up-Colors.mobilcolor
+    type: color
+    default: '#fafafa'      
+  t3upColors.mmLinkBg:
+    category: T3up-Colors.mobilcolor
+    type: color
+    default: '#61717f'        
+  t3upColors.mmLinkFontSize:
+    category: T3up-Colors.mobilcolor
+    type: string
+    default: '1.2rem'
+
+# Components Values ------------------   
+  
+  t3upComponents.default:
+    category: T3up-Components.layouts
+    type: bool
+    default: true
+  t3upComponents.leftNavigation:
+    category: T3up-Components.layouts
+    type: bool
+    default: false
+  t3upComponents.rightNavigation:
+    category: T3up-Components.layouts
+    type: bool
+    default: false
+  t3upComponents.rightMarginal:
+    category: T3up-Components.layouts
+    type: bool
+    default: false
+  t3upComponents.oneColumn:
+    category: T3up-Components.layouts
+    type: bool
+    default: false
+  t3upComponents.onePager:
+    category: T3up-Components.layouts
+    type: bool
+    default: false
+  t3upComponents.imageLayouts:
+    category: T3up-Components.layouts
+    type: bool
+    default: true
+
+  t3upComponents.designFrames:
+    category: T3up-Components.tsconfig
+    type: bool
+    default: true
+  t3upComponents.bootstrapFrames:
+    category: T3up-Components.tsconfig
+    type: bool
+    default: true
+  t3upComponents.permission:
+    category: T3up-Components.tsconfig
+    type: bool
+    default: true
+  t3upComponents.tableLayouts:
+    category: T3up-Components.tsconfig
+    type: bool
+    default: false
+  
   t3upComponents.container:
-    category: T3up-Components
+    category: T3up-Components.spacing
     type: int
     default: '1440'  
-  t3upComponents.home:
-    category: T3up-Components
-    type: int
-    default: '1'  
-  t3upComponents.gutter:
-    category: T3up-Components
+  t3upComponents.spacing1:
+    category: T3up-Components.spacing
     type: string
-    default: 'clamp(1rem, 0.8803rem + 0.7979vw, 1.375rem)'    
+    default: '.25'  
+  t3upComponents.spacing2:
+    category: T3up-Components.spacing
+    type: string
+    default: '.5'  
+  t3upComponents.spacing3:
+    category: T3up-Components.spacing
+    type: string
+    default: '1'  
+  t3upComponents.spacing4:
+    category: T3up-Components.spacing
+    type: string
+    default: '1.5'  
+  t3upComponents.spacing5:
+    category: T3up-Components.spacing
+    type: string
+    default: '2' 
+  t3upComponents.spacing6:
+    category: T3up-Components.spacing
+    type: string
+    default: '3'  
+  t3upComponents.spacing7:
+    category: T3up-Components.spacing
+    type: string
+    default: '4' 
+  t3upComponents.mainPadding:
+    category: T3up-Components.spacing
+    type: string
+    default: 0
+  t3upComponents.sitePadding:
+    category: T3up-Components.spacing
+    type: string
+    default: 0
+  t3upComponents.gutter:
+    category: T3up-Components.spacing
+    type: string
+    default: 'clamp(1rem, 0.8803rem + 0.7979vw, 1.375rem)'
+    
+  t3upComponents.home:
+    category: T3up-Components.misc
+    type: int
+    default: '1' 
   t3upComponents.access:
-    category: T3up-Components
+    category: T3up-Components.misc
     type: bool
     default: true
   t3upComponents.mmenu:
-    category: T3up-Components
+    category: T3up-Components.misc
     type: bool
     default: true
-  t3upComponents.mainPadding:
-    category: T3up-Components
-    type: string
-    default: 0
-  t3upComponents.contentPadding:
-    category: T3up-Components
-    type: string
-    default: 0 0 $v1 0
   t3upComponents.favicon:
-    category: T3up-Components
+    category: T3up-Components.misc
     type: string
     default: 'EXT:t3up/Resources/Public/Design/favicon.ico'
-    
+   
 # Configuration ------------------------
   t3upConfig.headerComment:
     category: T3up-Config
@@ -420,7 +551,7 @@ settings:
   t3upConfig.contentObjectExceptionHandler:
     category: T3up-Config
     type: bool
-    default: false  
+    default: true  
   t3upConfig.nocache:
     category: T3up-Config
     type: bool
@@ -609,16 +740,16 @@ settings:
     default: 'Open Sans'
     type: string
     enum:
-      Open Sans: 'Open Sans'
-      PT Sans: 'PT Sans'
+      OpenSans: 'Open Sans'
+      PTSans: 'PT Sans'
       Roboto: 'Roboto'
-      Source Sans Pro: 'Source Sans Pro'
-      Work Sans: 'Work Sans'
+      SourceSansPro: 'Source Sans Pro'
+      WorkSans: 'Work Sans'
       Merriweather: 'Merriweather'
-      Merriweather Sans: 'Merriweather Sans'
+      MerriweatherSans: 'Merriweather Sans'
   t3upFonts.symbol:
     category: T3up-Fonts
-    default: 'Material Symbols Sharp'
+    default: 'Material'
     type: string
   t3upFonts.brand:
     category: T3up-Fonts
@@ -626,7 +757,7 @@ settings:
     type: string     
   t3upFonts.fontPath:
     category: T3up-Fonts
-    default: '../../../../Fonts/'
+    default: '../../Fonts/'
     type: string
 
 # Footer ----------------------------  
@@ -641,7 +772,7 @@ settings:
   t3upFooter.addressWrap:    
     category: T3up-Footer.footer1
     type: string
-    default: '<div id="contact" class="col-12 col-sm-6 col-lg-3 pe-lg-5">|</div>' 
+    default: '<div id="contact" class="col-12 col-sm-6 col-lg-3">|</div>' 
   t3upFooter.service1:    
     category: T3up-Footer.footer1
     type: int
@@ -649,7 +780,7 @@ settings:
   t3upFooter.service1Wrap:    
     category: T3up-Footer.footer1
     type: string
-    default: '<div class="col-12 col-sm-6 col-lg-3 pe-lg-5">|</div>' 
+    default: '<div class="col-12 col-sm-6 col-lg-3">|</div>' 
   t3upFooter.service2:    
     category: T3up-Footer.footer1
     type: int
@@ -657,7 +788,7 @@ settings:
   t3upFooter.service2Wrap:    
     category: T3up-Footer.footer1
     type: string
-    default: '<div class="col-12 col-sm-6 col-lg-3 pe-lg-5">|</div>' 
+    default: '<div class="col-12 col-sm-6 col-lg-3">|</div>' 
   t3upFooter.service3:    
     category: T3up-Footer.footer1
     type: int
@@ -673,7 +804,7 @@ settings:
   t3upFooter.footer1Wrap:    
     category: T3up-Footer.footer1
     type: string
-    default: '<div class= "footer1"><div class="container"><div class="row px-5 px-xl-0 py-7 py-xl-10">|</div></div></div>'  
+    default: '<div class= "footer1"><div class="container"><div class="row px-5 px-xxl-0">|</div></div></div>'  
        
   t3upFooter.base:    
     category: T3up-Footer.footer3
@@ -682,7 +813,7 @@ settings:
   t3upFooter.baseWrap:    
     category: T3up-Footer.footer3
     type: string
-    default: '<div class="footer3"><div class="container"><div class="d-md-flex justify-content-between p-5 px-xl-0">|</div></div></div>'
+    default: '<div class="footer3"><div class="container"><div class="d-md-flex justify-content-between frame-default py-3 px-5 px-xxl-0">|</div></div></div>'
   t3upFooter.copyright:    
     category: T3up-Footer.footer3
     type: string
@@ -730,14 +861,18 @@ settings:
     category: T3up-Header
     type: string
     default: 'Home'  
-  t3upHeader.logoWidth:
+  t3upHeader.headerLogoMaxWidth:
     category: T3up-Header
     type: string
-    default: '100%'
+    default: '15rem'
+  t3upHeader.logoMaxWidth:
+    category: T3up-Header
+    type: string
+    default: '50%'
   t3upHeader.logoWrap:
     category: T3up-Header
     type: string
-    default: 'logo d-inline-block col-6 col-sm-4 col-md-3 order-1 pb-5 pt-md-6 pb-md-8 ps-5 ps-xl-0'
+    default: 'logo d-inline-block py-3 pe-3 order-1'
   t3upHeader.logoStickyWidth:
     category: T3up-Header
     type: string
@@ -757,12 +892,16 @@ settings:
     enum:
       none: 'none'
       sticky: 'sticky'  
-      dynamic: 'dynamic'            
+      shrink: 'shrink'            
   t3upHeader.headerAreaWrap:
     category: T3up-Header
     type: string
     default: 'container position-relative d-flex justify-content-between'    
-         
+  t3upHeader.headerInnnerAreaWrap:
+    category: T3up-Header
+    type: string
+    default: 'd-flex flex-fill flex-column innerArea'    
+
   # TOP Header -------------------------------     
   t3upHeader.toppos:
     category: T3up-Header.top
@@ -783,11 +922,11 @@ settings:
   t3upHeader.topElementWrap:
     category: T3up-Header.top
     type: string
-    default: 'ps-7'
+    default: 'ps-4 position-relative'
   t3upHeader.topATagWrap:
     category: T3up-Header.top    
     type: string
-    default: 'py-3'
+    default: 'py-2'
   t3upHeader.mobilBottonPos:
     category: T3up-Header.top    
     type: string
@@ -942,19 +1081,15 @@ settings:
   t3upNavigation.maxItems:
     category: T3up-Navigation
     default: '20'   
-    type: int  
+    type: int
   t3upNavigation.entryLevel:
     category: T3up-Navigation
     default: '0'   
-    type: int  
+    type: int
   t3upNavigation.color:
     category: T3up-Navigation
     type: bool
     default: false   
-  t3upNavigation.linkPadding:
-    category: T3up-Navigation
-    type: string
-    default: '$v01 $v1 $v03'  
   t3upNavigation.subnavigation:
     category: T3up-Navigation
     type: bool
@@ -1097,7 +1232,7 @@ settings:
   t3upTypography.lineHeight:
     category: T3up-Typography
     type: string
-    default:  ''      
+    default:  '130%'      
   t3upTypography.linkWeight:
     category: T3up-Typography
     type: int
@@ -1105,79 +1240,29 @@ settings:
   t3upTypography.pMargin:
     category: T3up-Typography
     type: string
-    default:  '1.3rem'     
+    default:  '1.2rem'
+  # Typography Headers---------------------------    
   t3upTypography.h1:
-    category: T3up-Typography
+    category: T3up-Typography.header
     type: string
-    default:  '2.05'                   
+    default:  '4'
   t3upTypography.h1.fontWeight:
-    category: T3up-Typography
+    category: T3up-Typography.header
     type: int
     default:  '600'          
   t3upTypography.h1.lineHeight:
-    category: T3up-Typography
+    category: T3up-Typography.header
     type: string
-    default:  ''             
+    default:  'inherit'
   t3upTypography.h1.alignment:
-    category: T3up-Typography
+    category: T3up-Typography.header
     type: string
     default:  'left'             
     enum:
       left: 'left'
       center: 'center' 
       right: 'right'         
-  t3upTypography.h1.wrap:
-    category: T3up-Typography
-    type: string
-    default:  'col-12 px-3 pb-3 px-lg-0 '            
-  t3upTypography.h2:
-    category: T3up-Typography
-    type: string
-    default:  '1.7'                   
-  t3upTypography.h2.fontWeight:
-    category: T3up-Typography
-    type: int
-    default:  '600'          
-  t3upTypography.h2.lineHeight:
-    category: T3up-Typography
-    type: string
-    default:  ''             
-  t3upTypography.h2.margin:
-    category: T3up-Typography
-    type: string
-    default:  '0 0 $v05'       
-  t3upTypography.h3:
-    category: T3up-Typography
-    type: string
-    default:  '1.35'                   
-  t3upTypography.h3.fontWeight:
-    category: T3up-Typography
-    type: int
-    default:  '600'          
-  t3upTypography.h3.lineHeight:
-    category: T3up-Typography
-    type: string
-    default:  ''             
-  t3upTypography.h3.margin:
-    category: T3up-Typography
-    type: string
-    default:  '0 0 $v05'       
-  t3upTypography.h4:
-    category: T3up-Typography
-    type: string
-    default:  '1'                   
-  t3upTypography.h4.fontWeight:
-    category: T3up-Typography
-    type: int
-    default:  '600'          
-  t3upTypography.h4.lineHeight:
-    category: T3up-Typography
-    type: string
-    default:  ''             
-  t3upTypography.h4.margin:
-    category: T3up-Typography
-    type: string
-    default:  '0'           
+      default:  '0'           
   t3upTypography.footer1.fontSize:
     category: T3up-Typography
     type: string
@@ -1194,3 +1279,85 @@ settings:
     category: T3up-Typography
     type: int
     default:  '400'          
+  t3upTypography.h1.wrap:
+    category: T3up-Typography.header
+    type: string
+    default:  'col-12 pb-3'            
+  t3upTypography.h2:
+    category: T3up-Typography.header
+    type: string
+    default:  '2'                   
+  t3upTypography.h2.fontWeight:
+    category: T3up-Typography.header
+    type: int
+    default:  '600'          
+  t3upTypography.h2.lineHeight:
+    category: T3up-Typography.header
+    type: string
+    default:  'inherit'             
+  t3upTypography.h2.margin:
+    category: T3up-Typography.header
+    type: string
+    default:  '1rem'       
+  t3upTypography.h3:
+    category: T3up-Typography.header
+    type: string
+    default:  '1.5'                   
+  t3upTypography.h3.fontWeight:
+    category: T3up-Typography.header
+    type: int
+    default:  '600'
+  t3upTypography.h3.lineHeight:
+    category: T3up-Typography.header
+    type: string
+    default:  'inherit'             
+  t3upTypography.h3.margin:
+    category: T3up-Typography.header
+    type: string
+    default:  '1rem'       
+  t3upTypography.h4:
+    category: T3up-Typography.header
+    type: string
+    default:  '1'                   
+  t3upTypography.h4.fontWeight:
+    category: T3up-Typography.header
+    type: int
+    default:  '600'          
+  t3upTypography.h4.lineHeight:
+    category: T3up-Typography.header
+    type: string
+    default:  'inherit'             
+  t3upTypography.h4.margin:
+    category: T3up-Typography.header
+    type: string
+    default:  'inherit'  
+  t3upTypography.add:
+    category: T3up-Typography.arrows
+    type: string
+    default:  'add'             
+    enum:
+      add: 'Plus'
+      keyboard_arrow_down: 'Arrow down' 
+      arrow_drop_down: 'Arrow drop down'         
+  t3upTypography.remove:
+    category: T3up-Typography.arrows
+    type: string
+    default:  'remove'             
+    enum:
+      remove: 'Minus'
+      keyboard_arrow_up: 'Arrow up' 
+      arrow_drop_up: 'Arrow drop up'       
+  t3upTypography.forward:
+    category: T3up-Typography.arrows
+    type: string
+    default:  'chevron_forward'             
+    enum:
+      0: 'chevron_forward'
+      1: 'arrow_right' 
+  t3upTypography.backward:
+    category: T3up-Typography.arrows
+    type: string
+    default:  'chevron_backward'             
+    enum:
+      0: 'chevron_backward'
+      1: 'arrow_left' 

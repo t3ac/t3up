@@ -1,0 +1,44 @@
+###########################################
+#### ONEPAGERLAYOUT  #####################
+###########################################
+mod {
+	web_layout {
+		BackendLayouts {
+			OnePager {
+				title = OnePager
+				icon = t3up-onepager
+				 config {
+					backend_layout {
+						colCount = 1
+						rowCount = 2
+						rows {
+							1 {
+								columns {
+									1 {
+										name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos3
+										colPos = 3
+										allowed.CType = shortcut,t3upheaderimage_content,t3upslideshow_content,slideshow,youtubevideo_pi1,news_newsliststicky,slider
+										allowedContentTypes = shortcut,t3upheaderimage_content,slideshow,youtubevideo_pi1,news_newsliststicky,t3upslideshow_content 
+										maxitems = 1
+										identifier = stage
+									}
+								}
+							} 
+							2 {
+								columns {     
+									1 {
+										name = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colpos0
+										colPos = 0
+										disallowed.CType = t3upheaderimage_content
+										disallowedContentTypes = t3upheaderimage_content 
+										identifier = main
+									}
+								}
+							}  
+						}
+					}
+				}
+			} 
+		} // BackendLayouts
+	} //web_layout
+} //mod

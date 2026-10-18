@@ -10,9 +10,6 @@ lib.social.20.if.equals             = left
 lib.social.20.wrap                  = <div class="socialsideleft">|</div>    
 
 // ****************************************** 
-lib.basecolor                       = TEXT
-lib.basecolor.data                  = field:basecolor
-lib.basecolor.insertData            = 1
 
 lib.breadcrumb                      = TEXT
 lib.breadcrumb.data                 = field:breadcrumb 
@@ -34,17 +31,11 @@ lib.breadcrumbulwrap                = TEXT
 lib.breadcrumbulwrap.value          = {$t3upBreadcrumb.breadcrumbUlWrap}
 lib.breadcrumbulwrap.insertData      = 1
 
-lib.dynheader                       = TEXT
-lib.dynheader.value                 = {$t3upHeader.dynheader}
-
 lib.footerdynamic                   = TEXT
 lib.footerdynamic.value             = {$t3upFooter.footerdynamic}
 
 lib.h1wrap                          = TEXT
 lib.h1wrap.value                    = {$t3upTypography.h1.wrap}
-
-lib.headerAreaWrap                  = TEXT
-lib.headerAreaWrap.value            = {$t3upHeader.headerAreaWrap}
 
 lib.languagemenu                    = TEXT
 lib.languagemenu.value              = {$t3upHeader.languagemenu} 
@@ -76,86 +67,60 @@ lib.showtitle.insertData            = 1
 
 lib.content.title                   = TEXT
 lib.content.title.field             = subtitle // title
-lib.content.title.insertData        = 1
-
-lib.top                             = TEXT
-lib.top.value                       = {$t3upHeader.toppos}
-
-lib.topwrap                         = TEXT
-lib.topwrap.value                   = {$t3upHeader.topWrap}
-
-lib.topouterwrap                    = TEXT
-lib.topouterwrap.value              = {$t3upHeader.topOuterWrap}
 
 lib.topElementWrap                  = TEXT
 lib.topElementWrap.value            = {$t3upHeader.topElementWrap}
 lib.topElementWrap.insertData       = 1
 
+lib.t3upHeaderimageBottom           = TEXT
+lib.t3upHeaderimageBottom.value     = {$t3upHeaderimage.bottom}
 
-///////
 
+lib.xtraclass                      = TEXT
+lib.xtraclass.data                 = uid 
+lib.xtraclass.insertData           = 1
+
+####################################################################
 page = PAGE
+
+
+
 page {
+    10 = PAGEVIEW
+    10 {
+        paths {
+            100 = EXT:t3up/Resources/Private/Templates/
+       }
 
-  10 = PAGEVIEW
-  10 {
-    paths {
-      100 = EXT:t3up/Resources/Private/Templates/
+        variables {
+	        breadcrumb              < lib.breadcrumb
+	        breadcrumbstyle         < lib.breadcrumbstyle
+	        breadcrumbpos           < lib.breadcrumbpos
+	        breadcrumbstart         < lib.breadcrumbstart
+	        breadcrumbwrap          < lib.breadcrumbwrap
+	        breadcrumbulwrap        < lib.breadcrumbulwrap
+	        breadcrumbpos           < lib.breadcrumbPos
+	                        
+	        footerdynamic           < lib.footerdynamic
+	                
+	        languagemenu            < lib.languagemenu
+	        languagemenuPos         < lib.languagemenuPos 
+	               
+	        navcolor                < lib.navigation.navcolor        
+	        navdir                  < lib.navigation.navdir        
+	        navstyle                < lib.navigation.navstyle
+	        navwrap                 < lib.navigation.navwrap 
+	        
+	        showtitle               < lib.showtitle  
+	        title                   < lib.content.title
+
+	        top                     < lib.top
+	        topwrap                 < lib.topwrap
+	        topouterwrap            < lib.topouterwrap
+	        topElementWrap          < lib.topElementWrap
+	        
+	        xtraclass               < lib.xtraclass     
+	    }
+	    
     }
-
-    variables {
-    
-        basecolor               < lib.basecolor        
-        
-        breadcrumb              < lib.breadcrumb
-        breadcrumbstyle         < lib.breadcrumbstyle
-        breadcrumbpos           < lib.breadcrumbpos
-        breadcrumbstart         < lib.breadcrumbstart
-        breadcrumbwrap          < lib.breadcrumbwrap
-        breadcrumbulwrap        < lib.breadcrumbulwrap
-        breadcrumbpos           < lib.breadcrumbPos
-        
-        dynheader               < lib.dynheader
-        
-        footerdynamic           < lib.footerdynamic
-        
-        h1wrap                  < lib.h1wrap
-        headerAreaWrap          < lib.headerAreaWrap
-        
-        languagemenu            < lib.languagemenu
-        languagemenuPos         < lib.languagemenuPos 
-               
-        navcolor                < lib.navigation.navcolor        
-        navdir                  < lib.navigation.navdir        
-        navstyle                < lib.navigation.navstyle
-        navwrap                 < lib.navigation.navwrap 
-        
-        showtitle               < lib.showtitle       
-        title                   < lib.content.title    
-        
-        top                     < lib.top
-        topwrap                 < lib.topwrap
-        topouterwrap            < lib.topouterwrap
-        topElementWrap          < lib.topElementWrap
-        
-        
-        # ColPols 0 - 3
-        
-        content < styles.content.get
-        contentselect.where    = colPos = 0
-        content.wrap            = |
-        
-        left < styles.content.get
-        left.select.where       = colPos = 1
-        left.wrap               = |
-        
-        right < styles.content.get
-        right.select.where     = colPos = 2
-        right.wrap             = |
-        
-        media < styles.content.get
-        media.select.where     = colPos = 3
-        media.wrap             = |
-     }
-  }
 }

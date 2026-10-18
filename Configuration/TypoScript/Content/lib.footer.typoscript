@@ -2,7 +2,6 @@ lib.address = COA
 lib.address.if.isTrue                       = {$t3upFooter.address} 
 lib.address {
     10                                      = COA
-    10.if.isTrue                            = {t3upFooter.footerdynamic} 
     10{   
          10                                 = RECORDS
          10.tables                          = tt_content

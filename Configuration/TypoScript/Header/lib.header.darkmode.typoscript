@@ -3,7 +3,7 @@ lib.header.darkmode{
 	if.value				= 0
 	if.isGreaterThan        = {$t3upHeader.darkmodeButtonPos}
 	10 						= TEXT
-	10.data 				= LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:colormode 
+	10.data 				    = LLL:EXT:t3up/Resources/Private/Language/locallang_frontend.xlf:colormode 
 	10.wrap					(
 	                         <li class="order-{$t3upHeader.darkmodeButtonPos} {$t3upHeader.topElementWrap}">
 	                         <a alt="open the darkmode widget" href="#" class="d-inline-flex align-items-center {$t3upHeader.topATagWrap}" data-show-sub="false" title="|">

@@ -20,8 +20,6 @@ $padding = array(
                 ['label' => $ll . ':space_class_5', 'value' =>  '5'],
                 ['label' => $ll . ':space_class_6', 'value' =>  '6'],
                 ['label' => $ll . ':space_class_7', 'value' =>  '7'],
-                ['label' => $ll . ':space_class_8', 'value' =>  '8'],
-                ['label' => $ll . ':space_class_9', 'value' =>  '9'],
             ],
             'default'    => '',
         ],
@@ -41,8 +39,45 @@ $padding = array(
                 ['label' => $ll . ':space_class_5', 'value' =>  '5'],
                 ['label' => $ll . ':space_class_6', 'value' =>  '6'],
                 ['label' => $ll . ':space_class_7', 'value' =>  '7'],
-                ['label' => $ll . ':space_class_8', 'value' =>  '8'],
-                ['label' => $ll . ':space_class_9', 'value' =>  '9'],
+            ],
+            'default'    => '',
+        ],
+    ],
+    
+    'space_before_class' => [
+        'exclude' => true,
+        'label'   => $ll . ':padding_before',
+        'config'  => [
+            'type'       => 'select',
+            'renderType' => 'selectSingle',
+            'items'      => [
+                ['label' => $ll . ':space_class_none', 'value' => '0'],
+                ['label' => $ll . ':space_class_1', 'value' =>  '1'],
+                ['label' => $ll . ':space_class_2', 'value' =>  '2'],
+                ['label' => $ll . ':space_class_3', 'value' =>  '3'],
+                ['label' => $ll . ':space_class_4', 'value' =>  '4'],
+                ['label' => $ll . ':space_class_5', 'value' =>  '5'],
+                ['label' => $ll . ':space_class_6', 'value' =>  '6'],
+                ['label' => $ll . ':space_class_7', 'value' =>  '7'],
+            ],
+            'default'    => '',
+        ],
+    ],
+    'space_after_class'  => [
+        'exclude' => true,
+        'label'   => $ll . ':padding_after',
+        'config'  => [
+            'type'       => 'select',
+            'renderType' => 'selectSingle',
+            'items'      => [
+                ['label' => $ll . ':space_class_none', 'value' => '0'],
+                ['label' => $ll . ':space_class_1', 'value' =>  '1'],
+                ['label' => $ll . ':space_class_2', 'value' =>  '2'],
+                ['label' => $ll . ':space_class_3', 'value' =>  '3'],
+                ['label' => $ll . ':space_class_4', 'value' =>  '4'],
+                ['label' => $ll . ':space_class_5', 'value' =>  '5'],
+                ['label' => $ll . ':space_class_6', 'value' =>  '6'],
+                ['label' => $ll . ':space_class_7', 'value' =>  '7'],
             ],
             'default'    => '',
         ],
@@ -63,17 +98,14 @@ $padding = array(
             'type'       => 'select',
             'renderType' => 'selectSingle',
             'items'      => [
-                ['label' => $ll . ':padding_inner_class_none', 'value' => '0'],
-                ['label' => $ll . ':padding_inner_class_1', 'value' =>  '1'],
-                ['label' => $ll . ':padding_inner_class_2', 'value' =>  '2'],
-                ['label' => $ll . ':padding_inner_class_3', 'value' =>  '3'],
-                ['label' => $ll . ':padding_inner_class_4', 'value' =>  '4'],
-                ['label' => $ll . ':padding_inner_class_5', 'value' =>  '5'],
-                ['label' => $ll . ':padding_inner_class_6', 'value' =>  '6'],
-                ['label' => $ll . ':padding_inner_class_7', 'value' =>  '7'],
-                ['label' => $ll . ':padding_inner_class_8', 'value' =>  '8'],
-                ['label' => $ll . ':padding_inner_class_9', 'value' =>  '9'],
-                ['label' => $ll . ':padding_inner_class_10', 'value' =>  '10'],                
+                ['label' => $ll . ':space_class_none', 'value' => '0'],
+                ['label' => $ll . ':space_class_1', 'value' =>  '1'],
+                ['label' => $ll . ':space_class_2', 'value' =>  '2'],
+                ['label' => $ll . ':space_class_3', 'value' =>  '3'],
+                ['label' => $ll . ':space_class_4', 'value' =>  '4'],
+                ['label' => $ll . ':space_class_5', 'value' =>  '5'],        
+                ['label' => $ll . ':space_class_6', 'value' =>  '6'],
+                ['label' => $ll . ':space_class_7', 'value' =>  '7'],
             ],
             'default'    => '',
         ],
@@ -86,6 +118,8 @@ $padding = array(
             'renderType' => 'selectSingle',
             'items'      => [
                 ['label' => $ll . ':none',            'value' => ''],
+                ['label' => $ll . ':fade-in',         'value' => 'fade-in'],
+                ['label' => $ll . ':fade-in-and-up',  'value' => 'fade-in-and-up'],
                 ['label' => $ll . ':fade-up',         'value' => 'fade-up'],
                 ['label' => $ll . ':fade-down',       'value' => 'fade-down'],
                 ['label' => $ll . ':fade-right',      'value' => 'fade-right'],
@@ -109,7 +143,6 @@ $padding = array(
                 ['label' => $ll . ':slide-down',      'value' => 'slide-down'],
                 ['label' => $ll . ':slide-right',     'value' => 'slide-right'],                  
                 ['label' => $ll . ':slide-left',      'value' => 'slide-left'],                   
-                
             ],
             'default'    => '',
         ],
@@ -198,7 +231,6 @@ $padding = array(
     ],
 );
 
-
 $tempfields = array(
     'lightboxstyle' => [
         'exclude' => true,
@@ -215,14 +247,6 @@ $tempfields = array(
                 ['label' => $ll . ':lightboxstyle5', 'value' =>   'lightboxstyle-e'],
             ],
             'default' => 'lightboxstyle-b'
-        ]
-    ],
-    'inf' => [
-        'exclude' => 1,
-        'label' => $ll . ':inf',
-        'config' => [
-            'type' => 'check',
-            'default' => 0
         ]
     ],
     'rollover' => [
@@ -245,18 +269,13 @@ $tempfields = array(
                 ['label' => $ll . ':space_class_2', 'value' =>  '2'],
                 ['label' => $ll . ':space_class_3', 'value' =>  '3'],
                 ['label' => $ll . ':space_class_4', 'value' =>  '4'],
-                ['label' => $ll . ':space_class_5', 'value' =>  '5'],
+                ['label' => $ll . ':space_class_5', 'value' =>  '5'],   
                 ['label' => $ll . ':space_class_6', 'value' =>  '6'],
-                ['label' => $ll . ':space_class_7', 'value' =>  '7'],
-                ['label' => $ll . ':space_class_8', 'value' =>  '8'],
-                ['label' => $ll . ':space_class_9', 'value' =>  '9'],
-                ['label' => $ll . ':space_class_10','value' =>  '10'],                
-                
+                ['label' => $ll . ':space_class_7', 'value' =>  '7'],   
             ],
         ]
     ],
 );
-
 
 
 $container = [
@@ -275,30 +294,6 @@ $container = [
         'config' => [
             'type' => 'check',
             'default' => 0
-        ],
-    ],
-    'bgimage' => [
-        'exclude' => true,
-        'displayCond' => [
-            'AND'  => [
-                'FIELD:container:>:0',
-                'OR' => [
-                    'FIELD:CType:=:textmedia',
-                    'FIELD:CType:=:1cols',
-                    'FIELD:CType:=:2cols',
-                    'FIELD:CType:=:3cols',
-                    'FIELD:CType:=:4cols',
-                ]
-            ],
-        ],
-        'label' => $ll . ':bgimage',
-        'config' => [
-            'type' => 'file',
-            'behaviour' => [
-                'allowLanguageSynchronization' => true,
-            ],
-            'maxitems' => 1,
-            'allowed' => 'webp,jpg,jepg,png,svg' ,
         ],
     ],
     'bgcolor' => [
@@ -393,6 +388,12 @@ $GLOBALS['TCA']['tt_content']['palettes']['newpadding_fields'] = [
     'isHiddenPalette' => false,
 ];
 
+$GLOBALS['TCA']['tt_content']['palettes']['sidepadding_fields'] = [
+    'showitem' => '
+        padding_side_class,
+    ',
+    'isHiddenPalette' => false,
+];
 
 $GLOBALS['TCA']['tt_content']['palettes']['animation_fields'] = [
     'showitem' => '
@@ -409,7 +410,6 @@ $GLOBALS['TCA']['tt_content']['palettes']['lightboxstyle_fields'] = [
     'showitem' => '
         lightboxstyle,
         spacing,
-        inf,
         rollover
     ',
     'isHiddenPalette' => false,
@@ -419,8 +419,6 @@ $GLOBALS['TCA']['tt_content']['palettes']['onepager_fields'] = [
     'showitem' => '
         container,
         objectfit,
-        --linebreak--,
-         bgimage,
          --linebreak--,
          bgcolor,txtcolor,
     ',
@@ -432,19 +430,22 @@ $GLOBALS['TCA']['tt_content']['palettes']['onepager_fields'] = [
 // Palette hinzufuegen, nach Layout - dadurch Anzeige im Backend
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content','--palette--;' . $ll . ':padding_class;newpadding_fields','textmedia,text,buttons,menu_pages','before:sectionIndex');
+    'tt_content','--palette--;' . $ll . ':padding_class;newpadding_fields','textmedia,buttons,menu_pages','before:sectionIndex');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content','--palette--;' . $ll . ':animation_class;animation_fields','textmedia,text,t3up_hero,headerbutton,imagebutton,symbolbutton,youtubevideo_pi1','before:sectionIndex');
+    'tt_content','--palette--;' . $ll . ':animation_class;animation_fields','textmedia,t3up_hero,headerbutton,imagebutton,symbolbutton,youtubevideo_pi1','before:sectionIndex');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content','--palette--;' . $ll . ':container_class;onepager_fields','textmedia,text,header,table,1cols,2cols,3cols,4cols,buttons','before:sectionIndex');
+    'tt_content','--palette--;' . $ll . ':container_class;onepager_fields','textmedia,text,header,table,1cols,2cols,3cols,4cols,buttons,arccodion,news_newsliststicky,news_newsdetail;','before:sectionIndex');
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'tt_content','--palette--;' . $ll . ':padding_class;sidepadding_fields','header,table,1cols,2cols,3cols,4cols','after:frame_class');
 
 
 
 // ************** Lightbox *******************************************************************
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content','--palette--;' . $ll . ':sorting;lightboxstyle_fields', 'textpic,textmedia,image', 'after:image_zoom');
+    'tt_content','--palette--;' . $ll . ':sorting;lightboxstyle_fields', 'textmedia', 'after:image_zoom');
 
 

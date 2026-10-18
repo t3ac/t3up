@@ -29,14 +29,6 @@ $pagesColumns = [
             'default' => 0
         ]
     ],
-    'hidenav' => [
-        'exclude' => true,
-        'label' => $ll . ':hidenav',
-        'config' => [
-            'type' => 'check',
-            'default' => 0
-        ]
-    ],
     'nonav' => [
         'exclude' => true,
         'label' => $ll . ':nonav',
@@ -89,7 +81,7 @@ $pagesColumns = [
 
 $GLOBALS['TCA']['pages']['palettes']['t3up'] = [
     'canNotCollapse' => true,
-    'showitem' => 'showtitle,deltitle,--linebreak--,previousnext,nonav,--linebreak--,hidenav,breadcrumb,--linebreak--,basecolor,xtraclass,'
+    'showitem' => 'showtitle,deltitle,nonav,--linebreak--,previousnext,breadcrumb,--linebreak--,basecolor,xtraclass,'
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $pagesColumns);
