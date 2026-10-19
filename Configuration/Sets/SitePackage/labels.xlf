@@ -347,11 +347,16 @@
             <trans-unit id="settings.t3upColors.subnavBG">
                 <source>Background of the subnavigation</source>
             </trans-unit>                    
-            <trans-unit id="settings.subnavigationLinkColor">
-                <source>Background of the subnavigation</source>
+            <trans-unit id="settings.t3upColors.subnavSubmenuColor">
+                <source>Subnavigation color</source>
+            </trans-unit>
+            <trans-unit id="settings.t3upColors.subnavSubmenuActColor">
+                <source>Subnavigation act color</source>
+            </trans-unit>
+            <trans-unit id="settings.t3upColors.subnavLineColor">
+                <source>Subnavigation linecolor</source>
             </trans-unit>                    
-
-
+            
             <trans-unit id="categories.T3up-Colors.pagecolors">
                 <source>Pagecolors</source>
             </trans-unit>       
