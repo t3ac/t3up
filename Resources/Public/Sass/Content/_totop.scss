@@ -1,0 +1,15 @@
+@import '../_initalize.scss';
+
+/** totop.scss *************************/
+
+.toTop {						      display: none;
+							      text-decoration: none !important; position: sticky; transition: background-color ease .5s;
+							      z-index: 80; width: $v6; height: $v6; background-color: $totopBgColor; bottom: $totopPosBottom; left: $totopPosRight; border: 1px solid  $totopLinkColor;
+	a						      {color: $totopLinkColor; text-decoration: none !important;}
+	a:before					      {transform: none  !important;content:'\e986';  @include symbol; font-size: 200%; font-weight: bold;}
+	a:hover						  {color: $totopLinkHoverColor}  
+	span						      {display: none;}
+													
+	&.fixed						   {display: flex !important; justify-content: center; align-items: center;}
+	&.fixed:hover				   {background-color: $totopBgColor}  
+}		

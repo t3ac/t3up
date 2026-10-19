@@ -1,0 +1,77 @@
+$spacing-map: (
+  1: $v1,
+  2: $v2,
+  3: $v3,
+  4: $v4,
+  5: $v5,
+  6: $v6,
+  7: $v7
+);
+
+// 2. Generierung aller Padding-Klassen
+@each $key, $value in $spacing-map {
+
+  .p-#{$key} {
+    padding: $value;
+  }
+
+  .ps-#{$key} {
+    padding-left: $value;
+  }
+
+  .pe-#{$key} {
+    padding-right: $value;
+  }
+
+  .pt-#{$key} {
+    padding-top: $value;
+  }
+
+  .pb-#{$key} {
+    padding-bottom: $value;
+  }
+
+  .px-#{$key} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+// 3. Generierung aller Margin-Klassen
+@each $key, $value in $spacing-map {
+
+  .m-#{$key} {
+    margin: $value;
+  }
+
+  .ms-#{$key} {
+    margin-left: $value;
+  }
+
+  .me-#{$key} {
+    margin-right: $value;
+  }
+
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+
+  .mx-#{$key} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  .my-#{$key} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+}

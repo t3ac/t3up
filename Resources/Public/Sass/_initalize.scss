@@ -1,113 +1,204 @@
-/* special selector ************************************/
-.notvissible    {display: none !important; color: transparent !important; font-size: 0; padding: 0 !important; margin: 0 !important; border: 0 !important;} 
-.btn-close      {font-size: 115%; font-weight: bold; cursor: pointer; z-index: 1007; position: absolute; top: $v03; right: $v03; border: 1px solid $textColor; border-radius: 0;}
+// COMPONENTS
+// $p :                                 (#{$p});
 
-.bold           {font-weight: $bold;}
-.uppercase      {text-transform: uppercase;}
- 
+$v1 :                                calc(#{$base1} *  #{$p});
+$v2 :                                calc(#{$base2} *  #{$p});
+$v3 :                                calc(#{$base3} *  #{$p});
+$v4 :                                calc(#{$base4} *  #{$p});
+$v5 :                                calc(#{$base5} *  #{$p});
+$v6 :                                calc(#{$base6} *  #{$p});
+$v7 :                                calc(#{$base7} *  #{$p});
+
+$-v1 :                               calc($v1 * -1);
+$-v2 :                               calc($v2 * -1);
+$-v3 :                               calc($v3 * -1);
+$-v4 :                               calc($v4 * -1);
+$-v5 :                               calc($v5 * -1);
+$-v6 :                               calc($v6 * -1);
+$-v7 :                               calc($v7 * -1);
+
+$c8  :                               8.33333333333333%;
+$c12 :                               12.5%;
+$c14 :                               14.2857142%;
+$c16 :                               16.66666666666667%;
+$c25 :                               25%;
+$c20 :                               20%;
+$c33 :                               33.33333333333333%;
+$c41 :                               41.66666666666667%;
+$c50 :                               50%;
+$c58 :                               58.33333333333333%;
+$c66 :                               66.66666666666667%;
+$c75 :                               75%;
+$c83 :                               83.33333333333333%;
+$c91 :                               91.66666666666667%;
+$c100 :                              100%;
+
+@mixin mb01                          {margin-bottom: $v1;}
+@mixin mb02                          {margin-bottom: $v2;}
+@mixin mb03                          {margin-bottom: $v3;}
+@mixin mb04                          {margin-bottom: $v4;}
+@mixin mb05                          {margin-bottom: $v5;}
+@mixin mb06                          {margin-bottom: $v6;}
+@mixin mb07                          {margin-bottom: $v7;}
+
+@mixin mb01a                         {margin-bottom: calc($v1 * 2);}
+@mixin mb02a                         {margin-bottom: calc($v2 * 2);}
+@mixin mb03a                         {margin-bottom: calc($v3 * 2);}
+@mixin mb04a                         {margin-bottom: calc($v4 * 2);}
+@mixin mb05a                         {margin-bottom: calc($v5 * 2);}
+@mixin mb06a                         {margin-bottom: calc($v6 * 2);}
+@mixin mb07a                         {margin-bottom: calc($v7 * 2);}
+
+@mixin mx-01                         {margin-left: $-v1; margin-right: $-v1;}
+@mixin mx-02                         {margin-left: $-v2; margin-right: $-v2;}
+@mixin mx-03                         {margin-left: $-v3; margin-right: $-v3;}
+@mixin mx-04                         {margin-left: $-v4; margin-right: $-v4;}
+@mixin mx-05                         {margin-left: $-v5; margin-right: $-v5;}
+@mixin mx-06                         {margin-left: $-v6; margin-right: $-v6;}
+@mixin mx-07                         {margin-left: $-v7; margin-right: $-v7;}
+
+@mixin px01                          {padding-left: $v1; padding-right: $v1;}
+@mixin px02                          {padding-left: $v2; padding-right: $v2;}
+@mixin px03                          {padding-left: $v3; padding-right: $v3;}
+@mixin px04                          {padding-left: $v4; padding-right: $v4;}
+@mixin px05                          {padding-left: $v5; padding-right: $v5;}
+@mixin px06                          {padding-left: $v6; padding-right: $v6;}
+@mixin px07                          {padding-left: $v7; padding-right: $v7;}
+
+@mixin mx01                          {margin-left: $v1; margin-right: $v1;}
+@mixin mx02                          {margin-left: $v2; margin-right: $v2;}
+@mixin mx03                          {margin-left: $v3; margin-right: $v3;}
+@mixin mx04                          {margin-left: $v4; margin-right: $v4;}
+@mixin mx05                          {margin-left: $v5; margin-right: $v5;}
+@mixin mx06                          {margin-left: $v6; margin-right: $v6;}
+@mixin mx07                          {margin-left: $v7; margin-right: $v7;}
+
+
+
+@mixin shadow                        {box-shadow: #{$shadow};}
+
+
+
+// Color
+$basicColor :                       (#{$basicColor});
+$bodyBgColor :                      (#{$bodyBgColor});
+$textColor :                        (#{$textColor});
+$linkColor :                        (#{$linkColor});
+$linkHoverColor :                   (#{$linkHoverColor});
+
+$red :                              (#{$red});
+$white :                            (#{$white});
+$green :                            (#{$green});
+
+$navLinkHoverColor :                (#{$navLinkHoverColor});
+$navFontSize :                      (#{$navFontSize});
+
+$overlay :                          (#{$overlay});
+
+// Image
+$pictureoverlay :                   (#{$pictureoverlay});
+$pictureoverlayTextColor :          (#{$pictureoverlayTextColor});
+$pictureoverlayTextSize :           (#{$pictureoverlayTextSize});
+
+
+// Breadcrumb
+$breadcrumbTextSize :               (#{$breadcrumbTextSize});
+
+// TYPO
+
+$bold  :                            (#{$bold });
+$lineHeight :                       (#{$lineHeight});
+$linkWeight  :                      (#{$linkWeight});
+$pMargin   :                        (#{$pMargin});
+
+$h1     :                           (#{$h1});
+$h1-fontweight :                    (#{$h1-fontweight});
+$h1-lineheight  :                   (#{$h1-lineheight});
+$h1-margin   :                      (#{$h1-margin});
+$h1-alignment   :                   (#{$h1-alignment});    
+
+$h2    :                            (#{$h2});
+$h2-fontweight  :                   (#{$h2-fontweight});
+$h2-lineheight  :                   (#{$h2-lineheight});
+$h2-margin    :                     (#{$h2-margin});
+
+$h3        :                        (#{$h3});
+$h3-fontweight :                    (#{$h3-fontweight});
+$h3-lineheight :                    (#{$h3-lineheight});
+$h3-margin  :                       (#{$h3-margin}); 
    
-/* BODY ***************************************************************/
+$h4    :                            (#{$h4});
+$h4-fontweight  :                   (#{$h4-fontweight});
+$h4-lineheight  :                   (#{$h4-lineheight});
+$h4-margin  :                       (#{$h4-margin});
 
-body {                                  background-color: $bodyBgColor !important; font-family: $font !important;
-    
-    *                                   {color: $textColor; }     
-    p,li,th,td                          {font-size: $p; hyphens: auto; hyphenate-limit-chars: auto 5; hyphenate-limit-lines: 2;} 
-    
-    figure                              {margin: 0;}
+// Table
+$tableHeader  :                     (#{$tableHeader});
+$tableHeaderColor  :                (#{$tableHeaderColor});
+$tableLineColor  :                  (#{$tableLineColor});
+$tableHeaderLineColor  :            (#{$tableHeaderLineColor});
 
-    .container                          {padding-left: 0; padding-right: 0;}
-    
-    .h1, h1                             {transition: all ease .3s; font-weight: $h1-fontweight; color: $h1-color; line-height: $h1-lineheight; text-align: $h1-alignment;} 
-    .h2, h2                             {transition: all ease .3s; font-weight: $h2-fontweight; color: $h2-color; margin: $h2-margin; line-height: $h2-lineheight;} 
-    .h3, h3                             {transition: all ease .3s; font-weight: $h3-fontweight; color: $h3-color; margin: $h3-margin; line-height: $h3-lineheight;} 
-    .h4, h4                             {transition: all ease .3s; font-weight: $h4-fontweight; color: $h4-color; margin: $h4-margin; line-height: $h4-lineheight;}
-    
-    .h1, h1                             {font-size: calc(#{$h1} * #{$p});} 
-    .h2, h2                             {font-size: calc(#{$h2} * #{$p});} 
-    .h3, h3                             {font-size: calc(#{$h3} * #{$p});} 
-    
-    .small,
-    .small a                           {font-size: calc(.8 * #{$p});}
-    
-    @media screen and (min-width:  576px){
-        .h1, h1                        {font-size: calc(#{$h1} * 1.1      * #{$p});}
-        .h2, h2                        {font-size: calc(#{$h2} * 1        * #{$p});}
-        .h3, h3                        {font-size: calc(#{$h3} * 1        * #{$p});}
-        .h4, h4                        {font-size: calc(#{$h4} * 1        * #{$p});}
-    }
-    
-    @media screen and (min-width:  768px){
-        .h1, h1                        {font-size: calc(#{$h1} * 1.2      * #{$p});}
-        .h2, h2                        {font-size: calc(#{$h2} * 1.1      * #{$p});}
-        .h3, h3                        {font-size: calc(#{$h3} * 1.05     * #{$p});}
-        .h4, h4                        {font-size: calc(#{$h4} * 1        * #{$p});}  
-    }
-    
-    @media screen and (min-width:  992px){
-        .h1, h1                        {font-size: calc(#{$h1} * 1.3      * #{$p});}
-        .h2, h2                        {font-size: calc(#{$h2} * 1.15     * #{$p});}
-        .h3, h3                        {font-size: calc(#{$h3} * 1.1      * #{$p});}
-        .h4, h4                        {font-size: calc(#{$h4} * 1        * #{$p});}
-    }
-    
-    @media screen and (min-width: 1280px){
-        .h1, h1                        {font-size: calc(#{$h1} * 1.4      * #{$p});}
-        .h2, h2                        {font-size: calc(#{$h2} * 1.2      * #{$p});}
-        .h3, h3                        {font-size: calc(#{$h3} * 1.2      * #{$p});}
-        .h4, h4                        {font-size: calc(#{$h4} * 1        * #{$p});}
-    }
-    
-    @media screen and (min-width: 1440px){
-        .h1, h1                        {font-size: calc(#{$h1} * 1.5      * #{$p});}
-        .h2, h2                        {font-size: calc(#{$h2} * 1.3      * #{$p});}
-        .h3, h3                        {font-size: calc(#{$h3} * 1.25     * #{$p});}
-        .h4, h4                        {font-size: calc(#{$h4} * 1        * #{$p});}
-    }
+// Header
+$headerBgColor :                     (#{$headerBgColor}); 
+$headerBgBlendColor :                (#{$headerBgBlendColor});   
+$headerTextColor :                   (#{$headerTextColor});
+$headerLinkColor :                   (#{$headerLinkColor});          
+$headerLinkHoverColor :              (#{$headerLinkHoverColor});    
+$headerTopBgColor :                  (#{$headerTopBgColor}); 
+$headerTopTextColor :                (#{$headerTopTextColor});  
+$headerTopLinkColor :                (#{$headerTopLinkColor});             
+$headerTopLinkHoverColor :           (#{$headerTopLinkHoverColor}); 
+$headerTopSubBgColor :               (#{$headerTopSubBgColor});
+$headerTopSubTextColor :             (#{$headerTopSubTextColor});   
+$headerTopSubLinkColor :             (#{$headerTopSubLinkColor});           
+$headerTopSubLinkHoverColor :        (#{$headerTopSubLinkHoverColor}); 
+$headerMoilLogoWidth :               (#{$headerMoilLogoWidth}); 
+$headerLogoMaxWidth :                (#{$headerLogoMaxWidth}); 
+$logoMaxWidth :                      (#{$logoMaxWidth}); 
 
-}
-/* MAIN ***************************************************************/
+// FOOTER
+$footer1LinkColor :                 (#{$footer1LinkColor});
+$footer1LinkHoverColor :            (#{$footer1LinkHoverColor});
+$footer1TextColor :                 (#{$footer1TextColor});
+$footer2LinkColor :                 (#{$footer2LinkColor});
+$footer2TextColor :                 (#{$footer2TextColor});
+$footer2LinkHoverColor :            (#{$footer2LinkHoverColor});
+$footer3LinkColor :                 (#{$footer3LinkColor});
+$footer3TextColor :                 (#{$footer3TextColor});
+$footer3LinkHoverColor :            (#{$footer3LinkHoverColor});
 
-main{
-   
+$footer1fontsize :                  (#{$footer1fontsize});
+$footer3fontsize :                  (#{$footer3fontsize});
+
+// NAVIGATION
+$navFontWeight :                    (#{$navFontWeight});
+$navFontSize :                      (#{$navFontSize});
+$navLinkBorderBottomHeight :        (#{$navLinkBorderBottomHeight});
+$navLinkBorderBottomColor :         (#{$navLinkBorderBottomColor});
+$navLinkHoverColor :                (#{$navLinkHoverColor});
+
+// ToTop
+$totopLinkColor :                   (#{$totopLinkColor});
+$totopBgColor :                     (#{$totopBgColor});
+$totopPosBottom :                   (#{$totopPosBottom});
+$totopPosRight :                    (#{$totopPosRight});
+$totopLinkHoverColor :              (#{$totopLinkHoverColor});
 
 
-    p                               {margin-bottom: $pMargin;}
-    
-    li                              {margin-bottom: $v05;}
-    
-    ul                              {padding: 0 0 0 $v1; list-style-type: square;}
-    ul ul                           {padding: 0 0 0 $v2; list-style-type: square;}
-    ul ul ul                        {padding: 0 0 0 $v3; list-style-type: square;}
-    ol                              {padding: 0 0 0 $v1;}
-
-}
-   
+// Arrows
+$add :                              ('#{$add}');
+$remove :                           ('#{$remove}');
+$forward :                          ('#{$forward}');
+$backward :                         ('#{$backward}');
 
 
-
-/* input: range*****************************************/
-@media screen and (-webkit-min-device-pixel-ratio:0)     {
-                input[type='range'] {overflow: hidden;width: auto;height: $v08; -webkit-appearance: none;background-color: $white; border: 1px solid $lightgrey; }
-                input[type='range']::-webkit-slider-runnable-track {height: $v08;-webkit-appearance: none;color: $white;margin-top: 0;}
-                input[type='range']::-webkit-slider-thumb {width: $v06;-webkit-appearance: none; height:$v08; cursor: ew-resize; background: $textColor; box-shadow: -$v7 0 0 $v7 $white;}
-}
+.btn-close {top: .5rem; right: .5rem;}
 
 
-/* Adminpanel ******************************************/
-.icon-markup svg                    {max-width: $v6; opacity: .5; transition: all ease .3s;}
-.icon-markup svg:hover              {opacity: 1}
-.typo3-editPanel                    {border-bottom: 5px solid $basicColor; font-style: italic; color: $basicColor; opacity: .5;  transition: all ease .3s; padding: $v02; background-color: rgba($basicColor,.75); margin-top: $v03;  margin-bottom: $v03; }
-.icon-markup .icon-markup svg       {opacity: 1;}
-.typo3-editPanel:hover              {opacity: 1; color: $white; }
-.typo3-editPanel .icon-markup svg:hover {filter: invert(100%);}
-.typo3-editPanel-label:before       {content:'Inhaltselement: '}
-.icon-actions-edit-unhide .icon-markup svg {background: rgb(150,50,50);} 
-.typo3-editPanel a                  {display: inline-block !important;}
-
-
+/* FONTS ************************************************/
 @mixin symbol {
   font-family: "Material Symbols Sharp";
-  transform: translateY($v01); 
+  transform: translateY($v1); 
   font-weight: bold;
   font-style: normal;
   line-height: 1;
@@ -127,7 +218,7 @@ main{
 /* SYMBOL ******************************************/
 @mixin symbol-outline {
   font-family: "Material Symbols Sharp";
-  transform: translateY($v01); 
+  transform: translateY($v1); 
   font-style: normal;
   line-height: 1;
   letter-spacing: normal;
