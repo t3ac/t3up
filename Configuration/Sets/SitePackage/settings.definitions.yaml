@@ -292,10 +292,14 @@ settings:
     category: T3up-Colors.navigation
     type: color
     default: '#ffffff' 
-  t3upColors.subnavSubmenuBGColor:
+  t3upColors.subnavSubmenuColor:
     category: T3up-Colors.navigation
     type: color
-    default: '#000000'       
+    default: '#333333'   
+  t3upColors.subnavSubmenuActColor:
+    category: T3up-Colors.navigation
+    type: color
+    default: '#000000'  	    
   t3upColors.subnavLineColor:
     category: T3up-Colors.navigation
     type: color
