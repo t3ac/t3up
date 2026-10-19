@@ -5,7 +5,6 @@
     "homepage": "https://t3ac.de",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],
-    "version": "14",
     "authors": [
         {
             "name": "Michael Lang",
