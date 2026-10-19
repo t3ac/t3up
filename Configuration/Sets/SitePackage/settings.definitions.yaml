@@ -660,10 +660,6 @@ settings:
     category: T3up-Files.Js
     type: bool
     default: false
-  t3upFiles.Js.wall:     
-    category: T3up-Files.Js
-    type: bool
-    default: false
     
   t3upFiles.Scss.access:     
     category: T3up-Files.Scss
@@ -725,10 +721,6 @@ settings:
     category: T3up-Files.Scss
     type: bool
     default: true
-  t3upFiles.Scss.wall:     
-    category: T3up-Files.Scss
-    type: bool
-    default: false  
   t3upFiles.Scss.Own:     
     category: T3up-Files.Scss
     type: string     
