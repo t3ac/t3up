@@ -14,9 +14,7 @@
         }
     ],
     "require": {
-        "typo3/cms-core": "^14.0",
-        "typo3/cms-rte-ckeditor": "^14.0",
-        "typo3/cms-fluid-styled-content": "^14.0"
+        "typo3/cms-core": "^14.3"
     },
     "autoload": {
         "psr-4": {
