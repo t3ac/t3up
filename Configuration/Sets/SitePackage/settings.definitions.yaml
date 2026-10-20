@@ -26,6 +26,8 @@ categories:
     parent: T3up-Colors
   T3up-Colors.navigation:
     parent: T3up-Colors
+  T3up-Colors.subnavigation:
+    parent: T3up-Colors  
   T3up-Colors.pagecolors:
     parent: T3up-Colors   
   T3up-Colors.specials:
@@ -83,7 +85,7 @@ settings:
   t3upBreadcrumb.breadcrumbWrap:  
     category: T3up-Breadcrumb
     type: string
-    default: 'breadcrumbrow navbar navbar-expand-lg d-none d-lg-flex p-5 px-xl-0 w-100'    
+    default: 'breadcrumbrow navbar navbar-expand-lg d-none d-lg-flex px-3 px-xl-0 w-100'    
   t3upBreadcrumb.breadcrumbUlWrap:  
     category: T3up-Breadcrumb
     type: string
@@ -286,20 +288,43 @@ settings:
     default: '#181818'    
   t3upColors.subnavLinkHoverColor:
     category: T3up-Colors.navigation
-    type: color
-    default: '#000000'    
+    type: color  
+    default: '#000000'      
   t3upColors.subnavBG:
     category: T3up-Colors.navigation
     type: color
     default: '#ffffff' 
-  t3upColors.subnavSubmenuBGColor:
+  t3upColors.subnavHoverBG:
     category: T3up-Colors.navigation
-    type: color
-    default: '#000000'       
+    type: color	
+    default: '#ffffff' 
   t3upColors.subnavLineColor:
     category: T3up-Colors.navigation
     type: color
-    default: '#cccccc'  
+    default: '#cccccc'
+  
+  # SubNavigation ----------------------      
+
+  t3upColors.subnavigationLinkColor:
+    category: T3up-Colors.subnavigation
+    type: color
+    default: '#181818'    
+  t3upColors.subnavigationLinkHoverColor:
+    category: T3up-Colors.subnavigation
+    type: color  
+    default: '#000000'      
+  t3upColors.subnavigationBG:
+    category: T3up-Colors.subnavigation
+    type: color
+    default: '#ffffff' 
+  t3upColors.subnavigationHoverBG:
+    category: T3up-Colors.subnavigation
+    type: color
+    default: '#fafafa'   	
+  t3upColors.subnavigationLineColor:
+    category: T3up-Colors.subnavigation
+    type: color
+    default: '#cccccc'      
   
   # Pagecolor ------------------------     
   t3upColors.blue:
@@ -660,10 +685,6 @@ settings:
     category: T3up-Files.Js
     type: bool
     default: false
-  t3upFiles.Js.wall:     
-    category: T3up-Files.Js
-    type: bool
-    default: false
     
   t3upFiles.Scss.access:     
     category: T3up-Files.Scss
@@ -725,10 +746,6 @@ settings:
     category: T3up-Files.Scss
     type: bool
     default: true
-  t3upFiles.Scss.wall:     
-    category: T3up-Files.Scss
-    type: bool
-    default: false  
   t3upFiles.Scss.Own:     
     category: T3up-Files.Scss
     type: string     
