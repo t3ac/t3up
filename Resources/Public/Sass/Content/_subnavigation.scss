@@ -1,25 +1,28 @@
 @import '../_initalize.scss';
 
-.subnavigation {                        left: auto; position: relative;    width: 100%;
-	a                                   {text-decoration: none; color: $subnavLinkColor;}
-	a:hover, a:focus                    {text-decoration: none; color: $subnavLinkHoverColor;}
+.subnavigation {                        left: auto; position: relative;    width: 100%; background:subnavigationBG;
+	a                                   {text-decoration: none; color: $subnavigationLinkColor;}
+	a:hover, a:focus                    {text-decoration: none; color: $subnavigationLinkHoverColor;}
     
-	li.act > a                          {color: $subnavLinkHoverColor;}
+	li.act > a                          {color: $subnavigationLinkHoverColor;}
     ul                                  {list-style: none; padding: 0; position: relative;}
-    > ul                                {margin-bottom: $v4; border-top: 1px solid $subnavLineColor;}    
-    .cur > a                            {font-weight: $bold; text-transform: uppercase; color: $subnavLinkHoverColor;}
+    > ul                                {margin-bottom: $v4; border-top: 1px solid $subnavigationLineColor;}    
+    .cur > a                            {font-weight: $bold; text-transform: uppercase; color: $subnavigationLinkHoverColor;}
     .act > a                            {font-weight: $bold;}
     .levelTitle                         {font-weight: $bold; padding: $v1 $v2; color: $white !important; text-transform: uppercase; margin: 0;}
-    .subsubmenu                         {border-top: 1px solid $subnavLineColor; position: relative; }
-	.subsubmenu:before                  {content:(''); background: $subnavSubmenuBGColor; opacity: .05; z-index: 0; position: absolute; top: 0; left: 0;width: 100%; height: 100%;}
+    .subsubmenu                         {border-top: 1px solid $subnavigationLineColor; position: relative; }
+	.subsubmenu:before                  {content:(''); background: #f00; opacity: .05; z-index: 0; position: absolute; top: 0; left: 0;width: 100%; height: 100%;}
 	
-    li                                  {position: relative; display: block; line-height: 130%; padding-left: 0; border-bottom: 1px solid $subnavLineColor; margin: 0;}    
+    li                                  {position: relative; display: block; line-height: 130%; padding-left: 0; border-bottom: 1px solid $subnavigationLineColor; margin: 0;}    
     li:last-of-type                     {border-bottom: 0;}    
     span                                {font-weight: normal;}    
-    > ul > li                           {background: $white; line-height: 120%; margin-bottom: 0;}
-    ul li a                             {padding: $v2 $v4 $v2 $v2; display: block; color: $subnavLinkColor; }
-    ul li a:hover                       {color: $subnavLinkHoverColor}
-    ul li > span                        {transition: all ease .3s; padding: $v1; display: block; cursor: pointer; font-size: 150%; position: absolute; right: 0; top: 0; text-align: center; }
+    > ul > li                           {background: $subnavigationBG; line-height: 120%; margin-bottom: 0;}
+	li:hover                            {background: $subnavigationHoverBG;}
+
+	
+    ul li a                             {padding: $v2 $v4 $v2 $v2; display: block; color: $subnavigationLinkColor; }
+    ul li a:hover                       {color: $subnavigationLinkHoverColor}
+    ul li > span                        {transition: all ease .3s; padding: $v2; display: block; cursor: pointer; font-size: 150%; position: absolute; right: 0; top: 0; text-align: center; }
     
     ul ul li a                          {padding-left: $v3;}    
 
@@ -27,8 +30,8 @@
     ul ul ul ul li a                    {padding-left: calc($v2 * 3);}    
     ul ul ul ul ul li a                 {padding-left: calc($v2 * 4);} 
     
-    > ul > li                           {border-left: 1px solid $subnavLineColor; border-right: 1px solid $subnavLineColor;}
-    > ul > li:last-of-type              {border-bottom: 1px solid $subnavLineColor;}
+    > ul > li                           {border-left: 1px solid $subnavigationLineColor; border-right: 1px solid $subnavigationLineColor;}
+    > ul > li:last-of-type              {border-bottom: 1px solid $subnavigationLineColor;}
     
     ul[aria-hidden="true"]              {display: none;}
     ul[aria-hidden="false"]             {display: block;}    
@@ -39,7 +42,7 @@
 }
 
 .LeftNavigation {
-    .subnavigation { 
+    .subnavigationigation { 
         li.cur                          {color: $white;}    
         li.cur:hover > a                {color: $white;}    
         li                              {background: $white; color: $black;}                    
