@@ -326,32 +326,53 @@
                 <source>Hovercolor for links in the navigation</source>
             </trans-unit>    
             <trans-unit id="settings.t3upColors.navLinkHoverBGColor">
-                <source>Linkcolor for the subnavigation</source>
+                <source>Backgroundcolor for the navigation hover</source>
             </trans-unit>                
             <trans-unit id="settings.t3upColors.navLinkBorderBottomColor">
                 <source>Bordercolor of the links in the navigation</source>
             </trans-unit>
             <trans-unit id="settings.t3upColors.navLinkBorderBottomHeight">
                 <source>Borderheight of the links in the navigation</source>
-            </trans-unit>
-            
-            <trans-unit id="categories.T3up-Colors.specials">
-                <source>Specials</source>
-            </trans-unit> 
+            </trans-unit>    
+            <trans-unit id="settings.t3upColors.subnavBG">
+                <source>Background of the subnavigation</source>
+            </trans-unit>      
+            <trans-unit id="settings.t3upColors.subnavHoverBG">
+                <source>Background of the subnavigation hover</source>
+            </trans-unit>                             
             <trans-unit id="settings.t3upColors.subnavLinkColor">
                 <source>Linkcolor for the subnavigation</source>
             </trans-unit>                
             <trans-unit id="settings.t3upColors.subnavLinkHoverColor">
                 <source>Hovercolor for links of the subnavigation</source>
             </trans-unit>            
-            <trans-unit id="settings.t3upColors.subnavBG">
-                <source>Background of the subnavigation</source>
-            </trans-unit>                    
-            <trans-unit id="settings.subnavigationLinkColor">
-                <source>Background of the subnavigation</source>
-            </trans-unit>                    
-
-
+            <trans-unit id="settings.t3upColors.subnavLineColor">
+                <source>Subnavigation linecolor</source>
+            </trans-unit>    
+            
+            <trans-unit id="categories.T3up-Colors.subnavigation">
+                <source>Subnavigation colors</source>
+            </trans-unit>       
+            <trans-unit id="settings.t3upColors.subnavigationLinkColor">
+                <source>Linkcolor for the subnavigationmenue</source>
+            </trans-unit>                
+            <trans-unit id="settings.t3upColors.subnavigationLinkHoverColor">
+                <source>Hovercolor for links in the subnavigationmenue</source>
+            </trans-unit>    
+            <trans-unit id="settings.t3upColors.subnavigationBG">
+                <source>Background of the subnavigationmenue</source>
+            </trans-unit>   
+            <trans-unit id="settings.t3upColors.subnavigationHoverBG">
+                <source>Hover background of the subnavigationmenue</source>
+            </trans-unit>   
+                        
+            <trans-unit id="settings.t3upColors.subnavigationLineColor">
+                <source>Subnavigationmenue linecolor</source>
+            </trans-unit>  
+                            
+            <trans-unit id="categories.T3up-Colors.specials">
+                <source>Specials</source>
+            </trans-unit> 
             <trans-unit id="categories.T3up-Colors.pagecolors">
                 <source>Pagecolors</source>
             </trans-unit>       
