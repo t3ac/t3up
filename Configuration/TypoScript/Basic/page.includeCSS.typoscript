@@ -85,22 +85,26 @@ plugin.tx_wsscss.variables{
   
     // Navigation      
     navFontSize                     = {$t3upTypography.navFontSize}   
-    navFontWeight                   = {$t3upTypography.navFontWeight}   
+    navFontWeight                   = {$t3upTypography.navFontWeight}  
+     
     navLinkColor                    = {$t3upColors.navLinkColor}   
     navLinkHoverColor               = {$t3upColors.navLinkHoverColor}      
     navLinkHoverBGColor             = {$t3upColors.navLinkHoverBGColor}  
     navLinkBorderBottomColor        = {$t3upColors.navLinkBorderBottomColor}  
-    navLinkBorderBottomHeight       = {$t3upColors.navLinkBorderBottomHeight}px  
-    navFontSize                     = {$t3upTypography.navFontSize}
-    navFontWeight                   = {$t3upTypography.navFontWeight}   
-    
-    // Subnavigation       
+    navLinkBorderBottomHeight       = {$t3upColors.navLinkBorderBottomHeight}px 
+      
     subnavLinkColor                 = {$t3upColors.subnavLinkColor}   
     subnavLinkHoverColor            = {$t3upColors.subnavLinkHoverColor}      
-    subnavBG                        = {$t3upColors.subnavBG}    
-    subnavSubmenuBGColor            = {$t3upColors.subnavSubmenuBGColor}         
-    subnavLineColor                 = {$t3upColors.subnavLineColor} 
- 
+    subnavBG                        = {$t3upColors.subnavBG}   
+    subnavHoverBG                   = {$t3upColors.subnavHoverBG}        
+    subnavLineColor                 = {$t3upColors.subnavLineColor}     
+    
+    // Subnavigation       
+    subnavigationLinkColor          = {$t3upColors.subnavigationLinkColor}   
+    subnavigationLinkHoverColor     = {$t3upColors.subnavigationLinkHoverColor}      
+    subnavigationBG                 = {$t3upColors.subnavigationBG}    
+    subnavigationHoverBG            = {$t3upColors.subnavigationHoverBG}        
+    subnavigationLineColor          = {$t3upColors.subnavigationLineColor}     
             
     // Pagecolors      
     blue                            = {$t3upColors.blue}   
