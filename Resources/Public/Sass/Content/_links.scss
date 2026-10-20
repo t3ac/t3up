@@ -1,4 +1,4 @@
-// @import '../_initalize.scss';
+@import '../_initalize.scss';
 
 ul.ohne                                         {list-style-type: none; padding-left: 0;}
 ul.dash                                         {list-style-type: none; padding-left: $v2;}
@@ -11,7 +11,7 @@ ol.roman                                        {list-style-type:upper-roman;}
 ol.greek                                        {list-style-type:lower-greek;}
 ol.lower-alpha                                  {list-style-type:lower-alpha;}
 
-a.link-internal::before                         {@include symbol; color: $linkColor; content:'arrow_forward'; font-family: $symbol; text-indent: 0; display: inline-block; padding-right: $v1;}
+a.link-internal::before                         {@include symbol; color: $linkColor; content:'arrow_forward'; text-indent: 0; display: inline-block; padding-right: $v1;}
 a.link-internal-blank::before,
 a.link-external-blank::before,
 a.link-external::before                         {@include symbol; color: $linkColor; content:'arrow_outward';         text-indent: 0; display: inline-block; padding-right: $v1;}
@@ -44,7 +44,7 @@ ul {
 ul.ohne                                         {padding-left: 0;}
 
 .frame-type-menu_subpages li a::before,
-.frame-type-menu_pages li a::before             {color: $linkColor; content:'arrow_forward'; font-family: $symbol; text-indent: 0; display: inline-block;}
+.frame-type-menu_pages li a::before             {color: $linkColor; content:'arrow_forward'; @include symbol;  text-indent: 0; display: inline-block;}
 .frame-noicon     a.link-download::before       {content:''; }
 
 /* Download in Upload*/
