@@ -35,17 +35,18 @@
                 > li:hover                          {color:$navLinkHoverColor; border-bottom-color:$navLinkHoverColor;}                
             }
             .nav__level2,
-            .nav__level3{                           text-align: left; top: auto;margin-top: $navLinkBorderBottomHeight; background-color:$subnavBG; width:200%; box-shadow:$shadow; position:absolute; white-space:nowrap; z-index:1002; transition:all ease .3s;
-              > li{                                 display:flex; justify-content:space-between; border-bottom:1px solid $navLinkColor;			
+            .nav__level3{                           text-align: left; top: auto;margin-top: $navLinkBorderBottomHeight; background-color:$subnavBG; width:200%; @include shadow;; position:absolute; white-space:nowrap; z-index:1002; transition:all ease .3s;
+              > li{                                 display:flex; justify-content:space-between; border-bottom:1px solid $subnavLineColor;			
                 &.act,
                 &.cur                               {/*background-color:$basicColor;*/} 
                 > p,
                 > a                                 {cursor:pointer; margin:0;font-size:$navFontSize; display:inline-block; padding:$v2; transition:all ease .3s; text-align:inherit;  white-space:normal; color:$subnavLinkColor;}
                 > li:hover a, 
-                &.activated  a                        {color:$navLinkHoverColor;}                                  
+                &.activated  a                      {color:$subnavLinkHoverColor;}                                  
                 span                                {cursor:pointer; font-size: 150%; padding:$v2; display:block; text-align:center; font-family:$symbol; line-height:100%; color:$subnavLinkColor;}
-                > li:hover > span                   {background-color:$navLinkColor;} 
+                > li:hover > span                   {background-color:$subnavLineColor;} 
               }   
+			  > li:hover                          {background-color:$subnavHoverBG;} 
 			  > li:last-of-type                     {border-bottom:0}
             }
             .nav__level3                            {top:auto; width:100%; left: 100%; margin-top: 0;}
@@ -71,7 +72,7 @@
 
                > li span                             {padding-right: $v1; line-height:$v1; font-weight:normal; cursor:pointer; font-size: 150%; height: $v2; min-width: $v2; justify-content: center; align-items: center}
  
-                 li:hover > a                        {color: $basicColor; }        
+                 li:hover > a                        {color: $subnavLinkHoverColor; }        
                  li > a                              {line-height: $v3; transition: all ease .3s; font-weight:bold; padding: 0 $v3;}
             }        
 
