@@ -30,13 +30,15 @@ plugin.tx_wsscss.variables{
     overlay                         = {$t3upColors.overlay}  
     pictureoverlay                  = {$t3upColors.pictureoverlay}  
     pictureoverlayTextColor         = {$t3upColors.pictureoverlayTextColor}    
-    pictureoverlayTextSize         = {$t3upColors.pictureoverlayTextSize}       
+    pictureoverlayTextSize          = {$t3upColors.pictureoverlayTextSize}      
+
         
     // Footer Colors     
     footer1BgColor                  = {$t3upColors.footer1BgColor}    
     footer1TextColor                = {$t3upColors.footer1TextColor}       
     footer1LinkColor                = {$t3upColors.footer1LinkColor}  
     footer1LinkHoverColor           = {$t3upColors.footer1LinkHoverColor}   
+    footer1TopColor                 = {$t3upColors.footer1TopColor}       
     footer2BgColor                  = {$t3upColors.footer2BgColor}           
     footer2TextColor                = {$t3upColors.footer2TextColor}       
     footer2LinkColor                = {$t3upColors.footer2LinkColor}  
@@ -228,7 +230,7 @@ plugin.tx_wsscss.variables{
     forward                         = {$t3upTypography.forward}       
     backward                        = {$t3upTypography.backward}         
 
-      
+    carouselControlSize             = {$t3upTypography.pictureoverlayTextSize}   
 }
 
 page.includeCSS    = COA
