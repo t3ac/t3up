@@ -34,6 +34,8 @@ a.btn-more:hover                                         {color: #ffff;}
 /* Slider **********************************************/
 
 .t3up_slider {
+	
+	
     
     .imageformat1                                      {aspect-ratio: 1 / 1;}
     .imageformat2                                      {aspect-ratio: 3 / 2;}
@@ -67,7 +69,7 @@ a.btn-more:hover                                         {color: #ffff;}
 	.carousel-control-next							   {opacity: 0; transition: all ease 1s; width: auto; z-index: 4; }		
 	
 	.carousel-control-prev > span,
-	.carousel-control-next > span    				   {padding: $v1; color: $white;}		
+	.carousel-control-next > span    				   {padding: $v2; color: $white; font-size: $carouselControlSize;}		
 	
 	.carousel-control-prev:focus,
 	.carousel-control-next:focus,		
