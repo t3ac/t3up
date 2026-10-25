@@ -100,9 +100,11 @@ $pictureoverlay :                   (#{$pictureoverlay});
 $pictureoverlayTextColor :          (#{$pictureoverlayTextColor});
 $pictureoverlayTextSize :           (#{$pictureoverlayTextSize});
 
-
 // Breadcrumb
 $breadcrumbTextSize :               (#{$breadcrumbTextSize});
+
+// Carousel
+$carouselControlSize :               (#{$carouselControlSize});
 
 // TYPO
 
@@ -171,6 +173,7 @@ $footer1fontsize :                  (#{$footer1fontsize});
 $footer3fontsize :                  (#{$footer3fontsize});
 
 // NAVIGATION
+$desktopNavigation:                 (#{$desktopNavigation});
 $navFontWeight :                    (#{$navFontWeight});
 $navFontSize :                      (#{$navFontSize});
 $navLinkBorderBottomHeight :        (#{$navLinkBorderBottomHeight});
