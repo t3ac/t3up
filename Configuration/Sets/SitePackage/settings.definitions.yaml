@@ -147,6 +147,10 @@ settings:
     category: T3up-Colors.footer
     type: color
     default: '#181818'  
+  t3upColors.footer1TopColor:
+    category: T3up-Colors.footer
+    type: color
+    default: '#dadada'  	
   t3upColors.footer1LinkColor:
     category: T3up-Colors.footer
     type: color
@@ -479,8 +483,15 @@ settings:
   t3upComponents.imageLayouts:
     category: T3up-Components.layouts
     type: bool
-    default: true
-
+    default: true	
+  t3upComponents.leftCol:
+    category: T3up-Components.layouts
+    type: int
+    default: '4'	
+  t3upComponents.centerCol:
+    category: T3up-Components.layouts
+    type: int
+    default: '8'		
   t3upComponents.designFrames:
     category: T3up-Components.tsconfig
     type: bool
@@ -1077,7 +1088,10 @@ settings:
       2: 'Active'   
       3: 'Block'   
       4: 'Anker'  
-        
+  t3upNavigation.desktopNavigation:
+    category: T3up-Navigation
+    default: '992px'	  
+    type: string
   t3upNavigation.navdir:
     category: T3up-Navigation
     default: 'justify-content-start'   
@@ -1266,11 +1280,11 @@ settings:
   t3upTypography.h1.fontWeight:
     category: T3up-Typography.header
     type: int
-    default:  '600'          
+    default:  '600'        
   t3upTypography.h1.lineHeight:
     category: T3up-Typography.header
     type: string
-    default:  'inherit'
+    default:  '120%'
   t3upTypography.h1.alignment:
     category: T3up-Typography.header
     type: string
@@ -1311,7 +1325,7 @@ settings:
   t3upTypography.h2.lineHeight:
     category: T3up-Typography.header
     type: string
-    default:  'inherit'             
+    default:  '120%'             
   t3upTypography.h2.margin:
     category: T3up-Typography.header
     type: string
@@ -1327,7 +1341,7 @@ settings:
   t3upTypography.h3.lineHeight:
     category: T3up-Typography.header
     type: string
-    default:  'inherit'             
+    default:  '120%'             
   t3upTypography.h3.margin:
     category: T3up-Typography.header
     type: string
@@ -1343,7 +1357,7 @@ settings:
   t3upTypography.h4.lineHeight:
     category: T3up-Typography.header
     type: string
-    default:  'inherit'             
+    default:  '120%'             
   t3upTypography.h4.margin:
     category: T3up-Typography.header
     type: string
@@ -1378,3 +1392,9 @@ settings:
     enum:
       0: 'chevron_backward'
       1: 'arrow_left' 
+  t3upTypography.carouselControlSize:
+    category: T3up-Typography
+    type: string
+    default:  '3vw'
+  
+   
