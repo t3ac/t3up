@@ -9,6 +9,6 @@ lib.header.mobilbutton {
     20.value                                = Menu
     20.wrap					                = <span class="showtitle{$t3upHeader.showtitle} small ps-3">|</span>
     
-    wrap                                    = <li class="d-md-none mobilButton order-{$t3upHeader.mobilBottonPos} {$t3upHeader.topElementWrap}">|</li>
+    wrap                                    = <li class="mobilButton order-{$t3upHeader.mobilBottonPos} {$t3upHeader.topElementWrap}">|</li>
     
 }
