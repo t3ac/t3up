@@ -3,7 +3,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: block;
-    src:    url('../../../Fonts/Material/material400-symbols-sharp.woff2') format('woff2');
+    src:    url('../Fonts/Material/material400-symbols-sharp.woff2') format('woff2');
 }
 
 
@@ -48,17 +48,15 @@ a.btn-more                                          {background-color: #000000dd
 
 span.mono	         				                {font-family: Courier New, Courier, monospace; }			
 
-a.link-internal::before                             {font-weight: normal !important; content:'\e879'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
+a.link-internal::before                             {font-weight: normal !important; content:'arrow_forward'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
 a.link-internal-blank::before,
 a.link-external-blank::before,
-a.link-external::before                             {font-weight: normal !important; content:'\e89e'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
-a.link-mail::before                                 {font-weight: normal !important; content:'\e0be'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
-a.link-download::before                             {font-weight: normal !important; content:'mail';  font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
-a.link-web::before                                  {font-weight: normal !important; content:'\e64c'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
-a.link-fax::before                                  {font-weight: normal !important; content:'\ead8'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
-a.link-phone::before                                {font-weight: normal !important; content:'\e0b0'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
-a.link-mobil::before                                {font-weight: normal !important; content:'\e7ba'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
-a.link-folder::before                               {font-weight: normal !important; content:'\e2c7'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
-a.link-info::before                                 {font-weight: normal !important; content:'\e88e'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-left: 3px; padding-right: 5px;}
-a.link-web::before                                  {font-weight: normal !important; content:'\e64c'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-left: 3px; padding-right: 5px;}
-
+a.link-external::before                             {font-weight: normal !important; content:'arrow_outward'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
+a.link-mail::before                                 {font-weight: normal !important; content:'mail'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
+a.link-download::before                             {font-weight: normal !important; content:'download';  font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
+a.link-web::before                                  {font-weight: normal !important; content:'public'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
+a.link-fax::before                                  {font-weight: normal !important; content:'fax'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
+a.link-phone::before                                {font-weight: normal !important; content:'phone'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
+a.link-mobil::before                                {font-weight: normal !important; content:'iphone'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
+a.link-folder::before                               {font-weight: normal !important; content:'folder'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-right: 5px}
+a.link-info::before                                 {font-weight: normal !important; content:'highlight_text_cursor'; font-family: 'Material Symbols Sharp'; text-indent: 0; font-size: 90%; display: inline-block; padding-left: 3px; padding-right: 5px;}
