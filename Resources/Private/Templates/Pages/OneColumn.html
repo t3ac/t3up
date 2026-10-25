@@ -2,9 +2,9 @@
     <f:layout name="Standard" />
     <f:section name="Content">
       <f:render partial="Header.html" section="Header" arguments="{_all}" />
+	  <div class="overlay"></div> 
+	  <f:render.contentArea contentArea="{content.stage}" />
       <main id="content" class="oneColumn position-relative {settings.t3upComponents.mainPadding}">
-            <div class="overlay"></div> 
-            <f:render.contentArea contentArea="{content.stage}" />
             <div class="container beforeContent"> 
 	            <div class="row">
 					<f:if condition="{breadcrumbtop} != '1'">
