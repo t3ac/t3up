@@ -1,0 +1,74 @@
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/textselection/plugin.js" }
+    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/loremipsum/plugin.js"  }
+    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/nbsp/plugin.js"  }
+    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/justify/plugin.js"  }
+    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/codeTag/plugin.js" }
+    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/showbrokenlinks/plugin.js" }
+    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/Email/plugin.js"  }
+  
+editor:
+    config:
+        contentsCss: "EXT:t3up/Resources/Public/Css/rte.css"
+        
+        stylesSet:
+            - { name: "Lead", element: "p", attributes: { 'class': 'lead' } }
+            - { name: "Link intern", element: "a", attributes: { 'class': 'link-internal' } }
+            - { name: "Anker", element: "a", attributes: { 'class': 'smooth' } }         
+            - { name: "Link extern", element: "a", attributes: { 'class': 'link-external' } }
+            - { name: "Phone", element: "a", attributes: { 'class': 'link-phone' } }
+            - { name: "Fax", element: "a", attributes: { 'class': 'link-fax' } }    
+            - { name: "E-Mail", element: "a", attributes: { 'class': 'link-mail' } }
+            - { name: "Download", element: "a", attributes: { 'class': 'link-download' } }
+            - { name: "Button light", element: "a", attributes: { 'class': 'btn btn-light' } }
+            - { name: "Button secondary", element: "a", attributes: { 'class': 'btn btn-secondary' } }
+            - { name: "Info", element: "a", attributes: { 'class': 'link-info' } }
+            - { name: "Web", element: "a", attributes: { 'class': 'link-web' } }
+            
+            - { name: "UL ohne Aufzählungspunkte", element: "ul", attributes: { 'class': 'ohne' } }
+            - { name: "UL mit Strich", element: "ul", attributes: { 'class': 'dash' } }
+            - { name: "UL mit Quadrat", element: "ul", attributes: { 'class': 'square' } }
+            - { name: "UL für Symbole", element: "ul", attributes: { 'class': 'symbols' } }
+
+            - { name: "Ol decimal", element: "ol", attributes: { 'class': 'decimal' } }
+            - { name: "Ol roman", element: "ol", attributes: { 'class': 'roman' } }
+            - { name: "Ol abc", element: "ol", attributes: { 'class': 'lower-alpha' } }
+            
+        toolbarGroups:
+            - { name: styles, groups: [ format, styles ] }
+            - { name: basicstyles, groups: [ basicstyles ] }
+            - { name: paragraph, groups: [ list, indent, blocks, align ] }
+            
+            - { name: links, groups: [ links ] }
+            - { name: clipboard, groups: [ clipboard, cleanup, undo, loremipsum ] }
+            - { name: editing, groups: [ spellchecker ] }
+            - { name: insert, groups: [ insert ] }
+            - { name: tools, groups: [ table, specialchar ] }
+            - { name: document, groups: [ mode ] }
+
+        format_tags: "p;h3;h4;pre"
+
+        justifyClasses:
+            - text-left
+            - text-center
+            - text-right
+            - text-justify
+
+        extraPlugins:
+            - justify
+            - textselection
+            - showblocks
+            - loremipsum
+            - nbsp       
+        
+        removePlugins:
+            - image
+
+        removeButtons:
+            - Table            
+            - Anchor
+            - Underline
+            - Strike
