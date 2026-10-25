@@ -1,7 +1,5 @@
 @import '../_initalize.scss';
 
-
-
 header {                                        position: fixed; background-color: $headerBgColor; width: 100%; transition: all ease 0.3s;
     *                                           {color: $headerTextColor;}
     &.sticky                                    {position: sticky; top: 0; z-index: 1000; @include shadow; }
@@ -77,3 +75,11 @@ header {                                        position: fixed; background-colo
         .funcItemTitle                          {display: inline-block;}
     }
 }
+
+
+@media screen and (min-width: $desktopNavigation) {
+    header {    
+        .mobilButton                           {display: none;}
+    }
+}
+
