@@ -1,7 +1,7 @@
 @import '../_initalize.scss';
 
 
-@media screen and (min-width:768px){
+@media screen and (min-width: $desktopNavigation){
     header {    
         .mainNavigtion{
                 
@@ -26,11 +26,13 @@
             .nav__level1{                           
                 > li{                               position:relative; hyphens: none; text-align: center;  border-bottom-width: $navLinkBorderBottomHeight; border-bottom-style:solid; border-bottom-color:transparent;
                     > span,
-                    > a                             {cursor:pointer; margin:0; font-size:$navFontSize; letter-spacing:.01em; transition:color ease .3s; text-transform:uppercase; padding: $v1 $v1 $v3; 
-                                                    color:$navLinkColor; display:inline-block; font-weight:$navFontWeight;}             
-                    &.cur
-                    &.activated                     {border-bottom-color:$navLinkHoverColor;}
-                    &.act                           {border-bottom-color:$navLinkHoverColor; border-bottom-color:$navLinkBorderBottomColor;}
+                    > a                             {cursor:pointer; margin:0; font-size:$navFontSize; letter-spacing:.01em; transition:color ease .3s; text-transform:uppercase; padding: $v1 $v2 $v3; 
+                                                    color:$navLinkColor; display:inline-block; font-weight:$navFontWeight;}   
+													          
+                    
+                    &.activated                     {border-bottom-color:$navLinkBorderBottomColor;}
+					&.cur,
+                    &.act                           {border-bottom-color:$navLinkHoverColor;}
                 }
                 > li:hover                          {color:$navLinkHoverColor; border-bottom-color:$navLinkHoverColor;}                
             }
@@ -46,7 +48,7 @@
                 span                                {cursor:pointer; font-size: 150%; padding:$v2; display:block; text-align:center; font-family:$symbol; line-height:100%; color:$subnavLinkColor;}
                 > li:hover > span                   {background-color:$subnavLineColor;} 
               }   
-			  > li:hover                          {background-color:$subnavHoverBG;} 
+			  > li:hover                            {background-color:$subnavHoverBG;} 
 			  > li:last-of-type                     {border-bottom:0}
             }
             .nav__level3                            {top:auto; width:100%; left: 100%; margin-top: 0;}
@@ -56,7 +58,7 @@
          .activeNav{                                
            .nav__level1{                            min-height:$v3;
                 > li {                              hyphens: none; text-align: center;  border-bottom-width: $navLinkBorderBottomHeight; border-bottom-style:solid; border-bottom-color:transparent;
-                    > a                             {padding:  $v1 $v1 $v3;; display:inline-block; cursor:pointer; font-size:$navFontSize; transition:color ease .3s; text-transform:uppercase; color:$navLinkColor; font-weight:$navFontWeight;}    
+                    > a                             {padding:  $v1 $v2 $v3;; display:inline-block; cursor:pointer; font-size:$navFontSize; transition:color ease .3s; text-transform:uppercase; color:$navLinkColor; font-weight:$navFontWeight;}    
                     &.cur                           {border-bottom-color:$basicColor;}
                     &.act                           {border-bottom-color:$navLinkHoverColor; border-bottom-color:$navLinkBorderBottomColor;}
                     &:hover                         {color:$navLinkHoverColor; border-bottom-color: transparent;}
@@ -76,13 +78,13 @@
                  li > a                              {line-height: $v3; transition: all ease .3s; font-weight:bold; padding: 0 $v3;}
             }        
 
-            .nav__level3{                           position:absolute; width: calc(200% - 9rem); list-style:none; left: calc(100% + #{$v2}); top: 0;
-                > li                                {height: 3rem; transition: all ease .3s; display:inline-flex; border-bottom: 0; width: 50%; align-items: center;}
-                > li:hover                          {background:rgba( 0, 20, 40, 0.04)}              
+            .nav__level3{                            position:absolute; width: calc(200% - 9rem); list-style:none; left: calc(100% + #{$v2}); top: 0;
+                > li                                 {height: 3rem; transition: all ease .3s; display:inline-flex; border-bottom: 0; width: 50%; align-items: center;}
+                > li:hover                           {background:rgba( 0, 20, 40, 0.04)}              
             }
 
-            .box                                    { min-height: 480px; z-index:1002; width:100%; position:absolute; left:0; display:none; margin-top: $navLinkBorderBottomHeight; box-shadow:$shadow; background-color:$white; overflow-x:hidden;}
-            .btn-close                              {position: absolute; right: $v3; top: $v3;}
+            .box                                     {min-height: 480px; z-index:1002; width:100%; position:absolute; left:0; display:none; margin-top: $navLinkBorderBottomHeight; box-shadow:$shadow; background-color:$white; overflow-x:hidden;}
+            .btn-close                               {position: absolute; right: $v3; top: $v3;}
          }
         
          // Navigation 3:Navigation on the right, full size 
@@ -91,7 +93,7 @@
             .nav__level1{
                 > li{                               order:2; hyphens: none;
                     > span:not(.btn-close),   
-                    > a                             {cursor:pointer; font-size:$navFontSize; transition:all ease .3s; font-weight:$navFontWeight;text-transform:uppercase; padding: $v1 $v1 $v3; 
+                    > a                             {cursor:pointer; font-size:$navFontSize; transition:all ease .3s; font-weight:$navFontWeight;text-transform:uppercase; padding: $v1 $v2 $v3; 
                                                     display:block; width:100%; text-align:inherit; white-space:nowrap; border-bottom-width: $navLinkBorderBottomHeight; border-bottom-style:solid; border-bottom-color:transparent; text-transform: none; }
                     &.act > a                       {border-bottom-color:$navLinkHoverColor;}
                 }
@@ -205,12 +207,12 @@ header .mainNavigtion{
 
 /* All Mobil-Nav ********************************************************************************************************************************************************/
 
-@media screen and (max-width:768px){
+@media screen and (max-width:$desktopNavigation){
     header ul.nav,    
     .mm-menu    span.btn-close                  {display:none;}
 }
 
 
-@media screen and (min-width:768px){
+@media screen and (min-width:$desktopNavigation){
     header nav#menu                             {display:block;}
 }
