@@ -3,9 +3,9 @@
 	<f:spaceless>
 		<f:section name="Main">
             <f:render partial="Header.html" section="Header" arguments="{_all}" />
+            <div class="overlay"></div> 
+            <f:render.contentArea contentArea="{content.stage}" />				
             <main id="content">  
-                <div class="overlay"></div> 
-                <f:render.contentArea contentArea="{content.stage}" />
                 <!--TYPO3SEARCH_begin--> 
 			       <f:render.contentArea contentArea="{content.main}" />
 			    <!--TYPO3SEARCH_end-->    
