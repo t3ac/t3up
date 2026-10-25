@@ -12,6 +12,9 @@
 /* BODY ***************************************************************/
 
 body {                              background-color: $bodyBgColor !important; /*font-family: $font !important;*/
+	
+	
+	.page							{min-height: 100vh;}
     
     *                               {color: $textColor; }     
     p,li,th,td                      {font-size: $p; hyphens: auto; hyphenate-limit-chars: auto 5; hyphenate-limit-lines: 2;} 
@@ -41,10 +44,10 @@ main{
     
     li                              {margin-bottom: $v1;}
     
-    ul                              {padding: 0 0 0 $v1; list-style-type: square;}
-    ul ul                           {padding: 0 0 0 $v2; list-style-type: square;}
-    ul ul ul                        {padding: 0 0 0 $v3; list-style-type: square;}
-    ol                              {padding: 0 0 0 $v1;}
+    ul                              {padding: 0 0 0 $v3; list-style-type: square;}
+    ul ul                           {padding: 0 0 0 $v4; list-style-type: square;}
+    ul ul ul                        {padding: 0 0 0 $v5; list-style-type: square;}
+    ol                              {padding: 0 0 0 $v3;}
 }
 
 
