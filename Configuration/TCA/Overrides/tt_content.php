@@ -46,7 +46,7 @@ $padding = array(
     
     'space_before_class' => [
         'exclude' => true,
-        'label'   => $ll . ':padding_before',
+        'label'   => $ll . ':space_before',
         'config'  => [
             'type'       => 'select',
             'renderType' => 'selectSingle',
@@ -65,7 +65,7 @@ $padding = array(
     ],
     'space_after_class'  => [
         'exclude' => true,
-        'label'   => $ll . ':padding_after',
+        'label'   => $ll . ':space_after',
         'config'  => [
             'type'       => 'select',
             'renderType' => 'selectSingle',
@@ -226,7 +226,7 @@ $padding = array(
                 ['label' => $ll . ':2750', 'value' => '2750'],
                 ['label' => $ll . ':3000', 'value' => '3000'],
             ],
-            'default'    => '250',
+            'default'    => '1000',
         ],
     ],
 );
@@ -433,13 +433,13 @@ $GLOBALS['TCA']['tt_content']['palettes']['onepager_fields'] = [
     'tt_content','--palette--;' . $ll . ':padding_class;newpadding_fields','textmedia,buttons,menu_pages','before:sectionIndex');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content','--palette--;' . $ll . ':animation_class;animation_fields','textmedia,t3up_hero,headerbutton,imagebutton,symbolbutton,youtubevideo_pi1','before:sectionIndex');
+    'tt_content','--palette--;' . $ll . ':animation_class;animation_fields','textmedia,t3up_hero,headerbutton,imagebutton,symbolbutton,youtubevideo_pi1,uploads','before:sectionIndex');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content','--palette--;' . $ll . ':container_class;onepager_fields','textmedia,text,header,table,1cols,2cols,3cols,4cols,buttons,arccodion,news_newsliststicky,news_newsdetail;','before:sectionIndex');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content','--palette--;' . $ll . ':padding_class;sidepadding_fields','header,table,1cols,2cols,3cols,4cols','after:frame_class');
+    'tt_content','--palette--;' . $ll . ':padding_class;sidepadding_fields','header,table,1cols,2cols,3cols,4cols,uploads','after:frame_class');
 
 
 
