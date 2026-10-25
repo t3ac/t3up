@@ -1,29 +1,30 @@
  <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers"> 
-	<f:layout name="Standard" />
-	<f:section name="Content">
-		<f:render partial="Header.html" section="Header" arguments="{_all}" />
-		<main id="content" class="leftNavigation position-relative {settings.t3upComponents.mainPadding}">
-			<div class="overlay"></div> 
-            <f:render.contentArea contentArea="{content.stage}" />
-			<div class="container">          
-				<div class="row">
-					<div class=" d-none d-lg-block col-lg-4 subnav pe-lg-5">
-						<!-- beginn: subnavigation #nav -->
-							<f:render partial="Submenu/Submenu" arguments="{_all}"/>
-						<!-- ende: subnavigation #nav -->   
-					</div>
-                    <div class="col-12 col-lg-8 content ps-lg-3"> 
-                     	<f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>	  
-		                <f:if condition="{page.pageRecord.deltitle} != '1'">
-		                  <f:if condition="{page.pageRecord.showtitle} == 0">
-		                      <f:then>
-		                        <f:format.nl2br><h1 class="{h1wrap}">{title}</h1></f:format.nl2br>
-		                       </f:then> 
-		                      <f:else>
-		                          <h1 class="outof">{title}</h1>  
-		                       </f:else> 
-		                  </f:if>
-		                </f:if>
+    <f:layout name="Standard" />
+    <f:section name="Content">
+        <f:render partial="Header.html" section="Header" arguments="{_all}" />
+        <div class="overlay"></div> 
+        <f:render.contentArea contentArea="{content.stage}" />        
+        <main id="content" class="leftNavigation position-relative {settings.t3upComponents.mainPadding}">
+
+            <div class="container">          
+                <div class="row">
+                    <div class=" d-none d-lg-block col-lg-{settings.t3upComponents.leftCol} subnav pe-lg-5">
+                        <!-- beginn: subnavigation #nav -->
+                            <f:render partial="Submenu/Submenu" arguments="{_all}"/>
+                        <!-- ende: subnavigation #nav -->   
+                    </div>
+                    <div class="col-12 col-lg-{settings.t3upComponents.centerCol} content"> 
+                         <f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>      
+                        <f:if condition="{page.pageRecord.deltitle} != '1'">
+                          <f:if condition="{page.pageRecord.showtitle} == 0">
+                              <f:then>
+                                <f:format.nl2br><h1 class="{h1wrap}">{title}</h1></f:format.nl2br>
+                               </f:then> 
+                              <f:else>
+                                  <h1 class="outof">{title}</h1>  
+                               </f:else> 
+                          </f:if>
+                        </f:if>
                         <!--TYPO3SEARCH_begin-->
                             <f:render.contentArea contentArea="{content.main}" />
                          <!--TYPO3SEARCH_end-->  
@@ -31,8 +32,8 @@
                             <f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
                         </f:if>
                     </div>                      
-				 </div> 
-			</div>  
-		</main>
-	 </f:section>
+                 </div> 
+            </div>  
+        </main>
+     </f:section>
 </html>
