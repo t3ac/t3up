@@ -30,13 +30,15 @@ plugin.tx_wsscss.variables{
     overlay                         = {$t3upColors.overlay}  
     pictureoverlay                  = {$t3upColors.pictureoverlay}  
     pictureoverlayTextColor         = {$t3upColors.pictureoverlayTextColor}    
-    pictureoverlayTextSize         = {$t3upColors.pictureoverlayTextSize}       
+    pictureoverlayTextSize          = {$t3upColors.pictureoverlayTextSize}      
+
         
     // Footer Colors     
     footer1BgColor                  = {$t3upColors.footer1BgColor}    
     footer1TextColor                = {$t3upColors.footer1TextColor}       
     footer1LinkColor                = {$t3upColors.footer1LinkColor}  
     footer1LinkHoverColor           = {$t3upColors.footer1LinkHoverColor}   
+    footer1TopColor                 = {$t3upColors.footer1TopColor}       
     footer2BgColor                  = {$t3upColors.footer2BgColor}           
     footer2TextColor                = {$t3upColors.footer2TextColor}       
     footer2LinkColor                = {$t3upColors.footer2LinkColor}  
@@ -84,23 +86,28 @@ plugin.tx_wsscss.variables{
     h4-color                        = {$t3upColors.h4-color}   
   
     // Navigation      
+    desktopNavigation               = {$t3upNavigation.desktopNavigation}   
     navFontSize                     = {$t3upTypography.navFontSize}   
-    navFontWeight                   = {$t3upTypography.navFontWeight}   
+    navFontWeight                   = {$t3upTypography.navFontWeight}  
+     
     navLinkColor                    = {$t3upColors.navLinkColor}   
     navLinkHoverColor               = {$t3upColors.navLinkHoverColor}      
     navLinkHoverBGColor             = {$t3upColors.navLinkHoverBGColor}  
     navLinkBorderBottomColor        = {$t3upColors.navLinkBorderBottomColor}  
-    navLinkBorderBottomHeight       = {$t3upColors.navLinkBorderBottomHeight}px  
-    navFontSize                     = {$t3upTypography.navFontSize}
-    navFontWeight                   = {$t3upTypography.navFontWeight}   
-    
-    // Subnavigation       
+    navLinkBorderBottomHeight       = {$t3upColors.navLinkBorderBottomHeight}px 
+      
     subnavLinkColor                 = {$t3upColors.subnavLinkColor}   
     subnavLinkHoverColor            = {$t3upColors.subnavLinkHoverColor}      
-    subnavBG                        = {$t3upColors.subnavBG}    
-    subnavSubmenuBGColor            = {$t3upColors.subnavSubmenuBGColor}         
-    subnavLineColor                 = {$t3upColors.subnavLineColor} 
- 
+    subnavBG                        = {$t3upColors.subnavBG}   
+    subnavHoverBG                   = {$t3upColors.subnavHoverBG}        
+    subnavLineColor                 = {$t3upColors.subnavLineColor}     
+    
+    // Subnavigation       
+    subnavigationLinkColor          = {$t3upColors.subnavigationLinkColor}   
+    subnavigationLinkHoverColor     = {$t3upColors.subnavigationLinkHoverColor}      
+    subnavigationBG                 = {$t3upColors.subnavigationBG}    
+    subnavigationHoverBG            = {$t3upColors.subnavigationHoverBG}        
+    subnavigationLineColor          = {$t3upColors.subnavigationLineColor}     
             
     // Pagecolors      
     blue                            = {$t3upColors.blue}   
@@ -224,7 +231,7 @@ plugin.tx_wsscss.variables{
     forward                         = {$t3upTypography.forward}       
     backward                        = {$t3upTypography.backward}         
 
-      
+    carouselControlSize             = {$t3upTypography.carouselControlSize}   
 }
 
 page.includeCSS    = COA
