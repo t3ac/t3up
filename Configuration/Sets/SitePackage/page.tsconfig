@@ -10,8 +10,6 @@ TCEFORM.tt_content.imageorient {
     }    
 }
 
-
-
 @import.if.isTrue = settings.t3upComponents.designFrames
 @import 'EXT:t3up/Configuration/TsConfig/Design.tsconfig'
 
@@ -23,7 +21,6 @@ TCEFORM.tt_content.imageorient {
 
 @import.if.isTrue = settings.t3upComponents.tableLayouts
 @import 'EXT:t3up/Configuration/TsConfig/TableLayouts.tsconfig'
-
 
 @import 'EXT:t3up/Configuration/TsConfig/Permission.tsconfig'
 
