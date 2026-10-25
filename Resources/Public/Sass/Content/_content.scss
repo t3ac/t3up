@@ -1,5 +1,16 @@
 @import '../_initalize.scss';
 
+body {
+    .overlay                                            {left: 0;  top: 0;  position: absolute; width: 100%;height: 100.1%;z-index: 100;display: none; background-color: $overlay; opacity: 25%;}
+    .overlay.red                                        {background-color: $red}    
+    .overlay.blue                                       {background-color: $blue}      
+    .overlay.green                                      {background-color: $green}   
+    .overlay.orange                                     {background-color: $orange;}         
+    .overlay.turquoise                                  {background-color: $turquoise;}    
+    .overlay.violett                                    {background-color: $violett;}      
+    .overlay.grey                                       {background-color: $grey;}      
+}
+
 main{                                                   
     .outof                                              {position: absolute; top: -10000rem;}
     
@@ -38,14 +49,21 @@ main{
 }
 
 /* Allgemeines Pagination */
-.f3-widget-paginator{                                   display: flex; padding-left: 0; list-style: none; margin: 0;
+.f3-widget-paginator{                                   display: flex; padding-left: 0; list-style: none; margin-bottom: $v2;
 	li													{border: 1px solid rgba(0,0,0,.1); background: rgba(255,255,255,.1); transition: all ease 0.3s; margin-left: $v1; }
 	li > *												{padding: $v1 $v2; display: inline-block; font-weight: $bold; }
     li:hover											{background: rgba(255,255,255,.5); @include shadow; border: 1px solid rgba(0,0,0,.33);}	
 	li.current											{background: rgba(255,255,255,1); border: 1px solid rgba(0,0,0,.33);}	
+	li:first-of-type	                                {margin-left: 0;} 
 }
 
-  
+/* FE Login */  
+.frame-felogin_login fieldset{						   padding: $v3; border: 1px solid $lightgrey; margin-bottom: $v3; background-color: (#{$lightgrey} + 33);
+	> div                                              {display: block;}
+	> div label,
+	> div input										   {width: 10rem; margin-bottom: $v3;}
+	> input										       {margin-left:10rem; width: 10rem; margin-bottom: $v3;}
+}
   
 main:not(.onePager) .opg > *                            {display: none;}
 main:not(.onePager) .opg:after                          {font-size: 150%; line-height: 130%;font-weight: bold; color: #cc0000; display: block; /*padding: $v3; */ content: 'Verhält sich wie ein Container ist nur mit Seitenlayout OnePager erlaubt.'};
@@ -55,3 +73,5 @@ main.onePager {
     .content .fitinview                                 {width: 100% !important; height: 100vH !important; position: relative; transition: all ease 0.3s; background-repeat: no-repeat; background-position: center center; background-size: cover; } 
     .content > .objectfit > .container                  {height: 100%; align-items: center; display: flex;}
 }
+
+
