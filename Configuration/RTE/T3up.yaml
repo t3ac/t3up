@@ -2,13 +2,6 @@ imports:
     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
     - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
-    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/textselection/plugin.js" }
-    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/loremipsum/plugin.js"  }
-    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/nbsp/plugin.js"  }
-    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/justify/plugin.js"  }
-    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/codeTag/plugin.js" }
-    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/showbrokenlinks/plugin.js" }
-    - { resource: "EXT:t3up/Resources/Public/JavaScript/Plugins/Email/plugin.js"  }
   
 editor:
     config:
@@ -43,7 +36,7 @@ editor:
             - { name: paragraph, groups: [ list, indent, blocks, align ] }
             
             - { name: links, groups: [ links ] }
-            - { name: clipboard, groups: [ clipboard, cleanup, undo, loremipsum ] }
+            - { name: clipboard, groups: [ clipboard, cleanup, undo ] }
             - { name: editing, groups: [ spellchecker ] }
             - { name: insert, groups: [ insert ] }
             - { name: tools, groups: [ table, specialchar ] }
