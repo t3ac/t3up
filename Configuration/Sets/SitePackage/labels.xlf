@@ -223,6 +223,10 @@
             <trans-unit id="settings.t3upColors.footer1TextColor">
                 <source>Textcolor in the footer1-area</source>
             </trans-unit>    
+            <trans-unit id="settings.t3upColors.footer1TopColor">
+                <source>Color of the top-border of the footer1-area</source>
+            </trans-unit>                
+            
             <trans-unit id="settings.t3upColors.footer1LinkColor">
                 <source>Linkcolor in the footer1-area</source>
             </trans-unit>    
@@ -1036,6 +1040,9 @@
             <trans-unit id="settings.t3upTypography.pMargin">
                 <source>General bottom margin of paragraph</source>
             </trans-unit>
+            <trans-unit id="settings.t3upTypography.carouselControlSize">
+                <source>Size of the next previous arrows</source>
+            </trans-unit>            
             <trans-unit id="settings.t3upTypography.h1">
                 <source>Scalefactor of h1</source>
             </trans-unit>    
