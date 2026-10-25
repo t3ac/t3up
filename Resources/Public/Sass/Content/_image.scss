@@ -74,6 +74,8 @@ main .ce-column figure                                           {overflow: hidd
 main .ce-column div.imageinf                                     {position: absolute; top: $v1; left: $v1; padding: $v2; background: transparent; color: transparent; transition: all ease .3s; }
 main .ce-column:hover div.imageinf                               {background: $white; color: $black;}
 
+.news-img-caption                                                {padding-top: $v3; line-height: 130%;}
+
 
 /* Padding before / after *******************************************************/
 
