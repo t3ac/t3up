@@ -15,4 +15,4 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\TYPO3\CMS\Frontend\DataProcessing
 //$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapAfterDatabaseOperations'][] = \T3ac\T3up\Hooks\DataHandlerHook::class . '->processDatamap_afterDatabaseOperations';
 
 // Add default RTE configuration
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['t3up'] = 'EXT:t3up/Configuration/RTE/T3up.yaml';
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['default'] = 'EXT:t3up/Configuration/RTE/T3up.yaml';
