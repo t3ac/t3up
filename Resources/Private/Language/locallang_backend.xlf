@@ -77,6 +77,12 @@
            <source>Padding before</source>
         </trans-unit>
         <trans-unit id="padding_after">
+           <source>Space after</source>
+        </trans-unit>
+        <trans-unit id="space__before">
+           <source>Space before</source>
+        </trans-unit>
+        <trans-unit id="space__after">
            <source>Padding after</source>
         </trans-unit>
         <trans-unit id="padding_side">
