@@ -62,7 +62,14 @@
         </trans-unit>   
         <trans-unit id="padding_after">
             <source>Innenabstand danach</source>  
-        </trans-unit>                    
+        </trans-unit>     
+        <trans-unit id="space_before">
+           <source>Außenabstand davor</source>
+        </trans-unit>
+        <trans-unit id="space_after">
+           <source>Außenabstand danach</source>
+        </trans-unit>
+                       
         <trans-unit id="padding_side">
            <source>Seitlichen Innenabstand</source> 
         </trans-unit>        
