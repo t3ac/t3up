@@ -199,19 +199,12 @@ header .mainNavigtion{
     }
 } 
 
-
-
-
-
-
-
 /* All Mobil-Nav ********************************************************************************************************************************************************/
 
 @media screen and (max-width:$desktopNavigation){
     header ul.nav,    
     .mm-menu    span.btn-close                  {display:none;}
 }
-
 
 @media screen and (min-width:$desktopNavigation){
     header nav#menu                             {display:block;}
