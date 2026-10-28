@@ -50,6 +50,10 @@ html[color-mode=dark] {
        
        .opg                                 {background: #000 !important;}
        
+	   header .top,
+	   header                              {background: #151515 !important;}  
+	   nav a                               {color: #fff !important;}
+	   nav ul                              {background: #000  !important;}
        
        .breadcrumbrow .navbar-nav>li>a      {color: $linkColor;}
 
@@ -75,6 +79,8 @@ html[color-mode=dark] {
         a.link-info::before,                {color: $linkColor;}
         
         
+		
+		
         .bannerelement                      {color: #fff;}               
         .toTop a:before                     {color: #000;} 
 		
