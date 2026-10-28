@@ -77,6 +77,13 @@ html[color-mode=dark] {
         
         .bannerelement                      {color: #fff;}               
         .toTop a:before                     {color: #000;} 
+		
+        /* Extensions */
+		.news .article                      {background: #222 !important;}
+		.f3-widget-paginator li.current span {color: #000;}
+        .btn-light                         {background: #333 !important;}
+
+ 
         
         footer {                            background: $footer1BgColor;    
             .footer1{                             
