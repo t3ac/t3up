@@ -86,6 +86,7 @@ plugin.tx_wsscss.variables{
     h4-color                        = {$t3upColors.h4-color}   
   
     // Navigation      
+    desktopNavigation               = {$t3upNavigation.desktopNavigation}   
     navFontSize                     = {$t3upTypography.navFontSize}   
     navFontWeight                   = {$t3upTypography.navFontWeight}  
      
