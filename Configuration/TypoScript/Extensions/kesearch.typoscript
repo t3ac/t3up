@@ -14,7 +14,7 @@ plugin.tx_kesearch_pi1 {
             1 = {$plugin.tx_kesearch.layoutRootPath}
         }
     }
-
+    cssFile >
     additionalAllowedPiVars =
     searchWordParameter = tx_kesearch_pi1[sword]
 }
@@ -24,10 +24,17 @@ plugin.tx_kesearch_pi2 {
     additionalAllowedPiVars < plugin.tx_kesearch_pi1.additionalAllowedPiVars
     searchWordParameter < plugin.tx_kesearch_pi1.searchWordParameter
     includeFilters = 0
+    cssFile >
 }
 
 plugin.tx_kesearch_pi3 {
     view < plugin.tx_kesearch_pi1.view
     additionalAllowedPiVars < plugin.tx_kesearch_pi1.additionalAllowedPiVars
     searchWordParameter < plugin.tx_kesearch_pi1.searchWordParameter
+    cssFile >
 }
+
+page.includeCSS {
+    kesearch                = EXT:t3up/Resources/Public/Sass/Extension/_kesearch.scss
+}
+
