@@ -231,7 +231,7 @@ plugin.tx_wsscss.variables{
     forward                         = {$t3upTypography.forward}       
     backward                        = {$t3upTypography.backward}         
 
-    carouselControlSize             = {$t3upTypography.pictureoverlayTextSize}   
+    carouselControlSize             = {$t3upTypography.carouselControlSize}   
 }
 
 page.includeCSS    = COA
