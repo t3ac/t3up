@@ -24,7 +24,7 @@ a.btn-more:hover                                         {color: #ffff;}
   to {offset-distance: 100%}
 }
 
-.inarow {                                               display: flex; overflow: hidden; mask: linear-gradient(90deg,#0000, #000 5% 95%,#0000);
+.inarow {                                               display: flex; overflow: hidden; mask: linear-gradient(90deg,#0000, #000 2% 98%,#0000);
 
     .bannerelement{                                     width: var(--s); offset: shape(from calc(var(--s)/-2) 50%,hline by calc(sibling-count()*max(100%/var(--n),var(--s) + 10px))); 
                                                         animation: x var(--d) linear infinite calc(-1*sibling-index()*var(--d)/sibling-count());}
@@ -50,17 +50,25 @@ a.btn-more:hover                                         {color: #ffff;}
     .hero-image img                                    {width: 100vw; height: 100vh;} 
     
 	figure		                                       {margin: 0;}
-	.carousel-caption                                  {text-align: left;}
-	.carousel-caption.stil1							   {bottom: 0; width: 100%; padding: $v4;}	
-	.carousel-caption.stil2							   {width: auto; bottom: 0; padding: $v4;}		
-	.carousel-caption.stil3							   {width: auto; bottom: 20%; left: 5%; padding: $v4;}	
-	.carousel-caption.stil4                            {width: 100%; bottom: 0; left: 0; padding: 0 $v4; height: 100%; display: inline-flex; align-items: center; transition: all ease .5s; }
-	.carousel-caption.stil5							   {width: 50%; bottom: 0; left: 0; padding: $v4;; height: 100%; display: inline-flex; align-items: center; transition: all ease .5s; }
+	.carousel-caption                                  {text-align: left; right: 0;  left: 0; padding: 0; bottom: 0; width: 100%}
+
+	.carousel-caption.stil1							   {padding: $v4;}	
+
+	.carousel-caption.stil2	.container div			   {padding: $v4;}	
+	
+	.carousel-caption.stil3				               {bottom: 20%; }		
+	.carousel-caption.stil3	.container  div			   {padding: $v4; display: inline-block;}		
+
+	.carousel-caption.stil4						       {transition: all ease .5s;}	
+	.carousel-caption.stil4	.container  div			   {padding: $v4;}		
+		
+	.carousel-caption.stil5	.container  div		       {width: 50%; padding: $v4;; height: 100%;}
+	
 	.carousel-caption.stil5 span					   {line-height: 130% !important;}
 	
 	.carousel-caption.stil4							   {opacity: 0; }
-	.carousel-caption.stil4:hover					   {opacity: 1;}		
-
+	.carousel-caption.stil4:hover					   {opacity: 1;}	*
+	
 	.carousel-caption.stil1	.capa,	
 	.carousel-caption.stil2	.capa,		
 	.carousel-caption.stil3	.capa					   {padding: $v1;}			
