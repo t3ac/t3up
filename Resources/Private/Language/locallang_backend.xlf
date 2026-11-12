@@ -33,7 +33,12 @@
         
          <trans-unit id="padding_class">
            <source>Extended padding classes</source>
-        </trans-unit>                     
+        </trans-unit> 
+        
+         <trans-unit id="individual_class">
+           <source>Individual class</source>
+        </trans-unit> 
+                                    
                 
 
     /* -- PAGE ------------------------- */       
@@ -242,7 +247,42 @@
         <trans-unit id="3000">
             <source>3s</source>     
         </trans-unit> 
-        
+         <trans-unit id="4000">
+            <source>4s</source>     
+        </trans-unit> 
+        <trans-unit id="5000">
+            <source>5s</source>     
+        </trans-unit> 
+         <trans-unit id="6000">
+            <source>6s</source>     
+        </trans-unit> 
+        <trans-unit id="7000">
+            <source>7s</source>     
+        </trans-unit> 
+         <trans-unit id="8000">
+            <source>8</source>     
+        </trans-unit> 
+        <trans-unit id="9000">
+            <source>9s</source>     
+        </trans-unit> 
+         <trans-unit id="10000">
+            <source>10s</source>     
+        </trans-unit>                 
+         <trans-unit id="11000">
+            <source>11s</source>     
+        </trans-unit> 
+        <trans-unit id="12000">
+            <source>12s</source>     
+        </trans-unit> 
+         <trans-unit id="13000">
+            <source>13</source>     
+        </trans-unit> 
+        <trans-unit id="14000">
+            <source>14s</source>     
+        </trans-unit> 
+         <trans-unit id="15000">
+            <source>15s</source>     
+        </trans-unit>                    
         <trans-unit id="animate_delay">
             <source>Delay</source>   
         </trans-unit> 
@@ -311,7 +351,10 @@
         <trans-unit id="ease-in-out-quart">
            <source>ease-in-out-quart</source>
         </trans-unit>  
-
+        <trans-unit id="ease-in-spec">
+           <source>ease-in-spec</source>
+        </trans-unit>  
+        
     /* -- Colors ----------- */
         <trans-unit id="basecolor">
            <source>Pagecolor</source>
