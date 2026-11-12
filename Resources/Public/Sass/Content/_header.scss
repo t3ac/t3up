@@ -44,7 +44,7 @@ header {                                        position: fixed; background-colo
 		 a.nav_burger.act:after                 {transform: rotate(315deg);}
 
 		 
-      .tab-pane{                                 transition: all ease .3s; display: none; background-color: $headerTopSubBgColor; padding: $v2; box-shadow: $shadow; transform: none; min-width: 12rem; top: auto;
+      .tab-pane{                                 transition: all ease .3s; display: none; background-color: $headerTopSubBgColor; padding: $v2; @include shadow; transform: none; min-width: 14rem; top: auto;
              &.show                              {display: block; }   
              *                                   {color: $headerTopSubTextColor;}
              h2,
