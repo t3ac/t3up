@@ -70,6 +70,12 @@
             <trans-unit id="settings.t3upComponents.imageLayouts">
                 <source>Imagelayouts are available</source>
             </trans-unit>
+            <trans-unit id="settings.t3upComponents.leftCol">
+                <source>Number of cols - default 4 -, for the left part of the leftnavigation-template</source>
+            </trans-unit>            
+            <trans-unit id="settings.t3upComponents.centerCol">
+                <source>Number of cols - default 8 -, for the main part of the leftnavigation-template</source>
+            </trans-unit>                    
             <trans-unit id="settings.t3upComponents.designFrames">
                 <source>DesignFrames are available</source>
             </trans-unit>
@@ -482,6 +488,9 @@
             <trans-unit id="settings.t3upColors.mmLinkBg">
                 <source>Link background-colors</source>
             </trans-unit>   
+            <trans-unit id="settings.t3upColors.mmUlBg">
+                <source>Background-color of the mobilmenue</source>
+            </trans-unit>               
             <trans-unit id="settings.t3upColors.mmLinkFontSize">
                 <source>Font-size of the mobil menue</source>
             </trans-unit>   
@@ -1038,7 +1047,7 @@
                 <source>General fontweight of links</source>
             </trans-unit>                                            
             <trans-unit id="settings.t3upTypography.pMargin">
-                <source>General bottom margin of paragraph</source>
+                <source>General bottom margin of paragraph in .1</source>
             </trans-unit>
             <trans-unit id="settings.t3upTypography.carouselControlSize">
                 <source>Size of the next previous arrows</source>
@@ -1068,7 +1077,7 @@
                 <source>Lineheight of h2</source>
             </trans-unit>    
             <trans-unit id="settings.t3upTypography.h2.margin">
-                <source>Margins of h2</source>
+                <source>Margin-bottom of h2 in .1</source>
             </trans-unit>    
             <trans-unit id="settings.t3upTypography.h3">
                 <source>Scalefactor of h3</source>
@@ -1080,7 +1089,7 @@
                 <source>Lineheight of h3</source>
             </trans-unit>    
             <trans-unit id="settings.t3upTypography.h3.margin">
-                <source>Margins of h3</source>
+                <source>Margin-bottom of h3 in .1</source>
             </trans-unit>    
             <trans-unit id="settings.t3upTypography.h4">
                 <source>Scalefactor of h4</source>
@@ -1092,7 +1101,7 @@
                 <source>Lineheight of h4</source>
             </trans-unit>    
             <trans-unit id="settings.t3upTypography.h4.margin">
-                <source>Margins of h4</source>
+                <source>Margin-bottom of h4 in .1</source>
             </trans-unit>    
             <trans-unit id="settings.t3upTypography.footer1.fontSize">
                 <source>Footer 1 fontsize</source>
