@@ -3,7 +3,7 @@
 
 
 jQuery(document).ready(function($) {
-	if ($(window).width() <= 767) { // if there is at least one :) 
+	if ($(window).width() <= 991) { // if there is at least one :) 
             var menu = new MmenuLight(document.querySelector("#menu"), "all");
 
             var navigator = menu.navigation({
