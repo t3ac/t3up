@@ -29,3 +29,37 @@ UPDATE `tt_content` SET `CType` = 'text' WHERE `CType` LIKE 'textpic' AND `image
 
 # Ruecksetzen auf text, wenn textmedia keine Bilder hat
 UPDATE `tt_content` SET `CType` = 'text' WHERE `CType` LIKE 'textmedia' AND `assets` = 0;
+
+#####################################################
+
+UPDATE `tt_content` SET `CType` = 'textmedia' WHERE `CType` = 'text';
+
+UPDATE `tt_content` SET `space_after_class` = '1' WHERE `space_after_class` = 4;
+UPDATE `tt_content` SET `space_after_class` = '2' WHERE `space_after_class` = 12;
+UPDATE `tt_content` SET `space_after_class` = '4' WHERE `space_after_class` = 24;
+UPDATE `tt_content` SET `space_after_class` = '5' WHERE `space_after_class` = 36;
+UPDATE `tt_content` SET `space_after_class` = '6' WHERE `space_after_class` = 48;
+
+
+UPDATE `tt_content` SET `padding_after_class` = '6' WHERE `padding_after_class` LIKE '48px';
+UPDATE `tt_content` SET `padding_after_class` = '5' WHERE `padding_after_class` LIKE '36px';
+UPDATE `tt_content` SET `padding_after_class` = '4' WHERE `padding_after_class` LIKE '24px';
+UPDATE `tt_content` SET `padding_after_class` = '3' WHERE `padding_after_class` LIKE '16px';
+UPDATE `tt_content` SET `padding_after_class` = '2' WHERE `padding_after_class` LIKE '12px';
+UPDATE `tt_content` SET `padding_after_class` = '1' WHERE `padding_after_class` LIKE '8px';
+UPDATE `tt_content` SET `padding_after_class` = '1' WHERE `padding_after_class` LIKE '4px';
+
+UPDATE `tt_content` SET `padding_before_class` = '6' WHERE `padding_before_class` LIKE '48px';
+UPDATE `tt_content` SET `padding_before_class` = '5' WHERE `padding_before_class` LIKE '36px';
+UPDATE `tt_content` SET `padding_before_class` = '4' WHERE `padding_before_class` LIKE '24px';
+UPDATE `tt_content` SET `padding_before_class` = '3' WHERE `padding_before_class` LIKE '16px';
+UPDATE `tt_content` SET `padding_before_class` = '2' WHERE `padding_before_class` LIKE '12px';
+UPDATE `tt_content` SET `padding_before_class` = '1' WHERE `padding_before_class` LIKE '8px';
+UPDATE `tt_content` SET `padding_before_class` = '1' WHERE `padding_before_class` LIKE '4px';
+
+
+UPDATE `tt_content` SET `lightboxstyle` = '-' WHERE `assets` = 0;
+UPDATE `tt_content` SET `lightboxstyle` = 'lightboxstyle-b' WHERE `lightboxstyle` LIKE 'b';
+UPDATE `tt_content` SET `lightboxstyle` = '-' WHERE `image_zoom` = 1 AND `assets` > 0;
+
+
