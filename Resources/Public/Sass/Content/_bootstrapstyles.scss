@@ -11,7 +11,7 @@ a.btn-more:hover                                         {color: #ffff;}
 
 .carousel-caption                                        {right: inherit; left: inherit;}
 
-.container                                               {max-width: $container;}
+.container                                              {max-width: $container !important;}
 
 .pagination .page-item .page-link                       {color: $linkColor;}
 .pagination .page-item .page-link:hover                 {color: $linkHoverColor;}
