@@ -5,9 +5,9 @@
             <f:render partial="Header.html" section="Header" arguments="{_all}" />
             <main id="content">  
                 <div class="overlay"></div> 
-                <f:format.raw>{media}</f:format.raw>
+                <f:render.contentArea contentArea="{content.stage}" />
                 <!--TYPO3SEARCH_begin--> 
-			       <f:format.raw>{content}</f:format.raw>
+			       <f:render.contentArea contentArea="{content.main}" />
 			    <!--TYPO3SEARCH_end-->    
 			</main>    
 		</f:section>
