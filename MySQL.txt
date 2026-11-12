@@ -30,7 +30,7 @@ UPDATE `tt_content` SET `CType` = 'text' WHERE `CType` LIKE 'textpic' AND `image
 # Ruecksetzen auf text, wenn textmedia keine Bilder hat
 UPDATE `tt_content` SET `CType` = 'text' WHERE `CType` LIKE 'textmedia' AND `assets` = 0;
 
-#####################################################
+##### T14 ################################################
 
 UPDATE `tt_content` SET `CType` = 'textmedia' WHERE `CType` = 'text';
 
