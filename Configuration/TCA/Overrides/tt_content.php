@@ -110,6 +110,14 @@ $padding = array(
             'default'    => '',
         ],
     ],
+    'individual_class'  => [
+        'exclude' => true,
+        'label'   => $ll . ':individual_class',
+        'config'  => [
+            'type'       => 'input',
+            'default'    => '',
+        ],
+    ],
     'animate'  => [
         'exclude' => true,
         'label'   => $ll . ':animate',
@@ -168,6 +176,18 @@ $padding = array(
                 ['label' => $ll . ':2500', 'value' => '2500'],
                 ['label' => $ll . ':2750', 'value' => '2750'],                
                 ['label' => $ll . ':3000', 'value' => '3000'],
+                ['label' => $ll . ':4000', 'value' => '4000'],
+                ['label' => $ll . ':5000', 'value' => '5000'],                
+                ['label' => $ll . ':6000', 'value' => '6000'],
+                ['label' => $ll . ':7000', 'value' => '7000'],
+                ['label' => $ll . ':8000', 'value' => '8000'],
+                ['label' => $ll . ':9000', 'value' => '9000'],                
+                ['label' => $ll . ':10000', 'value' => '10000'],
+                ['label' => $ll . ':11000', 'value' => '11000'],                
+                ['label' => $ll . ':12000', 'value' => '12000'],                
+                ['label' => $ll . ':13000', 'value' => '13000'],
+                ['label' => $ll . ':14000', 'value' => '14000'],                
+                ['label' => $ll . ':15000', 'value' => '15000'],                 
             ],
             'default'    => '1000',
         ],
@@ -200,6 +220,7 @@ $padding = array(
                 ['label' => $ll . ':ease-in-quart',     'value' => 'ease-in-quart'],
                 ['label' => $ll . ':ease-out-quart',    'value' => 'ease-out-quart'],
                 ['label' => $ll . ':ease-in-out-quart', 'value' => 'ease-in-out-quart'],
+                ['label' => $ll . ':ease-in-spec',      'value' => 'ease-in-spec'],                
             ],
             'default'    => 'ease-in-out',
         ],
@@ -225,6 +246,18 @@ $padding = array(
                 ['label' => $ll . ':2500', 'value' => '2500'],
                 ['label' => $ll . ':2750', 'value' => '2750'],
                 ['label' => $ll . ':3000', 'value' => '3000'],
+                ['label' => $ll . ':4000', 'value' => '4000'],
+                ['label' => $ll . ':5000', 'value' => '5000'],
+                ['label' => $ll . ':6000', 'value' => '6000'],
+                ['label' => $ll . ':7000', 'value' => '7000'],
+                ['label' => $ll . ':8000', 'value' => '8000'],
+                ['label' => $ll . ':9000', 'value' => '9000'],
+                ['label' => $ll . ':10000', 'value' => '10000'],
+                ['label' => $ll . ':11000', 'value' => '11000'],
+                ['label' => $ll . ':12000', 'value' => '12000'],
+                ['label' => $ll . ':13000', 'value' => '13000'],
+                ['label' => $ll . ':14000', 'value' => '14000'],
+                ['label' => $ll . ':15000', 'value' => '15000'],    
             ],
             'default'    => '1000',
         ],
@@ -383,14 +416,20 @@ $GLOBALS['TCA']['tt_content']['palettes']['newpadding_fields'] = [
         padding_before_class,
         padding_after_class,
         padding_side_class,
+    ',
+    'isHiddenPalette' => false,
+];
+
+$GLOBALS['TCA']['tt_content']['palettes']['innerpadding_fields'] = [
+    'showitem' => '
         padding_inner_class,
     ',
     'isHiddenPalette' => false,
 ];
 
-$GLOBALS['TCA']['tt_content']['palettes']['sidepadding_fields'] = [
+$GLOBALS['TCA']['tt_content']['palettes']['individual_fields'] = [
     'showitem' => '
-        padding_side_class,
+        individual_class
     ',
     'isHiddenPalette' => false,
 ];
@@ -430,16 +469,19 @@ $GLOBALS['TCA']['tt_content']['palettes']['onepager_fields'] = [
 // Palette hinzufuegen, nach Layout - dadurch Anzeige im Backend
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content','--palette--;' . $ll . ':padding_class;newpadding_fields','textmedia,buttons,menu_pages','before:sectionIndex');
+    'tt_content','--palette--;' . $ll . ':padding_class;inner_fields','textmedia','before:sectionIndex');
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'tt_content','--palette--;' . $ll . ':padding_class;newpadding_fields','textmedia,buttons,menu_pages,powermail_pi1','before:sectionIndex');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content','--palette--;' . $ll . ':animation_class;animation_fields','textmedia,t3up_hero,headerbutton,imagebutton,symbolbutton,youtubevideo_pi1,uploads','before:sectionIndex');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content','--palette--;' . $ll . ':container_class;onepager_fields','textmedia,text,header,table,1cols,2cols,3cols,4cols,buttons,arccodion,news_newsliststicky,news_newsdetail;','before:sectionIndex');
+    'tt_content','--palette--;' . $ll . ':container_class;onepager_fields','textmedia,text,header,table,1cols,2cols,3cols,4cols,buttons,accordion,news_newsliststicky,news_newsdetail','before:sectionIndex');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content','--palette--;' . $ll . ':padding_class;sidepadding_fields','header,table,1cols,2cols,3cols,4cols,uploads','after:frame_class');
+    'tt_content','--palette--;' . $ll . ':individual_class;individual_fields','textmedia,text,header,table,1cols,2cols,3cols,4cols,buttons,accordion,news_newsliststicky,news_newsdetail,1cols,2cols,3cols,4cols,uploads','after:frame_class');
 
 
 
