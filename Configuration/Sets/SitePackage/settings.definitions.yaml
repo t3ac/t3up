@@ -448,7 +448,11 @@ settings:
   t3upColors.mmLinkBg:
     category: T3up-Colors.mobilcolor
     type: color
-    default: '#61717f'        
+    default: '#61717f' 	       
+  t3upColors.mmUlBg:
+    category: T3up-Colors.mobilcolor
+    type: color
+    default: '#ffffff' 	       
   t3upColors.mmLinkFontSize:
     category: T3up-Colors.mobilcolor
     type: string
@@ -608,22 +612,6 @@ settings:
     category: T3up-Config
     type: string
     default: '|'
-  t3upConfig.concatenateJs:
-    category: T3up-Config
-    type: bool
-    default: true    
-  t3upConfig.compressJs:
-    category: T3up-Config
-    type: bool
-    default: true    
-  t3upConfig.concatenateCss:
-    category: T3up-Config
-    type: bool
-    default: true      
-  t3upConfig.compressCss:
-    category: T3up-Config
-    type: bool
-    default: true    
   t3upConfig.removeDefaultCss:
     category: T3up-Config
     type: bool
@@ -918,7 +906,7 @@ settings:
     default: 'none'
     type: string
     enum:
-      none: 'none'
+      nondynamic: 'none'
       sticky: 'sticky'  
       shrink: 'shrink'            
   t3upHeader.headerAreaWrap:
@@ -1270,8 +1258,8 @@ settings:
     default:  '600'     
   t3upTypography.pMargin:
     category: T3up-Typography
-    type: string
-    default:  '1.2rem'
+    type: int
+    default:  '12'
   # Typography Headers---------------------------    
   t3upTypography.h1:
     category: T3up-Typography.header
@@ -1328,8 +1316,8 @@ settings:
     default:  '120%'             
   t3upTypography.h2.margin:
     category: T3up-Typography.header
-    type: string
-    default:  '1rem'       
+    type: int
+    default:  '10'       
   t3upTypography.h3:
     category: T3up-Typography.header
     type: string
@@ -1344,8 +1332,8 @@ settings:
     default:  '120%'             
   t3upTypography.h3.margin:
     category: T3up-Typography.header
-    type: string
-    default:  '1rem'       
+    type: int
+    default:  '10'       
   t3upTypography.h4:
     category: T3up-Typography.header
     type: string
@@ -1360,8 +1348,8 @@ settings:
     default:  '120%'             
   t3upTypography.h4.margin:
     category: T3up-Typography.header
-    type: string
-    default:  'inherit'  
+    type: int
+    default:  '5'  
   t3upTypography.add:
     category: T3up-Typography.arrows
     type: string
