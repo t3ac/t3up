@@ -1,0 +1,41 @@
+name: t3up/hero
+typeName: t3up_hero
+group: t3up
+prefixFields: false
+prefixType: full
+saveAndClose: true
+basics:
+    - TYPO3/Common
+fields:
+  -
+    identifier: header
+    useExistingField: true
+  - identifier: image
+    useExistingField: true
+    label: 'Hintergrundbild'
+    type: File
+    extendedPalette: true
+    minitems: 1
+    maxitems: 1
+    allowed: jpg,png,jpeg,webp,svg
+  - identifier: bodytext
+    type: TEXT
+    useExistingField: true
+    enableRichtext: true
+    richtextConfiguration: minimal 
+    label: 'Teasertext'
+    required: true
+  - identifier: button_text
+    type: Text
+    required: false
+    label: 'Button Text'
+    placeholder: 'Mehr erfahren'
+    searchable: false
+  - identifier: url
+    type: Link
+    autocomplete: true
+    label: 'Button-Link'
+    allowedTypes:
+      - page
+      - url
+      - file
