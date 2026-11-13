@@ -24,9 +24,9 @@ body {                              background-color: $bodyBgColor !important; /
     .container                      {padding-left: 0; padding-right: 0;}
     
     .h1, h1                         {transition: all ease .3s; font-weight: $h1-fontweight; color: $h1-color; line-height: $h1-lineheight; text-align: $h1-alignment;} 
-    .h2, h2                         {transition: all ease .3s; font-weight: $h2-fontweight; color: $h2-color; margin-bottom: calc(#{$h2-margin} / 10)+rem; line-height: $h2-lineheight;} 
-    .h3, h3                         {transition: all ease .3s; font-weight: $h3-fontweight; color: $h3-color; margin-bottom: calc(#{$h3-margin} / 10)+rem; line-height: $h3-lineheight;} 
-    .h4, h4                         {transition: all ease .3s; font-weight: $h4-fontweight; color: $h4-color; margin-bottom: calc(#{$h4-margin} / 10)+rem; line-height: $h4-lineheight;}
+    .h2, h2                         {transition: all ease .3s; font-weight: $h2-fontweight; color: $h2-color; margin-bottom: $h2-margin; line-height: $h2-lineheight;} 
+    .h3, h3                         {transition: all ease .3s; font-weight: $h3-fontweight; color: $h3-color; margin-bottom: $h3-margin; line-height: $h3-lineheight;} 
+    .h4, h4                         {transition: all ease .3s; font-weight: $h4-fontweight; color: $h4-color; margin-bottom: $h4-margin; line-height: $h4-lineheight;}
     
     .h1, h1                         {font-size: calc(#{$h1} * $p);} 
     .h2, h2                         {font-size: calc(#{$h2} * $p);} 
