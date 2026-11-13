@@ -1258,8 +1258,8 @@ settings:
     default:  '600'     
   t3upTypography.pMargin:
     category: T3up-Typography
-    type: int
-    default:  '12'
+    type: string
+    default:  '1.2rem'
   # Typography Headers---------------------------    
   t3upTypography.h1:
     category: T3up-Typography.header
@@ -1316,8 +1316,8 @@ settings:
     default:  '120%'             
   t3upTypography.h2.margin:
     category: T3up-Typography.header
-    type: int
-    default:  '10'       
+    type: string
+    default:  '1rem'       
   t3upTypography.h3:
     category: T3up-Typography.header
     type: string
@@ -1332,8 +1332,8 @@ settings:
     default:  '120%'             
   t3upTypography.h3.margin:
     category: T3up-Typography.header
-    type: int
-    default:  '10'       
+    type: string
+    default:  '.75rem'       
   t3upTypography.h4:
     category: T3up-Typography.header
     type: string
@@ -1348,8 +1348,8 @@ settings:
     default:  '120%'             
   t3upTypography.h4.margin:
     category: T3up-Typography.header
-    type: int
-    default:  '5'  
+    type: string
+    default:  '.5rem'  
   t3upTypography.add:
     category: T3up-Typography.arrows
     type: string
