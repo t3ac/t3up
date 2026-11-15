@@ -14,11 +14,6 @@ config {
 	}
 
 	cache_period                           = {$t3upConfig.cachePeriod}
-	compressCss                            = {$t3upConfig.compressCss}
-	compressJs                             = {$t3upConfig.compressJs}
-	concatenateCss                         = {$t3upConfig.concatenateCss}
-	concatenateJs                          = {$t3upConfig.concatenateJs}
-	
 	contentObjectExceptionHandler          = {$t3upConfig.contentObjectExceptionHandler}
 	debug                                  = {$t3upConfig.debug}	
 	
