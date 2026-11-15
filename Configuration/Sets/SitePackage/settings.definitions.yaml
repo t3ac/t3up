@@ -680,7 +680,7 @@ settings:
     category: T3up-Files.Js
     type: bool
     default: true 
-  t3upFiles.Js.inview:     
+  t3upFiles.Js.wheninview:     
     category: T3up-Files.Js
     type: bool
     default: false
