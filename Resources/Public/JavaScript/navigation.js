@@ -1,316 +1,778 @@
-$(document).ready(function() {
-    
-	const $body = $("body");
-    const $nav = $(".nav");
-    const $plu = unescape("+");
-    const $min = unescape("–");
-    const $pluTop = unescape("+");
-    const $minTop = unescape("–");
-        
-    
-    let maxSubItems = 0;
-    
-    const toggleAria = ($elem, isExpanded) => {
-      $elem.attr({
-        'aria-hidden': String(!isExpanded),
-        'aria-expanded': String(isExpanded)
-      });
-    };
-    
-    const resetSiblings = ($item) => {
-      $item.siblings().each(function() {
-        const $sib = $(this);
-        toggleAria( $sib.find('.subnav'), false );
-      //  $sib.attr('data-show-sub','false').removeClass('activated').addClass('LUUUU');
-        $sib.find('li').removeClass('activated');
-        $sib.find('li').attr('data-show-sub','false').removeClass('activated');		
-        $sib.find('li span').text($plu);			
-        $sib.find('.box').hide();
-      });
-    };
-    
-    const resMenu = () => {
-      if ($(window).width() >= 768) {
-        $('#menu .subnav').each(function(){
-          toggleAria($(this), false);
-        });
-        $('#menu li').attr('data-show-sub','false').removeClass('activated');
-        $('#menu .subnav span.nextlevel').text($plu);
-        $('.box, .submenulevel, .overlay').fadeOut('fast');
-      }
-    };
 
-    $(window).bind('scroll', function () {
-        $('#menu .subnav').each(function(){
-            toggleAria($(this), false);
-         });
-        $('#menu li').attr('data-show-sub','false').removeClass('activated');
-        $('#menu .subnav span.nextlevel').text($plu);
-        $('.box, .submenulevel, .overlay').fadeOut('fast');
-    });
-    
-    $(function() {
-      // 1. Span-Text setzen & "lastitem" markieren
-      $('#menu ul ul li:has(.subnav) span.nextlevel').text($plu);
-      $('.nav li').last().addClass('lastitem');
-    
-      // 2. Wrap für activeNav
-      $('.activeNav #menu > .nav > li > .row').wrap('<div class="box"><div class="container px-0 px-lg-3"></div><span class="btn-close"></span></div>');
-    
-      // 3. Max Sublevels bestimmen
-      $('#menu ul ul, #menu ul ul ul, #menu ul ul ul ul').each(function(){
-        maxSubItems = Math.max(maxSubItems, $(this).children().length);
-      });
-    
-      const liHeight = $('.subnav > li').height();
-      const blockNavHeight = liHeight * maxSubItems;
-    
-      // 4. Overlay‑Farbe steuern
-      $body.on('focus touchend click mouseover', '#menu > ul > li', function() {
-        const $li = $(this);
-        if ($li.parent().is('.nav')) {
-          const cl = ['turquoise','green','blue','red','grey','violett','orange']
-                        .find(c => $li.hasClass(c));
-          if (cl) $('.overlay').attr('class', `overlay ${cl}`);
+document.addEventListener('DOMContentLoaded', function () {
+
+    const body = document.body;
+    const menu = document.querySelector('#menu');
+
+    if (!menu) return;
+
+    const plus = '+';
+    const minus = '–';
+
+    const colors = [
+        'turquoise', 'green', 'blue', 'red',
+        'grey', 'violett', 'orange'
+    ];
+
+
+    /* Hilfsfunktionen ************************************/
+
+    function toggleAria(element, expanded) {
+
+        if (!element) return;
+
+        element.setAttribute('aria-hidden', String(!expanded));
+        element.setAttribute('aria-expanded', String(expanded));
+
+    }
+
+
+    function showElement(element, animate = false) {
+
+        if (!element) return;
+
+        element.style.display = '';
+
+        if (getComputedStyle(element).display === 'none') {
+            element.style.display = 'block';
         }
-      });
-      
-      // 5. Reset Events
-      $body.on('click touchend', '.btn-close, .overlay, .closelink', resMenu);
-      $body.on('focus mouseenter click', '.logo', resMenu);
-    });
-    
-    $body.on('click', '.navitem > span', function(e) {
-        
-        if ($(this).text($plu)) {
-            $(this).text($min);
-        } 
+
+        if (animate) {
+            element.animate(
+                [{ opacity: 0 }, { opacity: 1 }],
+                { duration: 200, fill: 'forwards' }
+            );
+        }
+
+    }
+
+
+    function hideElement(element, animate = false) {
+
+        if (!element) return;
+
+        if (animate) {
+
+            const animation = element.animate(
+                [{ opacity: getComputedStyle(element).opacity }, { opacity: 0 }],
+                { duration: 200, fill: 'forwards' }
+            );
+
+            animation.onfinish = function () {
+                element.style.display = 'none';
+                element.style.opacity = '';
+            };
+
+        } else {
+
+            element.style.display = 'none';
+
+        }
+
+    }
+
+
+    function resetSiblings(item) {
+
+        if (!item || !item.parentElement) return;
+
+        Array.from(item.parentElement.children).forEach(function (sibling) {
+
+            if (sibling === item) return;
+
+            sibling.querySelectorAll('.subnav').forEach(function (subnav) {
+                toggleAria(subnav, false);
+            });
+
+            sibling.querySelectorAll('li').forEach(function (li) {
+                li.dataset.showSub = 'false';
+                li.classList.remove('activated');
+            });
+
+            sibling.querySelectorAll('li span').forEach(function (span) {
+                span.textContent = plus;
+            });
+
+            sibling.querySelectorAll('.box').forEach(function (box) {
+                hideElement(box);
+            });
+
+        });
+
+    }
+
+
+    /* Menü zurücksetzen **********************************/
+
+    function resMenu() {
+
+        if (window.innerWidth < 768) return;
+
+        resetMenu();
+
+    }
+
+
+    function resetMenu() {
+
+        menu.querySelectorAll('.subnav').forEach(function (subnav) {
+            toggleAria(subnav, false);
+        });
+
+        menu.querySelectorAll('li').forEach(function (li) {
+            li.dataset.showSub = 'false';
+            li.classList.remove('activated');
+        });
+
+        menu.querySelectorAll('.subnav span.nextlevel').forEach(function (span) {
+            span.textContent = plus;
+        });
+
+        document.querySelectorAll('.box, .submenulevel, .overlay')
+            .forEach(function (element) {
+                hideElement(element, true);
+            });
+
+        document.querySelectorAll('.navlink.show').forEach(function (link) {
+            link.classList.remove('show');
+        });
+
+    }
+
+
+    /* Initialisierung ************************************/
+
+    // Pluszeichen setzen
+    menu.querySelectorAll('ul ul li').forEach(function (li) {
+
+        if (li.querySelector(':scope > .subnav')) {
+
+            const span = li.querySelector(':scope > span.nextlevel');
+
+            if (span) span.textContent = plus;
+
+        }
 
     });
-    
-    // StandardNav
-    $body.on('click touchend', '.standardNav .navlink', function(e) {
-      const $link = $(this), $li = $link.parent();
-    
-      resetSiblings($li.find('> .subnav').length ? $li : $li);
-      
-      if ($link.next().length && $li.parent().is('.nav')) {
-        e.preventDefault();
-        $('.overlay').fadeIn();
-        $li.addClass('activated').attr('data-show-sub','true');
-        $li.find('> span.nextlevel').text($minTop);
-        toggleAria($li.find('> .subnav'), true);
-      } else {
-    //    $li.find('> span.nextlevel').text($min);
-      }
-    });
-    
-    // ActiveNav    
-    $body.on('click touchend', '.activeNav .navlink', function(e) {
-      const $link = $(this), $li = $link.parent();
-    
-      resetSiblings($li);
-      if ($link.hasClass('show')) {
-        resMenu();
-        e.preventDefault();
-      } else if ($link.next().length && $li.parent().is('.nav')) {
-        e.preventDefault();
-        $('.overlay').fadeIn();
-        $li.addClass('activated').attr('data-show-sub','true');
-        $li.find('> span.nextlevel').text($minTop);
-        const $box = $li.find('.box').first();
-        toggleAria($box.find('>.subnav'), true);
-        $box.fadeIn('fast', () =>
-          $li.siblings().find('.box').hide()
-        );
-        $li.find('li.act, li.cur').each(function(){
-          toggleAria($(this).children('.subnav'), true);
-          $(this).children('span.nextlevel').text($min);
-        });
-      }
-      $link.toggleClass('show');
-    });
-    
-    // BlockNav
-    $body.on('click touchend', '.blockNav .navlink', function(e) {
-      const $link = $(this), $li = $link.parent();
-    
-      resetSiblings($li);
-      if ($link.hasClass('show')) {
-        resMenu();
-        e.preventDefault();
-      } else if ($link.next().length && $li.parent().is('.nav')) {
-        e.preventDefault();
-        $('.overlay').fadeIn();
-        $li.addClass('activated').attr('data-show-sub','true');
-        toggleAria($li.find('> .subnav'), true);
-      }
-      $link.toggleClass('show');
-    });
-    
-    // Subnavigation 
-    $body.on('click', '#menu .subnav .navitem > span.nextlevel', function() {
-      const $span = $(this), $li = $span.parent();
-      const isMin = $span.text() === $plu;
-    
-      $('#menu .subnav span.nextlevel').text($plu);
-      $('#menu .subnav .subnav').each(function(){
-        toggleAria($(this), false);
-        $(this).parent().removeClass('activated');
-      });
-    
-      if (!isMin) {
-        $span.text($min);
-        toggleAria($li.find('> .subnav'), true);
-        $li.addClass('activated').attr('data-show-sub','true');
-      }
-    });
-    
-    $body.on('click', '#menu .nav__level2 > li > a', function() {
-            $(this).addClass('show');
-            $(this).parent().siblings().find('a').removeClass('show');            
-        });
-    
-    // Tastatur        
-    // TAB Key 9
-    $body.on('keyup', '.navlink', function(event) {
-        const $navlink    = $(this);
-        const $navitem    = $navlink.parent();
-        const $nav        = $navlink.closest('.nav');
-    
-        const isLastItem  = $navitem.hasClass('lastitem');
-    
-        // Taste: TAB
-        if (event.keyCode === 9) {
-            if (isLastItem) {
-                resMenu();
-            } else {
-                // Reset
-                $navitem
-                    .siblings()
-                    .removeClass('activated')
-                    .attr('data-show-sub', 'false')
-                    .find('.subnav')
-                        .attr({ 'aria-hidden': 'true', 'aria-expanded': 'false' })
-                    .end()
-                    .find('li')
-                        .removeClass('activated')
-                    .end()
-                    .find('.box')
-                        .hide()
-                    .end()
-                    .find('.subnav li > span.nextlevel')
-                        .text($plu);
-    
-                // Aktivieren des aktuellen Elements
-                $navitem
-                    .addClass('activated')
-                    .attr('data-show-sub', 'true');
-    
-                $('.overlay').fadeIn();
-    
-                const $subnav = $navitem.find('> .subnav');
-    
-                if ($navitem.parent().is('.nav')) {
-                    $navitem.find('.box').show();
-                    $navitem.find('.box > .subnav').add($subnav)
-                        .attr({ 'aria-hidden': 'false', 'aria-expanded': 'true' });
-                } else {
-                    $subnav.attr({ 'aria-hidden': 'false', 'aria-expanded': 'true' });
-                    $navitem.find('> span.nextlevel').text($min);
-                    $navitem.siblings().find('> span.nextlevel').text($plu);
-                }
-            }
+
+
+    // Letztes Navigationselement markieren
+    document.querySelectorAll('.nav').forEach(function (nav) {
+
+        const items = nav.querySelectorAll(':scope > li');
+
+        if (items.length) {
+            items[items.length - 1].classList.add('lastitem');
         }
-    
-        // Taste: ESC
-        if (event.keyCode === 27) {
+
+    });
+
+
+    // ActiveNav: Box-Container erzeugen
+    document.querySelectorAll(
+        '.activeNav #menu > .nav > li > .row'
+    ).forEach(function (row) {
+
+        const box = document.createElement('div');
+        box.className = 'box';
+
+        const container = document.createElement('div');
+        container.className = 'container px-0 px-lg-3';
+
+        const close = document.createElement('span');
+        close.className = 'btn-close';
+
+        row.parentNode.insertBefore(box, row);
+
+        box.appendChild(container);
+        container.appendChild(row);
+        box.appendChild(close);
+
+    });
+
+
+    // Vorhandene aktive Menüs
+    menu.querySelectorAll('li.act, li.cur').forEach(function (li) {
+
+        li.dataset.showSub = 'true';
+
+        const subnav = li.querySelector(':scope > .subnav');
+
+        if (subnav) {
+            toggleAria(subnav, true);
+        }
+
+        const span = li.querySelector(':scope > span.nextlevel');
+
+        if (span) span.textContent = minus;
+
+    });
+
+
+    /* Overlay-Farbe **************************************/
+
+    body.addEventListener('focusin', setOverlayColor);
+    body.addEventListener('mouseover', setOverlayColor);
+    body.addEventListener('click', setOverlayColor);
+
+    function setOverlayColor(event) {
+
+        const li = event.target.closest('#menu > .nav > li');
+
+        if (!li) return;
+
+        const color = colors.find(function (color) {
+            return li.classList.contains(color);
+        });
+
+        if (color) {
+
+            document.querySelectorAll('.overlay').forEach(function (overlay) {
+                overlay.className = 'overlay ' + color;
+            });
+
+        }
+
+    }
+
+
+    /* Reset Events ****************************************/
+
+    body.addEventListener('click', function (event) {
+
+        if (event.target.closest('.btn-close, .overlay, .closelink, .logo')) {
             resMenu();
         }
+
     });
 
-        
-    $body.on('keydown', '.navlink', function(event) {
-        const $navlink    = $(this);
-        const $navitem    = $navlink.parent();
-        const $nav        = $navlink.closest('.nav');
-        const $parentitem = $navlink.closest('.navitem');
-        const isTopLevel  = $navitem.parent().is('.nav');
-    
-        const showSubnav = ($item) => {
-            $item.find('.box').show();
-            $item.find('.box > .subnav, > .subnav').attr({ 'aria-hidden': 'false', 'aria-expanded': 'true' });
-        };
-    
-        const hideSubnavs = ($container) => {
-            $container.find('.box').hide();
-            $container.find('.subnav').attr({ 'aria-hidden': 'true', 'aria-expanded': 'false' });
-        };
-    
-        switch (event.keyCode) {
-            case 39: // → Rechts
-                if (isTopLevel) {
-                    const $next = $parentitem.is(":last-child")
-                        ? $nav.find('> .navitem:first-child')
-                        : $parentitem.next();
-                    $next.children('.navlink').focus();
-                    hideSubnavs($nav);
-                } else {
-                    const $subnav = $navitem.find('> .subnav');
-                    $subnav.attr({ 'aria-hidden': 'false', 'aria-expanded': 'true' });
-                    $navitem.find('> span.nextlevel').text($min);
-                    $subnav.find('> .navitem:first-child > .navlink').focus();
-                }
-                event.preventDefault();
-                break;
-    
-            case 37: // ← Links
-                if (isTopLevel) {
-                    const $prev = $parentitem.is(":first-child")
-                        ? $nav.find('> .navitem:last-child')
-                        : $parentitem.prev();
-                    $prev.children('.navlink').focus();
-                    hideSubnavs($nav);
-                } else {
-                    const $currentSubnav = $navlink.closest('.subnav');
-                    const $parentNavItem = $currentSubnav.parent('.navitem');
-                    const $parentLink    = $parentNavItem.children('.navlink');
-            
-                    // Untermenü verstecken
-                    $parentNavItem.find('> .box').hide(); // ← WICHTIG!
-                    $currentSubnav.attr({ 'aria-hidden': 'true', 'aria-expanded': 'false' });
-                    $parentNavItem.find('> span.nextlevel').text($plu);
-            
-                    // Fokus zurück auf Parent
-                    $parentLink.focus();
-                }
-                event.preventDefault();
-                break;
-    
-            case 40: // ↓ Pfeil runter
-                if (isTopLevel) {
-                    showSubnav($navitem);
-                    $navitem.find('> .subnav > .navitem:first-child > .navlink').focus();
-                } else {
-                    const $nextItem = $navitem.is(":last-child")
-                        ? $navitem.parent().parent().closest('li').children('.navlink')
-                        : $navitem.next().children('.navlink');
-                    $nextItem.focus();
-                }
-                event.preventDefault();
-                break;
-    
-            case 38: // ↑ Pfeil hoch
-                if ($navitem.closest('.subnav').length) {
-                    const $target = $navitem.is(":first-child")
-                        ? $navitem.parent().parent().closest('li').children('.navlink')
-                        : $navitem.prev().children('.navlink');
-                    $target.focus();
-                }
-                event.preventDefault();
-                break;
+
+    body.addEventListener('focusin', function (event) {
+
+        if (event.target.closest('.logo')) {
+            resMenu();
         }
+
     });
 
-    
+
+    /* Navigationstypen ***********************************/
+
+    // StandardNav
+    body.addEventListener('click', function (event) {
+
+        const link = event.target.closest('.standardNav .navlink');
+
+        if (!link) return;
+
+        const li = link.parentElement;
+
+        resetSiblings(li);
+
+        if (link.nextElementSibling && li.parentElement.classList.contains('nav')) {
+
+            event.preventDefault();
+
+            document.querySelectorAll('.overlay').forEach(function (overlay) {
+                showElement(overlay, true);
+            });
+
+            li.classList.add('activated');
+            li.dataset.showSub = 'true';
+
+            const span = li.querySelector(':scope > span.nextlevel');
+
+            if (span) span.textContent = minus;
+
+            toggleAria(li.querySelector(':scope > .subnav'), true);
+
+        }
+
+    });
+
+
+    // ActiveNav
+    body.addEventListener('click', function (event) {
+
+        const link = event.target.closest('.activeNav .navlink');
+
+        if (!link) return;
+
+        const li = link.parentElement;
+
+        resetSiblings(li);
+
+        if (link.classList.contains('show')) {
+
+            resMenu();
+            event.preventDefault();
+
+        } else if (
+            link.nextElementSibling &&
+            li.parentElement.classList.contains('nav')
+        ) {
+
+            event.preventDefault();
+
+            document.querySelectorAll('.overlay').forEach(function (overlay) {
+                showElement(overlay, true);
+            });
+
+            li.classList.add('activated');
+            li.dataset.showSub = 'true';
+
+            const span = li.querySelector(':scope > span.nextlevel');
+
+            if (span) span.textContent = minus;
+
+            const box = li.querySelector('.box');
+
+            if (box) {
+
+                toggleAria(box.querySelector(':scope .subnav'), true);
+
+                showElement(box, true);
+
+                li.parentElement.querySelectorAll(':scope > li .box').forEach(function (otherBox) {
+
+                    if (otherBox !== box) {
+                        hideElement(otherBox);
+                    }
+
+                });
+
+            }
+
+            li.querySelectorAll('li.act, li.cur').forEach(function (active) {
+
+                toggleAria(active.querySelector(':scope > .subnav'), true);
+
+                const activeSpan = active.querySelector(':scope > span.nextlevel');
+
+                if (activeSpan) activeSpan.textContent = minus;
+
+            });
+
+        }
+
+        link.classList.toggle('show');
+
+    });
+
+
+    // BlockNav
+    body.addEventListener('click', function (event) {
+
+        const link = event.target.closest('.blockNav .navlink');
+
+        if (!link) return;
+
+        const li = link.parentElement;
+
+        resetSiblings(li);
+
+        if (link.classList.contains('show')) {
+
+            resMenu();
+            event.preventDefault();
+
+        } else if (
+            link.nextElementSibling &&
+            li.parentElement.classList.contains('nav')
+        ) {
+
+            event.preventDefault();
+
+            document.querySelectorAll('.overlay').forEach(function (overlay) {
+                showElement(overlay, true);
+            });
+
+            li.classList.add('activated');
+            li.dataset.showSub = 'true';
+
+            toggleAria(li.querySelector(':scope > .subnav'), true);
+
+        }
+
+        link.classList.toggle('show');
+
+    });
+
+
+    /* Untermenüs ******************************************/
+
+    body.addEventListener('click', function (event) {
+
+        const span = event.target.closest(
+            '#menu .subnav .navitem > span.nextlevel'
+        );
+
+        if (!span) return;
+
+        const li = span.parentElement;
+        const subnav = li.querySelector(':scope > .subnav');
+
+        if (!subnav) return;
+
+        const wasOpen = span.textContent === minus;
+
+        // Alle Untermenüs auf dieser Ebene schließen
+        const parent = li.parentElement;
+
+        parent.querySelectorAll(':scope > li').forEach(function (sibling) {
+
+            const siblingSubnav = sibling.querySelector(':scope > .subnav');
+            const siblingSpan = sibling.querySelector(':scope > span.nextlevel');
+
+            if (siblingSubnav) {
+                toggleAria(siblingSubnav, false);
+            }
+
+            sibling.classList.remove('activated');
+            sibling.dataset.showSub = 'false';
+
+            if (siblingSpan) siblingSpan.textContent = plus;
+
+        });
+
+        // Angeclicktes Untermenü gegebenenfalls öffnen
+        if (!wasOpen) {
+
+            span.textContent = minus;
+
+            toggleAria(subnav, true);
+
+            li.classList.add('activated');
+            li.dataset.showSub = 'true';
+
+        }
+
+    });
+
+
+    // Level 2 Links
+    body.addEventListener('click', function (event) {
+
+        const link = event.target.closest('#menu .nav__level2 > li > a');
+
+        if (!link) return;
+
+        link.parentElement.parentElement.querySelectorAll(':scope > li > a')
+            .forEach(function (sibling) {
+                sibling.classList.toggle('show', sibling === link);
+            });
+
+    });
+
+
+    /* Tastatursteuerung: TAB und ESC *********************/
+
+    body.addEventListener('keyup', function (event) {
+
+        const link = event.target.closest('.navlink');
+
+        if (!link) return;
+
+        const item = link.parentElement;
+        const nav = link.closest('.nav');
+
+        if (event.key === 'Tab') {
+
+            if (item.classList.contains('lastitem')) {
+
+                resMenu();
+
+            } else {
+
+                // Geschwister zurücksetzen
+                Array.from(item.parentElement.children).forEach(function (sibling) {
+
+                    if (sibling === item) return;
+
+                    sibling.classList.remove('activated');
+                    sibling.dataset.showSub = 'false';
+
+                    sibling.querySelectorAll('.subnav').forEach(function (subnav) {
+                        toggleAria(subnav, false);
+                    });
+
+                    sibling.querySelectorAll('li').forEach(function (li) {
+                        li.classList.remove('activated');
+                    });
+
+                    sibling.querySelectorAll('.box').forEach(function (box) {
+                        hideElement(box);
+                    });
+
+                    sibling.querySelectorAll('.subnav li > span.nextlevel').forEach(function (span) {
+                        span.textContent = plus;
+                    });
+
+                });
+
+                // Aktuelles Element aktivieren
+                item.classList.add('activated');
+                item.dataset.showSub = 'true';
+
+                document.querySelectorAll('.overlay').forEach(function (overlay) {
+                    showElement(overlay, true);
+                });
+
+                const subnav = item.querySelector(':scope > .subnav');
+
+                if (item.parentElement.classList.contains('nav')) {
+
+                    item.querySelectorAll('.box').forEach(function (box) {
+                        showElement(box);
+                    });
+
+                    toggleAria(subnav, true);
+
+                    item.querySelectorAll('.box .subnav').forEach(function (boxSubnav) {
+                        toggleAria(boxSubnav, true);
+                    });
+
+                } else {
+
+                    toggleAria(subnav, true);
+
+                    const span = item.querySelector(':scope > span.nextlevel');
+
+                    if (span) span.textContent = minus;
+
+                    item.parentElement.querySelectorAll(':scope > li > span.nextlevel')
+                        .forEach(function (otherSpan) {
+                            if (otherSpan !== span) otherSpan.textContent = plus;
+                        });
+
+                }
+
+            }
+
+        }
+
+
+        // ESC
+        if (event.key === 'Escape' || event.key === 'Esc') {
+            resMenu();
+        }
+
+    });
+
+
+    /* Tastatursteuerung: Pfeiltasten ********************/
+
+    body.addEventListener('keydown', function (event) {
+
+        const link = event.target.closest('.navlink');
+
+        if (!link) return;
+
+        const item = link.parentElement;
+        const nav = link.closest('.nav');
+        const parentItem = link.closest('.navitem');
+
+        if (!nav || !parentItem) return;
+
+        const isTopLevel = item.parentElement.classList.contains('nav');
+
+
+        function showSubnav(currentItem) {
+
+            currentItem.querySelectorAll('.box').forEach(function (box) {
+                showElement(box);
+            });
+
+            currentItem.querySelectorAll('.subnav').forEach(function (subnav) {
+                toggleAria(subnav, true);
+            });
+
+        }
+
+
+        function hideSubnavs(container) {
+
+            container.querySelectorAll('.box').forEach(function (box) {
+                hideElement(box);
+            });
+
+            container.querySelectorAll('.subnav').forEach(function (subnav) {
+                toggleAria(subnav, false);
+            });
+
+        }
+
+
+        function focusLink(element) {
+
+            const target = element?.querySelector(':scope > .navlink');
+
+            if (target) target.focus();
+
+        }
+
+
+        switch (event.key) {
+
+            case 'ArrowRight': // → Rechts
+
+                if (isTopLevel) {
+
+                    const next = parentItem.nextElementSibling ||
+                                 nav.querySelector(':scope > .navitem');
+
+                    if (next) focusLink(next);
+
+                    hideSubnavs(nav);
+
+                } else {
+
+                    const subnav = item.querySelector(':scope > .subnav');
+
+                    if (subnav) {
+
+                        toggleAria(subnav, true);
+
+                        const span = item.querySelector(':scope > span.nextlevel');
+
+                        if (span) span.textContent = minus;
+
+                        focusLink(subnav.querySelector(':scope > .navitem'));
+
+                    }
+
+                }
+
+                event.preventDefault();
+                break;
+
+
+            case 'ArrowLeft': // ← Links
+
+                if (isTopLevel) {
+
+                    const items = Array.from(nav.querySelectorAll(':scope > .navitem'));
+                    const index = items.indexOf(parentItem);
+
+                    const previous = items[index - 1] || items[items.length - 1];
+
+                    if (previous) focusLink(previous);
+
+                    hideSubnavs(nav);
+
+                } else {
+
+                    const currentSubnav = link.closest('.subnav');
+                    const parentNavItem = currentSubnav?.parentElement;
+
+                    if (parentNavItem) {
+
+                        const box = parentNavItem.querySelector(':scope > .box');
+
+                        if (box) hideElement(box);
+
+                        toggleAria(currentSubnav, false);
+
+                        const span = parentNavItem.querySelector(':scope > span.nextlevel');
+
+                        if (span) span.textContent = plus;
+
+                        const parentLink = parentNavItem.querySelector(':scope > .navlink');
+
+                        if (parentLink) parentLink.focus();
+
+                    }
+
+                }
+
+                event.preventDefault();
+                break;
+
+
+            case 'ArrowDown': // ↓ Pfeil runter
+
+                if (isTopLevel) {
+
+                    showSubnav(item);
+
+                    const subnav = item.querySelector(':scope > .subnav');
+
+                    if (subnav) focusLink(subnav.querySelector(':scope > .navitem'));
+
+                } else {
+
+                    const next = item.nextElementSibling;
+
+                    if (next) {
+                        focusLink(next);
+                    } else {
+
+                        const parent = item.parentElement?.parentElement?.closest('li');
+
+                        if (parent) focusLink(parent);
+
+                    }
+
+                }
+
+                event.preventDefault();
+                break;
+
+
+            case 'ArrowUp': // ↑ Pfeil hoch
+
+                if (item.closest('.subnav')) {
+
+                    const previous = item.previousElementSibling;
+
+                    if (previous) {
+
+                        focusLink(previous);
+
+                    } else {
+
+                        const parent = item.parentElement?.parentElement?.closest('li');
+
+                        if (parent) focusLink(parent);
+
+                    }
+
+                }
+
+                event.preventDefault();
+                break;
+
+        }
+
+    });
+
+
+    /* Scroll / Responsive *******************************/
+
+    window.addEventListener('scroll', function () {
+
+        menu.querySelectorAll('.subnav').forEach(function (subnav) {
+            toggleAria(subnav, false);
+        });
+
+        menu.querySelectorAll('li').forEach(function (li) {
+            li.dataset.showSub = 'false';
+            li.classList.remove('activated');
+        });
+
+        menu.querySelectorAll('.subnav span.nextlevel').forEach(function (span) {
+            span.textContent = plus;
+        });
+
+        document.querySelectorAll('.box, .submenulevel, .overlay')
+            .forEach(function (element) {
+                hideElement(element, true);
+            });
+
+    });
+
+
+    window.addEventListener('resize', resMenu);
+
+
 });

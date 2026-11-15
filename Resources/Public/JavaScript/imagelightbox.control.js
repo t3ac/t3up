@@ -1,45 +1,50 @@
-jQuery(document).ready(function($) {
-	
 
-/* Lightbox  *****************************************/
+document.addEventListener('DOMContentLoaded', () => {
 
-	$('.lightboxstyle-a').find('a.lightbox').attr("data-imagelightbox", "a");
-	$('.lightboxstyle-b').find('a.lightbox').attr("data-imagelightbox", "b");
-	$('.lightboxstyle-c').find('a.lightbox').attr("data-imagelightbox", "c");
-	$('.lightboxstyle-d').find('a.lightbox').attr("data-imagelightbox", "d");
-	$('.lightboxstyle-e').find('a.lightbox').attr("data-imagelightbox", "e");
-	
-	$('a[data-imagelightbox="a"]').imageLightbox({
+    // Lightbox-Gruppen zuweisen
+    ['a', 'b', 'c', 'd', 'e'].forEach(style => {
+
+        document.querySelectorAll(`.lightboxstyle-${style} a.lightbox`)
+            .forEach(link => {
+                link.dataset.imagelightbox = style;
+            });
+
+    });
+
+    // Lightbox A
+    ImageLightbox.init('a[data-imagelightbox="a"]', {
         activity: true,
         overlay: true
     });
 
-  	
-	$('a[data-imagelightbox="b"]').imageLightbox({
+    // Lightbox B
+    ImageLightbox.init('a[data-imagelightbox="b"]', {
         overlay: true,
         activity: true,
         button: true,
         quitOnDocClick: false
     });
-    
-    
-	$('a[data-imagelightbox="c"]').imageLightbox({
+
+    // Lightbox C
+    ImageLightbox.init('a[data-imagelightbox="c"]', {
         navigation: true,
         overlay: true,
         activity: true,
         button: true,
         quitOnDocClick: false
     });
-    
-	$('a[data-imagelightbox="d"]').imageLightbox({
+
+    // Lightbox D
+    ImageLightbox.init('a[data-imagelightbox="d"]', {
         arrows: true,
         overlay: true,
         activity: true,
         button: true,
         quitOnDocClick: false
     });
-    
-	$('a[data-imagelightbox="e"]').imageLightbox({
+
+    // Lightbox E
+    ImageLightbox.init('a[data-imagelightbox="e"]', {
         arrows: true,
         navigation: true,
         overlay: true,
@@ -47,5 +52,5 @@ jQuery(document).ready(function($) {
         button: true,
         quitOnDocClick: false
     });
-    
+
 });
