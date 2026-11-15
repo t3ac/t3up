@@ -50,64 +50,84 @@ html[color-mode=dark] {
        
        .opg                                 {background: #000 !important;}
        
-	   header .top,
-	   header                              {background: #151515 !important;}  
-	   nav a                               {color: #fff !important;}
-	   nav ul                              {background: #000  !important;}
+	   .toTop a:before                      {color: #000;} 	
+	   
+	   header {                              background: #000;
+		.top                                {background: #000;}
+		nav a                               {color: $linkColor; }
+		.tab-pane		                    {background: #222;}
+		.tab-pane input,
+		.tab-pane .color-mode__btn.system span                       {background: #fff  !important;}
+	   }
        
-       .breadcrumbrow .navbar-nav>li>a      {color: $linkColor;}
+       
+       .page {
+			
+			a:focus
+			a:hover                         {color: $linkColor;}
+	        
+	        a.link-internal::before,
+	        a.link-internal-blank::before,
+	        a.link-external-blank::before,
+	        a.link-external::before,             
+	        a.link-mail::before,           
+	        a.link-download::before,    
+	        a.link-web::before,   
+	        a.link-fax::before,             
+	        a.link-phone::before,          
+	        a.link-mobil::before,      
+	        a.link-folder::before,  
+	        a.link-info::before                {color: $linkColor;}
+				
 
-        *                                   {color: #fff;}
-        .h1, h1                             {color: $h1-color;} 
-        .h2, h2                             {color: $h2-color;} 
-        .h3, h3                             {color: $h3-color;} 
-        .h4, h4                             {color: $h4-color;}
-        
-        main a:focus, main a:hover          {color: $linkColor;}
-        
-        a.link-internal::before,
-        a.link-internal-blank::before,
-        a.link-external-blank::before,
-        a.link-external::before,             
-        a.link-mail::before,           
-        a.link-download::before,    
-        a.link-web::before,   
-        a.link-fax::before,             
-        a.link-phone::before,          
-        a.link-mobil::before,      
-        a.link-folder::before,  
-        a.link-info::before,                {color: $linkColor;}
-        
-        
-		
-		
-        .bannerelement                      {color: #fff;}               
-        .toTop a:before                     {color: #000;} 
-		
-        /* Extensions */
-		.news .article                      {background: #222 !important;}
-		.f3-widget-paginator li.current span {color: #000;}
-        .btn-light                         {background: #333 !important;}
 
- 
-        
-        footer {                            background: $footer1BgColor;    
-            .footer1{                             
-                *                           {color: $footer1TextColor;}
-                a                           {color: $footer1LinkColor;}
-                a:hover                     {color: $footer1LinkHoverColor;}
-            }   
-            .footer2{                       background-color: $footer2BgColor;       
-                *                           {color: $footer2TextColor;}
-                a                           {color: $footer2LinkColor;}
-                a:hover                     {color: $footer2LinkHoverColor;}
-            }   
-            .footer3{                       background-color: $footer3BgColor;       
-                *                           {color: $footer3TextColor;}
-                a                           {color: $footer3LinkColor;}
-                a:hover                     {color: $footer3LinkHoverColor;}
-            }   
-        } /* footer */
+
+		   *                                   {color: #fff;}
+		   .h1, h1                             {color: $h1-color;} 
+		   .h2, h2                             {color: $h2-color;} 
+		   .h3, h3                             {color: $h3-color;} 
+		   .h4, h4                             {color: $h4-color;}
+	        
+			main {
+	        		.bannerelement                  {color: #fff;}   			
+		  		.breadcrumbrow .navbar-nav>li>a      {color: $linkColor;}		
+				
+				 .page-link,
+				 nav	 li                         {background: #181818 !important;}
+				
+			    .f3-widget-paginator li.current    {background: none;}				 
+				 
+				 
+				 
+				 
+				 .news {
+					.article                  {background: none;}	
+					
+					
+				 }
+						
+			}       
+			 
+
+			
+	        footer {                            background: $footer1BgColor;    
+	            .footer1{                             
+	                *                           {color: $footer1TextColor;}
+	                a                           {color: $footer1LinkColor;}
+	                a:hover                     {color: $footer1LinkHoverColor;}
+	            }   
+	            .footer2{                       background-color: $footer2BgColor;       
+	                *                           {color: $footer2TextColor;}
+	                a                           {color: $footer2LinkColor;}
+	                a:hover                     {color: $footer2LinkHoverColor;}
+	            }   
+	            .footer3{                       background-color: $footer3BgColor;       
+	                *                           {color: $footer3TextColor;}
+	                a                           {color: $footer3LinkColor;}
+	                a:hover                     {color: $footer3LinkHoverColor;}
+	            }   
+	        } /* footer */
+		} /* page */
            
     } /* body */
 	
