@@ -555,8 +555,8 @@
             <trans-unit id="settings.t3upFiles.Js.subnavigation">
                 <source>Subnavigation (default 0)</source>
             </trans-unit>            
-            <trans-unit id="settings.t3upFiles.Js.inview">
-                <source>Inview dynamic content (default 0)</source>
+            <trans-unit id="settings.t3upFiles.Js.wheninview">
+                <source>Wheninview dynamic content (default 0)</source>
             </trans-unit>    
             <trans-unit id="settings.t3upFiles.Js.wall">
                 <source>Wall (default 0)</source>
