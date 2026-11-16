@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { height: endHeight + 'px' }
             ],
             {
-                duration: 400,
+                duration: 50,
                 easing: 'ease',
                 fill: 'forwards'
             }
