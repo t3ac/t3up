@@ -134,8 +134,9 @@ plugin.tx_wsscss.variables{
     mmLinkColor                     = {$t3upColors.mmLinkColor}     
     mmTopColor                      = {$t3upColors.mmTopColor}         
     mmLinkFontSize                  = {$t3upColors.mmLinkFontSize}              
+    mmUlBg                          = {$t3upColors.mmUlBg}                
+    mmLinkBg                        = {$t3upColors.mmLinkBg}      
          
-        
     // Socialmedia 
     socialSymbolFontColor           = {$t3upSocialmedia.socialSymbolFontColor} 
     socialSymbolBorderColor         = {$t3upSocialmedia.socialSymbolBorderColor} 
