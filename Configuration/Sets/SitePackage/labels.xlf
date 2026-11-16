@@ -896,7 +896,9 @@
              <trans-unit id="categories.T3up-Navigation">
                 <source>Navigation</source>
             </trans-unit>  
-
+            <trans-unit id="settings.t3upNavigation.desktopNavigation">
+                <source>Limit where the desktop menue becomes vissible</source>
+            </trans-unit>    
             <trans-unit id="settings.t3upNavigation.style">
                 <source>Navigation-style</source>
             </trans-unit>    
