@@ -100,11 +100,12 @@ html[color-mode=dark] {
 		   .h4, h4                             {color: $h4-color;}
 	        
 			main {
-	        		.bannerelement                  {color: #fff;}   			
+	        	.bannerelement                  {color: #fff;}   			
 		  		.breadcrumbrow .navbar-nav>li>a      {color: $linkColor;}		
-				
-				 .page-link,
-				 nav	 li                         {background: #181818 !important;}
+
+				.btn-light,
+				.page-link,
+				nav	 li                         {background: #181818 !important;}
 				
 			    .f3-widget-paginator li.current    {background: none;}				 
 				 
@@ -116,12 +117,8 @@ html[color-mode=dark] {
 				 .news {
 					.article                  {background: none;}	
 					.article .moreNews:after    {background: #fff;}	
-					
 				 }
-						
 			}       
-			 
-
 			
 	        footer {                            background: $footer1BgColor;    
 	            .footer1{                             
