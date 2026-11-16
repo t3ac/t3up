@@ -35,7 +35,6 @@ TCEFORM.tt_content {
              5 = H5
        }
        removeItems =  0,1,5
-      }
    }
 }
 
