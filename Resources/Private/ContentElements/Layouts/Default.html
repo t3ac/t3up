@@ -9,7 +9,6 @@
 		            {f:if(condition: data.layout, then: 'frame-layout-{data.layout}')} 
 		            {f:if(condition: data.space_before_class, then: 'mt-{data.space_before_class}')} 
 		            {f:if(condition: data.space_after_class, then: 'mb-{data.space_after_class}')} 
-		            {f:if(condition: data.padding_inner_class, then: 'padding-inner-{data.padding_inner_class}')} 
 		            {f:if(condition: data.individual_class, then: '{data.individual_class}')} 
 		            {f:if(condition: data.animate, then: 'aos-init')}"   
 		            style="<f:if condition="{data.bgimage}">background-image: url(<f:uri.image image='{files.0}' />);</f:if> <f:if condition="{data.bgcolor}">background-color: {data.bgcolor};</f:if>">	                
@@ -47,7 +46,6 @@
 		            {f:if(condition: data.space_after_class, then: 'mb-{data.space_after_class}')} 
 		            {f:if(condition: data.padding_before_class, then: 'pt-{data.padding_before_class}')} 
 		            {f:if(condition: data.padding_after_class, then: 'pb-{data.padding_after_class}')} 
-		            {f:if(condition: data.padding_inner_class, then: 'padding-inner-{data.padding_inner_class}')} 
 		            {f:if(condition: data.individual_class, then: '{data.individual_class}')} 
 		            {f:if(condition: data.sectionIndex, then: ' sectionIndex')} {f:if(condition: data.animate, then: 'aos-init')}"
 		            {f:if(condition: data.animate, then: 'data-aos="{data.animate}"')} {f:if(condition: data.animate, then: 'data-aos-duration="{data.animate_duration}"')} {f:if(condition: data.animate, then: 'data-aos-duration="{data.animate_easing}"')} {f:if(condition: data.animate, then: 'data-aos-delay="{data.animate_delay}"')}>
