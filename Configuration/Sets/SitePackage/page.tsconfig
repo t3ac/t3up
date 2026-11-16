@@ -10,17 +10,14 @@ TCEFORM.tt_content.imageorient {
     }    
 }
 
-@import.if.isTrue = settings.t3upComponents.designFrames
 @import 'EXT:t3up/Configuration/TsConfig/Design.tsconfig'
 
-@import.if.isTrue = settings.t3upComponents.imageLayouts
 @import 'EXT:t3up/Configuration/TsConfig/ImageLayouts.tsconfig'
 
-@import.if.isTrue = settings.t3upComponents.bootstrapFrames
-@import 'EXT:t3up/Configuration/TsConfig/BootstrapFrames.tsconfig'
+@import 'EXT:t3up/Configuration/TsConfig/BootstrapDesign.tsconfig'
 
-@import.if.isTrue = settings.t3upComponents.tableLayouts
 @import 'EXT:t3up/Configuration/TsConfig/TableLayouts.tsconfig'
+
 
 [{$t3upComponents.default} == 1]
     @import 'EXT:t3up/Configuration/TsConfig/Default.tsconfig'
