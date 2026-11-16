@@ -53,11 +53,22 @@ html[color-mode=dark] {
 	   .toTop a:before                      {color: #000;} 	
 	   
 	   header {                              background: #000;
+		
+		.top a.nav_burger::before           {border-bottom: .125rem solid #ffffff; border-top: .125rem solid #ffffff;}
+		.top a.nav_burger::after            {background: #fff;}
 		.top                                {background: #000;}
+		
 		nav a                               {color: $linkColor; }
+		.subnav,
 		.tab-pane		                    {background: #222;}
+		.subnav li:hover		                {background: #000;}
+		
+		.subnav li span                     {color: $linkColor; }
+		
 		.tab-pane input,
 		.tab-pane .color-mode__btn.system span                       {background: #fff  !important;}
+		
+		
 	   }
        
        
@@ -97,12 +108,14 @@ html[color-mode=dark] {
 				
 			    .f3-widget-paginator li.current    {background: none;}				 
 				 
-				 
-				 
-				 
+				.subnavigation {
+					  .cur > a,
+					  a:hover     {color: $linkColor;}	
+				}
+				
 				 .news {
 					.article                  {background: none;}	
-					
+					.article .moreNews:after    {background: #fff;}	
 					
 				 }
 						
