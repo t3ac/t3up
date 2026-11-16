@@ -23,7 +23,7 @@ TCEFORM.tt_content.imageorient {
 @import 'EXT:t3up/Configuration/TsConfig/TableLayouts.tsconfig'
 
 [{$t3upComponents.default} == 1]
-    @import 'EXT:t3up/Configuration/Default/Default.tsconfig'
+    @import 'EXT:t3up/Configuration/TsConfig/Default.tsconfig'
 [END]
 
 [{$t3upComponents.leftNavigation} == 1]
