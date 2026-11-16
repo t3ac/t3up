@@ -22,14 +22,6 @@ TCEFORM.tt_content.imageorient {
 @import.if.isTrue = settings.t3upComponents.tableLayouts
 @import 'EXT:t3up/Configuration/TsConfig/TableLayouts.tsconfig'
 
-@import 'EXT:t3up/Configuration/TsConfig/Permission.tsconfig'
-
-@import.if = expr
-@import.if.isTrue = settings.t3upComponents.permission
-@import.if.equals = 1
-
-
-
 [{$t3upComponents.default} == 1]
     @import 'EXT:t3up/Configuration/Default/Default.tsconfig'
 [END]
