@@ -3,18 +3,16 @@ page.includeJS.dark.if.isTrue       = {$t3upFiles.Js.dark}
 
 page.includeJSFooterlibs {
 
-        jQuery                      = EXT:t3up/Resources/Public/JavaScript/jquery-3.7.1.min.js
-        jQuery.if.isTrue            = {$t3upFiles.Js.jquery}
-
-        jQuery.forceOnTop           = 1    
-        
+        aos                         = EXT:t3up/Resources/Public/JavaScript/aos.js          
+        aos.if.isTrue               = {$t3upFiles.Js.inview}
+                
         basic                       = EXT:t3up/Resources/Public/JavaScript/basic.js
         basic.if.isTrue             = {$t3upFiles.Js.basic}        
         
         bootstrap                   = EXT:t3up/Resources/Public/JavaScript/Bootstrap/bootstrap.min.js
         bootstrap.if.isTrue         = {$t3upFiles.Js.bootstrap}
         
-        dynheader                   = EXT:t3up/Resources/Public/JavaScript/jquery.dynheader.js
+        dynheader                   = EXT:t3up/Resources/Public/JavaScript/dynheader.js
         dynheader.if.isTrue         = {$t3upFiles.Js.dynamic}
                 
         navigation                  = EXT:t3up/Resources/Public/JavaScript/navigation.js 
@@ -23,18 +21,21 @@ page.includeJSFooterlibs {
         lightboxcnt                 = EXT:t3up/Resources/Public/JavaScript/imagelightbox.control.js
         lightboxcnt.if.isTrue       = {$t3upFiles.Js.lightbox}
         
-        lightbox                    = EXT:t3up/Resources/Public/JavaScript/imagelightbox.min.js
+        lightbox                    = EXT:t3up/Resources/Public/JavaScript/imagelightbox.js
         lightbox.if.isTrue          = {$t3upFiles.Js.lightbox}            
 
-        tablesorter                 = EXT:t3up/Resources/Public/JavaScript/jquery.tablesorter.js
+        tablesorter                 = EXT:t3up/Resources/Public/JavaScript/tablesorter.js
         tablesorter.if.value        = {$t3upFiles.Js.table}   
         
         tablesorterstart            = EXT:t3up/Resources/Public/JavaScript/jquery.tablestart.js
         tablesorterstart.if.isTrue  = {$t3upFiles.Js.table}  
         
-        aos                         = EXT:t3up/Resources/Public/JavaScript/aos.js          
-        aos.if.isTrue               = {$t3upFiles.Js.inview}
+        tablesorterstart            = EXT:t3up/Resources/Public/JavaScript/wheninview.js
+        tablesorterstart.if.isTrue  = {$t3upFiles.Js.wheninview}          
         
+        wheninview                  = EXT:t3up/Resources/Public/JavaScript/wheninviewstart.js
+        wheninviewstart.if.isTrue   = {$t3upFiles.Js.wheninview}           
+
         # subnavigation ********************************************************************************
          
         subnavigation               = EXT:t3up/Resources/Public/JavaScript/subnavigation.js 
