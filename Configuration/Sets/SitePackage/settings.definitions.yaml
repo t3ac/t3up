@@ -488,11 +488,11 @@ settings:
     category: T3up-Components.layouts
     type: bool
     default: true	
-  t3upComponents.leftCol:
+  t3upComponents.sideCol:
     category: T3up-Components.layouts
     type: int
     default: '4'	
-  t3upComponents.centerCol:
+  t3upComponents.mainCol:
     category: T3up-Components.layouts
     type: int
     default: '8'		
