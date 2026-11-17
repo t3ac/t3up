@@ -1,28 +1,26 @@
 (function () {
     "use strict";
-
-    /**
-     * Apply .blend class to the header when scrolling
-     */
-
+    /**  Header bei Scrollen und Mouseover steuern   */
+    
     const header = document.querySelector('#header');
-
     if (!header) return;
-
-    function toggleScrolled() {
-        if (!header.classList.contains('dynamic')) return;
-
-        header.classList.toggle('blend', window.scrollY > 50);
+    function updateHeader() {
+        const scrolled = window.scrollY;
+        if (header.classList.contains('dynamic')) {
+            header.classList.toggle('blend', scrolled > 50);
+        }
+        header.classList.toggle('shrink', scrolled > 200);
     }
+    // Scroll- und Ladeereignis
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    window.addEventListener('load', updateHeader);
 
-    document.addEventListener('scroll', toggleScrolled);
-    window.addEventListener('load', toggleScrolled);
-
+    // Initialer Zustand
+    updateHeader();
+    
     // Header bei Mouseover hervorheben
-    document.querySelectorAll('header').forEach(element => {
-        element.addEventListener('mouseover', () => {
-            header.classList.add('blend');
-        });
+    header.addEventListener('mouseover', function () {
+        header.classList.add('blend');
     });
 
 })();
