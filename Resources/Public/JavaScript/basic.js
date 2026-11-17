@@ -104,17 +104,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-
-    /* Header shrink **************************************/
-
-    const header = document.querySelector('header');
-    window.addEventListener('scroll', function () {
-        if (header) {
-            header.classList.toggle('shrink', window.scrollY > 200);
-        }
-    });
-
-
     /* Smooth Sideanker ***********************************/
 	
     document.querySelectorAll('a[href*="#"].smooth').forEach(function (link) {
