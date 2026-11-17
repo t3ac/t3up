@@ -8,12 +8,12 @@
 
             <div class="container">          
                 <div class="row">
-                    <div class=" d-none d-lg-block col-lg-{settings.t3upComponents.leftCol} subnav pe-lg-5">
+                    <div class=" d-none d-lg-block col-lg-{settings.t3upComponents.sideCol} subnav pe-lg-5">
                         <!-- beginn: subnavigation #nav -->
                             <f:render partial="Submenu/Submenu" arguments="{_all}"/>
                         <!-- ende: subnavigation #nav -->   
                     </div>
-                    <div class="col-12 col-lg-{settings.t3upComponents.centerCol} content"> 
+                    <div class="col-12 col-lg-{settings.t3upComponents.mainCol} content"> 
                          <f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>      
                         <f:if condition="{page.pageRecord.deltitle} != '1'">
                           <f:if condition="{page.pageRecord.showtitle} == 0">
