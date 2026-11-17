@@ -82,14 +82,6 @@ $padding = array(
             'default'    => '',
         ],
     ],
-    'padding_side_class'  => [
-        'exclude' => true,
-        'label'   => $ll . ':padding_side',
-        'config'  => [
-            'type'       => 'input',
-            'default'    => '',
-        ],
-    ],
     'padding_inner_class'  => [
         'exclude' => true,
         'displayCond' => 'FIELD:CType:=:textmedia',
@@ -469,7 +461,7 @@ $GLOBALS['TCA']['tt_content']['palettes']['onepager_fields'] = [
 // Palette hinzufuegen, nach Layout - dadurch Anzeige im Backend
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content','--palette--;' . $ll . ':padding_class;inner_fields','textmedia','before:sectionIndex');
+    'tt_content','--palette--;' . $ll . ':padding_class;innerpadding_fields','textmedia','before:sectionIndex');
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content','--palette--;' . $ll . ':padding_class;newpadding_fields','textmedia,buttons,menu_pages,powermail_pi1','before:sectionIndex');
