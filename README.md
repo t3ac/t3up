@@ -7,4 +7,4 @@
 2025-10-01    New fonts inside Merriweather Sans and Merriweather.
 2026-01-01    Änderung des Vendors zurück auf t3ac
 2026-10-18    TYPO3 Version 14
-2026-11-15    Elimieren von jQuery, Korrketuren
+2026-11-15    Elimieren von jQuery, Korrketuren, Der Symlink zu den Fonts ist nicht mehr notwendig.
