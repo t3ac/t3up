@@ -61,5 +61,5 @@ UPDATE `tt_content` SET `padding_before_class` = '1' WHERE `padding_before_class
 UPDATE `tt_content` SET `lightboxstyle` = '-' WHERE `assets` = 0;
 UPDATE `tt_content` SET `lightboxstyle` = 'lightboxstyle-b' WHERE `lightboxstyle` LIKE 'b';
 UPDATE `tt_content` SET `lightboxstyle` = '-' WHERE `image_zoom` = 1 AND `assets` > 0;
-
+UPDATE `tt_content` SET `lightboxstyle` = 'lightboxstyle-b' WHERE `image_zoom` = 1;
 
