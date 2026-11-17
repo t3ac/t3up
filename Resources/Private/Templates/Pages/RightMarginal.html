@@ -8,7 +8,7 @@
 			<div class="container"> 
                 <div class="row">
                     <f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
-                    <div class="col-12 col-lg-8 content px-3 ps-xxl-0">        
+                    <div class="col-12 col-lg-{settings.t3upComponents.mainCol} content px-3 ps-xxl-0">        
                         <!--TYPO3SEARCH_begin-->
 					  		<f:if condition="{page.pageRecord.deltitle} != '1'">
 								<f:if condition="{page.pageRecord.showtitle} == 0">
@@ -23,14 +23,14 @@
                             <f:render.contentArea contentArea="{content.main}" />
                          <!--TYPO3SEARCH_end-->  
                     </div>                                  
-                    <div class="col-12 col-lg-4 right px-3 pe-xxl-0">                                         
-						<!--TYPO3SEARCH_begin-->             
-							<f:render.contentArea contentArea="{content.rightcolumn}" />
-						<!--TYPO3SEARCH_end-->                         
+                    <div class="col-12 col-lg-{settings.t3upComponents.sideCol} right px-3 pe-xxl-0">
+                        <!--TYPO3SEARCH_begin-->             
+                            <f:render.contentArea contentArea="{content.rightcolumn}" />
+                        <!--TYPO3SEARCH_end-->                         
                    </div>
                 </div> 
                 <div class="row">
-                    <div class="col-12 col-lg-8">          
+                    <div class="col-12 col-lg-{settings.t3upComponents.mainCol}">          
 						<f:if condition="{page.pageRecord.previousnext}">
 							<f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
 						</f:if>
