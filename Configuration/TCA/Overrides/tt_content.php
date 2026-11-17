@@ -99,7 +99,7 @@ $padding = array(
                 ['label' => $ll . ':space_class_6', 'value' =>  '6'],
                 ['label' => $ll . ':space_class_7', 'value' =>  '7'],
             ],
-            'default'    => '',
+            'default'    => '3',
         ],
     ],
     'individual_class'  => [
