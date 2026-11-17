@@ -63,3 +63,9 @@ UPDATE `tt_content` SET `lightboxstyle` = 'lightboxstyle-b' WHERE `lightboxstyle
 UPDATE `tt_content` SET `lightboxstyle` = '-' WHERE `image_zoom` = 1 AND `assets` > 0;
 UPDATE `tt_content` SET `lightboxstyle` = 'lightboxstyle-b' WHERE `image_zoom` = 1;
 
+
+UPDATE `tt_content` SET `padding_inner_class` = '3' WHERE `CType` LIKE 'textmedia' AND `imageorient` LIKE '17' AND `assets` > 0;
+UPDATE `tt_content` SET `padding_inner_class` = '3' WHERE `CType` LIKE 'textmedia' AND `imageorient` LIKE '18' AND `assets` > 0;
+UPDATE `tt_content` SET `padding_inner_class` = '3' WHERE `CType` LIKE 'textmedia' AND `imageorient` LIKE '25' AND `assets` > 0;
+UPDATE `tt_content` SET `padding_inner_class` = '3' WHERE `CType` LIKE 'textmedia' AND `imageorient` LIKE '26' AND `assets` > 0;
+
