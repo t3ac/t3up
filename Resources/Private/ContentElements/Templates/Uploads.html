@@ -31,17 +31,17 @@
 						</f:if>
 					</f:if>
 					
-					<div class="uploadContent ps-3">
+					<div class="uploadContent ps-3 col-10">
 						<a href="{file.publicUrl}" {f:if(condition:data.target,then: ' target="{data.target}"')}{f:if(condition: file.title, then: ' title="{file.title}"')}>
-							<h4 class="ce-uploads-fileName">{f:if(condition: file.properties.title, then: file.properties.title, else: file.name) -> f:format.htmlspecialchars()}</h4>
+							<span class="ce-uploads-fileName h4">{f:if(condition: file.properties.title, then: file.properties.title, else: file.name) -> f:format.htmlspecialchars()}</span><br />
 						</a>
 						<f:if condition="{file.properties.description}">
 							<f:if condition="{data.uploads_description}">
-								<p class="ce-uploads-description"><f:format.nl2br>{file.properties.description}</span></f:format.nl2br></p>
+								<span class="ce-uploads-description p"><f:format.nl2br>{file.properties.description}</f:format.nl2br></span><br />
 							</f:if>
 						</f:if>
 						<f:if condition="{data.filelink_size}">
-							<p class="ce-uploads-filesize"><f:format.bytes value="{file.properties.size}" /></p>
+							<span class="ce-uploads-filesize p"><f:format.bytes value="{file.properties.size}" /></span><br />
 						</f:if>
 					</div>
 				</li>
