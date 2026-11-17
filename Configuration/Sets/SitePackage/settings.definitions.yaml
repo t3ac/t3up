@@ -907,7 +907,7 @@ settings:
     type: string
     enum:
       nondynamic: 'none'
-      sticky: 'sticky'        
+      dynamic: 'dynamic'            
   t3upHeader.headerAreaWrap:
     category: T3up-Header
     type: string
