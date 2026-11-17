@@ -70,11 +70,11 @@
             <trans-unit id="settings.t3upComponents.imageLayouts">
                 <source>Imagelayouts are available</source>
             </trans-unit>
-            <trans-unit id="settings.t3upComponents.leftCol">
-                <source>Number of cols - default 4 -, for the left part of the leftnavigation-template</source>
+            <trans-unit id="settings.t3upComponents.sideCol">
+                <source>Number of cols - default 4 -, for the side column</source>
             </trans-unit>            
-            <trans-unit id="settings.t3upComponents.centerCol">
-                <source>Number of cols - default 8 -, for the main part of the leftnavigation-template</source>
+            <trans-unit id="settings.t3upComponents.mainCol">
+                <source>Number of cols - default 8 -, for the main column</source>
             </trans-unit>                    
             <trans-unit id="settings.t3upComponents.designFrames">
                 <source>DesignFrames are available</source>
