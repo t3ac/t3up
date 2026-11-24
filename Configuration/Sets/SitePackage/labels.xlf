@@ -441,7 +441,7 @@
                 <source>Lightgrey</source>
             </trans-unit>                
             <trans-unit id="settings.t3upColors.pictureoverlay">
-                <source>Overlaycolor for imgaes</source>
+                <source>Overlaycolor for images</source>
             </trans-unit>                
             <trans-unit id="settings.t3upColors.pictureoverlayTextColor">
                 <source>Textcolor for the overlayfunction</source>
