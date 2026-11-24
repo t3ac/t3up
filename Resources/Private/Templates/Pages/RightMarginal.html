@@ -8,12 +8,12 @@
 			<div class="container"> 
                 <div class="row">
                     <f:render partial="SpecialMenu/Breadcrumb" section="content" arguments="{_all}"/>
-                    <div class="col-12 col-lg-{settings.t3upComponents.mainCol} content px-3 ps-xxl-0">        
+                    <div class="{settings.t3upComponents.mainColWrap} col-lg-{settings.t3upComponents.mainCol}">        
                         <!--TYPO3SEARCH_begin-->
 					  		<f:if condition="{page.pageRecord.deltitle} != '1'">
 								<f:if condition="{page.pageRecord.showtitle} == 0">
                                 <f:then>
-                                  <f:format.nl2br><h1 class="{h1wrap}">{title}</h1></f:format.nl2br>
+                                  <f:format.nl2br><h1 class="{settings.t3upTypography.h1.wrap}">{title}</h1></f:format.nl2br>
                                  </f:then> 
                                 <f:else>
                                     <h1 class="outof">{title}</h1>  
@@ -23,7 +23,7 @@
                             <f:render.contentArea contentArea="{content.main}" />
                          <!--TYPO3SEARCH_end-->  
                     </div>                                  
-                    <div class="col-12 col-lg-{settings.t3upComponents.sideCol} right px-3 pe-xxl-0">
+                    <div class="col-12 col-lg-{settings.t3upComponents.rightCol} {settings.t3upComponents.rightColWrap}">
                         <!--TYPO3SEARCH_begin-->             
                             <f:render.contentArea contentArea="{content.rightcolumn}" />
                         <!--TYPO3SEARCH_end-->                         
