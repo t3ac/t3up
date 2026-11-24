@@ -418,10 +418,7 @@
             </trans-unit>                
             <trans-unit id="settings.t3upColors.red">
                 <source>Red</source>
-            </trans-unit>                
-            <trans-unit id="settings.t3upColors.blue">
-                <source>Blue</source>
-            </trans-unit>                
+            </trans-unit>                               
             <trans-unit id="settings.t3upColors.turquoise">
                 <source>Turquoise</source>
             </trans-unit>                
