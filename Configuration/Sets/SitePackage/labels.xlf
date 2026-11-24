@@ -577,9 +577,6 @@
             <trans-unit id="settings.t3upFiles.Js.wheninview">
                 <source>Wheninview dynamic content (default 0)</source>
             </trans-unit>    
-            <trans-unit id="settings.t3upFiles.Js.wall">
-                <source>Wall (default 0)</source>
-            </trans-unit>    
             
             <note>Scss</note>                                         
               <trans-unit id="categories.T3up-Files.Scss">
