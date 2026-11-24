@@ -696,7 +696,7 @@ settings:
   t3upFiles.Js.jquery:     
     category: T3up-Files.Js
     type: bool
-    default: true
+    default: false
   t3upFiles.Js.navigation:     
     category: T3up-Files.Js
     type: bool
