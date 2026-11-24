@@ -1,9 +1,9 @@
 [backend.user.isAdmin == false]
-	TCEFORM.tt_content.CType.removeItems(
-		text,textpic,image,header,
-		div,bullets,html,
-		menu_sitemap,menu_sitemap_pages,menu_abstract,menu_subpages,menu_categorized_content,menu_categorized_pages,menu_section,menu_section_pages
-	) 
+    TCEFORM.tt_content.CType.removeItems(
+        text,textpic,image,header,
+        div,bullets,html,
+        menu_sitemap,menu_sitemap_pages,menu_abstract,menu_subpages,menu_categorized_content,menu_categorized_pages,menu_section,menu_section_pages
+    ) 
 [END]
 
 
@@ -40,44 +40,62 @@ TCEFORM.tt_content {
 
 // DESIGNS
 TCEFORM {
-	tt_content {
-		frame_class {
-			removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
-			disableNoMatchingValueElement = 1
+    tt_content {
+        frame_class {
+            removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
+            disableNoMatchingValueElement = 1
             types {
-				text {
-					addItems { 
-                        	white  		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
-                   		colored		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored
-					}
-				} 
-				textmedia {
-					addItems { 
-                    	    white  		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
-                   		colored		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored
-					}
-				}   
-				table {
-					addItems { 
-                    	   white  		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
-					}
-				}  				
-				header {
-					addItems { 
-                    	   white  		= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
-					}
-	            }  
-				list {
-					addItems { 
-                    	   white  			= LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
-					}
-	            }  
-	            menu_subpages {
-					addItems { 
-						subnavigation 	= Subnavigation
-					}
-	            }  
-			} // types
-		} // frame_class
-	} // tt_content  
+                text {
+                    addItems { 
+                           white          = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                           colored        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored
+                    }
+                } 
+                textmedia {
+                    addItems { 
+                           white          = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                           colored        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored
+                    }
+                }   
+                table {
+                    addItems { 
+                           white          = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                           
+                    }
+                }                  
+                header {
+                    addItems { 
+                           white          = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                    }
+                }  
+                list {
+                    addItems { 
+                           white          = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                           colored        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored                          
+                    }
+                }  
+                uploads {
+                    addItems { 
+                           white          = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                           colored        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored                          
+                    }
+                }  
+                                
+                menu_pages {
+                    addItems { 
+                           white          = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:white
+                           colored        = LLL:EXT:t3up/Resources/Private/Language/locallang_backend.xlf:colored                          
+                    }
+                }  
+                                
+                             
+                
+                menu_subpages {
+                    addItems { 
+                        subnavigation     = Subnavigation
+                    }
+                }  
+            } // types
+        } // frame_class
+    } // tt_content  
 } // TCEFORM
