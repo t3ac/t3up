@@ -378,8 +378,8 @@ settings:
   t3upColors.lightgrey:
     category: T3up-Colors.pagecolors
     type: color
-    default: '#dadada'   
-    
+    default: '#dadada'  
+
   # Specials -------------------------- 
   t3upColors.pictureoverlay:
     category: T3up-Colors.specials
@@ -413,6 +413,11 @@ settings:
     category: T3up-Colors.specials
     type: string
     default: '#000000cc'   
+  t3upColors.frame-colored:
+    category: T3up-Colors.specials
+    type: color
+    default: '#efefef'       
+    
   t3upColors.tableHeader:
     category: T3up-Colors.tablecolor
     type: string
@@ -488,14 +493,38 @@ settings:
     category: T3up-Components.layouts
     type: bool
     default: true	
-  t3upComponents.sideCol:
+  t3upComponents.leftCol:
     category: T3up-Components.layouts
     type: int
     default: '4'	
+  t3upComponents.leftColWrap:
+    category: T3up-Components.layouts
+    type: string
+    default: 'd-none d-lg-block pe-lg-5'
+  t3upComponents.rightCol:
+    category: T3up-Components.layouts
+    type: int
+    default: '4'	
+  t3upComponents.rightColWrap:
+    category: T3up-Components.layouts
+    type: string
+    default: 'right px-lg-5 pe-xxl-0'		
   t3upComponents.mainCol:
     category: T3up-Components.layouts
     type: int
     default: '8'		
+  t3upComponents.mainColWrap:
+    category: T3up-Components.layouts
+    type: string
+    default: 'col-12 content'	
+  t3upComponents.oneColWrap:
+    category: T3up-Components.layouts
+    type: string
+    default: 'col-12 content px-5 px-xxl-0'				
+  t3upComponents.onePagerColWrap:
+    category: T3up-Components.layouts
+    type: string
+    default: 'col-12 content'
   t3upComponents.designFrames:
     category: T3up-Components.tsconfig
     type: bool
@@ -900,7 +929,15 @@ settings:
   t3upHeader.mobilLogoWidth:
     category: T3up-Header
     type: string
-    default: '100%'         
+    default: '100%'   
+  t3upHeader.headerLogoMobilMaxWidth:
+    category: T3up-Header
+    type: string
+    default: '150px'       
+  t3upHeader.mobilLogoInTop:
+    category: T3up-Header
+    type: bool
+    default: true            
   t3upHeader.dynheader:
     category: T3up-Header
     default: 'none'
