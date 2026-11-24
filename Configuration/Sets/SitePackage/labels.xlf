@@ -630,9 +630,6 @@
             <trans-unit id="settings.t3upFiles.Scss.table">
                 <source>Table (default 1)</source>
             </trans-unit>                                                                                                        
-            <trans-unit id="settings.t3upFiles.Scss.wall">
-                <source>Wall of elements (default 0)</source>
-            </trans-unit>    
             <trans-unit id="settings.t3upFiles.Scss.Own">
                 <source>A free definition css-class</source>
             </trans-unit>    
