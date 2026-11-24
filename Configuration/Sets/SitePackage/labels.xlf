@@ -70,12 +70,30 @@
             <trans-unit id="settings.t3upComponents.imageLayouts">
                 <source>Imagelayouts are available</source>
             </trans-unit>
-            <trans-unit id="settings.t3upComponents.sideCol">
-                <source>Number of cols - default 4 -, for the side column</source>
+            <trans-unit id="settings.t3upComponents.leftCol">
+                <source>Number of cols - default 4 -, for the left column</source>
             </trans-unit>            
-            <trans-unit id="settings.t3upComponents.mainCol">
+            <trans-unit id="settings.t3upComponents.leftColWrap">
+                <source>Bootstrap-classes for the left column</source>
+            </trans-unit>            
+            <trans-unit id="settings.t3upComponents.rightCol">
+                <source>Number of cols - default 4 -, for the right column</source>
+            </trans-unit>            
+            <trans-unit id="settings.t3upComponents.rightColWrap">
+                <source>Bootstrap-classes for the right column</source>
+            </trans-unit>       
+             <trans-unit id="settings.t3upComponents.mainCol">
                 <source>Number of cols - default 8 -, for the main column</source>
-            </trans-unit>                    
+            </trans-unit>            
+            <trans-unit id="settings.t3upComponents.mainColWrap">
+                <source>Bootstrap-classes for the main column</source>
+            </trans-unit>             
+            <trans-unit id="settings.t3upComponents.oneColWrap">
+                <source>Bootstrap-classes for the one column</source>
+            </trans-unit>       
+            <trans-unit id="settings.t3upComponents.onePagerColWrap">
+                <source>Bootstrap-classes for the onepager column</source>
+            </trans-unit>                     
             <trans-unit id="settings.t3upComponents.designFrames">
                 <source>DesignFrames are available</source>
             </trans-unit>
@@ -449,12 +467,17 @@
             <trans-unit id="settings.t3upColors.overlayColor">
                 <source>Color for the overlay function</source>
             </trans-unit>    
-            
+            <trans-unit id="settings.t3upColors.frame-colored">
+                <source>Backgound-color for the frame-selection "colored"</source>
+            </trans-unit>    
+
+
+
+
              <note>Table Colors</note>                   
             <trans-unit id="categories.T3up-Colors.tablecolor">
                 <source>Table colors</source>
             </trans-unit>   
- 
               <trans-unit id="settings.t3upColors.tableHeader">
                 <source>Color of the table header</source>
             </trans-unit>   
@@ -472,7 +495,6 @@
             <trans-unit id="categories.T3up-Colors.mobilcolor">
                 <source>Mobil menue colors</source>
             </trans-unit>   
- 
             <trans-unit id="settings.t3upColors.mmTopBG">
                 <source>Menue top background-color</source>
             </trans-unit>   
@@ -749,11 +771,17 @@
                 <source>Path of the mobillogo-file</source>
             </trans-unit>
             <trans-unit id="settings.t3upHeader.mobilLogoWidth">
-                <source>Width of the mobilLogoWidth</source>
+                <source>Width of the mobillogo</source>
             </trans-unit>
+             <trans-unit id="settings.t3upHeader.headerLogoMobilMaxWidth">
+                <source>Max-Width of the mobillogo</source>
+            </trans-unit>           
             <trans-unit id="settings.t3upHeader.mobilLogoWrap">
                 <source>Mobillogo wrap</source>
-            </trans-unit>                        
+            </trans-unit>                     
+            <trans-unit id="settings.t3upHeader.mobilLogoInTop">
+                <source>Mobillogo in the toparea</source>
+            </trans-unit>                           
             <trans-unit id="settings.t3upHeader.symbolFontSize">
                 <source>Symbol fontsize</source>
             </trans-unit>        
