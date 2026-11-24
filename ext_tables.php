@@ -13,7 +13,6 @@ $GLOBALS['TCA']['pages']['columns']['subtitle']['config']['max'] = 200;
 $GLOBALS['TCA']['pages']['columns']['subtitle']['config']['cols'] = '60';
 $GLOBALS['TCA']['pages']['columns']['subtitle']['config']['rows'] = '2';
 
-
 $GLOBALS['TCA']['tt_content']['columns']['imagecols']['config']['default'] = 1;
 
 $GLOBALS['TCA']['tt_content']['columns']['header']['config']['type'] = 'text';
@@ -23,3 +22,5 @@ $GLOBALS['TCA']['tt_content']['columns']['header']['config']['eval'] = 'required
 $GLOBALS['TCA']['tt_content']['columns']['header_layout']['config']['default'] = 2;
 
 $GLOBALS['TCA']['tt_content']['columns']['sectionIndex']['config']['default'] = 0;
+
+$GLOBALS['TCA']['tt_address']['columns']['description']['config']['enableRichtext'] = true;
