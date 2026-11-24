@@ -6,15 +6,30 @@
                 <f:if condition="{settings.t3upHeader.toppos} == 1">
                     <f:render section="top" arguments="{_all}"/>
                     <div class="{settings.t3upHeader.headerAreaWrap}"> 
-	                    <f:cObject typoscriptObjectPath="lib.header.logo" />
-	                    <f:cObject typoscriptObjectPath="lib.header.headerextra" />
+                    		<f:if condition="{settings.t3upHeader.mobilLogoInTop} == 1">
+                    			<f:then>
+                    			    <f:cObject typoscriptObjectPath="lib.header.mainlogo" />
+                    			</f:then>
+                    			<f:else>
+                    				<f:cObject typoscriptObjectPath="lib.header.logo" />
+                    			</f:else>
+                    		</f:if>
+                    		<f:cObject typoscriptObjectPath="lib.header.headerextra" />
 	                    <f:render section="navi" arguments="{_all}"/>
 	                </div>
                 </f:if>
                 
                 <f:if condition="{settings.t3upHeader.toppos} == 2 || {settings.t3upHeader.toppos} == 0">                
                     <div class="{settings.t3upHeader.headerAreaWrap}"> 
-                        <f:cObject typoscriptObjectPath="lib.header.logo" />
+                		<f:if condition="{settings.t3upHeader.mobilLogoInTop} == 1">
+                			<f:then>
+                			    <f:cObject typoscriptObjectPath="lib.header.mainlogo" />
+                			</f:then>
+                			<f:else>
+                				<f:cObject typoscriptObjectPath="lib.header.logo" />
+                			</f:else>
+                		</f:if>
+                		<f:cObject typoscriptObjectPath="lib.header.headerextra" />
                         <div class="{settings.t3upHeader.headerInnnerAreaWrap}">
 	                        <f:render section="top" arguments="{_all}"/>
 	                        <f:cObject typoscriptObjectPath="lib.header.headerextra" />
@@ -34,6 +49,9 @@
 		<f:section name="top">
 			<div class="top">
 				<div class="{settings.t3upHeader.topOuterWrap}">
+				    <f:if condition="{settings.t3upHeader.mobilLogoInTop} == 1">
+				    		<f:cObject typoscriptObjectPath="lib.header.mobillogo" />
+				    </f:if>
 					<f:cObject typoscriptObjectPath="lib.header.topexta" />
 					<ul id="service_nav" class="{settings.t3upHeader.topWrap}">
 						<f:cObject typoscriptObjectPath="lib.header.top" />
