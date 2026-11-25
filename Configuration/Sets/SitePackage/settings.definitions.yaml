@@ -712,7 +712,7 @@ settings:
   t3upFiles.Js.wheninview:     
     category: T3up-Files.Js
     type: bool
-    default: false
+    default: true
     
   t3upFiles.Scss.access:     
     category: T3up-Files.Scss
@@ -917,7 +917,7 @@ settings:
   t3upHeader.logoWrap:
     category: T3up-Header
     type: string
-    default: 'logo d-inline-block py-3 pe-3 order-1'
+    default: 'logo py-3 pe-3 order-1'
   t3upHeader.logoStickyWidth:
     category: T3up-Header
     type: string
