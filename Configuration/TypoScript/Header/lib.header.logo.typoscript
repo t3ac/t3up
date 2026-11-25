@@ -1,22 +1,29 @@
-#### logo #############################
-lib.header.logo = COA
-lib.header.logo.if.isTrue                   = {$t3upHeader.logo}
-lib.header.logo.10 = COA
-lib.header.logo.10.10  = IMAGE
-lib.header.logo.10.10  {
+#### mainlogo ########################
+lib.header.mainlogo = COA
+lib.header.mainlogo.if.isTrue               = {$t3upHeader.logo}
+lib.header.mainlogo.10 = COA
+lib.header.mainlogo.10.10  = IMAGE
+lib.header.mainlogo.10.10  {
     file                                    = {$t3upHeader.logo}
     altText                                 = {$t3upHeader.alttext}
     params                                  = type="logo" 
     imageLinkWrap                           = 1
     imageLinkWrap.enable                    = 1 
     imageLinkWrap.typolink.parameter        = {$t3upComponents.home}
-    imageLinkWrap.typolink.ATagParams       = class="d-none d-md-block h-100 w-100" alt="link to homepage"
+    imageLinkWrap.typolink.ATagParams       = class=" alt="link to homepage"
 }
-lib.header.logo.wrap                        = <div class="{$t3upHeader.logoWrap}">|</div>
+lib.header.mainlogo.wrap                     = <div class="{$t3upHeader.logoWrap}">|</div>
 
 #### mobillogo ########################
-lib.header.logo.20                         =< lib.header.logo.10.10 
-lib.header.logo.20 {
-    file                                   = {$t3upHeader.mobilLogo}
-    imageLinkWrap.typolink.ATagParams      = class="mobillogo d-block d-md-none h-100 w-100" alt="link to homepage"
+lib.header.mobillogo = COA
+lib.header.mobillogo.if.isTrue               = {$t3upHeader.mobilLogo}
+lib.header.mobillogo.20                      =< lib.header.mainlogo.10.10
+lib.header.mobillogo.20 {
+    file                                     = {$t3upHeader.mobilLogo}
+    imageLinkWrap.typolink.ATagParams        = class="mobillogo" alt="link to homepage"
 }
+
+#### logo #############################
+lib.header.logo = COA
+lib.header.logo.10 < lib.header.mainlogo
+lib.header.logo.20 < lib.header.mobillogo
