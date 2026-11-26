@@ -9,7 +9,7 @@ body {
     .overlay.turquoise                                  {background-color: $turquoise;}    
     .overlay.violett                                    {background-color: $violett;}      
     .overlay.grey                                       {background-color: $grey;}      
-	a												   {text-decoration: none;}	
+    a                                                   {text-decoration: none;}    
 }
 
 main{                                                   
@@ -30,11 +30,11 @@ main{
         p:last-of-type                                  {margin-bottom: 0; }                                                 
     }     
     .frame-type-textmedia,
-    .frame-colored{                                     background-color: $basicColor; transition: all ease 0.3s; 
+    .frame-colored{                                     background-color: $colored; transition: all ease 0.3s; 
         > div                                           {padding: $v3;}
         > h3,
         > h2,
-        > h4                                            {margin-bottom: 0; padding: $v3;  color: $white  !important; }    
+        > h4                                            {margin-bottom: 0; padding: $v3; }    
         p:last-of-type                                  {margin-bottom: 0; }  
     } 
     
@@ -42,19 +42,19 @@ main{
 
 /* Allgemeines Pagination */
 .f3-widget-paginator{                                   display: flex; padding-left: 0; list-style: none; margin-bottom: $v2;
-	li													{border: 1px solid rgba(0,0,0,.1); background: rgba(255,255,255,.1); transition: all ease 0.3s; margin-left: $v1; }
-	li > *												{padding: $v1 $v2; display: inline-block; font-weight: $bold; }
-    li:hover											{background: rgba(255,255,255,.5); @include shadow; border: 1px solid rgba(0,0,0,.33);}	
-	li.current											{background: rgba(255,255,255,1); border: 1px solid rgba(0,0,0,.33);}	
-	li:first-of-type	                                {margin-left: 0;} 
+    li                                                    {border: 1px solid rgba(0,0,0,.1); background: rgba(255,255,255,.1); transition: all ease 0.3s; margin-left: $v1; }
+    li > *                                                {padding: $v1 $v2; display: inline-block; font-weight: $bold; }
+    li:hover                                            {background: rgba(255,255,255,.5); @include shadow; border: 1px solid rgba(0,0,0,.33);}    
+    li.current                                            {background: rgba(255,255,255,1); border: 1px solid rgba(0,0,0,.33);}    
+    li:first-of-type                                    {margin-left: 0;} 
 }
 
 /* FE Login */  
-.frame-felogin_login fieldset{						   padding: $v3; border: 1px solid $lightgrey; margin-bottom: $v3; background-color: (#{$lightgrey} + 33);
-	> div                                              {display: block;}
-	> div label,
-	> div input										   {width: 10rem; margin-bottom: $v3;}
-	> input										       {margin-left:10rem; width: 10rem; margin-bottom: $v3;}
+.frame-felogin_login fieldset{                           padding: $v3; border: 1px solid $lightgrey; margin-bottom: $v3; background-color: (#{$lightgrey} + 33);
+    > div                                              {display: block;}
+    > div label,
+    > div input                                           {width: 10rem; margin-bottom: $v3;}
+    > input                                               {margin-left:10rem; width: 10rem; margin-bottom: $v3;}
 }
   
 main:not(.onePager) .opg > *                            {display: none;}
