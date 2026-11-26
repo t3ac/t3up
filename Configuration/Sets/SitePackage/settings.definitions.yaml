@@ -712,7 +712,7 @@ settings:
   t3upFiles.Js.wheninview:     
     category: T3up-Files.Js
     type: bool
-    default: true
+    default: false
     
   t3upFiles.Scss.access:     
     category: T3up-Files.Scss
@@ -849,7 +849,7 @@ settings:
   t3upFooter.footer1Wrap:    
     category: T3up-Footer.footer1
     type: string
-    default: '<div class= "footer1"><div class="container"><div class="row px-5 px-xxl-0">|</div></div></div>'  
+    default: '<div class= "footer1"><div class="container"><div class="row px-5 pt-5">|</div></div></div>'  
        
   t3upFooter.base:    
     category: T3up-Footer.footer3
@@ -858,7 +858,7 @@ settings:
   t3upFooter.baseWrap:    
     category: T3up-Footer.footer3
     type: string
-    default: '<div class="footer3"><div class="container"><div class="d-md-flex justify-content-between frame-default py-3 px-5 px-xxl-0">|</div></div></div>'
+    default: '<div class="footer3"><div class="container"><div class="d-md-flex justify-content-between frame-default py-3 px-5">|</div></div></div>'
   t3upFooter.copyright:    
     category: T3up-Footer.footer3
     type: string
