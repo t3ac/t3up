@@ -26,19 +26,16 @@
 							<f:cObject typoscriptObjectPath="lib.navigation.prevnext" />
 						</f:if>
 					</div>                                  
-					<div class="col-12 col-lg-{settings.t3upComponents.rightCol} {settings.t3upComponents.rightColWrap}">                                         
-						<f:if condition="{data.hidenav} != '1'">
-							<f:then>
-							<!-- beginn: subnavigation #nav -->
-								<div class="d-none d-lg-block"> 
-									<f:render partial="Submenu/Submenu" arguments="{_all}"/>
-								</div>
-							<!-- ende: subnavigation #nav -->   
-							</f:then>
-						</f:if>
+					<div class="col-12 col-lg-{settings.t3upComponents.rightCol} {settings.t3upComponents.rightColWrap}"> 
 						<!--TYPO3SEARCH_begin-->             
 							<f:render.contentArea contentArea="{content.rightcolumn}" />
-						<!--TYPO3SEARCH_end-->                          
+						<!--TYPO3SEARCH_end-->   
+
+						<!-- beginn: subnavigation #nav -->
+							<div class="d-none d-lg-block"> 
+								<f:render partial="Submenu/Submenu" arguments="{_all}"/>
+							</div>
+						<!-- ende: subnavigation #nav -->   
 				   </div>
 				</div> 
 			 </div>   
