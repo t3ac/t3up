@@ -28,7 +28,7 @@ TCEFORM.tt_content.imageorient {
 [END]
 
 [{$t3upComponents.rightNavigation} == 1]
-    @import 'EXT:t3up/Configuration/TsConfig/OneColumn.tsconfig'
+    @import 'EXT:t3up/Configuration/TsConfig/RightNavigation.tsconfig'
 [END]
 
 [{$t3upComponents.rightMarginal} == 1]
