@@ -96,7 +96,7 @@ settings:
     type: int
   t3upBreadcrumb.breadcrumbTextSize:  
     category: T3up-Breadcrumb
-    default: '80%'
+    default: '95%'
     type: string  
   t3upBreadcrumb.breadcrumbPos:
     category: T3up-Breadcrumb
