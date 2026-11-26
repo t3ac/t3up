@@ -10,7 +10,7 @@ main {
 	    > ul                                {margin-bottom: $v4; border-top: 1px solid $subnavigationLineColor;}    
 	    .cur > a                            {font-weight: $bold; text-transform: uppercase; color: $subnavigationLinkHoverColor;}
 	    .act > a                            {font-weight: $bold;}
-	    .levelTitle                         {font-weight: $bold; padding: $v1 $v2; color: $white !important; text-transform: uppercase; margin: 0;}
+	    .levelTitle                         {font-weight: $bold; padding: $v1 $v2; color: $white !important; text-transform: uppercase; margin: 0; background-color: $basicColor;}
 	    .subsubmenu                         {border-top: 1px solid $subnavigationLineColor; position: relative; }
 		.subsubmenu:before                  {content:(''); background: $subnavigationLinkColor; opacity: .033; z-index: 0; position: absolute; top: 0; left: 0;width: 100%; height: 100%;}
 		
