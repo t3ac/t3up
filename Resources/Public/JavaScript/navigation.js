@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 li.classList.remove('activated');
             });
 
-            sibling.querySelectorAll('li span').forEach(function (span) {
+            sibling.querySelectorAll('li > span').forEach(function (span) {
                 span.textContent = plus;
             });
 
