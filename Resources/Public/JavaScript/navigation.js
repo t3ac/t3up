@@ -83,6 +83,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (sibling === item) return;
 
+            // Aktiven Navigationslink zurücksetzen
+            const link = sibling.querySelector(':scope > .navlink');
+            if (link) link.classList.remove('show');
+
             sibling.querySelectorAll('.subnav').forEach(function (subnav) {
                 toggleAria(subnav, false);
             });
@@ -288,17 +292,13 @@ document.addEventListener('DOMContentLoaded', function () {
         resetSiblings(li);
 
         if (link.classList.contains('show')) {
-
             resMenu();
             event.preventDefault();
-
         } else if (
             link.nextElementSibling &&
             li.parentElement.classList.contains('nav')
         ) {
-
             event.preventDefault();
-
             document.querySelectorAll('.overlay').forEach(function (overlay) {
                 showElement(overlay, true);
             });
