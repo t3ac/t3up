@@ -59,18 +59,18 @@
          // Navigation 2
          .activeNav{                                
            .nav__level1{                            min-height:$v3;
-                > li {                              hyphens: none; text-align: center;  border-bottom-width: $navLinkBorderBottomHeight; border-bottom-style:solid; border-bottom-color:transparent;
+                > li {                              hyphens: none;
                     > a                             {padding:  $v1 $v2 0; display:inline-block; cursor:pointer; font-size:$navFontSize; transition:color ease .3s; text-transform:uppercase; color:$navLinkColor; font-weight:$navFontWeight;}    
                     &.cur a:after                   {border-bottom-color:$navLinkHoverColor;; transform: scaleX(1);}
                     &.act a:after                   {border-bottom-color:$navLinkHoverColor; transform: scaleX(1);}
                     &:hover a                       {color:$navLinkHoverColor; border-bottom-color: transparent;}
                     > a:after                       {display: block; position: relative; width: 100%;  height: $navLinkBorderBottomHeight; margin: 0; background: $basicColor;
-                                                    content: ""; transform: scaleX(0); transform-origin: left center; transition: transform  180ms ease;}
+                                                    content: ""; transform: scaleX(0); transform-origin: left center; transition: transform  180ms ease; margin-top: $v1;}
                     > a:focus:after                 {transform: scaleX(1);}     													
                     > a:hover:after                 {transform: scaleX(1);}          
                  }    
             }
-            .nav__level2{                            position:absolute; width:$c33; list-style:none; left: $v2; top: $v2; padding-right: $v3; 
+            .nav__level2{                            position:absolute; width:calc(#{$c33} - $v5); list-style:none; left: $v2; top: $v2; padding-right: $v3; 
                > li                                  {transition: all ease .3s;display:flex; justify-content:space-between; text-align: left; align-items: center; border-bottom: 1px solid rgba(100,100,100,0.33); height: 3rem;}
                > li:hover                            {background:rgba( 0, 20, 40, 0.04)}            
 
@@ -81,8 +81,13 @@
                  li > a                              {line-height: $v3; transition: all ease .3s; font-weight:bold; padding: 0 $v3;}
             }        
 
-            .nav__level3{                            position:absolute; width: calc(200% - 9rem); list-style:none; left: calc(100% + #{$v2}); top: 0;
-                > li                                 {height: 3rem; transition: all ease .3s; display:flex; justify-content:space-between; border-bottom: 0; width: 50%; align-items: center;}
+            .nav__level3{                            position:absolute; width: 100%; list-style:none; left: calc(100% + #{$v3}); top: 0;
+                > li                                 {height: 3rem; transition: all ease .3s; display:flex; justify-content:space-between; border-bottom: 0; width: 100%; align-items: center; border-bottom: 1px solid rgba(100,100,100,0.33); height: 3rem;}
+                > li:hover                           {background:rgba( 0, 20, 40, 0.04)}              
+            }
+
+            .nav__level4{                            position:absolute; width: 100%; list-style:none; left: calc(100% + #{$v5}); top: 0;
+                > li                                 {height: 3rem; transition: all ease .3s; display:flex; justify-content:space-between; border-bottom: 0; width: 100%; align-items: center; border-bottom: 1px solid rgba(100,100,100,0.33); height: 3rem;}
                 > li:hover                           {background:rgba( 0, 20, 40, 0.04)}              
             }
 
