@@ -46,7 +46,7 @@
 	
 	
 	<f:section name="subsubsubmenu">
-			<ul class="subnav d-lg-none nav__level4" role="list" aria-label="SubMenu">
+			<ul class="subnav nav__level4" role="list" aria-label="SubMenu">
 				<f:for each="{submenu}" as="subItem">
 					<f:render partial="Menu/Elements/SubItem" arguments="{item: subItem}"/>
 					<f:if condition="{subItem.children}">
@@ -56,29 +56,5 @@
 			</ul>
 		</li>
 	</f:section>
-	
-	<f:section name="subsubsubsubmenu">
-			<ul class="d-lg-none nav__level5" role="list" aria-label="SubMenu">
-				<f:for each="{submenu}" as="subItem">
-					<f:render partial="Menu/Elements/SubItem" arguments="{item: subItem}"/>
-					<f:if condition="{subItem.children}">
-						<f:render section="subsubsubsubsubmenu" arguments="{submenu: subItem.children}"/>
-					</f:if>
-				</f:for>
-			</ul>
-		</li>
-	</f:section>
-	
-	<f:section name="subsubsubsubsubmenu">
-			<ul class="d-lg-none nav__level6" role="list" aria-label="SubMenu">
-				<f:for each="{submenu}" as="subItem">
-					<f:render partial="Menu/Elements/SubItem" arguments="{item: subItem}"/>
-					<f:if condition="{subItem.children}">
-						<f:render section="subsubsubsubsubmenu" arguments="{submenu: subItem.children}"/>
-					</f:if>
-				</f:for>
-			</ul>
-		</li>
-	</f:section>
-	
+
 </html>
